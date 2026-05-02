@@ -12,34 +12,34 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lobby-state-paused = Paused
-lobby-state-soon = Round starting soon
-lobby-state-right-now-question = Right Now?
-lobby-state-right-now-confirmation = Right Now
-lobby-state-round-start-countdown-text = Round starts In: {$timeLeft}
-lobby-state-ready-button-join-state = Join
-lobby-state-ready-button-ready-up-state = Ready Up
-lobby-state-player-status-not-ready = Not Ready
-lobby-state-player-status-ready = Ready
-lobby-state-player-status-observer = Observer
-lobby-state-player-status-round-not-started = The round hasn't started yet
+lobby-state-paused = En pause
+lobby-state-soon = La partie commence bientôt
+lobby-state-right-now-question = Maintenant ?
+lobby-state-right-now-confirmation = Maintenant
+lobby-state-round-start-countdown-text = La partie commence dans : {$timeLeft}
+lobby-state-ready-button-join-state = Rejoindre
+lobby-state-ready-button-ready-up-state = Prêt
+lobby-state-player-status-not-ready = Pas prêt
+lobby-state-player-status-ready = Prêt
+lobby-state-player-status-observer = Observeur
+lobby-state-player-status-round-not-started = La partie n'a pas encore commencé
 lobby-state-player-status-round-time =
     The round time is: {$hours} {$hours ->
-    [1]hour
-    *[other]hours
-    } and {$minutes} {$minutes ->
+    [1]heure
+    *[other]ehures
+    } et {$minutes} {$minutes ->
     [1]minute
     *[other]minutes
     }
-lobby-state-song-text = Playing: [color=white]{$songTitle}[/color] by [color=white]{$songArtist}[/color]
-lobby-state-song-no-song-text = No lobby song playing.
-lobby-state-song-unknown-title = [color=dimgray]Unknown title[/color]
-lobby-state-song-unknown-artist = [color=dimgray]Unknown artist[/color]
+lobby-state-song-text = En train de jouer : [color=white]{$songTitle}[/color] par [color=white]{$songArtist}[/color]
+lobby-state-song-no-song-text = Pas de musique de lobby en cours.
+lobby-state-song-unknown-title = [color=dimgray]Titre inconnu[/color]
+lobby-state-song-unknown-artist = [color=dimgray]Artiste inconnu[/color]
 lobby-state-playtime-comment-normal =
-    You've spent {$hours} {$hours ->
-    [1]hour
-    *[other]hours
-    } ingame today. Remember to take breaks!
-lobby-state-playtime-comment-concerning = You've played for {$hours} hours today. Please take a break.
-lobby-state-playtime-comment-grasstouchless = {$hours} hours. Consider logging off to attend to your needs.
-lobby-state-playtime-comment-selfdestructive = {$hours} hours. Really?
+    Vous avez passé {$hours} {$hours ->
+    [1]heure
+    *[other]heures
+    } en jeu aujourd'hui. Pensez à prendre des pauses !
+lobby-state-playtime-comment-concerning = Vous avez joué {$hours} heures aujourd'hui. Faites une pause s'il vous plaît.
+lobby-state-playtime-comment-grasstouchless = {$hours} heures. Pensez à vous déconnecter pour prendre soin de vous.
+lobby-state-playtime-comment-selfdestructive = {$hours} heures. Vraiment ?

@@ -21,41 +21,37 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-ghost-gui-return-to-body-button = Return to body
-ghost-gui-ghost-warp-button = Ghost Warp
-ghost-gui-ghost-roles-button = Ghost Roles ({$count})
-ghost-gui-toggle-ghost-visibility-popup-on = Enabled visibility of ghosts.
-ghost-gui-toggle-ghost-visibility-popup-off = Disabled visibility of ghosts.
-ghost-gui-toggle-lighting-manager-popup-normal = Lighting normal.
-ghost-gui-toggle-lighting-manager-popup-personal-light = Enabled personal light.
-ghost-gui-toggle-lighting-manager-popup-fullbright = Fullbright mode.
-ghost-gui-toggle-fov-popup = Toggled field-of-view.
-
-ghost-gui-toggle-hearing-popup-on = You can now hear all messages.
-ghost-gui-toggle-hearing-popup-off = You can now only hear radio and nearby messages.
-
-ghost-target-window-title = Ghost Warp
-ghost-target-window-current-button = Warp: {$name}
-ghost-target-window-warp-to-most-followed = Warp to Most Followed
-
-ghost-roles-window-title = Ghost Roles
-ghost-roles-window-available-button = Available ({$rolesCount})
-ghost-roles-window-join-raffle-button = Join raffle
+ghost-gui-return-to-body-button = Retourner dans son corps
+ghost-gui-ghost-warp-button = Téléportation fantôme
+ghost-gui-ghost-roles-button = Rôles fantômes ({$count})
+ghost-gui-toggle-ghost-visibility-popup-on = Visibilité des fantômes activée.
+ghost-gui-toggle-ghost-visibility-popup-off = Visibilité des fantômes désactivée.
+ghost-gui-toggle-lighting-manager-popup-normal = Éclairage normal.
+ghost-gui-toggle-lighting-manager-popup-personal-light = Lumière personnelle activée.
+ghost-gui-toggle-lighting-manager-popup-fullbright = Mode pleine luminosité.
+ghost-gui-toggle-fov-popup = Champ de vision basculé.
+ghost-gui-toggle-hearing-popup-on = Vous pouvez maintenant entendre tous les messages.
+ghost-gui-toggle-hearing-popup-off = Vous ne pouvez maintenant entendre que les messages radio et à proximité.
+ghost-target-window-title = Téléportation fantôme
+ghost-target-window-current-button = Téléportation : {$name}
+ghost-target-window-warp-to-most-followed = Téléportation vers le plus suivi
+ghost-roles-window-title = Rôles fantômes
+ghost-roles-window-available-button = Disponibles ({$rolesCount})
+ghost-roles-window-join-raffle-button = Rejoindre le tirage
 ghost-roles-window-raffle-in-progress-button =
-    Join raffle ({$time} left, { $players ->
-         [one] {$players} player
-        *[other] {$players} players
+    Rejoindre le tirage ({$time} restant, { $players ->
+         [one] {$players} joueur
+        *[other] {$players} joueurs
     })
 ghost-roles-window-leave-raffle-button =
-    Leave raffle ({$time} left, { $players ->
-         [one] {$players} player
-        *[other] {$players} players
+    Quitter le tirage ({$time} restant, { $players ->
+         [one] {$players} joueur
+        *[other] {$players} joueurs
     })
-ghost-roles-window-request-role-button = Request
-ghost-roles-window-request-role-button-timer = Request ({$time}s)
-ghost-roles-window-follow-role-button = Follow
-ghost-roles-window-no-roles-available-label = There are currently no available ghost roles.
-ghost-roles-window-rules-footer = The button will enable after {$time} seconds (this delay is to make sure you read the rules).
-
-ghost-return-to-body-title = Return to Body
-ghost-return-to-body-text = Med is so competent that you are being revived! Return to your body?
+ghost-roles-window-request-role-button = Demander
+ghost-roles-window-request-role-button-timer = Demander ({$time}s)
+ghost-roles-window-follow-role-button = Suivre
+ghost-roles-window-no-roles-available-label = Aucun rôle fantôme n'est disponible pour le moment.
+ghost-roles-window-rules-footer = Le bouton sera activé après {$time} secondes (ce délai est pour s'assurer que vous lisez les règles).
+ghost-return-to-body-title = Retourner dans son corps
+ghost-return-to-body-text = La médecine est si compétente que vous êtes en train d'être réanimé ! Retourner dans votre corps ?

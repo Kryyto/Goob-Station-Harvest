@@ -7,11 +7,11 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-ui-lobby-title = Lobby: {$serverName}
+ui-lobby-title = Lobby : {$serverName}
 ui-lobby-ahelp-button = AHelp
 ui-lobby-options-button = Options
-ui-lobby-leave-button = Leave
-ui-lobby-observe-button = Observe
-ui-lobby-ready-up-button = Ready Up
-ui-lobby-online-players-block = Online Players
-ui-lobby-server-info-block = Server Info
+ui-lobby-leave-button = Quitter
+ui-lobby-observe-button = Observer
+ui-lobby-ready-up-button = Prêt
+ui-lobby-online-players-block = Joueurs en ligne
+ui-lobby-server-info-block = Infos du serveur

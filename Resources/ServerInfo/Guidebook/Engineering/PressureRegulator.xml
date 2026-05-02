@@ -1,23 +1,23 @@
-﻿<Document>
-  # Inlet Pressure Regulator
-  The Inlet Pressure Regulator is a passive device that allows gas to escape from a [textlink="pipenet" link="PipeNetworks"] when the pressure exceeds a certain threshold.
+<Document>
+  # Régulateur de pression d'entrée
+  Le régulateur de pression d'entrée est un appareil passif qui permet au gaz de s'échapper d'un [textlink="réseau de tuyaux" link="PipeNetworks"] lorsque la pression dépasse un certain seuil.
 
   <Box>
     <GuideEntityEmbed Entity="GasPressureRegulator"/>
   </Box>
 
-  ## Operation
-  The valve will automatically [color=green]open[/color] when the pressure in the pipe exceeds the set threshold, allowing gas to escape to the connected output pipe.
+  ## Fonctionnement
+  La vanne [color=green]s'ouvre[/color] automatiquement lorsque la pression dans le tuyau dépasse le seuil défini, permettant au gaz de s'échapper vers le tuyau de sortie connecté.
 
-  The valve will [color=red]close[/color] again when the pressure drops below the set threshold.
+  La vanne [color=red]se referme[/color] lorsque la pression redescend en dessous du seuil défini.
 
-  The flow rate of the valve is limited to [color=orange][protodata="GasPressureRegulator" comp="GasPressureRegulator" member="MaxTransferRate"/] L/s[/color].
+  Le débit de la vanne est limité à [color=orange][protodata="GasPressureRegulator" comp="GasPressureRegulator" member="MaxTransferRate"/> L/s[/color].
 
-  ## Example Uses
-  The valve is commonly used to prevent overpressure situations in gas systems, such as [textlink="TEG" link="TEG"] cooling loops and [textlink="pipes" link="Pipes"], which would cause a failure in the system (clogged [textlink="pumps" link="Pumps"]).
+  ## Exemples d'utilisation
+  La vanne est couramment utilisée pour prévenir les situations de surpression dans les systèmes gazeux, comme les circuits de refroidissement du [textlink="GTÉ" link="TEG"] et les [textlink="tuyaux" link="Pipes"], ce qui provoquerait une défaillance du système (blocage des [textlink="pompes" link="Pumps"])).
 
-  The valve can also be used to vent off ready-to-use, hot gas from a burn chamber.
-  For example, it may be undesirable to allow a burn chamber to drop below a specific pressure for a long time, as this may cause the gas to cool down too much and thin out, which would cause a flameout.
+  La vanne peut également être utilisée pour évacuer du gaz chaud prêt à l'emploi depuis une chambre de combustion.
+  Par exemple, il peut être indésirable de laisser une chambre de combustion descendre en dessous d'une pression spécifique pendant longtemps, car cela pourrait trop refroidir et diluer le gaz, provoquant une extinction de la flamme.
 
-  An inlet pressure regulator can be used to vent off excess gas, while keeping the pressure in the burn chamber above a certain threshold, which may help in sustaining a fire in the chamber.
+  Un régulateur de pression d'entrée peut être utilisé pour évacuer l'excès de gaz tout en maintenant la pression dans la chambre de combustion au-dessus d'un certain seuil, ce qui peut aider à entretenir un feu dans la chambre.
 </Document>

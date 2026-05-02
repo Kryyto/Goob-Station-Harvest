@@ -4,13 +4,13 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-tech-disk-inserted = You insert the disk, adding a new recipe to the server.
-tech-disk-examine-none = The label is blank.
-tech-disk-examine = The label has a small dot matrix printed image depicting a {$result}.
-tech-disk-examine-more = There are more images printed, but they're too small to discern.
+tech-disk-inserted = Vous insérez le disque, ajoutant une nouvelle recette au serveur.
+tech-disk-examine-none = L'étiquette est vierge.
+tech-disk-examine = L'étiquette comporte une petite image imprimée en matrice de points représentant un(e) {$result}.
+tech-disk-examine-more = D'autres images sont imprimées, mais elles sont trop petites pour être distinguées.
 tech-disk-name-format = {$baseName} ({$technology})
 
-tech-disk-ui-name = technology disk terminal
-tech-disk-ui-total-label = There are {$amount} points on the selected server
-tech-disk-ui-cost-label = Each disk costs {$amount} points to print
-tech-disk-ui-print-button = Print Disk
+tech-disk-ui-name = terminal de disques technologiques
+tech-disk-ui-total-label = Il y a {$amount} points sur le serveur sélectionné
+tech-disk-ui-cost-label = Chaque disque coûte {$amount} points à imprimer
+tech-disk-ui-print-button = Imprimer le disque

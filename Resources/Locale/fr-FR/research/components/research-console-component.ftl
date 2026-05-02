@@ -11,22 +11,22 @@
 
 ## UI
 
-research-console-menu-title = R&D Console
-research-console-menu-research-points-text = Research Points: [color=orchid]{$points}[/color]
-research-console-menu-main-discipline = Main Discipline: [color={$color}]{$name}[/color]
-research-console-menu-server-selection-button = Server list
-research-console-menu-server-sync-button = Sync
-research-console-menu-server-research-button = Research
-research-console-available-text = Researchable Technologies
-research-console-unlocked-text = Unlocked Technologies
-research-console-tier-discipline-info = Tier {$tier}, [color={$color}]{$discipline}[/color]
-research-console-tier-info-small = : Tier {$tier}
-research-console-cost = Cost: [color=orchid]{$amount}[/color]
-research-console-unlocks-list-start = Unlocks:
+research-console-menu-title = Console R&D
+research-console-menu-research-points-text = Points de recherche : [color=orchid]{$points}[/color]
+research-console-menu-main-discipline = Discipline principale : [color={$color}]{$name}[/color]
+research-console-menu-server-selection-button = Liste des serveurs
+research-console-menu-server-sync-button = Synchroniser
+research-console-menu-server-research-button = Rechercher
+research-console-available-text = Technologies disponibles à la recherche
+research-console-unlocked-text = Technologies débloquées
+research-console-tier-discipline-info = Niveau {$tier}, [color={$color}]{$discipline}[/color]
+research-console-tier-info-small = : Niveau {$tier}
+research-console-cost = Coût : [color=orchid]{$amount}[/color]
+research-console-unlocks-list-start = Débloque :
 research-console-unlocks-list-entry = - [color=yellow]{$name}[/color]
 research-console-unlocks-list-entry-generic = - [color=green]{$text}[/color]
-research-console-prereqs-list-start = Requires:
+research-console-prereqs-list-start = Requiert :
 research-console-prereqs-list-entry = - [color=orchid]{$text}[/color]
 
-research-console-no-access-popup = No access!
-research-console-unlock-technology-radio-broadcast = Unlocked [bold]{$technology}[/bold] for [bold]{$amount}[/bold] research by [bold]{$approver}[/bold].
+research-console-no-access-popup = Accès refusé !
+research-console-unlock-technology-radio-broadcast = [bold]{$technology}[/bold] débloqué pour [bold]{$amount}[/bold] points de recherche par [bold]{$approver}[/bold].

@@ -14,45 +14,45 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Glass
-materials-glass = glass
-materials-reinforced-glass = reinforced glass
-materials-plasma-glass = plasma glass
-materials-reinforced-plasma-glass = reinforced plasma glass
-materials-uranium-glass = uranium glass
-materials-reinforced-uranium-glass = reinforced uranium glass
+materials-glass = verre
+materials-reinforced-glass = verre renforcé
+materials-plasma-glass = verre au plasma
+materials-reinforced-plasma-glass = verre au plasma renforcé
+materials-uranium-glass = verre à l'uranium
+materials-reinforced-uranium-glass = verre à l'uranium renforcé
 
 # Metals
-materials-steel = steel
-materials-gold = gold
-materials-silver = silver
+materials-steel = acier
+materials-gold = or
+materials-silver = argent
 materials-plasteel = plasteel
 
 # Other
-materials-biomass = biomass
-materials-cardboard = cardboard
-materials-cloth = cloth
-materials-durathread = durathread
+materials-biomass = biomasse
+materials-cardboard = carton
+materials-cloth = tissu
+materials-durathread = durafil
 materials-plasma = plasma
-materials-plastic = plastic
-materials-wood = wood
-materials-paper = paper
+materials-plastic = plastique
+materials-wood = bois
+materials-paper = papier
 materials-uranium = uranium
 materials-bananium = bananium
-materials-meat = meat
-materials-web = silk
-materials-bones = bone
-materials-coal = coal
-materials-diamond = diamond
-materials-gunpowder = gunpowder
-materials-cotton = cotton
+materials-meat = viande
+materials-web = soie
+materials-bones = os
+materials-coal = charbon
+materials-diamond = diamant
+materials-gunpowder = poudre à canon
+materials-cotton = coton
 
 # Ores
-materials-raw-iron = raw iron
-materials-raw-quartz = raw quartz
-materials-raw-gold = raw gold
-materials-raw-silver = raw silver
-materials-raw-plasma = raw plasma
-materials-raw-uranium = raw uranium
-materials-raw-bananium = raw bananium
-materials-raw-salt = raw salt
-materials-raw-diamond = raw diamond
+materials-raw-iron = fer brut
+materials-raw-quartz = quartz brut
+materials-raw-gold = or brut
+materials-raw-silver = argent brut
+materials-raw-plasma = plasma brut
+materials-raw-uranium = uranium brut
+materials-raw-bananium = bananium brut
+materials-raw-salt = sel brut
+materials-raw-diamond = diamant brut

@@ -9,49 +9,49 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-juice-apple = apple juice
-reagent-desc-juice-apple = It's a little piece of Eden.
+reagent-name-juice-apple = jus de pomme
+reagent-desc-juice-apple = C'est un petit morceau d'Eden.
 
-reagent-name-juice-banana = banana juice
-reagent-desc-juice-banana = The raw essence of a banana. HONK.
+reagent-name-juice-banana = jus de banane
+reagent-desc-juice-banana = L'essence brute d'une banane. HONK.
 
-reagent-name-juice-berry = berry juice
-reagent-desc-juice-berry = A delicious blend of several different kinds of berries.
+reagent-name-juice-berry = jus de baies
+reagent-desc-juice-berry = Un délicieux mélange de plusieurs types de baies différentes.
 
-reagent-name-juice-blue-pumpkin = blue pumpkin juice
-reagent-desc-juice-blue-pumpkin = The juice of a blue pumpkin. Smells like pool water.
+reagent-name-juice-blue-pumpkin = jus de citrouille bleue
+reagent-desc-juice-blue-pumpkin = Le jus d'une citrouille bleue. Ça sent l'eau de piscine.
 
-reagent-name-juice-bungo = bungo juice
-reagent-desc-juice-bungo = The juice of a bungo fruit. Exotic!
+reagent-name-juice-bungo = jus de bungo
+reagent-desc-juice-bungo = Le jus d'un fruit bungo. Exotique !
 
-reagent-name-juice-berry-poison = poison berry juice
-reagent-desc-juice-berry-poison = A surprisingly tasty juice blended from various kinds of very deadly and toxic berries.
+reagent-name-juice-berry-poison = jus de baies empoisonnées
+reagent-desc-juice-berry-poison = Un jus étonnamment savoureux mélangé à partir de diverses sortes de baies très mortelles et toxiques.
 
-reagent-name-juice-carrot = carrot juice
-reagent-desc-juice-carrot = It's like a carrot, but less crunchy.
+reagent-name-juice-carrot = jus de carotte
+reagent-desc-juice-carrot = C'est comme une carotte, mais moins croquant.
 
-reagent-name-juice-grape = grape juice
-reagent-desc-juice-grape = Freshly squeezed juice from red grapes. Quite sweet.
+reagent-name-juice-grape = jus de raisin
+reagent-desc-juice-grape = Jus fraîchement pressé de raisins rouges. Assez sucré.
 
-reagent-name-juice-lemon = lemon juice
-reagent-desc-juice-lemon = This juice is VERY sour.
+reagent-name-juice-lemon = jus de citron
+reagent-desc-juice-lemon = Ce jus est TRÈS acide.
 
-reagent-name-juice-lime = lime juice
-reagent-desc-juice-lime = The sweet-sour juice of limes.
+reagent-name-juice-lime = jus de citron vert
+reagent-desc-juice-lime = Le jus aigre-doux des citrons verts.
 
-reagent-name-juice-orange = orange juice
-reagent-desc-juice-orange = Both delicious AND rich in Vitamin C. What more do you need?
+reagent-name-juice-orange = jus d'orange
+reagent-desc-juice-orange = À la fois délicieux ET riche en vitamine C. Que demander de plus ?
 
-reagent-name-juice-pineapple = pineapple juice
-reagent-desc-juice-pineapple = The delicious juice of a pineapple.
+reagent-name-juice-pineapple = jus d'ananas
+reagent-desc-juice-pineapple = Le délicieux jus d'un ananas.
 
-reagent-name-juice-potato = potato juice
-reagent-desc-juice-potato = Juice of the potato. Bleh.
+reagent-name-juice-potato = jus de pomme de terre
+reagent-desc-juice-potato = Du jus de pomme de terre. Beurk.
 
-reagent-name-juice-tomato = tomato juice
-reagent-desc-juice-tomato = Tomatoes made into juice. What a waste of good tomatoes, huh?
+reagent-name-juice-tomato = jus de tomate
+reagent-desc-juice-tomato = Des tomates transformées en jus. Quel gâchis de bonnes tomates, non ?
 
-reagent-name-juice-watermelon = watermelon juice
-reagent-desc-juice-watermelon = The delicious juice of a watermelon.
+reagent-name-juice-watermelon = jus de pastèque
+reagent-desc-juice-watermelon = Le délicieux jus d'une pastèque.
 
-reagent-name-juice-cherry = cherry juice
+reagent-name-juice-cherry = jus de cerise

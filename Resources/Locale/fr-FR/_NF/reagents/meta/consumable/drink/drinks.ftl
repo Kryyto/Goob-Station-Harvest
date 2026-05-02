@@ -4,17 +4,17 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-gin-and-sonic = gin and sonic
-reagent-desc-gin-and-sonic = Why did the hedgehog go to Saturn? To collect its rings!
+reagent-name-gin-and-sonic = gin sonic
+reagent-desc-gin-and-sonic = Pourquoi le hérisson est-il allé sur Saturne ? Pour récupérer ses anneaux !
 
-reagent-name-golden-cat = golden cat
-reagent-desc-golden-cat = Legends speak of a golden cat that sold a burger for a fortune. Has a metallic smell.
+reagent-name-golden-cat = chat doré
+reagent-desc-golden-cat = La légende raconte qu'un chat doré a vendu un hamburger pour une fortune. A une odeur métallique.
 
-reagent-name-pineapple-blast = pineapple blast
-reagent-desc-pineapple-blast = For when the trees start talking. Smells tropical, with notes of sulfur.
+reagent-name-pineapple-blast = ananas blast
+reagent-desc-pineapple-blast = Pour quand les arbres se mettent à parler. A un parfum tropical, avec des notes de soufre.
 
-reagent-name-torpedo-juice = torpedo juice
-reagent-desc-torpedo-juice = The joys of drinking and unrestricted submarine warfare combined! Has a strong alcoholic smell.
+reagent-name-torpedo-juice = jus de torpille
+reagent-desc-torpedo-juice = Les joies de l'alcool et de la guerre sous-marine sans restriction réunies ! Dégage une forte odeur d'alcool.
 
 reagent-name-bees-knees = bee’s knees
-reagent-desc-bees-knees = BEEEEEEEEEEEEEEES!!! Has a stingy smell.
+reagent-desc-bees-knees = BEEEEEEEEEEEEEEES!!! A une odeur âcre.

@@ -1,2 +1,2 @@
-reagent-name-juice-mango = mango juice
-reagent-desc-juice-mango = Tasty tasty mango juice. 
+reagent-name-juice-mango = jus de mangue
+reagent-desc-juice-mango = Un délicieux jus de mangue. 

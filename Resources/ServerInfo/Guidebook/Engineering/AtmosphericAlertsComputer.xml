@@ -6,32 +6,32 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Atmospheric Alerts Computer
-  The Atmospheric Alerts Computer is a computer that shows information on all air alarms and fire alarms across the station.
+  # Ordinateur d'alertes atmosphériques
+  L'ordinateur d'alertes atmosphériques est un ordinateur qui affiche des informations sur toutes les alarmes atmosphériques et alarmes incendie de la station.
 
   <Box>
     <GuideEntityEmbed Entity="ComputerAlert"/>
   </Box>
 
-  It is a useful tool for quickly identifying areas that require attention.
+  C'est un outil utile pour identifier rapidement les zones nécessitant une attention.
 
-  The Atmospheric Alerts Computer is often found in Atmospherics, and is used by Atmospherics Technicians to monitor atmospheres across the entire station.
-  However, it is also a good indicator for general engineers to gauge station damage.
+  L'ordinateur d'alertes atmosphériques se trouve généralement dans le service Atmosphérique et est utilisé par les techniciens atmosphériques pour surveiller les atmosphères de toute la station.
+  C'est également un bon indicateur pour les ingénieurs généraux afin d'évaluer les dommages subis par la station.
 
-  The computer displays lists of Air Alarms in [color=orange]Warning[/color] and [color=red]Danger[/color] levels. Additionally, the computer displays the location of all air alarms, color-coded based on their current status.
+  L'ordinateur affiche des listes d'alarmes atmosphériques aux niveaux [color=orange]Avertissement[/color] et [color=red]Danger[/color]. De plus, l'ordinateur affiche l'emplacement de toutes les alarmes atmosphériques, avec un code couleur basé sur leur statut actuel.
 
-  Air alarms with the normal status are hidden by default.
-  You can toggle the visibility of normal air alarms by adjusting the filters at the bottom of the interface.
+  Les alarmes atmosphériques au statut normal sont masquées par défaut.
+  Vous pouvez activer ou désactiver leur visibilité en ajustant les filtres en bas de l'interface.
 
-  The map draws a box around the area that the air alarm is monitoring, which can help identify the area that is in danger.
-  This box will change color based on the status of the air alarm.
+  La carte dessine un cadre autour de la zone surveillée par l'alarme atmosphérique, ce qui peut aider à identifier la zone en danger.
+  Ce cadre changera de couleur selon le statut de l'alarme.
 
-  If an Air Alarm is unpowered, it is shown as greyed out on the list and on the map.
+  Si une alarme atmosphérique n'est pas alimentée, elle apparaît en grisé dans la liste et sur la carte.
 
-  Clicking on an air alarm on the list or on the map will show detailed information about the atmosphere in that area, which can help gauge the type of emergency that is occurring.
+  Cliquer sur une alarme atmosphérique dans la liste ou sur la carte affiche des informations détaillées sur l'atmosphère de cette zone, ce qui peut aider à évaluer le type d'urgence en cours.
 
-  A list of triggered [textlink="fire alarms" link="FireAndGasControl"] is also displayed on the Atmospheric Alerts Computer in a separate tab, which can be used to quickly identify areas that might be on fire.
+  Une liste des [textlink="alarmes incendie" link="FireAndGasControl"] déclenchées est également affichée dans l'ordinateur d'alertes atmosphériques dans un onglet séparé, permettant d'identifier rapidement les zones pouvant être en feu.
 
-  You can silence specific alarms (such as alarms that monitor burn chambers and freezers) by clicking on the alarm in the list and pressing the "Silence alerts" button.
-  This will hide the alarm from the list, but it will still be visible on the map.
+  Vous pouvez mettre en sourdine des alarmes spécifiques (comme les alarmes surveillant des chambres de combustion et des congélateurs) en cliquant sur l'alarme dans la liste et en appuyant sur le bouton « Mettre les alertes en sourdine ».
+  L'alarme sera masquée de la liste, mais restera visible sur la carte.
 </Document>

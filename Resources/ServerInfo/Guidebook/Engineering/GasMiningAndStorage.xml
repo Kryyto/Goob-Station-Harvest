@@ -6,24 +6,24 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Gas Mining and Storage
-  Gasses are often permanently used. Whether they are lost to [textlink="space" link="Spacing"] or used in a burn chamber, the station needs to be able to produce more gas to replace what is lost.
-  It also needs to store this gas in a safe and efficient manner.
+  # Extraction et stockage de gaz
+  Les gaz sont souvent consommés de manière permanente. Qu'ils soient perdus dans l'[textlink="espace" link="Spacing"] ou utilisés dans une chambre de combustion, la station doit être capable d'en produire davantage pour remplacer ce qui est perdu.
+  Elle doit également stocker ce gaz de manière sûre et efficace.
 
-  ## Gas Miners
-  Gas miners are used to replenish the station's gas supply. They are found in the gas storage tanks in Atmospherics.
+  ## Extracteurs de gaz
+  Les extracteurs de gaz sont utilisés pour reconstituer les réserves de gaz de la station. Ils se trouvent dans les réservoirs de stockage de gaz du service Atmosphérique.
 
   <Box>
     <GuideEntityEmbed Entity="GasMinerOxygenStation"/>
     <GuideEntityEmbed Entity="GasMinerNitrogenStation"/>
   </Box>
 
-  Gas miners constantly produce room temperature gas and push it into the exposed atmosphere. They require no power to function, and never stop working unless they have reached the defined [bold]cutoff pressure[/bold].
+  Les extracteurs de gaz produisent constamment du gaz à température ambiante et le poussent dans l'atmosphère exposée. Ils ne nécessitent aucune alimentation électrique pour fonctionner, et ne s'arrêtent jamais sauf lorsqu'ils atteignent la [bold]pression limite[/bold] définie.
 
-  You can see more information about the gas miners by inspecting them using [color=yellow][bold][keybind="ExamineEntity"][/bold][/color].
-  Try inspecting the gas miners presented above.
+  Vous pouvez obtenir plus d'informations sur les extracteurs de gaz en les examinant avec [color=yellow][bold][keybind="ExamineEntity"][/bold][/color].
+  Essayez d'examiner les extracteurs de gaz présentés ci-dessus.
 
-  Gas miners come in tiers, with the larger versions having a higher pressure cutoff than the smaller versions.
+  Les extracteurs de gaz existent en plusieurs niveaux, les versions plus grandes ayant une pression limite plus élevée que les versions plus petites.
 
   <Box>
     <GuideEntityEmbed Entity="GasMinerNitrogen" Caption="300 kPa"/>
@@ -31,10 +31,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="GasMinerNitrogenStationLarge" Caption="4500 kPa"/>
   </Box>
 
-  If gas miners are ever unanchored from the station, they can be reanchored using a regular wrench.
+  Si des extracteurs de gaz sont jamais désancrés de la station, ils peuvent être réancrés avec une clé à molette ordinaire.
 
-  ## Gas Storage
-  Gas storage tanks are used to store gas produced by the gas miners, and to make it available to other processes. They are found in Atmospherics.
+  ## Stockage de gaz
+  Les réservoirs de stockage de gaz sont utilisés pour stocker le gaz produit par les extracteurs et le rendre disponible pour d'autres processus. Ils se trouvent dans le service Atmosphérique.
 
   <Box>
     <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
@@ -59,15 +59,15 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Box>
 
   <Box>
-    [color=#999999][italic]An example of a small gas holding tank[italic][/color]
+    [color=#999999][italic]Exemple d'un petit réservoir de stockage de gaz[italic][/color]
   </Box>
 
-  Various atmos processes insert and remove gasses from the gas storage tanks.
-  For example:
-  - The gas miner provides fresh gasses to the gas storage tanks, if there is room.
-  - The recyclernet injects reclaimed gasses into the gas storage tanks for reuse.
-  - Setups like the distronet and burn chamber remove gasses from the gas storage tanks.
+  Divers processus atmosphériques insèrent et retirent des gaz des réservoirs de stockage.
+  Par exemple :
+  - L'extracteur de gaz fournit des gaz frais aux réservoirs de stockage, s'il y a de la place.
+  - Le réseau de recyclage injecte des gaz récupérés dans les réservoirs de stockage pour réutilisation.
+  - Des installations comme le réseau de distribution et la chambre de combustion retirent des gaz des réservoirs de stockage.
 
-  Gas storage tanks are designed to be able to be measured using a [textlink="Gas Analyzer" link="AtmosTools"].
-  Because the outflow vent is a [textlink="passive vent" link="PassiveVent"], you can use a [textlink="gas analyzer" link="AtmosTools"] to measure the gas content of the [textlink="pump's" link="Pumps"] input, which is drawing from the gas storage tank.
+  Les réservoirs de stockage de gaz sont conçus pour pouvoir être mesurés à l'aide d'un [textlink="analyseur de gaz" link="AtmosTools"].
+  Comme l'évent de sortie est un [textlink="évent passif" link="PassiveVent"], vous pouvez utiliser un [textlink="analyseur de gaz" link="AtmosTools"] pour mesurer la teneur en gaz de l'entrée de la [textlink="pompe" link="Pumps"], qui aspire depuis le réservoir de stockage.
 </Document>

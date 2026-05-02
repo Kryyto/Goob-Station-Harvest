@@ -7,7 +7,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-firelock-component-is-holding-pressure-message = A gush of air blows in your face... Maybe you should reconsider.
-firelock-component-is-holding-fire-message = A gush of warm air blows in your face... Maybe you should reconsider.
-firelock-component-examine-pressure-warning = The [color=cyan]extreme pressure[/color] differential warning is active.
-firelock-component-examine-temperature-warning = The [color=red]extreme temperature[/color] warning is active.
+firelock-component-is-holding-pressure-message = Un souffle d'air vous souffle au visage... Peut-être devriez-vous reconsidérer.
+firelock-component-is-holding-fire-message = Un souffle d'air chaud vous souffle au visage... Peut-être devriez-vous reconsidérer.
+firelock-component-examine-pressure-warning = L'avertissement de différentiel de [color=cyan]pression extrême[/color] est actif.
+firelock-component-examine-temperature-warning = L'avertissement de [color=red]température extrême[/color] est actif.

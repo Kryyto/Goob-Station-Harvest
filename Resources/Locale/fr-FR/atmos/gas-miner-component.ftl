@@ -4,14 +4,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-gas-miner-mines-text = It mines [color=lightgray]{$gas}[/color] when active.
+gas-miner-mines-text = Il extrait [color=lightgray]{$gas}[/color] lorsqu'il est actif.
 
-gas-miner-amount-text = It mines {$moles} moles of gas a second when active.
-gas-miner-temperature-text = Mined gas temp: {$tempK}K ({$tempC}°C).
+gas-miner-amount-text = Il extrait {$moles} moles de gaz par seconde lorsqu'il est actif.
+gas-miner-temperature-text = Température du gaz extrait : {$tempK}K ({$tempC}°C).
 
-gas-miner-moles-cutoff-text = Surrounding moles cutoff: {$moles} moles.
-gas-miner-pressure-cutoff-text = Surrounding pressure cutoff: {$pressure} kPA.
+gas-miner-moles-cutoff-text = Seuil de moles environnantes : {$moles} moles.
+gas-miner-pressure-cutoff-text = Seuil de pression environnante : {$pressure} kPA.
 
-gas-miner-state-working-text = The miner is [color=green]active[/color] and mining gas.
-gas-miner-state-idle-text = The miner is [color=yellow]idle[/color] and not mining gas.
-gas-miner-state-disabled-text = The miner is [color=red]disabled[/color] and not mining gas.
+gas-miner-state-working-text = L'extracteur est [color=green]actif[/color] et extrait du gaz.
+gas-miner-state-idle-text = L'extracteur est [color=yellow]en veille[/color] et n'extrait pas de gaz.
+gas-miner-state-disabled-text = L'extracteur est [color=red]désactivé[/color] et n'extrait pas de gaz.

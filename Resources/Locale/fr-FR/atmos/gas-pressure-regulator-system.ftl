@@ -1,7 +1,7 @@
-﻿# Examine Text
-gas-pressure-regulator-system-examined = The valve is [color={$statusColor}]{$open ->
-[true] open
-*[false] closed
+# Texte d'examen
+gas-pressure-regulator-system-examined = La vanne est [color={$statusColor}]{$open ->
+[true] ouverte
+*[false] fermée
 }[/color].
-gas-pressure-regulator-examined-threshold-pressure = The threshold pressure is set at [color=lightblue]{$threshold} kPa[/color].
-gas-pressure-regulator-examined-flow-rate = The flow rate meter indicates [color=lightblue]{$flowRate} L/s[/color].
+gas-pressure-regulator-examined-threshold-pressure = La pression de seuil est réglée à [color=lightblue]{$threshold} kPa[/color].
+gas-pressure-regulator-examined-flow-rate = Le débitmètre indique [color=lightblue]{$flowRate} L/s[/color].

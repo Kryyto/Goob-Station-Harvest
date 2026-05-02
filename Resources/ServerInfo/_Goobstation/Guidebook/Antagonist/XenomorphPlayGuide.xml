@@ -1,95 +1,95 @@
 <Document>
-## Playing as a Xenomorph
+## Jouer en tant que Xénomorphe
 
 <Box>
   <GuideEntityEmbed Entity="ResinWeedNode" Caption=""/>
 </Box>
 
-  ### Initial Spawn and Survival
+  ### Apparition Initiale et Survie
 
-  When you spawn as a xenomorph, you will always begin as a Larva.
-  Larvae are extremely vulnerable, and your sole objective is to survive long enough to evolve.
-  Use your hivemind language by pressing L (or language keybind) to communicate with other xenos.
+  Lorsque vous apparaissez en tant que xénomorphe, vous commencerez toujours en tant que Larve.
+  Les Larves sont extrêmement vulnérables, et votre seul objectif est de survivre suffisamment longtemps pour évoluer.
+  Utilisez votre langage de ruche en appuyant sur L (ou le raccourci de langage) pour communiquer avec les autres xénos.
 
-  If you spawn alone, finding safety is critical.
-  You can hide under tables and crawl through vents (alt+click) to escape danger.
-  Being space-proof also means you can wait safely on the station's exterior.
-  Once you have survived long enough on plasma weeds, you can evolve into an adult caste.
+  Si vous apparaissez seul, trouver un refuge est essentiel.
+  Vous pouvez vous cacher sous des tables et ramper dans les conduits (alt+clic) pour échapper au danger.
+  Être résistant au vide spatial signifie également que vous pouvez attendre en sécurité sur l'extérieur de la station.
+  Une fois que vous avez survécu suffisamment longtemps sur les mauvaises herbes à plasma, vous pouvez évoluer en une caste adulte.
 
-  ### Resources and Abilities
+  ### Ressources et Capacités
 
-  Once you evolve, plasma becomes your primary resource.
-  You generate it over time and can spend it to plant weeds.
-  Weeds create resin floors that significantly boost your plasma regeneration, so begin planting them immediately to establish territory and accelerate your power.
-  Adult xenomorphs share several powerful abilities:
-  - Corrosive Acid: A spit that slowly melts walls, doors, and other structures.
-  Use it to break into secure areas and reshape the station.
-  - Neurotoxin Spit: A ranged attack that stuns your target.
-  Ready the ability, then click your target to fire.
+  Une fois évolué, le plasma devient votre ressource principale.
+  Vous en générez au fil du temps et pouvez en dépenser pour planter des mauvaises herbes.
+  Les mauvaises herbes créent des sols de résine qui augmentent considérablement votre régénération de plasma, alors commencez à en planter immédiatement pour établir votre territoire et accélérer votre montée en puissance.
+  Les xénomorphes adultes partagent plusieurs capacités puissantes :
+  - Acide Corrosif : Un crachat qui fait fondre lentement les murs, les portes et autres structures.
+  Utilisez-le pour pénétrer dans des zones sécurisées et remodeler la station.
+  - Crachat Neurotoxique : Une attaque à distance qui étourdit votre cible.
+  Préparez la capacité, puis cliquez sur votre cible pour tirer.
 
-  - Innate Abilities: All adults have night vision, can see humans through walls, and can pry open airlocks.
+  - Capacités Innées : Tous les adultes ont la vision nocturne, peuvent voir les humains à travers les murs, et peuvent forcer l'ouverture des sas.
 
-  ### The First Xeno: Becoming the Queen
+  ### Le Premier Xéno : Devenir la Reine
 
-  If you are the first and only xenomorph, [bold]it is absolutely essential that you evolve into a Drone.[/bold]
+  Si vous êtes le premier et unique xénomorphe, [bold]il est absolument essentiel que vous évoluiez en Drone.[/bold]
 
-  - Your entire goal is to become a Queen as quickly as possible.
-  This requires evolving from Drone to Praetorian, and then to Queen.
-  Find a secure, hidden location before you evolve, as Praetorians and Queens lose the ability to crawl through vents.
-  As the Queen, your main role is to build a nest and lay eggs.
-  - Find a Nest: Choose a defensible, out-of-the-way location with room to expand.
-  - Secure the Area: Destroy cameras and consider depressurizing the area to make it hostile for human intruders.
-  - Lay Eggs Constantly: Your plasma should be almost exclusively used for laying eggs to grow your hive.
+  - Votre objectif entier est de devenir Reine aussi rapidement que possible.
+  Cela nécessite d'évoluer de Drone en Prétorien, puis en Reine.
+  Trouvez un endroit sûr et caché avant d'évoluer, car les Prétoriens et les Reines perdent la capacité de ramper dans les conduits.
+  En tant que Reine, votre rôle principal est de construire un nid et de pondre des œufs.
+  - Trouver un Nid : Choisissez un emplacement défendable et discret avec de la place pour s'agrandir.
+  - Sécuriser la Zone : Détruisez les caméras et envisagez de dépressuriser la zone pour la rendre hostile aux intrus humains.
+  - Pondre des Œufs en Permanence : Votre plasma devrait être utilisé presque exclusivement pour pondre des œufs afin de développer votre ruche.
 
-  [bold]Click a fully grown egg to open it.[/bold]
-  Once you have facehuggers, you can begin hunting.
-  Monkeys are easy, defenseless targets.
-  For human targets, a thrown facehugger can be an instant incapacitation, but be aware that Medbay can surgically remove the larva.
-  Prioritize your own survival above all; if the Queen dies without a successor, the hive is finished.
-  In a direct fight, your tail swing is a powerful stun, but it has a long cooldown.
-  You are slow and vulnerable to ranged attackers, but deadly in melee.
+  [bold]Cliquez sur un œuf entièrement développé pour l'ouvrir.[/bold]
+  Une fois que vous avez des facehuggers, vous pouvez commencer à chasser.
+  Les singes sont des cibles faciles et sans défense.
+  Pour les cibles humaines, un facehugger lancé peut être une incapacitation instantanée, mais sachez que la Médecine peut retirer chirurgicalement la larve.
+  Priorisez votre propre survie avant tout ; si la Reine meurt sans successeur, la ruche est perdue.
+  En combat direct, votre coup de queue est un étourdissement puissant, mais il a un long temps de recharge.
+  Vous êtes lente et vulnérable aux attaquants à distance, mais mortelle en corps à corps.
 
-  ### The Hunter: Aggressive Offense
+  ### Le Chasseur : Offensive Agressive
 
-  If a hive already has a Queen, the Hunter is an excellent choice for an offensive role.
-  Your high speed and ability to ventcrawl make you perfect for navigating the station.
-  The Hunter's signature ability is the pounce, a long-range leap that heavily stuns a target on impact.
-  Be cautious of shields, which will stun you instead.
-  Your main tactic is to carry facehuggers from the nest, pounce on an isolated crewmember, apply the facehugger, and drag them away.
-  Remember to sabotage the station by destroying machines and ripping open airlocks as you move.
+  Si une ruche possède déjà une Reine, le Chasseur est un excellent choix pour un rôle offensif.
+  Votre grande vitesse et votre capacité à ramper dans les conduits font de vous la classe parfaite pour naviguer dans la station.
+  La capacité signature du Chasseur est le bond, un saut à longue portée qui étourdit lourdement une cible à l'impact.
+  Méfiez-vous des boucliers, qui vous étourdiront à la place.
+  Votre tactique principale est de transporter des facehuggers depuis le nid, bondir sur un membre d'équipage isolé, appliquer le facehugger, et le traîner loin.
+  N'oubliez pas de saboter la station en détruisant des machines et en forçant des sas à s'ouvrir pendant vos déplacements.
 
-  ### The Sentinel: Defensive Guardian
+  ### La Sentinelle : Gardienne Défensive
 
-  The Sentinel is the hive's dedicated defender.
-  Your primary role is to guard the nest, protect the Queen, and watch over captured hosts.
-  While slower than a Hunter, you are tougher and have larger plasma reserves that recharge faster, allowing for more frequent use of Neurotoxin Spit and Corrosive Acid.
-  The Sentinel's key ability is partial invisibility.
-  By staying still, you can blend into the resin-covered floors of your nest, making you perfect for ambushing intruders.
+  La Sentinelle est la défenseuse dédiée de la ruche.
+  Votre rôle principal est de garder le nid, protéger la Reine, et surveiller les hôtes capturés.
+  Bien que plus lente qu'un Chasseur, vous êtes plus robuste et possédez de plus grandes réserves de plasma qui se rechargent plus vite, permettant une utilisation plus fréquente du Crachat Neurotoxique et de l'Acide Corrosif.
+  La capacité clé de la Sentinelle est l'invisibilité partielle.
+  En restant immobile, vous pouvez vous fondre dans les sols recouverts de résine de votre nid, vous rendant parfaite pour prendre en embuscade les intrus.
 
-  ### The Drone: Hive Architect
+  ### Le Drone : Architecte de la Ruche
 
-  With a Queen already established, the Drone functions as the hive's architect.
-  You can construct several key structures to fortify your nest:
+  Avec une Reine déjà établie, le Drone fonctionne comme l'architecte de la ruche.
+  Vous pouvez construire plusieurs structures clés pour fortifier votre nid :
 
 <Box>
 <GuideEntityEmbed Entity="WallResin" Caption=""/>
 </Box>
 
-  - Resin Walls: Standard walls to block paths and create chokepoints.
+  - Murs de Résine : Des murs standard pour bloquer les passages et créer des points d'étranglement.
 
 <Box>
 <GuideEntityEmbed Entity="ResinMembrane" Caption=""/>
 </Box>
 
-  - Resin Membranes: Durable windows that allow sight in and out of the nest.
+  - Membranes de Résine : Des fenêtres durables permettant de voir à l'intérieur et à l'extérieur du nid.
 
 <Box>
 <GuideEntityEmbed Entity="ResinNest" Caption=""/>
 </Box>
 
-  - Resin Nests: Beds used to secure captured hosts while their larva gestates.
-  While not a primary combatant, you must be ready to defend the Queen.
+  - Nids de Résine : Des lits utilisés pour sécuriser les hôtes capturés pendant la gestation de leur larve.
+  Bien que n'étant pas un combattant principal, vous devez être prêt à défendre la Reine.
 
-  Crucially, if the Queen dies, a Drone must evolve to replace her.
-  If you are the last surviving Drone, your priority is to escape, find a safe place, and begin the evolution process to save the hive.
+  Surtout, si la Reine meurt, un Drone doit évoluer pour la remplacer.
+  Si vous êtes le dernier Drone survivant, votre priorité est de vous échapper, de trouver un endroit sûr, et de commencer le processus d'évolution pour sauver la ruche.
 </Document>

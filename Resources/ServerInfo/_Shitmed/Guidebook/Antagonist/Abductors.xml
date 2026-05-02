@@ -8,26 +8,26 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Abductors
+  # Ravisseurs
 
   <Box>
     <GuideEntityEmbed Entity="MobLoneAbductor"/>
     <GuideEntityEmbed Entity="MobAbductorAgent"/>
     <GuideEntityEmbed Entity="MobAbductorScientist"/>
   </Box>
-  Abductors are an alien society set on cataloging and experimenting on the sectors personnel.
-  Its important to note: Abductors, unlike most antagonists are [color=red]NOT set on killing people[/color] and are rather purely interested in completing their experiments.
+  Les ravisseurs sont une société extraterrestre dont l'objectif est de cataloguer et d'expérimenter sur le personnel du secteur.
+  Il est important de noter que les ravisseurs, contrairement à la plupart des antagonistes, [color=red]N'ont PAS pour but de tuer les gens[/color] et s'intéressent uniquement à la réalisation de leurs expériences.
 
-  Abductors do not possess the ability to speak and therefore communicate through telepathy.
+  Les ravisseurs ne possèdent pas la capacité de parler et communiquent donc par télépathie.
 
-  ##Abductors
-  There are three types of abductors; lone abductors, scientists, and agents.
-  - [color=#a4885c]Lone abductors[/color] are a solo abductor, and will not have support or allies.
-  - [color=#a4885c]Scientists[/color] are group abductors, and need to support the agent by toggling their armor and experimenting on crew.
-  - [color=#a4885c]Agents[/color] are group abductors, and work to kidnap crew for the scientist to experiment on.
-  - Any abductor can fill anothers role in the event of an unfortunate death.
+  ##Ravisseurs
+  Il existe trois types de ravisseurs : les ravisseurs solitaires, les scientifiques et les agents.
+  - Les [color=#a4885c]ravisseurs solitaires[/color] opèrent seuls et ne bénéficient d'aucun soutien ni allié.
+  - Les [color=#a4885c]scientifiques[/color] sont des ravisseurs de groupe qui doivent soutenir l'agent en activant leur armure et en expérimentant sur l'équipage.
+  - Les [color=#a4885c]agents[/color] sont des ravisseurs de groupe qui travaillent à kidnapper l'équipage pour que le scientifique puisse expérimenter sur eux.
+  - N'importe quel ravisseur peut remplir le rôle d'un autre en cas de mort malheureuse.
 
-  ##Abduction
+  ##Enlèvement
 
   <Box>
     <GuideEntityEmbed Entity="Wonderprod"/>
@@ -37,35 +37,35 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="AbductorGizmo"/>
   </Box>
 
-  Abductors begin on their ship somewhere near the station. Using the [color=#a149bf]"Human Observation Console"[/color] you can seek out victims who are alone and [color=lightblue]warp[/color] near them to begin abduction.
+  Les ravisseurs commencent sur leur vaisseau quelque part près de la station. En utilisant la [color=#a149bf]« Console d'observation humaine »[/color], vous pouvez repérer des victimes isolées et vous [color=lightblue]téléporter[/color] près d'elles pour commencer l'enlèvement.
 
-  The wonderprod is the primary tool of an Abductor. It has four modes you will use for abduction:
-  - [color=yellow]{Stun}[/color] Stuns the victim for roughly 5 seconds.
-  - [color=pink]{Restrain}[/color] binds the victims hands in weak cables.
-  - [color=blue]{Sleep}[/color] Induces a sleep-like state in the victim, and inflicts ion damage on anything that cannot be slept.
+  La baguette prodigieuse est l'outil principal d'un ravisseur. Elle possède quatre modes utiles pour l'enlèvement :
+  - [color=yellow]{Étourdissement}[/color] Étourdit la victime pendant environ 5 secondes.
+  - [color=pink]{Entrave}[/color] Lie les mains de la victime avec de faibles câbles.
+  - [color=blue]{Sommeil}[/color] Plonge la victime dans un état de sommeil et inflige des dégâts ioniques à tout ce qui ne peut pas être endormi.
 
-  Once a target is immobilized you can use the [italic]gizmo[/italic] to implant them with a nano tracker, return to your ship using the [color=lightblue]return action[/color], then use the gizmo on your [color=#a149bf]Abductor Console[/color].
+  Une fois la cible immobilisée, vous pouvez utiliser le [italic]gadget[/italic] pour lui implanter un nano-traceur, retourner sur votre vaisseau grâce à [color=lightblue]l'action de retour[/color], puis utiliser le gadget sur votre [color=#a149bf]Console de ravisseur[/color].
 
-  In a bad situation you can use the alien pistol to get out of a pinch, it is completely armor piercing but has low capacity. [color=red] You are not here to kill, use sparingly.[/color]
+  En cas de mauvaise situation, vous pouvez utiliser le pistolet alien pour vous en sortir ; il est entièrement perforant mais a une faible capacité. [color=red] Vous n'êtes pas ici pour tuer, utilisez-le avec parcimonie.[/color]
 
-  ##Experimentation
+  ##Expérimentation
 
   <Box>
     <GuideEntityEmbed Entity="AbductorConsole"/>
     <GuideEntityEmbed Entity="AbductorExperimentator"/>
   </Box>
 
-  Once you have linked the most recent nano tracker to the console, select [bold]{ATTRACT}[/bold] to warp your victim to your ship.
+  Une fois le nano-traceur le plus récent lié à la console, sélectionnez [bold]{ATTIRER}[/bold] pour téléporter votre victime sur votre vaisseau.
 
-  Now that you have your victim aboard, its recommended you:
-  - Buckle them to your surgical table.
-  - Change out their cuffs for a higher grade of handcuffs provided on the ship.
-  - Remove any of their belongings that could damage you or the secrecy of the experiment.
-  - Use your vast surgical knowledge to replace their heart with a gland. You don't need to remove their clothes to do surgery, unlike normal surgeons.
+  Maintenant que vous avez votre victime à bord, il est recommandé de :
+  - L'attacher à votre table chirurgicale.
+  - Remplacer ses menottes par des menottes de meilleure qualité fournies sur le vaisseau.
+  - Retirer tous ses effets personnels susceptibles de vous nuire ou de compromettre le secret de l'expérience.
+  - Utiliser vos vastes connaissances chirurgicales pour remplacer son cœur par une glande. Vous n'avez pas besoin de retirer ses vêtements pour effectuer une chirurgie, contrairement aux chirurgiens ordinaires.
 
-  Finally, drag the victim whom you have completed your experiment on into the [color=#a149bf]Experimentator[/color] to confirm the results of the experiment on the [color=#a149bf]Abductor Console[/color] and send them back where you found them.
+  Enfin, faites glisser la victime sur laquelle vous avez terminé votre expérience dans [color=#a149bf]l'Expérimentateur[/color] pour confirmer les résultats de l'expérience sur la [color=#a149bf]Console de ravisseur[/color] et renvoyez-la là où vous l'avez trouvée.
 
-  ## Abductor Tools
+  ## Outils de ravisseur
 
   <Box>
     <GuideEntityEmbed Entity="Silencer"/>
@@ -73,12 +73,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="CrowbarAbductor"/>
   </Box>
 
-  Abductors have access to more advanced tools than normal surgeons or engineers. Their surgical tools are faster than advanced surgical tools, and from their normal tools, the multitool's alternative mode is able to be used to hijack doors.
+  Les ravisseurs ont accès à des outils plus avancés que les chirurgiens ou ingénieurs ordinaires. Leurs outils chirurgicaux sont plus rapides que les outils chirurgicaux avancés, et parmi leurs outils courants, le mode alternatif du multioutil permet de pirater des portes.
 
-  You also have access to a silencer, which prevents the crew from speaking when they are hit with it.
+  Vous avez également accès à un silencieux, qui empêche l'équipage de parler lorsqu'il est touché par celui-ci.
 
-  ##Getting rid of an Abductor
-  Like [textlink="Changelings" link="Changelings"], Abductors are not protected by [textlink="space law" link="SpaceLaw"] and are able to be executed freely.
+  ##Se débarrasser d'un ravisseur
+  Comme les [textlink="Changélings" link="Changelings"], les ravisseurs ne sont pas protégés par la [textlink="loi spatiale" link="SpaceLaw"] et peuvent être exécutés librement.
 
-  Also, an abductor's ship is a physical object in the world, anyone with access to a space-faring ship such as [textlink="salvage" link="Salvage"] can bump into them in space and dismantle their ship.
+  De plus, le vaisseau d'un ravisseur est un objet physique dans le monde ; quiconque ayant accès à un vaisseau spatial, comme les [textlink="récupérateurs" link="Salvage"], peut le croiser dans l'espace et démonter leur vaisseau.
 </Document>

@@ -7,7 +7,7 @@ Les maladies viennent initialement d'une source spécifique. Le plus souvent, c'
 
 <GuideEntityEmbed Entity="MobMousePlague" Caption="souris de peste"/>
 
-Si vous êtes mordu par une souris de peste, il y a une chance significative que vous soyez infecté par une maladie. La maladie est aléatoire et peut être n'importe quoi, mais sera généralement faible. Alternativement, quelqu'un peut tousser près de vous, et vous serez infecté si vous ne portez pas d'équipement de protection.
+Si vous êtes mordu par une souris de peste, il y a une chance importante que vous soyez infecté par une maladie. La maladie est aléatoire et peut être n'importe quoi, mais sera généralement faible. Alternativement, quelqu'un peut tousser près de vous, et vous serez infecté si vous ne portez pas d'équipement de protection.
 
 Les infections peuvent également affecter les singes et d'autres souris, mais les maladies n'ont aucun effet sur les souris, donc elles agissent comme des vecteurs de propagation de maladie. Cependant, les souris non peste ont une plus petite chance d'infecter à la morsure.
 

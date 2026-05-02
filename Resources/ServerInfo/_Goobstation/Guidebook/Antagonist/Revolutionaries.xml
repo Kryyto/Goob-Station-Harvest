@@ -12,60 +12,60 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Revolutionaries
+  # Révolutionnaires
 
   <Box>
-    [color=#999999][italic]"Viva la revolución!!"[/italic][/color]
+    [color=#999999][italic]« Viva la revolución !! »[/italic][/color]
   </Box>
   <Box>
     <GuideEntityEmbed Entity="PosterContrabandRevolt" Caption=""/>
   </Box>
 
-  Revolutionaries are conversion antagonists sponsored by the [color=#ff0000]Syndicate[/color] who are tasked with taking control of the station. They have no fancy gimmicks or cheap tricks, they only have a cause and strength in numbers.
+  Les Révolutionnaires sont des antagonistes de conversion sponsorisés par le [color=#ff0000]Syndicat[/color], chargés de prendre le contrôle de la station. Ils n'ont pas de gadgets sophistiqués ni de ruses faciles — seulement une cause et la force du nombre.
 
-  ## Objectives
-  You must cuff, kill, convert, or exile all of the [textlink="Command staff" link="Command"] on station in no particular order.
+  ## Objectifs
+  Vous devez menotter, tuer, convertir ou exiler tous les [textlink="membres du Commandement" link="Command"] présents sur la station, dans n'importe quel ordre.
 
-  Your objective is not to destroy the station, but [italic]take it over[/italic], so try to minimize damage where possible.
+  Votre objectif n'est pas de détruire la station, mais de [italic]la prendre[/italic] — essayez donc de minimiser les dégâts autant que possible.
 
-  [bold]The revolution will fail[/bold] if all of the [bold][color=#5e9cff]Head Revolutionaries[/color][/bold] die or all their hypnotic abilities will be disabled with MindShield implant, and all [color=red]Revolutionaries[/color] will de-convert if this happens.
+  [bold]La révolution échouera[/bold] si tous les [bold][color=#5e9cff]Chefs révolutionnaires[/color][/bold] meurent ou si toutes leurs capacités hypnotiques sont désactivées par un implant ParaEsprit ; dans ce cas, tous les [color=red]révolutionnaires[/color] se déconvertiront.
 
-  ## Headrevs & Conversion
-  [bold][color=#5e9cff]Head Revolutionaries[/color][/bold] are chosen at the start of the shift and begin with a [color=#a4885c]Revolutionary Manifesto[/color] and a [color=cyan]syndicate encryption key[/color].
+  ## Chefs Révolutionnaires et Conversion
+  Les [bold][color=#5e9cff]Chefs révolutionnaires[/color][/bold] sont désignés au début du quart et commencent avec un [color=#a4885c]Manifeste révolutionnaire[/color] et une [color=cyan]clé de chiffrement du Syndicat[/color].
 
   <Box>
     <GuideEntityEmbed Entity="RevolutionaryManifesto"/>
     <GuideEntityEmbed Entity="EncryptionKeySyndie"/>
   </Box>
 
-  You can convert crew members to your side by taking any [color=#a4885c]Revolutionary Manifesto[/color] and using it on someone.
-  Beware! A [color=#a4885c]MindShield Implant[/color] will prevent the implanted person from being converted into a revolutionary. Assume all of [color=#a4885c]Security[/color] and [color=#a4885c]Command[/color] are implanted already. These will:
-  - Prevent the implanted person from being converted into a [color=red]Revolutionary[/color]
-  - De-convert Revolutionaries, and will make them no longer loyal to your cause
-  - Visibly change appearance upon being implanted into a [bold][color=#5e9cff]Head Revolutionary[/color][/bold], giving away his cover and disabling your convert ability
+  Vous pouvez convertir des membres d'équipage à votre cause en prenant n'importe quel [color=#a4885c]Manifeste révolutionnaire[/color] et en l'utilisant sur quelqu'un.
+  Attention ! Un [color=#a4885c]Implant ParaEsprit[/color] empêchera la personne implantée d'être convertie en révolutionnaire. Supposez que tous les membres de la [color=#a4885c]Sécurité[/color] et du [color=#a4885c]Commandement[/color] sont déjà implantés. Ces implants vont :
+  - Empêcher la personne implantée d'être convertie en [color=red]révolutionnaire[/color]
+  - Déconvertir les Révolutionnaires, les rendant non plus loyaux à votre cause
+  - Changer visiblement l'apparence d'un [bold][color=#5e9cff]Chef révolutionnaire[/color][/bold] lors de l'implantation, trahissant sa couverture et désactivant votre capacité de conversion
 
-  Assume all of [color=#cb0000]Security[/color] and [color=#1b67a5]Command[/color] are implanted with mindshields already.
+  Supposez que tous les membres de la [color=#cb0000]Sécurité[/color] et du [color=#1b67a5]Commandement[/color] sont déjà implantés avec des implants ParaEsprit.
 
   <Box>
     <GuideEntityEmbed Entity="MindShieldImplanter"/>
   </Box>
 
-  ## Fight against MindShield
+  ## Lutter contre les ImplantsParaEsprit
 
-  MindShield implant can be ejected from your target by using empty [color = cyan]implanter[/color] that can be made on [color = yellow]medical techfab[/color] that can be found in medical department.
+  L'implant ParaEsprit peut être éjecté de votre cible en utilisant un [color=cyan]implanteur[/color] vide, qui peut être fabriqué sur une [color=yellow]techfab médicale[/color] disponible dans le département médical.
 
-  When implant ejected your can convert your target, including command and security.
+  Une fois l'implant éjecté, vous pouvez convertir votre cible, y compris les membres du commandement et de la sécurité.
 
-  If your convert ability was disabled by [color=cyan]mindshield implant[/color] you just need to remove mindshield implant to turn on your ability back.
+  Si votre capacité de conversion a été désactivée par un [color=cyan]implant ParaEsprit[/color], il vous suffit de retirer l'implant ParaEsprit pour réactiver votre capacité.
 
   <Box>
     <GuideEntityEmbed Entity="Implanter"/>
     <GuideEntityEmbed Entity="MedicalTechFab"/>
   </Box>
 
-  ## Revolutionary
-  A [bold][color=red]Revolutionary[/color][/bold] is a crew member that has been converted by a [bold][color=#5e9cff]Head Revolutionary[/color][/bold].
+  ## Révolutionnaire
+  Un [bold][color=red]Révolutionnaire[/color][/bold] est un membre d'équipage converti par un [bold][color=#5e9cff]Chef Révolutionnaire[/color][/bold].
 
-  [bold][color=red]Revolutionaries[/color] can't convert people themselves,[/bold] but they're more than capable of doing dirty work and carrying out orders.
+  [bold]Les [color=red]Révolutionnaires[/color] ne peuvent pas convertir des gens eux-mêmes,[/bold] mais ils sont plus que capables d'accomplir le sale boulot et d'exécuter les ordres.
 
 </Document>

@@ -9,8 +9,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Contrats de Fret
-  Bien que [textlink="Cargo" link="Cargo"] puisse gagner des [color=cyan]spesos[color] en vendant à peu près n'importe quoi, plus de spesos peuvent être gagnés en accomplissant des [color=cyan]contrats[/color] trouvés via l'Ordinateur de Contrats de Fret.
+  # Contrats de Cargo
+  Bien que [textlink="Cargo" link="Cargo"] puisse gagner des [color=cyan]spesos[color] en vendant à peu près n'importe quoi, plus de spesos peuvent être gagnés en accomplissant des [color=cyan]contrats[/color] trouvés via l'Ordinateur de Contrats de Cargo.
 
   ## Démarrer les Contrats
 
@@ -19,11 +19,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="PaperCargoBountyManifest"/>
   </Box>
 
-  Pour commencer un contrat, ouvrez l'écran des contrats en interagissant avec l'[color=cyan]Ordinateur de Contrats de Fret[/color]. L'Ordinateur de Contrats de Fret maintient une liste de tous les contrats actuels et vous permet soit d'imprimer une étiquette, soit de passer le contrat.
+  Pour commencer un contrat, ouvrez l'écran des contrats en interagissant avec l'[color=cyan]Ordinateur de Contrats de Cargo[/color]. L'Ordinateur de Contrats de Cargo maintient une liste de tous les contrats actuels et vous permet soit d'imprimer une étiquette, soit de passer le contrat.
 
-  - Imprimer l'étiquette vous donne un [color=cyan]Manifeste de Contrat[/color] listant les marchandises à acquérir. Vous pouvez imprimer un nombre illimité de manifestes de contrat, alors assurez-vous de ne pas refaire le même travail qu'un autre Technicien de Fret.
+  - Imprimer l'étiquette vous donne un [color=cyan]Manifeste de Contrat[/color] listant les marchandises à acquérir. Vous pouvez imprimer un nombre illimité de manifestes de contrat, alors assurez-vous de ne pas refaire le même travail qu'un autre Technicien de Cargo.
 
-  - Passer un contrat remplace ce contrat par un nouveau, car il ne peut y avoir que six contrats actifs à tout moment. Passer un contrat a un temps de recharge de 15 minutes et annule ce contrat, ce qui peut énerver d'autres Techniciens de Fret qui y travaillent.
+  - Passer un contrat remplace ce contrat par un nouveau, car il ne peut y avoir que six contrats actifs à tout moment. Passer un contrat a un temps de recharge de 15 minutes et annule ce contrat, ce qui peut énerver d'autres Techniciens de Cargo qui y travaillent.
 
   ## Accomplir les Contrats
 
@@ -35,7 +35,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Avec le [color=cyan]Manifeste de Contrat[/color], c'est maintenant à vous de collecter les marchandises requises, mais la plupart des départements vous donneront ce dont vous avez besoin si vous le demandez avec un Manifeste de Contrat.
 
-  Une fois que vous avez collecté les marchandises, retournez à la baie de fret et mettez les marchandises dans une [color=cyan]Caisse[/color] vide. Une fois que tout est dans la caisse, fermez-la, puis appliquez le Manifeste de Contrat dessus.
+  Une fois que vous avez collecté les marchandises, retournez à la baie de cargo et mettez les marchandises dans une [color=cyan]Caisse[/color] vide. Une fois que tout est dans la caisse, fermez-la, puis appliquez le Manifeste de Contrat dessus.
 
   Pour vérifier l'achèvement d'un contrat, utilisez l'[color=cyan]Outil d'Évaluation[/color] dessus. Il devrait afficher une confirmation que le contrat a été accompli.
 

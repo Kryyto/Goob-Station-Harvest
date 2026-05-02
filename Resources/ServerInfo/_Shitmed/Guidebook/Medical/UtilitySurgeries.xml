@@ -6,26 +6,26 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Utility Surgeries
+# Chirurgies utilitaires
 
-## Tend Wounds
+## Soigner les plaies
 
-Tend Wounds is a surgery that allows you to heal brute or burn damage from a patient without the need for topicals.
-To begin you need to open an incision on the patient's body, and then apply a Hemostat to it until the part is fully healed.
-At which point then you can close the incision with a Cautery.
+Soigner les plaies est une chirurgie qui vous permet de guérir les dommages contondants ou par brûlure d'un patient sans avoir recours à des produits topiques.
+Pour commencer, vous devez ouvrir une incision sur le corps du patient, puis appliquer un hémostat jusqu'à ce que la partie soit entièrement guérie.
+Vous pouvez ensuite fermer l'incision avec un cautère.
 
 <Box>
 <GuideEntityEmbed Entity="Scalpel" Caption="scalpel"/>
-<GuideEntityEmbed Entity="Hemostat" Caption="hemostat"/>
-<GuideEntityEmbed Entity="Cautery" Caption="cautery"/>
+<GuideEntityEmbed Entity="Hemostat" Caption="hémostat"/>
+<GuideEntityEmbed Entity="Cautery" Caption="cautère"/>
 </Box>
 
-This surgery performs best the more damaged your patient is, especially if they are still alive. And allows you to bring otherwise unrecoverable
-patients, such as the dumb Technical Assistant that just walked into the burn chamber.
+Cette chirurgie est d'autant plus efficace que votre patient est gravement blessé, surtout s'il est encore en vie. Elle vous permet de sauver des patients autrement irrécupérables,
+comme le stupide assistant technique qui vient de marcher dans la chambre de combustion.
 
-## Cavity Implant
+## Implant en cavité
 
-This surgery allows you to implant any Tiny or Small item into a patient's torso. To begin you need to open an incision, and then open their ribcage.
-Your patient cannot access the implanted item normally, though there may be uses for this, such as hiding the Nuclear Authentication Disk.
+Cette chirurgie vous permet d'implanter n'importe quel objet de taille Minuscule ou Petite dans le torse d'un patient. Pour commencer, vous devez ouvrir une incision, puis ouvrir sa cage thoracique.
+Votre patient ne peut pas accéder normalement à l'objet implanté, bien que cela puisse avoir des utilités, comme cacher le Disque d'authentification nucléaire.
 
 </Document>

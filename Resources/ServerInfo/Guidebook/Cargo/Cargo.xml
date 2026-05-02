@@ -12,27 +12,27 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Fret
+  # Cargo
 
-  Le département de l'Approvisionnement, également connu sous le nom de [color=cyan]Fret[/color], fournit à la station les ressources nécessaires, telles que le carburant et les matières premières, ainsi que les ressources de confort, telles que les billets de loterie et les peluches.
+  Le département de l'Approvisionnement, également connu sous le nom de [color=cyan]Cargo[/color], fournit à la station les ressources nécessaires, telles que le carburant et les matières premières, ainsi que les ressources de confort, telles que les billets de loterie et les peluches.
 
-  Ils génèrent les [color=cyan]spesos[/color] (la monnaie de la station) pour cela par de nombreuses méthodes, telles que la prise de contrats, la vente d'articles divers et le sauvetage, leur permettant d'acheter une grande variété d'équipements hors station pour les besoins de tout membre d'équipage. C'est le travail du Fret de répondre aux besoins du reste de la station.
+  Ils génèrent les [color=cyan]spesos[/color] (la monnaie de la station) pour cela par de nombreuses méthodes, telles que la prise de contrats, la vente d'articles divers et le sauvetage, leur permettant d'acheter une grande variété d'équipements hors station pour les besoins de tout membre d'équipage. C'est le travail du Cargo de répondre aux besoins du reste de la station.
 
   ## Personnel
 
-  Le Fret est composé de [color=cyan]Techniciens de Fret[/color] et de [color=cyan]Spécialistes du Sauvetage[/color] et est dirigé par le [color=cyan]Quartier-Maître[/color].
+  Le Cargo est composé de [color=cyan]Techniciens de Cargo[/color] et de [color=cyan]Spécialistes du Sauvetage[/color] et est dirigé par le [color=cyan]Quartier-Maître[/color].
 
   <Box>
-    <GuideEntityEmbed Entity="ToyFigurineCargoTech" Caption="Tech Fret"/>
+    <GuideEntityEmbed Entity="ToyFigurineCargoTech" Caption="Tech Cargo"/>
     <GuideEntityEmbed Entity="ToyFigurineSalvage" Caption="Sauvetage"/>
     <GuideEntityEmbed Entity="ToyFigurineQuartermaster" Caption="QM"/>
   </Box>
 
   ## Gagner de l'Argent
 
-  La principale difficulté de tout département de Fret est de ne pas avoir assez d'argent.
+  La principale difficulté de tout département de Cargo est de ne pas avoir assez d'argent.
 
-  Le Fret gagne son argent en vendant des choses à la [color=cyan]Station de Commerce[/color]. Presque tout sur la station a une valeur économique que vous pouvez vendre, comme on peut le voir via l'[color=cyan]outil d'évaluation[/color]. Cette valeur augmente ensuite davantage lorsque vous la vendez dans le cadre d'un [textlink="contrat" link="CargoBounties"].
+  Le Cargo gagne son argent en vendant des choses à la [color=cyan]Station de Commerce[/color]. Presque tout sur la station a une valeur économique que vous pouvez vendre, comme on peut le voir via l'[color=cyan]outil d'évaluation[/color]. Cette valeur augmente ensuite davantage lorsque vous la vendez dans le cadre d'un [textlink="contrat" link="CargoBounties"].
 
   <Box>
     <GuideEntityEmbed Entity="AppraisalTool"/>
@@ -40,9 +40,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="CrateGenericSteel"/>
   </Box>
 
-  Après avoir trouvé quelque chose de précieux, apportez-le à la [color=cyan]Baie de Fret[/color]. S'il tient dans une [color=cyan]Caisse[/color], trouvez une caisse vide et mettez les articles dedans.
+  Après avoir trouvé quelque chose de précieux, apportez-le à la [color=cyan]Baie de Cargo[/color]. S'il tient dans une [color=cyan]Caisse[/color], trouvez une caisse vide et mettez les articles dedans.
 
-  Si la [color=cyan]Navette de Fret[/color] est absente, vous pouvez mettre tous les articles que vous voulez vendre sur les [color=cyan]Palettes de Fret[/color]. Une fois que la navette est amarrée à la station, vous chargez les caisses et tout le reste à vendre dessus.
+  Si la [color=cyan]Navette de Cargo[/color] est absente, vous pouvez mettre tous les articles que vous voulez vendre sur les [color=cyan]Palettes de Cargo[/color]. Une fois que la navette est amarrée à la station, vous chargez les caisses et tout le reste à vendre dessus.
 
   <Box>
     <GuideEntityEmbed Entity="ComputerPalletConsole"/>
@@ -50,9 +50,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="ComputerCargoOrders"/>
   </Box>
 
-  Une fois la navette chargée, pilotez-la vers la Station de Commerce. Là, déplacez les articles vendables sur les [color=cyan]Palettes de Vente de Fret[/color] vertes, puis allez à l'[color=cyan]Ordinateur de Vente de Fret[/color] et cliquez sur [italic]"Vendre"[/italic].
+  Une fois la navette chargée, pilotez-la vers la Station de Commerce. Là, déplacez les articles vendables sur les [color=cyan]Palettes de Vente de Cargo[/color] vertes, puis allez à l'[color=cyan]Ordinateur de Vente de Cargo[/color] et cliquez sur [italic]"Vendre"[/italic].
 
-  Maintenant, vous pouvez prendre ces spesos et les ramener à la station et les déposer dans l'[color=cyan]Ordinateur de Demandes de Fret[/color].
+  Maintenant, vous pouvez prendre ces spesos et les ramener à la station et les déposer dans l'[color=cyan]Ordinateur de Demandes de Cargo[/color].
 
   Vous pouvez également gagner encore plus d'argent en accomplissant des [textlink="contrats" link="CargoBounties"] ou en vendant des articles précieux du [textlink="sauvetage" link="Salvage"].
 
@@ -62,13 +62,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="ComputerCargoOrders"/>
   </Box>
 
-  Chaque commande commence à un [color=cyan]Ordinateur de Demandes de Fret[/color]. Avant tout, passer une commande nécessite que le Fret ait assez de spesos. Si le Fret n'a pas l'argent, obtenez-en.
+  Chaque commande commence à un [color=cyan]Ordinateur de Demandes de Cargo[/color]. Avant tout, passer une commande nécessite que le Cargo ait assez de spesos. Si le Cargo n'a pas l'argent, obtenez-en.
 
-  C'est également à la seule discrétion du Fret de satisfaire toute demande donnée. Si le Fret est serré en spesos, ils sont libres de refuser les demandes qui ne sont pas immédiatement nécessaires.
+  C'est également à la seule discrétion du Cargo de satisfaire toute demande donnée. Si le Cargo est serré en spesos, ils sont libres de refuser les demandes qui ne sont pas immédiatement nécessaires.
 
   Pour passer une commande, cliquez sur le nom de ce qui est demandé, fournissez le destinataire, tapez une raison appropriée pour laquelle ils en ont besoin, puis appuyez sur "Approuver" sur la commande.
 
-  Parfois, un Ordinateur de Demandes de Fret public existe, auquel cas tout ce que vous avez à faire est d'approuver les commandes que les gens font eux-mêmes.
+  Parfois, un Ordinateur de Demandes de Cargo public existe, auquel cas tout ce que vous avez à faire est d'approuver les commandes que les gens font eux-mêmes.
 
   <Box>
     <GuideEntityEmbed Entity="CargoPalletBuy"/>
@@ -77,19 +77,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Ensuite, pour récupérer la commande, elle doit être transportée de retour à la station depuis la [color=cyan]Station de Commerce[/color].
 
-  À la Station de Commerce, sur les [color=cyan]Palettes d'Achat de Fret[/color], se trouve une caisse contenant cette commande. Chargez-la sur la navette et ramenez-la.
+  À la Station de Commerce, sur les [color=cyan]Palettes d'Achat de Cargo[/color], se trouve une caisse contenant cette commande. Chargez-la sur la navette et ramenez-la.
 
-  Une fois qu'elle est au Quai de Fret, vous pouvez lire l'étiquette [color=cyan]Facture de Fret[/color] dessus pour découvrir le destinataire prévu. Enfin, livrez-la-lui.
+  Une fois qu'elle est au Quai de Cargo, vous pouvez lire l'étiquette [color=cyan]Facture de Cargo[/color] dessus pour découvrir le destinataire prévu. Enfin, livrez-la-lui.
 
   ## Pilotage
 
-  Les commandes sont livrées à la station via la [color=cyan]Station de Commerce[/color] en orbite et sont transportées à la station principale par la [color=cyan]Navette de Fret[color]. La navette ne se pilote pas elle-même, elle doit donc être pilotée soit dans la navette, soit à distance.
+  Les commandes sont livrées à la station via la [color=cyan]Station de Commerce[/color] en orbite et sont transportées à la station principale par la [color=cyan]Navette de Cargo[color]. La navette ne se pilote pas elle-même, elle doit donc être pilotée soit dans la navette, soit à distance.
 
   <Box>
     <GuideEntityEmbed Entity="ComputerShuttleCargo"/>
   </Box>
 
-  Pour piloter la navette, vous devez d'abord trouver la [color=cyan]Console de Navette de Fret[/color]. Une se trouve dans la Baie de Fret, et l'autre se trouve dans la Navette de Fret.
+  Pour piloter la navette, vous devez d'abord trouver la [color=cyan]Console de Navette de Cargo[/color]. Une se trouve dans la Baie de Cargo, et l'autre se trouve dans la Navette de Cargo.
 
   Après avoir interagi avec l'ordinateur, il devrait y avoir une vue de navigation depuis la navette. Voici les étapes pour piloter la navette vers et depuis la Station de Commerce :
 

@@ -6,7 +6,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-crew-manifest-window-title = Crew Manifest
-crew-manifest-button-label = Crew Manifest
-crew-manifest-button-description = Show a list of your fellow crewmembers
-crew-manifest-no-valid-station = Invalid station, or empty manifest!
+crew-manifest-window-title = Manifeste de l'équipage
+crew-manifest-button-label = Manifeste de l'équipage
+crew-manifest-button-description = Affiche une liste de vos collègues
+crew-manifest-no-valid-station = Station invalide, ou manifeste vide !

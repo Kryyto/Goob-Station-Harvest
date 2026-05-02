@@ -6,10 +6,10 @@
 
 identity-unknown-name = ???
 
-identity-age-young = young
-identity-age-middle-aged = middle-aged
-identity-age-old = old
+identity-age-young = jeune
+identity-age-middle-aged = entre deux âges
+identity-age-old = vieux
 
-identity-gender-feminine = woman
-identity-gender-masculine = man
-identity-gender-person = person
+identity-gender-feminine = femme
+identity-gender-masculine = homme
+identity-gender-person = personne

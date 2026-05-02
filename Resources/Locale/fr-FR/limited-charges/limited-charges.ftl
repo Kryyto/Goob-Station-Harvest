@@ -7,12 +7,12 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 limited-charges-charges-remaining = {$charges ->
-    [one] It has [color=fuchsia]{$charges}[/color] charge remaining.
-    *[other] It has [color=fuchsia]{$charges}[/color] charges remaining.
+    [one] Ça a [color=fuchsia]{$charges}[/color] charges restantes.
+    *[other] Ça a [color=fuchsia]{$charges}[/color] charges restantes.
 }
 
-limited-charges-max-charges = It's at [color=green]maximum[/color] charges.
+limited-charges-max-charges = Les charges sont au [color=green]maximum[/color].
 limited-charges-recharging = {$seconds ->
-    [one] There is [color=yellow]{$seconds}[/color] second left until the next charge.
-    *[other] There are [color=yellow]{$seconds}[/color] seconds left until the next charge.
+    [one] Il reste [color=yellow]{$seconds}[/color] seconde avant la prochaine charge.
+    *[other] Il reste [color=yellow]{$seconds}[/color] secondes avant la prochaine charg.
 }

@@ -14,12 +14,12 @@
 
 ### EscapeMenu.xaml
 
-ui-escape-title = Game Menu
+ui-escape-title = Menu du jeu
 ui-escape-options = Options
-ui-escape-character = Character Editor
-ui-escape-rules = Rules
-ui-escape-guidebook = Guidebook
+ui-escape-character = Éditeur de personnages
+ui-escape-rules = Règles
+ui-escape-guidebook = Guide
 ui-escape-wiki = Wiki
-ui-escape-disconnect = Disconnect
-ui-escape-quit = Quit
+ui-escape-disconnect = Se déconnecter
+ui-escape-quit = Quitter
 

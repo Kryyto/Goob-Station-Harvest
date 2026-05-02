@@ -3,10 +3,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-research-console-unlocks-text = Unlocked recipes:
-research-console-required-text = Prerequisites:
-research-console-no-tech-requirements = [color=green]This technology has no prerequisites![/color]
-research-console-menu-recenter-button = Recenter
-research-console-menu-server-researched-button = Researched
-research-console-tech-cost-label = { $cost } R.P.
+research-console-unlocks-text = Recettes débloquées :
+research-console-required-text = Prérequis :
+research-console-no-tech-requirements = [color=green]Cette technologie n'a aucun prérequis ![/color]
+research-console-menu-recenter-button = Recentrer
+research-console-menu-server-researched-button = Recherché
+research-console-tech-cost-label = { $cost } P.R.
 research-console-tier-percentage = : { $perc }%

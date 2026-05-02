@@ -10,66 +10,66 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Space Law
-  Goob Station operates under abbreviated space law. All crew, passengers, and visitors aboard the station are expected to know and follow these laws.
+  # Loi Spatiale
+  Goob Station opère sous une version abrégée de la loi spatiale. Tout l'équipage, les passagers et les visiteurs à bord de la station sont tenus de connaître et de respecter ces lois.
 
-  - [color=red][bold]Head of Security[/bold][/color] and especially [color=red][bold]Warden[/bold][/color] should be very familiar with space law.
-  - Security players should strive to fully comprehend Space Law.
-  - Security players cannot use contraband not assigned to them unless there is a station ending threat, inspect an item to see its legality.
-  - [bold]Ignoring or misuse of Space Law may be subject to punishment under incompetence. Do not play security if you do not plan to follow the rules[/bold]
+  - Le [color=red][bold]Chef de la Sécurité[/bold][/color] et surtout le [color=red][bold]Gardien[/bold][/color] doivent être très familiers avec la loi spatiale.
+  - Les joueurs de la sécurité doivent s'efforcer de pleinement comprendre la Loi Spatiale.
+  - Les joueurs de la sécurité ne peuvent pas utiliser de contrebande qui ne leur est pas attribuée, sauf en cas de menace mettant fin à la station ; inspectez un objet pour voir sa légalité.
+  - [bold]Ignorer ou mal appliquer la Loi Spatiale peut être sujet à sanction pour incompétence. Ne jouez pas dans la sécurité si vous ne comptez pas suivre les règles.[/bold]
 
-  ## Treatment Of Prisoners
+  ## Traitement des Prisonniers
 
-  Prisoners still have rights that must be upheld by law enforcement:
+  Les prisonniers conservent des droits qui doivent être respectés par les forces de l'ordre :
 
-  - Prisoners must be granted adequate medical care. They should also be provided psychiatric and spiritual counselling if requested.
-  - Prisoners must be allowed access to communications equipment (Radios) so long as they are not abused.
-  - Prisoners must be granted clothing, food, water, shelter and safety. If the brig is no longer safe, confinement must be established in another location.
-  - Prisoners must be given access to legal counsel during an interrogation if requested and available.
-  - Prisoners must be given their shift mandated PDA during confinement. Unless there is solid proof of PDA tampering, in which case the PDA is to be secured and replaced with a fresh one
-  - Prisoners must be granted freedom of movement, and should not be restrained with handcuffs or other devices after incarceration unless there is an undue risk to life and limb. Similarly, any prisoners held for extended or permanent confinement should be held in the communal brig, and should not be confined to a solitary cell unless they pose a risk to life and limb.
+  - Les prisonniers doivent recevoir des soins médicaux adéquats. Un soutien psychiatrique et spirituel doit également leur être fourni sur demande.
+  - Les prisonniers doivent avoir accès à des équipements de communication (radios) tant qu'ils n'en abusent pas.
+  - Les prisonniers doivent recevoir vêtements, nourriture, eau, abri et sécurité. Si la cellule n'est plus sûre, une détention doit être établie ailleurs.
+  - Les prisonniers doivent avoir accès à un conseil juridique durant un interrogatoire si demandé et si disponible.
+  - Les prisonniers doivent recevoir leur PDA de quart durant leur détention. Sauf en cas de preuve solide de manipulation du PDA, auquel cas celui-ci doit être sécurisé et remplacé par un neuf.
+  - Les prisonniers doivent bénéficier de liberté de mouvement et ne doivent pas être entravés par des menottes ou autres dispositifs après incarcération, sauf risque excessif pour l'intégrité physique. De même, tout prisonnier en détention prolongée ou permanente doit être placé dans la cellule collective et non en isolement, sauf s'il représente un risque pour autrui.
 
-  ## Searches
+  ## Fouilles
 
-  - A personnel search is a seizure of the objects in a person's backpack, hands, coat, belt, pockets, and hat. If any contraband is found during a search the officer may choose to further the search into a detainment or simply confiscate the restricted items. After the search is conducted all legal items are to be returned to the person.
+  - Une fouille de personnel est la saisie des objets contenus dans le sac à dos, les mains, le manteau, la ceinture, les poches et le chapeau d'une personne. Si de la contrebande est trouvée lors d'une fouille, l'officier peut choisir de poursuivre vers une mise en détention ou simplement confisquer les objets restreints. Après la fouille, tous les objets légaux doivent être restitués à la personne.
 
-  - A crewmate may legally decline any search conducted without a warrant while the alert level is green. Should be noted that if the alert level is blue or above all personnel searches are legal and no longer require a warrant.
+  - Un membre d'équipage peut légalement refuser toute fouille effectuée sans mandat lorsque le niveau d'alerte est vert. Il convient de noter que si le niveau d'alerte est bleu ou supérieur, toutes les fouilles de personnel sont légales et ne nécessitent plus de mandat.
 
   ## Implantation
-  - Any prisoner in custody can be subjected to implantation or implant extraction procedures, so long as it's within reason. The process of adding or extracting an implant should not prolong the detainees sentence, meaning you can not hold them longer to perform the procedure, unless stated otherwise. A former inmate can be requested to undergo implantation/extraction at a later point in time; if they fit the circumstances during their confinement, they must comply. The following have been listed out with special circumstances, anything not in this list can still be applied, given proper legal context. A prisoner can still receive implantation/extraction procedures without meeting the circumstances if they give their clear permission.
+  - Tout prisonnier en détention peut être soumis à des procédures d'implantation ou d'extraction d'implant, dans la mesure du raisonnable. Le processus d'ajout ou d'extraction d'un implant ne doit pas prolonger la peine du détenu — vous ne pouvez pas le retenir plus longtemps pour effectuer la procédure, sauf indication contraire. Un ancien détenu peut être invité à se soumettre à une implantation/extraction ultérieurement ; s'il remplissait les conditions lors de sa détention, il doit s'y conformer. Les cas suivants sont listés avec des circonstances particulières ; tout ce qui ne figure pas dans cette liste peut néanmoins s'appliquer dans un contexte juridique approprié. Un prisonnier peut recevoir des procédures d'implantation/extraction sans remplir les conditions s'il donne son consentement explicite.
 
-  - [bold]Mind Shields[/bold]: Shields can be administered to any inmate who has been clearly mind controlled, lost control of themselves, or a suspect charged with unlawful control. Unlike standard implantation you may hold a prisoner until you finish issuing Mind Shields, so long as it's done in a timely fashion. If a suspect refuses cooperate or the implant fails to function they can be charged with Refusal of Mental Shielding.
+  - [bold]Boucliers Mentaux[/bold] : Les boucliers peuvent être administrés à tout détenu ayant été clairement contrôlé mentalement, ayant perdu le contrôle de lui-même, ou suspecté de contrôle illicite. Contrairement à l'implantation standard, vous pouvez retenir un prisonnier jusqu'à la pose du Bouclier Mental, à condition que cela soit fait dans un délai raisonnable. Si un suspect refuse de coopérer ou si l'implant ne fonctionne pas, il peut être inculpé de Refus de Blindage Mental.
 
-  ## Removal
-  - A suspect can be forced to receive implant removal if there is strong reasonable proof that they have been implanted, such as an officer seeing them use one or their prints being on a discarded injector. Unlike implantation procedure a prisoner can have their sentence entirely delayed or extended until they comply with the procedure, as long as security are actively making attempts to preform it. Akin to implanting, if an inmate gives their clear permission, implant removal can proceed without proof.
+  ## Retrait
+  - Un suspect peut être contraint de subir le retrait d'un implant s'il existe une preuve raisonnablement solide qu'il en est porteur, par exemple si un officier le voit l'utiliser ou si ses empreintes sont sur un injecteur abandonné. Contrairement à la procédure d'implantation, la peine d'un prisonnier peut être entièrement suspendue ou prolongée jusqu'à ce qu'il se conforme à la procédure, tant que la sécurité fait activement des tentatives pour la réaliser. De même que pour l'implantation, si un détenu donne son consentement explicite, le retrait d'implant peut avoir lieu sans preuve.
 
-  ## Blood testing
-  - Blood testing is a procedure that can be used to determine if a person is a [textlink="Changeling" link="Changelings"]. Blood testing may only be forced when there has been confirmation of changelings existence on the station.
+  ## Test sanguin
+  - Le test sanguin est une procédure permettant de déterminer si une personne est un [textlink="Changeling" link="Changelings"]. Le test sanguin ne peut être imposé de force que lorsque la présence de changelings sur la station a été confirmée.
 
-  ## Sentencing
-  - All sentencing is to be handled by the Warden, if no Warden is available the HoS is to take over that duty, if there's no HoS it falls onto the highest ranking command member.
+  ## Condamnations
+  - Toutes les condamnations doivent être gérées par le Gardien. En l'absence de Gardien, le Chef de la Sécurité prend en charge ce rôle ; en l'absence de Chef de la Sécurité, cela revient au membre du Commandement de plus haut rang.
 
-  - Use common sense and humanity when issuing punishments. You should not always seek out the highest punishment you can, you don't have to always give the maximum time or always look to demote someone. Always take in account the severity and only charge for what is needed for someone to learn their lesson.
+  - Faites preuve de bon sens et d'humanité lors de l'attribution des peines. Vous ne devez pas toujours chercher la peine la plus lourde possible ; vous n'êtes pas obligé de donner le temps maximum ni de chercher systématiquement à rétrograder quelqu'un. Tenez toujours compte de la gravité des faits et n'inculpez que ce qui est nécessaire pour que la personne retienne la leçon.
 
-  - [bold]Accessory, Attempting, And Intention:[/bold] If someone intentionally, knowingly and substantially assists someone in enacting a crime they can be charged with the relevant crimes, such as an engineer giving someone tools, who says they are going to break into an area. Same goes for a clear and solid attempt at a crime, or a person who shows clear intent to act out a crime, such as a syndicate nuclear operative arming a nuke but getting arrested before it goes off, they can still be charged with terrorism. Does not apply to crimes that have an attempted listing already, like attempted murder.
+  - [bold]Complicité, Tentative et Intention :[/bold] Si quelqu'un aide intentionnellement, sciemment et substantiellement quelqu'un à commettre un crime, il peut être inculpé des crimes correspondants — par exemple un ingénieur qui fournit des outils à quelqu'un qui déclare vouloir s'introduire dans une zone. Il en va de même pour une tentative claire et avérée de crime, ou pour une personne montrant une intention manifeste d'en commettre un, comme un opérateur nucléaire syndicaliste qui arme une bombe mais est arrêté avant qu'elle n'explose — il peut quand même être inculpé de terrorisme. Cela ne s'applique pas aux crimes disposant déjà d'une catégorie "tentative", comme la tentative de meurtre.
 
-  - [bold]Stackable Crimes:[/bold] Crimes are to be considered 'stackable' in the sense that if you charge someone with two or more different crimes, you should combine the times you would give them for each crime.
+  - [bold]Cumul des Crimes :[/bold] Les crimes sont considérés comme "cumulables" dans le sens où si vous inculpez quelqu'un de deux crimes ou plus, vous devez additionner les peines que vous lui attribueriez pour chaque crime.
 
-  # YOU MAY NOT EXCEED 10 MINUTES AS A BRIG TIME
+  # VOUS NE POUVEZ PAS DÉPASSER 10 MINUTES DE DÉTENTION EN CELLULE
 
-  Perma may be given to exceptionally problematic crewmembers within reason, even if the maximum crime does not allow for perma.
+  La détention permanente peut être accordée aux membres d'équipage exceptionnellement problématiques dans la limite du raisonnable, même si le crime maximal commis ne le permet pas normalement.
 
 
-  # Execution
-  - [bold]All executions are to be confirmed and overseen by the Captain. Exceptions to this rule exist. A prisoner may request a specific execution method, if reasonable. Otherwise the most humane method is prefered. Refer to Standard Operating Procedure to further understand any guidelines applied to execution.[/bold]
+  # Exécution
+  - [bold]Toutes les exécutions doivent être confirmées et supervisées par le Capitaine. Des exceptions à cette règle existent. Un prisonnier peut demander une méthode d'exécution spécifique, si elle est raisonnable. Sinon, la méthode la plus humaine est privilégiée. Référez-vous aux Procédures Opérationnelles Standard pour comprendre les directives applicables aux exécutions.[/bold]
 
   # Exceptions
-  - [bold]If a changeling is discovered they are kill on sight.[/bold]
-  - [bold]Any unauthorised magic use should be treated seriously and may be kill on sight[/bold]
-  - [bold]Any cases of weapons of mass destruction,extreme terrorism or clear intention to destroy the station are kill on sight[/bold]
+  - [bold]Si un changeling est découvert, il est à abattre à vue.[/bold]
+  - [bold]Toute utilisation non autorisée de magie doit être traitée avec sérieux et peut être à abattre à vue.[/bold]
+  - [bold]Tout cas d'armes de destruction massive, de terrorisme extrême ou d'intention manifeste de détruire la station est à abattre à vue.[/bold]
 
-  ## SOP guidelines
-  - [textlink="Legal" link="Legal SOP"] refer to, for more in-depth guidelines.
-  ## Crime Listing
-  - [textlink="Crime Listing" link="SpaceLawCrimeList"]
+  ## Directives SOP
+  - [textlink="Légal" link="Legal SOP"] — à consulter pour des directives plus approfondies.
+  ## Liste des Crimes
+  - [textlink="Liste des Crimes" link="SpaceLawCrimeList"]
 </Document>

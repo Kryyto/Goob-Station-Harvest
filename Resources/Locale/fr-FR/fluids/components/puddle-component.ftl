@@ -8,8 +8,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-puddle-component-examine-is-slippery-text = It looks [color=#169C9C]slippery[/color].
-puddle-component-examine-evaporating = It is [color=#5E7C16]evaporating[/color].
-puddle-component-examine-evaporating-partial = It is [color=#FED83D]partially evaporating[/color].
-puddle-component-examine-evaporating-no = It is [color=#B02E26]not evaporating[/color].
-puddle-component-slipped-touch-reaction = The chemicals in {THE($puddle)} get on your skin!
+puddle-component-examine-is-slippery-text = Ça a l'air [color=#169C9C]glissant[/color].
+puddle-component-examine-evaporating = Ça [color=#5E7C16]s'évapore[/color].
+puddle-component-examine-evaporating-partial = Ça [color=#FED83D]s'évapore partiellement[/color].
+puddle-component-examine-evaporating-no = Ça [color=#B02E26]ne s'évapore pas[/color].
+puddle-component-slipped-touch-reaction = Les produits dans {THE($puddle)} entrent en contact avec votre peau !

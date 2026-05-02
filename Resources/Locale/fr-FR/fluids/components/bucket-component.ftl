@@ -5,6 +5,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-bucket-component-bucket-is-empty-message = Bucket is empty
-bucket-component-mop-is-now-wet-message = Mop is now wet
-bucket-component-mop-is-now-dry-message = Mop is now dry
+bucket-component-bucket-is-empty-message = Le seau est vide
+bucket-component-mop-is-now-wet-message = La serpillère est maintenant mouillée
+bucket-component-mop-is-now-dry-message = La serpillère est maintenant sèche

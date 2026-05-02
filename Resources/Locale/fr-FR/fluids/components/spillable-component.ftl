@@ -8,14 +8,14 @@
 
 ## SpillTargetVerb
 
-spill-target-verb-get-data-text = Spill liquid
-spill-target-verb-activate-cannot-drain-message = You can't pour anything from {$owner}!
-spill-target-verb-activate-is-empty-message = {$owner} is empty!
+spill-target-verb-get-data-text = Renverser un liquide
+spill-target-verb-activate-cannot-drain-message = Vous ne pouvez rien verser de {$owner}!
+spill-target-verb-activate-is-empty-message = {$owner} est vide !
 
-spill-melee-hit-attacker = You spill {$amount}u of {THE($spillable)} onto {THE($target)}!
-spill-melee-hit-others = {CAPITALIZE(THE($attacker))} spills some of {THE($spillable)} onto {THE($target)}!
+spill-melee-hit-attacker = Vous renversez {$amount}u de {THE($spillable)} sur {THE($target)}!
+spill-melee-hit-others = {CAPITALIZE(THE($attacker))} renverse une partie de {THE($spillable)} sur {THE($target)}!
 
-spill-land-spilled-on-other = {CAPITALIZE(THE($spillable))} spills some of its solution onto {THE($target)}!
+spill-land-spilled-on-other = {CAPITALIZE(THE($spillable))} renverse une partie de sa solution sur {THE($target)}!
 
-spill-examine-is-spillable = This container looks spillable.
-spill-examine-spillable-weapon = You could splash this onto someone with a melee attack.
+spill-examine-is-spillable = Ce récipient semble pouvoir se renverser.
+spill-examine-spillable-weapon = Tu pourrais asperger quelqu'un avec ça lors d'une attaque au corps à corps.

@@ -6,8 +6,8 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 scannable-solution-verb-text = Solution
-scannable-solution-verb-message = Examine the chemical composition.
-scannable-solution-main-text = It contains the following chemicals:
-scannable-solution-empty-container = It contains no chemicals.
+scannable-solution-verb-message = Examiner la composition chimique.
+scannable-solution-main-text = Il contient les produits chimiques suivants :
+scannable-solution-empty-container = Il ne contient aucun produit chimique.
 scannable-solution-chemical = - {$amount}u [color={$color}]{$type}[/color]
-scannable-solution-temperature = Solution temperature: {$temperature}K
+scannable-solution-temperature = Température de la solution : {$temperature}K

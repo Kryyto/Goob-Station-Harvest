@@ -3,6 +3,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-solution-container-mixer-activate = Activate
-solution-container-mixer-no-power = No power!
-solution-container-mixer-popup-nothing-to-mix = Nothing inside!
+solution-container-mixer-activate = Activer
+solution-container-mixer-no-power = Pas d'alimentation !
+solution-container-mixer-popup-nothing-to-mix = Rien à l'intérieur !

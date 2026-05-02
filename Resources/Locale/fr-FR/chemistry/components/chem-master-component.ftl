@@ -14,36 +14,36 @@
 
 ## Entity
 
-chem-master-component-activate-no-hands = You have no hands.
-chem-master-component-cannot-put-entity-message = You can't put this in the ChemMaster!
+chem-master-component-activate-no-hands = Vous n'avez pas de mains.
+chem-master-component-cannot-put-entity-message = Vous ne pouvez pas mettre ça dans le ChemMaster !
 
 ## Bound UI
 chem-master-bound-user-interface-title = ChemMaster 4000
 
 ## UI
 
-chem-master-window-input-tab = Input
-chem-master-window-output-tab = Output
-chem-master-window-container-label = Container
-chem-master-window-eject-button = Eject
-chem-master-window-no-container-loaded-text = No container loaded.
-chem-master-window-buffer-text = Buffer
-chem-master-window-buffer-label = buffer:
-chem-master-window-buffer-all-amount = All
-chem-master-window-buffer-empty-text = Buffer empty.
-chem-master-window-buffer-low-text = Not enough solution in buffer
-chem-master-window-transfer-button = Transfer
-chem-master-window-discard-button = Discard
-chem-master-window-packaging-text = Packaging
-chem-master-current-text-label = Label:
-chem-master-window-pills-label = Pills:
-chem-master-window-pill-type-label = Pill type:
-chem-master-window-pills-number-label = Count:
-chem-master-window-dose-label = Dose (u):
-chem-master-window-create-button = Create
-chem-master-window-bottles-label = Bottles:
-chem-master-window-unknown-reagent-text = Unknown reagent
-chem-master-window-sort-type-none = Sort by: Oldest First
-chem-master-window-sort-type-alphabetical = Sort by: Alphabetical
-chem-master-window-sort-type-quantity = Sort by: Quantity
-chem-master-window-sort-type-latest = Sort by: Recent First
+chem-master-window-input-tab = Entrée
+chem-master-window-output-tab = Sortie
+chem-master-window-container-label = Conteneur
+chem-master-window-eject-button = Éjecter
+chem-master-window-no-container-loaded-text = Aucun conteneur chargé.
+chem-master-window-buffer-text = Tampon
+chem-master-window-buffer-label = tampon :
+chem-master-window-buffer-all-amount = Tout
+chem-master-window-buffer-empty-text = Tampon vide.
+chem-master-window-buffer-low-text = Pas assez de solution dans le tampon
+chem-master-window-transfer-button = Transférer
+chem-master-window-discard-button = Jeter
+chem-master-window-packaging-text = Conditionnement
+chem-master-current-text-label = Étiquette :
+chem-master-window-pills-label = Pilules :
+chem-master-window-pill-type-label = Type de pilule :
+chem-master-window-pills-number-label = Quantité :
+chem-master-window-dose-label = Dose (u) :
+chem-master-window-create-button = Créer
+chem-master-window-bottles-label = Bouteilles :
+chem-master-window-unknown-reagent-text = Réactif inconnu
+chem-master-window-sort-type-none = Trier par : Plus ancien d'abord
+chem-master-window-sort-type-alphabetical = Trier par : Alphabétique
+chem-master-window-sort-type-quantity = Trier par : Quantité
+chem-master-window-sort-type-latest = Trier par : Plus récent d'abord

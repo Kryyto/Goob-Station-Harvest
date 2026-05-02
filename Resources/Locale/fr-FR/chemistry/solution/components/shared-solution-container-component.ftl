@@ -7,40 +7,36 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-shared-solution-container-component-on-examine-main-text = It contains {INDEFINITE($desc)} [color={$color}]{$desc}[/color] { $chemCount ->
-    [1] chemical.
-   *[other] mixture of chemicals.
+shared-solution-container-component-on-examine-main-text = Il contient { $chemCount ->
+    [1] [color={$color}]{$desc}[/color].
+   *[other] un mélange [color={$color}]{$desc}[/color].
     }
-
-examinable-solution-has-recognizable-chemicals = You can recognize {$recognizedString} in the solution.
+examinable-solution-has-recognizable-chemicals = Vous pouvez reconnaître {$recognizedString} dans la solution.
 examinable-solution-recognized = [color={$color}]{$chemical}[/color]
-
-examinable-solution-on-examine-volume = The contained solution is { $fillLevel ->
-    [exact] holding [color=white]{$current}/{$max}u[/color].
-   *[other] [bold]{ -solution-vague-fill-level(fillLevel: $fillLevel) }[/bold].
+examinable-solution-on-examine-volume = La solution contenue { $fillLevel ->
+    [exact] contient [color=white]{$current}/{$max}u[/color].
+   *[other] est [bold]{ -solution-vague-fill-level(fillLevel: $fillLevel) }[/bold].
 }
-
-examinable-solution-on-examine-volume-no-max = The contained solution is { $fillLevel ->
-    [exact] holding [color=white]{$current}u[/color].
-   *[other] [bold]{ -solution-vague-fill-level(fillLevel: $fillLevel) }[/bold].
+examinable-solution-on-examine-volume-no-max = La solution contenue { $fillLevel ->
+    [exact] contient [color=white]{$current}u[/color].
+   *[other] est [bold]{ -solution-vague-fill-level(fillLevel: $fillLevel) }[/bold].
 }
-
-examinable-solution-on-examine-volume-puddle = The puddle is { $fillLevel ->
-    [exact] [color=white]{$current}u[/color].
-    [full] huge and overflowing!
-    [mostlyfull] huge and overflowing!
-    [halffull] deep and flowing.
-    [halfempty] very deep.
-   *[mostlyempty] pooling together.
-    [empty] forming multiple small pools.
+examinable-solution-on-examine-volume-puddle = La flaque { $fillLevel ->
+    [exact] fait [color=white]{$current}u[/color].
+    [full] est immense et déborde !
+    [mostlyfull] est immense et déborde !
+    [halffull] est profonde et s'écoule.
+    [halfempty] est très profonde.
+   *[mostlyempty] se rassemble en flaques.
+    [empty] forme plusieurs petites mares.
 }
 
 -solution-vague-fill-level =
     { $fillLevel ->
-        [full] [color=white]Full[/color]
-        [mostlyfull] [color=#DFDFDF]Mostly Full[/color]
-        [halffull] [color=#C8C8C8]Half Full[/color]
-        [halfempty] [color=#C8C8C8]Half Empty[/color]
-        [mostlyempty] [color=#A4A4A4]Mostly Empty[/color]
-       *[empty] [color=gray]Empty[/color]
+        [full] [color=white]Plein[/color]
+        [mostlyfull] [color=#DFDFDF]Presque plein[/color]
+        [halffull] [color=#C8C8C8]À moitié plein[/color]
+        [halfempty] [color=#C8C8C8]À moitié vide[/color]
+        [mostlyempty] [color=#A4A4A4]Presque vide[/color]
+       *[empty] [color=gray]Vide[/color]
     }

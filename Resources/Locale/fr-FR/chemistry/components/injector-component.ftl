@@ -13,31 +13,31 @@
 
 ## UI
 
-injector-draw-text = Draw
-injector-inject-text = Inject
-injector-invalid-injector-toggle-mode = Invalid
-injector-volume-label = Volume: [color=white]{$currentVolume}/{$totalVolume}[/color]
-    Mode: [color=white]{$modeString}[/color] ([color=white]{$transferVolume}u[/color])
+injector-draw-text = Prélever
+injector-inject-text = Injecter
+injector-invalid-injector-toggle-mode = Invalide
+injector-volume-label = Volume : [color=white]{$currentVolume}/{$totalVolume}[/color]
+    Mode : [color=white]{$modeString}[/color] ([color=white]{$transferVolume}u[/color])
 
 ## Entity
 
-injector-component-drawing-text = Now drawing
-injector-component-injecting-text = Now injecting
-injector-component-cannot-transfer-message = You aren't able to transfer to {THE($target)}!
-injector-component-cannot-draw-message = You aren't able to draw from {THE($target)}!
-injector-component-cannot-inject-message = You aren't able to inject to {THE($target)}!
-injector-component-inject-success-message = You inject {$amount}u into {THE($target)}!
-injector-component-transfer-success-message = You transfer {$amount}u into {THE($target)}.
-injector-component-draw-success-message = You draw {$amount}u from {THE($target)}.
-injector-component-target-already-full-message = {CAPITALIZE(THE($target))} is already full!
-injector-component-target-is-empty-message = {CAPITALIZE(THE($target))} is empty!
-injector-component-cannot-toggle-draw-message = Too full to draw!
-injector-component-cannot-toggle-inject-message = Nothing to inject!
+injector-component-drawing-text = Prélèvement en cours
+injector-component-injecting-text = Injection en cours
+injector-component-cannot-transfer-message = Vous ne pouvez pas transférer vers {THE($target)} !
+injector-component-cannot-draw-message = Vous ne pouvez pas prélever depuis {THE($target)} !
+injector-component-cannot-inject-message = Vous ne pouvez pas injecter dans {THE($target)} !
+injector-component-inject-success-message = Vous injectez {$amount}u dans {THE($target)} !
+injector-component-transfer-success-message = Vous transférez {$amount}u dans {THE($target)}.
+injector-component-draw-success-message = Vous prélevez {$amount}u depuis {THE($target)}.
+injector-component-target-already-full-message = {CAPITALIZE(THE($target))} est déjà plein !
+injector-component-target-is-empty-message = {CAPITALIZE(THE($target))} est vide !
+injector-component-cannot-toggle-draw-message = Trop plein pour prélever !
+injector-component-cannot-toggle-inject-message = Rien à injecter !
 
 ## mob-inject doafter messages
 
-injector-component-drawing-user = You start drawing the needle.
-injector-component-injecting-user = You start injecting the needle.
-injector-component-drawing-target = {CAPITALIZE(THE($user))} is trying to use a needle to draw from you!
-injector-component-injecting-target = {CAPITALIZE(THE($user))} is trying to inject a needle into you!
-injector-component-deny-user = Exoskeleton too thick!
+injector-component-drawing-user = Vous commencez à prélever avec l'aiguille.
+injector-component-injecting-user = Vous commencez à injecter avec l'aiguille.
+injector-component-drawing-target = {CAPITALIZE(THE($user))} essaie d'utiliser une aiguille pour prélever sur vous !
+injector-component-injecting-target = {CAPITALIZE(THE($user))} essaie de vous injecter une aiguille !
+injector-component-deny-user = Exosquelette trop épais !

@@ -6,16 +6,16 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-comp-gas-filter-ui-filter-status = Status:
+comp-gas-filter-ui-filter-status = État :
 comp-gas-filter-ui-status-enabled = On
 comp-gas-filter-ui-status-disabled = Off
 
-comp-gas-filter-ui-filter-transfer-rate = Transfer Rate (L/s):
-comp-gas-filter-ui-filter-set-rate = Set
+comp-gas-filter-ui-filter-transfer-rate = Débit de transfert (L/s) :
+comp-gas-filter-ui-filter-set-rate = Définir
 
-comp-gas-filter-ui-filter-gas-current = Currently Filtering:
-comp-gas-filter-ui-filter-gas-select = Select a gas to filter out:
-comp-gas-filter-ui-filter-gas-confirm = Set Gas
-comp-gas-filter-ui-filter-gas-none = None
+comp-gas-filter-ui-filter-gas-current = Filtrage actuel :
+comp-gas-filter-ui-filter-gas-select = Sélectionnez un gaz à filtrer :
+comp-gas-filter-ui-filter-gas-confirm = Définir le gaz
+comp-gas-filter-ui-filter-gas-none = Aucun
 
-comp-gas-filter-ui-needs-anchor = Anchor it first!
+comp-gas-filter-ui-needs-anchor = Ancrez-le d'abord !

@@ -5,14 +5,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-comp-gas-thermomachine-ui-title-freezer = Freezer
-comp-gas-thermomachine-ui-title-heater = Heater
+comp-gas-thermomachine-ui-title-freezer = Congélateur
+comp-gas-thermomachine-ui-title-heater = Chauffe-gaz
 
-comp-gas-thermomachine-ui-temperature = Temperature (K):
-comp-gas-thermomachine-ui-toggle =  Toggle
-comp-gas-thermomachine-ui-status-disabled = Off
-comp-gas-thermomachine-ui-status-enabled = On
+comp-gas-thermomachine-ui-temperature = Température (K) :
+comp-gas-thermomachine-ui-toggle = Basculer
+comp-gas-thermomachine-ui-status-disabled = Éteint
+comp-gas-thermomachine-ui-status-enabled = Allumé
 
-gas-thermo-component-upgrade-heating = maximum temperature
-gas-thermo-component-upgrade-cooling = minimum temperature
-gas-thermo-component-upgrade-heat-capacity = heat capacity
+gas-thermo-component-upgrade-heating = température maximale
+gas-thermo-component-upgrade-cooling = température minimale
+gas-thermo-component-upgrade-heat-capacity = capacité thermique

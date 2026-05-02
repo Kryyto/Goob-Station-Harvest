@@ -17,35 +17,35 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-blood = blood
-reagent-desc-blood = I hope this is ketchup.
+reagent-name-blood = sang
+reagent-desc-blood = J'espère que c'est du ketchup.
 
-reagent-name-insect-blood = insect blood
-reagent-desc-insect-blood = Okay, this is really gross. It almost looks.. alive?
+reagent-name-insect-blood = sang d'insecte
+reagent-desc-insect-blood = Bon, c'est vraiment dégoûtant. Ça a presque l'air... vivant ?
 
 reagent-name-slime = slime
-reagent-desc-slime = You thought this was gradient blood at first, but you were mistaken.
+reagent-desc-slime = Vous pensiez au début que c'était du sang en dégradé, mais vous vous êtes trompé.
 
-reagent-name-sap = sap
-reagent-desc-sap = Sticky, sweet tree blood.
+reagent-name-sap = sève
+reagent-desc-sap = Du sang d'arbre collant et sucré.
 
-reagent-name-hemocyanin-blood = blue blood
-reagent-desc-hemocyanin-blood = Contains copper as opposed to iron which gives it a distinct blue color.
+reagent-name-hemocyanin-blood = sang bleu
+reagent-desc-hemocyanin-blood = Contient du cuivre au lieu du fer, ce qui lui confère une couleur bleue distincte.
 
-reagent-name-ammonia-blood = anaerobic blood
-reagent-desc-ammonia-blood = Nothing else in the entire galaxy smells quite so appalling.
+reagent-name-ammonia-blood = sang anaérobie
+reagent-desc-ammonia-blood = Rien d'autre dans toute la galaxie ne sent aussi abominablement mauvais.
 
-reagent-name-zombie-blood = zombie blood
-reagent-desc-zombie-blood = Would not advise eating. Can be used to create an inoculation against the infection.
+reagent-name-zombie-blood = sang de zombie
+reagent-desc-zombie-blood = Il est déconseillé d'en consommer. Peut être utilisé pour créer une inoculation contre l'infection.
 
 reagent-name-ichor = ichor
-reagent-desc-ichor = An extremely potent regenerative chemical, perfected by space fauna evolution. Produced in the dragon's digestive system, it is seen as an exotic commodity due to the gargantuan effort of hunting for it.
+reagent-desc-ichor = Un produit chimique régénérateur extrêmement puissant, perfectionné par l'évolution de la faune spatiale. Produit dans le système digestif du dragon, il est considéré comme une denrée exotique en raison des efforts colossaux nécessaires pour le chasser.
 
-reagent-name-fat = fat
-reagent-desc-fat = No matter how it was obtained, its application is important.
+reagent-name-fat = graisse
+reagent-desc-fat = Peu importe la façon dont elle a été obtenue, son utilisation est importante.
 
-reagent-name-vomit = vomit
-reagent-desc-vomit = You can see a few chunks of someone's last meal in it.
+reagent-name-vomit = vomi
+reagent-desc-vomit = On peut y voir quelques morceaux du dernier repas de quelqu'un.
 
-reagent-name-grey-matter = grey matter
-reagent-desc-grey-matter = Thought juice, the stuff that leaks out of your ears.
+reagent-name-grey-matter = matière grise
+reagent-desc-grey-matter = Le jus de pensée, ce truc qui coule de vos oreilles.

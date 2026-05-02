@@ -8,100 +8,100 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 reagent-name-stasizium = Stasizium
-reagent-desc-stasizium = An unstable fluid of future capable of restoring the patient's body to its original state. However, an overdose can tear the body apart.
+reagent-desc-stasizium = Un fluide instable du futur capable de restaurer le corps du patient à son état d'origine. Cependant, une surdose peut déchirer le corps.
 
 reagent-name-probital = probital
-reagent-desc-probital = Forces patient's body to spend its energy creating more healing compounds. Overdose exhausts body, forcing what effectively amounts to power naps.
+reagent-desc-probital = Force le corps du patient à dépenser son énergie pour créer davantage de composés cicatrisants. Une surdose épuise le corps, le forçant à faire des micro-siestes.
 
-reagent-name-mitogen = mitogen
-reagent-desc-mitogen = Converts nutrients into mitotrophin for highly efficient healing. Can be accidentally overdosed on, resulting in vomiting.
+reagent-name-mitogen = mitogène
+reagent-desc-mitogen = Convertit les nutriments en mitotrophine pour une guérison hautement efficace. Peut provoquer accidentellement une surdose, entraînant des vomissements.
 
-reagent-name-mitotrophin = mitotrophin
-reagent-desc-mitotrophin = Healing compound that's created from chemicals commonly found in food.
+reagent-name-mitotrophin = mitotrophine
+reagent-desc-mitotrophin = Composé cicatrisant créé à partir de substances chimiques couramment présentes dans les aliments.
 
 reagent-name-tirimol = tirimol
-reagent-desc-tirimol = Strong depressant used in healing asphyxiation damage. Vastly decreases oxygen consumption at the cost of weakened muscles.
+reagent-desc-tirimol = Puissant dépresseur utilisé pour soigner les dommages par asphyxie. Diminue considérablement la consommation d'oxygène au détriment de l'affaiblissement musculaire.
 
 reagent-name-syriniver = syriniver
-reagent-desc-syriniver = An experimental antipoison that repairs toxin-based cell failure regardless of whether the patient is alive. Has a horribly low overdose and causes internal bleeding when injected even in trace quantities.
+reagent-desc-syriniver = Un antipoison expérimental qui répare les défaillances cellulaires d'origine toxique, que le patient soit vivant ou non. Possède un seuil de surdose terriblement bas et provoque des hémorragies internes même injecté en infimes quantités.
 
 reagent-name-musiver = musiver
-reagent-desc-musiver = Fast-acting antitoxin deposited in the wake of Syriniver. Passively heals cell damage, while purging any and all other foreign reagents from the bloodstream.
+reagent-desc-musiver = Antitoxine à action rapide déposée dans le sillage du Syriniver. Soigne passivement les dommages cellulaires tout en purgeant tous les réactifs étrangers du flux sanguin.
 
 reagent-name-multiver = multiver
-reagent-desc-multiver = Drug purpose-built to cleanse dangerous chemical mixes. Can be used against simple poisonings, but it's recommended to mix it with other chemicals for higher efficiency.
+reagent-desc-multiver = Médicament conçu spécifiquement pour éliminer les mélanges chimiques dangereux. Peut être utilisé contre les empoisonnements simples, mais il est recommandé de le mélanger à d'autres produits chimiques pour une meilleure efficacité.
 
 reagent-name-monover = monover
-reagent-desc-monover = Relatively low complexity anti-poison drug that stops working in impure environments. Its side effects can be potentially used to quickly verify whether bloodstream is clean of chemicals.
+reagent-desc-monover = Antipoison de complexité relativement faible qui cesse de fonctionner dans des environnements impurs. Ses effets secondaires peuvent être utilisés pour vérifier rapidement si le flux sanguin est exempt de produits chimiques.
 
-reagent-name-synthcells = synthcells
-reagent-desc-synthcells = Artificially produced "cells" that quickly destroy and replace any dysfunctional cells. Works both through external and internal application. Works on dead.
+reagent-name-synthcells = synthcellules
+reagent-desc-synthcells = Des « cellules » produites artificiellement qui détruisent et remplacent rapidement toute cellule dysfonctionnelle. Fonctionne aussi bien par application externe qu'interne. Fonctionne sur les morts.
 
-reagent-name-salicylic-acid = salicylic acid
-reagent-desc-salicylic-acid = Powerful healing agent, excelling at restoring most mangled of corpses. Difficult to overdose.
+reagent-name-salicylic-acid = acide salicylique
+reagent-desc-salicylic-acid = Puissant agent cicatrisant, excellent pour restaurer les cadavres les plus mutilés. Difficile de provoquer une surdose.
 
 reagent-name-oxandrolone = oxandrolone
-reagent-desc-oxandrolone = Gelatinous chemical that heals burn damage faster the more burnt patient's body is. Difficult to overdose.
+reagent-desc-oxandrolone = Produit chimique gélatineux qui soigne les brûlures d'autant plus vite que le corps du patient est brûlé. Difficile de provoquer une surdose.
 
-reagent-name-pentenic-acid = pentenic acid
-reagent-desc-pentenic-acid = Multipurpose drug, works against poisons and prevents radiation damage from all but strongest sources.
+reagent-name-pentenic-acid = acide penténique
+reagent-desc-pentenic-acid = Médicament polyvalent, efficace contre les poisons et prévenant les dommages radioactifs de toutes les sources sauf les plus puissantes.
 
 reagent-name-atropine = atropine
-reagent-desc-atropine = Shuts down many body functions to safely heal any damage to patients in critical condition. Best used outside of combat situations due to severe mental impairment it causes.
+reagent-desc-atropine = Inhibe de nombreuses fonctions corporelles pour soigner en toute sécurité tout dommage chez les patients en état critique. À utiliser de préférence hors combat en raison des graves troubles mentaux qu'elle provoque.
 
 reagent-name-calomel = calomel
-reagent-desc-calomel = Quickly binds with chemicals and removes them from bloodstream. Keeps patients in near-death state, and as such should only be used as a supplement.
+reagent-desc-calomel = Se lie rapidement aux produits chimiques et les élimine du flux sanguin. Maintient les patients dans un état proche de la mort, et ne devrait donc être utilisé qu'en complément.
 
-reagent-name-ammoniated-mercury = ammoniated mercury
-reagent-desc-ammoniated-mercury = Difficult to use but potentially powerful drug with a niche specifically in fighting toxins. Flushes poisons, and will quickly heal any poison damage if patient is not damaged externally. Using it on injured patients is ill-advised, though the drug will retain its toxin-flushing capabilities.
+reagent-name-ammoniated-mercury = mercure ammonié
+reagent-desc-ammoniated-mercury = Médicament difficile à utiliser mais potentiellement puissant, spécialisé dans la lutte contre les toxines. Purge les poisons et soigne rapidement tout dommage lié aux poisons si le patient n'est pas blessé physiquement. Son utilisation sur des patients blessés est déconseillée, bien que le médicament conserve ses capacités de purge des toxines.
 
 reagent-name-antihol = antihol
-reagent-desc-antihol = Quickly neutralises any ethanol in the solution, while healing most prolific drunkards.
+reagent-desc-antihol = Neutralise rapidement tout éthanol dans la solution, tout en soignant les alcooliques les plus invétérés.
 
-reagent-name-ibuprofen = ibuprofen
-reagent-desc-ibuprofen = Weak drug that helps with headaches and returning to medical bay after a bad day.
+reagent-name-ibuprofen = ibuprofène
+reagent-desc-ibuprofen = Médicament faible qui aide contre les maux de tête et pour rentrer à l'infirmerie après une mauvaise journée.
 
-reagent-name-silver-sulfadiazine = silver sulfadiazine
-reagent-desc-silver-sulfadiazine = Soothing liquid that can be applied externally to quickly treat mild burns. Toxic when in bloodstream. Works on dead.
+reagent-name-silver-sulfadiazine = sulfadiazine d'argent
+reagent-desc-silver-sulfadiazine = Liquide apaisant pouvant être appliqué en externe pour traiter rapidement les brûlures légères. Toxique dans le flux sanguin. Fonctionne sur les morts.
 
-reagent-name-styptic-powder = styptic powder
-reagent-desc-styptic-powder = Vibrant powder that can be applied externally to quickly treat mild bruises. Toxic when in bloodstream. Works on dead.
+reagent-name-styptic-powder = poudre styptique
+reagent-desc-styptic-powder = Poudre vibrante pouvant être appliquée en externe pour traiter rapidement les contusions légères. Toxique dans le flux sanguin. Fonctionne sur les morts.
 
-reagent-name-tehifin = tehifin
-reagent-desc-tehifin = Low potency burn medicine of questionable safety.
+reagent-name-tehifin = téhifin
+reagent-desc-tehifin = Médicament contre les brûlures de faible puissance à l'innocuité douteuse.
 
-reagent-name-ebifin = ebifin
-reagent-desc-ebifin = Extremely strong burn compound with cripplingly low overdose threshold. Reacts violently in bloodstream, quickly healing most burn injuries when used in low amounts.
+reagent-name-ebifin = ébifin
+reagent-desc-ebifin = Composé anti-brûlures extrêmement puissant avec un seuil de surdose terriblement bas. Réagit violemment dans le flux sanguin, soignant rapidement la plupart des brûlures lorsqu'il est utilisé en faibles quantités.
 
-reagent-name-procenyl-lazide = procenyl lazide
-reagent-desc-procenyl-lazide = Somewhat strong brute medicine with low overdose threshold, needs to be crystalized at low temperatures and separated out from its precursor solution.
+reagent-name-procenyl-lazide = lazide de procényle
+reagent-desc-procenyl-lazide = Médicament contre les contusions d'une puissance assez élevée avec un seuil de surdose bas, doit être cristallisé à basse température et séparé de sa solution précurseur.
 
-reagent-name-bozaide = bozaide
-reagent-desc-bozaide = A passive, slow acting brute medication that acts as a catalyst for natural tissue regeneration.
+reagent-name-bozaide = bozaïde
+reagent-desc-bozaide = Un médicament contre les contusions passif et à action lente qui agit comme catalyseur de la régénération naturelle des tissus.
 
-reagent-name-genecide = genecide
-reagent-desc-genecide = Blows genetic damage away, literally. Make sure to monitor patients taking it.
+reagent-name-genecide = génécide
+reagent-desc-genecide = Élimine les dommages génétiques, littéralement. Veillez à surveiller les patients qui le prennent.
 
-reagent-name-procenyl-lazide-sludge = procenyl lazide sludge
-reagent-desc-procenyl-lazide-sludge = Relatively easy to create solution, needs heating to bind properly in a notoriously inefficient reaction.
+reagent-name-procenyl-lazide-sludge = boue de lazide de procényle
+reagent-desc-procenyl-lazide-sludge = Solution relativement facile à créer, nécessite d'être chauffée pour se lier correctement lors d'une réaction notoirement inefficace.
 
-reagent-name-styptic-crystal-catalyst = styptic crystal catalyst
-reagent-desc-styptic-crystal-catalyst = Staple of any school chemistry lab, this usually non-reactive liquid can mix with blood and sodium to produce beautiful crystals with healing potential.
+reagent-name-styptic-crystal-catalyst = catalyseur cristallin styptique
+reagent-desc-styptic-crystal-catalyst = Pilier de tout laboratoire de chimie scolaire, ce liquide généralement non réactif peut se mélanger avec du sang et du sodium pour produire de beaux cristaux au potentiel cicatrisant.
 
-reagent-name-synthflesh = synthflesh
-reagent-desc-synthflesh = Whilst it's just seemingly uninteresting ground up synthmeat, cells with great healing potential can be separated from it. Synthmeat can be created from a somewhat complex reaction with hydroxide byproduct.
+reagent-name-synthflesh = synthchair
+reagent-desc-synthflesh = Bien qu'il ne s'agisse apparemment que de synthviande hachée sans intérêt, des cellules au grand potentiel cicatrisant peuvent en être extraites. La synthviande peut être créée à partir d'une réaction assez complexe avec un sous-produit d'hydroxyde.
 
 reagent-name-hercuri = hercuri
-reagent-desc-hercuri = Strong coolant, both serviceable for internal and external application, though care must be taken not to freeze the patients too much.
+reagent-desc-hercuri = Puissant réfrigérant, utilisable aussi bien en application interne qu'externe, bien qu'il faille veiller à ne pas trop refroidir les patients.
 
-reagent-name-herignis = herignis
-reagent-desc-herignis = Can thaw out most chilled of lizardmen, recommended to only use in small doses, as it can quickly heat up its metaboliser to dangerous levels.
+reagent-name-herignis = hérignis
+reagent-desc-herignis = Peut dégeler la plupart des lézardiens les plus refroidis, recommandé de n'utiliser qu'en petites doses, car il peut rapidement chauffer son métaboliseur à des niveaux dangereux.
 
-reagent-name-immurin = immurin
-reagent-desc-immurin = A chemical that boosts your immune system, making it work faster and harder. The boost remains for some time even after the chemical has metabolised. Tastes terrible.
+reagent-name-immurin = immurine
+reagent-desc-immurin = Un produit chimique qui stimule votre système immunitaire, le faisant travailler plus vite et plus fort. L'effet persiste pendant un certain temps même après que le produit chimique a été métabolisé. Goût horrible.
 
-reagent-name-spaceacilin = spaceacilin
-reagent-desc-spaceacilin = Commonly used and effective anti-bacterial medicine. Slightly weakens your immunity.
+reagent-name-spaceacilin = spaceaciline
+reagent-desc-spaceacilin = Antibiotique couramment utilisé et efficace. Affaiblit légèrement votre immunité.
 
-reagent-name-devirate = devirate
-reagent-desc-devirate = Anti-viral medicine. Slightly toxic.
+reagent-name-devirate = dévirate
+reagent-desc-devirate = Médicament antiviral. Légèrement toxique.

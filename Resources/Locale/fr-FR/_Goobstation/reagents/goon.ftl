@@ -1,4 +1,4 @@
-reagent-name-formaldehyde = formaldehyde
+reagent-name-formaldehyde = formaldéhyde
 reagent-desc-formaldehyde =
-    A toxic chemical used in preserving corpses and manufacturing explosives.
-    Also prevents the wraith's absorption ability when the corpse has at least 25 units inside it.
+    Un produit chimique toxique utilisé pour conserver les cadavres et fabriquer des explosifs.
+    Empêche également la capacité d'absorption du spectre lorsque le cadavre contient au moins 25 unités.

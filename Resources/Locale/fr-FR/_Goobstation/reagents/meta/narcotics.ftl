@@ -9,25 +9,25 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 reagent-name-fentanyl = fentanyl
-reagent-desc-fentanyl = A horrifyingly toxic street drug with a laundry list of side-effects. If you do drugs, you go to hell before you die!
+reagent-desc-fentanyl = Une drogue de rue horriblement toxique avec une longue liste d'effets secondaires. Si vous vous droguez, vous allez en enfer avant de mourir !
 
-reagent-name-blind-toxin = blind toxin
-reagent-desc-blind-toxin = A thick chemical that makes the user unable to see during metabolization and damages their eyes.
+reagent-name-blind-toxin = toxine aveuglante
+reagent-desc-blind-toxin = Un produit chimique épais qui rend l'utilisateur incapable de voir pendant sa métabolisation et endommage ses yeux.
 
-reagent-name-tirizene = tirizene
-reagent-desc-tirizene = A nonlethal poison that causes extreme fatigue and weakness in its victim.
+reagent-name-tirizene = tirizène
+reagent-desc-tirizene = Un poison non létal qui provoque une fatigue et une faiblesse extrêmes chez sa victime.
 
-reagent-name-amnestizine = dimtrimethic-neuramincyl acid
-reagent-desc-amnestizine = Commonly referred to as "Amnestizine", it's a milky white chemical capable of causing retrograde & anterograde amnesia. It's derived from a certain trees bark.
+reagent-name-amnestizine = acide dimtriméthique-neuraminyle
+reagent-desc-amnestizine = Communément appelé « Amnestizine », c'est un produit chimique blanc laiteux capable de provoquer une amnésie rétrograde et antérograde. Il est dérivé de l'écorce d'un certain arbre.
 
 reagent-name-aranesp = aranesp
-reagent-desc-aranesp = A difficult to synthesize performance enhancer, most famous for strong energy restoration capabilities.
+reagent-desc-aranesp = Un dopant difficile à synthétiser, surtout connu pour ses puissantes capacités de restauration d'énergie.
 
-reagent-name-mousebites = Mouse bites
-reagent-desc-mousebites = Did you try the medicine drug?
+reagent-name-mousebites = morsures de souris
+reagent-desc-mousebites = Avez-vous essayé le médicament ?
 
-reagent-name-oleoresin-capsaicin = Oleoresin Capsaicin
-reagent-desc-oleoresin-capsaicin = An oily resin derived from Capsaicin. Causes severe irritation when touching the eyes or mouth.
+reagent-name-oleoresin-capsaicin = Oléorésine de Capsaïcine
+reagent-desc-oleoresin-capsaicin = Une résine huileuse dérivée de la capsaïcine. Provoque une irritation sévère au contact des yeux ou de la bouche.
 
-reagent-name-heroin = heroin
-reagent-desc-heroin = An illegal street drug that was once used in medicine, but replace by tramadol.
+reagent-name-heroin = héroïne
+reagent-desc-heroin = Une drogue de rue illégale autrefois utilisée en médecine, mais remplacée par le tramadol.

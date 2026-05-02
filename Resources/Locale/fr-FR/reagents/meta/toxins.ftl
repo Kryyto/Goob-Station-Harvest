@@ -24,89 +24,89 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-toxin = toxin
-reagent-desc-toxin = An unsurprisingly toxic chemical. Available at an emagged chem dispenser.
+reagent-name-toxin = toxine
+reagent-desc-toxin = Un produit chimique étonnamment toxique. Disponible dans un distributeur de produits chimiques forcé.
 
-reagent-name-carpotoxin = carpotoxin
-reagent-desc-carpotoxin = A highly toxic reagent found in space carps. Causes a painful burning sensation.
+reagent-name-carpotoxin = carpotoxine
+reagent-desc-carpotoxin = Un réactif hautement toxique présent dans les carpes spatiales. Provoque une douloureuse sensation de brûlure.
 
-reagent-name-mold = mold
-reagent-desc-mold = A fungal growth, often found in dark, humid places or on expired bread. Will cause you to develop a disease if ingested.
+reagent-name-mold = moisissure
+reagent-desc-mold = Une prolifération fongique, souvent trouvée dans des endroits sombres et humides ou sur du pain périmé. Provoquera une maladie si ingérée.
 
-reagent-name-polytrinic-acid = polytrinic acid
-reagent-desc-polytrinic-acid = An extremely corrosive chemical substance. Severely burns anyone who comes directly into contact with it.
+reagent-name-polytrinic-acid = acide polytrinique
+reagent-desc-polytrinic-acid = Une substance chimique extrêmement corrosive. Brûle sévèrement quiconque entre directement en contact avec elle.
 
-reagent-name-chloral-hydrate = chloral hydrate
-reagent-desc-chloral-hydrate = A sedative and hypnotic chemical. Commonly used to put other people to sleep, whether they want to or not.
+reagent-name-chloral-hydrate = hydrate de chloral
+reagent-desc-chloral-hydrate = Un produit chimique sédatif et hypnotique. Couramment utilisé pour endormir les autres, qu'ils le veuillent ou non.
 
-reagent-name-gastrotoxin = gastrotoxin
-reagent-desc-gastrotoxin = A moderately toxic byproduct of decomposition. Most commonly found in spoiled food.
+reagent-name-gastrotoxin = gastrotoxine
+reagent-desc-gastrotoxin = Un sous-produit modérément toxique de la décomposition. Le plus souvent trouvé dans les aliments avariés.
 
-reagent-name-ferrochromic-acid = ferrochromic acid
-reagent-desc-ferrochromic-acid = A mildy corrosive solution, unable of causing severe danger unless ingested.
+reagent-name-ferrochromic-acid = acide ferrochromique
+reagent-desc-ferrochromic-acid = Une solution légèrement corrosive, incapable de causer des dommages graves sauf si ingérée.
 
-reagent-name-fluorosulfuric-acid = fluorosulfuric acid
-reagent-desc-fluorosulfuric-acid = A highly corrosive chemical, capable of leaving quite a mark on your skin.
+reagent-name-fluorosulfuric-acid = acide fluorosulfurique
+reagent-desc-fluorosulfuric-acid = Un produit chimique hautement corrosif, capable de laisser des marques bien visibles sur votre peau.
 
-reagent-name-sulfuric-acid = sulfuric acid
-reagent-desc-sulfuric-acid = A corrosive chemical. Keep away from your face.
+reagent-name-sulfuric-acid = acide sulfurique
+reagent-desc-sulfuric-acid = Un produit chimique corrosif. Tenez-le éloigné de votre visage.
 
-reagent-name-unstable-mutagen = unstable mutagen
-reagent-desc-unstable-mutagen = Causes mutations when injected into living people or plants. High doses may be lethal, especially in humans.
+reagent-name-unstable-mutagen = mutagène instable
+reagent-desc-unstable-mutagen = Provoque des mutations lorsqu'il est injecté dans des personnes ou des plantes vivantes. Des doses élevées peuvent être létales, en particulier chez les humains.
 
-reagent-name-heartbreaker-toxin = heartbreaker toxin
-reagent-desc-heartbreaker-toxin = A hallucinogenic compound derived from mindbreaker toxin. it blocks neurological signals to the respiratory system, causing asphyxiation. Dexalin plus and epinephrine will filter it out, however.
+reagent-name-heartbreaker-toxin = toxine brise-cœur
+reagent-desc-heartbreaker-toxin = Un composé hallucinogène dérivé de la toxine brise-esprit. Elle bloque les signaux neurologiques vers le système respiratoire, provoquant une asphyxie. La dexaline plus et l'épinéphrine permettront cependant de l'éliminer.
 
-reagent-name-lexorin = lexorin
-reagent-desc-lexorin = A fast-acting chemical used to asphyxiate people rapidly.
+reagent-name-lexorin = lexorine
+reagent-desc-lexorin = Un produit chimique à action rapide utilisé pour asphyxier rapidement les personnes.
 
-reagent-name-mindbreaker-toxin = mindbreaker toxin
-reagent-desc-mindbreaker-toxin = A potent hallucinogenic compound that is formerly known as LSD.
+reagent-name-mindbreaker-toxin = toxine brise-esprit
+reagent-desc-mindbreaker-toxin = Un puissant composé hallucinogène anciennement connu sous le nom de LSD.
 
 reagent-name-histamine = histamine
-reagent-desc-histamine = A chemical caused by allergenics reacting with antibodies. Lethal at large quantities.
+reagent-desc-histamine = Un produit chimique causé par la réaction d'allergènes avec des anticorps. Létale en grandes quantités.
 
-reagent-name-theobromine = theobromine
-reagent-desc-theobromine = A bitter alkaloid of the cacao plant, commonly found in chocolate. Do not feed to animals.
+reagent-name-theobromine = théobromine
+reagent-desc-theobromine = Un alcaloïde amer du cacaoyer, couramment présent dans le chocolat. Ne pas donner aux animaux.
 
-reagent-name-amatoxin = amatoxin
-reagent-desc-amatoxin = A deadly toxin found in some mushrooms, primarily fly amanita. Small doses can be lethal.
+reagent-name-amatoxin = amatoxine
+reagent-desc-amatoxin = Une toxine mortelle présente dans certains champignons, principalement l'amanite tue-mouches. De petites doses peuvent être létales.
 
-reagent-name-vent-crud = vent crud
-reagent-desc-vent-crud = A jet black substance found in poorly maintained ventilation systems. Can cause vent cough.
+reagent-name-vent-crud = crasse de ventilation
+reagent-desc-vent-crud = Une substance d'un noir de jais trouvée dans les systèmes de ventilation mal entretenus. Peut provoquer la toux des conduits.
 
-reagent-name-romerol = romerol
-reagent-desc-romerol = An otherworldly concoction able to bring the undead to life. If untreated, the effects are irreversible and will bring certain doom upon the station. Handle with care.
+reagent-name-romerol = romérol
+reagent-desc-romerol = Une mixture d'un autre monde capable de ramener les morts-vivants à la vie. Sans traitement, les effets sont irréversibles et condamneront la station. À manipuler avec précaution.
 
-reagent-name-uncooked-animal-proteins = uncooked animal proteins
-reagent-desc-uncooked-animal-proteins = This is very risky for the stomachs of softer lifeforms to digest.
+reagent-name-uncooked-animal-proteins = protéines animales crues
+reagent-desc-uncooked-animal-proteins = Très risqué pour l'estomac des formes de vie les plus fragiles à digérer.
 
-reagent-name-allicin = allicin
-reagent-desc-allicin = An organosulfur compound found in alliums like garlic, onions, and related plants.
+reagent-name-allicin = allicine
+reagent-desc-allicin = Un composé organosulfuré présent dans les alliums comme l'ail, les oignons et les plantes apparentées.
 
 reagent-name-pax = pax
-reagent-desc-pax = A psychiatric chemical which prevents the patient from directly harming anyone.
+reagent-desc-pax = Un produit chimique psychiatrique qui empêche le patient de blesser directement quiconque.
 
 reagent-name-honk = honk
-reagent-desc-honk = A toxin found in bananium. Causes severe honking and internal bleeding, may also cause the patient to mutate.
+reagent-desc-honk = Une toxine présente dans le bananium. Provoque des klaxonnements sévères et des hémorragies internes, et peut également provoquer une mutation du patient.
 
-reagent-name-lead = lead
-reagent-desc-lead = A slow-acting but incredibly lethal toxin found in steel, albeit in trace amounts. Tasteless.
+reagent-name-lead = plomb
+reagent-desc-lead = Une toxine à action lente mais incroyablement létale présente en infimes quantités dans l'acier. Sans goût.
 
-reagent-name-bungotoxin = bungotoxin
-reagent-desc-bungotoxin = A moderately slow-acting poison found within the pit of the bungo fruit.
+reagent-name-bungotoxin = bungotoxine
+reagent-desc-bungotoxin = Un poison à action modérément lente présent dans le noyau du fruit bungo.
 
 reagent-name-vestine = vestine
-reagent-desc-vestine = Has an adverse reaction within the body causing major jittering. While not particularly useful on its own, it can be used to produce a small variety of chemicals.
+reagent-desc-vestine = Provoque une réaction indésirable dans le corps causant des tremblements importants. Bien que peu utile en elle-même, elle peut être utilisée pour produire une petite variété de produits chimiques.
 
 reagent-name-tazinide = tazinide
-reagent-desc-tazinide = A highly dangerous metallic mixture which can interfere with most movement through an electrifying current.
+reagent-desc-tazinide = Un mélange métallique extrêmement dangereux pouvant interférer avec la plupart des mouvements par le biais d'un courant électrisant.
 
 reagent-name-lipolicide = lipolicide
-reagent-desc-lipolicide = A powerful toxin that will destroy fat cells, massively reducing body weight in a short time. Deadly to those without nutriment in their body.
+reagent-desc-lipolicide = Une puissante toxine qui détruit les cellules graisseuses, réduisant massivement le poids corporel en peu de temps. Mortelle pour ceux dont le corps ne contient pas de nutriments.
 
-reagent-name-mechanotoxin = mechanotoxin
-reagent-desc-mechanotoxin = A neurotoxin used as venom by some species of spider. Degrades movement when built up.
+reagent-name-mechanotoxin = mécanotoxine
+reagent-desc-mechanotoxin = Une neurotoxine utilisée comme venin par certaines espèces d'araignées. Dégrade les mouvements lorsqu'elle s'accumule.
 
-reagent-name-toxintrash = trash 
-reagent-desc-toxintrash = An awful-smelling fluid. Deadly to non-vox.
+reagent-name-toxintrash = déchets
+reagent-desc-toxintrash = Un liquide à l'odeur nauséabonde. Mortel pour les non-vox.

@@ -1,3 +1,3 @@
-﻿reagent-name-nitric-acid = nitric acid
-reagent-desc-nitric-acid = A corrosive chemical used in the production of explosives.
+﻿reagent-name-nitric-acid = acide nitrique
+reagent-desc-nitric-acid = Un produit chimique corrosif utilisé dans la fabrication d'explosifs.
 

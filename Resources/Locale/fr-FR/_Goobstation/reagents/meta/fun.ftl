@@ -9,49 +9,49 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-tranquility = tranquility
-reagent-desc-tranquility = You feel oddly calm...
-reagent-popup-tranquility = You feel oddly calm...
+reagent-name-tranquility = tranquillité
+reagent-desc-tranquility = Vous vous sentez étrangement calme...
+reagent-popup-tranquility = Vous vous sentez étrangement calme...
 
-reagent-name-binglejuice = bingle juice
+reagent-name-binglejuice = jus de bingle
 reagent-desc-binglejuice = Bing bong.
-reagent-popup-binglejuice = The thought must have crossed your mind at some point. The thought that you delved too deep. The thought that this would be a one-way trip. So instead of fighting the inevitable, why not embrace it? Just lay down and rest. There is beauty in this darkness that can be harnessed and used to usher something new.
+reagent-popup-binglejuice = La pensée a dû vous traverser l'esprit à un moment donné. La pensée que vous êtes allé trop loin. La pensée que ce serait un voyage sans retour. Alors plutôt que de combattre l'inévitable, pourquoi ne pas l'embrasser ? Allongez-vous et reposez-vous. Il y a une beauté dans cette obscurité qui peut être exploitée pour faire émerger quelque chose de nouveau.
 
-reagent-name-carpolin = carpolin
-reagent-desc-carpolin = Causes the metabolizer to transform into a superior lifeform.
-reagent-popup-carpolin = You feel... strange.
+reagent-name-carpolin = carpoline
+reagent-desc-carpolin = Pousse le métaboliseur à se transformer en une forme de vie supérieure.
+reagent-popup-carpolin = Vous vous sentez... étrange.
 
 # CREATED BY Goldminermac
 # https://github.com/space-wizards/space-station-14/pull/31149
 # LICENSED UNDER THE MIT LICENSE
-# SEE README.MD AND LICENSE.TXT IN THE ROOT OF THIS REPOSITORY FOR MORE INFORMATION
+# SEE [README.MD](http://README.MD) AND LICENSE.TXT IN THE ROOT OF THIS REPOSITORY FOR MORE INFORMATION
 reagent-name-profanol = profanol
-reagent-desc-profanol = A chemical compound known to make people compulsively swear. A ruiner of countless family reunions and funerals.
+reagent-desc-profanol = Un composé chimique connu pour pousser les gens à jurer compulsivement. Le fléau d'innombrables réunions de famille et funérailles.
 # END OF MIT-LICENSED CODE
 
 reagent-name-copium = copium
-reagent-desc-copium = For when you need a mood boost.
-reagent-popup-copium-1 = You feel very robust.
-reagent-popup-copium-2 = You feel like you're gonna get a raise soon.
-reagent-popup-copium-3 = You're never wrong.
-reagent-popup-copium-4 = You're the hero of this story.
-reagent-popup-copium-5 = Your investments are going to the moon.
-reagent-popup-copium-6 = You are that guy.
-reagent-popup-copium-7 = You can stop anytime you want.
-reagent-popup-copium-8 = You are in control.
-reagent-popup-copium-9 = You should be the captain.
-reagent-popup-copium-10 = You run this station.
-reagent-popup-copium-11 = You know what's best.
-reagent-popup-copium-12 = You could take him.
+reagent-desc-copium = Pour quand vous avez besoin d'un coup de boost moral.
+reagent-popup-copium-1 = Vous vous sentez très robuste.
+reagent-popup-copium-2 = Vous sentez qu'une augmentation arrive bientôt.
+reagent-popup-copium-3 = Vous n'avez jamais tort.
+reagent-popup-copium-4 = Vous êtes le héros de cette histoire.
+reagent-popup-copium-5 = Vos investissements vont atteindre la lune.
+reagent-popup-copium-6 = Vous êtes la personne qu'il faut.
+reagent-popup-copium-7 = Vous pouvez arrêter quand vous voulez.
+reagent-popup-copium-8 = Vous avez le contrôle.
+reagent-popup-copium-9 = Vous devriez être le capitaine.
+reagent-popup-copium-10 = Vous dirigez cette station.
+reagent-popup-copium-11 = Vous savez ce qui est le mieux.
+reagent-popup-copium-12 = Vous pourriez l'avoir.
 
-reagent-name-cat-drugs = cat drugs
-reagent-desc-cat-drugs = Cat drugs? Drugs for cats? Drugs from cats? Better not to ask.
+reagent-name-cat-drugs = drogues de chat
+reagent-desc-cat-drugs = Des drogues de chat ? Des drogues pour chats ? Des drogues faites par des chats ? Mieux vaut ne pas demander.
 
-reagent-name-nostalgia = nostalgia
-reagent-desc-nostalgia = Why is this here?
+reagent-name-nostalgia = nostalgie
+reagent-desc-nostalgia = Pourquoi est-ce que c'est là ?
 
-reagent-name-tilenol = tilenol
-reagent-desc-tilenol = You can feel yourself becoming more robust just by holding this.
+reagent-name-tilenol = tilénol
+reagent-desc-tilenol = Vous vous sentez devenir plus robuste rien qu'en tenant ça dans vos mains.
 
-reagent-name-crapotoxin = crapotoxin
-reagent-desc-crapotoxin = Causes the metabolizer to fart uncontrollably.
+reagent-name-crapotoxin = crapotoxine
+reagent-desc-crapotoxin = Pousse le métaboliseur à péter de manière incontrôlable.

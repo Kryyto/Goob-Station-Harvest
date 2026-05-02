@@ -1,3 +1,3 @@
-reagent-physical-desc-maddening = maddening
-reagent-physical-desc-dark = dark
-reagent-physical-desc-menacing = menacing
+reagent-physical-desc-maddening = exaspérant
+reagent-physical-desc-dark = sombre
+reagent-physical-desc-menacing = menaçant

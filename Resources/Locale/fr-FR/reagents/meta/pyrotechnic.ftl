@@ -9,22 +9,22 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 reagent-name-thermite = thermite
-reagent-desc-thermite = A mixture that becomes extremely hot when ignited.
+reagent-desc-thermite = Un mélange qui devient extrêmement chaud lorsqu'il est enflammé.
 
 reagent-name-napalm = napalm
-reagent-desc-napalm = It's just a little flammable.
+reagent-desc-napalm = C'est juste un peu inflammable.
 
 reagent-name-phlogiston = phlogiston
-reagent-desc-phlogiston = Catches you on fire and makes you ignite.
+reagent-desc-phlogiston = Vous met en feu et vous fait vous embraser.
 
-reagent-name-chlorine-trifluoride = chlorine trifluoride
-reagent-desc-chlorine-trifluoride = You really, REALLY don't want to get this shit anywhere near you.
+reagent-name-chlorine-trifluoride = trifluorure de chlore
+reagent-desc-chlorine-trifluoride = Vous ne voulez vraiment, VRAIMENT pas que cette saloperie s'approche de vous.
 
-reagent-name-foaming-agent = foaming agent
-reagent-desc-foaming-agent = Makes foam such as that's required in metal foam grenades.
+reagent-name-foaming-agent = agent moussant
+reagent-desc-foaming-agent = Produit de la mousse telle que celle requise dans les grenades à mousse métallique.
 
-reagent-name-welding-fuel = welding fuel
-reagent-desc-welding-fuel = Used by welders to weld.
+reagent-name-welding-fuel = carburant de soudage
+reagent-desc-welding-fuel = Utilisé par les soudeurs pour souder.
 
 reagent-name-fluorosurfactant = fluorosurfactant
-reagent-desc-fluorosurfactant = A perfluoronated sulfonic acid that forms a foam when mixed with water.
+reagent-desc-fluorosurfactant = Un acide sulfonique perfluoré qui forme une mousse lorsqu'il est mélangé à de l'eau.

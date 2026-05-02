@@ -13,67 +13,67 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 reagent-name-aluminium = aluminium
-reagent-desc-aluminium = A silver, soft, non-magnetic, and ductile metal.
+reagent-desc-aluminium = Un métal argenté, mou, non magnétique et ductile.
 
-reagent-name-ash = ash
-reagent-desc-ash = A light grey powdery residue
+reagent-name-ash = cendre
+reagent-desc-ash = Un résidu poudreux gris clair.
 
-reagent-name-carbon = carbon
-reagent-desc-carbon = A black, crystalline solid.
+reagent-name-carbon = carbone
+reagent-desc-carbon = Un solide cristallin noir.
 
-reagent-name-charcoal = charcoal
-reagent-desc-charcoal = A black, porous solid
+reagent-name-charcoal = charbon de bois
+reagent-desc-charcoal = Un solide noir et poreux.
 
-reagent-name-chlorine = chlorine
-reagent-desc-chlorine = A yellow-green gas which is toxic to humans.
+reagent-name-chlorine = chlore
+reagent-desc-chlorine = Un gaz jaune-vert toxique pour les humains.
 
-reagent-name-copper = copper
-reagent-desc-copper = A soft, malleable, and ductile metal with very high thermal and electrical conductivity.
+reagent-name-copper = cuivre
+reagent-desc-copper = Un métal mou, malléable et ductile avec une très haute conductivité thermique et électrique.
 
-reagent-name-fluorine = fluorine
-reagent-desc-fluorine = A highly toxic pale yellow gas. Extremely reactive.
+reagent-name-fluorine = fluor
+reagent-desc-fluorine = Un gaz jaune pâle hautement toxique. Extrêmement réactif.
 
-reagent-name-gold = gold
-reagent-desc-gold = Gold is a dense, soft, shiny metal and the most malleable and ductile metal known.
+reagent-name-gold = or
+reagent-desc-gold = L'or est un métal dense, mou et brillant, et le métal le plus malléable et ductile connu.
 
-reagent-name-hydrogen = hydrogen
-reagent-desc-hydrogen = A light, flammable gas.
+reagent-name-hydrogen = hydrogène
+reagent-desc-hydrogen = Un gaz léger et inflammable.
 
-reagent-name-iodine = iodine
-reagent-desc-iodine = Commonly added to table salt as a nutrient. On its own it tastes far less pleasing.
+reagent-name-iodine = iode
+reagent-desc-iodine = Couramment ajouté au sel de table comme nutriment. Seul, il a un goût bien moins agréable.
 
-reagent-name-iron = iron
-reagent-desc-iron = A silvery-grey metal which forms iron oxides (rust) with contact with air. Commonly alloyed with other elements to create alloys such as steel.
+reagent-name-iron = fer
+reagent-desc-iron = Un métal gris argenté qui forme des oxydes de fer (rouille) au contact de l'air. Couramment allié à d'autres éléments pour créer des alliages tels que l'acier.
 
 reagent-name-lithium = lithium
-reagent-desc-lithium = A soft, silvery-white alkali metal. It's highly reactive, and ignites if it makes contact with water.
+reagent-desc-lithium = Un métal alcalin mou et blanc argenté. Il est très réactif et s'enflamme au contact de l'eau.
 
-reagent-name-mercury = mercury
-reagent-desc-mercury = A silver metal which is liquid at room temperature. It's highly toxic to humans.
+reagent-name-mercury = mercure
+reagent-desc-mercury = Un métal argenté qui est liquide à température ambiante. Il est hautement toxique pour les humains.
 
 reagent-name-potassium = potassium
-reagent-desc-potassium = A soft, shiny grey metal. Even more reactive than lithium.
+reagent-desc-potassium = Un métal mou et gris brillant. Encore plus réactif que le lithium.
 
-reagent-name-phosphorus = phosphorus
-reagent-desc-phosphorus = A reactive metal used in pyrotechnics and weapons.
+reagent-name-phosphorus = phosphore
+reagent-desc-phosphorus = Un métal réactif utilisé en pyrotechnie et dans les armes.
 
 reagent-name-radium = radium
-reagent-desc-radium = A radioactive metal, silvery-white in its pure form. It glows due to its radioactivity and is highly toxic.
+reagent-desc-radium = Un métal radioactif, blanc argenté sous sa forme pure. Il brille en raison de sa radioactivité et est hautement toxique.
 
-reagent-name-silicon = silicon
-reagent-desc-silicon = A hard and brittle crystalline solid with a blue-grey color.
+reagent-name-silicon = silicium
+reagent-desc-silicon = Un solide cristallin dur et cassant de couleur bleu-gris.
 
-reagent-name-silver = silver
-reagent-desc-silver = A soft, white, lustrous transition metal, it has the highest electrical conductivity of any element and the highest thermal conductivity of any metal.
+reagent-name-silver = argent
+reagent-desc-silver = Un métal de transition mou, blanc et brillant, il possède la plus haute conductivité électrique de tous les éléments et la plus haute conductivité thermique de tous les métaux.
 
-reagent-name-sulfur = sulfur
-reagent-desc-sulfur = A yellow, crystalline solid.
+reagent-name-sulfur = soufre
+reagent-desc-sulfur = Un solide cristallin jaune.
 
 reagent-name-sodium = sodium
-reagent-desc-sodium = A silvery-white alkali metal. Highly reactive in its pure form.
+reagent-desc-sodium = Un métal alcalin blanc argenté. Très réactif sous sa forme pure.
 
 reagent-name-uranium = uranium
-reagent-desc-uranium = A grey metallic chemical element in the actinide series, weakly radioactive.
+reagent-desc-uranium = Un élément chimique métallique gris de la série des actinides, faiblement radioactif.
 
 reagent-name-zinc = zinc
-reagent-desc-zinc = A silvery, brittle metal, often used in batteries to carry charge.
+reagent-desc-zinc = Un métal argenté et cassant, souvent utilisé dans les batteries pour transporter la charge.

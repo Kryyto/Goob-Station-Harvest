@@ -6,12 +6,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-gases-oxygen = Oxygen
-gases-nitrogen = Nitrogen
-gases-co2 = Carbon Dioxide
+gases-oxygen = Oxygène
+gases-nitrogen = Azote
+gases-co2 = Dioxyde de carbone
 gases-plasma = Plasma
 gases-tritium = Tritium
-gases-water-vapor = Water Vapor
-gases-ammonia = Ammonia
-gases-n2o = Nitrous Oxide
+gases-water-vapor = Vapeur d'eau
+gases-ammonia = Ammoniac
+gases-n2o = Protoxyde d'azote
 gases-frezon = Frezon

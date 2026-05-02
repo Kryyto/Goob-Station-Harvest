@@ -24,47 +24,47 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-desoxyephedrine = desoxyephedrine
-reagent-desc-desoxyephedrine = A more effective ephedrine, with more active downsides. Requires less doses to cure narcolepsy. Explodes if you heat it to 420K!
+reagent-name-desoxyephedrine = désoxyéphédrine
+reagent-desc-desoxyephedrine = Une éphédrine plus efficace, avec des effets secondaires plus prononcés. Nécessite moins de doses pour soigner la narcolepsie. Explose si vous la chauffez à 420K !
 
-reagent-name-ephedrine = ephedrine
-reagent-desc-ephedrine = A caffeinated adrenaline stimulator chemical that makes you faster and harder to knock down. Also helps combat narcolepsy at dosages over thirty, at the cost of severe nerval stress.
+reagent-name-ephedrine = éphédrine
+reagent-desc-ephedrine = Un stimulant adrénergique caféiné qui vous rend plus rapide et plus difficile à renverser. Aide également à combattre la narcolepsie à des doses supérieures à trente, au prix d'un stress nerveux sévère.
 
 reagent-name-stimulants = hyperzine
-reagent-desc-stimulants = A chemical cocktail developed by Donk Co. that allows agents to recover from stuns faster, move more quickly, and grants a small heal when you're more dead than alive.
+reagent-desc-stimulants = Un cocktail chimique développé par Donk Co. qui permet aux agents de récupérer plus rapidement des étourdissements, de se déplacer plus vite, et accorde un petit soin lorsque vous êtes plus mort que vivant.
 
-reagent-name-experimental-stimulants = experimental stimulants
-reagent-desc-experimental-stimulants = A prototype version of hyperzine. Usage grants virtual immunity to stun weaponry, rapid tissue regeneration, extreme running speed by reducing lactic acid buildup, and a general feeling of euphoria. Side effects may include extreme levels of anticoagulation, tunnel vision, extreme toxin buildup in the bloodstream, and rapid liver death. Do not give to animals.
+reagent-name-experimental-stimulants = stimulants expérimentaux
+reagent-desc-experimental-stimulants = Une version prototype de l'hyperzine. Son usage confère une immunité quasi totale aux armes paralysantes, une régénération rapide des tissus, une vitesse de course extrême en réduisant l'accumulation d'acide lactique, et une sensation générale d'euphorie. Les effets secondaires peuvent inclure des niveaux extrêmes d'anticoagulation, une vision en tunnel, une accumulation extrême de toxines dans le flux sanguin et une mort rapide du foie. Ne pas administrer aux animaux.
 
 reagent-name-thc = THC
-reagent-desc-thc = The main psychoactive compound in cannabis.
+reagent-desc-thc = Le principal composé psychoactif du cannabis.
 
 reagent-name-bananadine = bananadine
-reagent-desc-bananadine = A mild psychedelic that is found in small traces in banana peels.
+reagent-desc-bananadine = Un léger psychédélique présent en infimes traces dans les peaux de banane.
 
 reagent-name-nicotine = nicotine
-reagent-desc-nicotine = Dangerous and highly addictive, but that's what the propaganda says.
+reagent-desc-nicotine = Dangereuse et très addictive, mais c'est ce que dit la propagande.
 
-reagent-name-impedrezene = impedrezene
-reagent-desc-impedrezene = A narcotic that impedes one's ability by slowing down the higher brain cell functions.
+reagent-name-impedrezene = impédrezène
+reagent-desc-impedrezene = Un narcotique qui diminue les capacités en ralentissant les fonctions des cellules cérébrales supérieures.
 
-reagent-name-space-drugs = space mirage
-reagent-desc-space-drugs = An illegal compound which induces a number of effects such as loss of balance and visual artefacts.
+reagent-name-space-drugs = mirage spatial
+reagent-desc-space-drugs = Un composé illégal qui induit plusieurs effets tels que la perte d'équilibre et des artefacts visuels.
 
 reagent-name-nocturine = nocturine
-reagent-desc-nocturine = A highly effective sedative and hypnotic, developed by the Syndicate for stealth operations. One-way ticket to honk-shoo town.
+reagent-desc-nocturine = Un sédatif et hypnotique très efficace, développé par le Syndicat pour les opérations furtives. Un aller simple pour le pays des ronflements.
 
-reagent-name-mute-toxin = mute toxin
-reagent-desc-mute-toxin = A thick chemical that coats the vocal cords, making the user unable to speak during metabolization.
+reagent-name-mute-toxin = toxine muette
+reagent-desc-mute-toxin = Un produit chimique épais qui recouvre les cordes vocales, rendant l'utilisateur incapable de parler pendant la métabolisation.
 
-reagent-name-norepinephric-acid = norepinephric acid
-reagent-desc-norepinephric-acid = A smooth chemical that blocks the optical receptors, rendering the user blind during metabolization.
+reagent-name-norepinephric-acid = acide noréphédrinique
+reagent-desc-norepinephric-acid = Un produit chimique doux qui bloque les récepteurs optiques, rendant l'utilisateur aveugle pendant la métabolisation.
 
-reagent-name-tear-gas = tear gas
-reagent-desc-tear-gas = A chemical that causes severe irritation and crying, commonly used in riot control.
+reagent-name-tear-gas = gaz lacrymogène
+reagent-desc-tear-gas = Un produit chimique qui provoque une irritation sévère et des larmes, couramment utilisé dans le contrôle des émeutes.
 
-reagent-name-happiness = happiness
-reagent-desc-happiness = Fills you with ecstatic numbness and causes minor brain damage. Highly addictive. If overdosed causes sudden mood swings.
+reagent-name-happiness = bonheur
+reagent-desc-happiness = Vous remplit d'une torpeur extatique et provoque des dommages cérébraux mineurs. Très addictif. En cas de surdosage, provoque des sautes d'humeur soudaines.
 
-reagent-name-nitrosyl-plasmide = nitrosyl plasmide
-reagent-desc-nitrosyl-plasmide = A powerful stimulant that can prevent drowsiness, stuns and knock downs.
+reagent-name-nitrosyl-plasmide = plasmide nitrosylé
+reagent-desc-nitrosyl-plasmide = Un puissant stimulant qui peut prévenir la somnolence, les étourdissements et les mises à terre.

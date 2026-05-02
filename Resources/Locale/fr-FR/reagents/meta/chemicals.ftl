@@ -10,38 +10,38 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-acetone = acetone
-reagent-desc-acetone = A slick, slightly carcinogenic liquid. Has a multitude of mundane uses in everyday life.
+reagent-name-acetone = acétone
+reagent-desc-acetone = Un liquide glissant et légèrement cancérigène. Possède une multitude d'usages courants dans la vie quotidienne.
 
-reagent-name-phenol = phenol
-reagent-desc-phenol = An aromatic ring of carbon with a hydroxyl group. A useful precursor to some medicines, but has no healing properties on its own.
+reagent-name-phenol = phénol
+reagent-desc-phenol = Un cycle aromatique de carbone avec un groupe hydroxyle. Un précurseur utile pour certains médicaments, mais sans propriétés curatives en lui-même.
 
-reagent-name-sodium-carbonate = sodium carbonate
-reagent-desc-sodium-carbonate = A white, odorless, water-soluble salt that yields an alkaline solution in water.  Also known as soda ash.
+reagent-name-sodium-carbonate = carbonate de sodium
+reagent-desc-sodium-carbonate = Un sel blanc, inodore et soluble dans l'eau qui produit une solution alcaline dans l'eau. Également connu sous le nom de soude ash.
 
 reagent-name-artifexium = artifexium
-reagent-desc-artifexium = A lavender mixture of microscopic artifact fragments and a strong acid. It has the ability to activate artifacts.
+reagent-desc-artifexium = Un mélange lavande de fragments d'artefacts microscopiques et d'un acide puissant. Il a la capacité d'activer des artefacts.
 
-reagent-name-artifact-glue = artifact glue
-reagent-desc-artifact-glue = Mixture of glue and artifexium. It can restore durability of nodes in artifact on touch.
+reagent-name-artifact-glue = colle à artefact
+reagent-desc-artifact-glue = Mélange de colle et d'artifexium. Il peut restaurer la durabilité des nœuds d'un artefact au contact.
 
-reagent-name-benzene = benzene
-reagent-desc-benzene = An aromatic, slightly carcinogenic, ring of carbon, forming a base for many organic compounds.
+reagent-name-benzene = benzène
+reagent-desc-benzene = Un cycle de carbone aromatique et légèrement cancérigène, formant une base pour de nombreux composés organiques.
 
-reagent-name-hydroxide = hydroxide
-reagent-desc-hydroxide = A strong alkaline chemical, forming a base for many organic compounds.
+reagent-name-hydroxide = hydroxyde
+reagent-desc-hydroxide = Un produit chimique fortement alcalin, formant une base pour de nombreux composés organiques.
 
-reagent-name-sodium-hydroxide = sodium hydroxide
-reagent-desc-sodium-hydroxide = A white, odorless, water-soluble salt that yields an strong alkaline solution in water. Causes burns and vomiting when ingested.
+reagent-name-sodium-hydroxide = hydroxyde de sodium
+reagent-desc-sodium-hydroxide = Un sel blanc, inodore et soluble dans l'eau qui produit une solution fortement alcaline dans l'eau. Provoque des brûlures et des vomissements si ingéré.
 
 reagent-name-fersilicite = fersilicite
-reagent-desc-fersilicite = An intermetallic compound with unusual magnetic properties at low temperatures.
+reagent-desc-fersilicite = Un composé intermétallique aux propriétés magnétiques inhabituelles à basse température.
 
-reagent-name-sodium-polyacrylate = sodium polyacrylate
-reagent-desc-sodium-polyacrylate = A super-absorbent polymer with assorted industrial uses.
+reagent-name-sodium-polyacrylate = polyacrylate de sodium
+reagent-desc-sodium-polyacrylate = Un polymère superabsorbant aux usages industriels variés.
 
-reagent-name-cellulose = cellulose fibers
-reagent-desc-cellulose = A crystaline polydextrose polymer, plants swear by this stuff.
+reagent-name-cellulose = fibres de cellulose
+reagent-desc-cellulose = Un polymère polydextrose cristallin, les plantes jurent par cette substance.
 
 reagent-name-rororium = rororium
-reagent-desc-rororium = A strange substance which fills the cores of the hivelords that roam the mining asteroid. Thought to be the source of their regenerative powers.
+reagent-desc-rororium = Une étrange substance qui remplit les noyaux des seigneurs de la ruche qui parcourent l'astéroïde minier. On pense qu'elle est la source de leurs pouvoirs régénérateurs.

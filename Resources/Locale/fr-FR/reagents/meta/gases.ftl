@@ -10,23 +10,23 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-oxygen = oxygen
-reagent-desc-oxygen = An oxidizing, colorless gas.
+reagent-name-oxygen = oxygène
+reagent-desc-oxygen = Un gaz incolore oxydant.
 
 reagent-name-plasma = plasma
-reagent-desc-plasma = Funky, space-magic pixie dust. You probably shouldn't eat this, but we both know you will anyways.
+reagent-desc-plasma = De la poussière de fée spatiale aux propriétés magiques. Vous ne devriez probablement pas en manger, mais on sait tous les deux que vous le ferez quand même.
 
 reagent-name-tritium = tritium
-reagent-desc-tritium = Radioactive space-magic pixie dust.
+reagent-desc-tritium = De la poussière de fée spatiale radioactive.
 
-reagent-name-carbon-dioxide = carbon dioxide
-reagent-desc-carbon-dioxide = You have genuinely no idea what this is.
+reagent-name-carbon-dioxide = dioxyde de carbone
+reagent-desc-carbon-dioxide = Vous n'avez vraiment aucune idée de ce que c'est.
 
-reagent-name-nitrogen = nitrogen
-reagent-desc-nitrogen = A colorless, odorless unreactive gas. Highly stable.
+reagent-name-nitrogen = azote
+reagent-desc-nitrogen = Un gaz incolore, inodore et peu réactif. Très stable.
 
-reagent-name-nitrous-oxide = nitrous oxide
-reagent-desc-nitrous-oxide = You know how everything seems funnier when you're tired? Well...
+reagent-name-nitrous-oxide = protoxyde d'azote
+reagent-desc-nitrous-oxide = Vous savez comment tout semble plus drôle quand vous êtes fatigué ? Eh bien...
 
 reagent-name-frezon = frezon
-reagent-desc-frezon = A highly effective coolant.. and hallucinogenic.
+reagent-desc-frezon = Un réfrigérant très efficace... et hallucinogène.

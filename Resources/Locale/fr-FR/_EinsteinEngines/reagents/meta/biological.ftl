@@ -1,2 +1,2 @@
-reagent-name-black-blood = black blood
-reagent-desc-black-blood = A ridiculously high iron content turns this alien blood almost jet black.
+reagent-name-black-blood = sang noir
+reagent-desc-black-blood = Une teneur en fer ridiculement élevée donne à ce sang extraterrestre une couleur presque noire.

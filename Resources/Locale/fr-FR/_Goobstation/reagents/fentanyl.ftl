@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 Speebro <100388782+Speebr0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Speebro <speebro@notreal.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Speebro <[100388782+Speebr0@users.noreply.github.com]>
+# SPDX-FileCopyrightText: 2024 Speebro <[speebro@notreal.com]>
+# SPDX-FileCopyrightText: 2025 Aiden <[28298836+Aidenkrz@users.noreply.github.com]>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-fentanyl-effect-lostsomething = Where is it?
-fentanyl-effect-fakepresence = You feel someone looking over your shoulder
-fentanyl-effect-skincrawl = Your skin feels like it's crawling
-fentanyl-effect-rushing = Everything is moving so fast...
-fentanyl-effect-giddy = You almost start laughing
-fentanyl-effect-skinworms = They're under my skin, they're crawling through my bones!
-fentanyl-effect-breathingrazors = You feel a sharp pain in your lungs
-fentanyl-effect-lungstight = Your lungs refuse to inhale
-fentanyl-effect-observed = They're all staring right at you
+fentanyl-effect-lostsomething = Où est-ce ?
+fentanyl-effect-fakepresence = Vous sentez quelqu'un regarder par-dessus votre épaule
+fentanyl-effect-skincrawl = Votre peau vous donne l'impression de ramper
+fentanyl-effect-rushing = Tout va si vite...
+fentanyl-effect-giddy = Vous commencez presque à rire
+fentanyl-effect-skinworms = Ils sont sous ma peau, ils se faufilent à travers mes os !
+fentanyl-effect-breathingrazors = Vous ressentez une douleur aiguë dans les poumons
+fentanyl-effect-lungstight = Vos poumons refusent d'inhaler
+fentanyl-effect-observed = Ils vous regardent tous fixement

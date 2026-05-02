@@ -1,11 +1,11 @@
 reagent-name-bz = bz
-reagent-desc-bz = A potent hallucinogenic that also puts slimes into stasis.
+reagent-desc-bz = Un puissant hallucinogène qui place également les slimes en stase.
 
 reagent-name-healium = healium
-reagent-desc-healium = A powerful sleeping agent with regenerative properties.
+reagent-desc-healium = Un puissant somnifère aux propriétés régénératrices.
 
 reagent-name-nitrium = nitrium
-reagent-desc-nitrium = An experimental performance enhancing gas. Nitrium can have amplified effects as more of it gets into your bloodstream.
+reagent-desc-nitrium = Un gaz améliorant les performances à titre expérimental. Les effets du nitrium peuvent être amplifiés à mesure qu'il pénètre davantage dans le flux sanguin.
 
 reagent-name-pluoxium = pluoxium
-reagent-desc-pluoxium = A gas that could supply even more oxygen to the bloodstream when inhaled, without being an oxidizer.
+reagent-desc-pluoxium = Un gaz capable d'apporter encore plus d'oxygène au flux sanguin lorsqu'il est inhalé, sans être un oxydant.

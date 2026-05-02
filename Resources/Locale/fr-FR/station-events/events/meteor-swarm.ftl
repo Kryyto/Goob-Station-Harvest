@@ -6,12 +6,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-station-event-meteor-swarm-start-announcement = Meteors have been detected on collision course with the station.
-station-event-meteor-swarm-end-announcement = The meteor swarm has passed. Please return to your stations.
+station-event-meteor-swarm-start-announcement = Des météores ont été détectés sur une trajectoire de collision avec la station.
+station-event-meteor-swarm-end-announcement = L'essaim de météores est passé. Veuillez regagner vos postes.
 
-station-event-space-dust-start-announcement = The station is passing through a debris cloud, expect minor damage to external fittings and fixtures.
-station-event-meteor-urist-start-announcement = The station is colliding with an unidentified swarm of debris. Please stay calm and do not listen to them.
-station-event-meteor-cow-start-announcement = The station is colliding with an unidentified swarm of debris. Warning: Do not feed them wheat. Moo-ve away from exterior sections.
-station-event-meteor-clown-start-announcement = The station is colliding with an unidentified swarm of debris. HONK! Evacuate laughing gas storage immediately.
-station-event-meteor-potato-start-announcement = The station is colliding with an unidentified swarm of debris. High starch content detected.
-station-event-fun-swarm-start-announcement = The station is colliding with an unidentified swarm of debris. Please panic appropriately.
+station-event-space-dust-start-announcement = La station traverse un nuage de débris, des dommages mineurs aux équipements et installations extérieurs sont à prévoir.
+station-event-meteor-urist-start-announcement = La station entre en collision avec un essaim de débris non identifiés. Veuillez rester calme et ne pas les écouter.
+station-event-meteor-cow-start-announcement = La station entre en collision avec un essaim de débris non identifiés. Avertissement : Ne les nourrissez pas de blé. Éloignez-vous des sections extérieures. Meuh-vez-vous !
+station-event-meteor-clown-start-announcement = La station entre en collision avec un essaim de débris non identifiés. HONK ! Évacuez immédiatement le stockage de gaz hilarant.
+station-event-meteor-potato-start-announcement = La station entre en collision avec un essaim de débris non identifiés. Teneur élevée en amidon détectée.
+station-event-fun-swarm-start-announcement = La station entre en collision avec un essaim de débris non identifiés. Veuillez paniquer de façon appropriée.

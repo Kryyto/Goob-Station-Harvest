@@ -5,6 +5,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-station-event-bureaucratic-error-announcement = A recent bureaucratic error in the Organic Resources Department may result in personnel shortages in some departments and redundant staffing in others.
-station-event-clerical-error-announcement = A minor clerical error in the Organic Resources Department has resulted in the permanent destruction of some of the station records.
-station-event-job-distribution-error-announcement = Due to an error in the Job Assignment System, unexpected personnel that were intended for other facilities may arrive at your station.
+station-event-bureaucratic-error-announcement = Une récente erreur bureaucratique au sein du Département des Ressources Organiques pourrait entraîner des pénuries de personnel dans certains départements et des effectifs redondants dans d'autres.
+station-event-clerical-error-announcement = Une erreur administrative mineure au sein du Département des Ressources Organiques a entraîné la destruction permanente de certains registres de la station.
+station-event-job-distribution-error-announcement = En raison d'une erreur dans le Système d'Affectation des Postes, du personnel inattendu destiné à d'autres installations pourrait arriver à votre station.

@@ -6,4 +6,4 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-station-event-immovable-rod-start-announcement = High velocity unidentified object is on a collision course with the station. Impact imminent.
+station-event-immovable-rod-start-announcement = Un objet non identifié à haute vélocité est en trajectoire de collision avec la station. Impact imminent.

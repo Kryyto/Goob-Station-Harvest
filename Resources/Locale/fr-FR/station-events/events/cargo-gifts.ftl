@@ -4,26 +4,26 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-cargo-gifts-event-announcement = Congratulations! { $sender } has decided to send { $description } to the station { $dest }. Look for it in your next cargo shipment.
-cargo-gift-default-description = A bundle of gifts
+cargo-gifts-event-announcement = Félicitations ! { $sender } a décidé d'envoyer { $description } à la station { $dest }. Guettez-le dans votre prochain envoi de fret.
+cargo-gift-default-description = Un ensemble de cadeaux
 cargo-gift-default-sender = NanoTrasen
-cargo-gift-default-dest = Cargo Dept.
+cargo-gift-default-dest = Département du Fret
 
 cargo-gift-dest-bar = bar
-cargo-gift-dest-eng = Engineering Dept
-cargo-gift-dest-supp = Cargo Dept
-cargo-gift-dest-janitor = Service Dept
-cargo-gift-dest-med = Medical Dept
-cargo-gift-dest-sec = Security Dept
+cargo-gift-dest-eng = Département d'Ingénierie
+cargo-gift-dest-supp = Département du Fret
+cargo-gift-dest-janitor = Département des Services
+cargo-gift-dest-med = Département Médical
+cargo-gift-dest-sec = Département de Sécurité
 
-cargo-gift-pizza-small = A small pizza party
-cargo-gift-pizza-large = A large pizza party
+cargo-gift-pizza-small = Une petite fête de pizza
+cargo-gift-pizza-large = Une grande fête de pizza
 
-cargo-gift-eng = Repair Materials
-cargo-gift-vending = Vending machines refills
-cargo-gift-cleaning = Cleaning equipment
-cargo-gift-medical-supply = Medical supplies
-cargo-gift-space-protection = Space Hazard Protection
-cargo-gift-fire-protection = Fire Protection
-cargo-gift-security-guns = Lethal Weapons
-cargo-gift-security-riot = Riot Gear
+cargo-gift-eng = Matériaux de réparation
+cargo-gift-vending = Recharges pour distributeurs automatiques
+cargo-gift-cleaning = Équipement de nettoyage
+cargo-gift-medical-supply = Fournitures médicales
+cargo-gift-space-protection = Protection contre les dangers spatiaux
+cargo-gift-fire-protection = Protection incendie
+cargo-gift-security-guns = Armes létales
+cargo-gift-security-riot = Équipement anti-émeute

@@ -4,12 +4,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-bluespace-artifact-event-announcement = Our readings have detected an incoming object of alien origin. Please inform the research team of { $sighting }.
+bluespace-artifact-event-announcement = Nos relevés ont détecté un objet entrant d'origine extraterrestre. Veuillez informer l'équipe de recherche de { $sighting }.
 
-bluespace-artifact-sighting-1 = bright flashes of light
-bluespace-artifact-sighting-2 = strange sounds coming from maintenance tunnels
-bluespace-artifact-sighting-3 = otherworldly structures
-bluespace-artifact-sighting-4 = incomprehensible alien objects
-bluespace-artifact-sighting-5 = unfamiliar objects in strange places
-bluespace-artifact-sighting-6 = unknown alien artifacts
-bluespace-artifact-sighting-7 = explosions of light accompanied by weird sounds
+bluespace-artifact-sighting-1 = d'intenses éclairs de lumière
+bluespace-artifact-sighting-2 = d'étranges sons provenant des tunnels de maintenance
+bluespace-artifact-sighting-3 = des structures d'un autre monde
+bluespace-artifact-sighting-4 = des objets extraterrestres incompréhensibles
+bluespace-artifact-sighting-5 = des objets inconnus dans des endroits étranges
+bluespace-artifact-sighting-6 = des artefacts extraterrestres inconnus
+bluespace-artifact-sighting-7 = des explosions de lumière accompagnées de sons étranges

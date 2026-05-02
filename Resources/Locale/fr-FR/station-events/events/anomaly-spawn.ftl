@@ -5,10 +5,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-anomaly-spawn-event-announcement = Our readings have detected a dangerous interspacial anomaly. Please inform the research team about { $sighting }.
+anomaly-spawn-event-announcement = Nos relevés ont détecté une anomalie interspatiale dangereuse. Veuillez informer l'équipe de recherche de { $sighting }.
 
-anomaly-spawn-sighting-1 = low pulsating sounds heard throughout the station
-anomaly-spawn-sighting-2 = strange sources of light
-anomaly-spawn-sighting-3 = inexplicable shapes
-anomaly-spawn-sighting-4 = forms causing severe mental distress
-anomaly-spawn-sighting-5 = strange effects on the local environment
+anomaly-spawn-sighting-1 = faibles sons pulsatoires entendus dans toute la station
+anomaly-spawn-sighting-2 = d'étranges sources de lumière
+anomaly-spawn-sighting-3 = des formes inexplicables
+anomaly-spawn-sighting-4 = des formes provoquant de graves détresses mentales
+anomaly-spawn-sighting-5 = d'étranges effets sur l'environnement local

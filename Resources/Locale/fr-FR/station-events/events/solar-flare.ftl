@@ -4,5 +4,5 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-station-event-solar-flare-start-announcement = A solar flare has been detected near the station. Some communication channels may not function.
-station-event-solar-flare-end-announcement = The solar flare ended. Communication channels no longer affected.
+station-event-solar-flare-start-announcement = Une éruption solaire a été détectée à proximité de la station. Certains canaux de communication peuvent ne pas fonctionner.
+station-event-solar-flare-end-announcement = L'éruption solaire est terminée. Les canaux de communication ne sont plus affectés.

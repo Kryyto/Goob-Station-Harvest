@@ -9,43 +9,43 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-## Phrases used for where central command got this information.
-random-sentience-event-data-1 = scans from our long-range sensors
-random-sentience-event-data-2 = our sophisticated probabilistic models
-random-sentience-event-data-3 = our omnipotence
-random-sentience-event-data-4 = the communications traffic on your station
-random-sentience-event-data-5 = energy emissions we detected
-random-sentience-event-data-6 = [REDACTED]
+## Formules utilisées pour indiquer la source des informations du Commandement Central.
+random-sentience-event-data-1 = les relevés de nos capteurs longue portée
+random-sentience-event-data-2 = nos modèles probabilistes sophistiqués
+random-sentience-event-data-3 = notre omniscience
+random-sentience-event-data-4 = le trafic de communications de votre station
+random-sentience-event-data-5 = les émissions d'énergie que nous avons détectées
+random-sentience-event-data-6 = [CENSURÉ]
 
-## Phrases used to describe the level of intelligence, though it doesn't actually affect anything.
-random-sentience-event-strength-1 = human
+## Formules utilisées pour décrire le niveau d'intelligence, bien que cela n'ait aucun effet réel.
+random-sentience-event-strength-1 = humain
 random-sentience-event-strength-2 = primate
-random-sentience-event-strength-3 = moderate
-random-sentience-event-strength-4 = security
-random-sentience-event-strength-5 = command
+random-sentience-event-strength-3 = modéré
+random-sentience-event-strength-4 = sécurité
+random-sentience-event-strength-5 = commandement
 random-sentience-event-strength-6 = clown
-random-sentience-event-strength-7 = low
-random-sentience-event-strength-8 = AI
+random-sentience-event-strength-7 = faible
+random-sentience-event-strength-8 = IA
 
-## Announcement text
+## Texte d'annonce
 
-station-event-random-sentience-announcement = Based on { $data }, we believe that some of the station's { $amount ->
+station-event-random-sentience-announcement = Sur la base de { $data }, nous estimons que certains des êtres { $amount ->
     [1] { $kind1 }
-    [2] { $kind1 } and { $kind2 }
-    [3] { $kind1 }, { $kind2 }, and { $kind3 }
+    [2] { $kind1 } et { $kind2 }
+    [3] { $kind1 }, { $kind2 } et { $kind3 }
     *[other] { $kind1 }, { $kind2 }, { $kind3 }, etc.
-} beings have developed { $strength } level intelligence, and the ability to communicate.
+} de la station ont développé une intelligence de niveau { $strength }, ainsi que la capacité de communiquer.
 
-## Ghost role description
+## Description du rôle fantôme
 
-station-event-random-sentience-role-description = You are a sentient { $name }, brought to life through space magic.
+station-event-random-sentience-role-description = Vous êtes un(e) { $name } sensible, ramené(e) à la vie par la magie spatiale.
 
-# Flavors
-station-event-random-sentience-flavor-mechanical = mechanical
-station-event-random-sentience-flavor-organic = organic
+# Catégories
+station-event-random-sentience-flavor-mechanical = mécanique
+station-event-random-sentience-flavor-organic = organique
 station-event-random-sentience-flavor-corgi = corgi
 station-event-random-sentience-flavor-primate = primate
 station-event-random-sentience-flavor-kobold = kobold
 station-event-random-sentience-flavor-slime = slime
-station-event-random-sentience-flavor-inanimate = inanimate
+station-event-random-sentience-flavor-inanimate = inanimé
 station-event-random-sentience-flavor-scurret = scurret

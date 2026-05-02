@@ -13,33 +13,33 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-forensic-scanner-interface-title = Forensic scanner
-forensic-scanner-interface-fingerprints = Fingerprints
-forensic-scanner-interface-fibers = Fibers
-forensic-scanner-interface-dnas = DNAs
-forensic-scanner-interface-residues = Residues
-forensic-scanner-interface-no-data = No scan data available
-forensic-scanner-interface-print = Print
-forensic-scanner-interface-clear = Clear
-forensic-scanner-report-title = Forensics Report: {$entity}
-forensic-pad-unused = It hasn't been used.
-forensic-pad-sample = It has a sample: {$sample}
-forensic-pad-no-access-due = Can't access the fingerprint due to {THE($entity)}.
-forensic-pad-no-access = Can't access the fingerprint.
-forensic-pad-start-scan-target = {CAPITALIZE($user)} is trying to take a sample of your fingerprints.
-forensic-pad-start-scan-user = You start taking a sample of {CAPITALIZE($target)}'s fingerprints.
-forensic-pad-already-used = This pad has already been used.
-forensic-scanner-match-fiber = Match in fiber found!
-forensic-scanner-match-fingerprint = Match in fingerprint found!
-forensic-scanner-match-none = No matches found!
-forensic-scanner-printer-not-ready = Printer is not ready yet.
-forensic-scanner-verb-text = Scan
-forensic-scanner-verb-message = Perform a forensic scan
+forensic-scanner-interface-title = Scanneur médico-légal
+forensic-scanner-interface-fingerprints = Empreintes digitales
+forensic-scanner-interface-fibers = Fibres
+forensic-scanner-interface-dnas = ADNs
+forensic-scanner-interface-residues = Résidus
+forensic-scanner-interface-no-data = Pas de données de scan disponibles
+forensic-scanner-interface-print = Imprimer
+forensic-scanner-interface-clear = Vider
+forensic-scanner-report-title = Rapport médico-légal : {$entity}
+forensic-pad-unused = Il n'a pas été utilisé.
+forensic-pad-sample = Il a un échantillon : {$sample}
+forensic-pad-no-access-due = Impossible d'accéder à l'empreinte à cause de {THE($entity)}.
+forensic-pad-no-access = Impossible d'accéder à l'empreinte.
+forensic-pad-start-scan-target = {CAPITALIZE($user)} essaie de prendre un échantillon de vos empreintes.
+forensic-pad-start-scan-user = Vous commencez à prendre un échantillon des empreintes de {CAPITALIZE($target)}.
+forensic-pad-already-used = Ce tampon a déjà été utilisé.
+forensic-scanner-match-fiber = Correspondance trouvée dans les fibres !
+forensic-scanner-match-fingerprint = Correspondance trouvée dans les empreintes !
+forensic-scanner-match-none = Aucun correspondance trouvé !
+forensic-scanner-printer-not-ready = L'imprimante n'est pas prête.
+forensic-scanner-verb-text = Scanner
+forensic-scanner-verb-message = Faire un scan médico-légal
 
-forensics-dna-unknown = unknown DNA
+forensics-dna-unknown = ADN inconnue
 
-forensics-verb-text = Remove evidence
-forensics-verb-message = Remove fingerprints and DNA residues from the object!
-forensics-cleaning = You begin cleaning the evidence off of {THE($target)}...
+forensics-verb-text = Effacer les preuves
+forensics-verb-message = Efface les empreintes digitales et les résidus d'ADN de l'objet !
+forensics-cleaning = Vous commencez à effacer les preuves sur {THE($target)}...
 
-forensics-cleaning-cannot-clean = There is nothing cleanable on {THE($target)}!
+forensics-cleaning-cannot-clean = Il n'y a rien à effacer sur {THE($target)} !

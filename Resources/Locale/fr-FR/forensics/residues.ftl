@@ -6,14 +6,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-forensic-residue = {LOC($adjective)} residue
-forensic-residue-colored = {LOC($adjective)} {LOC($color)} residue
+forensic-residue = résidu {LOC($adjective)}
+forensic-residue-colored = résidu {LOC($color)} {LOC($adjective)}
 
-residue-unknown = unknown
-residue-slippery = slippery
+residue-unknown = inconnu
+residue-slippery = glissant
 
-residue-green = green
-residue-blue = blue
-residue-red = red
-residue-grey = grey
-residue-brown = brown
+residue-green = vert
+residue-blue = bleu
+residue-red = rouge
+residue-grey = gris
+residue-brown = marron

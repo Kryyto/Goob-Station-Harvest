@@ -17,12 +17,11 @@
 
 ## RoundEndSystem
 
-round-end-system-shuttle-called-announcement = An emergency shuttle has been sent. ETA: {$time} {$units}.
-round-end-system-shuttle-already-called-announcement = An emergency shuttle has already been sent.
-round-end-system-shuttle-auto-called-announcement = An automatic crew shift change shuttle has been sent. ETA: {$time} {$units}. Recall the shuttle to extend the shift.
-round-end-system-shuttle-recalled-announcement = The emergency shuttle has been recalled.
+round-end-system-shuttle-called-announcement = Une navette de secours a été envoyée. ETA : {$time} {$units}.
+round-end-system-shuttle-already-called-announcement = Une navette de secours a déjà été envoyée.
+round-end-system-shuttle-auto-called-announcement = Une navette automatique de changement de quart a été envoyée. ETA : {$time} {$units}. Rappelez la navette pour prolonger le quart.
+round-end-system-shuttle-recalled-announcement = La navette de secours a été rappelée.
 round-end-system-shuttle-sender-announcement = Station
-round-end-system-round-restart-eta-announcement = Restarting the round in {$time} {$units}...
-
+round-end-system-round-restart-eta-announcement = Redémarrage de la ronde dans {$time} {$units}...
 eta-units-minutes = minutes
-eta-units-seconds = seconds
+eta-units-seconds = secondes

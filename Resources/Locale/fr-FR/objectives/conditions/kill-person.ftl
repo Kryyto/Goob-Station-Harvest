@@ -5,6 +5,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-objective-condition-kill-person-title = Kill or maroon {$targetName}, {CAPITALIZE($job)}
-objective-condition-kill-maroon-title = Kill and maroon {$targetName}, {CAPITALIZE($job)}
-objective-condition-maroon-person-title = Prevent {$targetName}, {CAPITALIZE($job)} from reaching CentComm.
+objective-condition-kill-person-title = Tuer ou exiler {$targetName}, {CAPITALIZE($job)}
+objective-condition-kill-maroon-title = Tuer et exiler {$targetName}, {CAPITALIZE($job)}
+objective-condition-maroon-person-title = Empêcher {$targetName}, {CAPITALIZE($job)} d'atteindre CentComm.

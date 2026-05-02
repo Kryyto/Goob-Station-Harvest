@@ -9,22 +9,18 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 objectives-round-end-result = {$count ->
-    [one] There was one {$agent}.
-    *[other] There were {$count} {MAKEPLURAL($agent)}.
+    [one] Il y avait un {$agent}.
+    *[other] Il y avait {$count} {MAKEPLURAL($agent)}.
 }
-
-objectives-round-end-result-in-custody = {$custody} out of {$count} {MAKEPLURAL($agent)} were in custody.
-
+objectives-round-end-result-in-custody = {$custody} sur {$count} {MAKEPLURAL($agent)} étaient en garde à vue.
 objectives-player-user-named = [color=White]{$name}[/color] ([color=gray]{$user}[/color])
 objectives-player-named = [color=White]{$name}[/color]
 
 # goob
-objectives-no-objectives = {$custody} {$title} was {$agent}.
-objectives-with-objectives = {$custody} {$title} was {$agent} and had the following objectives:
-
-objectives-objective-success = {$objective} | [color=green]Success![/color] ({TOSTRING($progress, "P0")})
-objectives-objective-partial-success = {$objective} | [color=yellow]Partial Success![/color] ({TOSTRING($progress, "P0")})
-objectives-objective-partial-failure = {$objective} | [color=orange]Partial Failure![/color] ({TOSTRING($progress, "P0")})
-objectives-objective-fail = {$objective} | [color=red]Failure![/color] ({TOSTRING($progress, "P0")})
-
-objectives-in-custody = [bold][color=red]| IN CUSTODY |[/color][/bold]
+objectives-no-objectives = {$custody} {$title} était {$agent}.
+objectives-with-objectives = {$custody} {$title} était {$agent} et avait les objectifs suivants :
+objectives-objective-success = {$objective} | [color=green]Succès ![/color] ({TOSTRING($progress, "P0")})
+objectives-objective-partial-success = {$objective} | [color=yellow]Succès Partiel ![/color] ({TOSTRING($progress, "P0")})
+objectives-objective-partial-failure = {$objective} | [color=orange]Échec Partiel ![/color] ({TOSTRING($progress, "P0")})
+objectives-objective-fail = {$objective} | [color=red]Échec ![/color] ({TOSTRING($progress, "P0")})
+objectives-in-custody = [bold][color=red]| EN GARDE À VUE |[/color][/bold]

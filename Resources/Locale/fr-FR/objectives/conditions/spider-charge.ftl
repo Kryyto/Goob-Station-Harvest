@@ -6,5 +6,5 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-objective-condition-spider-charge-title-no-target = Detonate the spider clan charge (no target)
-objective-condition-spider-charge-title = Detonate the spider clan charge in {$location}
+objective-condition-spider-charge-title-no-target = Faites exploser la charge du clan araignée (aucune cible)
+objective-condition-spider-charge-title = Faites exploser la charge du clan araignée dans {$location}

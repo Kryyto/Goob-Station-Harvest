@@ -6,5 +6,5 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-objective-condition-doorjack-title = Doorjack {$count} doors on the station.
-objective-condition-doorjack-description = Your gloves can emag airlocks. Do this to {$count} doors on the station.
+objective-condition-doorjack-title = Pirater {$count} portes sur la station.
+objective-condition-doorjack-description = Vos gants peuvent emag les sas. Faites-le sur {$count} portes de la station.

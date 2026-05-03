@@ -68,7 +68,7 @@
   parent: BaseAction
   id: ActionTogglePhaseCloak
   name: Camouflage de phase
-  description: Bascule le camouflage de phase de votre combinaison. Attention : si vous êtes touché, toutes les capacités sont désactivées pendant 5 secondes, y compris votre camouflage !
+  description: "Bascule le camouflage de phase de votre combinaison. Attention : si vous êtes touché, toutes les capacités sont désactivées pendant 5 secondes, y compris votre camouflage !"
   components:
   - type: Action
     # have to plan (un)cloaking ahead of time

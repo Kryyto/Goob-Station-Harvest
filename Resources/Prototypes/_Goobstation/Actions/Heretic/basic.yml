@@ -65,7 +65,7 @@
   parent: BaseAction
   id: ActionHereticMansusLink
   name: Lien du Mansus
-  description: Percez la réalité et connectez les esprits les uns aux autres. Touche par défaut : +m
+  description: "Percez la réalité et connectez les esprits les uns aux autres. Touche par défaut : +m"
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

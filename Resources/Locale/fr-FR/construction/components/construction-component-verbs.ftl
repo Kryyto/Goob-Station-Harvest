@@ -6,6 +6,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-deconstructible-verb-begin-deconstruct = Begin deconstructing 
-deconstructible-verb-activate-no-target-text = There is no way to deconstruct this.
-deconstructible-verb-activate-text = Examine to see instructions.
+deconstructible-verb-begin-deconstruct = Commencer la déconstruction
+deconstructible-verb-activate-no-target-text = Il n'y a aucun moyen de déconstruire ceci.
+deconstructible-verb-activate-text = Examinez pour voir les instructions.

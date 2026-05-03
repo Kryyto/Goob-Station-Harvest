@@ -1,4 +1,4 @@
 # UI
-ai-remote-ui-menu-title = Available devices
-ai-remote-ui-menu-moveto = Move to
-ai-remote-control = Take control
+ai-remote-ui-menu-title = Appareils disponibles
+ai-remote-ui-menu-moveto = Se déplacer vers
+ai-remote-control = Prendre le contrôle

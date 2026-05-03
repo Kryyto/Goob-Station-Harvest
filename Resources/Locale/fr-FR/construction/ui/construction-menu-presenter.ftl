@@ -9,12 +9,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-construction-presenter-to-craft = To craft this item, you need to:
-construction-presenter-to-build = To build this, first you need to:
+construction-presenter-to-craft = Pour fabriquer cet objet, vous devez :
+construction-presenter-to-build = Pour construire ceci, vous devez d'abord :
 
 construction-presenter-step-wrapper = {$step-number}. {$text}
 
-construction-presenter-tool-step = Use a {LOC($tool)}.
-construction-presenter-material-step = Add {$amount}x {LOC($material)}.
-construction-presenter-arbitrary-step = Add {LOC($name)}.
-construction-presenter-temperature-step = Heat to {$temperature}.
+construction-presenter-tool-step = Utilisez un {LOC($tool)}.
+construction-presenter-material-step = Ajoutez {$amount}x {LOC($material)}.
+construction-presenter-arbitrary-step = Ajoutez {LOC($name)}.
+construction-presenter-temperature-step = Chauffez à {$temperature}.

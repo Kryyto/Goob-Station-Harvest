@@ -20,29 +20,29 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # User interface
-comms-console-menu-title = Communications Console
-comms-console-menu-announcement-placeholder = Announcement text...
-comms-console-menu-announcement-button = Announce
-comms-console-menu-announcement-button-tooltip = Send your message as a station-wide radio announcement.
-comms-console-menu-broadcast-button = Broadcast
-comms-console-menu-broadcast-button-tooltip = Broadcast your message to wall-mounted screens around the station. Note: They fit only ten characters!
-comms-console-menu-alert-level-button-tooltip = Change the station alert level. Applies immediately on selecting.
-comms-console-menu-call-shuttle = Call emergency shuttle
-comms-console-menu-recall-shuttle = Recall emergency shuttle
-comms-console-menu-emergency-shuttle-button-tooltip = Calls or recalls the emergency shuttle. You can only recall when there's enough time left.
-comms-console-menu-time-remaining = Time remaining: {$time}
+comms-console-menu-title = Console de communications
+comms-console-menu-announcement-placeholder = Texte de l'annonce...
+comms-console-menu-announcement-button = Annoncer
+comms-console-menu-announcement-button-tooltip = Envoyer votre message comme annonce radio à toute la station.
+comms-console-menu-broadcast-button = Diffuser
+comms-console-menu-broadcast-button-tooltip = Diffuser votre message sur les écrans muraux de la station. Note : ils n'affichent que dix caractères !
+comms-console-menu-alert-level-button-tooltip = Modifier le niveau d'alerte de la station. S'applique immédiatement à la sélection.
+comms-console-menu-call-shuttle = Appeler la navette d'urgence
+comms-console-menu-recall-shuttle = Rappeler la navette d'urgence
+comms-console-menu-emergency-shuttle-button-tooltip = Appelle ou rappelle la navette d'urgence. Vous ne pouvez rappeler que s'il reste suffisamment de temps.
+comms-console-menu-time-remaining = Temps restant : {$time}
 
 # Popup
-comms-console-permission-denied = Permission denied
-comms-console-shuttle-unavailable = Shuttle is currently unavailable
-comms-console-message-too-long = Message is too long
+comms-console-permission-denied = Permission refusée
+comms-console-shuttle-unavailable = La navette est actuellement indisponible
+comms-console-message-too-long = Message trop long
 
 # Placeholder values
-comms-console-announcement-sent-by = Sent by
-comms-console-announcement-unknown-sender = Unknown
+comms-console-announcement-sent-by = Envoyé par
+comms-console-announcement-unknown-sender = Inconnu
 
 # Comms console variant titles
-comms-console-announcement-title-station = Communications Console
-comms-console-announcement-title-centcom = Central Command
-comms-console-announcement-title-nukie = Syndicate Nuclear Operative
-comms-console-announcement-title-station-ai = Station AI
+comms-console-announcement-title-station = Console de communications
+comms-console-announcement-title-centcom = Commandement central
+comms-console-announcement-title-nukie = Opérateur nucléaire du Syndicat
+comms-console-announcement-title-station-ai = IA

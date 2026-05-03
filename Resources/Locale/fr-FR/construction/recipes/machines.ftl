@@ -1,3 +1,3 @@
-construction-recipe-light-switch-directional = apc net switch (directional)
-construction-recipe-signal-switch-directional = signal switch (directional)
-construction-recipe-signal-button-directional = signal button (directional)
+construction-recipe-light-switch-directional = interrupteur réseau APC (directionnel)
+construction-recipe-signal-switch-directional = interrupteur de signal (directionnel)
+construction-recipe-signal-button-directional = bouton de signal (directionnel)

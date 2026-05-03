@@ -3,4 +3,4 @@
 #
 # SPDX-License-Identifier: MIT
 
-construction-step-condition-tile-not-blocked = The tile must not be obstructed.
+construction-step-condition-tile-not-blocked = La case ne doit pas être obstruée.

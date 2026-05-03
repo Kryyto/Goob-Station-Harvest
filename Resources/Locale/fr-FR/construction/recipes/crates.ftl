@@ -1,3 +1,3 @@
-construction-recipe-crate-freezer = crate freezer
-construction-recipe-big-box = large cardboard box
-construction-recipe-box-cardboard = small cardboard box
+construction-recipe-crate-freezer = caisse congélateur
+construction-recipe-big-box = grande boîte en carton
+construction-recipe-box-cardboard = petite boîte en carton

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-chameleon-projector-inside-container = There's no room to scan that!
-chameleon-projector-invalid = You can't disguise as that!
-chameleon-projector-success = Projected new disguise.
-chameleon-projector-set-disguise = Set Disguise
+chameleon-projector-inside-container = Il n'y a pas de place pour scanner ça !
+chameleon-projector-invalid = Vous ne pouvez pas vous déguiser en ça !
+chameleon-projector-success = Nouveau déguisement projeté.
+chameleon-projector-set-disguise = Définir le déguisement

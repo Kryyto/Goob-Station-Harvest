@@ -3,4 +3,4 @@
 #
 # SPDX-License-Identifier: MIT
 
-construction-step-condition-wallmount = You must build it on a wall.
+construction-step-condition-wallmount = Vous devez le construire sur un mur.

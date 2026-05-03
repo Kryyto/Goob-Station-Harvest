@@ -31,26 +31,26 @@
 
 ### UI
 
-chat-manager-max-message-length = Your message exceeds {$maxMessageLength} character limit
-chat-manager-ooc-chat-enabled-message = OOC chat has been enabled.
-chat-manager-ooc-chat-disabled-message = OOC chat has been disabled.
-chat-manager-looc-chat-enabled-message = LOOC chat has been enabled.
-chat-manager-looc-chat-disabled-message = LOOC chat has been disabled.
-chat-manager-dead-looc-chat-enabled-message = Dead players can now use LOOC.
-chat-manager-dead-looc-chat-disabled-message = Dead players can no longer use LOOC.
-chat-manager-crit-looc-chat-enabled-message = Crit players can now use LOOC.
-chat-manager-crit-looc-chat-disabled-message = Crit players can no longer use LOOC.
-chat-manager-admin-ooc-chat-enabled-message = Admin OOC chat has been enabled.
-chat-manager-admin-ooc-chat-disabled-message = Admin OOC chat has been disabled.
+chat-manager-max-message-length = Votre message dépasse la limite de {$maxMessageLength} caractères
+chat-manager-ooc-chat-enabled-message = Le chat OOC a été activé.
+chat-manager-ooc-chat-disabled-message = Le chat OOC a été désactivé.
+chat-manager-looc-chat-enabled-message = Le chat LOOC a été activé.
+chat-manager-looc-chat-disabled-message = Le chat LOOC a été désactivé.
+chat-manager-dead-looc-chat-enabled-message = Les joueurs morts peuvent maintenant utiliser le LOOC.
+chat-manager-dead-looc-chat-disabled-message = Les joueurs morts ne peuvent plus utiliser le LOOC.
+chat-manager-crit-looc-chat-enabled-message = Les joueurs en état critique peuvent maintenant utiliser le LOOC.
+chat-manager-crit-looc-chat-disabled-message = Les joueurs en état critique ne peuvent plus utiliser le LOOC.
+chat-manager-admin-ooc-chat-enabled-message = Le chat OOC admin a été activé.
+chat-manager-admin-ooc-chat-disabled-message = Le chat OOC admin a été désactivé.
 
-chat-manager-max-message-length-exceeded-message = Your message exceeded {$limit} character limit
-chat-manager-no-headset-on-message = You don't have a headset on!
-chat-manager-no-radio-key = No radio key specified!
-chat-manager-no-such-channel = There is no channel with key '{$key}'!
-chat-manager-whisper-headset-on-message = You can't whisper on the radio!
+chat-manager-max-message-length-exceeded-message = Votre message a dépassé la limite de {$limit} caractères
+chat-manager-no-headset-on-message = Vous n'avez pas de casque !
+chat-manager-no-radio-key = Aucune touche radio spécifiée !
+chat-manager-no-such-channel = Il n'existe pas de canal avec la touche '{$key}' !
+chat-manager-whisper-headset-on-message = Vous ne pouvez pas chuchoter à la radio !
 
 chat-manager-server-wrap-message = [bold]{$message}[/bold]
-chat-manager-sender-announcement = Central Command
+chat-manager-sender-announcement = Commandement central
 chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} Announcement:[/font][font size=12]
                                                 {$message}[/bold][/font]
 # Einstein Engines - Language begin (changing colors for text based on language color in handler)
@@ -86,7 +86,7 @@ chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){$senderName}:[/bold] {$
 chat-manager-dead-channel-name = DEAD
 chat-manager-admin-channel-name = ADMIN
 
-chat-manager-rate-limited = You are sending messages too quickly!
+chat-manager-rate-limited = Vous envoyez des messages trop rapidement !
 chat-manager-rate-limit-admin-announcement = Rate limit warning: { $player }
 
 ## Speech verbs for chat
@@ -97,108 +97,107 @@ chat-speech-verb-suffix-question = ?
 chat-speech-verb-suffix-stutter = -
 chat-speech-verb-suffix-mumble = ..
 
-chat-speech-verb-name-none = None
-chat-speech-verb-name-default = Default
-chat-speech-verb-default = says
-chat-speech-verb-name-exclamation = Exclaiming
-chat-speech-verb-exclamation = exclaims
-chat-speech-verb-name-exclamation-strong = Yelling
-chat-speech-verb-exclamation-strong = yells
-chat-speech-verb-name-question = Asking
-chat-speech-verb-question = asks
-chat-speech-verb-name-stutter = Stuttering
-chat-speech-verb-stutter = stutters
-chat-speech-verb-name-mumble = Mumbling
-chat-speech-verb-mumble = mumbles
+chat-speech-verb-name-none = Aucun
+chat-speech-verb-name-default = Défaut
+chat-speech-verb-default = dit
+chat-speech-verb-name-exclamation = Exclamation
+chat-speech-verb-exclamation = s'exclame
+chat-speech-verb-name-exclamation-strong = Cri
+chat-speech-verb-exclamation-strong = crie
+chat-speech-verb-name-question = Question
+chat-speech-verb-question = demande
+chat-speech-verb-name-stutter = Bégaiement
+chat-speech-verb-stutter = bégaie
+chat-speech-verb-name-mumble = Marmonnement
+chat-speech-verb-mumble = marmonne
 
-chat-speech-verb-name-arachnid = Arachnid
-chat-speech-verb-insect-1 = chitters
-chat-speech-verb-insect-2 = chirps
-chat-speech-verb-insect-3 = clicks
+chat-speech-verb-name-arachnid = Arachnide
+chat-speech-verb-insect-1 = claque
+chat-speech-verb-insect-2 = pépie
+chat-speech-verb-insect-3 = claque
 
-chat-speech-verb-name-moth = Moth
-chat-speech-verb-winged-1 = flutters
-chat-speech-verb-winged-2 = flaps
-chat-speech-verb-winged-3 = buzzes
+chat-speech-verb-name-moth = Mite
+chat-speech-verb-winged-1 = volète
+chat-speech-verb-winged-2 = bat des ailes
+chat-speech-verb-winged-3 = bourdonne
 
 chat-speech-verb-name-slime = Slime
-chat-speech-verb-slime-1 = sloshes
-chat-speech-verb-slime-2 = burbles
-chat-speech-verb-slime-3 = oozes
+chat-speech-verb-slime-1 = clapote
+chat-speech-verb-slime-2 = gargouille
+chat-speech-verb-slime-3 = suinte
 
 chat-speech-verb-name-plant = Diona
-chat-speech-verb-plant-1 = rustles
-chat-speech-verb-plant-2 = sways
-chat-speech-verb-plant-3 = creaks
+chat-speech-verb-plant-1 = bruisse
+chat-speech-verb-plant-2 = se balance
+chat-speech-verb-plant-3 = craque
 
-chat-speech-verb-name-robotic = Robotic
-chat-speech-verb-robotic-1 = states
-chat-speech-verb-robotic-2 = beeps
-chat-speech-verb-robotic-3 = boops
+chat-speech-verb-name-robotic = Robotique
+chat-speech-verb-robotic-1 = déclare
+chat-speech-verb-robotic-2 = bipe
+chat-speech-verb-robotic-3 = bippe
 
-chat-speech-verb-name-reptilian = Reptilian
-chat-speech-verb-reptilian-1 = hisses
-chat-speech-verb-reptilian-2 = snorts
-chat-speech-verb-reptilian-3 = huffs
+chat-speech-verb-name-reptilian = Reptilien
+chat-speech-verb-reptilian-1 = siffle
+chat-speech-verb-reptilian-2 = renifle
+chat-speech-verb-reptilian-3 = souffle
 
-chat-speech-verb-name-skeleton = Skeleton / Plasmaman
-chat-speech-verb-skeleton-1 = rattles
-chat-speech-verb-skeleton-2 = ribs
-chat-speech-verb-skeleton-3 = bones
-chat-speech-verb-skeleton-4 = clacks
-chat-speech-verb-skeleton-5 = cracks
+chat-speech-verb-name-skeleton = Squelette / Plasmoïde
+chat-speech-verb-skeleton-1 = s'entrechoque
+chat-speech-verb-skeleton-2 = crécelle
+chat-speech-verb-skeleton-3 = cliquète
+chat-speech-verb-skeleton-4 = claque
+chat-speech-verb-skeleton-5 = craque
 
 chat-speech-verb-name-vox = Vox
-chat-speech-verb-vox-1 = screeches
-chat-speech-verb-vox-2 = shrieks
-chat-speech-verb-vox-3 = croaks
+chat-speech-verb-vox-1 = crie
+chat-speech-verb-vox-2 = croasse
+chat-speech-verb-vox-3 = coasse
 
-chat-speech-verb-name-canine = Canine
-chat-speech-verb-canine-1 = barks
-chat-speech-verb-canine-2 = woofs
-chat-speech-verb-canine-3 = howls
+chat-speech-verb-name-canine = Canin
+chat-speech-verb-canine-1 = aboie
+chat-speech-verb-canine-2 = ouafe
+chat-speech-verb-canine-3 = hurle
 
-chat-speech-verb-name-goat = Goat
-chat-speech-verb-goat-1 = bleats
-chat-speech-verb-goat-2 = grunts
-chat-speech-verb-goat-3 = cries
+chat-speech-verb-name-goat = Chèvre
+chat-speech-verb-goat-1 = bêle
+chat-speech-verb-goat-2 = grogne
+chat-speech-verb-goat-3 = pleure
 
-chat-speech-verb-name-small-mob = Mouse
-chat-speech-verb-small-mob-1 = squeaks
-chat-speech-verb-small-mob-2 = pieps
+chat-speech-verb-name-small-mob = Souris
+chat-speech-verb-small-mob-1 = couine
+chat-speech-verb-small-mob-2 = piaille
 
-chat-speech-verb-name-large-mob = Carp
-chat-speech-verb-large-mob-1 = roars
-chat-speech-verb-large-mob-2 = growls
+chat-speech-verb-name-large-mob = Carpe
+chat-speech-verb-large-mob-1 = rugit
+chat-speech-verb-large-mob-2 = gronde
 
-chat-speech-verb-name-monkey = Monkey
-chat-speech-verb-monkey-1 = chimpers
-chat-speech-verb-monkey-2 = screeches
+chat-speech-verb-name-monkey = Singe
+chat-speech-verb-monkey-1 = singe
+chat-speech-verb-monkey-2 = crie
 
 chat-speech-verb-name-cluwne = Cluwne
+chat-speech-verb-cluwne-1 = glousse
+chat-speech-verb-cluwne-2 = se marre
+chat-speech-verb-cluwne-3 = rit
 
-chat-speech-verb-name-parrot = Parrot
-chat-speech-verb-parrot-1 = squawks
-chat-speech-verb-parrot-2 = tweets
-chat-speech-verb-parrot-3 = chirps
+chat-speech-verb-name-parrot = Perroquet
+chat-speech-verb-parrot-1 = couine
+chat-speech-verb-parrot-2 = gazouille
+chat-speech-verb-parrot-3 = pépie
 
-chat-speech-verb-cluwne-1 = giggles
-chat-speech-verb-cluwne-2 = guffaws
-chat-speech-verb-cluwne-3 = laughs
+chat-speech-verb-name-ghost = Fantôme
+chat-speech-verb-ghost-1 = se plaint
+chat-speech-verb-ghost-2 = respire
+chat-speech-verb-ghost-3 = fredonne
+chat-speech-verb-ghost-4 = marmonne
 
-chat-speech-verb-name-ghost = Ghost
-chat-speech-verb-ghost-1 = complains
-chat-speech-verb-ghost-2 = breathes
-chat-speech-verb-ghost-3 = hums
-chat-speech-verb-ghost-4 = mutters
-
-chat-speech-verb-name-electricity = Electricity
-chat-speech-verb-electricity-1 = crackles
-chat-speech-verb-electricity-2 = buzzes
-chat-speech-verb-electricity-3 = screeches
+chat-speech-verb-name-electricity = Électricité
+chat-speech-verb-electricity-1 = crépite
+chat-speech-verb-electricity-2 = bourdonne
+chat-speech-verb-electricity-3 = crie
 
 chat-speech-verb-name-wawa = Wawa
-chat-speech-verb-wawa-1 = intones
-chat-speech-verb-wawa-2 = states
-chat-speech-verb-wawa-3 = declares
-chat-speech-verb-wawa-4 = ponders
+chat-speech-verb-wawa-1 = entonne
+chat-speech-verb-wawa-2 = déclare
+chat-speech-verb-wawa-3 = déclare
+chat-speech-verb-wawa-4 = réfléchit

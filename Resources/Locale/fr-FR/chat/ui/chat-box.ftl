@@ -16,49 +16,49 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-hud-chatbox-info = {$talk-key} to talk, {$cycle-key} to cycle channels.
-hud-chatbox-info-talk = {$talk-key} to talk.
-hud-chatbox-info-cycle = Click here to talk, {$cycle-key} to cycle channels.
-hud-chatbox-info-unbound = Click here to talk.
+hud-chatbox-info = {$talk-key} pour parler, {$cycle-key} pour changer de canal.
+hud-chatbox-info-talk = {$talk-key} pour parler.
+hud-chatbox-info-cycle = Cliquez ici pour parler, {$cycle-key} pour changer de canal.
+hud-chatbox-info-unbound = Cliquez ici pour parler.
 
 hud-chatbox-select-name-prefixed = {$prefix} {$name}
 hud-chatbox-select-channel-Admin = Admin
 hud-chatbox-select-channel-Console = Console
-hud-chatbox-select-channel-Dead = Dead
-hud-chatbox-select-channel-Emotes = Emotes
+hud-chatbox-select-channel-Dead = Morts
+hud-chatbox-select-channel-Emotes = Émotes
 hud-chatbox-select-channel-Local = Local
-hud-chatbox-select-channel-Whisper = Whisper
+hud-chatbox-select-channel-Whisper = Chuchoter
 hud-chatbox-select-channel-LOOC = LOOC
 hud-chatbox-select-channel-OOC = OOC
-hud-chatbox-select-channel-Damage = Damage
+hud-chatbox-select-channel-Damage = Dégâts
 # Goobstation - Starlight collective mind port
-hud-chatbox-select-channel-CollectiveMind = Collective Mind
+hud-chatbox-select-channel-CollectiveMind = Esprit collectif
 hud-chatbox-select-channel-Visual = Actions
 hud-chatbox-select-channel-Radio = Radio
 
-hud-chatbox-channel-Admin = Admin Misc
-hud-chatbox-channel-AdminAlert = Admin Alert
-hud-chatbox-channel-AdminChat = Admin Chat
-hud-chatbox-channel-Dead = Dead
-hud-chatbox-channel-Emotes = Emotes
+hud-chatbox-channel-Admin = Admin divers
+hud-chatbox-channel-AdminAlert = Alerte admin
+hud-chatbox-channel-AdminChat = Chat admin
+hud-chatbox-channel-Dead = Morts
+hud-chatbox-channel-Emotes = Émotes
 hud-chatbox-channel-Local = Local
-hud-chatbox-channel-Whisper = Whisper
+hud-chatbox-channel-Whisper = Chuchoter
 hud-chatbox-channel-LOOC = LOOC
 hud-chatbox-channel-OOC = OOC
 hud-chatbox-channel-Radio = Radio
 hud-chatbox-channel-Notifications = Notifications
-hud-chatbox-channel-Server = Server
+hud-chatbox-channel-Server = Serveur
 # Goobstation - Starlight collective mind port
-hud-chatbox-channel-CollectiveMind = Collective Mind
+hud-chatbox-channel-CollectiveMind = Esprit collectif
 hud-chatbox-channel-Visual = Actions
-hud-chatbox-channel-Damage = Damage
-hud-chatbox-channel-Unspecified = Unspecified
+hud-chatbox-channel-Damage = Dégâts
+hud-chatbox-channel-Unspecified = Non spécifié
 
-hud-chatbox-highlights = Highlights:
-hud-chatbox-highlights-button = Submit
-hud-chatbox-highlights-tooltip = The words need to be separated by a newline,
-                                 if wrapped around " they will be highlighted
-                                 only if separated by spaces or punctuation.
+hud-chatbox-highlights = Mots-clés :
+hud-chatbox-highlights-button = Valider
+hud-chatbox-highlights-tooltip = Les mots doivent être séparés par une nouvelle ligne,
+                                 s'ils sont entourés de " ils seront mis en surbrillance
+                                 uniquement s'ils sont séparés par des espaces ou de la ponctuation.
 hud-chatbox-highlights-placeholder = McHands
-                                     "Judge"
-                                     Medical
+                                     "Juge"
+                                     Médical

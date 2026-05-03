@@ -6,7 +6,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Shown when examining an in-construction object
-construction-insert-prototype-no-name = Next, insert {$prototypeName}.
+construction-insert-prototype-no-name = Ensuite, insérez {$prototypeName}.
 
 # Shown when examining an in-construction object
-construction-insert-prototype = Next, insert {$entityName}.
+construction-insert-prototype = Ensuite, insérez {$entityName}.

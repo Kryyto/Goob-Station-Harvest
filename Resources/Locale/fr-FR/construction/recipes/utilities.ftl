@@ -1,5 +1,5 @@
-construction-recipe-gas-pipe-half = gas pipe half
-construction-recipe-gas-pipe-bend = gas pipe bend
-construction-recipe-gas-pipe-t-junction = gas pipe T-junction
-construction-recipe-gas-pipe-fourway = gas pipe fourway
-construction-recipe-heat-exchanger-bend = radiator bend
+construction-recipe-gas-pipe-half = demi-tuyau de gaz
+construction-recipe-gas-pipe-bend = coude de tuyau de gaz
+construction-recipe-gas-pipe-t-junction = jonction en T de tuyau de gaz
+construction-recipe-gas-pipe-fourway = jonction en croix de tuyau de gaz
+construction-recipe-heat-exchanger-bend = coude de radiateur

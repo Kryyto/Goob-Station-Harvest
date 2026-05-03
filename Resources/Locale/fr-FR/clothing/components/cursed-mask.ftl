@@ -4,8 +4,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-cursed-mask-examine-Neutral = It depicts an entirely unremarkable visage.
-cursed-mask-examine-Joy = It depicts a face basking in joy.
-cursed-mask-examine-Despair = It depicts a face wraught with despair.
-cursed-mask-examine-Anger = It depicts a furious expression locked in rage.
-cursed-mask-takeover-popup = The mask seizes control over your body!
+cursed-mask-examine-Neutral = Il représente un visage totalement banal.
+cursed-mask-examine-Joy = Il représente un visage baignant dans la joie.
+cursed-mask-examine-Despair = Il représente un visage torturé par le désespoir.
+cursed-mask-examine-Anger = Il représente une expression furieuse figée dans la rage.
+cursed-mask-takeover-popup = Le masque prend le contrôle de votre corps !

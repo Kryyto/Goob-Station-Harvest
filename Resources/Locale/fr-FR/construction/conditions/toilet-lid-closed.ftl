@@ -6,5 +6,5 @@
 # SPDX-License-Identifier: MIT
 
 # ToiletLidClosed
-construction-examine-condition-toilet-lid-closed = Use a [color=yellow]crowbar[/color] to close the lid.
-construction-step-condition-toilet-lid-closed = Make sure the toilet lid is closed.
+construction-examine-condition-toilet-lid-closed = Utilisez un [color=yellow]pied-de-biche[/color] pour fermer le couvercle.
+construction-step-condition-toilet-lid-closed = Assurez-vous que le couvercle des toilettes est fermé.

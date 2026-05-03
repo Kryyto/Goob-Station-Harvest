@@ -1,2 +1,2 @@
-construction-smokeable-joint-rainbow = rainbow joint
-construction-smokeable-blunt-rainbow = rainbow blunt
+construction-smokeable-joint-rainbow = joint arc-en-ciel
+construction-smokeable-blunt-rainbow = blunt arc-en-ciel

@@ -4,6 +4,6 @@
 #
 # SPDX-License-Identifier: MIT
 
-construction-examine-condition-any-conditions = Any of these conditions must be true:
-construction-guide-condition-any-conditions = Any of the conditions below must be true
-construction-guide-condition-part-assembly = All of the required parts must be inserted.
+construction-examine-condition-any-conditions = L'une de ces conditions doit être vraie :
+construction-guide-condition-any-conditions = L'une des conditions ci-dessous doit être vraie
+construction-guide-condition-part-assembly = Toutes les pièces requises doivent être insérées.

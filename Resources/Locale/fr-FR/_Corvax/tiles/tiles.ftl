@@ -3,21 +3,21 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-tiles-wood-parquet = wooden parquet
-tiles-wood-chess = wooden chess floor
-tiles-wood-black = black wooden floor
-tiles-wood-large-black = large black wooden floor
-tiles-wood-parquet-black = black wooden parquet
-tiles-wood-chess-black = black wooden chess floor
-tiles-wood-dark = dark wooden floor
-tiles-wood-large-dark = large dark wooden floor
-tiles-wood-parquet-dark = dark wooden parquet
-tiles-wood-chess-dark = dark wooden chess floor
-tiles-wood-light = white wooden floor
-tiles-wood-large-light = large white wooden floor
-tiles-wood-parquet-light = white wooden parquet
-tiles-wood-chess-light = white wooden chess floor
-tiles-wood-red = red wooden floor
-tiles-wood-large-red = large red wooden floor
-tiles-wood-parquet-red = red wooden parquet
-tiles-wood-chess-red = red wooden chess floor
+tiles-wood-parquet = parquet en bois
+tiles-wood-chess = parquet en bois style échiquier
+tiles-wood-black = parquet en bois noir
+tiles-wood-large-black = grand parquet en bois noir
+tiles-wood-parquet-black = parquet en bois noir
+tiles-wood-chess-black = parquet en bois noir style échiquier
+tiles-wood-dark = parquet en bois sombre
+tiles-wood-large-dark = grand parquet en bois sombre
+tiles-wood-parquet-dark = parquet en bois sombre
+tiles-wood-chess-dark = parquet en bois sombre style échiquier
+tiles-wood-light = parquet en bois blanc
+tiles-wood-large-light = grand parquet en bois blanc
+tiles-wood-parquet-light = parquet en bois blanc
+tiles-wood-chess-light = parquet en bois blanc style échiquier
+tiles-wood-red = parquet en bois rouge
+tiles-wood-large-red = grand parquet en bois rouge
+tiles-wood-parquet-red = parquet en bois rouge
+tiles-wood-chess-red = parquet en bois rouge style échiquier

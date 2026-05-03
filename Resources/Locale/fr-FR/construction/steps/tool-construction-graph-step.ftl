@@ -5,4 +5,4 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-construction-use-tool-entity = Next, use a [color=cyan]{$toolName}[/color].
+construction-use-tool-entity = Ensuite, utilisez un [color=cyan]{$toolName}[/color].

@@ -6,10 +6,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-cable-multitool-system-internal-error-no-power-node = Your multitool reads, "INTERNAL ERROR: NOT A POWER CABLE".
-cable-multitool-system-internal-error-missing-component = Your multitool reads, "INTERNAL ERROR: CABLE ABNORMAL".
-cable-multitool-system-verb-name = Power
-cable-multitool-system-verb-tooltip = Use a multitool to examine power statistics.
+cable-multitool-system-internal-error-no-power-node = Votre multioutil affiche : « ERREUR INTERNE : PAS UN CÂBLE ÉLECTRIQUE ».
+cable-multitool-system-internal-error-missing-component = Votre multioutil affiche : « ERREUR INTERNE : CÂBLE ANORMAL ».
+cable-multitool-system-verb-name = Puissance
+cable-multitool-system-verb-tooltip = Utilisez un multioutil pour examiner les statistiques électriques.
 
 cable-multitool-system-statistics = Your multitool shows a list of statistics:
                                     Current Supply: { POWERWATTS($supplyc) }

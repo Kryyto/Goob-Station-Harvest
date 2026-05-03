@@ -6,18 +6,18 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-magic-mirror-component-activate-user-has-no-hair = You can't have any hair!
+magic-mirror-component-activate-user-has-no-hair = Vous ne pouvez pas avoir de cheveux !
 
-magic-mirror-window-title = Magic Mirror
-magic-mirror-add-slot-self = You're giving yourself some hair.
-magic-mirror-remove-slot-self = You're removing some of your hair.
-magic-mirror-change-slot-self = You're changing your hairstyle.
-magic-mirror-change-color-self = You're changing your hair color.
+magic-mirror-window-title = Miroir magique
+magic-mirror-add-slot-self = Vous vous donnez des cheveux.
+magic-mirror-remove-slot-self = Vous vous coupez des cheveux.
+magic-mirror-change-slot-self = Vous changez de coiffure.
+magic-mirror-change-color-self = Vous changez la couleur de vos cheveux.
 
-magic-mirror-add-slot-target = Hair is being added to you by {THE($user)}.
-magic-mirror-remove-slot-target = Your hair is being cut off by {THE($user)}.
-magic-mirror-change-slot-target = Your hairstyle is being changed by {THE($user)}.
-magic-mirror-change-color-target = Your hair color is being changed by {THE($user)}.
+magic-mirror-add-slot-target = {THE($user)} vous ajoute des cheveux.
+magic-mirror-remove-slot-target = {THE($user)} vous coupe les cheveux.
+magic-mirror-change-slot-target = {THE($user)} change votre coiffure.
+magic-mirror-change-color-target = {THE($user)} change la couleur de vos cheveux.
 
-magic-mirror-blocked-by-hat-self = You need to take off your hat before changing your hair.
-magic-mirror-blocked-by-hat-self-target = You try to change {POSS-ADJ($target)} hair but {POSS-ADJ($target)} clothes get in the way.
+magic-mirror-blocked-by-hat-self = Vous devez enlever votre chapeau avant de changer de coiffure.
+magic-mirror-blocked-by-hat-self-target = Vous essayez de changer les cheveux de {POSS-ADJ($target)} mais ses vêtements vous en empêchent.

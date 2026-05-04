@@ -1,42 +1,42 @@
-shadowling-enthrall-non-humanoid = It is not what you're looking for...
-shadowling-enthrall-mindshield = They can defy your powers!
-shadowling-enthrall-already-thrall = They are already your thrall!
-shadowling-enthrall-cant-be-controlled = It's mind cannot be controlled...
-shadowling-enthrall-no-mind = It's just an empty vessel...
-shadowling-enthrall-shadowling = You can not enthrall your own kind!
-shadowling-enthrall-psionic-insulated = Their essence burns with power beyond your control!
-shadowling-enthrall-dead = You need them alive!
+shadowling-enthrall-non-humanoid = Ce n'est pas ce que vous cherchez...
+shadowling-enthrall-mindshield = Ils peuvent résister à vos pouvoirs !
+shadowling-enthrall-already-thrall = Ils sont déjà votre serviteur !
+shadowling-enthrall-cant-be-controlled = Son esprit ne peut pas être contrôlé...
+shadowling-enthrall-no-mind = Ce n'est qu'un réceptacle vide...
+shadowling-enthrall-shadowling = Vous ne pouvez pas asservir votre propre espèce !
+shadowling-enthrall-psionic-insulated = Leur essence brûle d'un pouvoir hors de votre contrôle !
+shadowling-enthrall-dead = Vous avez besoin qu'ils soient vivants !
 
-shadowling-target-being-thralled = A dark presence grips your mind...!
+shadowling-target-being-thralled = Une présence sombre étreint votre esprit... !
 
-shadowling-glare-target = Your body seizes as an otherworldly glare bears down on you.
+shadowling-glare-target = Votre corps se fige tandis qu'un regard d'un autre monde s'abat sur vous.
 
-shadowling-shadow-walk-activate = I vanish between the breaths of light.
+shadowling-shadow-walk-activate = Je disparais entre les souffles de lumière.
 
-shadowling-icy-veins-activated = An unnatural chill grips your limbs...
+shadowling-icy-veins-activated = Un froid surnaturel étreint vos membres...
 
-shadowling-rapid-rehatch-complete = The husk shudders, and from it, you are reborn unscathed.
+shadowling-rapid-rehatch-complete = L'enveloppe frémit, et de celle-ci, vous renaissez indemne.
 
-shadowling-destroy-engines-used = The shuttle has already been delayed by someone else.
-shadowling-destroy-engines-arrived = Your powers make you unable to destroy the engines!
-shadowling-destroy-engines-not-called = The shuttle has not been called yet.
+shadowling-destroy-engines-used = La navette a déjà été retardée par quelqu'un d'autre.
+shadowling-destroy-engines-arrived = Vos pouvoirs vous empêchent de détruire les moteurs !
+shadowling-destroy-engines-not-called = La navette n'a pas encore été appelée.
 
-shadowling-collective-mind-success = You feel stronger than before! You need {$thralls} Thralls to achieve your true form!
-shadowling-collective-mind-failure = You don't feel anything. You need {$thralls} Thralls to achieve your true form.
-shadowling-collective-mind-ascend = You have gained all the powers... Now, to ascend!
+shadowling-collective-mind-success = Vous vous sentez plus fort qu'avant ! Vous avez besoin de {$thralls} Serviteurs pour atteindre votre vraie forme !
+shadowling-collective-mind-failure = Vous ne ressentez rien. Vous avez besoin de {$thralls} Serviteurs pour atteindre votre vraie forme.
+shadowling-collective-mind-ascend = Vous avez acquis tous les pouvoirs... Maintenant, ascension !
 
-shadowling-sonic-screech-complete = The air splits with your cry.
+shadowling-sonic-screech-complete = L'air se fend à votre cri.
 
-shadowling-null-charge-success = Your impact echoes through the wires as power yields to void.
-shadowling-null-charge-start = You begin to charge your fist with a nullifying force.
+shadowling-null-charge-success = Votre impact résonne dans les câbles alors que l'énergie cède au vide.
+shadowling-null-charge-start = Vous commencez à charger votre poing d'une force annihilante.
 
-shadowling-black-rec-lesser-already = The target is already a Lesser Shadowling.
-shadowling-black-rec-revive-done = Darkness pulls you back from the brink.
-shadowling-black-rec-lesser-done = You feel like even stronger than before.
-shadowling-black-rec-limit = You have reached your limit. You can not empower any more Thralls!
+shadowling-black-rec-lesser-already = La cible est déjà un Moindre Ombrelin.
+shadowling-black-rec-revive-done = L'obscurité vous ramène du bord du précipice.
+shadowling-black-rec-lesser-done = Vous vous sentez encore plus fort qu'auparavant.
+shadowling-black-rec-limit = Vous avez atteint votre limite. Vous ne pouvez plus renforcer de Serviteurs !
 
-shadowling-ascendant-broadcast-dialog = Your message has been sent to everyone.
+shadowling-ascendant-broadcast-dialog = Votre message a été envoyé à tout le monde.
 
-shadowling-nox-imperii-done = No longer prey to the light, you stride where your ancestors withered.
+shadowling-nox-imperii-done = N'étant plus la proie de la lumière, vous marchez là où vos ancêtres ont dépéri.
 
-shadowling-ascendance-fail = You cannot build your cocoon in this tile.
+shadowling-ascendance-fail = Vous ne pouvez pas construire votre cocon sur cette case.

@@ -1,14 +1,14 @@
-translator-component-shutoff = The {$translator} shuts off.
-translator-component-turnon = The {$translator} turns on.
+translator-component-shutoff = Le {$translator} s'éteint.
+translator-component-turnon = Le {$translator} s'allume.
 
-translator-implanter-refuse = The {$implanter} has no effect on {$target}.
-translator-implanter-success = The {$implanter} successfully injected {$target}.
-translator-implanter-ready = This implanter appears to be ready to use.
-translator-implanter-used = This implanter seems empty.
+translator-implanter-refuse = Le {$implanter} n'a aucun effet sur {$target}.
+translator-implanter-success = Le {$implanter} a injecté {$target} avec succès.
+translator-implanter-ready = Cet implanteur semble prêt à être utilisé.
+translator-implanter-used = Cet implanteur semble vide.
 
-translator-examined-langs-understood = It can translate from: [color=green]{$languages}[/color].
-translator-examined-langs-spoken = It can translate to: [color=green]{$languages}[/color].
-translator-examined-requires-any = It requires you to know at least one of these languages: [color=yellow]{$languages}[/color].
-translator-examined-requires-all = It requires you to know all of these languages: [color=yellow]{$languages}[/color].
-translator-examined-enabled = It appears to be [color=green]active[/color].
-translator-examined-disabled = It appears to be [color=red]turned off[/color].
+translator-examined-langs-understood = Il peut traduire depuis : [color=green]{$languages}[/color].
+translator-examined-langs-spoken = Il peut traduire vers : [color=green]{$languages}[/color].
+translator-examined-requires-any = Il vous demande de connaître au moins une de ces langues : [color=yellow]{$languages}[/color].
+translator-examined-requires-all = Il vous demande de connaître toutes ces langues : [color=yellow]{$languages}[/color].
+translator-examined-enabled = Il semble être [color=green]actif[/color].
+translator-examined-disabled = Il semble être [color=red]éteint[/color].

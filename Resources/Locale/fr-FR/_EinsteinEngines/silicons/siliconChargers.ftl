@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-silicon-charger-overheatwarning = You feel like you're in a microwave!
-silicon-charger-chargerate-string = Charge rate
-silicon-charger-efficiency-string = Efficiency
-silicon-charger-list-full = {CAPITALIZE(THE($charger))} can only accommodate so many targets!
+silicon-charger-overheatwarning = Vous avez l'impression d'être dans un micro-ondes !
+silicon-charger-chargerate-string = Taux de charge
+silicon-charger-efficiency-string = Efficacité
+silicon-charger-list-full = {CAPITALIZE(THE($charger))} ne peut accueillir qu'un nombre limité de cibles !

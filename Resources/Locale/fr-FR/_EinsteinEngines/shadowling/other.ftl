@@ -1,19 +1,19 @@
-shadowling-on-try-equip-clothes = This is fruitless to you...
+shadowling-on-try-equip-clothes = Cela n'a aucun intérêt pour vous...
 
-reagent-name-shadowling-toxin = shadowling toxin
-reagent-desc-shadowling-toxin = A mysterious chemical that makes heals any shadowling and their thralls, but blinds anyone else
+reagent-name-shadowling-toxin = toxine d'ombrelin
+reagent-desc-shadowling-toxin = Un produit chimique mystérieux qui soigne tout ombrelin et ses serviteurs, mais aveugle quiconque d'autre
 
-alerts-shadowling-light-name = Light Identifier
-alerts-shadowling-light-desc = This is your light identifier. If it reaches 0, you start taking damage. Prioritize standing in the shadows.
+alerts-shadowling-light-name = Identifiant de Lumière
+alerts-shadowling-light-desc = C'est votre identifiant de lumière. S'il atteint 0, vous commencez à subir des dégâts. Privilégiez rester dans les ombres.
 
-chat-manager-shadowling-channel-name = Shadowmind
+chat-manager-shadowling-channel-name = Esprit des Ombres
 
-shadowling-dead = You strangely regain your mind.
+shadowling-dead = Vous récupérez étrangement votre esprit.
 
-shadowling-thrall-examined = This is your Thrall.
-shadowling-thrall-other-examined = {CAPITALIZE(POSS-ADJ($target))} eyes seem to gaze into another reality...
+shadowling-thrall-examined = C'est votre Serviteur.
+shadowling-thrall-other-examined = {CAPITALIZE(POSS-ADJ($target))} yeux semblent regarder dans une autre réalité...
 
-guide-entry-shadowlings = Shadowlings
+guide-entry-shadowlings = Ombrelins
 
 reagent-effect-guidebook-blind-non-sling =
     { $chance ->
@@ -27,19 +27,19 @@ reagent-effect-guidebook-heal-sling =
         *[other] heal any
     } shadowling and thrall
 
-marking-LesserShadowlingEyes = Lesser Shadowling Eyes
-marking-AbominationHorns = Abomination Horns
-marking-AbominationTorso = Abomination Torso
+marking-LesserShadowlingEyes = Yeux de Moindre Ombrelin
+marking-AbominationHorns = Cornes d'Abomination
+marking-AbominationTorso = Torse d'Abomination
 
-admin-verb-make-shadowling = Make the target into a shadowling.
-admin-verb-text-make-shadowling = Make Shadowling
+admin-verb-make-shadowling = Transformer la cible en ombrelin.
+admin-verb-text-make-shadowling = Créer Ombrelin
 
-species-name-shadowling = Shadowling
+species-name-shadowling = Ombrelin
 species-name-shadow = Shadow
 
 # Examine Texts
-shadowling-examine-self = [color=#D22B2B]You take {$damage} burn damage from light[/color]
+shadowling-examine-self = [color=#D22B2B]Vous subissez {$damage} dégâts de brûlure de la lumière[/color]
 
 # UI
-asc-broadcast-title = Ascendant Broadcast
+asc-broadcast-title = Diffusion Ascendante
 asc-broadcast-prompt = Message

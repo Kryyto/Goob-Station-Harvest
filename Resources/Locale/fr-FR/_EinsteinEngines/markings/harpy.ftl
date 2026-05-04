@@ -39,11 +39,11 @@ marking-HarpyWingSpeckledClassic = Speckled Classic Wings
 marking-HarpyWingSpeckledClassic-harpy_speckled_1 = Main
 marking-HarpyWingSpeckledClassic-harpy_speckled_2 = Speckles
 
-marking-HarpyWingUndertoneClassic = Classic Wings with Undertone
+marking-HarpyWingUndertoneClassic = Ailes Classiques avec Sous-Ton
 marking-HarpyWingUndertoneClassic-harpy_undertone_1 = Front
 marking-HarpyWingUndertoneClassic-harpy_undertone_2 = Back
 
-marking-HarpyWingTipsClassic = Classic Wings with Feather Tips
+marking-HarpyWingTipsClassic = Ailes Classiques avec Pointes de Plumes
 marking-HarpyWingTipsClassic-harpy_wingtip_1 = Main
 marking-HarpyWingTipsClassic-harpy_wingtip_2 = Feathertips
 

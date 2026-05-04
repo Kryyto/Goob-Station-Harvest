@@ -1,2 +1,2 @@
-ghost-role-information-minebot-name = Minebot
-ghost-role-information-minebot-description = Assist the miners with their work.
+ghost-role-information-minebot-name = Miniebot
+ghost-role-information-minebot-description = Assister les mineurs dans leur travail.

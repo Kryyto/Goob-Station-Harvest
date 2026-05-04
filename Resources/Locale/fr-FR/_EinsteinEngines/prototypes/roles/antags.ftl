@@ -1,20 +1,19 @@
 ﻿# For Sol Alliance Navy Deserters
-ghost-role-information-deserter-name = Solarian Navy Deserter
-ghost-role-information-deserter-description = "I've fucking had it with the quartermaster not giving me my damn paycheck! Let's take one of the dropships for a joyride and go looting to pay ourselves."
-ghost-role-information-deserter-rules =
-    You are not a terrorist, but you're not exactly a great person either. Do whatever it takes to "Get back what the navy owed us".
-    Taking hostages and making unreasonable demands is highly encouraged. Live out your space pirate fantasy here.
-    Don't go out of your way to cause mass destruction, since turning the station to slag will also deny you your payday.
-roles-antag-sol-alliance-navy-deserter = Solarian Navy Deserter
-roles-antag-sol-alliance-navy-deserter-objective = Fill your dropship with as much valuable loot as possible, while living to brag about it at the next freeport.
-id-card-access-level-sol-alliance-navy = SAN
-role-type-SAN-antagonist-name = Deserter
+ghost-role-information-deserter-name = Déserteur de la Marine Solaire
+ghost-role-information-deserter-description = "J'en ai marre que le quartier-maître ne me donne pas ma foutue paie ! Prenons un des dropships pour une virée et allons piller pour nous payer."
+ghost-role-information-deserter-rules =Vous n'êtes pas un terroriste, mais vous n'êtes pas non plus une grande personne. Faites tout ce qu'il faut pour « récupérer ce que la marine nous devait ».
+    Prendre des otages et faire des demandes déraisonnables est fortement encouragé. Vivez votre fantasme de pirate de l'espace ici.
+    Ne cherchez pas à causer des destructions massives, car transformer la station en scories vous priverait aussi de votre paye.
+roles-antag-sol-alliance-navy-deserter = Déserteur de la Marine Solaire
+roles-antag-sol-alliance-navy-deserter-objective = Remplissez votre dropship de butin précieux, tout en survivant pour vous en vanter au prochain port franc.
+id-card-access-level-sol-alliance-navy = MSS
+role-type-SAN-antagonist-name = Déserteur
 
 # Shadowling
-roles-antag-shadowling-name = Shadowling
-roles-antag-shadowling-description = Enthrall the crew, ascend and become akin to a God.
-roles-antag-shadowling-objective = Ascend.
+roles-antag-shadowling-name = Ombrelin
+roles-antag-shadowling-description = Asservissez l'équipage, ascensionnez et devenez semblable à un Dieu.
+roles-antag-shadowling-objective = Ascensionner.
 
 roles-antag-thrall-name = Thrall
-roles-antag-thrall-description = Work with your Shadowling to ensure their ascension.
-roles-antag-thrall-objective = Help your shadowling ascend.
+roles-antag-thrall-description = Travaillez avec votre Ombrelin pour assurer son ascension.
+roles-antag-thrall-objective = Aidez votre ombrelin à s'élever.

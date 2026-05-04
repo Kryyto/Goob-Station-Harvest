@@ -11,37 +11,37 @@ chat-sign-tajaran-language-whisper-wrap = [italic][BubbleHeader][Name]{$entityNa
 
 # Did I ever tell you the definition of insanity?
 # Basically we have to get around the message formatter, and unless we decide to make an entire new system just for this language, we can't do anything else.
-chat-speech-verb-sign-nalrasan-1 = moves their tail
-chat-speech-verb-sign-nalrasan-2 = moves their tail briefly
-chat-speech-verb-sign-nalrasan-3 = moves their tail several times in quick succession
+chat-speech-verb-sign-nalrasan-1 = bouge leur queue
+chat-speech-verb-sign-nalrasan-2 = bouge leur queue brièvement
+chat-speech-verb-sign-nalrasan-3 = bouge sa queue plusieurs fois en rapide succession
 
 chat-speech-verb-sign-nalrasan-4 = flicks their ears
-chat-speech-verb-sign-nalrasan-5 = flicks their ears a few times
-chat-speech-verb-sign-nalrasan-6 = flicks their ears several times in quick succession
+chat-speech-verb-sign-nalrasan-5 = agite leurs oreilles quelques fois
+chat-speech-verb-sign-nalrasan-6 = agite leurs oreilles plusieurs fois en rapide succession
 
 chat-speech-verb-sign-nalrasan-7 = swivels their ears
-chat-speech-verb-sign-nalrasan-8 = swivels their ears a few times
-chat-speech-verb-sign-nalrasan-9 = swivels their ears several times in quick succession
-chat-speech-verb-sign-nalrasan-10 = swivels their ears for a while
+chat-speech-verb-sign-nalrasan-8 = pivote leurs oreilles quelques fois
+chat-speech-verb-sign-nalrasan-9 = pivote leurs oreilles plusieurs fois en rapide succession
+chat-speech-verb-sign-nalrasan-10 = pivote leurs oreilles pendant un moment
 
-chat-speech-verb-sign-nalrasan-11 = flicks their tail
-chat-speech-verb-sign-nalrasan-12 = flicks their tail a few times
-chat-speech-verb-sign-nalrasan-13 = flicks their tail several times in quick succession
+chat-speech-verb-sign-nalrasan-11 = agite leur queue
+chat-speech-verb-sign-nalrasan-12 = agite leur queue quelques fois
+chat-speech-verb-sign-nalrasan-13 = agite leur queue plusieurs fois en rapide succession
 
-chat-speech-verb-sign-nalrasan-14 = shifts their ears and tail
-chat-speech-verb-sign-nalrasan-15 = shifts their ears and tail briefly
-chat-speech-verb-sign-nalrasan-16 = shifts their ears and tail for a while
-chat-speech-verb-sign-nalrasan-17 = shifts their ears and tail several times in quick succession
+chat-speech-verb-sign-nalrasan-14 = déplace leurs oreilles et leur queue
+chat-speech-verb-sign-nalrasan-15 = déplace leurs oreilles et leur queue brièvement
+chat-speech-verb-sign-nalrasan-16 = déplace leurs oreilles et leur queue pendant un moment
+chat-speech-verb-sign-nalrasan-17 = déplace leurs oreilles et leur queue plusieurs fois en rapide succession
 
 # There has to be a better way
 
-chat-speech-verb-sign-siiktajr-1 = moves their tail and purrs out
-chat-speech-verb-sign-siiktajr-2 = moves their tail and mews
-chat-speech-verb-sign-siiktajr-3 = flicks their ears and meows
-chat-speech-verb-sign-siiktajr-4 = flicks their ears and mraows
-chat-speech-verb-sign-siiktajr-5 = swivels their ears and purrs out
-chat-speech-verb-sign-siiktajr-6 = swivels their ears and mews
-chat-speech-verb-sign-siiktajr-7 = flicks their tail and meows
-chat-speech-verb-sign-siiktajr-8 = flicks their tail and mraows
-chat-speech-verb-sign-siiktajr-9 = shifts their ears and tail and purrs out
-chat-speech-verb-sign-siiktajr-10 = shifts their ears and tail and mews
+chat-speech-verb-sign-siiktajr-1 = bouge leur queue et ronronne
+chat-speech-verb-sign-siiktajr-2 = bouge leur queue et miaule
+chat-speech-verb-sign-siiktajr-3 = agite leurs oreilles et miaule
+chat-speech-verb-sign-siiktajr-4 = agite leurs oreilles et mraule
+chat-speech-verb-sign-siiktajr-5 = pivote leurs oreilles et ronronne
+chat-speech-verb-sign-siiktajr-6 = pivote leurs oreilles et miaule
+chat-speech-verb-sign-siiktajr-7 = agite leur queue et miaule
+chat-speech-verb-sign-siiktajr-8 = agite leur queue et mraule
+chat-speech-verb-sign-siiktajr-9 = déplace leurs oreilles et queue et ronronne
+chat-speech-verb-sign-siiktajr-10 = déplace leurs oreilles et queue et miaule

@@ -1,17 +1,17 @@
 language-Universal-name = Universal
-language-Universal-description = What are you?
+language-Universal-description = Qu'êtes-vous ?
 
 language-Psychomantic-name = Psychomantic
-language-Psychomantic-description = Pure meaning, free from the tyranny of primative words and gestures.
+language-Psychomantic-description = Sens pur, libéré de la tyrannie des mots et gestes primitifs.
 
 language-Bubblish-name = Bubblish
-language-Bubblish-description = The language of Slimes. Being a mixture of bubbling noises and pops it's very difficult to speak for humans without the use of mechanical aids.
+language-Bubblish-description = La langue des Slimes. Étant un mélange de bruits de bulles et de claquements, il est très difficile à parler pour les humains sans aide mécanique.
 
 language-RootSpeak-name = Rootspeak
-language-RootSpeak-description = The strange whistling-style language spoken by the Diona.
+language-RootSpeak-description = L'étrange langue sifflante parlée par les Diona.
 
 language-Nekomimetic-name = Nekomimetic
-language-Nekomimetic-description = To the casual observer, this language is an incomprehensible mess of broken Japanese. To the Felinids, it's somehow comprehensible.
+language-Nekomimetic-description = Pour l'observateur occasionnel, cette langue est un fouillis incompréhensible de japonais cassé. Pour les Félinidés, c'est d'une façon ou d'une autre compréhensible.
 
 language-Draconic-name = Sinta'Unathi
 language-Draconic-description =
@@ -27,7 +27,7 @@ language-SolCommon-description =
     With its roots in Mandarin Chinese - Common evolved as the official language of the Sol Alliance - with officials working to tie it together with a common tongue.
     It's spoken by state officials - taught in schools - and spoken by those who either feel a sense of national pride in the Alliance or otherwise fell sway to the culture.
 
-language-NovuNederic-name = Novu-Nederic
+language-NovuNederic-name = Novu-Nédérique
 language-NovuNederic-description =
     Once the language of seafarers and merchants, now the voice of spacers, terraformers, and pioneers - and great enjoyers of agriculture.
     Spoken in the New-Netherlands, this direct and pragmatic trade language carries the sharp consonants and clipped vowels of its old-world roots.
@@ -62,16 +62,16 @@ language-Canilunzt-description =
     composed of growls, barks, yaps, and heavy utilization of ears and tail movements. Vulpkanin speak this language with ease.
 
 language-Moffic-name = Moffic
-language-Moffic-description = The language of the mothpeople borders on complete unintelligibility.
+language-Moffic-description = La langue du peuple papillon frise l'inintelligibilité complète.
 
 language-RobotTalk-name = RobotTalk
-language-RobotTalk-description = A language consisting of harsh binary chirps, whistles, hisses, and whines. Organic tongues cannot speak it without aid from special translators.
+language-RobotTalk-description = Une langue composée de gazouillis binaires rudes, sifflements, sifflements et gémissements. Les langues organiques ne peuvent pas la parler sans l'aide de traducteurs spéciaux.
 
 language-Calcic-name = Calcic
-language-Calcic-description = The bone-rattling language of Skeletons and Plasmamen. It sounds like a harmonic trousle of bones with a humerus tone, sans any off-tune ribbing.
+language-Calcic-description = La langue osseuse des Squelettes et Plasmamens. Ça ressemble à un concert harmonique d'os avec un ton humérus, sans aucune côte désaccordée.
 
 # Tau-Ceti Basic Sign Language - Removed prefix for better readability.
-language-Sign-name = Sign Language
+language-Sign-name = Langue des Signes
 language-Sign-description =
     Tau-Ceti Basic Sign Language.
     TCB-SL for short, this sign language is prevalent among mute and deaf people.
@@ -79,7 +79,7 @@ language-Sign-description =
 language-Marish-name = Marish
 language-Marish-description =  A language spoken only by Shadowkin, one that is unable to be replicated by normal tongues.
 
-language-ValyrianStandard-name = Valyrian Standard
+language-ValyrianStandard-name = Standard Valyrien
 language-ValyrianStandard-description =
     A language descended from eastern european languages of old earth - Valyrian Standard is the commonly spoken tongue of Harpies brought up on their homeworld of Valyrian 4b
     It is rarely spoken outside of the worlds of its native speakers, and has in modern times been supplanted by the 'Conlangs of the Sol Alliance.
@@ -91,9 +91,8 @@ language-Chittin-description =
     Most of what makes up their speech comes from their antennae, making it a near-impossible language for those without to learn.
 
 language-Xeeplian-name = Xeeplian
-language-Xeeplian-description =
-    Our language is highly advanced, efficient and to the point.
-    We have taken a liking to mimic some of the inferior lifeforms' babbling in the further pursuit of Our goals.
+language-Xeeplian-description =Notre langue est hautement avancée, efficace et directe.
+    Nous avons pris goût à imiter le babillage de certaines formes de vie inférieures dans la poursuite de Nos objectifs.
 
 # Animal Languages
 
@@ -177,7 +176,7 @@ language-Delvahii-name = Delvahii
 language-Delvahii-description =
     A Zhan-Khazan language tied to Ma'take worship, still used in religious rites and favored by farmers resisting government control.
 
-language-Shadowmind-name = Shadowmind
+language-Shadowmind-name = Esprit des Ombres
 language-Shadowmind-description =
     A language spoken by the shadowlings. Not much is known about it, except that Thralls can understand it.
 language-Qiilour-name = Qiilour

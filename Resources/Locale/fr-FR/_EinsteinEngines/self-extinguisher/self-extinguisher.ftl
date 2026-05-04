@@ -1,18 +1,18 @@
-self-extinguisher-verb = Self-Extinguish
+self-extinguisher-verb = Auto-extinction
 
-self-extinguisher-examine-cooldown-ready = The self-extinguisher is ready to be used.
-self-extinguisher-examine-cooldown-recharging = The self-extinguisher is recharging for [color=teal]{$cooldown}[/color] seconds.
-self-extinguisher-examine-no-charges = The self-extinguisher is recharging for [color=teal]{$cooldown}[/color] seconds.
+self-extinguisher-examine-cooldown-ready = L'auto-extincteur est prêt à être utilisé.
+self-extinguisher-examine-cooldown-recharging = L'auto-extincteur se recharge pendant [color=teal]{$cooldown}[/color] secondes.
+self-extinguisher-examine-no-charges = L'auto-extincteur se recharge pendant [color=teal]{$cooldown}[/color] secondes.
 
-self-extinguisher-no-charges = The {$item} has no charges left!
-self-extinguisher-on-cooldown = The {$item}'s extinguisher is recharging!
-self-extinguisher-not-on-fire-self = You are not on fire!
-self-extinguisher-not-on-fire-other = {$target} {CONJUGATE-BE($target)} not on fire!
-self-extinguisher-not-immune-to-fire-self = You are not insulated against fire!
-self-extinguisher-not-immune-to-fire-other = {$target} {CONJUGATE-BE($target)} not insulated against fire!
+self-extinguisher-no-charges = Le {$item} n'a plus de charges !
+self-extinguisher-on-cooldown = L'extincteur de {$item} se recharge !
+self-extinguisher-not-on-fire-self = Vous n'êtes pas en feu !
+self-extinguisher-not-on-fire-other = {$target} {CONJUGATE-BE($target)} pas en feu !
+self-extinguisher-not-immune-to-fire-self = Vous n'êtes pas protégé contre le feu !
+self-extinguisher-not-immune-to-fire-other = {$target} {CONJUGATE-BE($target)} pas protégé contre le feu !
 
-self-extinguisher-extinguish-self = The {$item} extinguishes you!
-self-extinguisher-extinguish-other = The {$item} extinguishes {$target}!
+self-extinguisher-extinguish-self = Le {$item} vous éteint !
+self-extinguisher-extinguish-other = Le {$item} éteint {$target} !
 
-self-extinguisher-refill = You refill the suit's self-extinguisher, using up the cartridge.
-self-extinguisher-refill-full = The self-extinguisher is full.
+self-extinguisher-refill = Vous rechargez l'auto-extincteur de la combinaison, en utilisant la cartouche.
+self-extinguisher-refill-full = L'auto-extincteur est plein.

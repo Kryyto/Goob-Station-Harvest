@@ -1,21 +1,20 @@
-sling-hatch-engage-popup = THIS ACTION WILL START THE HATCHING PROGRESS! Use it again to confirm.
+sling-hatch-engage-popup = CETTE ACTION VA DÉMARRER LE PROCESSUS D'ÉCLOSION ! Utilisez-la à nouveau pour confirmer.
 
-sling-hatch-first = You can barely hold yourself in this lesser form!
-sling-hatch-second = The urge to become something greater is overwhelming!
-sling-hatch-third = You feel a burning passion to hatch free of this shell and assume godhood!
+sling-hatch-first = Vous pouvez à peine vous retenir dans cette forme inférieure !
+sling-hatch-second = L'envie de devenir quelque chose de plus grand est écrasante !
+sling-hatch-third = Vous ressentez une passion ardente d'éclore de cette coquille et d'assumer la divinité !
 
-shadowling-ascension-not-empty = You feel a tremendous force inside this cocoon.
-shadowling-ascension-not-shadowling = You are not what it seeks for. Destroy it before it's too late!
-shadowling-ascension-not-creator = Only the creator of this cocoon can ascend in it.
-shadowling-ascension-ascending = Another shadowling is in the process of hatching. Help them out!
-shadowling-ascension-already-ascended = The ascension has already been completed.
-shadowling-ascension-start-warning = This is your cocoon. You should start the ascension as soon as possible.
+shadowling-ascension-not-empty = Vous sentez une force formidable à l'intérieur de ce cocon.
+shadowling-ascension-not-shadowling = Vous n'êtes pas ce qu'il cherche. Détruisez-le avant qu'il ne soit trop tard !
+shadowling-ascension-not-creator = Seul le créateur de ce cocon peut s'élever à l'intérieur.
+shadowling-ascension-ascending = Un autre ombrelin est en train d'éclore. Aidez-le !
+shadowling-ascension-already-ascended = L'ascension a déjà été accomplie.
+shadowling-ascension-start-warning = C'est votre cocon. Vous devriez commencer l'ascension dès que possible.
 
 shadowling-ascension-message =
     An unidentified life-form is completing its evolution {$location}.
     All remaining personnel are ordered to eliminate the source at any cost.
     Failure to do so will result in total station collapse and absolute loss of all crew.
 
-shadowling-ascended-message =
-    The air turns to ash. The stars blink in fear. Something ancient has awakened beneath your feet — a will not born of man, but of shadow and hunger.
-    It has remembered its name. It has remembered you. There will be no dawn.
+shadowling-ascended-message =L'air se transforme en cendres. Les étoiles clignotent de peur. Quelque chose d'ancien s'est éveillé sous vos pieds — une volonté née non pas de l'homme, mais de l'ombre et de la faim.
+    Il a retrouvé son nom. Il s'est souvenu de vous. Il n'y aura pas d'aube.

@@ -2,8 +2,8 @@
   abstract: true
   parent: [ SimpleMobBase, MobCombat ]
   id: BaseMobSlimeXenobio
-  name: basic slime
-  description: It looks so much like jelly. I wonder what it tastes like?
+  name: slime basique
+  description: Ça ressemble tellement à de la gelée. Je me demande quel goût ça a ?
   components:
   - type: Appearance
   - type: Hunger
@@ -155,8 +155,8 @@
   id: MobSlimeXenobioBaby
   categories: [ HideSpawnMenu ]
   name: slime
-  suffix: Baby
-  description: It looks so much like jelly. I wonder what it tastes like?
+  suffix: Bébé
+  description: Ça ressemble tellement à de la gelée. Je me demande quel goût ça a ?
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -182,8 +182,8 @@
   id: MobSlimeXenobioAdult
   categories: [ HideSpawnMenu ]
   name: slime
-  suffix: Adult
-  description: It looks so much like jelly. I wonder what it tastes like?
+  suffix: Adulte
+  description: Ça ressemble tellement à de la gelée. Je me demande quel goût ça a ?
   components:
   - type: MobGrowth
     hungerRequired: 75
@@ -201,7 +201,7 @@
   abstract: true
   parent: MarkerBase
   id: MobSlimeXenobioBabyPending
-  name: undetermined slime
+  name: slime indéterminé
   components:
   - type: PendingSlimeSpawn
   - type: Sprite

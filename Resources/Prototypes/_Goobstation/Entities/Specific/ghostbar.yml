@@ -9,7 +9,7 @@
   id: PlasticPit
   name: fosse en plastique
   description: Contient du plastique à l'intérieur. Ne demandez pas d'où ça vient.
-  suffix: DO NOT MAP
+  suffix: NE PAS PLACER
   placement:
     mode: SnapgridCenter
     snap:
@@ -83,7 +83,7 @@
   parent: Autolathe
   name: omnilathe
   description: Produit pratiquement tout ce qui est recherchable et départemental.
-  suffix: DO NOT MAP
+  suffix: NE PAS PLACER
   components:
   - type: Lathe
     staticPacks:

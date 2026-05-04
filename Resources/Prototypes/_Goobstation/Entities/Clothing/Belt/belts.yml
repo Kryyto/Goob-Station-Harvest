@@ -66,7 +66,7 @@
 - type: entity
   parent: [ ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcommContraband ]
   id: ClothingBeltDeathsquadWebbing
-  suffix: DO NOT MAP
+  suffix: NE PAS PLACER
   name: deathsquad operative chestrig
   description: A robust and durable chestrig, containing everything you need to keep you in the fight. You probably won't need to use it.
   components:
@@ -99,7 +99,7 @@
   parent: ClothingBeltSecurity
   id: ClothingBeltCorporateJudo
   name: Corporate Judo Belt
-  description: Teaches the wearer NT Corporate Judo.
+  description: Enseigne au porteur le Judo Corporatif NT.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Belt/judobelt.rsi
@@ -144,7 +144,7 @@
   parent: [ ChemBag, BaseSyndicateContraband ]
   id: ClothingBeltChemBagSyndi
   name: syndicate medical pouch
-  description: A robust pouch for medical supplies worn by Gorlex Marauder operatives. It smells of desoxyephedrine.
+  description: Une solide pochette de matériel médical portée par les opérateurs des Maraudeurs Gorlex. Elle sent la désoxiéphédrine.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Belt/evil_chem_bag.rsi
@@ -178,8 +178,8 @@
 - type: entity
   parent: ClothingBeltSheath
   id: ClothingBeltSheathHeadOfSecurity
-  name: head of security's sheath
-  description: A rugged sheath, designed to hold the Head of Security's custom energy sword.
+  name: fourreau du chef de la sécurité
+  description: Un fourreau robuste, conçu pour accueillir le sabre énergétique sur mesure du chef de la sécurité.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Belt/hossheath.rsi
@@ -249,7 +249,7 @@
   parent: ChemBag
   id: ClothingBeltChemBagXenobiology
   name: xenobiology pouch
-  description: A slime-resistant pouch intended for use by Xenobiologists. Smells of.. plasma?
+  description: Une pochette résistante aux slimes destinée aux xénobiologistes. Sent... le plasma ?
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Belt/xenobag.rsi
@@ -269,7 +269,7 @@
 - type: entity
   parent: ClothingBeltChemBagXenobiology
   id: ClothingBeltChemBagXenobiologyHolding
-  name: xenobiology pouch of holding
+  name: pochette de xénobiologie dimensionnelle
   description: A larger slime-resistant pouch intended for use by Xenobiologists. Smells of bluespace extract and monkey hair.
   components:
   - type: Sprite
@@ -284,7 +284,7 @@
   parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcommContraband]
   id: ClothingBeltMilitaryWebbingBSOFilled
   name: blueshield chest rig
-  description: A set of tactical webbing worn by Central Command support units.
+  description: Un ensemble de sangles tactiques porté par les unités de soutien du Commandement Central.
   components:
   - type: Sprite
     sprite: Clothing/Belt/militarywebbing.rsi
@@ -310,7 +310,7 @@
 - type: entity
   parent: ClothingBeltUtilityFilled
   id: ClothingBeltUtilityFilledUnremoveable
-  suffix: Unremoveable
+  suffix: Inamovible
   components:
   - type: Unremoveable
 
@@ -370,7 +370,7 @@
   id: ClothingBeltWhipping
   suffix: Admeme
   name: whipping belt
-  description: Where there's a whip, there's a way
+  description: Là où il y a un fouet, il y a une voie.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Belt/whippingbelt.rsi

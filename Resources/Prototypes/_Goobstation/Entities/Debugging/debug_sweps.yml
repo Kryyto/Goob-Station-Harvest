@@ -3,7 +3,7 @@
   parent: BaseItem
   id: MeleeDebugGibHoly100
   description: Contemplez, la puissance de DIEU !!
-  suffix: DEBUG
+  suffix: DÉBOGAGE
   components:
   - type: Tag
     tags:
@@ -24,7 +24,7 @@
   parent: BaseItem
   id: MeleeDebugGibHoly200
   description: Contemplez, la puissance de DIEU !!
-  suffix: DEBUG
+  suffix: DÉBOGAGE
   components:
   - type: Tag
     tags:
@@ -45,7 +45,7 @@
   parent: BaseItem
   id: MeleeDebugGibHoly200000
   description: DISPARAIS PÉCHEUR
-  suffix: DEBUG
+  suffix: DÉBOGAGE
   components:
   - type: Tag
     tags:

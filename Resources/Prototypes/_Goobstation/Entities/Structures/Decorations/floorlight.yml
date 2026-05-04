@@ -32,7 +32,7 @@
   id: PoweredFloorLightEmpty
   name: lumière au sol
   description: "Un luminaire au sol. Tire de l'énergie et produit de la lumière lorsqu'il est équipé d'une ampoule."
-  suffix: Empty
+  suffix: Vide
   parent: PoweredlightEmpty
   placement:
     mode: SnapgridCenter

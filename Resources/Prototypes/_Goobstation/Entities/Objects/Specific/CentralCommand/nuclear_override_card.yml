@@ -8,7 +8,7 @@
   name: carte de remplacement nucléaire
   parent: [BaseItem, BaseCentcommContraband]
   id: NukeOverride
-  suffix: DO NOT MAP
+  suffix: NE PAS PLACER
   description: Une carte en plastique étonnamment bon marché, capable de remplacer les protocoles de sécurité d'un dispositif nucléaire.
   components:
   - type: NukeDisk

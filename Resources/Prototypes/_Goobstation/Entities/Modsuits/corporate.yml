@@ -282,7 +282,7 @@
 - type: entity
   id: ClothingModsuitCorporateFilled
   parent: ClothingModsuitCorporate
-  suffix: Filled
+  suffix: Rempli
   components:
     - type: StorageFill
       contents:
@@ -414,7 +414,7 @@
 - type: entity
   id: ClothingModsuitTrainerFilled
   parent: ClothingModsuitTrainer
-  suffix: Filled
+  suffix: Rempli
   components:
     - type: StorageFill
       contents:

@@ -13,7 +13,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ClothingOuterHardsuitSyndieStealthDebug
-  suffix: DEBUG, DO NOT MAP, stealth
+  suffix: DÉBOGAGE, NE PAS PLACER, furtif
   categories: [ DoNotMap ]
   name: combinaison hardue syndicat furtive
   description: Une combinaison hardue avec un blindage furtif pour les opérations, le bouclier ne fonctionne pas quand vous bougez ! Le casque doit être mis pour activer le champ de furtivité.
@@ -67,7 +67,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSyndieStealthDebug
-  suffix: DEBUG, DO NOT MAP, stealth
+  suffix: DÉBOGAGE, NE PAS PLACER, furtif
   categories: [ DoNotMap ]
   name: casque de combinaison hardue syndicat furtive
   description: Un casque avec un blindage pour les opérations furtives.

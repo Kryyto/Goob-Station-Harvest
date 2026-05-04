@@ -100,7 +100,7 @@
 - type: entity
   id: RandomHumanoidSpawnerNavyCaptain
   name: Capitaine de la Marine
-  suffix: ADMIN ONLY, DO FUCKING NOT
+  suffix: ADMIN SEULEMENT, NE PAS FOUTRE
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Centcom/navy_gold.rsi

@@ -15,5 +15,5 @@ server-info-website-button = Site web
 server-info-wiki-button = Wiki
 server-info-forum-button = Forum
 server-info-telegram-button = Telegram
-server-info-report-button = Report Bugs
+server-info-report-button = Signaler des bugs
 server-info-credits-button = Crédits

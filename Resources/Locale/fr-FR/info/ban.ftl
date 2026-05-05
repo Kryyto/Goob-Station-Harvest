@@ -63,38 +63,38 @@ cmd-ban_exemption_get-show = User is exempt from the following ban flags: {$flag
 cmd-ban_exemption_get-arg-player = <player>
 
 # Ban panel
-ban-panel-title = Banning panel
-ban-panel-player = Player
+ban-panel-title = Panneau de bannissement
+ban-panel-player = Joueur
 ban-panel-ip = IP
 ban-panel-hwid = HWID
-ban-panel-reason = Reason
-ban-panel-last-conn = Use IP and HWID from last connection?
-ban-panel-submit = Ban
-ban-panel-confirm = Are you sure?
-ban-panel-tabs-basic = Basic info
-ban-panel-tabs-reason = Reason
-ban-panel-tabs-players = Player List
-ban-panel-tabs-role = Role ban info
-ban-panel-no-data = You must provide either a user, IP or HWID to ban
-ban-panel-invalid-ip = The IP address could not be parsed. Please try again
-ban-panel-select = Select type
-ban-panel-server = Server ban
-ban-panel-role = Role ban
+ban-panel-reason = Raison
+ban-panel-last-conn = Utiliser l'IP et le HWID de la dernière connexion ?
+ban-panel-submit = Bannir
+ban-panel-confirm = Êtes-vous sûr ?
+ban-panel-tabs-basic = Infos de base
+ban-panel-tabs-reason = Raison
+ban-panel-tabs-players = Liste des joueurs
+ban-panel-tabs-role = Infos de ban de rôle
+ban-panel-no-data = Vous devez fournir un utilisateur, une IP ou un HWID à bannir
+ban-panel-invalid-ip = L'adresse IP n'a pas pu être analysée. Veuillez réessayer
+ban-panel-select = Sélectionner le type
+ban-panel-server = Ban serveur
+ban-panel-role = Ban de rôle
 ban-panel-minutes = Minutes
-ban-panel-hours = Hours
-ban-panel-days = Days
-ban-panel-weeks = Weeks
-ban-panel-months = Months
-ban-panel-years = Years
+ban-panel-hours = Heures
+ban-panel-days = Jours
+ban-panel-weeks = Semaines
+ban-panel-months = Mois
+ban-panel-years = Années
 ban-panel-permanent = Permanent
-ban-panel-ip-hwid-tooltip = Leave empty and check the checkbox below to use last connection's details
-ban-panel-severity = Severity:
-ban-panel-erase = Erase chat messages and player from round
+ban-panel-ip-hwid-tooltip = Laissez vide et cochez la case ci-dessous pour utiliser les détails de la dernière connexion
+ban-panel-severity = Sévérité :
+ban-panel-erase = Effacer les messages de chat et le joueur de la ronde
 
 # Ban string
 server-ban-string = {$admin} created a {$severity} severity server ban that expires {$expires} for [{$name}, {$ip}, {$hwid}], with reason: {$reason}
 server-ban-string-no-pii = {$admin} created a {$severity} severity server ban that expires {$expires} for {$name} with reason: {$reason}
-server-ban-string-never = never
+server-ban-string-never = jamais
 
 # Kick on ban
-ban-kick-reason = You have been banned
+ban-kick-reason = Vous avez été banni

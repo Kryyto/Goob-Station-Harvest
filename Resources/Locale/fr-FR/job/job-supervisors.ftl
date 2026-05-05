@@ -11,19 +11,19 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-job-supervisors-centcom = Central Command
-job-supervisors-captain = the Captain
-job-supervisors-hop = the Head of Personnel
-job-supervisors-hos = the Head of Security
-job-supervisors-ce = the Chief Engineer
-job-supervisors-cmo = the Chief Medical Officer
-job-supervisors-rd = the Research Director
-job-supervisors-qm = the Quartermaster
-job-supervisors-command = the station's command staff
-job-supervisors-service = Chefs, Botanists, the Bartender, and the Head of Personnel
-job-supervisors-engineering = Station Engineers, Atmospheric Technicians, and the Chief Engineer
-job-supervisors-medicine = Medical Doctors, Paramedics, Chemists, and the Chief Medical Officer
-job-supervisors-security = Security Officers, the Warden, and the Head of Security
-job-supervisors-science = Scientists and the Research Director
-job-supervisors-hire = whoever hires you
-job-supervisors-everyone = absolutely everyone
+job-supervisors-centcom = le Commandement Central
+job-supervisors-captain = le Capitaine
+job-supervisors-hop = le Chef du Personnel
+job-supervisors-hos = le Chef de la Sécurité
+job-supervisors-ce = l'Ingénieur en Chef
+job-supervisors-cmo = le Médecin-Chef
+job-supervisors-rd = le Directeur de la Recherche
+job-supervisors-qm = le Quartier-Maître
+job-supervisors-command = le personnel de commandement de la station
+job-supervisors-service = les Chefs, Botanistes, le Barman et le Chef du Personnel
+job-supervisors-engineering = les Ingénieurs de Station, Techniciens Atmosphériques et l'Ingénieur en Chef
+job-supervisors-medicine = les Médecins, Paramédics, Chimistes et le Médecin-Chef
+job-supervisors-security = les Officiers de Sécurité, le Gardien et le Chef de la Sécurité
+job-supervisors-science = les Scientifiques et le Directeur de la Recherche
+job-supervisors-hire = celui qui vous embauche
+job-supervisors-everyone = absolument tout le monde

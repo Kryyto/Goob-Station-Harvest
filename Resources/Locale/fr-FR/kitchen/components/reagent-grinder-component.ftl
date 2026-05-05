@@ -13,16 +13,16 @@
 
 reagent-grinder-bound-user-interface-instant-button = INSTANT
 reagent-grinder-bound-user-interface-cook-time-label = COOK TIME
-reagent-grinder-component-cannot-put-entity-message = You can't put this in the reagent grinder!
+reagent-grinder-component-cannot-put-entity-message = Vous ne pouvez pas mettre ça dans le broyeur !
 
-grinder-menu-title = All-In-One Grinder 3000
-grinder-menu-grind-button = Grind
-grinder-menu-juice-button = Juice
-grinder-menu-auto-label = Auto mode
-grinder-menu-auto-button-off = Off
-grinder-menu-manual-label = Manual mode
-grinder-menu-chamber-content-box-label = Chamber
-grinder-menu-chamber-content-box-button = Eject Contents
-grinder-menu-beaker-content-box-label = Beaker
-grinder-menu-beaker-content-box-button = Eject Beaker
-grinder-menu-beaker-content-box-is-empty = Empty
+grinder-menu-title = Broyeur Tout-en-Un 3000
+grinder-menu-grind-button = Broyer
+grinder-menu-juice-button = Presser
+grinder-menu-auto-label = Mode automatique
+grinder-menu-auto-button-off = Désactivé
+grinder-menu-manual-label = Mode manuel
+grinder-menu-chamber-content-box-label = Chambre
+grinder-menu-chamber-content-box-button = Éjecter le contenu
+grinder-menu-beaker-content-box-label = Bécher
+grinder-menu-beaker-content-box-button = Éjecter le bécher
+grinder-menu-beaker-content-box-is-empty = Vide

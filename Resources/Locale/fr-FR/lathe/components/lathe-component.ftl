@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lathe-component-upgrade-speed = speed
-lathe-component-upgrade-material-use = material use
+lathe-component-upgrade-speed = vitesse
+lathe-component-upgrade-material-use = consommation de matériaux
 
-lathe-component-output-slot-beaker-name = Beaker slot
+lathe-component-output-slot-beaker-name = Emplacement bécher

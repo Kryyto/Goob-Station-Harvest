@@ -20,28 +20,28 @@
 
 ## Implanter Attempt Messages
 
-implanter-component-implanting-target = {$user} is trying to implant you with something!
-implanter-component-implant-failed = The {$implant} cannot be given to {$target}!
-implanter-draw-failed-permanent = The {$implant} in {$target} is fused with { OBJECT($target) } and cannot be removed!
-implanter-draw-failed = You tried to remove an implant but found nothing.
-implanter-draw-failed-catastrophically = The implanter finds nothing and catastrophically fails, shunting genetic material into {$user}'s hand!
-implanter-component-implant-already = {$target} already has the {$implant}!
+implanter-component-implanting-target = {$user} essaie de vous implanter quelque chose !
+implanter-component-implant-failed = L'implant {$implant} ne peut pas être donné à {$target} !
+implanter-draw-failed-permanent = L'implant {$implant} dans {$target} est fusionné avec { OBJECT($target) } et ne peut pas être retiré !
+implanter-draw-failed = Vous avez tenté de retirer un implant mais n'avez rien trouvé.
+implanter-draw-failed-catastrophically = L'implanteur ne trouve rien et échoue catastrophiquement, injectant du matériel génétique dans la main de {$user} !
+implanter-component-implant-already = {$target} possède déjà l'implant {$implant} !
 
 ## UI
-implanter-set-draw-verb = Set Implant Draw
-implanter-set-draw-window = Set Implant Draw
-implanter-set-draw-info = Select the implant type this implanter should remove:
-implanter-set-draw-type = Implant type:
+implanter-set-draw-verb = Définir l'extraction d'implant
+implanter-set-draw-window = Définir l'extraction d'implant
+implanter-set-draw-info = Sélectionnez le type d'implant que cet implanteur doit retirer :
+implanter-set-draw-type = Type d'implant :
 
-implanter-draw-text = Draw
-implanter-inject-text = Inject
+implanter-draw-text = Extraire
+implanter-inject-text = Injecter
 
-implanter-empty-text = Empty
+implanter-empty-text = Vide
 
 implanter-label-inject = [color=green]{$implantName}[/color]
-    Mode: [color=white]{$modeString}[/color]
+    Mode : [color=white]{$modeString}[/color]
 
 implanter-label-draw = [color=red]{$implantName}[/color]
-    Mode: [color=white]{$modeString}[/color]
+    Mode : [color=white]{$modeString}[/color]
 
 implanter-contained-implant-text = [color=green]{$desc}[/color]

@@ -10,13 +10,13 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-department-Cargo-description = Complete bounties, earn Spessos, and order useful supplies for the crew.
-department-Civilian-description = Perform small helpful tasks to keep the station sane and well catered.
-department-Command-description = Manage the crew and keep them working efficiently.
-department-CentralCommand-description = Manage the crew and keep them working efficiently.
-department-Engineering-description = Keep the power on and the station operational.
-department-Medical-description = Keep the crew healthy.
-department-Security-description = Keep the peace around the station.
-department-Science-description = Research artifacts and anomalies to invent new equipment for the station
-department-Silicon-description = Obey your laws and serve the crew.
-department-Specific-description = Jobs that not all stations have.
+department-Cargo-description = Complétez des primes, gagnez des Spessos et commandez des fournitures utiles pour l'équipage.
+department-Civilian-description = Effectuez de petites tâches utiles pour garder la station saine et bien approvisionnée.
+department-Command-description = Gérez l'équipage et maintenez-le opérationnel.
+department-CentralCommand-description = Gérez l'équipage et maintenez-le opérationnel.
+department-Engineering-description = Maintenez l'alimentation et la station opérationnelle.
+department-Medical-description = Maintenez l'équipage en bonne santé.
+department-Security-description = Maintenez la paix dans la station.
+department-Science-description = Étudiez les artefacts et anomalies pour inventer de nouveaux équipements.
+department-Silicon-description = Obéissez à vos lois et servez l'équipage.
+department-Specific-description = Postes que toutes les stations ne possèdent pas.

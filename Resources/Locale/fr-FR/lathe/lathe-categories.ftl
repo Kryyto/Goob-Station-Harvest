@@ -8,54 +8,54 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 # Generic
-lathe-category-circuitry = Circuitry
-lathe-category-clothing = Clothing
-lathe-category-lights = Lights
+lathe-category-circuitry = Circuits
+lathe-category-clothing = Vêtements
+lathe-category-lights = Lumières
 lathe-category-machines = Machines
-lathe-category-parts = Parts
-lathe-category-tiles = Tiles
-lathe-category-tools = Tools
-lathe-category-weapons = Weapons
+lathe-category-parts = Pièces
+lathe-category-tiles = Tuiles
+lathe-category-tools = Outils
+lathe-category-weapons = Armes
 
 # Biogen
-lathe-category-food = Food
-lathe-category-chemicals = Chemicals
-lathe-category-materials = Materials
+lathe-category-food = Nourriture
+lathe-category-chemicals = Produits chimiques
+lathe-category-materials = Matériaux
 
 # Circuit imprinter
-lathe-category-computers = Computers
-lathe-category-engineering = Engineering
-lathe-category-general = General
-lathe-category-medical = Medical
-lathe-category-research = Research
-lathe-category-security = Security
+lathe-category-computers = Ordinateurs
+lathe-category-engineering = Ingénierie
+lathe-category-general = Général
+lathe-category-medical = Médical
+lathe-category-research = Recherche
+lathe-category-security = Sécurité
 lathe-category-service = Service
-lathe-category-supply = Supply
+lathe-category-supply = Approvisionnement
 
 # Cutter
-lathe-category-concrete = Concrete
-lathe-category-dark = Dark
-lathe-category-maints = Maints
-lathe-category-steel = Steel
-lathe-category-white = White
-lathe-category-wood = Wood
-lathe-category-marble = Marble
+lathe-category-concrete = Béton
+lathe-category-dark = Sombre
+lathe-category-maints = Maintenance
+lathe-category-steel = Acier
+lathe-category-white = Blanc
+lathe-category-wood = Bois
+lathe-category-marble = Marbre
 
 # Science
 lathe-category-mechs = Mechs
 lathe-category-modules = Modules
-lathe-category-robotics = Robotics
+lathe-category-robotics = Robotique
 
 # Security TechFab
-lathe-category-ammo = Ammo
-lathe-category-boxes = Boxes
-lathe-category-magazines = Magazines
+lathe-category-ammo = Munitions
+lathe-category-boxes = Boîtes
+lathe-category-magazines = Chargeurs
 
 # Uniform
-lathe-category-bedsheets = Bedsheets
-lathe-category-carpets = Carpets
-lathe-category-coats = Coats
-lathe-category-command = Command
-lathe-category-hats = Hats
-lathe-category-jumpsuits = Jumpsuits
-lathe-category-neck = Neck
+lathe-category-bedsheets = Draps
+lathe-category-carpets = Tapis
+lathe-category-coats = Manteaux
+lathe-category-command = Commandement
+lathe-category-hats = Chapeaux
+lathe-category-jumpsuits = Combinaisons
+lathe-category-neck = Cou

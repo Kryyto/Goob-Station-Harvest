@@ -12,20 +12,20 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lathe-menu-title = Lathe Menu
-lathe-menu-queue = Queue
-lathe-menu-server-list = Server list
-lathe-menu-sync = Sync
-lathe-menu-search-designs = Search designs
-lathe-menu-category-all = All
-lathe-menu-search-filter = Filter:
-lathe-menu-amount = Amount:
+lathe-menu-title = Menu de la Fraiseuse
+lathe-menu-queue = File d'attente
+lathe-menu-server-list = Liste des serveurs
+lathe-menu-sync = Synchroniser
+lathe-menu-search-designs = Rechercher des modèles
+lathe-menu-category-all = Tout
+lathe-menu-search-filter = Filtre :
+lathe-menu-amount = Quantité :
 lathe-menu-recipe-count = { $count ->
-    [1] {$count} Recipe
-    *[other] {$count} Recipes
+    [1] {$count} Recette
+    *[other] {$count} Recettes
 }
-lathe-menu-reagent-slot-examine = It has a slot for a beaker on the side.
-lathe-reagent-dispense-no-container = Liquid pours out of {THE($name)} onto the floor!
+lathe-menu-reagent-slot-examine = Il possède un emplacement pour un bécher sur le côté.
+lathe-reagent-dispense-no-container = Du liquide coule de {THE($name)} sur le sol !
 lathe-menu-result-reagent-display = {$reagent} ({$amount}u)
 lathe-menu-material-display = {$material} ({$amount})
 lathe-menu-tooltip-display = {$amount} of {$material}
@@ -38,9 +38,9 @@ lathe-menu-material-amount-missing = { $amount ->
     [1] {NATURALFIXED($amount, 2)} {$unit} of {$material} ([color=red]{NATURALFIXED($missingAmount, 2)} {$unit} missing[/color])
     *[other] {NATURALFIXED($amount, 2)} {MAKEPLURAL($unit)} of {$material} ([color=red]{NATURALFIXED($missingAmount, 2)} {MAKEPLURAL($unit)} missing[/color])
 }
-lathe-menu-no-materials-message = No materials loaded.
-lathe-menu-fabricating-message = Fabricating...
-lathe-menu-materials-title = Materials
-lathe-menu-queue-title = Build Queue
-lathe-menu-queue-reset-title = Reset Queue
-lathe-menu-queue-reset-material-overflow = You notice that the autolathe is full.
+lathe-menu-no-materials-message = Aucun matériau chargé.
+lathe-menu-fabricating-message = Fabrication en cours...
+lathe-menu-materials-title = Matériaux
+lathe-menu-queue-title = File de fabrication
+lathe-menu-queue-reset-title = Réinitialiser la file
+lathe-menu-queue-reset-material-overflow = Vous remarquez que la fraiseuse automatique est pleine.

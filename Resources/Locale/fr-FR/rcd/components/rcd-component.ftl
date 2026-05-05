@@ -1,65 +1,54 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 August Eymann <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-#
 # SPDX-License-Identifier: AGPL-3.0-or-later
-
 
 ### UI
 
-rcd-component-examine-mode-details = It's currently set to '{$mode}' mode.
-rcd-component-examine-build-details = It's currently set to build {MAKEPLURAL($name)}.
+rcd-component-examine-mode-details = Il est actuellement réglé sur le mode « {$mode} ».
+rcd-component-examine-build-details = Il est actuellement réglé pour construire des {MAKEPLURAL($name)}.
 
 
 ### Interaction Messages
 
 # Mode change
-rcd-component-change-mode = The RCD is now set to '{$mode}' mode.
-rcd-component-change-build-mode = The RCD is now set to build {MAKEPLURAL($name)}.
+rcd-component-change-mode = Le DCR est maintenant réglé sur le mode « {$mode} ».
+rcd-component-change-build-mode = Le DCR est maintenant réglé pour construire des {MAKEPLURAL($name)}.
 
 # Ammo count
-rcd-component-no-ammo-message = The RCD has run out of charges!
-rcd-component-insufficient-ammo-message = The RCD doesn't have enough charges left!
+rcd-component-no-ammo-message = Le DCR n'a plus de charges !
+rcd-component-insufficient-ammo-message = Le DCR n'a pas assez de charges !
 
 # Deconstruction
-rcd-component-tile-indestructible-message = That tile can't be destructed!
-rcd-component-deconstruct-target-not-on-whitelist-message = You can't deconstruct that!
-rcd-component-nothing-to-deconstruct-message = There's nothing to deconstruct!
-rcd-component-tile-obstructed-message = You can't deconstruct tiles when there's something on top of them!
-rcd-component-deconstruct-target-no-access = You don't have access to deconstruct that!
-rcd-component-deconstruct-target-is-bolted = Mechanism's bolts prevent deconstruction!
+rcd-component-tile-indestructible-message = Cette tuile ne peut pas être déconstruite !
+rcd-component-deconstruct-target-not-on-whitelist-message = Vous ne pouvez pas déconstruire ça !
+rcd-component-nothing-to-deconstruct-message = Il n'y a rien à déconstruire !
+rcd-component-tile-obstructed-message = Vous ne pouvez pas déconstruire des tuiles lorsqu'il y a quelque chose dessus !
+rcd-component-deconstruct-target-no-access = Vous n'avez pas l'accès pour déconstruire ça !
+rcd-component-deconstruct-target-is-bolted = Les verrous du mécanisme empêchent la déconstruction !
 
 # Construction
-rcd-component-no-valid-grid = You're too far into open space to build here!
-rcd-component-must-build-on-empty-tile-message = A foundation already exists here!
-rcd-component-cannot-build-on-empty-tile-message = You can't build that without a foundation!
-rcd-component-must-build-on-subfloor-message = You can only build that on exposed subfloor!
-rcd-component-cannot-build-on-subfloor-message = You can't build that on exposed subfloor!
-rcd-component-cannot-build-on-occupied-tile-message = You can't build here, the space is already occupied!
-rcd-component-cannot-build-identical-tile = That tile already exists there!
+rcd-component-no-valid-grid = Vous êtes trop loin dans l'espace ouvert pour construire ici !
+rcd-component-must-build-on-empty-tile-message = Une fondation existe déjà ici !
+rcd-component-cannot-build-on-empty-tile-message = Vous ne pouvez pas construire ça sans une fondation !
+rcd-component-must-build-on-subfloor-message = Vous ne pouvez construire ça que sur un sous-plancher exposé !
+rcd-component-cannot-build-on-subfloor-message = Vous ne pouvez pas construire ça sur un sous-plancher exposé !
+rcd-component-cannot-build-on-occupied-tile-message = Vous ne pouvez pas construire ici, l'espace est déjà occupé !
+rcd-component-cannot-build-identical-tile = Cette tuile existe déjà là !
 
 
 ### Category names
 
-rcd-component-walls-and-flooring = Walls and flooring
-rcd-component-windows-and-grilles = Windows and grilles
-rcd-component-airlocks = Airlocks
-rcd-component-electrical = Electrical
-rcd-component-lighting = Lighting
-rcd-component-piping = Piping
-rcd-component-atmosphericutility = Atmospheric Utility
-rcd-component-pumps = Pumps & Valves
-rcd-component-vents = Vents
+rcd-component-walls-and-flooring = Murs et sols
+rcd-component-windows-and-grilles = Fenêtres et grilles
+rcd-component-airlocks = Sas
+rcd-component-electrical = Électrique
+rcd-component-lighting = Éclairage
+rcd-component-piping = Tuyauterie
+rcd-component-atmosphericutility = Utilitaire atmosphérique
+rcd-component-pumps = Pompes et vannes
+rcd-component-vents = Évents
 
 
-### Prototype names (note: constructable items will be puralized)
+### Prototype names
 
-rcd-component-deconstruct = deconstruct
-rcd-component-floor-steel = steel tile
-rcd-component-plating = hull plate
+rcd-component-deconstruct = déconstruire
+rcd-component-floor-steel = tuile en acier
+rcd-component-plating = plaque de coque

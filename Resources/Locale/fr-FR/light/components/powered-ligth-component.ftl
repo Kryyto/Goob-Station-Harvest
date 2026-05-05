@@ -5,4 +5,4 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-powered-light-component-burn-hand = You burn your hand!
+powered-light-component-burn-hand = Vous vous brûlez la main !

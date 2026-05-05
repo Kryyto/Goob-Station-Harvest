@@ -5,4 +5,4 @@
 #
 # SPDX-License-Identifier: MIT
 
-lathe-popup-material-not-used = This material is not used in this machine.
+lathe-popup-material-not-used = Ce matériau n'est pas utilisé dans cette machine.

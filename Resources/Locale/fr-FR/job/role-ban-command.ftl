@@ -20,18 +20,18 @@ cmd-roleban-hint-4 = [duration in minutes, leave out or 0 for permanent ban]
 cmd-roleban-hint-5 = [severity]
 
 cmd-roleban-hint-duration-1 = Permanent
-cmd-roleban-hint-duration-2 = 1 day
-cmd-roleban-hint-duration-3 = 3 days
-cmd-roleban-hint-duration-4 = 1 week
-cmd-roleban-hint-duration-5 = 2 week
-cmd-roleban-hint-duration-6 = 1 month
+cmd-roleban-hint-duration-2 = 1 jour
+cmd-roleban-hint-duration-3 = 3 jours
+cmd-roleban-hint-duration-4 = 1 semaine
+cmd-roleban-hint-duration-5 = 2 semaines
+cmd-roleban-hint-duration-6 = 1 mois
 
 
 ### Localization for role unban command
 
 cmd-roleunban-desc = Pardons a player's role ban
 cmd-roleunban-help = Usage: roleunban <role ban id>
-cmd-roleunban-unable-to-parse-id = Unable to parse {$id} as a ban id integer.
+cmd-roleunban-unable-to-parse-id = Impossible d'analyser {$id} comme entier d'ID de ban.
                                    {$help}
 
 ## Completion result hints

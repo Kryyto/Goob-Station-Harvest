@@ -4,5 +4,5 @@
 #
 # SPDX-License-Identifier: MIT
 
-health-examinable-verb-text = Health
-health-examinable-verb-disabled = Perform a basic health examination in close range.
+health-examinable-verb-text = Santé
+health-examinable-verb-disabled = Effectuez un examen de santé de base à courte portée.

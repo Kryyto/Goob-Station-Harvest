@@ -13,23 +13,23 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-comp-kitchen-spike-deny-collect = { CAPITALIZE(THE($this)) } already has something on it, finish collecting its meat first!
-comp-kitchen-spike-deny-butcher = { CAPITALIZE(THE($victim)) } can't be butchered on { THE($this) }.
-comp-kitchen-spike-deny-changeling = { CAPITALIZE(THE($victim)) } resists being put on { THE($this) }.
-comp-kitchen-spike-deny-absorbed = { CAPITALIZE(THE($victim)) } has nothing left to butcher.
-comp-kitchen-spike-deny-butcher-knife = { CAPITALIZE(THE($victim)) } can't be butchered on { THE($this) }, you need to butcher it using a knife.
-comp-kitchen-spike-deny-not-dead = { CAPITALIZE(THE($victim)) } can't be butchered. { CAPITALIZE(SUBJECT($victim)) } { CONJUGATE-BE($victim) } is not dead!
+comp-kitchen-spike-deny-collect = { CAPITALIZE(THE($this)) } a déjà quelque chose dessus, finissez de récupérer sa viande d'abord !
+comp-kitchen-spike-deny-butcher = { CAPITALIZE(THE($victim)) } ne peut pas être dépecé sur { THE($this) }.
+comp-kitchen-spike-deny-changeling = { CAPITALIZE(THE($victim)) } résiste à être mis sur { THE($this) }.
+comp-kitchen-spike-deny-absorbed = { CAPITALIZE(THE($victim)) } n'a plus rien à dépecer.
+comp-kitchen-spike-deny-butcher-knife = { CAPITALIZE(THE($victim)) } ne peut pas être dépecé sur { THE($this) }, vous devez le dépecer avec un couteau.
+comp-kitchen-spike-deny-not-dead = { CAPITALIZE(THE($victim)) } ne peut pas être dépecé. { CAPITALIZE(SUBJECT($victim)) } n'est pas mort !
 
-comp-kitchen-spike-begin-hook-victim = { CAPITALIZE(THE($user)) } begins dragging you onto { THE($this) }!
-comp-kitchen-spike-begin-hook-self = You begin dragging yourself onto { THE($this) }!
+comp-kitchen-spike-begin-hook-victim = { CAPITALIZE(THE($user)) } commence à vous traîner sur { THE($this) } !
+comp-kitchen-spike-begin-hook-self = Vous commencez à vous traîner sur { THE($this) } !
 
-comp-kitchen-spike-kill = { CAPITALIZE(THE($user)) } has forced { THE($victim) } onto { THE($this) }, killing { OBJECT($victim) } instantly!
+comp-kitchen-spike-kill = { CAPITALIZE(THE($user)) } a forcé { THE($victim) } sur { THE($this) }, le tuant instantanément !
 
-comp-kitchen-spike-suicide-other = { CAPITALIZE(THE($victim)) } threw { REFLEXIVE($victim) } on { THE($this) }!
-comp-kitchen-spike-suicide-self = You throw yourself on { THE($this) }!
+comp-kitchen-spike-suicide-other = { CAPITALIZE(THE($victim)) } s'est jeté sur { THE($this) } !
+comp-kitchen-spike-suicide-self = Vous vous jetez sur { THE($this) } !
 
-comp-kitchen-spike-knife-needed = You need a knife to do this.
-comp-kitchen-spike-remove-meat = You remove some meat from { THE($victim) }.
-comp-kitchen-spike-remove-meat-last = You remove the last piece of meat from { THE($victim) }!
+comp-kitchen-spike-knife-needed = Vous avez besoin d'un couteau pour faire cela.
+comp-kitchen-spike-remove-meat = Vous retirez de la viande de { THE($victim) }.
+comp-kitchen-spike-remove-meat-last = Vous retirez le dernier morceau de viande de { THE($victim) } !
 
 comp-kitchen-spike-meat-name = { $name } ({ $victim })

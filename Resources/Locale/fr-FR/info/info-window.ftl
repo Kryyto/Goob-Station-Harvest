@@ -21,8 +21,8 @@ ui-info-header-intro = Introduction
 ui-info-header-controls = Contrôles
 ui-info-header-gameplay = Gameplay
 ui-info-header-sandbox = Spawner Sandbox
-ui-info-subheader-entityoptions = Entity spawn panel options:
-ui-info-subheader-gridoptions = Grid aligned options:
+ui-info-subheader-entityoptions = Options du panneau de spawn d'entités :
+ui-info-subheader-gridoptions = Options d'alignement sur grille :
 ui-info-header-feedback = Feedback
 
 ui-info-button-controls = Menu des Options

@@ -3,5 +3,5 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lavaland-weather-start-message = You feel like wind starts blowing stronger...
-lavaland-weather-end-message = The wind is going out.
+lavaland-weather-start-message = Vous avez l'impression que le vent commence à souffler plus fort...
+lavaland-weather-end-message = Le vent se calme.

@@ -5,14 +5,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-reagent-name-minerssalve = minerslavine
-reagent-desc-minerssalve = A powerful mixture of stimulants intended for use by lavaland shaft miners.
+reagent-name-minerssalve = baume du mineur
+reagent-desc-minerssalve = Un puissant mélange de stimulants destiné aux mineurs de Lavaland.
 
 reagent-name-luxurium = luxurium
-reagent-desc-luxurium = An evil concoction devised by the top Nanotrasen scientists which becomes harmful outside of low pressure, reducing the effectiveness of the luxury mining pen when used outside of intended environments.
+reagent-desc-luxurium = Une concoction maléfique mise au point par les meilleurs scientifiques de Nanotrasen, qui devient nocive hors basse pression, réduisant l'efficacité du stylo de minage de luxe lorsqu'utilisé hors de son environnement prévu.
 
-reagent-name-vitrium-froth = vitrium Froth
-reagent-desc-vitrium-froth = A bubbly paste that heals wounds of the skin.
+reagent-name-vitrium-froth = mousse de vitrium
+reagent-desc-vitrium-froth = Une pâte mousseuse qui soigne les plaies cutanées.
 
-reagent-name-seraka-extract = seraka Extract
-reagent-desc-seraka-extract = A deeply coloured oil present in small amounts in Seraka Mushrooms. Acts as an effective blood clotting agent, but has a low overdose threshold.
+reagent-name-seraka-extract = extrait de seraka
+reagent-desc-seraka-extract = Une huile de couleur profonde présente en petites quantités dans les champignons Seraka. Agit comme un agent coagulant efficace, mais a un seuil de surdosage bas.

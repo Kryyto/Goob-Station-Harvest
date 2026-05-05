@@ -1,12 +1,12 @@
-weapon-upgrade-slot-name-bayonet = Bayonet
-weapon-upgrade-slot-name-flashlight = Flashlight
-weapon-upgrade-slot-name-first = First upgrade slot
-weapon-upgrade-slot-name-second = Second upgrade slot
-weapon-upgrade-slot-name-third = Third upgrade slot
-weapon-upgrade-slot-name-fourth = Fourth upgrade slot
-weapon-upgrade-slot-name-fifth = Fifth upgrade slot
+weapon-upgrade-slot-name-bayonet = Baïonnette
+weapon-upgrade-slot-name-flashlight = Lampe torche
+weapon-upgrade-slot-name-first = Premier emplacement d'amélioration
+weapon-upgrade-slot-name-second = Deuxième emplacement d'amélioration
+weapon-upgrade-slot-name-third = Troisième emplacement d'amélioration
+weapon-upgrade-slot-name-fourth = Quatrième emplacement d'amélioration
+weapon-upgrade-slot-name-fifth = Cinquième emplacement d'amélioration
 
-weapon-upgrade-slot-name-main = Main upgrade
-weapon-upgrade-slot-name-blade = Blade upgrade
-weapon-upgrade-slot-name-handle = Handle upgrade
-weapon-upgrade-slot-name-special = Special upgrade
+weapon-upgrade-slot-name-main = Amélioration principale
+weapon-upgrade-slot-name-blade = Amélioration de lame
+weapon-upgrade-slot-name-handle = Amélioration de manche
+weapon-upgrade-slot-name-special = Amélioration spéciale

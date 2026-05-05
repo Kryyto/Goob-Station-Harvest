@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-block-charge-status-charged = The shield indicator displays that its charged.
-block-charge-status-recharging = The shield indicator displays that its recharging.
-block-attack-notice = {$user} has blocked {THE($blocked)}'s attack!
-block-charge-startup = The {$entity}'s shield indicator glows faintly...
+block-charge-status-charged = L'indicateur de bouclier affiche qu'il est chargé.
+block-charge-status-recharging = L'indicateur de bouclier affiche qu'il se recharge.
+block-attack-notice = {$user} a bloqué l'attaque de {THE($blocked)} !
+block-charge-startup = L'indicateur de bouclier de {$entity} brille faiblement...

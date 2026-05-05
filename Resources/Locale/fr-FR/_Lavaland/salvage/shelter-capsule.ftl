@@ -3,6 +3,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-shelter-capsule-fail-near-grid = Too close to another structure!
-shelter-capsule-fail-no-planet = It works only on planets!
-shelter-capsule-fail-no-space = No free space!
+shelter-capsule-fail-near-grid = Trop proche d'une autre structure !
+shelter-capsule-fail-no-planet = Cela ne fonctionne que sur les planètes !
+shelter-capsule-fail-no-space = Pas d'espace libre !

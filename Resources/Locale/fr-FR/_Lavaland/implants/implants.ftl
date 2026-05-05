@@ -1,1 +1,1 @@
-shop-listing-deathrattle-implant-lavaland = lavaland death rattle implanter
+shop-listing-deathrattle-implant-lavaland = implanteur de dernier soupir lavaland

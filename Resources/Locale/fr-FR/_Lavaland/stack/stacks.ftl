@@ -1,37 +1,37 @@
-stack-artifact-fragment-ore = artifact fragment ore
+stack-artifact-fragment-ore = minerai de fragment d'artefact
 
-stack-unprocessed-gold-ore = unprocessed gold ore
-stack-unprocessed-diamond-ore = unprocessed diamond ore
-stack-unprocessed-steel-ore = unprocessed steel ore
-stack-unprocessed-plasma-ore = unprocessed plasma ore
-stack-unprocessed-silver-ore = unprocessed silver ore
-stack-unprocessed-quartz-ore = unprocessed quartz ore
-stack-unprocessed-uranium-ore = unprocessed uranium ore
-stack-unprocessed-bananium-ore = unprocessed bananium ore
-stack-unprocessed-coal = unprocessed coal
-stack-unprocessed-artifact-fragment-ore = unprocessed artifact fragment ore
+stack-unprocessed-gold-ore = minerai d'or brut
+stack-unprocessed-diamond-ore = minerai de diamant brut
+stack-unprocessed-steel-ore = minerai d'acier brut
+stack-unprocessed-plasma-ore = minerai de plasma brut
+stack-unprocessed-silver-ore = minerai d'argent brut
+stack-unprocessed-quartz-ore = minerai de quartz brut
+stack-unprocessed-uranium-ore = minerai d'uranium brut
+stack-unprocessed-bananium-ore = minerai de bananium brut
+stack-unprocessed-coal = charbon brut
+stack-unprocessed-artifact-fragment-ore = minerai de fragment d'artefact brut
 
 stack-ashwood-plank = {$amount ->
-[1] ashwood plank
-*[other] ashwood planks
+[1] planche de bois de cendre
+*[other] planches de bois de cendre
 }
 
 stack-watcher-wing = {$amount ->
-[1] watcher wing
-*[other] watcher wings
+[1] aile de guetteur
+*[other] ailes de guetteur
 }
 
 stack-magma-wing = {$amount ->
-[1] magma watcher wing
-*[other] magma watcher wings
+[1] aile de guetteur de magma
+*[other] ailes de guetteur de magma
 }
 
 stack-ice-wing = {$amount ->
-[1] ice watcher wing
-*[other] ice watcher wings
+[1] aile de guetteur de glace
+*[other] ailes de guetteur de glace
 }
 
 stack-legion-skull = {$amount ->
-[1] legion skull
-*[other] legion skull
+[1] crâne de légion
+*[other] crânes de légion
 }

@@ -1,25 +1,25 @@
-miner-weapon-selector-pka-name = Proto-kinetic Accelerator
+miner-weapon-selector-pka-name = Accélérateur Proto-cinétique
 miner-weapon-selector-pka-description =
-    Classic short-ranged bolt accelerator that deals
-    constant damage with high accuracy.
-miner-weapon-selector-repeater-name = Proto-kinetic Repeater
+    Accélérateur de boulons classique à courte portée qui inflige
+    des dégâts constants avec une haute précision.
+miner-weapon-selector-repeater-name = Répéteur Proto-cinétique
 miner-weapon-selector-repeater-description =
-    A middle-ranged burst weapon that shoots 3 bullets
-    in a row dealing high amounts of damage.
-miner-weapon-selector-pistols-name = Proto-kinetic Pistols
+    Une arme à rafale de moyenne portée qui tire 3 balles
+    d'affilée infligeant de lourds dégâts.
+miner-weapon-selector-pistols-name = Pistolets Proto-cinétiques
 miner-weapon-selector-pistols-description =
-    2 pistols that you can dualwield to look like from middle-west.
-    Deals decent amount of damage in exchange for good range.
+    2 pistolets que vous pouvez manier à deux mains style far-west.
+    Inflige des dégâts corrects en échange d'une bonne portée.
 
-miner-weapon-selector-crusher-name = Crusher Axe
+miner-weapon-selector-crusher-name = Hache Broyeuse
 miner-weapon-selector-crusher-description =
-    Classic melee weapon for slicing lavaland enemies.
-miner-weapon-selector-glaive-name = Crusher Glaive
+    Arme de mêlée classique pour trancher les ennemis de Lavaland.
+miner-weapon-selector-glaive-name = Glaive Broyeur
 miner-weapon-selector-glaive-description =
-    A piercing weapon that has high range and attack speed
-    in exchange for lower damage. Great if you want to
-    attack enemies from safety.
-miner-weapon-selector-hammer-name = Crusher Hammer
+    Une arme perforante à haute portée et vitesse d'attaque
+    en échange de dégâts réduits. Idéale pour attaquer
+    les ennemis en sécurité.
+miner-weapon-selector-hammer-name = Marteau Broyeur
 miner-weapon-selector-hammer-description =
-    A heavy blunt weapon that deals a lot of damage
-    in slow powerful hits. Can mine through rock unefficiently.
+    Une arme contondante lourde qui inflige beaucoup de dégâts
+    en coups lents mais puissants. Peut miner la roche de façon peu efficace.

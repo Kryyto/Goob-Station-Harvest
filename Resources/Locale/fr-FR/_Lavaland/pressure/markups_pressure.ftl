@@ -5,12 +5,12 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lavaland-examine-pressure-in-range-buff = This piece of equipment reaches maximum capability between [color=yellow]{$min} - {$max} kPa[/color], allowing it to deal [color=yellow]{$modifier} times[/color] the damage!
-lavaland-examine-pressure-in-range-debuff = This piece of equipment is weakened between [color=yellow]{$min} - {$max} kPa[/color], causing it to deal [color=yellow]{$modifier} times[/color] the damage!
-lavaland-examine-pressure-out-range-buff = This piece of equipment performs better outside [color=yellow]{$min} - {$max} kPa[/color], allowing it to deal [color=yellow]{$modifier} times[/color] the damage!
-lavaland-examine-pressure-out-range-debuff = This piece of equipment is weakened outside [color=yellow]{$min} - {$max} kPa[/color], causing it to deal [color=yellow]{$modifier} times[/color] the damage!
+lavaland-examine-pressure-in-range-buff = Cet équipement atteint sa capacité maximale entre [color=yellow]{$min} - {$max} kPa[/color], lui permettant d'infliger [color=yellow]{$modifier} fois[/color] les dégâts !
+lavaland-examine-pressure-in-range-debuff = Cet équipement est affaibli entre [color=yellow]{$min} - {$max} kPa[/color], l'amenant à infliger [color=yellow]{$modifier} fois[/color] les dégâts !
+lavaland-examine-pressure-out-range-buff = Cet équipement fonctionne mieux en dehors de [color=yellow]{$min} - {$max} kPa[/color], lui permettant d'infliger [color=yellow]{$modifier} fois[/color] les dégâts !
+lavaland-examine-pressure-out-range-debuff = Cet équipement est affaibli en dehors de [color=yellow]{$min} - {$max} kPa[/color], l'amenant à infliger [color=yellow]{$modifier} fois[/color] les dégâts !
 
-lavaland-examine-pressure-armor-in-range-buff = This piece of armor reaches maximum capability between [color=yellow]{$min} - {$max} kPa[/color], allowing it to be penetrated [color=yellow]{$modifier}%[/color] worse!
-lavaland-examine-pressure-armor-in-range-debuff = This piece of armor is weakened between [color=yellow]{$min} - {$max} kPa[/color], causing it to be penetrated [color=yellow]{$modifier}%[/color] better!
-lavaland-examine-pressure-armor-out-range-buff = This piece of armor performs better outside [color=yellow]{$min} - {$max} kPa[/color], allowing it to be penetrated [color=yellow]{$modifier}%[/color] worse!
-lavaland-examine-pressure-armor-out-range-debuff = This piece of armor is weakened outside [color=yellow]{$min} - {$max} kPa[/color], causing it to be penetrated [color=yellow]{$modifier}%[/color] better!
+lavaland-examine-pressure-armor-in-range-buff = Cette armure atteint sa capacité maximale entre [color=yellow]{$min} - {$max} kPa[/color], la rendant [color=yellow]{$modifier}%[/color] plus difficile à pénétrer !
+lavaland-examine-pressure-armor-in-range-debuff = Cette armure est affaiblie entre [color=yellow]{$min} - {$max} kPa[/color], la rendant [color=yellow]{$modifier}%[/color] plus facile à pénétrer !
+lavaland-examine-pressure-armor-out-range-buff = Cette armure fonctionne mieux en dehors de [color=yellow]{$min} - {$max} kPa[/color], la rendant [color=yellow]{$modifier}%[/color] plus difficile à pénétrer !
+lavaland-examine-pressure-armor-out-range-debuff = Cette armure est affaiblie en dehors de [color=yellow]{$min} - {$max} kPa[/color], la rendant [color=yellow]{$modifier}%[/color] plus facile à pénétrer !

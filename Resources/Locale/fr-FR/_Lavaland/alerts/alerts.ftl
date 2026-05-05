@@ -3,5 +3,5 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-alerts-hierophantbeat-name = Hierophant's Beat
-alerts-hierophantbeat-desc = A mysterious otherworldly tune is affecting your mobility.
+alerts-hierophantbeat-name = Rythme de l'Hiérophante
+alerts-hierophantbeat-desc = Une mystérieuse mélodie d'un autre monde affecte votre mobilité.

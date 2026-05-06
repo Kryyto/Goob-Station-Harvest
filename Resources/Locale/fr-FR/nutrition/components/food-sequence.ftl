@@ -10,85 +10,85 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-food-sequence-no-space = You can't put any more!
+food-sequence-no-space = Vous ne pouvez plus en mettre !
 
 # GENERAL
 
-food-sequence-content-chicken = chicken
-food-sequence-content-duck = duck
-food-sequence-content-crab = crab
+food-sequence-content-chicken = poulet
+food-sequence-content-duck = canard
+food-sequence-content-crab = crabe
 food-sequence-content-dragon = dragon
-food-sequence-content-snake = snake
-food-sequence-content-xeno = xeno
+food-sequence-content-snake = serpent
+food-sequence-content-xeno = xéno
 food-sequence-content-rouny = rouny
-food-sequence-content-tomato = tomato
+food-sequence-content-tomato = tomate
 food-sequence-content-salami = salami
 food-sequence-content-slime = slime
 food-sequence-content-clown = clown
-food-sequence-content-pea = pea
-food-sequence-content-world-pea = world pea
+food-sequence-content-pea = pois
+food-sequence-content-world-pea = pois dans le monde
 food-sequence-content-bungo = bungo
-food-sequence-content-banana = banana
+food-sequence-content-banana = banane
 food-sequence-content-mimana = mimana
-food-sequence-content-lemon = lemon
-food-sequence-content-lemoon = lemoon
-food-sequence-content-lime = lime
+food-sequence-content-lemon = citron
+food-sequence-content-lemoon = citrait
+food-sequence-content-lime = citron vert
 food-sequence-content-orange = orange
-food-sequence-content-potato = potato
-food-sequence-content-apple = apple
-food-sequence-content-cocoa = cocoa
-food-sequence-content-corn = corn
+food-sequence-content-potato = pomme de terre
+food-sequence-content-apple = pomme
+food-sequence-content-cocoa = cacao
+food-sequence-content-corn = maïs
 food-sequence-content-chili = chili
 food-sequence-content-chilly = chilly
-food-sequence-content-mushroom = shrooms
-food-sequence-content-aloe = aloe
-food-sequence-content-poppy = poppy
-food-sequence-content-lily = lily
-food-sequence-content-soy = soy
-food-sequence-content-cheese = cheese
+food-sequence-content-mushroom = champis
+food-sequence-content-aloe = aloès
+food-sequence-content-poppy = pavot
+food-sequence-content-lily = lys
+food-sequence-content-soy = soja
+food-sequence-content-cheese = fromage
 food-sequence-content-chevre = chèvre
 food-sequence-content-tofu = tofu
-food-sequence-content-brain = brain
-food-sequence-content-tongue = tongue
-food-sequence-content-ears = ear
-food-sequence-content-stomach = stomach
-food-sequence-content-liver = liver
-food-sequence-content-clump = clump
-food-sequence-content-raw-meat = raw meat
-food-sequence-content-meat = meat
-food-sequence-content-carp = carp meat
-food-sequence-content-bear = bear meat
-food-sequence-content-penguin = penguin meat
-food-sequence-content-corgi = corgi meat
-food-sequence-content-goliath = goliath meat
+food-sequence-content-brain = cervelle
+food-sequence-content-tongue = langue
+food-sequence-content-ears = oreille
+food-sequence-content-stomach = estomac
+food-sequence-content-liver = foie
+food-sequence-content-clump = amas
+food-sequence-content-raw-meat = viande crue
+food-sequence-content-meat = viande
+food-sequence-content-carp = viande de carpe
+food-sequence-content-bear = viande d'ours
+food-sequence-content-penguin = viande de pingouin
+food-sequence-content-corgi = viande de corgi
+food-sequence-content-goliath = viande de goliath
 food-sequence-content-rat = rat
-food-sequence-content-lizard = lizard meat
-food-sequence-content-plant = plant meat
-food-sequence-content-rotten = rotten meat
-food-sequence-content-spider = spider legs
-food-sequence-content-carrot = carrot
-food-sequence-content-cabbage = cabbage
-food-sequence-content-garlic = garlic
-food-sequence-content-pineapple = pineapple
-food-sequence-content-onion = onion
-food-sequence-content-ambrosia = ambrosia
-food-sequence-content-galaxy = galaxythistle
-food-sequence-content-glasstle = glasstle
+food-sequence-content-lizard = viande de lézard
+food-sequence-content-plant = viande végétale
+food-sequence-content-rotten = viande pourrie
+food-sequence-content-spider = pattes d'araignée
+food-sequence-content-carrot = carotte
+food-sequence-content-cabbage = chou
+food-sequence-content-garlic = ail
+food-sequence-content-pineapple = ananas
+food-sequence-content-onion = oignon
+food-sequence-content-ambrosia = ambroisie
+food-sequence-content-galaxy = chardon galactique
+food-sequence-content-glasstle = ortie de verre
 food-sequence-content-gatfruit = gatfruit
 food-sequence-content-koibean = koibean
-food-sequence-content-watermelon = watermelon
-food-sequence-content-holymelon = holymelon
+food-sequence-content-watermelon = pastèque
+food-sequence-content-holymelon = melon sacré
 food-sequence-content-cannabis = cannabis
-food-sequence-content-rainbow-cannabis = rainbow cannabis
-food-sequence-content-tobacco = tobacco
+food-sequence-content-rainbow-cannabis = cannabis arc-en-ciel rainbow
+food-sequence-content-tobacco = tabac
 food-sequence-content-hamster = hamster
 food-sequence-content-suppermatter = suppermatter
 food-sequence-content-capfruit = capfruit
-food-sequence-content-berries = berries
-food-sequence-content-spacemans-trumpet = spaceman's trupmet
-food-sequence-content-cherry = cherry
-food-sequence-content-snail = snail
-food-sequence-content-anomaly-berry = anomaly berry
+food-sequence-content-berries = baies
+food-sequence-content-spacemans-trumpet = trompette de l'astronaute
+food-sequence-content-cherry = cerise
+food-sequence-content-snail = escargot
+food-sequence-content-anomaly-berry = baie d'anomalie
 
 # BURGERS
 
@@ -173,8 +173,8 @@ food-sequence-cotton-burger-content-among-pequeno = sus
 
 # TACO
 
-food-sequence-taco-gen = taco with {$content}
+food-sequence-taco-gen = taco au {$content}
 
 # SKEWER
 
-food-sequence-skewer-gen = {$content} kebab
+food-sequence-skewer-gen = kebab au {$content}

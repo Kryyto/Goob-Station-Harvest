@@ -4,8 +4,8 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-examinable-hunger-component-examine-overfed = {CAPITALIZE(SUBJECT($entity))} {CONJUGATE-BASIC($entity, "look", "looks")} stuffed!
-examinable-hunger-component-examine-okay = {CAPITALIZE(SUBJECT($entity))} {CONJUGATE-BASIC($entity, "look", "looks")} content.
-examinable-hunger-component-examine-peckish = {CAPITALIZE(SUBJECT($entity))} {CONJUGATE-BASIC($entity, "look", "looks")} hungry.
-examinable-hunger-component-examine-starving = {CAPITALIZE(SUBJECT($entity))} {CONJUGATE-BASIC($entity, "look", "looks")} starved!
-examinable-hunger-component-examine-none = {CAPITALIZE(SUBJECT($entity))} {CONJUGATE-BASIC($entity, "seem", "seems")} not to get hungry.
+examinable-hunger-component-examine-overfed = {CAPITALIZE(SUBJECT($entity))} a l'air repu !
+examinable-hunger-component-examine-okay = {CAPITALIZE(SUBJECT($entity))} a l'air satisfait.
+examinable-hunger-component-examine-peckish = {CAPITALIZE(SUBJECT($entity))} a l'air affamé.
+examinable-hunger-component-examine-starving = {CAPITALIZE(SUBJECT($entity))} semble affamé à l'extrême !
+examinable-hunger-component-examine-none = {CAPITALIZE(SUBJECT($entity))} semble ne jamais avoir faim.

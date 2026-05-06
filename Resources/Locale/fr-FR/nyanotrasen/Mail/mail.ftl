@@ -4,21 +4,21 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-mail-recipient-mismatch = Recipient name or job does not match.
-mail-invalid-access = Recipient name and job match, but access isn't as expected.
-mail-locked = The anti-tamper lock hasn't been removed. Tap the recipient's ID.
-mail-desc-far = A parcel of mail. You can't make out who it's addressed to from this distance.
-mail-desc-close = A parcel of mail addressed to {CAPITALIZE($name)}, {$job}.
-mail-desc-fragile = It has a [color=red]red fragile label[/color].
-mail-desc-priority = The anti-tamper lock's [color=yellow]yellow priority tape[/color] is active. Better deliver it on time!
-mail-desc-priority-inactive = The anti-tamper lock's [color=#886600]yellow priority tape[/color] is inactive.
-mail-unlocked = Anti-tamper system unlocked.
-mail-unlocked-by-emag = Anti-tamper system *BZZT*.
-mail-unlocked-reward = Anti-tamper system unlocked. {$bounty} spesos have been added to logistics' account.
-mail-penalty-lock = ANTI-TAMPER LOCK BROKEN. LOGISTICS BANK ACCOUNT PENALIZED BY {$credits} SPESOS.
-mail-penalty-fragile = INTEGRITY COMPROMISED. LOGISTICS BANK ACCOUNT PENALIZED BY {$credits} SPESOS.
-mail-penalty-expired = DELIVERY PAST DUE. LOGISTICS BANK ACCOUNT PENALIZED BY {$credits} SPESOS.
-mail-item-name-addressed = mail ({$recipient})
+mail-recipient-mismatch = Le nom ou le poste du destinataire ne correspond pas.
+mail-invalid-access = Le nom et le poste correspondent, mais l'accès n'est pas celui attendu.
+mail-locked = Le verrou anti-effraction n'a pas été retiré. Tapotez l'ID du destinataire.
+mail-desc-far = Un colis postal. Vous ne pouvez pas lire à qui il est adressé depuis cette distance.
+mail-desc-close = Un colis postal adressé à {CAPITALIZE($name)}, {$job}.
+mail-desc-fragile = Il porte une [color=red]étiquette rouge fragile[/color].
+mail-desc-priority = Le [color=yellow]ruban jaune prioritaire[/color] du verrou anti-effraction est actif. Mieux vaut le livrer à temps !
+mail-desc-priority-inactive = Le [color=#886600]ruban jaune prioritaire[/color] du verrou anti-effraction est inactif.
+mail-unlocked = Système anti-effraction déverrouillé.
+mail-unlocked-by-emag = Système anti-effraction *BZZT*.
+mail-unlocked-reward = Système anti-effraction déverrouillé. {$bounty} spesos ont été ajoutés au compte logistique.
+mail-penalty-lock = VERROU ANTI-EFFRACTION BRISÉ. COMPTE BANCAIRE LOGISTIQUE PÉNALISÉ DE {$credits} SPESOS.
+mail-penalty-fragile = INTÉGRITÉ COMPROMISE. COMPTE BANCAIRE LOGISTIQUE PÉNALISÉ DE {$credits} SPESOS.
+mail-penalty-expired = LIVRAISON EN RETARD. COMPTE BANCAIRE LOGISTIQUE PÉNALISÉ DE {$credits} SPESOS.
+mail-item-name-addressed = courrier ({$recipient})
 
 command-mailto-description = Queue a parcel to be delivered to an entity. Example usage: `mailto 1234 5678 false false`. The target container's contents will be transferred to an actual mail parcel.
 ### Frontier: add is-large description

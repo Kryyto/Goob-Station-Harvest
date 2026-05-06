@@ -9,18 +9,18 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-trait-scottish-name = Scottish accent
-trait-scottish-desc = Your scottish pride is as strong as your accent!
+trait-scottish-name = Accent écossais
+trait-scottish-desc = Votre fierté écossaise est aussi forte que votre accent !
 
-trait-wheelchair-bound-name = Wheelchair Bound
-trait-wheelchair-bound-desc = You cannot move without your wheelchair. Wheelchair included.
+trait-wheelchair-bound-name = En fauteuil roulant
+trait-wheelchair-bound-desc = Vous ne pouvez pas vous déplacer sans votre fauteuil roulant. Fauteuil roulant inclus.
 
-trait-bogan-name = Bogan accent
-trait-bogan-desc = You learned this from a mythical creature.
+trait-bogan-name = Accent bogan
+trait-bogan-desc = Vous avez appris ça d'une créature mythique.
 
-poor-vision-trait-examined = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} eyes are unfocused. It doesn't seem like {SUBJECT($target)} can see you very well without glasses..[/color]
+poor-vision-trait-examined = [color=lightblue]Les yeux de {CAPITALIZE(POSS-ADJ($target))} sont flous. Il ne semble pas que {SUBJECT($target)} puisse vous voir très bien sans lunettes..[/color]
 
-trait-medieval-accent-name = Medieval accent
+trait-medieval-accent-name = Accent médiéval
 trait-medieval-accent-desc = Hark! Thy manner o' speech, 'tis most unusual!
 trait-tile-movement-name = Inner peace
 trait-tile-movement-desc = You are always in touch with your roots. And by your roots, I mean the center of the tile you're standing on.

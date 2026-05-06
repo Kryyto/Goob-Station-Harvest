@@ -1,14 +1,14 @@
-xenobio-reagent-slime-toxin-name = Slime toxin
+xenobio-reagent-slime-toxin-name = Toxine de slime
 xenobio-reagent-slime-toxin-desc = The toxin that slime introduces into victim’s blood during the hunt, maintains the victim in a critical state even with zero blood volume. It also has hallucinogenic and sedative effects.
 
-xenobio-reagent-jelly-purple-name = Slime steroid
-xenobio-reagent-jelly-purple-desc = This is a potent chemical mix that will cause a slime to produce one more extract when processed, for a maximum of four extra. The steroid only works on live slimes.
+xenobio-reagent-jelly-purple-name = Stéroïde de slime
+xenobio-reagent-jelly-purple-desc = C'est un mélange chimique puissant qui fera produire un extrait supplémentaire à un slime lors du traitement, pour un maximum de quatre en plus. Le stéroïde ne fonctionne que sur les slimes vivants.
 
-xenobio-reagent-jelly-blue-name = Slime stabilizer
-xenobio-reagent-jelly-blue-desc = Reduces a slime's mutation chance by 25 percent, and carries through across generations.
+xenobio-reagent-jelly-blue-name = Stabilisateur de slime
+xenobio-reagent-jelly-blue-desc = Réduit la chance de mutation d'un slime de 25 pourcent et se transmet à travers les générations.
 
-xenobio-reagent-jelly-darkblue-name = Slime chilling jelly
-xenobio-reagent-jelly-darkblue-desc = This jelly makes any consumer fireproof for a decent amount of time. Be a firebug without looking like one! Miners can make good use of this, as it will make them ash storm-proof.
+xenobio-reagent-jelly-darkblue-name = Gelée réfrigérante de slime
+xenobio-reagent-jelly-darkblue-desc = Cette gelée rend tout consommateur ignifuge pendant un bon moment. Soyez un pyromane sans en avoir l'air ! Les mineurs peuvent en faire bon usage, car elle les rendra résistants aux tempêtes de cendres.
 
 xenobio-reagent-jelly-cerulean-name = Slime Boost
 xenobio-reagent-jelly-cerulean-desc = When ingested by a slime it will produce more offspring on mitosis. Do not confuse with "Broly Boost".

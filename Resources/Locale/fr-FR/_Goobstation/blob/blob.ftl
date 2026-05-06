@@ -10,38 +10,38 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-ent-SpawnPointGhostBlob = Blob spawner
-    .suffix = DEBUG, Ghost Role Spawner
+ent-SpawnPointGhostBlob = Générateur de blob
+    .suffix = DEBUG, Générateur de rôle fantôme
     .desc = { ent-MarkerBase.desc }
-ent-MobBlobPod = Blob Drop
-    .desc = An ordinary blob fighter.
+ent-MobBlobPod = Unité blob
+    .desc = Un combattant blob ordinaire.
 ent-MobBlobBlobbernaut = Blobbernaut
-    .desc = An elite blob fighter.
-ent-BaseBlob = basic blob.
+    .desc = Un combattant blob d'élite.
+ent-BaseBlob = blob basique.
     .desc = { "" }
-ent-NormalBlobTile = Regular Tile Blob
-    .desc = An ordinary part of the blob required for the construction of more advanced tiles.
-ent-CoreBlobTile = Blob Core
-    .desc = The most important organ of the blob. By destroying the core, the infection will cease.
-ent-FactoryBlobTile = Blob Factory
-    .desc = Spawns Blob Drops and Blobbernauts over time.
-ent-ResourceBlobTile = Resource Blob
-    .desc = Produces resources for the blob.
-ent-NodeBlobTile = Blob Node
-    .desc = A mini version of the core that allows you to place special blob tiles around itself.
-ent-StrongBlobTile = Strong Blob Tile
-    .desc = A reinforced version of the regular tile. It does not allow air to pass through and protects against brute damage.
-ent-ReflectiveBlobTile = Blob Reflective Tiles
-    .desc = It reflects lasers, but does not protect against brute damage as well.
+ent-NormalBlobTile = Dalle blob normale
+    .desc = Une partie ordinaire du blob nécessaire à la construction de dalles plus avancées.
+ent-CoreBlobTile = Noyau du blob
+    .desc = L'organe le plus important du blob. En détruisant le noyau, l'infection cessera.
+ent-FactoryBlobTile = Usine blob
+    .desc = Génère des unités blob et des Blobbernauts au fil du temps.
+ent-ResourceBlobTile = Blob de ressources
+    .desc = Produit des ressources pour le blob.
+ent-NodeBlobTile = Nœud blob
+    .desc = Une mini version du noyau qui vous permet de placer des dalles blob spéciales autour de lui.
+ent-StrongBlobTile = Dalle blob renforcée
+    .desc = Une version renforcée de la dalle normale. Elle ne laisse pas passer l'air et protège contre les dégâts contondants.
+ent-ReflectiveBlobTile = Dalles blob réfléchissantes
+    .desc = Elles reflètent les lasers, mais protègent moins bien contre les dégâts contondants.
     .desc = { "" }
 objective-issuer-blob = Blob
 
 
 ghost-role-information-blobbernaut-name = Blobbernaut
-ghost-role-information-blobbernaut-description = You are a Blobbernaut. You must defend the blob core. Use + or +e in chat to talk in the Blobmind.
+ghost-role-information-blobbernaut-description = Vous êtes un Blobbernaut. Vous devez défendre le noyau du blob. Utilisez + ou +e dans le chat pour parler dans l'Esprit-blob.
 
 ghost-role-information-blob-name = Blob
-ghost-role-information-blob-description = You are the Blob Infection. Consume the station.
+ghost-role-information-blob-description = Vous êtes l'Infection blob. Consumez la station.
 
 roles-antag-blob-name = Blob
 roles-antag-blob-objective = Reach critical mass.

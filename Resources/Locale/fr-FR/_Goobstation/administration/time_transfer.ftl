@@ -4,13 +4,13 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-time-transfer-panel-title = Time Transfer
-time-transfer-panel-player-label = Player
-time-transfer-panel-time = Time
-time-transfer-panel-add-time = Add time 
-time-transfer-panel-set-time = Set time
-time-transfer-panel-set-time-confirm = Confirm
-time-transfer-panel-warning-no-player = Player not selected
+time-transfer-panel-title = Transfert de temps
+time-transfer-panel-player-label = Joueur
+time-transfer-panel-time = Temps
+time-transfer-panel-add-time = Ajouter du temps 
+time-transfer-panel-set-time = Définir le temps
+time-transfer-panel-set-time-confirm = Confirmer
+time-transfer-panel-warning-no-player = Aucun joueur sélectionné
 time-transfer-panel-warning-no-job = Role not selected
 time-transfer-panel-warning-group-no-time = Group time is empty
 time-transfer-panel-warning-add-success = Time successfully added

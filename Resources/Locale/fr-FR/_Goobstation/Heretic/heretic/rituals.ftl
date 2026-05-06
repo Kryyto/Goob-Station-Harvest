@@ -7,22 +7,22 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-heretic-ritual-unknown = Unknown Ritual
-heretic-ritual-switch = Selected {$name}
-heretic-ritual-success = Ritual successful
+heretic-ritual-unknown = Rituel inconnu
+heretic-ritual-switch = Sélectionné : {$name}
+heretic-ritual-success = Rituel réussi
 
-heretic-ritual-fail-items = Ritual failed. Required items: {$itemlist}
-heretic-ritual-norituals = You don't know any rituals!
-heretic-ritual-noritual = No ritual chosen!
+heretic-ritual-fail-items = Rituel échoué. Objets requis : {$itemlist}
+heretic-ritual-norituals = Vous ne connaissez aucun rituel !
+heretic-ritual-noritual = Aucun rituel choisi !
 
-heretic-ritual-basic-sacrifice = Heartbeat of the Mansus
-heretic-ritual-basic-sacrifice-desc = Bring one of your targets in critical or worse condition to sacrifice them to the Mansus, gibbing them and granting you one knowledge point. Heads of staff give an additional bonus point.
+heretic-ritual-basic-sacrifice = Battement de cœur du Mansus
+heretic-ritual-basic-sacrifice-desc = Amenez une de vos cibles en état critique ou pire pour la sacrifier au Mansus, la mettant en pièces et vous accordant un point de connaissance. Les chefs de personnel accordent un point bonus supplémentaire.
 
-heretic-ritual-basic-focus = Amber Focus
-heretic-ritual-basic-focus-desc = Transmute a glass shard and a pair of eyes into Amber Focus. A small necklace that allows you to cast advanced spells without the need of holding the codex in your hand.
+heretic-ritual-basic-focus = Focus d'ambre
+heretic-ritual-basic-focus-desc = Transmutez un éclat de verre et une paire d'yeux en Focus d'ambre. Un petit collier qui vous permet de lancer des sorts avancés sans avoir besoin de tenir le codex dans votre main.
 
-heretic-ritual-basic-heart = Relentless Heartbeat
-heretic-ritual-basic-heart-desc = Transmute one heart, a pen and a paper to reroll your targets. Be wary that you may roll the same targets as before. Use this only if absolutely necessary.
+heretic-ritual-basic-heart = Battement implacable
+heretic-ritual-basic-heart-desc = Transmutez un cœur, un stylo et un papier pour relancer vos cibles. Méfiez-vous car vous pourriez obtenir les mêmes cibles qu'avant. N'utilisez ceci qu'en cas d'absolue nécessité.
 
 heretic-ritual-basic-codex = Codex Cicatrix
 heretic-ritual-basic-codex-desc =
@@ -31,17 +31,17 @@ heretic-ritual-basic-codex-desc =
     Allows you to transmute a book, any pen, and any piece of meat or non-silicon organ to create a Codex Cicatrix.
     The Codex Cicatrix can be used when draining influences to gain additional knowledge, but comes at greater risk of being noticed. It can also be used to draw and remove transmutation runes easier, and as a spell focus in a pinch.
 
-heretic-ritual-basic-reminiscence = Reminiscence
-heretic-ritual-basic-reminiscence-desc = Transmute a chair to instantly return one of your lost blades.
+heretic-ritual-basic-reminiscence = Réminiscence
+heretic-ritual-basic-reminiscence-desc = Transmutez une chaise pour retourner instantanément une de vos lames perdues.
 
-heretic-ritual-basic-owls = Feast of Owls
+heretic-ritual-basic-owls = Festin des hiboux
 heretic-ritual-basic-owls-desc =
     Under the soft glow of unreason there is a beast that stalks the night. I shall bring it forth and let it enter my presence. It will feast upon my amibitions and leave knowledge in its wake.
 
     Allows you to undergo a ritual that gives you 5 knowledge points but locks you out of ascension. This can only be done once and cannot be reverted.
 
-heretic-ritual-fail-sacrifice = There is no corpse to sacrifice.
-heretic-ritual-fail-sacrifice-ineligible = The rune refuses to accept this sacrifice.
+heretic-ritual-fail-sacrifice = Il n'y a pas de cadavre à sacrifier.
+heretic-ritual-fail-sacrifice-ineligible = La rune refuse d'accepter ce sacrifice.
 heretic-ritual-fail-reagentpuddle = There is no {$reagentname} present.
 heretic-ritual-fail-temperature-hot = It is too hot here.
 heretic-ritual-fail-temperature-cold = It is not cold enough here.

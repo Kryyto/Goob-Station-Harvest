@@ -8,24 +8,24 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-heretic-ability-fail = Failed to cast
-heretic-ability-fail-magicitem = You cannot cast it without a focus!
-heretic-ability-fail-notarget = Couldn't find a valid target!
-heretic-ability-fail-lowhealth = This spell deals {$damage} damage, it would put you in critical condition if you casted it!
-heretic-ability-fail-tile-not-rusted = Targeted tile must be rusted to use this ability!
-heretic-ability-fail-tile-underneath-not-rusted = Tile that you are standing on must be rusted to use this ability!
-heretic-ability-fail-tile-occupied = Targeted tile is occupied!
-heretic-ability-fail-rust-stage-low = You are not powerful enough to rust this surface!
-heretic-ability-fail-target-ghoul = Target is ghoul already!
-heretic-ability-fail-target-no-mind = Target has no soul!
+heretic-ability-fail = Échec de l'incantation
+heretic-ability-fail-magicitem = Vous ne pouvez pas l'incanter sans focus !
+heretic-ability-fail-notarget = Impossible de trouver une cible valide !
+heretic-ability-fail-lowhealth = Ce sort inflige {$damage} dégâts, il vous mettrait en état critique si vous l'incantiez !
+heretic-ability-fail-tile-not-rusted = La case ciblée doit être rouillée pour utiliser cette capacité !
+heretic-ability-fail-tile-underneath-not-rusted = La case sur laquelle vous vous tenez doit être rouillée pour utiliser cette capacité !
+heretic-ability-fail-tile-occupied = La case ciblée est occupée !
+heretic-ability-fail-rust-stage-low = Vous n'êtes pas assez puissant pour rouiller cette surface !
+heretic-ability-fail-target-ghoul = La cible est déjà un goule !
+heretic-ability-fail-target-no-mind = La cible n'a pas d'âme !
 
-heretic-cosmic-rune-fail-star-mark = Blocked by star mark!
-heretic-cosmic-rune-fail-unlinked = No linked rune!
-heretic-cosmic-rune-fail-range = Not close enough!
+heretic-cosmic-rune-fail-star-mark = Bloqué par la marque stellaire !
+heretic-cosmic-rune-fail-unlinked = Aucune rune liée !
+heretic-cosmic-rune-fail-range = Pas assez proche !
 
-heretic-magicitem-examine = [color=yellow]Allows you to use advanced spells while held or equipped.[/color]
+heretic-magicitem-examine = [color=yellow]Vous permet d'utiliser des sorts avancés lorsqu'il est tenu ou équipé.[/color]
 
-mansus-grasp-trigger-fail = Something prevents you from activating this!
+mansus-grasp-trigger-fail = Quelque chose vous empêche d'activer ceci !
 
 ## blade
 heretic-blade-examine = [color=yellow]Using it while it's in your hand will break the blade and teleport you away from danger.[/color]

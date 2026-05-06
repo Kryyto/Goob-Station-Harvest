@@ -7,16 +7,16 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-heretic-roundend-name = a heretic
+heretic-roundend-name = un hérétique
 
-roundend-prepend-heretic-ascension-success = {$name}, [color=green] has Ascended![/color]
-roundend-prepend-heretic-ascension-fail = {$name}, [color=red] has failed![/color]
-roundend-prepend-heretic-ascension-fail-owls = {$name}, [color=red] has forsaken their Ascension and thus failed![/color]
-roundend-prepend-heretic-knowledge-named = [color=white]{$name}[/color] has researched a total of [color=purple]{$number}[/color] knowledge.
+roundend-prepend-heretic-ascension-success = {$name}, [color=green] a Ascensionné ![/color]
+roundend-prepend-heretic-ascension-fail = {$name}, [color=red] a échoué ![/color]
+roundend-prepend-heretic-ascension-fail-owls = {$name}, [color=red] a renoncé à son Ascension et a donc échoué ![/color]
+roundend-prepend-heretic-knowledge-named = [color=white]{$name}[/color] a recherché un total de [color=purple]{$number}[/color] connaissances.
 
-heretic-gamemode-title = Heretics
+heretic-gamemode-title = Hérétiques
 heretic-gamemode-description =
-    Dimensional anomaly detected within the station. There is no additional data.
+    Anomalie dimensionnelle détectée au sein de la station. Aucune donnée supplémentaire disponible.
 
 heretic-role-greeting-fluff =
     Another day at a meaningless job. You feel a shimmer around you, as a realization of something strange in the air unfolds. You look inwards and discover something that will change your life.
@@ -29,13 +29,13 @@ heretic-role-greeting =
     Read more about your role in the guidebook entry.
 
 heretic-role-greeting-short =
-    You are the Heretic!
-    In order to learn the Final Ritual and Ascend, you must fulfill your tasks.
+    Vous êtes l'Hérétique !
+    Pour apprendre le Rituel Final et Ascensionner, vous devez accomplir vos tâches.
 
 ## ghoul
 heretic-ghoul-greeting =
-    You have been summoned into this world by {CAPITALIZE(THE($ent))}!
-    You must aid them in their journey to ascension and protect them at all costs.
+    Vous avez été invoqué dans ce monde par {CAPITALIZE(THE($ent))} !
+    Vous devez les aider dans leur voyage vers l'ascension et les protéger à tout prix.
     You may follow other heretics if your master is beyond resurrection.
 heretic-ghoul-greeting-noname =
     You have been summoned into this world by eldritch forces.

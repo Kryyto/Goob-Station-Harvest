@@ -1,13 +1,13 @@
 clone-projector-examined-status = { $cloneStatus ->
-[true] The clone is currently active.
-*[false] The clone is currently inactive.
+[true] Le clone est actuellement actif.
+*[false] Le clone est actuellement inactif.
 }
-clone-projector-examined-health = {$cloneHealth}% Integrity
+clone-projector-examined-health = {$cloneHealth}% d'intégrité
 
-gemini-projector-clone-created = A swarm of nanites appears from {$user}'s projector.
-gemini-projector-clone-retrieved = The {$target} dematerializes.
+gemini-projector-clone-created = Un essaim de nanites apparaît depuis le projecteur de {$user}.
+gemini-projector-clone-retrieved = Le {$target} se dématérialise.
 
-gemini-projector-clone-flavor-text = [color=cyan]It's composed of a swarm of nanomachines.[/color]
+gemini-projector-clone-flavor-text = [color=cyan]Il est composé d'un essaim de nanomachines.[/color]
 gemini-projector-clone-name-suffix = - Gemini
 
 gemini-projector-installed = You feel a sharp pain in your lower back.

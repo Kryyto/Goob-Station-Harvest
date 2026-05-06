@@ -4,15 +4,15 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-traitor-arcterrorist-intro = You are the ARC terrorist.
-traitor-arcterrorist-goal = The creatures of this world must be freed from the iron grasp of Nanotrasen, and you are their only hope!
-traitor-arcterrorist-allies = You may cooperate with other syndicate agents if you support our cause. Maybe you can convince the Bee Liberation Front agents to cooperate for once?
-traitor-arcterrorist-uplink = The Syndicate have graciously given one of their uplinks for your task.
-traitor-arcterrorist-roundend = [color=green]an activist from the Animal Rights Consortium[/color]
+traitor-arcterrorist-intro = Vous êtes le terroriste du Consortium pour les Droits des Animaux.
+traitor-arcterrorist-goal = Les créatures de ce monde doivent être libérées de l'emprise de fer de Nanotrasen, et vous êtes leur seul espoir !
+traitor-arcterrorist-allies = Vous pouvez coopérer avec d'autres agents du syndicat si vous soutenez notre cause. Peut-être pouvez-vous convaincre les agents du Front de Libération des Abeilles de coopérer pour une fois ?
+traitor-arcterrorist-uplink = Le Syndicat vous a gracieusement donné l'un de ses liens pour votre tâche.
+traitor-arcterrorist-roundend = [color=green]un activiste du Consortium pour les Droits des Animaux[/color]
 
-traitor-beeliberationfront-intro = You are the Bee Liberation Front activist.
-traitor-beeliberationfront-goal = We must prove ourselves to the Syndicate or we will not be able to join. Animal Rights Consort will roll us!
-traitor-beeliberationfront-allies = You may cooperate with other syndicate agents if they support our cause. Maybe you can recruit an Animal Rights Consort to be useful for once?
+traitor-beeliberationfront-intro = Vous êtes l'activiste du Front de Libération des Abeilles.
+traitor-beeliberationfront-goal = Nous devons nous prouver au Syndicat ou nous ne pourrons pas les rejoindre. Le Consortium pour les Droits des Animaux va nous écraser !
+traitor-beeliberationfront-allies = Vous pouvez coopérer avec d'autres agents du syndicat s'ils soutiennent notre cause. Peut-être pouvez-vous recruter un membre du Consortium pour les Droits des Animaux pour qu'il soit utile pour une fois ?
 traitor-beeliberationfront-uplink = The Syndicate have graciously given one of their uplinks to see if we are worthy.
 traitor-beeliberationfront-roundend = [color=green]an activist from Bee Liberation Front[/color]
 

@@ -4,17 +4,17 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-marking-OniHornSingleCurved = Single Curved
-marking-OniHornSingleCurved-single_curved = Single Curved
-marking-OniHornSingleLeftCurved = Single Left Curved
-marking-OniHornSingleLeftCurved-single_left_curved = Single Left Curved
-marking-OniHornSingleRightCurved = Single Right Curved
-marking-OniHornSingleRightCurved-single_right_curved = Single Right Curved
-marking-OniHornDoubleCurvedOutwards = Double Curved Outwards
-marking-OniHornDoubleCurvedOutwards-double_curved_outwards = Double Curved Outwards
-marking-OniHornDoubleCurved = Double Curved
-marking-OniHornDoubleCurved-double_curved = Double Curved
-marking-OniHornDoubleLeftBrokeCurved = Double Left Broke Curved
-marking-OniHornDoubleLeftBrokeCurved-double_left_broke_curved = Double Left Broke Curved
-marking-OniHornDoubleRightBrokeCurved =  Double Right Broke Curved
-marking-OniHornDoubleRightBrokeCurved-double_right_broke_curved = Double Right Broke Curved
+marking-OniHornSingleCurved = Unique courbée
+marking-OniHornSingleCurved-single_curved = Unique courbée
+marking-OniHornSingleLeftCurved = Gauche courbée
+marking-OniHornSingleLeftCurved-single_left_curved = Gauche courbée
+marking-OniHornSingleRightCurved = Droite courbée
+marking-OniHornSingleRightCurved-single_right_curved = Droite courbée
+marking-OniHornDoubleCurvedOutwards = Double courbée vers l'extérieur
+marking-OniHornDoubleCurvedOutwards-double_curved_outwards = Double courbée vers l'extérieur
+marking-OniHornDoubleCurved = Double courbée
+marking-OniHornDoubleCurved-double_curved = Double courbée
+marking-OniHornDoubleLeftBrokeCurved = Double gauche brisée courbée
+marking-OniHornDoubleLeftBrokeCurved-double_left_broke_curved = Double gauche brisée courbée
+marking-OniHornDoubleRightBrokeCurved = Double droite brisée courbée
+marking-OniHornDoubleRightBrokeCurved-double_right_broke_curved = Double droite brisée courbée

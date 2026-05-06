@@ -9,29 +9,29 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-markings-used = Used Markings
-markings-unused = Unused Markings
-markings-add = Add Marking
-markings-remove = Remove Marking
-markings-rank-up = Up
-markings-rank-down = Down
-markings-search = Search
-marking-points-remaining = Markings left: {$points}
+markings-used = Marquages utilisés
+markings-unused = Marquages inutilisés
+markings-add = Ajouter un marquage
+markings-remove = Supprimer le marquage
+markings-rank-up = Haut
+markings-rank-down = Bas
+markings-search = Rechercher
+marking-points-remaining = Marquages restants : {$points}
 marking-used = {$marking-name}
-marking-used-forced = {$marking-name} (Forced)
-marking-slot-add = Add
-marking-slot-remove = Remove
-marking-slot = Slot {$number}
+marking-used-forced = {$marking-name} (Forcé)
+marking-slot-add = Ajouter
+marking-slot-remove = Enlever
+marking-slot = Eplacement {$number}
 
 # Categories
 
-markings-category-Special = Special
-markings-category-Hair = Hair
-markings-category-FacialHair = Facial Hair
-markings-category-Head = Head
-markings-category-HeadTop = Head (Top)
-markings-category-HeadSide = Head (Side)
-markings-category-Snout = Snout
-markings-category-Chest = Chest
-markings-category-Tail = Tail
-markings-category-Overlay = Overlay
+markings-category-Special = Spécial
+markings-category-Hair = Cheveux
+markings-category-FacialHair = Pilosité faciale
+markings-category-Head = Tête
+markings-category-HeadTop = Tête (Dessus)
+markings-category-HeadSide = Tête (Côté)
+markings-category-Snout = Museau
+markings-category-Chest = Torse
+markings-category-Tail = Queue
+markings-category-Overlay = Superposition

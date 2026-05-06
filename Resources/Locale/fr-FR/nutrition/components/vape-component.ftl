@@ -5,10 +5,10 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-vape-component-vape-success = You puffed on the vape.
-vape-component-vape-success-forced = {CAPITALIZE(THE($user))} forced you to puffon the vape.
-vape-component-vape-success-user-forced = You successfully forced to puff {THE($target)}.
-vape-component-try-use-vape-forced = {CAPITALIZE(THE($user))} is trying to make you puff on the vape.
-vape-component-try-use-vape-forced-user = You are forcing {THE($target)} to puff on the vape.
-vape-component-try-use-vape = You are trying to puff on the vape.
-vape-component-vape-empty = The vape is empty!
+vape-component-vape-success = Vous avez tiré une bouffée sur la vape.
+vape-component-vape-success-forced = {CAPITALIZE(THE($user))} vous a forcé à tirer sur la vape.
+vape-component-vape-success-user-forced = Vous avez forcé {THE($target)} à tirer une bouffée.
+vape-component-try-use-vape-forced = {CAPITALIZE(THE($user))} essaie de vous forcer à tirer sur la vape.
+vape-component-try-use-vape-forced-user = Vous forcez {THE($target)} à tirer sur la vape.
+vape-component-try-use-vape = Vous essayez de tirer une bouffée sur la vape.
+vape-component-vape-empty = La vape est vide !

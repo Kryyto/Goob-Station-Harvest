@@ -291,14 +291,15 @@ chatsan-word-96 = cv
 chatsan-replacement-96 = ça va
 
 # pas sûr des remplacement d'une seule lettre, à tester
-chatsan-word-97 = c
-chatsan-replacement-97 = c'est
+# après un test, le jeu considère les apostrophes comme un espace, donc mettre "C'est" ça le transforme en "C'est'est", je garde que le "g" du coup.
+#chatsan-word-97 = c
+#chatsan-replacement-97 = c'est
 
 chatsan-word-98 = g
 chatsan-replacement-98 = j'ai
 
-chatsan-word-134 = t
-chatsan-replacement-134 = t'es
+#chatsan-word-134 = t
+#chatsan-replacement-134 = t'es
 
 chatsan-word-99 = mnt
 chatsan-replacement-99 = maintenant

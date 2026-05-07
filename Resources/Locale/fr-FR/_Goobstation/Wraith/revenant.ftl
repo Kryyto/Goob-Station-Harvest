@@ -7,4 +7,4 @@ revenant-touch-of-evil-end = L'effet du toucher s'estompe...
 
 wraith-must-be-corporeal = Vous devez être sous forme corporelle pour utiliser cette action.
 collective-mind-wraith = Esprit-spectre
-wraith-wp-action-needs = [color=Red]{$wp}WP[/color]
+wraith-wp-action-needs = [color=Red]{$wp}PF[/color]

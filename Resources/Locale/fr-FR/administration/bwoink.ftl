@@ -15,37 +15,37 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-bwoink-user-title = Admin Message
+bwoink-user-title = Message Admin
 
-bwoink-system-starmute-message-no-other-users = *System: Nobody is available to receive your message. Try pinging Game Admins on Discord.
+bwoink-system-starmute-message-no-other-users = *Système : Personne n'est en ligne pour recevoir votre message. Essayez de ping un membre du staff sur le Discord.
 
 bwoink-system-messages-being-relayed-to-discord =
     All messages are relayed to game administrators via Discord.
     Issues may be handled without a response.
 
 bwoink-system-introductory-message =
-    Please describe the issue that you have encountered in detail. Assume that the game administrator who is resolving the problem does not have first-hand knowledge of what has occurred.
-    Please do not ask for special events or punishments for other players.
-    Any bugs and other related issues should be reported through Discord or Github.
-    Misuse of this message system may result in disciplinary action.
+    Merci de décrire le problème que vous avez rencontré en détail. Partez du principe que l'admin qui vous lira ne sait pas ce qu'il s'est passé.
+    Merci de ne pas demander d'évènements spéciaux ou de sanctions pour d'autres joueurs.
+    Tout bug ou problème technique devrait être report sur le Discord ou Github.
+    Toute utilisation abusive de ce système de messagerie peut donner lieu à des sanctions.
 
 bwoink-system-typing-indicator = {$players} {$count ->
-[one] is
-*[other] are
-} typing...
+[one] est
+*[other] sont
+} en train d'écrire...
 
 admin-ahelp-admin-only = Admin Only
 admin-ahelp-admin-only-tooltip = If checked, then the message won't be visible for the player,
     but will be visible for other admins and still will be Discord relayed.
 
-admin-bwoink-play-sound = Bwoink?
+admin-bwoink-play-sound = Bwoink ?
 
-bwoink-title-none-selected = None selected
+bwoink-title-none-selected = Aucun sélectionné
 
-bwoink-system-rate-limited = System: you are sending messages too quickly.
-bwoink-system-player-disconnecting = has disconnected.
-bwoink-system-player-reconnecting = has reconnected.
-bwoink-system-player-banned = has been banned for: {$banReason}
+bwoink-system-rate-limited = Système : vous envoyez des messages trop rapidement.
+bwoink-system-player-disconnecting = s'est déconnecté.
+bwoink-system-player-reconnecting = s'est reconnecté.
+bwoink-system-player-banned = a été banni pour : {$banReason}
 
 bwoink-message-admin-only = (Admin Only)
 bwoink-message-silent = (S)

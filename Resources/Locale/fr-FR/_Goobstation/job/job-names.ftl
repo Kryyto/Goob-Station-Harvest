@@ -43,7 +43,7 @@ job-name-radiohost = Animateur radio
 
 # Role timers - Make these alphabetical or I cut you (dont listen to upstream, i copied and pasted this, make it very un-alphabetical :godo:)
 
-JobBlueshieldOfficer = Officier Bouclier bleu
+JobBlueshieldOfficer = Officier Blueshield
 JobNanotrasenRepresentative = Représentant Nanotrasen
 JobNanotrasenCareerTrainer = Formateur de carrière Nanotrasen
 JobHecuOperative = Opérateur HECU

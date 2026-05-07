@@ -30,33 +30,33 @@ spell-fail-cant-wear-eyepatch = Impossible de porter un cache-œil !
 spell-fail-already-wear-eyepatch = Vous portez déjà un cache-œil.
 spell-fail-no-spells = Vous n'avez appris aucun sort !
 spell-fail-mindswap-changeling = Vous ne pouvez pas échanger d'esprits avec le changeling !
-spell-fail-mindswap-heretic = You can't mindswap with the heretic!
-spell-fail-mindswap-ghoul = You can't mindswap with the ghoul!
-spell-fail-mindswap-ghost = You can't mindswap with the ghost!
-spell-fail-mindswap-temporary = You can't mindswap with temporary creatures!
-spell-fail-mindswap-dead = You don't particularly want to be dead!
+spell-fail-mindswap-heretic = Vous ne pouvez pas échanger vos esprits avec l'hérétique !
+spell-fail-mindswap-ghoul = Vous ne pouvez pas échanger vos esprits avec la goule !
+spell-fail-mindswap-ghost = Vous ne pouvez pas échanger vos esprits avec le fantôme !
+spell-fail-mindswap-temporary = Vous ne pouvez pas échanger votre esprit avec des créatures temporaires !
+spell-fail-mindswap-dead = Vous n'avez pas particulièrement envie d'être mort !
 
-spell-requirements-failed-clothes = Missing requirements to cast this spell! You need to wear wizard robes and hat.
-spell-requirements-failed-speech = Missing requirements to cast this spell! You can't speak.
+spell-requirements-failed-clothes = Les conditions requises pour lancer ce sort ne sont pas remplies ! Vous devez porter une robe et un chapeau de sorcier.
+spell-requirements-failed-speech = Les conditions requises pour lancer ce sort ne sont pas remplies ! Vous ne pouvez pas parler.
 
-instant-summons-item-marked = Successfully marked {$item}.
-instant-summons-confirm-popup = This action will remove the current mark! Use it again to confirm.
+instant-summons-item-marked = {$item} a été marqué avec succès.
+instant-summons-confirm-popup = Cette action supprimera le marquage actuel ! Utilisez-la à nouveau pour confirmer.
 
-chuuni-invocation-confirm-popup = This action will force you to wear unremoveable eyepatch! Use it again to confirm.
+chuuni-invocation-confirm-popup = Cette action vous obligera à porter un cache-œil inamovible ! Appuyez à nouveau pour confirmer.
 
-spell-soul-tap-dead-message-others = {CAPITALIZE($uid)} suddenly dies!
-spell-soul-tap-dead-message-user = Your weakened soul is completely consumed by the tap!
-spell-soul-tap-almost-dead-message = Your body feels incredibly drained, and the burning is hard to ignore!
-spell-soul-tap-message = Your body feels drained and there is a burning pain in your chest.
+spell-soul-tap-dead-message-others = {CAPITALIZE($uid)} meurt subitement !
+spell-soul-tap-dead-message-user = Votre âme affaiblie est complètement consumée par le sort !
+spell-soul-tap-almost-dead-message = Votre corps est incroyablement épuisé, et la brûlure est difficile à ignorer !
+spell-soul-tap-message = Votre corps est épuisé et vous ressentez une douleur brûlante dans la poitrine.
 
-spell-charge-spells-charged-pulled = You feel raw magic flowing through you. It feels good!
-spell-charge-no-spells-to-charge-pulled = You feel very strange for a moment, but then it passes.
-spell-charge-spells-charged-entity = {CAPITALIZE($entity)} suddenly feels very warm!
+spell-charge-spells-charged-pulled = Vous sentez la magie brute circuler en vous. Ça fait du bien !
+spell-charge-no-spells-to-charge-pulled = Vous vous sentez très bizarre pendant un instant, mais ça passe vite.
+spell-charge-spells-charged-entity = {CAPITALIZE($entity)} dégage soudain une chaleur intense !
 
-spell-summon-simians-maxed-out-message = Your simian power has reached maximum capacity! You can now cast this spell naked, and have additionally been granted a gorilla transformation spell!
+spell-summon-simians-maxed-out-message = Vos pouvoirs simiens ont atteint leur plein potentiel ! Vous pouvez désormais lancer ce sort nu, et vous disposez désormais d'un sort de transformation en gorille !
 
-spell-rathen-gut-popup = You have no appendix, but something had to give!
+spell-rathen-gut-popup = Vous n'avez pas d'appendice, mais il fallait bien que quelque chose cède !
 
-ghosts-summoned-message = Ghosts have been summoned!
-dimension-shift-message = Dimensions shift!
-global-tile-movement-message = An ominous beat starts playing!
+ghosts-summoned-message = Des fantômes ont été invoqués !
+dimension-shift-message = Les dimensions se déplacent !
+global-tile-movement-message = Un rythme inquiétant retentit !

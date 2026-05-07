@@ -21,17 +21,17 @@ trait-bogan-desc = Vous avez appris ça d'une créature mythique.
 poor-vision-trait-examined = [color=lightblue]Les yeux de {CAPITALIZE(POSS-ADJ($target))} sont flous. Il ne semble pas que {SUBJECT($target)} puisse vous voir très bien sans lunettes..[/color]
 
 trait-medieval-accent-name = Accent médiéval
-trait-medieval-accent-desc = Hark! Thy manner o' speech, 'tis most unusual!
-trait-tile-movement-name = Inner peace
-trait-tile-movement-desc = You are always in touch with your roots. And by your roots, I mean the center of the tile you're standing on.
+trait-medieval-accent-desc = Parbleu ! Ta façon d'parler est bien singulière !
+trait-tile-movement-name = Paix intérieure
+trait-tile-movement-desc = Vous êtes toujours en harmonie avec vos racines. Et par racines, j'entends le centre de la case sur laquelle vous vous trouvez.
 
-trait-movement-impaired-name = Movement Impaired
-trait-movement-impaired-desc = You can't quite seem to walk very well without some assistance. Cane included.
+trait-movement-impaired-name = Mobilité réduite
+trait-movement-impaired-desc = Vous semblez avoir du mal à marcher sans assistance. Canne incluse.
 
-movement-impaired-trait-examined = [color=yellow]{CAPITALIZE(SUBJECT($target))} seems to walk with a slight limp. It doesn't seem like {SUBJECT($target)} can walk very well without assistance[/color]
+movement-impaired-trait-examined = [color=yellow]{CAPITALIZE(SUBJECT($target))} semble boiter légèrement. On dirait que {SUBJECT($target)} ne peut pas très bien marcher sans assistance[/color]
 
-trait-social-anxiety-name = Social Anxiety
-trait-social-anxiety-disc = You have crippling social anxiety, you're freaked out by affectionate things, such as hugs.
+trait-social-anxiety-name = Anxiété sociale
+trait-social-anxiety-disc = Vous souffrez d'une anxiété sociale paralysante, les gestes affectueux comme les câlins vous mettent très mal à l'aise.
 
-trait-deaf-name = Deaf
-trait-deaf-disc =  You're completly deaf, you can't hear anything, including yourself!
+trait-deaf-name = Sourd
+trait-deaf-disc = Vous êtes complètement sourd, vous ne pouvez rien entendre, pas même vous-même !

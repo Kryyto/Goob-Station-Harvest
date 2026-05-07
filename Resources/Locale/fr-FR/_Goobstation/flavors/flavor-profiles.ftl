@@ -18,5 +18,5 @@ flavor-base-tears = larmes salées
 flavor-base-alienblood = extraterrestre
 flavor-base-old = vieux
 flavor-base-robust = robuste
-flavor-complex-unicorntears = like unicorn tears
+flavor-complex-unicorntears = comme des larmes de licorne
 flavor-base-chuddy = chuddy

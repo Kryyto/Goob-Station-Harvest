@@ -14,4 +14,4 @@ slime-examined-tamer = [color=green]Il a l'air content de vous voir ![/color]
 
 slime-interaction-tame = Il semble vous apprécier maintenant !
 
-slime-interaction-tame-fail = It seems to be not interested in you.
+slime-interaction-tame-fail = Il n'a pas l'air de s'intéresser à vous.

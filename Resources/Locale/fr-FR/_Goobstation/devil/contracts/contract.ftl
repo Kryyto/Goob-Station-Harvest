@@ -31,18 +31,18 @@ revival-contract-prompt-reject = Rejeter l'offre
 revival-contract-prompt-accept = Accepter l'offre
 
 revival-contract-menu-title = Contrat des profondeurs
-revival-contract-menu-prompt = Sell your soul for a second chance?
+revival-contract-menu-prompt = Vendez votre âme pour une deuxième chance ?
 
-default-contract-content = This binding contract made this day between:
+default-contract-content = Le présent contrat, conclu en ce jour entre :
 
-            - The Infernal Party (Hereinafter "Contractor")
-            - The Mortal Party (Hereinafter "Contractee")
+            - La partie infernale (ci-après dénommée « le prestataire »)
+            - La partie mortelle (ci-après dénommée « le client »)
 
-            {"["}bold]Clauses of Binding:{"["}/bold]
-            {"["}italic]The following parties give up the following possessions{"["}/italic{"]"}
+            {"["}bold]Clauses contraignantes :{"["}/bold]
+            {"["}italic]Les parties suivantes renoncent aux biens suivants{"["}/italic{"]"}
 
-            Contractee: Soul Ownership
-            Contractee: Death
+            Le client: Propriété de l'âme
+            Le client: Mort
 
-            {"["}italic]All clauses come into effect upon signing of this paper by both parties.{"["}/italic]
-            {"["}italic]{"["}color=#ac3a0d]Clauses may not be broken. Ever.{"["}/color]{"["}/italic]
+            {"["}italic]Toutes les clauses entrent en vigueur dès la signature du présent document par les deux parties.{"["}/italic]
+            {"["}italic]{"["}color=#ac3a0d]Les clauses ne peuvent être violées. Jamais.{"["}/color]{"["}/italic]

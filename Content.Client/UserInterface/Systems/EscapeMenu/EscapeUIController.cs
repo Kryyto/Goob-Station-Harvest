@@ -148,12 +148,12 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _changelog.ToggleWindow();
         };
 
-        _escapeWindow.PatronPerksButton.Visible = _linkAccount.CanViewPatronPerks(); // RMC - Patreon
-        _escapeWindow.PatronPerksButton.OnPressed += _ => // RMC - Patreon
-        {
-            CloseEscapeWindow();
-            UIManager.GetUIController<LinkAccountUIController>().TogglePatronPerksWindow();
-        };
+        _escapeWindow.PatronPerksButton.Visible = false; // Disabled for Harvest
+        // _escapeWindow.PatronPerksButton.OnPressed += _ => // RMC - Patreon
+        // {
+        //     CloseEscapeWindow();
+        //     UIManager.GetUIController<LinkAccountUIController>().TogglePatronPerksWindow();
+        // };
 
         _escapeWindow.RulesButton.OnPressed += _ =>
         {

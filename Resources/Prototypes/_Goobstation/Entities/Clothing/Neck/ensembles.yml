@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleCaptain
-  name: captain's ensemble
-  description: You're a hardened veteran, and you rule this station with an iron fist. That chess match? Never happened.
+  name: ensemble du capitaine
+  description: Vous êtes un vétéran endurci, et vous dirigez cette station d'une main de fer. Cette partie d'échecs ? Elle n'a jamais eu lieu.
   suffix: NE PAS PLACER
   components:
   - type: Item
@@ -44,8 +44,8 @@
 
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
-  id: ClothingNeckEnsembleChiefEngineer
-  name: chief engineer's ensemble
+  id: ClothingNeckEnsembleChiefEngineerWhite 
+  name: ensemble du chef ingénieur
   description: En cas de délamination, cela ne vous protégera pas des radiations. Vu depuis combien de temps vous faites ça, ça n'arriverait pas. N'est-ce pas ?
   suffix: NE PAS PLACER
   components:
@@ -58,9 +58,9 @@
       right:
       - state: inhand-right
   - type: Sprite
-    sprite: _Goobstation/Clothing/Neck/Ensembles/ce.rsi
+    sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/whitece.rsi
   - type: Clothing
-    sprite: _Goobstation/Clothing/Neck/Ensembles/ce.rsi
+    sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/whitece.rsi
     equippedPrefix: both
     slots:
     - Neck
@@ -73,24 +73,68 @@
       both: !type:ItemSwitchState
         verb: both
         sprite:
-          sprite: _Goobstation/Clothing/Neck/Ensembles/ce.rsi
+          sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/whitece.rsi
           state: icon
       mantle: !type:ItemSwitchState
         verb: mantle
         sprite:
-          sprite: _Goobstation/Clothing/Neck/Ensembles/ce.rsi
+          sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/whitece.rsi
           state: mantle-icon
       cloak: !type:ItemSwitchState
         verb: cloak
         sprite:
-          sprite: _Goobstation/Clothing/Neck/Ensembles/ce.rsi
+          sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/whitece.rsi
+          state: cloak-icon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckEnsembleChiefEngineerGreen
+  name: ensemble vert du chef ingénieur
+  description: En cas de délamination, cela ne vous protégera pas des radiations. Vu depuis combien de temps vous faites ça, ça n'arriverait pas. N'est-ce pas ?
+  suffix: NE PAS PLACER
+  components:
+  - type: Item
+    size: Small
+    heldPrefix: both
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/greence.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/greence.rsi
+    equippedPrefix: both
+    slots:
+    - Neck
+  - type: StealTarget
+    stealGroup: HeadCloak
+  - type: ItemSwitch
+    state: both
+    showLabel: true
+    states:
+      both: !type:ItemSwitchState
+        verb: both
+        sprite:
+          sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/greence.rsi
+          state: icon
+      mantle: !type:ItemSwitchState
+        verb: mantle
+        sprite:
+          sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/greence.rsi
+          state: mantle-icon
+      cloak: !type:ItemSwitchState
+        verb: cloak
+        sprite:
+          sprite: _Goobstation/Clothing/Neck/Ensembles/ChiefEngineer/greence.rsi
           state: cloak-icon
 
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleChiefMedicalOfficer
-  name: chief medical officer's ensemble
-  description: With how many medbays you've seen, you're a real poly math-- unpacking people like packages, and mulching bodies like it's nothing. You WILL set up cloning, right?
+  name: ensemble du médecin-chef
+  description: Avec le nombre d'infirmeries que vous avez vues, vous êtes un vrai polymathe — déballer les gens comme des colis et réduire les corps en bouillie comme si de rien n'était. Vous ALLEZ bien mettre en place le clonage, n'est-ce pas ?
   suffix: NE PAS PLACER
   components:
   - type: Item
@@ -149,6 +193,7 @@
         sprite:
           sprite: _Goobstation/Clothing/Neck/Ensembles/cmo.rsi
           state: mantlewings-icon
+
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleHeadOfSecurity
@@ -196,8 +241,8 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleResearchDirector
-  name: research director's ensemble
-  description: The endpoint of all research leads here. You truly are the pinnacle of science, a monument to Nanotrasens accomplishments and ability to glue you back together, must you explode so often?
+  name: ensemble du directeur de recherche
+  description: L'aboutissement de toutes les recherches mène ici. Vous êtes véritablement le summum de la science, un monument aux accomplissements de Nanotrasen et à leur capacité à vous recoller après vos explosions — devez-vous vraiment exploser si souvent ?
   suffix: NE PAS PLACER
   components:
   - type: Item
@@ -260,8 +305,8 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleQuarterMaster
-  name: quartermaster's ensemble
-  description: Delicately crafted with the most premium materials purchaseable with spesos; a cloak that truly represents the Spirit of Cargonia... and your bank account.
+  name: ensemble du quartier-maître
+  description: Confectionné avec soin à partir des matériaux les plus premium achetables en spesos ; une cape qui représente véritablement l'Esprit de la Cargonie... et l'état de votre compte en banque.
   suffix: NE PAS PLACER
   components:
   - type: Item
@@ -305,7 +350,7 @@
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleHeadOfPersonnel
   name: ensemble du chef du personnel
-  description: There's nothing sweeter in this world than the tears of someone who was made to fill out five paragraphs of paperwork. You denied them after, of course.
+  description: Il n'y a rien de plus doux en ce monde que les larmes de quelqu'un contraint à remplir cinq paragraphes de paperasse. Vous avez refusé sa demande après, bien entendu.
   suffix: NE PAS PLACER
   components:
   - type: Item
@@ -348,7 +393,7 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCentcommCommandContraband]
   id: ClothingNeckEnsembleBlueshield
-  name: blueshield officer's ensemble
+  name: ensemble de l'officier bouclier bleu
   description: Après avoir repoussé d'innombrables grève-tards en défense du commandement, Nanotrasen vous a finalement accordé la possibilité de mourir avec style. Allez protéger le soldat NTR !
   suffix: NE PAS PLACER
   components:
@@ -400,8 +445,8 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCentcommCommandContraband]
   id: ClothingNeckEnsembleNanotrasenRepresentative
-  name: nanotrasen representative's ensemble
-  description: After years of doing practically nothing, Central Command has gifted you this cloak. Now you can do nothing, while looking pretty!
+  name: ensemble du représentant Nanotrasen
+  description: Après des années à ne pratiquement rien faire, le Commandement Central vous a offert cette cape. Vous pouvez désormais ne rien faire, tout en étant élégant !
   suffix: NE PAS PLACER
   components:
   - type: Item
@@ -442,7 +487,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckEnsembleTrans
-  name: trans ensemble
+  name: ensemble trans
   description: Porté par les vampires de haut rang de la société transylvanienne des vampires.
   components:
   - type: Item
@@ -493,8 +538,8 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckEnsembleSalvager
-  name: salvager's ensemble
-  description: Who says you can't have style while slaying creatures beyond human comprehension?
+  name: ensemble du récupérateur
+  description: Qui a dit qu'on ne peut pas avoir du style en terrassant des créatures qui dépassent la compréhension humaine ?
   suffix: NE PAS PLACER
   components:
   - type: Item

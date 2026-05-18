@@ -45,7 +45,7 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckEnsembleChiefEngineerWhite 
-  name: ensemble du chef ingénieur
+  name: ensemble blanc du chef ingénieur
   description: En cas de délamination, cela ne vous protégera pas des radiations. Vu depuis combien de temps vous faites ça, ça n'arriverait pas. N'est-ce pas ?
   suffix: NE PAS PLACER
   components:

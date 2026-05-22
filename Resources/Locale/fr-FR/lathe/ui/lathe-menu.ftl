@@ -12,7 +12,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-lathe-menu-title = Menu de la Fraiseuse
+lathe-menu-title = Menu du tour
 lathe-menu-queue = File d'attente
 lathe-menu-server-list = Liste des serveurs
 lathe-menu-sync = Synchroniser
@@ -28,19 +28,19 @@ lathe-menu-reagent-slot-examine = Il possède un emplacement pour un bécher sur
 lathe-reagent-dispense-no-container = Du liquide coule de {THE($name)} sur le sol !
 lathe-menu-result-reagent-display = {$reagent} ({$amount}u)
 lathe-menu-material-display = {$material} ({$amount})
-lathe-menu-tooltip-display = {$amount} of {$material}
+lathe-menu-tooltip-display = {$amount} de {$material}
 lathe-menu-description-display = [italic]{$description}[/italic]
 lathe-menu-material-amount = { $amount ->
     [1] {NATURALFIXED($amount, 2)} {$unit}
-    *[other] {NATURALFIXED($amount, 2)} {MAKEPLURAL($unit)}
+    *[other] {NATURALFIXED($amount, 2)} {$unit}
 }
 lathe-menu-material-amount-missing = { $amount ->
-    [1] {NATURALFIXED($amount, 2)} {$unit} of {$material} ([color=red]{NATURALFIXED($missingAmount, 2)} {$unit} missing[/color])
-    *[other] {NATURALFIXED($amount, 2)} {MAKEPLURAL($unit)} of {$material} ([color=red]{NATURALFIXED($missingAmount, 2)} {MAKEPLURAL($unit)} missing[/color])
+    [1] {NATURALFIXED($amount, 2)} {$unit} de {$material} ([color=red]{NATURALFIXED($missingAmount, 2)} {$unit} manquant[/color])
+    *[other] {NATURALFIXED($amount, 2)} {$unit} de {$material} ([color=red]{NATURALFIXED($missingAmount, 2)} {$unit} manquants[/color])
 }
 lathe-menu-no-materials-message = Aucun matériau chargé.
 lathe-menu-fabricating-message = Fabrication en cours...
 lathe-menu-materials-title = Matériaux
 lathe-menu-queue-title = File de fabrication
 lathe-menu-queue-reset-title = Réinitialiser la file
-lathe-menu-queue-reset-material-overflow = Vous remarquez que la fraiseuse automatique est pleine.
+lathe-menu-queue-reset-material-overflow = Vous remarquez que le tour automatique est plein.

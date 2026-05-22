@@ -280,8 +280,8 @@
 - type: entity
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelHolding
-  name: sac de sport de contenance
-  description: Un sac de sport qui s'ouvre sur une poche localisée de bleuspace.
+  name: sac de sport bluespace
+  description: Un sac de sport qui s'ouvre sur une poche localisée de bluespace.
   components:
   - type: Sprite
     sprite: Clothing/Back/Duffels/holding.rsi

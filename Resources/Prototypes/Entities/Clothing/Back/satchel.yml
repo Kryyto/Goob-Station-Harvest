@@ -197,8 +197,8 @@
 - type: entity
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelHolding
-  name: sacoche de contenance
-  description: Une sacoche qui s'ouvre sur une poche localisée de bleuspace.
+  name: sacoche bluespace
+  description: Une sacoche qui s'ouvre sur une poche localisée de bluespace.
   components:
   - type: Sprite
     sprite: Clothing/Back/Satchels/holding.rsi

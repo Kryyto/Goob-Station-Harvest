@@ -378,8 +378,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackHolding
-  name: sac de contenance
-  description: Un sac à dos qui s'ouvre sur une poche localisée de bleuspace.
+  name: sac à dos bluespace
+  description: Un sac à dos qui s'ouvre sur une poche localisée de bluespace.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/holding.rsi

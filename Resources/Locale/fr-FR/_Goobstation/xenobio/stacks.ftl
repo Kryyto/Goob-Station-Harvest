@@ -1,2 +1,2 @@
-stack-bluespace-tile = dalle espace bleu
+stack-bluespace-tile = dalle bluespace
 stack-sepia-tile = dalle sépia

@@ -10,4 +10,4 @@ uplink-contortionist-jumpsuit-desc = Elle ressemble à une combinaison atmosphé
 
 # Goobstation
 uplink-contortionist-jumpsuit-advanced-name = Combinaison de contorsionniste bluespace
-uplink-contortionist-jumpsuit-advanced-desc = Une combinaison atmosphérique qui vous permet de ramper dans les conduits même avec de l'équipement, utilisant la technologie de l'espace bleu.
+uplink-contortionist-jumpsuit-advanced-desc = Une combinaison atmosphérique qui vous permet de ramper dans les conduits même avec de l'équipement, utilisant la technologie bluespace.

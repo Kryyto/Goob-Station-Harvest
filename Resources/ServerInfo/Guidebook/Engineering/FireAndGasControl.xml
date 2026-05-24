@@ -6,9 +6,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Fire and Gas Control
-  Unfortunately, [textlink="fires" link="Fires"], [textlink="spacing" link="Spacing"], and other [textlink="atmospheric upsets" link="AtmosphericUpsets"] are a common occurrence on the station.
-  These upsets can quickly spread throughout the station and make the atmosphere uninhabitable for the crew.
+  # Contrôle des incendies et des gaz
+  Malheureusement, les [textlink="incendies" link="Fires"], la [textlink="dépressurisation" link="Spacing"] et d'autres [textlink="perturbations atmosphériques" link="AtmosphericUpsets"] sont des événements courants sur la station.
+  Ces perturbations peuvent se propager rapidement à travers la station et rendre l'atmosphère inhabitable pour l'équipage.
 
   <Box>
     <GuideEntityEmbed Entity="Firelock"/>
@@ -17,33 +17,33 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="FireAlarm"/>
   </Box>
 
-  To combat this, stations have a variety of devices to help prevent these upsets from spreading.
+  Pour y remédier, les stations disposent de divers appareils pour aider à prévenir la propagation de ces perturbations.
 
-  ## Firelocks
-  Firelocks are a simple and effective way to prevent fires from spreading throughout the station.
+  ## Coupe-feu
+  Les coupe-feu sont un moyen simple et efficace d'empêcher les incendies de se propager dans la station.
 
-  Based on conditions sensed by the firelock, or through instruction from a connected [textlink="air" link="AirAlarms"] or fire alarm, they can close off sections of the station to prevent the spread of dangerous conditions.
+  En fonction des conditions détectées par le coupe-feu, ou sur instruction d'une [textlink="alarme atmosphérique" link="AirAlarms"] ou d'une alarme incendie connectée, ils peuvent isoler des sections de la station pour prévenir la propagation de conditions dangereuses.
 
-  ## Station Sectioning
-  Firelocks are intentionally placed in key areas to divide the station into sections. Open spaces like hallways or promenades are divided into smaller sections. This prevents the spread of dangerous conditions to the entire station through connected rooms, hallways, and other open spaces.
+  ## Sectorisation de la station
+  Les coupe-feu sont intentionnellement placés dans des zones clés pour diviser la station en sections. Les espaces ouverts comme les couloirs ou les promenades sont divisés en sections plus petites. Cela empêche la propagation de conditions dangereuses à l'ensemble de la station via les pièces, couloirs et autres espaces ouverts connectés.
 
-  ## Basic Operation
-  When not connected to an [textlink="air alarm" link="AirAlarms"] or fire alarm, firelocks will function based on the conditions they sense. Firelocks will drop (close) if:
-  - The temperature between the two sides of the firelock is different by [color=orange][protodata="Firelock" comp="Firelock" member="TemperatureThreshold"/] K[/color] or more.
-  - The pressure between the two sides of the firelock is different by [color=orange][protodata="Firelock" comp="Firelock" member="PressureThreshold"/] kPa[/color] or more.
+  ## Fonctionnement de base
+  Lorsqu'ils ne sont pas connectés à une [textlink="alarme atmosphérique" link="AirAlarms"] ou à une alarme incendie, les coupe-feu fonctionnent selon les conditions qu'ils détectent. Les coupe-feu se ferment si :
+  - La différence de température entre les deux côtés du coupe-feu est de [color=orange][protodata="Firelock" comp="Firelock" member="TemperatureThreshold"/> K[/color] ou plus.
+  - La différence de pression entre les deux côtés du coupe-feu est de [color=orange][protodata="Firelock" comp="Firelock" member="PressureThreshold"/> kPa[/color] ou plus.
 
-  If these conditions continue, the firelock will enter lockout mode. Firelocks in lockout mode will have [color=red]red[/color] lights and cannot be pried open by hand. They can only be opened by people with Engineering access or by using a crowbar.
+  Si ces conditions persistent, le coupe-feu entrera en mode verrouillage. Les coupe-feu en mode verrouillage affichent des voyants [color=red]rouges[/color] et ne peuvent pas être forcés à la main. Ils peuvent uniquement être ouverts par des personnes ayant un accès Ingénierie ou à l'aide d'un pied-de-biche.
 
-  Firelocks in lockout mode cannot be opened by using Engineering access if they are unpowered. Only a crowbar can open an unpowered firelock in lockout mode.
+  Les coupe-feu en mode verrouillage ne peuvent pas être ouverts via l'accès Ingénierie s'ils ne sont pas alimentés. Seul un pied-de-biche peut ouvrir un coupe-feu non alimenté en mode verrouillage.
 
-  If the conditions between the two sides of the firelock return to within acceptable differences, the firelock will disable lockout mode, and can be opened by anyone.
-  Note that this only means that the conditions are the same on both sides of the firelock, not that they are safe.
+  Si les conditions entre les deux côtés du coupe-feu reviennent à des différences acceptables, le coupe-feu désactivera le mode verrouillage et pourra être ouvert par n'importe qui.
+  Notez que cela signifie seulement que les conditions sont identiques des deux côtés, pas qu'elles sont sûres.
 
-  A common example of this is a firelock that has released due to both sides being exposed to space.
+  Un exemple courant est un coupe-feu qui s'est relevé parce que les deux côtés sont exposés à l'espace.
 
-  ## Connecting to Air and Fire Alarms
-  Firelocks can be connected to [textlink="air alarms" link="AirAlarms"] and fire alarms to receive instructions on when to drop.
-  Firelocks use the [textlink="List system" link="Networking"], and you can connect these devices using a multitool or network configurator.
+  ## Connexion aux alarmes atmosphériques et incendie
+  Les coupe-feu peuvent être connectés aux [textlink="alarmes atmosphériques" link="AirAlarms"] et aux alarmes incendie pour recevoir des instructions sur le moment de se fermer.
+  Les coupe-feu utilisent le [textlink="système de liste" link="Networking"], et vous pouvez connecter ces appareils à l'aide d'un multioutil ou d'un configurateur réseau.
 
   <Box>
     <GuideEntityEmbed Entity="Firelock" Caption=""/>
@@ -53,32 +53,32 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="AirAlarm" Caption=""/>
   </Box>
 
-  Each firelock has its own unique address. The process for connecting air vents, scrubbers, and sensors to air alarms is very similar.
+  Chaque coupe-feu possède sa propre adresse unique. Le processus de connexion des évents, épurateurs et capteurs aux alarmes atmosphériques est très similaire.
 
-  ## Operation Under Air Alarms
-  When connected to an air alarm, firelocks will also drop under the command of the connected [textlink="air alarm" link="AirAlarms"].
+  ## Fonctionnement sous alarme atmosphérique
+  Lorsqu'ils sont connectés à une alarme atmosphérique, les coupe-feu se ferment également sur ordre de l'[textlink="alarme atmosphérique" link="AirAlarms"] connectée.
 
-  Firelocks will drop if the air alarm reaches a [color=red]Danger[/color] alert state. Firelocks will remain dropped until the air alarm returns to a [color=green]Green[/color] alert state.
+  Les coupe-feu se ferment si l'alarme atmosphérique atteint un état d'alerte [color=red]Danger[/color]. Ils resteront fermés jusqu'à ce que l'alarme revienne à un état d'alerte [color=green]Normal[/color].
 
-  Firelocks that are in lockout mode will not raise even if the air alarm returns to a [color=green]Green[/color] alert state. Even if the pressure difference is resolved, the firelock will remain dropped until the air alarm re-sends a green alert state.
+  Les coupe-feu en mode verrouillage ne se relèveront pas même si l'alarme atmosphérique revient à un état [color=green]Normal[/color]. Même si la différence de pression est résolue, le coupe-feu restera fermé jusqu'à ce que l'alarme renvoie un état d'alerte normal.
 
-  ## Operation Under Fire Alarms
-  When connected to a fire alarm, firelocks will drop if the fire alarm is triggered. Firelocks will remain dropped until the fire alarm is reset.
+  ## Fonctionnement sous alarme incendie
+  Lorsqu'ils sont connectés à une alarme incendie, les coupe-feu se ferment si l'alarme incendie est déclenchée. Ils resteront fermés jusqu'à la réinitialisation de l'alarme incendie.
 
-  ## Fire Alarms
-  Fire alarms are devices that can be used to centrally control all connected firelocks.
+  ## Alarmes incendie
+  Les alarmes incendie sont des appareils pouvant être utilisés pour contrôler centralement tous les coupe-feu connectés.
 
   <Box>
     <GuideEntityEmbed Entity="FireAlarm"/>
   </Box>
 
-  Devices with sensors can be [textlink="linked" link="Networking"] to fire alarms, which will trigger the fire alarm if the sensor enters the [color=red]Danger[/color] temperature threshold as defined by its sensors.
+  Des appareils dotés de capteurs peuvent être [textlink="liés" link="Networking"] aux alarmes incendie, ce qui déclenchera l'alarme si le capteur dépasse le seuil de température [color=red]Danger[/color] défini par ses capteurs.
 
-  When the fire alarm is triggered, all connected firelocks will be overridden with a [color=red]Danger[/color] alert state and will drop.
+  Lorsque l'alarme incendie est déclenchée, tous les coupe-feu connectés reçoivent un état d'alerte [color=red]Danger[/color] et se ferment.
 
-  The alarm will automatically clear itself when the sensor returns to a [color=green]Normal[/color] temperature threshold.
+  L'alarme se réinitialise automatiquement lorsque le capteur revient au seuil de température [color=green]Normal[/color].
 
-  You can trigger and reset a fire alarm manually by interacting with it.
+  Vous pouvez déclencher et réinitialiser manuellement une alarme incendie en interagissant avec elle.
 
-  This can be used to quickly drop firelocks in a room manually, or to raise them after an upset has been resolved.
+  Cela peut être utilisé pour fermer rapidement des coupe-feu dans une pièce manuellement, ou pour les relever après la résolution d'une perturbation.
 </Document>

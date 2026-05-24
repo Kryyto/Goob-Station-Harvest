@@ -6,50 +6,50 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Pumps
-  Pumps are the primary way of actively moving gasses through a [textlink="pipenet." link="PipeNetworks"]
-  They take gas from one side and push it to the other.
-  There are two different types of pumps:
+# Pompes
+  Les pompes sont le principal moyen de déplacer activement les gaz à travers un [textlink="réseau de tuyaux." link="PipeNetworks"]
+  Elles aspirent le gaz d'un côté et le poussent de l'autre.
+  Il existe deux types de pompes différents :
 
   <Box>
-    <GuideEntityEmbed Entity="GasPressurePump" Caption="pressure pump"/>
-    <GuideEntityEmbed Entity="GasVolumePump" Caption="volumetric pump"/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption="pompe à pression"/>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption="pompe volumétrique"/>
   </Box>
 
-  Some important things to note about pumps:
-  - Pumps [color=#a4885c]require power[/color] through a nearby LV cable to function.
-  - Pumps output on the side with the red stripe.
-  - Gas cannot move backwards through pumps (although if you are using a pump to do solely this, you should use the [textlink="passive gate" link="PassiveGate"] instead).
-  - Pumps cannot move gasses into pipes with pressures or volumes exceeding their [color=#a4885c]limit[/color]. This causes them to be [color=red]blocked[/color].
+  Quelques points importants à noter sur les pompes :
+  - Les pompes [color=#a4885c]nécessitent une alimentation électrique[/color] via un câble BT à proximité pour fonctionner.
+  - Les pompes sortent du côté avec la bande rouge.
+  - Le gaz ne peut pas circuler en sens inverse dans les pompes (si vous n'avez besoin que de cela, utilisez plutôt le [textlink="clapet anti-retour passif" link="PassiveGate"]).
+  - Les pompes ne peuvent pas déplacer des gaz vers des tuyaux dont la pression ou le volume dépasse leur [color=#a4885c]limite[/color]. Cela les fait se [color=red]bloquer[/color].
 
-  Pumps will show a colorful animation when they are doing work.
-  If they have no gas to pump or they are blocked, they will show a blinking [color=red]red[/color] animation.
-  Pumps that are off, have no power, or are unanchored will show no animation.
+  Les pompes affichent une animation colorée lorsqu'elles fonctionnent.
+  Si elles n'ont pas de gaz à pomper ou qu'elles sont bloquées, elles affichent une animation [color=red]rouge[/color] clignotante.
+  Les pompes éteintes, non alimentées ou désancrées n'affichent aucune animation.
 
-  ## Pressure Pumps
-  Pressure pumps are the most common type of pump.
-  They move gas based on [color=#a4885c]pressure[/color], making them useful for controlling the exact pressure of a pipe, or for drawing a vacuum.
+  ## Pompes à pression
+  Les pompes à pression sont le type de pompe le plus courant.
+  Elles déplacent le gaz en fonction de la [color=#a4885c]pression[/color], ce qui les rend utiles pour contrôler la pression exacte d'un tuyau ou pour créer un vide.
 
   <Box>
-    <GuideEntityEmbed Entity="GasPressurePump" Caption="pressure pump"/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption="pompe à pression"/>
   </Box>
 
-  A pressure pump [color=red]cannot[/color] move gas to a pipe that has a pressure higher or equal to the pressure set on the pump.
+  Une pompe à pression [color=red]ne peut pas[/color] déplacer du gaz vers un tuyau dont la pression est supérieure ou égale à la pression réglée sur la pompe.
 
-  For example, a pressure pump cannot pump gas to a pipe that is currently at 500 kPa, if the pressure pump is set at 500 kPa.
+  Par exemple, une pompe à pression ne peut pas pomper du gaz vers un tuyau actuellement à 500 kPa si la pompe est réglée à 500 kPa.
 
-  Pressure pumps can pump up to a maximum pressure of [color=orange][protodata="GasPressurePump" comp="GasPressurePump" member="MaxTargetPressure"/] kPa[/color].
-  They will become [color=red]blocked[/color] if they try to push gas into a pipe higher than this pressure.
+  Les pompes à pression peuvent pomper jusqu'à une pression maximale de [color=orange][protodata="GasPressurePump" comp="GasPressurePump" member="MaxTargetPressure"/> kPa[/color].
+  Elles se [color=red]bloqueront[/color] si elles tentent de pousser du gaz dans un tuyau au-delà de cette pression.
 
-  ## Volumetric Pumps
-  Volumetric pumps are an alternative pump, moving gas based on [color=#a4885c]volume[/color].
+  ## Pompes volumétriques
+  Les pompes volumétriques sont un type de pompe alternatif, déplaçant le gaz en fonction du [color=#a4885c]volume[/color].
 
   <Box>
-    <GuideEntityEmbed Entity="GasVolumePump" Caption="volumetric pump"/>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption="pompe volumétrique"/>
   </Box>
 
-  They are extremely useful for moving large amounts of gas quickly.
-  They can typically achieve higher pressures than a pressure pump.
+  Elles sont extrêmement utiles pour déplacer rapidement de grandes quantités de gaz.
+  Elles peuvent généralement atteindre des pressions plus élevées qu'une pompe à pression.
 
-  While volumetric pumps work off of the principle of volume, they will become [color=red]blocked[/color] if they try to push gas into a pipe higher than [color=orange][protodata="GasVolumePump" comp="GasVolumePump" member="HigherThreshold"/] kPa[/color].
+  Bien que les pompes volumétriques fonctionnent sur le principe du volume, elles se [color=red]bloqueront[/color] si elles tentent de pousser du gaz dans un tuyau au-delà de [color=orange][protodata="GasVolumePump" comp="GasVolumePump" member="HigherThreshold"/> kPa[/color].
 </Document>

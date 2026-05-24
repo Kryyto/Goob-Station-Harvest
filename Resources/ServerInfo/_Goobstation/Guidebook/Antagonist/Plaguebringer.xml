@@ -1,66 +1,66 @@
 <Document>
-  # Plaguebringer
+  # Porteur de peste
   <Box>
     <GuideEntityEmbed Entity="MobWraithPlague" Caption=""/>
   </Box>
 
-  The Plaguebringer is a path focused around curses, diseases and filth. Most of your abilities involve applying debuffs to one of those clueless crewmembers, and then, once the time is right and their soul is ripe, collecting your dues.
+  Le Porteur de peste est une voie centrée autour des malédictions, des maladies et de la saleté. La plupart de vos capacités consistent à infliger des affaiblissements à l'un de ces membres d'équipage qui ne se doutent de rien, puis, une fois le moment venu et leur âme mûre, à réclamer votre dû.
 
-  # Curses
+  # Malédictions
 
-  The Plaguebringer has access to four base curses, with one, final curse to rule them all.
+  Le Porteur de peste a accès à quatre malédictions de base, plus une malédiction finale pour les gouverner toutes.
 
-  ## Blindness
+  ## Cécité
 
-  - Slowly damages the eyesight of the afflicted until they are rendered fully blind.
+  - Endommage progressivement la vue de la victime jusqu'à ce qu'elle soit entièrement aveugle.
 
-  ## Blood
+  ## Sang
 
-  - Causes them to cough blood, sometimes a little, sometimes a lot. Mostly just an annoyance, but can get serious if left untreated.
-  - In an ideal world, this would also apply Hemophilia to the target, which makes them bleed for longer. However, that is not yet implemented.
+  - La fait cracher du sang, parfois peu, parfois beaucoup. Surtout une nuisance, mais cela peut devenir grave si c'est laissé sans traitement.
+  - Dans un monde idéal, cela appliquerait également l'Hémophilie à la cible, la faisant saigner plus longtemps. Cependant, cela n'est pas encore implémenté.
 
-  ## Enfeeblement
+  ## Affaiblissement
 
-  - This one has several effects, such as draining the stamina of the afflicted, or making them drowsy and forcing them into a sudden nap.
+  - Celle-ci a plusieurs effets, comme drainer l'endurance de la victime, ou la rendre somnolente et la forcer à s'endormir soudainement.
 
-  ## Rot
+  ## Pourriture
 
-  - Causes the afflicted to randomly puke and cough all over the place. Great for spreading disease.
-  - Prevents them from eating at all. Combined with the fact that they are slowly puking out all the contents of their stomach, this will eventually leave them starving, unable to do anything about it.
+  - Fait vomir et tousser la victime aléatoirement partout. Excellent pour propager les maladies.
+  - L'empêche de manger du tout. Combiné au fait qu'elle vomit lentement tout le contenu de son estomac, cela finira par la laisser affamée, sans pouvoir y remédier.
 
-  ## Death
+  ## Mort
 
-  - The final of the curses. Can only be applied once all four other curses have been applied on the same person.
-  - Once applied, the target will have less than a minute to live. They will hear a dreadful song signifying that their end is near.
-  - During that time, they will begin to experience several effects, such as falling to the ground or shaking.
-  - This curse deals damage that ramps up over time. It starts small, but quickly enough, becomes so deadly that no medicine in the world can help them survive it.
-  - Once they die, their corpse will gib, and you will permanently gain increased WP regeneration. This will count as if you had absorbed their corpse.
+  - La dernière des malédictions. Ne peut être appliquée qu'une fois les quatre autres malédictions appliquées sur la même personne.
+  - Une fois appliquée, la cible aura moins d'une minute à vivre. Elle entendra une chanson funèbre signifiant que sa fin est proche.
+  - Durant ce temps, elle commencera à subir plusieurs effets, comme tomber à terre ou trembler.
+  - Cette malédiction inflige des dégâts qui augmentent progressivement. Elle commence doucement, mais assez vite, devient si mortelle qu'aucun médicament au monde ne peut les aider à survivre.
+  - Une fois morte, son cadavre sera déchiqueté et vous gagnerez définitivement une régénération de PM accrue. Cela sera comptabilisé comme si vous aviez absorbé son cadavre.
 
-  Do note that if one curse is used, all other curses will go on cooldown. So there is a limit to how quickly you can reap someone's soul.
-  Also, important to mention, the Chaplain can [color=red]purge all of your curses with their bible by using it on the afflicted[/color], so don't expect this to be easy.
+  Notez que si une malédiction est utilisée, toutes les autres malédictions se retrouveront en temps de recharge. Il y a donc une limite à la vitesse à laquelle vous pouvez récolter une âme.
+  Il est également important de mentionner que le Chapelain peut [color=red]purger toutes vos malédictions avec sa bible en l'utilisant sur la victime[/color], donc ne vous attendez pas à ce que ce soit facile.
 
-  ## Defile
+  ## Profaner
 
-  This serves to fill up either some sort of drink, or to contaminate food with a chemical of your choosing (It's always poison). First, use the action on yourself to pick the reagent, then use it again on the food/drink to defile it.
+  Permet de contaminer soit une boisson, soit de la nourriture avec un produit chimique de votre choix (c'est toujours du poison). Utilisez d'abord l'action sur vous-même pour choisir le réactif, puis utilisez-la à nouveau sur la nourriture ou la boisson pour la profaner.
 
-  ## Summon Plague Rat
+  ## Invoquer un Rat pesteux
 
-  Creates a diseased rat on your position, a ghost role that can be taken over by someone else. The diseased rat can eat trash to grow into a larger form of itself, gaining new abilities in the process. It starts very weak, but once fully grown, can prove to be a real pain.
+  Crée un rat malade à votre position, un rôle de fantôme qui peut être pris par quelqu'un d'autre. Le rat malade peut manger des déchets pour grandir en une forme plus grande, gagnant de nouvelles capacités au fil du temps. Il commence très faiblement, mais une fois complètement développé, peut s'avérer être une vraie plaie.
 
-  ## Create Rot Hulk
+  ## Créer un Colosse de pourriture
 
-  Uses nearby filth to summon a mass of filth and decay that attacks nearby crew and explodes on death. Try using this action at disposals, or near large amounts of trash if you can find something of the sort.
-  If you manage to find a pile of more than 30 pieces of trash, it will spawn a much stronger version of the rot hulk.
+  Utilise les déchets environnants pour invoquer une masse de saleté et de décomposition qui attaque les membres d'équipage à proximité et explose à sa mort. Essayez d'utiliser cette action près des évacuateurs, ou à proximité de grandes quantités de déchets si vous en trouvez.
+  Si vous trouvez un tas de plus de 30 déchets, une version bien plus puissante du colosse de pourriture sera invoquée.
 
-  # Sick! But how do I do better as this?
+  # Intéressant ! Mais comment faire mieux avec cette voie ?
 
-  ## General tips
+  ## Conseils généraux
 
-  It takes some time for you to apply all four curses on someone. And even more so, they still have another full minute before the death curse does them in. Try to use your curses on targets that are far away from the chaplain, to reduce the chances of them wasting all of your effort.
-  
-  Use actions such as Possess object or Spook to create more trash by breaking windows or lightbulbs. This will allow you to summon stronger rot hulks, and can even help diseased rats to evolve faster.
-  
-  Defile leaves a very distinct taste in the mouth of whoever eats the contaminated food. You can use this to frame the chef or the bartender for trying to poison someone.
+  Il faut un certain temps pour appliquer les quatre malédictions sur quelqu'un. Et qui plus est, la cible dispose encore d'une minute entière avant que la malédiction de mort ne l'achève. Essayez d'utiliser vos malédictions sur des cibles éloignées du chapelain, pour réduire les risques qu'il annule tous vos efforts.
 
-  [textlink="Back to Wraith Evolutions" link="Wraiths"]
+  Utilisez des actions comme Posséder un objet ou Effrayer pour créer plus de déchets en brisant des fenêtres ou des ampoules. Cela vous permettra d'invoquer des colosses de pourriture plus puissants, et peut même aider les rats pesteux à évoluer plus vite.
+
+  Profaner laisse un goût très distinct dans la bouche de quiconque mange la nourriture contaminée. Vous pouvez l'utiliser pour faire porter les soupçons sur le cuisinier ou le barman.
+
+  [textlink="Retour aux Évolutions du Spectre" link="Wraiths"]
 </Document>

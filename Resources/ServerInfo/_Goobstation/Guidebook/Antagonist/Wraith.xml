@@ -1,106 +1,104 @@
 <Document>
-  # Wraith
+  # Spectre
   <Box>
     <GuideEntityEmbed Entity="MobWraith" Caption=""/>
   </Box>
-  Where most other antagonist roles exist to make you afraid of some maniac with a fire extinguisher coming to get you,
-  the Wraith exists to make you afraid of the station itself.
+  Là où la plupart des autres rôles d'antagoniste existent pour vous faire craindre un fou armé d'un extincteur qui viendrait vous chercher,
+  le Spectre existe pour vous faire craindre la station elle-même.
 
-  Given enough time and corpses (and given that they almost always appear with other antagonists, there will be corpses), they can progress from an inconvenience to a terrifying juggernaut of murder.
+  Avec suffisamment de temps et de cadavres (et étant donné qu'il apparaît presque toujours avec d'autres antagonistes, il y aura des cadavres), il peut progresser d'une simple nuisance à un terrifiant mastodonte du meurtre.
 
-  They have their downsides, though, and a clever chef with some salt can be far more dangerous to a wraith than an army of supercops armed to the teeth.
+  Il a ses défauts, cependant, et un cuisinier malin avec du sel peut être bien plus dangereux pour un spectre qu'une armée de super-flics armés jusqu'aux dents.
 
-  ## So I've been reborn as a Wraith, now what?
+  ## Je suis né en tant que Spectre, et maintenant ?
 
-  First and foremost, wraiths are ghosts. They cannot be seen by the living unless manifested, they can hear everything on the station, they can talk to and see normal ghosts, fly through walls, all of it.
-  They can use their powers while incorporeal as well, and are effectively invulnerable in this state.
+  Avant tout, les spectres sont des fantômes. Ils ne peuvent pas être vus par les vivants à moins de se manifester, ils peuvent entendre tout ce qui se passe sur la station, ils peuvent parler aux fantômes normaux et les voir, traverser les murs en vol, tout ça.
+  Ils peuvent également utiliser leurs pouvoirs en forme incorporelle, et sont effectivement invulnérables dans cet état.
 
-  When wraiths use the Haunt ability, they manifest in a physical form for about minute, able to be injured and even killed.
+  Lorsque les spectres utilisent la capacité Hanter, ils se manifestent sous une forme physique pendant environ une minute, pouvant être blessés et même tués.
 
-  If killed while manifested, though, a wraith isn't necessarily dead. Wraiths can survive being banished from physical form once - the second time kills them for good.
-  Moreover, there's strings attached: when banished, they lose all of their built-up WP and, far more cripplingly, any WP regeneration bonuses from Absorb Corpse. The consolation prize is that Absorb Corpse's cooldown is reset as well.
+  S'ils sont tués en forme manifestée, cependant, un spectre n'est pas nécessairement mort. Les spectres peuvent survivre à un bannissement de la forme physique une seule fois — la deuxième fois les tue définitivement.
+  De plus, il y a des contreparties : en cas de bannissement, ils perdent tous leurs PM accumulés et, bien plus lourdement, tous leurs bonus de régénération de PM issus d'Absorber un Cadavre. La consolation est que le temps de recharge d'Absorber un Cadavre est réinitialisé également.
 
-  Wraiths can also move items by pulling them around.
+  Les spectres peuvent également déplacer des objets en les traînant.
 
-  ## Wraith Points
+  ## Points de Spectre
 
-  Wraith abilities work off the creatively named Wraith Points, or WP, a resource that passively increases over time. The rate of regeneration can be permanently increased by absorbing corpses, or temporarily increased by using Haunt near a crowd or possessing a Revenant.
-  There's no upper limit to banked points or regeneration rate, but banishment resets both.
+  Les capacités du Spectre fonctionnent grâce aux Points de Spectre, ou PM, une ressource qui augmente passivement avec le temps. Le taux de régénération peut être augmenté de façon permanente en absorbant des cadavres, ou temporairement en utilisant Hanter près d'une foule ou en possédant un Revenant.
+  Il n'y a pas de limite supérieure aux points accumulés ni au taux de régénération, mais le bannissement réinitialise les deux.
 
-  ### Ok, that's good and all, but how do I work this thing?
+  ### D'accord, c'est bien tout ça, mais comment je fais fonctionner ce truc ?
 
-  At the beginning, you are fairly weak. Not necessarily in the literal sense, but without WP (Wraith Points!),
-  you are incapable of using most of your skills to cause actual harm. Your two most important abilities are:
+  Au début, vous êtes assez faible. Pas nécessairement au sens littéral, mais sans PM (Points de Spectre !),
+  vous êtes incapable d'utiliser la plupart de vos compétences pour causer de véritables dommages. Vos deux capacités les plus importantes sont :
 
-  ### Haunt
+  ### Hanter
 
-  - Makes you corporeal, allowing others to see you. While this does leave you vulnerable to being attacked, it also increases the rate at which you gain WP based on the number of witnesses to your spooky presence.
-  - Some actions may only be used while corporeal, so this is your way of doing that.
+  - Vous rend corporel, permettant aux autres de vous voir. Si cela vous laisse vulnérable aux attaques, cela augmente également le taux auquel vous gagnez des PM en fonction du nombre de témoins de votre présence effrayante.
+  - Certaines actions ne peuvent être utilisées qu'en forme corporelle, c'est donc votre moyen d'y accéder.
 
-  ### Absorb Corpse
+  ### Absorber un Cadavre
 
-  - Consumes a corpse (so long as they aren't rotting), giving you some extra WP regeneration permanently, as well as a nice chunk of WP in the process.
-  - Once this action is used, it will rot the target and create some nasty black smoke, so it isn't exactly subtle.
-  - Be warned! If you attempt to absorb a corpse that has at least 25 units of Formaldehyde inside it, while the chemical will be removed in the process, you will be left severely harmed! Avoid targetting corpses inside the morgue that may have been injected with this embalming chemical.
+  - Consomme un cadavre (tant qu'il n'est pas en décomposition), vous octroyant une régénération de PM supplémentaire de façon permanente, ainsi qu'une bonne dose de PM dans le processus.
+  - Une fois cette action utilisée, elle fera pourrir la cible et créera une désagréable fumée noire — ce n'est donc pas franchement discret.
+  - Attention ! Si vous tentez d'absorber un cadavre contenant au moins 25 unités de Formaldéhyde, bien que le produit chimique soit éliminé dans le processus, vous serez gravement blessé ! Évitez de cibler les cadavres dans la morgue qui ont pu être injectés avec ce produit d'embaumement.
 
-  These are your bread and butter. Once you absorb enough corpses, you will be allowed to...
+  Ce sont vos fondamentaux. Une fois que vous avez absorbé suffisamment de cadavres, vous pourrez...
 
-  ## Evolve
+  ## Évoluer
 
-  Past the basic wraith form, three unique paths are available in the form of an ability in its original power set. Each has their own ability set granted on top of the base wraith's, allowing for different styles of gameplay. The different forms also have their own weaknesses to go along with their individual strengths.
+  Au-delà de la forme de spectre de base, trois voies uniques sont disponibles sous la forme d'une capacité dans son ensemble de pouvoirs d'origine. Chacune possède son propre ensemble de capacités accordées en plus de celles du spectre de base, permettant différents styles de jeu. Les différentes formes ont également leurs propres faiblesses en plus de leurs forces individuelles.
 
-  ### Be careful around these...
-    [color=red]Salt![/color]
-  - If you walk over salt, you will lose [color=red]all of your skills, and be made corporeal in the process against your will.[/color] This usually is a death sentence for your average Wraith, so always keep an eye out for any lines of salt or ore rocks lying around!
-  - Salt can be hidden under objects, or even inside doorways.
+  ### Méfiez-vous de ceci...
+    [color=red]Le sel ![/color]
+  - Si vous marchez sur du sel, vous perdrez [color=red]toutes vos compétences, et serez rendu corporel contre votre gré.[/color] C'est généralement une condamnation à mort pour un Spectre ordinaire, alors gardez toujours un œil sur les lignes de sel ou les rochers de minerai qui traînent !
+  - Le sel peut être caché sous des objets, ou même dans des embrasures de portes.
 
-    [color=red]That pesky chaplain![/color]
-  - The chaplain is immune to most of your actions. In some cases, attempting to interact with them may even end up harming you, instead!
-  - However, the chaplain is not immortal. You can still find ways to kill him indirectly. His corpse will be quite delicious, I promise you that...
+    [color=red]Ce fichu chapelain ![/color]
+  - Le chapelain est immunisé à la plupart de vos actions. Dans certains cas, tenter d'interagir avec lui peut même vous blesser à la place !
+  - Cependant, le chapelain n'est pas immortel. Vous pouvez toujours trouver des moyens de le tuer indirectement. Son cadavre sera tout à fait délicieux, je vous le promets...
 
-  ## Fighting a Wraith
+  ## Combattre un Spectre
 
+  Le Spectre peut sembler puissant au premier abord, mais une fois que vous connaissez sa faiblesse, il est assez facile d'en venir à bout.
 
-  The Wraith may seem powerful at first, but once you know their weakness, it is quite easy to deal with them.
+  - Utilisez du sel ! [bold]Vous pouvez tracer des lignes de sel avec des salières et des sachets de sel[/bold] ! Dispersez du sel partout dans les zones qui intéressent le Spectre.
+  - Débarrassez-vous des cadavres ! Sans cadavres à absorber, le Spectre ne peut pas évoluer, ce qui diminuera considérablement les dommages qu'il peut causer. Démembrez les cadavres, recyclez-les, envoyez-les dans l'espace. Tout fonctionne, tant qu'il ne reste rien à absorber.
+  - Le Formaldéhyde ! C'est un produit chimique utilisé pour empêcher la décomposition des cadavres. Il peut être acheté en cargaison ou facilement synthétisé dans le laboratoire de chimie. Injecter plus de 25 unités de Formaldéhyde dans un cadavre le contaminera si le Spectre tente jamais de l'absorber, le blessant dans le processus.
+  - Les Bougies Spirituelles. Bien que rares, elles peuvent être utilisées pour révéler le spectre dans une zone de 12x12 cases. [bold]Si vous les activez dès l'apparition du Spectre, vous pouvez le rendre corporel ![/bold] Fabriquez-en une en plaçant une bougie sur un crâne.
 
-  - Use salt! [bold]You can make salt lines with salt shakers and salt packets[/bold]! Leave salt spread all over areas of interest for the Wraith.
-  - Get rid of corpses! Without corpses to absorb, the Wraith cannot evolve, which will significantly decrease the amount of harm it can cause. Gib corpses, recycle them, space them. Anything works, so long as there is nothing left to absorb.
-  - Formaldehyde! It is a chemical used to prevent rotting in corpses. It can be bought in cargo or easily synthesized in the Chemistry lab. Injecting a corpse with more than 25 units of Formaldehyde will cause the body to be tainted if the Wraith ever tries to absorb it, hurting them in the process.
-  - Spirit Candles. Although rare, they can be used to reveal wraith in a 12x12 tile area. [bold]If you activate them once Wraith appears, you can make them corporeal![/bold]. Craft one by placing a candle on a skull.
+  ## Porteur de Peste
 
-  ## Plaguebringer
+  [textlink="En savoir plus sur le Porteur de Peste." link="Plaguebringer"]
 
-  [textlink="Learn about the Plaguebringer." link="Plaguebringer"]
+  ## Héraut du Vide
 
-  ## Harbinger of the Void
-
-  [textlink="Learn about the Harbinger of the Void." link="Harbinger"]
+  [textlink="En savoir plus sur le Héraut du Vide." link="Harbinger"]
 
   ## Trickster
 
-  [textlink="Learn about the Trickster." link="Trickster"]
+  [textlink="En savoir plus sur le Trickster." link="Trickster"]
 
-  # Being the Ghost with the Most (Evil)
+  # Être le Fantôme le Plus (Maléfique)
 
-  ## Making the Most of Base Abilities
+  ## Tirer le Meilleur des Capacités de Base
 
-  - You can't use Decay on a Cyborg to remove its laws, nor can you use it on a cyborg frame to make the borg it's built from have no laws.
-    With Decay you are able to emag stuff without the usual risk of being seen by others, and that can be extremely helpful for setting up traps and ambushes.
-  - Haunt can give you a ton of WP when used in a large crowd, but a large crowd is also in prime position to wreck you when you're at your most vulnerable.
-  - Whenever someone has a gun drawn, use Command to knock them down, immediately use Possess Object on the gun, and shoot them with it.
-  - Is the chaplain pissing you off? Command and Mass Command may not work on them when you click them directly, but if they're stunned, standing still, or distracted by animated objects, targeting the floor under them works just as well.
-  - Spook may seem harmless, but some cunning applications can save your ass or cause mass chaos in a clutch.
-  - Try using Possess Object on the fire extinguisher in Toxins Storage, bashing open a plasma tank. Then, use Spook to flip lights and cause a fire.
-  - Has Security recently confiscated some guns/weapons? Pop open the contraband safe with the Open doors, lockers, crates option from Spook.
+  - Vous ne pouvez pas utiliser Décomposition sur un Cyborg pour supprimer ses lois, ni l'utiliser sur un châssis de cyborg pour que le borg qui y sera construit n'ait aucune loi.
+    Avec Décomposition, vous pouvez emagger des objets sans le risque habituel d'être vu, ce qui peut être extrêmement utile pour tendre des pièges et des embuscades.
+  - Hanter peut vous donner une tonne de PM lorsque utilisé dans une grande foule, mais une grande foule est aussi en position idéale pour vous détruire quand vous êtes le plus vulnérable.
+  - Dès que quelqu'un a une arme dégainée, utilisez Commandement pour le faire tomber, puis utilisez immédiatement Posséder un Objet sur l'arme, et tirez sur lui avec.
+  - Le chapelain vous exaspère ? Commandement et Commandement de Masse peuvent ne pas fonctionner sur lui lorsque vous cliquez directement dessus, mais s'il est étourdi, immobile, ou distrait par des objets animés, cibler le sol sous lui fonctionne tout aussi bien.
+  - Effrayer peut sembler anodin, mais quelques applications ingénieuses peuvent vous sauver la mise ou provoquer un chaos total au moment crucial.
+  - Essayez d'utiliser Posséder un Objet sur l'extincteur dans le Stockage des Toxines, en ouvrant une citerne à plasma. Puis utilisez Effrayer pour éteindre les lumières et provoquer un incendie.
+  - La sécurité a récemment confisqué des armes ? Ouvrez le coffre à contrebande avec l'option Ouvrir portes, casiers, caisses d'Effrayer.
 
-  ## In General
-  [bold]You are not invincible[/bold], no matter how much it may seem like it sometimes. It only takes one twitchy crew member with a weapon and a salt shaker to ruin you.
+  ## En Général
+  [bold]Vous n'êtes pas invincible[/bold], peu importe à quel point il peut parfois sembler que vous l'êtes. Il suffit d'un seul membre d'équipage nerveux avec une arme et une salière pour vous anéantir.
 
-  Wraiths don't appear alone, so try to lay low for a little while and look for the other antagonists. Scavenge the corpses they'll inevitably leave in their wake for more WP regeneration, or try to strike deals with them with Whisper. A wraith with someone to feed it a steady stream of corpses can get very, very scary, but be warned that some antagonists might not trust you to not murder them and raise the alarm on you.
+  Les spectres n'apparaissent pas seuls, alors essayez de rester discret pendant un moment et cherchez les autres antagonistes. Récupérez les cadavres qu'ils laisseront inévitablement dans leur sillage pour plus de régénération de PM, ou essayez de conclure des accords avec eux via Chuchoter. Un spectre avec quelqu'un pour lui fournir un flux régulier de cadavres peut devenir très, très effrayant — mais sachez que certains antagonistes pourraient ne pas vous faire confiance et craindraient que vous ne les assassiniez et ne donniez l'alerte.
 
-  Plan for things going terribly. You may not want to absorb every corpse you find just in case you get banished, but you may not want to leave any corpses undrained either in case the crew gets wise and starts spacing/gibbing/reclaiming corpses immediately.
+  Prévoyez le pire. Vous ne voudrez peut-être pas absorber chaque cadavre que vous trouvez au cas où vous seriez banni, mais vous ne voudrez peut-être pas non plus laisser des cadavres non drainés au cas où l'équipage se réveillerait et commencerait immédiatement à envoyer dans l'espace/démembrer/recycler les cadavres.
 
-You're not that great at outright killing people without isolating someone or being lucky. Be a scavenger; try to make a bad situation worse for someone already pretty fucked up rather than try to kill a healthy person. The crew will amaze you with how many ways they can kill themselves.
-
+  Vous n'êtes pas très doué pour tuer directement des gens sans isoler quelqu'un ou sans avoir de la chance. Soyez un charognard ; essayez d'aggraver une mauvaise situation pour quelqu'un qui est déjà dans une situation précaire plutôt que d'essayer de tuer une personne en bonne santé. L'équipage vous étonnera par le nombre de façons dont il peut se tuer lui-même.
 
 </Document>

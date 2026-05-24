@@ -6,23 +6,23 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Portable Scrubber
-  The portable scrubber is a portable machine that can be used to scrub the atmosphere in a room.
+  # Épurateur portable
+  L'épurateur portable est une machine portable pouvant être utilisée pour épurer l'atmosphère d'une pièce.
   <Box>
     <GuideEntityEmbed Entity="PortableScrubber"/>
   </Box>
 
-  It is invaluable for quickly removing unwanted gasses from a room when regular [textlink="scrubbers" link="AirScrubber"] are working too slow, or when a [textlink="scrubber" link="AirScrubber"] is not present.
+  Il est indispensable pour retirer rapidement les gaz indésirables d'une pièce lorsque les [textlink="épurateurs" link="AirScrubber"] ordinaires fonctionnent trop lentement, ou lorsqu'aucun [textlink="épurateur" link="AirScrubber"] n'est présent.
 
-  The portable scrubber requires [textlink="power" link="Power"] through a nearby [textlink="LV cable" link="VoltageNetworks"] to function.
+  L'épurateur portable nécessite une [textlink="alimentation électrique" link="Power"] via un [textlink="câble BT" link="VoltageNetworks"] à proximité pour fonctionner.
 
-  The portable scrubber automatically starts removing all non-breathable gasses from the room when it is bolted (wrenched) to the floor.
+  L'épurateur portable commence automatiquement à retirer tous les gaz non respirables de la pièce lorsqu'il est boulonné (vissé) au sol.
 
-  It will stop scrubbing when unbolted (unwrenched) from the floor or when its internal volume is full. The scrubber has an internal capacity of [color=orange][protodata="PortableScrubber" comp="PortableScrubber" member="Volume"/] liters[/color].
+  Il s'arrêtera d'épurer lorsqu'il est déboulonné (dévissé) du sol ou lorsque son volume interne est plein. L'épurateur a une capacité interne de [color=orange][protodata="PortableScrubber" comp="PortableScrubber" member="Volume"/> litres[/color].
 
-  ## Dumping Waste and Storage
-  The scrubber's internal volume can be emptied by anchoring (wrenching) onto a [textlink="connector" link="GasCanisters"].
+  ## Vidange et stockage des déchets
+  Le volume interne de l'épurateur peut être vidé en l'ancrant (vissant) sur un [textlink="connecteur" link="GasCanisters"].
 
-  Stations commonly have a dedicated emptying point to quickly transfer the waste from the scrubber to the station's wastenet.
+  Les stations disposent généralement d'un point de vidange dédié pour transférer rapidement les déchets de l'épurateur vers le réseau de déchets de la station.
 
 </Document>

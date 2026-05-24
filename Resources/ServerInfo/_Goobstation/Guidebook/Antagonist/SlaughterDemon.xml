@@ -1,52 +1,52 @@
 <Document>
-  # Slaughter Demon
+  # Démon du Massacre
 
   <Box>
     <GuideEntityEmbed Entity="BaseMobSlaughterDemon" Caption=""/>
   </Box>
 
-  Slaughter Demons are large, armour-plated monsters sent from the depths of hell to steal the souls of the crew in a very violent fashion.
-  They can use blood to travel quickly, possess a pair of large blades in place of arms, and can fully heal by eating downed crewmembers.
+  Les Démons du Massacre sont de grandes créatures blindées envoyées des profondeurs de l'enfer pour voler les âmes de l'équipage de manière très violente.
+  Ils peuvent utiliser le sang pour se déplacer rapidement, possèdent une paire de grandes lames à la place des bras, et peuvent se soigner entièrement en dévorant des membres d'équipage à terre.
 
-  ## Summoning a Being from Hell
+  ## Invoquer un Être venu de l'Enfer
 
   <Box>
     <GuideEntityEmbed Entity="ClothingHeadHatWizard" Caption=""/>
   </Box>
 
-  There are a two ways a Slaughter Demon may enter the station to terrorize it. It can be summoned onto the overworld with a mystical summoning item by a Wizard foolish enough to do so, or through a Midround roll.
-  Both options let spirits take over the role of a blood thirsty spawn of Satan.
+  Il existe deux façons pour un Démon du Massacre d'entrer sur la station pour y semer la terreur. Il peut être invoqué dans le monde principal avec un objet d'invocation mystique par un Sorcier assez fou pour le faire, ou via un tirage de mi-round.
+  Les deux options permettent aux esprits de prendre le rôle d'un rejeton assoiffé de sang de Satan.
 
-  ## How to play as the slaughter demon, by a slaughter demon
+  ## Comment jouer en tant que Démon du Massacre, par un Démon du Massacre
 
-  LISTEN, DEMON. [color=red]ALL YOU HAVE TO DO IS KILL[/color]. RIP THEIR GUTS OUT, DRINK THEIR BLOOD... YOU KNOW, DAILY UNDERWORLD ACTIVITIES.
-  JUST GO OUT THERE AND HIT PEOPLE, MAKE THEM BLEED. YOU UNDERSTAND???
+  ÉCOUTE, DÉMON. [color=red]TOUT CE QUE TU AS À FAIRE, C'EST TUER[/color]. ARRACHE-LEUR LES TRIPES, BOIS LEUR SANG... TU VOIS, LES ACTIVITÉS QUOTIDIENNES DES ENFERS.
+  SORS JUSTE LÀ-DEHORS ET FRAPPE DES GENS, FAIS-LES SAIGNER. T'AS COMPRIS ???
 
-  BUT REMEMBER, DEVILS ARE OUR HOMIES SO DON'T GO ATTACKING THEM FOR NO REASON!
+  MAIS RAPPELLE-TOI, LES DIABLES SONT NOS POTES ALORS NE VA PAS LES ATTAQUER SANS RAISON !
 
-  OH, AND IF YOU SEE A LAUGHTER DEMON THEN MAKE FUN OF THEM, OR MAKE THEIR DAY WORSE... SATAN TOLD US THAT WE CAN'T KILL THEM, SOOOO... DEAL WITH THEM FOR THE TIME BEING!
-  HOW CAN THEY NOT LOVE BLOOD AS MUCH AS WE DO????
+  OH, ET SI TU VOIS UN DÉMON DU RIRE, MOQUE-TOI DE LUI, OU GÂCHE-LUI SA JOURNÉE... SATAN NOUS A DIT QU'ON NE PEUT PAS LES TUER, ALORS... FAIS AVEC EUX POUR L'INSTANT !
+  COMMENT PEUVENT-ILS NE PAS AIMER LE SANG AUTANT QUE NOUS ????
 
-  ## BASIC ABILITIES
+  ## CAPACITÉS DE BASE
 
-  - BLOOD JAUNTING
+  - BONDISSEMENT SANGLANT
 
-  SPREADING BLOOD ALL THROUGH THE HALLWAYS (DRAGGING A CORPSE WHILE SLASHING IT) WILL HELP YOU IN THE LONG RUN, TRUST ME.
-  HAVING THE ABILITY TO TELEPORT ANYWHERE PROVES TO BE PRETTY USEFUL.
+  RÉPANDRE DU SANG PARTOUT DANS LES COULOIRS (EN TRAÎNANT UN CADAVRE TOUT EN LE TAILLADANT) TE SERA UTILE À LONG TERME, FAIS-MOI CONFIANCE.
+  AVOIR LA CAPACITÉ DE SE TÉLÉPORTER N'IMPORTE OÙ S'AVÈRE PLUTÔT PRATIQUE.
 
-  - CORPSE FEEDING
+  - DÉVORER UN CADAVRE
 
-  NO SHAME ON TAKING A BITE ONCE YOU DRAG THEM TO HELL, MY FRIEND.
-  IT'S YOUR ONLY WAY OF HEALING, SHORT OF A HUMAN PATCHING YOU UP. NOT ONLY IS A HUMAN GIVING YOU MEDICAL HELP A DISGRACE TO ALL DEMONKIND,
-  BUT IF YOU EVEN ADMIT THAT YOU'RE CLOSE TO DYING THEY'LL PROBABLY JUST KILL YOU ANYWAY, YOU STUPID IDIOT DEMON.
+  PAS DE HONTE À PRENDRE UNE BOUCHÉE APRÈS LES AVOIR TRAÎNÉS EN ENFER, MON AMI.
+  C'EST TON SEUL MOYEN DE TE SOIGNER, À MOINS QU'UN HUMAIN NE TE RAFISTOLE. NON SEULEMENT C'EST UNE HONTE POUR TOUTE LA DÉMONITÉ DE SE FAIRE SOIGNER PAR UN HUMAIN,
+  MAIS SI TU ADMETS MÊME QUE TU ES PROCHE DE LA MORT, ILS VONT PROBABLEMENT TE TUER DE TOUTE FAÇON, ESPÈCE D'IDIOT DE DÉMON.
 
-  [bold](In order to corpse feed, drag a body with one hand and use blood jaunt on a blood pool)[/bold]
+  [bold](Pour dévorer un cadavre, traîne un corps avec une main et utilise le Bondissement Sanglant sur une flaque de sang)[/bold]
 
-  - JAUNT KILLING
+  - TUE EN BONDISSANT
 
-  WE ARE SLOW, OKAY? IT TURNS OUT HAVING A SUIT OF INFERNAL ARMOR GLUED TO US IS PRETTY HEAVY. LUCKILY, YOU CAN GET SOME PRETTY EASY KILLS JUMPING OUT OF BLOOD AS THE BLOOD WILL GIVE YOU A SPEED BOOST.
-  FANTASTIC COMBO, JUMP OUT OF BLOOD, ATTACK, TRY TO GET IN A FEW, AND THEN RETREAT TO THE BLOOD FOR ANOTHER SPEED ATTACK.
-  REALLY THE ONLY WAY YOU'RE REALISTICALLY GOING TO STOP A SHOTGUN WIELDING ASSHOLE, SO PRACTICE MAKES PERFECT.
+  ON EST LENTS, D'ACCORD ? IL S'AVÈRE QU'UNE ARMURE INFERNALE COLLÉE SUR NOUS, C'EST PLUTÔT LOURD. HEUREUSEMENT, TU PEUX AVOIR DES KILLS ASSEZ FACILES EN BONDISSANT HORS DU SANG CAR IL TE DONNE UN BOOST DE VITESSE.
+  COMBO FANTASTIQUE : BONDIS HORS DU SANG, ATTAQUE, ESSAIE D'EN PLACER QUELQUES-UNS, PUIS RECULE DANS LE SANG POUR UNE AUTRE ATTAQUE RAPIDE.
+  C'EST VRAIMENT LA SEULE FAÇON RÉALISTE D'ARRÊTER UN ABRUTI ARMÉ D'UN FUSIL À POMPE, ALORS C'EST EN FORGEANT QU'ON DEVIENT FORGERON.
 
-  ANYWAYS, I'M TOO BUSY WITH DRINKING SOME CLOWN'S BLOOD RIGHT NOW, SO I'LL SEE YA LATER IN HELL.
+  BON, JE SUIS TROP OCCUPÉ À BOIRE LE SANG D'UN CLOWN EN CE MOMENT, ALORS À PLUS TARD EN ENFER.
 </Document>

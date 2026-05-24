@@ -6,18 +6,17 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Valves
-  Valves are a quick way to halt or permit gas flow through a [textlink="pipenet" link="PipeNetworks"].
-  <Box>
-    <GuideEntityEmbed Entity="GasValve"/>
-    <GuideEntityEmbed Entity="SignalControlledValve"/>
-    <GuideEntityEmbed Entity="PressureControlledValve"/>
-    <GuideEntityEmbed Entity="GasPassiveGate"/>
-    <GuideEntityEmbed Entity="GasPressureRegulator"/>
-  </Box>
-  All valves do not require [textlink="power" link="Power"] to operate.
-
-  Valves may look simple, but they can enable a wide variety of complex pipe systems, including:
-  - Signal valves responding to air alarm or logic gate outputs
-  - Pneumatic valves controlling variable venting of waste gasses from a burn chamber
+  # Vannes
+  Les vannes sont un moyen rapide d'interrompre ou d'autoriser le flux de gaz dans un [textlink="réseau de tuyaux" link="PipeNetworks"].
+<Box>
+<GuideEntityEmbed Entity="GasValve"/>
+<GuideEntityEmbed Entity="SignalControlledValve"/>
+<GuideEntityEmbed Entity="PressureControlledValve"/>
+<GuideEntityEmbed Entity="GasPassiveGate"/>
+<GuideEntityEmbed Entity="GasPressureRegulator"/>
+</Box>
+  Aucune vanne ne nécessite d'[textlink="alimentation électrique" link="Power"] pour fonctionner.
+  Les vannes peuvent sembler simples, mais elles permettent une grande variété de systèmes de tuyaux complexes, notamment :
+  - Des vannes à signal répondant aux sorties des alarmes d'air ou des portes logiques
+  - Des vannes pneumatiques contrôlant l'évacuation variable des gaz de rejet d'une chambre de combustion
 </Document>

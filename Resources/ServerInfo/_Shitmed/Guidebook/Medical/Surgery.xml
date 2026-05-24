@@ -8,55 +8,55 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Surgery
-Your usual weekly activity. By performing surgical operations on your patients, you can heal wounds, remove or add body parts, organs, and more.
+# Chirurgie
+Votre activité hebdomadaire habituelle. En effectuant des opérations chirurgicales sur vos patients, vous pouvez soigner des plaies, retirer ou ajouter des parties du corps, des organes, et bien plus encore.
 
-## The Basics
-To start surgery your patient needs to be laying down, and ideally sedated.
+## Les bases
+Pour commencer une chirurgie, votre patient doit être allongé et, idéalement, sédaté.
 
-If they are not sedated, they will be in a lot of pain, which decreases their mood, and will make surgical wounds worse.
-
-<Box>
-<GuideEntityEmbed Entity="NitrousOxideTank" Caption="nitrous oxide"/>
-<GuideEntityEmbed Entity="ClothingMaskBreathMedical" Caption="any breathing tool"/>
-</Box>
-
-You also need to wear protective gear such as a mask and gloves to prevent harming the patient due to contamination.
+S'il n'est pas sédaté, il souffrira énormément, ce qui diminuera son moral et aggravera les plaies chirurgicales.
 
 <Box>
-<GuideEntityEmbed Entity="ClothingMaskSterile" Caption="any mask"/>
-<GuideEntityEmbed Entity="ClothingHandsGlovesNitrile" Caption="any gloves"/>
+<GuideEntityEmbed Entity="NitrousOxideTank" Caption="protoxyde d'azote"/>
+<GuideEntityEmbed Entity="ClothingMaskBreathMedical" Caption="tout dispositif respiratoire"/>
 </Box>
 
-## Getting Started
+Vous devez également porter des équipements de protection tels qu'un masque et des gants pour éviter de nuire au patient par contamination.
 
-To engage in surgery, you'll need a set of surgical tools.
+<Box>
+<GuideEntityEmbed Entity="ClothingMaskSterile" Caption="n'importe quel masque"/>
+<GuideEntityEmbed Entity="ClothingHandsGlovesNitrile" Caption="n'importe quels gants"/>
+</Box>
+
+## Pour commencer
+
+Pour pratiquer une chirurgie, vous aurez besoin d'un ensemble d'outils chirurgicaux.
 
 <Box>
 <GuideEntityEmbed Entity="Scalpel" Caption="scalpel"/>
-<GuideEntityEmbed Entity="Retractor" Caption="retractor"/>
-<GuideEntityEmbed Entity="Hemostat" Caption="hemostat"/>
-<GuideEntityEmbed Entity="Drill" Caption="drill"/>
+<GuideEntityEmbed Entity="Retractor" Caption="écarteur"/>
+<GuideEntityEmbed Entity="Hemostat" Caption="hémostat"/>
+<GuideEntityEmbed Entity="Drill" Caption="perceuse"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="Saw" Caption="saw"/>
-<GuideEntityEmbed Entity="Cautery" Caption="cautery"/>
-<GuideEntityEmbed Entity="BoneGel" Caption="bone gel"/>
+<GuideEntityEmbed Entity="Saw" Caption="scie"/>
+<GuideEntityEmbed Entity="Cautery" Caption="cautère"/>
+<GuideEntityEmbed Entity="BoneGel" Caption="gel osseux"/>
 </Box>
 
-Once you've got tools in hand, interact with your patient to begin surgery. You'll be able to choose which part you want to operate on.
+Une fois les outils en main, interagissez avec votre patient pour commencer la chirurgie. Vous pourrez choisir la partie sur laquelle vous souhaitez opérer.
 
-## Ghetto Surgery
+## Chirurgie de fortune
 
-Certain non-surgical tools can be used in a pinch, use the scalpel examine icon to see how good or bad something is.
+Certains outils non chirurgicaux peuvent être utilisés en cas d'urgence ; utilisez l'icône d'examen du scalpel pour voir à quel point un outil est bon ou mauvais.
 <Box>
-<GuideEntityEmbed Entity="Welder" Caption="welder"/>
-<GuideEntityEmbed Entity="Wirecutter" Caption="wirecutter"/>
-<GuideEntityEmbed Entity="KitchenKnife" Caption="knife"/>
-<GuideEntityEmbed Entity="Crowbar" Caption="crowbar"/>
-<GuideEntityEmbed Entity="CableApcStack" Caption="lv cable"/>
+<GuideEntityEmbed Entity="Welder" Caption="soudeur"/>
+<GuideEntityEmbed Entity="Wirecutter" Caption="pince coupante"/>
+<GuideEntityEmbed Entity="KitchenKnife" Caption="couteau"/>
+<GuideEntityEmbed Entity="Crowbar" Caption="pied-de-biche"/>
+<GuideEntityEmbed Entity="CableApcStack" Caption="câble basse tension"/>
 </Box>
 
-They aren't ideal compared to real surgical equipment, but they'll do in a pinch!
+Ce n'est pas l'idéal comparé à du vrai matériel chirurgical, mais ça peut dépanner en cas de besoin !
 
 </Document>

@@ -9,39 +9,30 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Patches
-
-Patches are a simple and effective way to administer medication to a patient over time with lower risk of an overdose.
-They can be made at a medical techfab and filled via a ChemMaster. They can be directly applied to a patient and will fall off by themselves once empty.
-
+# Patchs
+Les patchs sont un moyen simple et efficace d'administrer des médicaments à un patient sur la durée, avec un risque moindre de surdosage.
+Ils peuvent être fabriqués dans un techfab médical et remplis via un ChemMaster. Ils peuvent être directement appliqués sur un patient et tomberont d'eux-mêmes une fois vides.
 <GuideEntityEmbed Entity="MedicalPatchBasic" Rotation="0"/>
-
-There are 6 types of patches:
-- Basic
-- Rapid
-- Large
-- Therapeutic
-- Prefilled
-- Makeshift
-
-## Basic
-The (basic) patch holds 40 units of chemicals and transfers 1 unit every second.
-
-## Rapid
-The rapid patch holds 40 units and transfers 2 units every second.
-
-## Large
-The large patch holds 60 units and transfers 1 unit every second.
-However, the large patch also transfers 15% of its chemicals immediately when applied (10 units if full).
-
-## Therapeutic
-The therapeutic patch holds 40 units and transfers 0.5 units every second.
-
-## Prefilled
-NanoMed Plus machines and some medkits contain prefilled patches for treating Brute or Burn damage.
-These hold 30 units and transfer 0.25 units per second, but cannot be refilled or emptied. Not reusable.
-
-## Makeshift
-This rudimentary patch can hold 20 units and transfers 1 unit every 2 seconds.
-However, it can be made by hand with cloth and filled manually without a ChemMaster. Not reusable.
+Il existe 6 types de patchs :
+- Basique
+- Rapide
+- Grand
+- Thérapeutique
+- Pré-rempli
+- Artisanal
+## Basique
+Le patch (basique) contient 40 unités de produits chimiques et en transfère 1 unité par seconde.
+## Rapide
+Le patch rapide contient 40 unités et en transfère 2 unités par seconde.
+## Grand
+Le grand patch contient 60 unités et en transfère 1 unité par seconde.
+Cependant, le grand patch transfère également immédiatement 15 % de ses produits chimiques lors de l'application (10 unités s'il est plein).
+## Thérapeutique
+Le patch thérapeutique contient 40 unités et en transfère 0,5 unité par seconde.
+## Pré-rempli
+Les machines NanoMed Plus et certaines trousses de soins contiennent des patchs pré-remplis pour traiter les dommages contondants ou par brûlure.
+Ceux-ci contiennent 30 unités et en transfèrent 0,25 unité par seconde, mais ne peuvent être ni rechargés ni vidés. Non réutilisables.
+## Artisanal
+Ce patch rudimentaire peut contenir 20 unités et en transfère 1 unité toutes les 2 secondes.
+Il peut cependant être fabriqué à la main avec du tissu et rempli manuellement sans ChemMaster. Non réutilisable.
 </Document>

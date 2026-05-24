@@ -8,39 +8,39 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <Document>
 # Bingle
 
-A bingle is a disgusting fungus that rapidly grows and takes over stations. Very weak on its own, their strength is in numbers.
+Un bingle est un champignon répugnant qui envahit et colonise rapidement les stations. Très faible seul, sa force réside dans le nombre.
 
   <Box>
     <GuideEntityEmbed Entity="MobBingle" Caption="Bingle"/>
-	  <GuideEntityEmbed Entity="BinglePit" Caption="Bingle Pit"/>
+	  <GuideEntityEmbed Entity="BinglePit" Caption="Fosse à bingle"/>
   </Box>
 
-A bingle is a midround antagonist that spawns alone, but can quickly grow in numbers
+Un bingle est un antagoniste de mi-round qui apparaît seul, mais peut rapidement grossir en nombre.
 
-## Playing As A Bingle
+## Jouer en tant que Bingle
 
-- The most difficult part of a bingle pit's development is the beginning, when it is very weak. As the first bingle you should prioritize dragging as many items to the pit as fast as you can.
-Bingles are very strong in melee combat, stunning in a few hits. Try to take out any lone witnesses before they can call out the pits location.
+- La partie la plus difficile du développement d'une fosse à bingle est le début, quand il est très faible. En tant que premier bingle, vous devriez prioriser l'acheminement d'un maximum d'objets vers la fosse aussi vite que possible.
+Les bingles sont très puissants en combat au corps à corps, étourdissant en quelques coups. Essayez d'éliminer les témoins isolés avant qu'ils ne puissent révéler l'emplacement de la fosse.
 
-- Once there are a few bingles, you should focus on dragging items in, as well as protecting the pit. If it breaks, you wont be able to make any more bingles and the colony will die out.
+- Une fois plusieurs bingles présents, concentrez-vous sur l'acheminement d'objets, ainsi que sur la protection de la fosse. Si elle se brise, vous ne pourrez plus créer de bingles et la colonie mourra.
 
-- The bingle pit is the home of bingles, when several items are drug into it and fall down a new bingle is made. After quite a large number of items are drug into it, bingles are upgraded into armored bingles, which have far more health than the normal ones. The bingle pit also grows to larger than before, allowing for corpses to be dropped into the pit.
+- La fosse à bingle est le foyer des bingles : lorsque plusieurs objets y sont traînés et tombent dedans, un nouveau bingle est créé. Après qu'un grand nombre d'objets y ont été acheminés, les bingles sont améliorés en bingles blindés, qui possèdent bien plus de points de vie que les normaux. La fosse à bingle grandit également, permettant d'y jeter des cadavres.
 
-## Playing Against Bingles
+## Jouer contre les Bingles
 
-The most best way to play against bingles is to avoid melee combat. Instead; Use ranged weapons to deal with them and thin their numbers from afar.
+La meilleure façon de jouer contre les bingles est d'éviter le combat au corps à corps. À la place, utilisez des armes à distance pour les éliminer et réduire leurs rangs depuis loin.
   <Box>
     <GuideEntityEmbed Entity="WeaponRifleLecter"/>
 	  <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
   </Box>
-The bingle pit itself can only be damaged by melee weapons and explosives. When attacking the pit directly be careful to avoid falling into it, as you can do so even while alive. It is typically best to deal with the bingles themselves before attacking the pit.
+La fosse à bingle elle-même ne peut être endommagée que par des armes de corps à corps et des explosifs. Lorsque vous attaquez directement la fosse, attention à ne pas y tomber — même en étant en vie. Il est généralement préférable d'éliminer les bingles avant de s'en prendre à la fosse.
 
-If a bingle infestation is growing out of hand, consider shutting down gravity, bingles cannot drop items into a pit without gravity and therefor cannot multiply.
+Si une infestation de bingles devient incontrôlable, envisagez de couper la gravité : les bingles ne peuvent pas faire tomber des objets dans la fosse sans gravité et ne peuvent donc pas se multiplier.
 
   <Box>
     <GuideEntityEmbed Entity="GravityGenerator"/>
   </Box>
 
-All items (and people) lost to the pit will be spat out when destroyed!
+Tous les objets (et personnes) perdus dans la fosse seront éjectés lors de sa destruction !
 
 </Document>

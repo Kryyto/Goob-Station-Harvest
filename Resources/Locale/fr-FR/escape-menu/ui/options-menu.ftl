@@ -435,3 +435,5 @@ ui-options-admin-enable-overlay-starting-job = Afficher le poste de départ
 ui-options-admin-overlay-merge-distance = Distance de regroupement des piles
 ui-options-admin-overlay-ghost-fade-distance = Distance de fondu de l'overlay fantôme depuis la souris
 ui-options-admin-overlay-ghost-hide-distance = Distance de masquage de l'overlay fantôme depuis la souris
+
+ui-options-language = Langue

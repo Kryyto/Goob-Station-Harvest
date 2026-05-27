@@ -692,4 +692,8 @@ public sealed partial class GoobCVars
         CVarDef.Create("particles.global_budget", 8000, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     #endregion
+
+    // Station Harvest - Language FR/EN option
+    public static readonly CVarDef<string> UILanguage =
+        CVarDef.Create("ui.language", "en-US", CVar.CLIENTONLY | CVar.ARCHIVE);
 }

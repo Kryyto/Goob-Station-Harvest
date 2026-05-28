@@ -23,12 +23,11 @@ public sealed class LanguageSystem : EntitySystem
     {
         try
         {
-            _loc.LoadCulture(new CultureInfo(language));
+            _loc.SetCulture(new CultureInfo(language));
         }
         catch (CultureNotFoundException)
         {
-            // Fallback silencieux vers l'anglais si la culture est inconnue
-            _loc.LoadCulture(new CultureInfo("en-US"));
+            _loc.SetCulture(new CultureInfo("en-US"));
         }
     }
 }

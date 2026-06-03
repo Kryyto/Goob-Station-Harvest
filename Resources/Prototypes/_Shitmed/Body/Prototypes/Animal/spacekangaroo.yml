@@ -10,7 +10,7 @@
 
 - type: body
   id: SpaceKangaroo
-  name: "kangourou spatial"
+  name: "space kangaroo"
   root: chest
   slots:
     chest:

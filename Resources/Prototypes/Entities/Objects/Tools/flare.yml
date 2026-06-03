@@ -29,10 +29,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: fusée éclairante d'urgence
+  name: emergency flare
   parent: BaseItem
   id: Flare
-  description: Une fusée produisant une lumière très vive pendant un court instant. Pointez la flamme à l'opposé de vous.
+  description: A flare that produces a very bright light for a short while. Point the flame away from yourself.
   components:
   - type: Tag
     tags:

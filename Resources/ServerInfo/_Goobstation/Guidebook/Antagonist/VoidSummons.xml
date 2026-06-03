@@ -1,92 +1,92 @@
 <Document>
-  # Invocations du Vide
+  # Void Summons
 
-  Les invocations du Vide sont des serviteurs spéciaux invoqués par le Spectre, dotés de compétences capables de faire honte même aux membres d'équipage les plus robustes. Il est généralement déconseillé de les affronter seul.
-  Bien qu'elles ne soient pas entièrement conçues pour être des machines à tuer par elles-mêmes, aux côtés du Spectre et de ses serviteurs mineurs, une invocation du Vide peut facilement devenir une sérieuse épine dans le pied.
+  Void summons are special minions summoned by the Wraith with skills that can put even robust crewmembers to shame. Fighting one alone is generally never recommended.
+  While not entirely meant for being killing machines by themselves, together with the Wraith and their lesser minions, a void summon can easily become a major pain in the neck.
 
-  # Commandant Squelette
+  # Skeleton Commander
   <Box>
     <GuideEntityEmbed Entity="MobSkeletonCommander" Caption=""/>
   </Box>
 
-  Le pilier résistant de votre armée, les commandants squelettes peuvent tenir la ligne et renforcer les serviteurs à proximité.
+  The tanky backbone of your army, skeleton commanders can hold the line and boost nearby minions.
 
-  ## Compétences
+  ## Skills
 
-  Ne vous attendez pas à faire grand-chose vous-même contre les membres d'équipage. Vos actions reposent principalement sur l'envoi d'autres à faire le travail à votre place.
+  Don't expect to do much yourself to the crewmembers. You actions mostly rely on sending others to do the work for you.
 
-  ### Ralliement
+  ### Rally
 
-  - Renforce toutes les créatures alliées environnantes, leur octroyant un boost temporaire en combat.
+  - Buffs all surrounding allied critters, giving them a temporary boost in combat.
 
-  Mieux utilisé lorsque plusieurs invocations sont regroupées pour maximiser l'impact de votre armée.
+  Best used when multiple summons are grouped together to maximize your army’s impact.
 
-  ### Invoquer un Squelette Mineur
+  ### Summon Lesser Skeleton
 
-  - Fait apparaître un squelette mineur pour vous aider dans vos activités. Le squelette est sans esprit et devrait généralement être utilisé juste avant une mêlée.
-  - Le squelette mineur n'a pas beaucoup de points de vie, mais il peut infliger beaucoup de dégâts une fois rallié.
+  - Spawns in a singular lesser skeleton to help you in whatever you are doing. The skeleton is mindless, and should generally be used right before a scuffle.
+  - The lesser skeleton does not have a lot of health, but they can cause a lot of damage while rallied.
 
-  # Démon Tentaculaire
+  # Tentacle Fiend
   <Box>
     <GuideEntityEmbed Entity="MobVoidSpiker" Caption=""/>
   </Box>
 
-  Rapide, à distance et imprévisible. Ces démons excellent à contrôler l'espace et à kidnapper des cibles pour garantir un kill facile au Spectre.
-  Leurs attaques de corps à corps, bien qu'extrêmement faibles en termes de dégâts, font rapidement tomber la cible.
+  Fast, ranged, and unpredictable. These fiends excel at controlling space and abducting targets to secure an easy kill for the Wraith.
+  Their meelee attacks, while extremely weak damage wise, quickly cause the target to be knocked out.
 
-  ## Compétences
+  ## Skills
 
-  Vous disposez de l'ensemble d'outils parfait pour l'enlèvement.
+  You have the perfect set of tools for kidnapping. 
 
-  ### Crochet Tentaculaire
+  ### Tentacle Hook
 
-  - Lance un tentacule vers une cible et la traîne vers le démon.
-  - Même si la cible tente de fuir le crochet, elle sera inévitablement attirée vers le démon.
+  - Launch a tentacle at a target and drag them toward the fiend.
+  - While the target can try and run from the hook, it will always, inevitable, drag them into the fiend.
 
-  ### Glissement
+  ### Shuffle
 
-  - Comprime votre corps pour vous faufiler à travers les portes, annuler les étourdissements et esquiver les attaques.
-  - Empêche l'utilisation d'autres compétences pendant son activation, donc généralement réservé à l'esquive plutôt qu'à l'engagement.
+  - Compress your body to slip through doors, cancel stuns, and escape attacks.
+  - Prevents using other skills during the usage of this skill, so is generally only meant for evading rather than for engaging.
 
-  ### Fouet
+  ### Lash
 
-  - Étourdit une cible, la fait saigner et lui inflige des dégâts considérables.
-  - Mieux utilisé avec le Crochet Tentaculaire. Dès que la cible est à portée, fouettez-la et emmenez-la en maintenance, pour ne plus jamais la revoir.
+  - Stun a target, cause them to bleed, and do considerable damage.
+  - Best used together with the tentacle hook. As soon as the target is within reach, lash them, and abduct them into maints, never to be seen again.
 
-  # Chien du Vide
+  # Void Hound
   <Box>
     <GuideEntityEmbed Entity="MobVoidHound" Caption=""/>
   </Box>
 
-  Furtif, rapide et mortel en combat rapproché. Les chiens du Vide sont idéaux pour des attaques en frapper-et-fuir et pour semer la perturbation.
-  Le seul serviteur du Spectre capable de sprinter.
+  Stealthy, fast, and deadly in close quarters. Void hounds are ideal for hit-and-run attacks and disruption.
+  The only minion from the Wraith capable of sprinting.
 
-  ## Compétences
+  ## Skills
 
-  Vos actions sont centrées sur la surprise.
+  Your actions are centered around catching people by surprise. 
 
-  ### Camouflage
+  ### Cloak
 
-  - Devenez partiellement invisible et difficile à détecter.
-  - Ne dure pas très longtemps, mais est utile pour s'approcher furtivement des cibles.
-  - Peut également être utilisé pour se fondre dans les ombres lors d'une retraite.
+  - Become partially invisible and difficult to detect.
+  - Doesn't last for very long, but is good for sneaking up on targets.
+  - Can be used for retreating into the shadows as well.
 
-  ### Charge
+  ### Rush Down
 
-  - Bondissez en avant, renversant la première personne sur votre chemin et étourdissant dans un large rayon autour de votre point d'atterrissage.
-  - Possède un long temps de recharge, donc à utiliser pour sécuriser des kills ou pour s'échapper de situations périlleuses.
+  - Leap forward, knocking down the first person in your path and stunning in a large radius around where you land.
+  - Has a lenghthy cooldown, so use it to secure kills or to escape dire situations.
 
-  ### Conseils Généraux
+  ### General Tips
 
-  Les commandants squelettes sont capables d'absorber beaucoup de tirs, mais leur action de ralliement est inestimable pour les autres serviteurs. Choisissez judicieusement si vous souhaitez servir de bouclier pour eux, ou rester en retrait à les renforcer depuis l'arrière.
+  Skeleton commanders are capable of soaking a lot of shots, but their rallying action is quite invaluable for the other minions. Choose wisely whether you wish to tank for them, or to stay behind buffing them from the backline.
 
-  Les démons tentaculaires excellent à éliminer des cibles à distance et à les tuer alors qu'elles sont incapables de se défendre. Une fois la besogne accomplie, appelez le Spectre pour absorber le cadavre, et recommencez.
+  Tentacle fiends excel at picking off targets from afar and killing them while they are incapable of fighting back. Once the deed is done, call over the Wraith to absorb the corpse, and rinse and repeat.
 
-  Les chiens du Vide sont vos assassins mobiles, mais peu résistants. Bien que votre étourdissement soit extrêmement puissant, il peut vous laisser dans la gueule du loup si vous n'êtes pas préparé.
+  Void hounds are your mobile assassins, but not very tanky. While your stun is extremely potent, it can leave you right in the lion's den if unprepared.
 
-  Tenez toujours compte du positionnement et du timing. Les invocations peuvent être fragiles et mourir rapidement si elles ne sont pas soutenues.
+  Always consider positioning and timing. Summons can be fragile and die quickly if left unsupported.
 
-  Le Spectre devrait chercher à combiner les serviteurs avec des portails pour maintenir une pression constante et provoquer des morts en masse.
+  The Wraith should aim to combine minions with portals to maintain constant pressure and cause death en masse.
 
-  [textlink="Retour au Héraut du Vide" link="Harbinger"]
+  [textlink="Back to Harbinger of the Void" link="Harbinger"]
 </Document>

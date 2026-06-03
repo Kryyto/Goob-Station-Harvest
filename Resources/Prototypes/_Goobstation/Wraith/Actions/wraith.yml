@@ -17,8 +17,8 @@
 
 - type: entity
   id: ActionHaunt
-  name: Hanter
-  description: Devenez corporel pendant 30 secondes. Durant ce temps, vous gagnez des points spectraux supplémentaires selon le nombre d'humains dans votre voisinage. Utilisez cette capacité à nouveau lorsque vous êtes corporel pour vous dissoudre dans l'éther.
+  name: Haunt
+  description: Become corporeal for 30 seconds. During this time, you gain additional wraith points, depending on the amount of humans in your vicinity. Use this ability again while corporeal to fade back into the aether.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -33,8 +33,8 @@
 - type: entity
   id: ActionWhisper
   parent: DemonicWhisperAction
-  name: Chuchoter
-  description: Envoyez un message éthéré à un être vivant.
+  name: Whisper
+  description: Send an ethereal message to a living being.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -46,8 +46,8 @@
 
 - type: entity
   id: ActionBloodWriting
-  name: Écriture de sang
-  description: Tracez un caractère sinistre sur le sol.
+  name: Blood Writing
+  description: Write a spooky character on the ground.
   components:
   - type: Action
     useDelay: 5
@@ -59,8 +59,8 @@
 
 - type: entity
   id: ActionAbsorbCorpse
-  name: Absorber un cadavre
-  description: Volez l'essence vitale d'un cadavre. Vous ne pouvez pas utiliser ceci sur un squelette !
+  name: Absorb corpse
+  description: Steal life essence from a corpse. You cannot use this on a skeleton!
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -90,8 +90,8 @@
 
 - type: entity
   id: ActionSpook
-  name: Effrayer
-  description: Provoquez des événements étranges, troublants ou effrayants dans une zone autour de vous. Utilisez cette capacité pour faire apparaître une entité comme origine de ces événements, puis interagissez avec elle pour choisir quelle action utiliser.
+  name: Spook
+  description: Cause freaky, weird, creepy or spooky stuff to happen in an area around you. Use this ability to spawn an entity as the origin of these events, then interact with it to select which action to use.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -110,8 +110,8 @@
 
 - type: entity
   id: ActionDecay
-  name: Décomposer
-  description: Faites perdre de l'endurance à un humain, ou faites dysfonctionner un objet.
+  name: Decay
+  description: Cause a human to lose stamina, or an object to malfunction.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -135,8 +135,8 @@
 
 - type: entity
   id: ActionCommand
-  name: Commander
-  description: Ordonnez à quelques objets de se projeter vers l'emplacement ciblé.
+  name: Command
+  description: Command a few objects to hurl themselves at the target location.
   components:
   - type: Action
     useDelay: 40
@@ -158,8 +158,8 @@
 - type: entity
   id: ActionAnimateObject
   parent: ActionAnimateSpell
-  name: Animer un objet
-  description: Animez un objet inanimé pour qu'il attaque les humains à proximité.
+  name: Animate object
+  description: Animate an inanimate object to attack nearby humans.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -173,8 +173,8 @@
 
 - type: entity
   id: ActionPossessObject
-  name: Posséder un objet
-  description: Possédez et contrôlez un objet du quotidien. Niveau de terreur élevé.
+  name: Possess object
+  description: Possess and control an everyday object. Freakout level high.
   components:
   - type: ActionWraithPoints
     wpConsume: 300
@@ -258,8 +258,8 @@
 
 - type: entity
   id: ActionEvolve
-  name: Évoluer
-  description: Choisissez une forme vers laquelle évoluer une fois que vous avez absorbé au moins 3 âmes.
+  name: Evolve
+  description: Choose a form to evolve into once you have absorbed at least 3 souls.
   components:
   - type: Action
     useDelay: 0
@@ -274,8 +274,8 @@
 # Harbinger Actions
 - type: entity
   id: ActionRaiseSkeleton
-  name: Invoquer un squelette
-  description: Relevez un cadavre squelettisé ou remplissez un casier d'un serviteur squelettique indestructible.
+  name: Raise skeleton
+  description: Raise a skeletonized dead body or fill a locker with an indurable skeletal servant.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -300,8 +300,8 @@
 
 - type: entity
   id: ActionSummonVoidPortal
-  name: Invoquer un portail du vide
-  description: Invoquez un portail du vide d'où s'échappent des créatures d'un autre monde.
+  name: Summon void portal
+  description: Summon a void portal from which otherworldly creatures pour out.
   components:
   - type: ConfirmableAction
     popup: wraith-portal-already
@@ -325,8 +325,8 @@
 
 - type: entity
   id: ActionSummonVoidCreature
-  name: Invoquer des créatures du vide
-  description: Tentez de percer le voile entre les mondes pour permettre à une créature du vide mineure d'entrer dans ce royaume.
+  name: Summon void creatures
+  description: Attempt to breach the veil between worlds to allow a lesser void creature to enter this realm.
   components:
   - type: Action
     useDelay: 150
@@ -340,8 +340,8 @@
 
 - type: entity
   id: ActionMakeRevenant
-  name: Créer un revenant
-  description: Prenez le contrôle d'un cadavre intact en tant que puissant Revenant ! Vous ne pourrez pas absorber ce cadavre plus tard. En tant que revenant, vous générez des points plus rapidement, mais vos capacités de revenant coûtent bien plus de points que la normale.
+  name: Make revenant
+  description: Take control of an intact corpse as a powerful Revenant! You will not be able to absorb this corpse later. As a revenant, you gain increased point generation, but your revenant abilities cost much more points than normal.
   components:
   - type: Action
     useDelay: 60
@@ -380,9 +380,9 @@
 
 - type: entity
   id: ActionCurseBlindness
-  name: Malédiction de cécité
+  name: Curse of blindness
   parent: BaseCurseAction
-  description: Maudissez les vivants avec la cécité.
+  description: Curse the living with blindness.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -399,9 +399,9 @@
 
 - type: entity
   id: ActionCurseWeakness
-  name: Malédiction de faiblesse
+  name: Curse of weakness
   parent: BaseCurseAction
-  description: Maudissez les vivants avec la faiblesse. Applique un ralentissement et donne des vertiges à la cible.
+  description: Curse the living with weakness. Applies slowdown and makes the target feel dizzy.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -419,9 +419,9 @@
 
 - type: entity
   id: ActionCurseBlood
-  name: Malédiction du sang
+  name: Curse of blood
   parent: BaseCurseAction
-  description: Maudissez les vivants avec une plaie de sang.
+  description: Curse the living with a plague of blood.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -438,9 +438,9 @@
 
 - type: entity
   id: ActionCurseRot
-  name: Malédiction de la putréfaction
+  name: Curse of rot
   parent: BaseCurseAction
-  description: Maudissez les vivants avec une peste d'outre-monde.
+  description: Curse the living with a netherworldly plague.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -457,9 +457,9 @@
 
 - type: entity
   id: ActionCurseDeath
-  name: Malédiction de mort
+  name: Curse of death
   parent: BaseCurseAction
-  description: Récoltez l'âme d'un être entièrement maudit !
+  description: Reap a fully cursed being's soul!
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -479,8 +479,8 @@
 
 - type: entity
   id: ActionDefile
-  name: Souiller
-  description: Manifestez un horrible poison dans un aliment ou un contenant. Utilisez d'abord sur vous-même pour choisir le produit chimique.
+  name: Defile
+  description: Manifest some horrible poison inside a food item or a container. Use on self first to choose chemical.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -499,8 +499,8 @@
 
 - type: entity
   id: ActionSummonPlagueRat
-  name: Invoquer un rat pesteux
-  description: Tentez de percer le voile entre les mondes pour permettre à un rat pesteux d'entrer dans ce royaume.
+  name: Summon Plague rat
+  description: Attempt to breach the veil between worlds to allow a plague rat to enter this realm.
   components:
   - type: Action
     useDelay: 150
@@ -512,8 +512,8 @@
 
 - type: entity
   id: ActionSummonRotHulk
-  name: Invoquer un colosse putride
-  description: Assimilez la saleté d'une zone et créez un serviteur instable.
+  name: Summon Rot Hulk
+  description: Assimilate the filth in an area and create an unstable servant.
   components:
   - type: Action
     useDelay: 90

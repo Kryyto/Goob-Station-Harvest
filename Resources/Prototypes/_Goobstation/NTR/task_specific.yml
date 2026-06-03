@@ -1,7 +1,7 @@
 - type: entity
   id: TaskVial
   parent: BaseChemistryEmptyVial
-  description: Un flacon spécial pouvant être inséré dans la console de tâches d'un NTR.
+  description: A special vial, that could be inserted inside a NTRs task console.
   components:
   - type: Tag
     tags:
@@ -14,7 +14,7 @@
   - type: Tag
     tags:
     - Vial
-  description: Une bouteille normale pouvant être insérée dans la console de tâches d'un NTR.
+  description: A normal bottle, that could be inserted inside a NTRs task console.
 
 - type: entity
   id: TaskJug
@@ -23,4 +23,4 @@
   - type: Tag
     tags:
     - Vial
-  description: Une cruche basique pour envoyer une grande quantité de produits chimiques à CentComm.
+  description: A basic jug for sending a large ammount of chemicals to CentComm.

@@ -101,7 +101,7 @@
 - type: entity
   id: CigPackBase
   parent: [ BaseStorageItem, BaseBagOpenClose ]
-  name: paquet de cigarettes
+  name: cigarette pack
   abstract: true
   components:
   - type: Sprite
@@ -175,7 +175,7 @@
 - type: entity
   id: CigPackMixedBase
   parent: [ BaseStorageItem, BaseBagOpenClose ]
-  name: paquet de cigarettes trempées
+  name: soaked cigarette pack
   abstract: true
   components:
   - type: Sprite
@@ -245,7 +245,7 @@
 - type: entity
   id: CigPackGreen
   parent: CigPackBase
-  name: paquet de Spessman's Smokes
+  name: Spessman's Smokes packet
   description: A label on the packaging reads, Wouldn't a slow death make a change?
   components:
   - type: Sprite
@@ -256,7 +256,7 @@
 - type: entity
   id: CigPackRed
   parent: CigPackBase
-  name: paquet de DromadaireCo
+  name: DromedaryCo packet
   description: The most popular brand of Space Cigarettes, sponsors of the Space Olympics.
   components:
   - type: Sprite
@@ -267,7 +267,7 @@
 - type: entity
   id: CigPackBlue
   parent: CigPackBase
-  name: paquet de Grolandaises
+  name: AcmeCo packet
   description: For those who somehow want to obtain the record for the most amount of cancerous tumors.
   components:
   - type: Sprite
@@ -278,7 +278,7 @@
 - type: entity
   id: CigPackBlack
   parent: CigPackBase
-  name: paquet de Nomades
+  name: Nomads packet
   description: Nomads's extra strong, for when your life is more extra hard.
   components:
   - type: Sprite
@@ -289,7 +289,7 @@
 - type: entity
   id: CigPackSyndicate
   parent: [CigPackBase, BaseSyndicateContraband]
-  name: paquet d'Interdyne herbals
+  name: Interdyne herbals packet
   description: Elite cigarettes for elite syndicate agents. Infused with medicine for when you need to do more than calm your nerves.
   components:
   - type: Sprite
@@ -304,7 +304,7 @@
 - type: entity
   id: CigPackMixed
   parent: CigPackMixedBase
-  name: paquet de cigarettes trempées de Dan
+  name: Dan's soaked smokes
   suffix: Mixed
   description: Dan worked with NT chemistry to dispose of excess chemicals, ENJOY.
   components:

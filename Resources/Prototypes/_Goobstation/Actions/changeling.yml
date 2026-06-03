@@ -35,14 +35,14 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-## capacités
+## abilities
 
-# de départ
+# starting
 - type: entity
   parent: BaseAction
   id: ActionEvolutionMenu
-  name: Ouvrir le menu d'évolution
-  description: Ouvre le menu d'évolution.
+  name: Open evolution menu
+  description: Opens the evolution menu.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -60,8 +60,8 @@
 - type: entity
   parent: BaseAction
   id: ActionAbsorbDNA
-  name: Absorber l'ADN
-  description: Absorbe l'ADN de la cible, la transformant en enveloppe vide. Coûte 25 produits chimiques.
+  name: Absorb DNA
+  description: Absorb the target's DNA, husking them in the process. Costs 25 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -87,8 +87,8 @@
 - type: entity
   parent: BaseAction
   id: ActionStingExtractDNA
-  name: Piqûre d'extraction d'ADN
-  description: Vole les informations génétiques de votre cible. Coûte 25 produits chimiques.
+  name: Extract DNA sting
+  description: Steal your target's genetic information. Costs 25 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -114,8 +114,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingTransformCycle
-  name: Faire défiler l'ADN
-  description: Parcourez votre ADN disponible.
+  name: Cycle DNA
+  description: Cycle your available DNA.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -133,8 +133,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangelingTransform
-  name: Se transformer
-  description: Transformez-vous en un autre humanoïde. Sans vêtements. Coûte 5 produits chimiques.
+  name: Transform
+  description: Transform into another humanoid. Doesn't come with clothes. Costs 5 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -155,8 +155,8 @@
 - type: entity
   parent: BaseAction
   id: ActionRegenerativeStasis
-  name: Stase Régénératrice
-  description: Préparez/quittez la stase régénératrice. Coûte 15 produits chimiques pour en sortir.
+  name: Regenerative Stasis
+  description: Prepare/leave regenerative stasis. Costs 15 chemicals to leave.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -181,8 +181,8 @@
 - type: entity
   parent: BaseAction
   id: ActionRegenerate
-  name: Régénérer
-  description: Régénérez les membres manquants, restaurez le sang, stoppez les saignements, soignez les blessures et réparez les os cassés. Coûte 15 produits chimiques.
+  name: Regenerate
+  description: Regenerate missing limbs, restore blood, stop bleeding, fix wounds and repair broken bones. Costs 15 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -202,8 +202,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleArmblade
-  name: Basculer la Lame de Bras
-  description: Transformez l'un de vos bras en une lame solide, composée d'os et de chair. Rétractez avec l'utilisation secondaire. Coûte 15 produits chimiques.
+  name: Toggle Arm Blade
+  description: Reform one of your arms into a strong blade, composed of bone and flesh. Retract on secondary use. Costs 15 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -222,8 +222,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleHammer
-  name: Basculer le Marteau de Bras
-  description: Transformez l'un de vos bras en un solide marteau, composé d'os et de chair. Rétractez avec l'utilisation secondaire. Coûte 15 produits chimiques.
+  name: Toggle Arm Hammer
+  description: Reform one of your arms into a strong hammer, composed of bone and flesh. Retract on secondary use. Costs 15 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -242,8 +242,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleClaw
-  name: Basculer la Griffe de Bras
-  description: Transformez l'un de vos bras en une solide griffe, composée d'os et de chair. Rétractez avec l'utilisation secondaire. Coûte 15 produits chimiques.
+  name: Toggle Arm Claw
+  description: Reform one of your arms into a strong claw, composed of bone and flesh. Retract on secondary use. Costs 15 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -262,8 +262,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleDartGun
-  name: Basculer le Pistolet à Fléchettes
-  description: Transformez l'un de vos bras en pistolet à fléchettes, composé d'os et de chair. Rétractez avec l'utilisation secondaire. Coûte 15 produits chimiques.
+  name: Toggle Dart Gun
+  description: Reform one of your arms into a dart gun, composed of bone and flesh. Retract on secondary use. Costs 15 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -282,8 +282,8 @@
 - type: entity
   parent: BaseAction
   id: ActionCreateBoneShard
-  name: Former un Éclat d'Os
-  description: Brisez des fragments de vos os et façonnez-les en étoile de lancer. Coûte 15 produits chimiques.
+  name: Form Bone Shard
+  description: Break off shards of your bone and shape them into a throwing star. Costs 15 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -302,8 +302,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleChitinousArmor
-  name: Basculer l'Armure
-  description: Gonflez votre corps en une masse chitineuse tout-englobante servant d'armure. Coûte 25 produits chimiques.
+  name: Toggle Armor
+  description: Inflate your body into an all-consuming chitinous mass of armor. Costs 25 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -323,8 +323,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleOrganicShield
-  name: Former un Bouclier
-  description: Transformez l'un de vos bras en un grand bouclier charnu. Coûte 20 produits chimiques.
+  name: Form Shield
+  description: Reform one of your arms into a large, fleshy shield. Costs 20 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -344,8 +344,8 @@
 - type: entity
   parent: BaseAction
   id: ActionShriekDissonant
-  name: Cri Dissonant
-  description: Émettez un blast EMP, rien qu'avec votre voix. Coûte 30 produits chimiques.
+  name: Dissonant Shriek
+  description: Emit an EMP blast, with just your voice. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -368,8 +368,8 @@
 - type: entity
   parent: BaseAction
   id: ActionShriekResonant
-  name: Cri Résonnant
-  description: Désorientez les gens et brisez les lumières, rien qu'avec votre voix. Coûte 30 produits chimiques.
+  name: Resonant Shriek
+  description: Disorient people and break lights, with just your voice. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -392,8 +392,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleStrainedMuscles
-  name: Tendre les Muscles
-  description: Déplacez-vous à des vitesses extrêmement rapides. Inflige des dégâts d'endurance.
+  name: Strain Muscles
+  description: Move at extremely fast speeds. Deals stamina damage.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -409,12 +409,12 @@
     useOnFire: true
     useInLesserForm: true
 
-# piqûres
+# stings
 - type: entity
   parent: BaseAction
   id: ActionStingBlind
-  name: Piqûre Aveuglante
-  description: Piquez silencieusement votre cible, la rendant aveugle pour un court moment et très myope. Coûte 25 produits chimiques.
+  name: Blind Sting
+  description: Silently sting your target, blinding them for a short time and rendering them near sighted. Costs 25 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -444,8 +444,8 @@
 - type: entity
   parent: BaseAction
   id: ActionStingCryo
-  name: Piqûre Cryogénique
-  description: Piquez silencieusement votre cible, la ralentissant et la gelant constamment. Coûte 25 produits chimiques.
+  name: Cryogenic Sting
+  description: Silently sting your target, constantly slowing and freezing them. Costs 25 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -475,8 +475,8 @@
 - type: entity
   parent: BaseAction
   id: ActionStingLethargic
-  name: Piqûre Léthargique
-  description: Injectez silencieusement un cocktail d'anesthésiques dans la cible. Coûte 30 produits chimiques.
+  name: Lethargic Sting
+  description: Silently inject a cocktail of anesthetics into the target. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -506,8 +506,8 @@
 - type: entity
   parent: BaseAction
   id: ActionStingMute
-  name: Piqûre Muette
-  description: Piquez silencieusement votre cible, la réduisant complètement au silence pour un court moment. Coûte 25 produits chimiques.
+  name: Mute Sting
+  description: Silently sting your target, completely silencing them for a short time. Costs 25 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -537,8 +537,8 @@
 - type: entity
   parent: BaseAction
   id: ActionStingFakeArmblade
-  name: Piqûre de Fausse Lame de Bras
-  description: Piquez silencieusement votre cible, lui faisant pousser une lame de bras émoussée pour un court moment. Coûte 30 produits chimiques.
+  name: Fake Armblade Sting
+  description: Silently sting your target, making them grow a dull armblade for a short time. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -565,8 +565,8 @@
 - type: entity
   parent: BaseAction
   id: ActionStingTransform
-  name: Piqûre de Transformation
-  description: Piquez silencieusement votre cible, la transformant en une personne de votre choix. Coûte 75 produits chimiques.
+  name: Transformation Sting
+  description: Silently sting your target, transforming them into a person of your choosing. Costs 75 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -592,8 +592,8 @@
 - type: entity
   parent: BaseAction
   id: ActionLayEgg
-  name: Pondre un Œuf
-  description: Plantez un œuf dans un cadavre mort qui mûrira en une nouvelle forme pour nous.
+  name: Lay Egg
+  description: Plant an egg in a dead corpse which will mature into a new form for us.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -612,12 +612,12 @@
   - type: ChangelingAction
     useInLastResort: true
 
-# utilitaire
+# utility
 - type: entity
   parent: BaseAction
   id: ActionAnatomicPanacea
-  name: Panacée Anatomique
-  description: Guérissez-vous des maladies, handicaps, radiations, toxines, ivresse et dommages cérébraux. Coûte 30 produits chimiques.
+  name: Anatomic Panacea
+  description: Cure yourself of diseases, disabilities, radiation, toxins, drunkedness and brain damage. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -639,8 +639,8 @@
 - type: entity
   parent: BaseAction
   id: ActionAugmentedEyesight
-  name: Vue Augmentée
-  description: Basculez la vision aux rayons X.
+  name: Augmented Eyesight
+  description: Toggle x-ray vision.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -660,8 +660,8 @@
 - type: entity
   parent: BaseAction
   id: ActionBiodegrade
-  name: Biodégradation
-  description: Vomissez une substance caustique sur des entraves, ou sur le visage de quelqu'un. Coûte 30 produits chimiques.
+  name: Biodegrade
+  description: Vomit a caustic substance onto any restraints, or someone's face. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -683,8 +683,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChameleonSkin
-  name: Peau Caméléon
-  description: Fondez lentement dans l'environnement. Coûte 20 produits chimiques.
+  name: Chameleon Skin
+  description: Slowly blend in with the environment. Costs 20 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -705,8 +705,8 @@
 - type: entity
   parent: BaseAction
   id: ActionAdrenalineReserves
-  name: Réserves d'Adrénaline
-  description: Libérez une puissante adrénaline de vos glandes. Coûte 30 produits chimiques.
+  name: Adrenaline Reserves
+  description: Release powerful adrenaline from your glands. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -729,8 +729,8 @@
 - type: entity
   parent: BaseAction
   id: ActionFleshmend
-  name: Réparation Charnelle
-  description: Soignez-vous rapidement. Coûte 30 produits chimiques.
+  name: Fleshmend
+  description: Rapidly heal yourself. Costs 30 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -752,8 +752,8 @@
 - type: entity
   parent: BaseAction
   id: ActionLastResort
-  name: Dernier Recours
-  description: Abandonnez votre corps actuel et échappez-vous sous la forme d'une limace céphalique. Coûte 20 produits chimiques.
+  name: Last Resort
+  description: Abandon your current body and escape in the form of a headslug. Costs 20 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -778,8 +778,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleLesserForm
-  name: Forme Inférieure
-  description: Abandonnez votre forme actuelle et transformez-vous en singe. Coûte 20 produits chimiques.
+  name: Lesser Form
+  description: Abandon your current form and transform into a monkey. Costs 20 chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -799,8 +799,8 @@
 - type: entity
   parent: BaseAction
   id: ActionHivemindAccess
-  name: Accès à la Ruche
-  description: Accordez vos récepteurs chimiques pour la communication par ruche.
+  name: Hivemind Access
+  description: Tune your chemical receptors for hivemind communication.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -819,8 +819,8 @@
 - type: entity
   parent: BaseAction
   id: ActionAbsorbBiomatter
-  name: Absorber de la Biomasse
-  description: Absorbez un aliment pour récupérer quelques produits chimiques.
+  name: Absorb Biomatter
+  description: Absorb a food item to regain some chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

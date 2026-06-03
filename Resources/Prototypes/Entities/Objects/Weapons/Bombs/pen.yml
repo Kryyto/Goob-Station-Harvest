@@ -14,11 +14,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: stylo
+  name: pen
   suffix: Exploding
   # Goobstation - Return pen embeddability
   parent: Pen
-  description: Un stylo à encre noire.
+  description: A dark ink pen.
   id: PenExploding
   components:
   - type: TimerTrigger
@@ -45,8 +45,8 @@
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
   id: PenExplodingBox
-  name: boîte de stylo explosif
-  description: Une petite boîte contenant un stylo explosif. L'emballage se désintègre à l'ouverture, ne laissant aucune trace.
+  name: exploding pen box
+  description: A small box containing an exploding pen. Packaging disintegrates when opened, leaving no evidence behind.
   components:
   - type: Item
     size: Tiny

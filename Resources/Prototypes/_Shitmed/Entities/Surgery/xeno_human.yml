@@ -22,7 +22,7 @@
 - type: entity
   parent: BaseSurgeryOpenXenoCavity
   id: SurgeryOpenXenoCavityHiveNode
-  name: Ouvrir la cavité du nœud de ruche
+  name: Open Hive Node Cavity
   components:
   - type: SurgeryOrganSlotCondition
     organSlot: hive_node
@@ -30,7 +30,7 @@
 - type: entity
   parent: BaseSurgeryOpenXenoCavity
   id: SurgeryOpenXenoCavityResinSpinner
-  name: Ouvrir la cavité du fileur de résine
+  name: Open Resin Spinner Cavity
   components:
   - type: SurgeryOrganSlotCondition
     organSlot: resin_spinner
@@ -38,7 +38,7 @@
 - type: entity
   parent: BaseSurgeryOpenXenoCavity
   id: SurgeryOpenXenoCavityNeurotoxinGland
-  name: Ouvrir la cavité de la glande à neurotoxine
+  name: Open Neurotoxin Gland Cavity
   components:
   - type: SurgeryOrganSlotCondition
     organSlot: neurotoxin_gland
@@ -46,7 +46,7 @@
 - type: entity
   parent: BaseSurgeryOpenXenoCavity
   id: SurgeryOpenXenoCavityAcidGland
-  name: Ouvrir la cavité de la glande acide
+  name: Open Acid Gland Cavity
   components:
   - type: SurgeryOrganSlotCondition
     organSlot: acid_gland
@@ -54,7 +54,7 @@
 - type: entity
   parent: BaseSurgeryOpenXenoCavity
   id: SurgeryOpenXenoCavityPlasmaVessel
-  name: Ouvrir la cavité du vaisseau à plasma
+  name: Open Plasma Vessel Cavity
   components:
   - type: Surgery
     requirement: SurgeryOpenRibcage
@@ -66,7 +66,7 @@
 - type: entity
   parent: BaseSurgeryOpenXenoCavity
   id: SurgeryOpenXenoCavityEggSack
-  name: Ouvrir la cavité du sac à œufs
+  name: Open Egg Sack Cavity
   components:
   - type: SurgeryPartCondition
     parts: [ Groin ]
@@ -78,7 +78,7 @@
 - type: entity
   parent: BaseSurgeryInsertOrgan
   id: SurgeryInsertHiveNode
-  name: Transplanter le nœud de ruche
+  name: Transplant Hive Node
   components:
   - type: Surgery
     steps:
@@ -95,7 +95,7 @@
 - type: entity
   parent: BaseSurgeryInsertOrgan
   id: SurgeryInsertResinSpinner
-  name: Transplanter le fileur de résine
+  name: Transplant Resin Spinner
   components:
   - type: Surgery
     steps:
@@ -112,7 +112,7 @@
 - type: entity
   parent: BaseSurgeryInsertOrgan
   id: SurgeryInsertNeurotoxinGland
-  name: Transplanter la glande à neurotoxine
+  name: Transplant Neurotoxin Gland
   components:
   - type: Surgery
     steps:
@@ -129,7 +129,7 @@
 - type: entity
   parent: BaseSurgeryInsertOrgan
   id: SurgeryInsertAcidGland
-  name: Transplanter la glande acide
+  name: Transplant Acid Gland
   components:
   - type: Surgery
     steps:
@@ -146,7 +146,7 @@
 - type: entity
   parent: BaseSurgeryInsertOrgan
   id: SurgeryInsertPlasmaVessel
-  name: Transplanter le vaisseau à plasma
+  name: Transplant Plasma Vessel
   components:
   - type: Surgery
     steps:
@@ -165,7 +165,7 @@
 - type: entity
   parent: BaseSurgeryInsertOrgan
   id: SurgeryInsertEggSack
-  name: Transplanter le sac à œufs
+  name: Transplant Egg Sack
   components:
   - type: Surgery
     steps:
@@ -186,7 +186,7 @@
 - type: entity
   parent: BaseSurgeryRemoveOrgan
   id: SurgeryRemoveHiveNode
-  name: Retirer le nœud de ruche transplanté
+  name: Remove Transplanted Hive Node
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -195,7 +195,7 @@
 - type: entity
   parent: BaseSurgeryRemoveOrgan
   id: SurgeryRemoveResinSpinner
-  name: Retirer le fileur de résine transplanté
+  name: Remove Transplanted Resin Spinner
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -204,7 +204,7 @@
 - type: entity
   parent: BaseSurgeryRemoveOrgan
   id: SurgeryRemoveNeurotoxinGland
-  name: Retirer la glande à neurotoxine transplantée
+  name: Remove Transplanted Neurotoxin Gland
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -213,7 +213,7 @@
 - type: entity
   parent: BaseSurgeryRemoveOrgan
   id: SurgeryRemoveAcidGland
-  name: Retirer la glande acide transplantée
+  name: Remove Transplanted Acid Gland
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -222,7 +222,7 @@
 - type: entity
   parent: BaseSurgeryRemoveOrgan
   id: SurgeryRemovePlasmaVessel
-  name: Retirer le vaisseau à plasma transplanté
+  name: Remove Transplanted Plasma Vessel
   components:
   - type: Surgery
     requirement: SurgeryOpenRibcage
@@ -235,7 +235,7 @@
 - type: entity
   parent: BaseSurgeryRemoveOrgan
   id: SurgeryRemoveEggSack
-  name: Retirer le sac à œufs transplanté
+  name: Remove Transplanted Egg Sack
   components:
   - type: SurgeryPartCondition
     parts: [ Groin ]

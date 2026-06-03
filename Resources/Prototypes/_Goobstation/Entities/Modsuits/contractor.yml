@@ -16,8 +16,8 @@
 - type: entity
   parent: [ ClothingModsuitStandardNoStorage, BaseSyndicateContraband ]
   id: ClothingModsuitContractor
-  name: unité de contrôle de combinaison modulaire Contractor
-  description: Le contrôleur principal pour une combinaison modulaire Contractor.
+  name: Contractor modsuit control unit
+  description: The main controller for a Contractor modsuit.
   components:
     - type: Sprite
       sprite: _Goobstation/Clothing/OuterClothing/Modsuits/contractor.rsi
@@ -50,8 +50,8 @@
 - type: entity
   parent: [ClothingModsuitGauntletsStandard, BaseSyndicateContraband]
   id: ClothingModsuitGauntletsContractor
-  name: gantelets de combinaison modulaire Contractor
-  description: Une paire de gantelets conçus pour la combinaison modulaire Contractor.
+  name: Contractor modsuit gauntlets
+  description: A pair of gauntlets made for the Contractor modsuit.
   categories: [HideSpawnMenu]
   components:
     - type: Sprite
@@ -79,8 +79,8 @@
 - type: entity
   parent: [ClothingModsuitHelmetStandard, ShowSecurityIcons, BaseSyndicateContraband]
   id: ClothingModsuitHelmetContractor
-  name: casque de combinaison modulaire Contractor
-  description: Un casque de pointe conçu par le Syndicat pour la combinaison modulaire Contractor. Il inclut un HUD intégré.
+  name: Contractor modsuit helmet
+  description: A state-of-the-art helmet designed by the Syndicate for the Contractor modsuit. It includes a built-in HUD.
   categories: [HideSpawnMenu]
   components:
     - type: Sprite
@@ -178,8 +178,8 @@
 - type: entity
   parent: [ClothingModsuitChestplateStandard, BaseSyndicateContraband]
   id: ClothingModsuitChestplateContractor
-  name: plastron de combinaison modulaire Contractor
-  description: Un plastron de pointe conçu par le Syndicat pour la combinaison modulaire Contractor. Il incorpore des servos motorisés pour réduire la charge d'équipement.
+  name: Contractor modsuit chestplate
+  description: A state of the art chestplate designed by the Syndicate for the Contractor modsuit. It incorporates powered servos to reduce the equipment load.
   categories: [HideSpawnMenu]
   components:
     - type: Sprite
@@ -233,8 +233,8 @@
 - type: entity
   parent: [ClothingModsuitBootsStandard, BaseSyndicateContraband]
   id: ClothingModsuitBootsContractor
-  name: bottes de combinaison modulaire Contractor
-  description: Une paire de magboots de pointe pour la combinaison modulaire Contractor. Tant que la combinaison est alimentée, celles-ci ne ralentiront pas le porteur.
+  name: Contractor modsuit boots
+  description: A state-of-the-art pair of magboots for the Contractor modsuit. So long as the suit is powered, these will not slow the wearer down.
   categories: [HideSpawnMenu]
   components:
     - type: Appearance

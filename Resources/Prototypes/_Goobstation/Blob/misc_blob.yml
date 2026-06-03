@@ -51,8 +51,8 @@
 
 - type: entity
   id: SpawnPointGhostBlobRat
-  name: Point de Spawn de Blob Souris
-  suffix: Rôle Fantôme Blob
+  name: Mouse Blob Spawn Point
+  suffix: Blob Ghost Role
   parent: BaseAntagSpawner
   components:
     - type: GhostRoleMobSpawner
@@ -80,7 +80,7 @@
 - type: entity
   parent: BaseMindRoleAntag
   id: MindRoleBlob
-  name: Rôle Blob
+  name: Blob Role
 #  description: mind-role-blob-description
   components:
   - type: MindRole

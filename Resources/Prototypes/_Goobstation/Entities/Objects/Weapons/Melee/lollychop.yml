@@ -7,7 +7,7 @@
   name: lollychop
   parent: [BaseItem, BaseSyndicateContraband]
   id: LollyChop
-  description: Remplissez (fendez) les ventres (crânes) de vos amis avec ces délicieux bonbons (acier froid).
+  description: Fill (split) your buddies' tummies (skulls) with this delicious candy (cold steel).
   components:
   - type: Tag
     tags:

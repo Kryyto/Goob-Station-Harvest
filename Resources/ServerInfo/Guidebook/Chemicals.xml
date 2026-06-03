@@ -9,39 +9,39 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Produits chimiques
+# Chemicals
 
-Les produits chimiques sont un outil puissant pouvant provoquer une variété d'effets lorsqu'ils sont consommés. Certains peuvent être trouvés dans des plantes, achetés auprès du cargo, ou synthétisés par combinaison avec d'autres produits chimiques.
+Chemicals are a powerful tool that can cause a variety of effects when consumed. Some can be found in plants, purchased from cargo, or be synthesized through combination with other chemicals.
 
-Connaître les différents types de produits chimiques et leurs effets est important pour pouvoir gérer les blessures et les dangers.
+Knowing different types of chemicals and their effects is important for being able to manage injury and danger.
 
-## Éléments
+## Elements
 <GuideReagentGroupEmbed Group="Elements"/>
 
-## Médecine
+## Medicine
 <GuideReagentGroupEmbed Group="Medicine"/>
 
-## Narcotiques
+## Narcotics
 <GuideReagentGroupEmbed Group="Narcotics"/>
 
-## Pyrotechnie
+## Pyrotechnics
 <GuideReagentGroupEmbed Group="Pyrotechnic"/>
 
-## Toxines
+## Toxins
 <GuideReagentGroupEmbed Group="Toxins"/>
 
-## Aliments
+## Foods
 <GuideReagentGroupEmbed Group="Foods"/>
 
-## Botanique
+## Botanical
 <GuideReagentGroupEmbed Group="Botanical"/>
 
-## Biologique
+## Biological
 <GuideReagentGroupEmbed Group="Biological"/>
 
-## Spéciaux
+## Special
 <GuideReagentGroupEmbed Group="Special"/>
 
-## Autres
+## Other
 <GuideReagentGroupEmbed Group="Unknown"/>
 </Document>

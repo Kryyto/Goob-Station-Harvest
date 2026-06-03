@@ -30,7 +30,7 @@
 - type: entity
   parent: MobHuman
   id: MobHumanDarkLord
-  name: Le Seigneur des Ténèbres
+  name: The Dark Lord
   components:
   - type: ActionGrant
     actions:
@@ -44,7 +44,7 @@
 - type: entity
   parent: MobHuman
   id: MobHumanChosenOne
-  name: L'élu
+  name: The chosen one
   components:
   - type: ActionGrant
     actions:

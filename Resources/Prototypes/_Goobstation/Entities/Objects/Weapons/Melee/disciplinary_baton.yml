@@ -2,7 +2,7 @@
   id: TelescopicBatonAdvanced
   parent: [TelescopicBaton, BaseCentcommContraband]
   name: disciplinary baton
-  description: Une arme de défense personnelle compacte et légèrement nocive, conçue pour discipliner les travailleurs négligents. Assez robuste pour faire tomber les attaquants.
+  description: A compact and slightly harmful personal defense weapon, designed to discipline shoddy workers. Sturdy enough to knock the feet out from under attackers.
   components:
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:

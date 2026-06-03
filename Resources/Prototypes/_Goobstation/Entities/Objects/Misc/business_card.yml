@@ -2,7 +2,7 @@
   id: CentralCommandBusinessCard
   name: centcomm business card
   parent: Paper
-  description: Une carte verte avec le logo de Nanotrasen. Il y a quelque chose d'écrit au dos.
+  description: A green card with nanotrasen's logo. There's something written on the back.
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi

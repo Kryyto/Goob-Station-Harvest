@@ -81,8 +81,8 @@
   parent: BaseStructure
   abstract: true
   id: CosmicPolymorphEnt
-  name: "Inconnu" # The question marks crash regex gg
-  description: Piégé dans un laps entre ici et là.
+  name: "Unknown" # The question marks crash regex gg
+  description: Trapped in a lapse between here and there.
   components:
   - type: Sprite
     sprite: _DV/CosmicCult/Effects/ability_lapsepolymorph.rsi

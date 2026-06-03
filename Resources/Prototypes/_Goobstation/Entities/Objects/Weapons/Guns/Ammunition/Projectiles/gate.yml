@@ -7,7 +7,7 @@
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   id: BulletG8Demolishing
-  name: balle (G8 démolissante "La Lance d'Arès")
+  name: bullet (G8 demolishing "The Spear of Ares")
   components:
   - type: Sprite
     layers:
@@ -27,7 +27,7 @@
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletG8Hypercharged
-  name: balle (G8 surchargée "L'Éclair de Zeus")
+  name: bullet (G8 hypercharged "The Bolt of Zeus")
   components:
   - type: Sprite
     layers:

@@ -6,23 +6,23 @@
 - type: entity
   parent: OrganHumanHeart
   id: BioSynthHeart
-  name: cœur bio-synthétique
-  description: Ce cœur peut être transplanté dans tout organisme vivant et s'adaptera à son receveur.
+  name: bio-synthetic heart
+  description: This heart can be transplanted into any living organism and it will adapt to its recipient.
 
 - type: entity
   parent: OrganHumanLiver
   id: BioSynthLiver
-  name: foie bio-synthétique
-  description: Ce foie peut être transplanté dans tout organisme vivant et s'adaptera à son receveur.
+  name: bio-synthetic liver
+  description: This liver can be transplanted into any living organism and it will adapt to its recipient.
 
 - type: entity
   parent: OrganHumanLungs
   id: BioSynthLungs
-  name: poumons bio-synthétiques
-  description: Ces poumons peuvent être transplantés dans tout organisme vivant et s'adapteront à leur receveur.
+  name: bio-synthetic lungs
+  description: These lungs can be transplanted into any living organism and it will adapt to its recipient.
 
 - type: entity
   parent: OrganHumanEyes
   id: BioSynthEyes
-  name: yeux bio-synthétiques
-  description: Ces yeux peuvent être transplantés dans tout organisme vivant et s'adapteront à leur receveur.
+  name: bio-synthetic eyes
+  description: These eyes can be transplanted into any living organism and it will adapt to its recipient.

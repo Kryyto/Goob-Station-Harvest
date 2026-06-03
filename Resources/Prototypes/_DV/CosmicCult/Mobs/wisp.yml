@@ -1,5 +1,5 @@
 - type: entity
-  name: Feu Follet
+  name: Wisp
   parent: [ BaseSimpleMob, FlyingMobBase ]
   id: MobCosmicWisp
   components:

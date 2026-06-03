@@ -9,27 +9,27 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Générateur thermoélectrique à radioisotopes (GTR)
+  # Radioisotope Thermoelectric Generator (RTG)
 
   <Box>
-    <GuideEntityEmbed Entity="GeneratorRTG" Caption="GTR" />
+    <GuideEntityEmbed Entity="GeneratorRTG" Caption="RTG" />
   </Box>
 
-  Un générateur thermoélectrique à radioisotopes (GTR) est une source d'énergie passive qui génère de l'électricité à partir de la désintégration d'isotopes radioactifs.
+  A Radioisotope Thermoelectric Generator (RTG) is a passive power source that generates power from the decay of radioactive isotopes.
 
-  Il ne nécessite aucune maintenance et constitue une source d'énergie fiable, ce qui le rend idéal pour alimenter des systèmes essentiels devant rester opérationnels en permanence, comme les Télécommunications, l'IA ou le Serveur de surveillance de l'équipage.
+  They require no maintenance and are a reliable source of power, making them ideal for powering essential systems that need to be online at all times, like Telecoms, the AI, or the Crew Monitoring Server.
 
-  Les GTR génèrent toujours [color=orange][protodata="GeneratorRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/> W[/color] d'énergie et doivent être connectés à un [textlink="réseau" link="VoltageNetworks"] électrique [color=orange]HT[/color] pour fonctionner.
+  RTGs always generate [color=orange][protodata="GeneratorRTG" comp="PowerSupplier" member="MaxSupply" format="N0"/] W[/color] of power and must be connected to an [color=orange]HV power[/color] [textlink="network" link="VoltageNetworks"] to function.
 
-  Cependant, ils ne sont accessibles que si une équipe de récupération en trouve un lors d'une expédition. S'ils en rapportent, assurez-vous de les remercier !
+  However, they're only accessible through salvage finding one on an expedition. Should they bring some in, make sure to thank them!
 
-  ## Dommages au GTR
+  ## RTG Damage
   <Box>
-    <GuideEntityEmbed Entity="GeneratorRTGDamaged" Caption="GTR endommagé" />
+    <GuideEntityEmbed Entity="GeneratorRTGDamaged" Caption="Damaged RTG" />
   </Box>
-  Si les GTR subissent suffisamment de dommages, ils peuvent devenir des GTR endommagés.
-  Les GTR endommagés fonctionnent comme des GTR normaux, mais ils sont [color=yellow]radioactifs[/color].
+  If RTGs take enough damage, they can become damaged RTGs.
+  Damaged RTGs behave just like regular ones, but they're [color=yellow]radioactive[/color].
 
-  Cela les rend plus dangereux, mais d'un autre côté, vous pouvez placer des collecteurs de rayonnement à côté d'eux pour transformer ce rayonnement en énergie supplémentaire.
-  C'est généralement plus intéressant, vu que l'énergie reste gratuite, à condition de trouver un endroit sûr pour placer le(s) GTR.
+  That means they're more dangerous, but on the bright side, you can put radiation collectors next to them to turn that radiation into more power.
+  This is usually more worthwhile, considering the power is still free, so long as you can find a safe spot to put the RTG(s) in.
 </Document>

@@ -88,11 +88,11 @@
 
 # Documents
 - type: entity
-  name: Document Corporatif
+  name: Corporate Document
   id: CorporateDocument
   abstract: true
   parent: Paper
-  description: Un document officiel NanoTrasen. Ça ressemble à du spam, comme toujours.
+  description: An official NanoTrasen document. Looks like a ton of spam, as always.
   components:
   - type: RandomDocument
     documentType: ServiceDocument # Default fallback

@@ -12,11 +12,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: chariot alimentaire
+  name: food cart
   id: FoodCartBase
   abstract: true
   parent: BaseStructureDynamic
-  description: Un chariot pour la nourriture.
+  description: A cart for food.
   components:
     - type: Sprite
       netsync: false
@@ -80,10 +80,10 @@
     #      startingItem: PowerCellMedium
 
 - type: entity
-  name: chariot de nourriture chaude
+  name: hot food cart
   id: FoodCartHot
   parent: FoodCartBase
-  description: Allez vendre des hot-dogs !
+  description: Get out there and slang some dogs.
   components:
     - type: Sprite
       noRot: true
@@ -160,10 +160,10 @@
         ketchup_slot: !type:ContainerSlot {}
 
 - type: entity
-  name: chariot de nourriture froide
+  name: cold food cart
   id: FoodCartCold
   parent: FoodCartBase
-  description: C'est le marchand de glaces ! C'est le marchand de glaces !
+  description: It's the Ice Cream Man! It's the Ice Cream Man!
   components:
     - type: Sprite
       noRot: true

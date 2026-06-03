@@ -13,7 +13,7 @@
 
 - type: body
   id: Harpy
-  name: "harpie"
+  name: "harpy"
   root: chest
   slots:
     head:

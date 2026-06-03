@@ -15,7 +15,7 @@
 
 - type: entity
   id: BulletHeavyRifle
-  name: balle (.20 fusil)
+  name: bullet (.20 rifle)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -26,7 +26,7 @@
 
 - type: entity
   id: BulletMinigun
-  name: balle de minigun (.10 fusil)
+  name: minigun bullet (.10 rifle)
   parent: BulletHeavyRifle
   categories: [ HideSpawnMenu ]
   components:

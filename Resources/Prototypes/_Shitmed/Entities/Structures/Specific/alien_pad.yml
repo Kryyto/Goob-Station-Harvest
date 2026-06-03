@@ -17,8 +17,8 @@
 - type: entity
   id: AbductorAlienPad
   parent: [ BaseMachinePowered, ConstructibleMachine ]
-  name: pad extraterrestre
-  description: Téléportez les formes de vie inférieures et passez à table.
+  name: alien pad
+  description: Beam in the inferior lifeforms and dig in.
   components:
   - type: AbductorAlienPad
   - type: InteractionOutline

@@ -8,7 +8,7 @@
   parent: [ BasePart ]
   abstract: true
   id: PartFeroxiBase
-  name: partie du corps de feroxi
+  name: feroxi body part
   components:
     - type: Sprite
       sprite: _Goobstation/Mobs/Species/Feroxi/parts.rsi #RedTerror Goob Resprite
@@ -25,12 +25,12 @@
 - type: entity
   parent: [ PartFeroxiBase, BaseChest ]
   id: ChestFeroxi
-  name: poitrine de feroxi
+  name: feroxi chest
 
 - type: entity
   parent: [ PartFeroxiBase, BaseGroin ]
   id: GroinFeroxi
-  name: "aine de feroxi"
+  name: "feroxi groin"
   components:
   - type: Sprite
     state: "groin_m"
@@ -40,37 +40,37 @@
 - type: entity
   parent: [ PartFeroxiBase, BaseHead ]
   id: HeadFeroxi
-  name: tête de feroxi
+  name: feroxi head
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftArm ]
   id: LeftArmFeroxi
-  name: bras gauche de feroxi
+  name: left feroxi arm
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightArm ]
   id: RightArmFeroxi
-  name: bras droit de feroxi
+  name: right feroxi arm
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftHand ]
   id: LeftHandFeroxi
-  name: main gauche de feroxi
+  name: left feroxi hand
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightHand ]
   id: RightHandFeroxi
-  name: main droite de feroxi
+  name: right feroxi hand
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftLeg ]
   id: LeftLegFeroxi
-  name: jambe gauche de feroxi
+  name: left feroxi leg
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightLeg ]
   id: RightLegFeroxi
-  name: jambe droite de feroxi
+  name: right feroxi leg
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftFoot ]

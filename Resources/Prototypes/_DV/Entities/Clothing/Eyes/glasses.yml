@@ -22,8 +22,8 @@
 - type: entity
   parent: ClothingEyesGlassesGar
   id: ClothingEyesGlassesGarMeson
-  name: mésons gar
-  description: Faites l'impossible, voyez l'invisible !
+  name: gar mesons
+  description: Do the impossible, see the invisible!
   components:
   - type: EyeProtection
   - type: Tag # Goobstation

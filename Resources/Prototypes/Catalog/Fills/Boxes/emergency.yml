@@ -56,8 +56,8 @@
 - type: entity
   parent: BoxCardboard
   id: BoxSurvival
-  name: boîte de survie
-  description: Une boîte contenant des équipements respiratoires de base.
+  name: survival box
+  description: It's a box with basic internals inside.
   suffix: Standard
   components:
   - type: StorageFill
@@ -96,9 +96,9 @@
 - type: entity
   parent: BoxCardboard
   id: BoxSurvivalEngineering
-  name: boîte de survie grande capacité
-  description: Une boîte contenant des équipements respiratoires de base. Celle-ci est étiquetée pour contenir un réservoir grande capacité.
-  suffix: Grande capacité
+  name: extended-capacity survival box
+  description: It's a box with basic internals inside. This one is labelled to contain an extended-capacity tank.
+  suffix: Extended
   components:
   - type: StorageFill
     contents:
@@ -116,7 +116,7 @@
 - type: entity
   parent: BoxSurvivalEngineering
   id: BoxSurvivalEngineeringNitrogen
-  suffix: Grande capacité N2
+  suffix: Extended N2
   components:
   - type: StorageFill
     contents:
@@ -137,9 +137,9 @@
 
   parent: BoxCardboard
   id: BoxSurvivalSecurity
-  name: boîte de survie
-  description: Une boîte contenant des équipements respiratoires de base.
-  suffix: Sécurité
+  name: survival box
+  description: It's a box with basic internals inside.
+  suffix: Security
   components:
   - type: StorageFill
     contents:
@@ -157,7 +157,7 @@
 - type: entity
   parent: BoxSurvivalSecurity
   id: BoxSurvivalSecurityNitrogen
-  suffix: Sécurité N2
+  suffix: Security N2
   components:
   - type: StorageFill
     contents:
@@ -178,9 +178,9 @@
 
   parent: BoxCardboard
   id: BoxSurvivalMedical
-  name: boîte de survie
-  description: Une boîte contenant des équipements respiratoires de base.
-  suffix: Médical
+  name: survival box
+  description: It's a box with basic internals inside.
+  suffix: Medical
   components:
   - type: StorageFill
     contents:
@@ -198,7 +198,7 @@
 - type: entity
   parent: BoxSurvivalMedical
   id: BoxSurvivalMedicalNitrogen
-  suffix: Médical N2
+  suffix: Medical N2
   components:
   - type: StorageFill
     contents:
@@ -218,9 +218,9 @@
 - type: entity
   parent: BoxCardboard
   id: BoxHug
-  name: boîte de câlins
-  description: Une boîte spéciale pour les personnes sensibles.
-  suffix: Urgence
+  name: box of hugs
+  description: A special box for sensitive people.
+  suffix: Emergency
   components:
   - type: Sprite
     layers:
@@ -243,7 +243,7 @@
 - type: entity
   parent: BoxHug
   id: BoxHugNitrogen
-  suffix: Urgence N2
+  suffix: Emergency N2
   components:
   - type: StorageFill
     contents:
@@ -259,7 +259,7 @@
 - type: entity
   parent: BoxSurvival
   id: BoxMime
-  suffix: Mime, Urgence
+  suffix: Mime, Emergency
   components:
   - type: StorageFill
     contents:
@@ -273,7 +273,7 @@
 - type: entity
   parent: BoxSurvivalNitrogen
   id: BoxMimeNitrogen
-  suffix: Mime, Urgence N2
+  suffix: Mime, Emergency N2
   components:
   - type: StorageFill
     contents:
@@ -293,7 +293,7 @@
 - type: entity
   parent: BoxSurvival
   id: BoxMimeMoth
-  suffix: Mime, Urgence mite
+  suffix: Mime, Emergency moth
   components:
   - type: StorageFill
     contents:
@@ -307,9 +307,9 @@
 - type: entity
   parent: BoxCardboard
   id: BoxSurvivalSyndicate
-  name: boîte de survie grande capacité
-  description: Une boîte contenant des équipements respiratoires de base. Celle-ci est étiquetée pour contenir un réservoir grande capacité.
-  suffix: Syndicat
+  name: extended-capacity survival box
+  description: It's a box with basic internals inside. This one is labelled to contain an extended-capacity tank.
+  suffix: Syndicate
   components:
   - type: StorageFill
     contents:
@@ -326,7 +326,7 @@
 - type: entity
   parent: BoxSurvivalSyndicate
   id: BoxSurvivalSyndicateNitrogen
-  suffix: Syndicat N2
+  suffix: Syndicate N2
   components:
   - type: StorageFill
     contents:

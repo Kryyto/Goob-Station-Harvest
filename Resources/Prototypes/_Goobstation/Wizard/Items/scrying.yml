@@ -6,7 +6,7 @@
 - type: entity
   abstract: true
   id: ScryingOrbBase
-  suffix: Sorcier
+  suffix: Wizard
   components:
   - type: ScryingOrb
   - type: Sprite
@@ -16,8 +16,8 @@
 - type: entity
   parent: [BaseStructure, ScryingOrbBase]
   id: PonderingOrbWizard
-  name: orbe de méditation
-  description: Méditez sur vos plans pour la station grâce à cet artefact de clairvoyance.
+  name: pondering orb
+  description: Ponder your plans for the station using this farsight artefact.
   components:
   - type: InteractionOutline
   - type: Physics
@@ -41,8 +41,8 @@
 - type: entity
   parent: [BaseItem, ScryingOrbBase, BaseMagicalContraband]
   id: ScryingOrbWizard
-  name: orbe de scrutation
-  description: Un orbe incandescent d'énergie d'un autre monde. Le fixer vous confère une vision au-delà des moyens mortels.
+  name: scrying orb
+  description: An incandescent orb of otherworldly energy, staring into it gives you vision beyond mortal means.
   components:
   - type: ActionGrant
     actions:

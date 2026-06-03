@@ -6,8 +6,8 @@
 - type: entity
   id: BaseAnts
   parent: BaseStructureDynamic
-  name: fourmilière
-  description: Mieux vaut ne pas les provoquer.
+  name: ant hill
+  description: Best not to provoke them.
   components:
   - type: Fixtures
     fixtures:

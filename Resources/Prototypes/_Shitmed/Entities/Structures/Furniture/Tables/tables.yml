@@ -7,7 +7,7 @@
 - type: entity
   id: AbductorOperatingTable
   parent: OperatingTable
-  name: table d'opération d'alien ravisseur
+  name: abductor operating table
   components:
   - type: Sprite
     sprite: _Shitmed/Structures/Furniture/Tables/abductor_optable.rsi

@@ -27,7 +27,7 @@
   id: Cigarette
   parent: BaseCigar
   name: cigarette
-  description: Un rouleau de tabac et de nicotine.
+  description: A roll of tobacco and nicotine.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
@@ -54,7 +54,7 @@
   parent: BaseCigar
   name: cigarette
   suffix: Soaked
-  description: Un rouleau de tabac et de nicotine imbibé d'un produit chimique.
+  description: A roll of tobacco and nicotine soaked in some chemical.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi

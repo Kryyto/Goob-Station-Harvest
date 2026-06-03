@@ -9,7 +9,7 @@
   parent: ClothingNeckBase
   id: SurveillanceWirelessCameraBodySecurity
   name: security bodycam
-  description: Une caméra fixée sur le corps. Elle vous observe.
+  description: A body mounted camera. It's watching you.
   components:
   - type: DeviceNetwork
     deviceNetId: Wired # :clueless:
@@ -45,7 +45,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckFellForItAward
   name: nanotrasen gullibility award
-  description: Une récompense décernée par Nanotrasen pour marquer les cas extrêmes de crédulité.
+  description: An award given out by nanotrasen to mark extreme cases of gullibility
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Neck/Misc/fellforitaward.rsi

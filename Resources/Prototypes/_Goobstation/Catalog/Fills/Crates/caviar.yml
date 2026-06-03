@@ -6,8 +6,8 @@
 - type: entity
   id: CrateFunBlackCaviar
   parent: CrateGenericSteel
-  name: caisse de caviar noir
-  description: Contient 5 boîtes de caviar noir.
+  name: Black caviar crate
+  description: Contains 5 tins of black caviar.
   components:
   - type: StorageFill
     contents:
@@ -17,8 +17,8 @@
 - type: entity
   id: CrateFunRedCaviar
   parent: CrateGenericSteel
-  name: caisse de caviar rouge
-  description: Contient 5 boîtes de caviar rouge.
+  name: Red caviar crate
+  description: Contains 5 tins of red caviar.
   components:
   - type: StorageFill
     contents:

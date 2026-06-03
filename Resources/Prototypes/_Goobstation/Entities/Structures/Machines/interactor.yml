@@ -8,8 +8,8 @@
 - type: entity
   parent: [ ConstructibleMachine, BaseMachinePowered, BaseAutomatedMachine ]
   id: Interactor
-  name: interagisseur
-  description: Un actionneur robotique spécialisé dans l'interaction avec des objets utilisant des outils.
+  name: interactor
+  description: A robotic actuator specialized in interacting with objects using tools.
   components:
   # Visuals
   - type: Sprite

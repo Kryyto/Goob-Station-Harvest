@@ -22,7 +22,7 @@
   id: BaseFastDrawImplanter
   parent: BaseImplanter
   name: fast draw implanter
-  description: Une seringue avec des outils pour un retrait rapide d'implant. Elle a de petites étoiles dorées sur son corps.
+  description: A syringe with tools for quick implant removal. It has small gold stars on its body.
   abstract: true
   components:
     - type: Sprite
@@ -221,7 +221,7 @@
 
 - type: entity
   id: VaporizeImplanter
-  suffix: Vaporiser, NE PAS PLACER
+  suffix: Vaporize, DO NOT MAP
   parent: BaseImplantOnlyImplanterCentcomm
   components:
   - type: Implanter
@@ -229,7 +229,7 @@
 
 - type: entity
   id: ShiftImplanter
-  suffix: Déplacement, NE PAS PLACER
+  suffix: Shift, DO NOT MAP
   parent: BaseImplantOnlyImplanterCentcomm
   components:
   - type: Implanter
@@ -237,7 +237,7 @@
 
 - type: entity
   id: BlinkImplanter
-  suffix: Clignotement, NE PAS PLACER
+  suffix: Blink, DO NOT MAP
   parent: BaseImplantOnlyImplanterCentcomm
   components:
   - type: Implanter
@@ -245,7 +245,7 @@
 
 - type: entity
   id: StopTimeImplanter
-  suffix: Arrêt du Temps, NE PAS PLACER
+  suffix: Time Stop, DO NOT MAP
   parent: BaseImplantOnlyImplanterCentcomm
   components:
   - type: Implanter
@@ -253,7 +253,7 @@
 
 - type: entity
   id: NaniteMenderImplanter
-  suffix: Réparateur Nanite, NE PAS PLACER
+  suffix: Nanite Mender, DO NOT MAP
   parent: BaseImplantOnlyImplanterCentcomm
   components:
   - type: Implanter

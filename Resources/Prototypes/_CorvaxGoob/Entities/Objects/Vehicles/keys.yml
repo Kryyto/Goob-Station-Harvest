@@ -1,8 +1,8 @@
 - type: entity
   parent: VehicleKeyATV
   id: VehicleKeySkeletonMotorcycle
-  name: clés de moto squelette
-  description: Un beau trousseau de clés orné d'un crâne.
+  name: skeleton motorcycle keys
+  description: A beautiful set of keys adorned with a skull.
   components:
     - type: Tag
       tags:

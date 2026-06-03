@@ -25,7 +25,7 @@
 # Empty mags
 - type: entity
   id: BaseMagazineLightRifle
-  name: "chargeur (.30 fusil)"
+  name: "magazine (.30 rifle)"
   parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
@@ -60,9 +60,9 @@
 # Magazines
 - type: entity
   id: MagazineLightRifleBox
-  name: "boîte-chargeur de L6 SAW (.30 fusil)"
+  name: "L6 SAW magazine box (.30 rifle)"
   parent: BaseMagazineLightRifle
-  description: Boîte contenant une ceinture de 100 cartouches de fusil .30, utilisée par les mitrailleuses légères comme le L6. Destinée aux munitions cinétiques polyvalentes.
+  description: Box containing a 100-round belt of linked .30 rifle rounds, used by light machine guns such as the L6. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: Tag
     tags:
@@ -81,7 +81,7 @@
 
 - type: entity # Goobstation
   id: MagazineLightRifleBoxEmpty
-  name: "boîte-chargeur de L6 SAW (.30 fusil universel)"
+  name: "L6 SAW magazine box (.30 rifle any)"
   parent: MagazineLightRifleBox
   components:
   - type: BallisticAmmoProvider
@@ -89,9 +89,9 @@
 
 - type: entity
   id: MagazineLightRifle
-  name: "Chargeur (.30 fusil)"
+  name: "magazine (.30 rifle)"
   parent: BaseMagazineLightRifle
-  description: Chargeur courbé double rangée de 30 cartouches pour fusils de combat. Destiné aux munitions cinétiques polyvalentes.
+  description: Curved 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifle
@@ -110,10 +110,10 @@
 
 - type: entity
   id: MagazineLightRifleEmpty
-  name: "chargeur (.30 fusil universel)"
+  name: "magazine (.30 rifle any)"
   suffix: empty
   parent: MagazineLightRifle
-  description: Chargeur courbé double rangée de 30 cartouches pour fusils de combat.
+  description: Curved 30-round double stack magazine for combat rifles.
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -132,9 +132,9 @@
 
 - type: entity
   id: MagazineLightRiflePractice
-  name: "chargeur (.30 fusil entraînement)"
+  name: "magazine (.30 rifle practice)"
   parent: BaseMagazineLightRifle
-  description: Chargeur courbé double rangée de 30 cartouches pour fusils de combat. Destiné aux munitions à craie inoffensives.
+  description: Curved 30-round double stack magazine for combat rifles. Intended to hold non-harmful chalk ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -159,9 +159,9 @@
 
 - type: entity
   id: MagazineLightRifleUranium
-  name: "chargeur (.30 fusil uranium)"
+  name: "magazine (.30 rifle uranium)"
   parent: BaseMagazineLightRifle
-  description: Chargeur courbé double rangée de 30 cartouches pour fusils de combat. Destiné aux munitions exotiques à noyau d'uranium.
+  description: Curved 30-round double stack magazine for combat rifles. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleUranium
@@ -186,9 +186,9 @@
 
 - type: entity
   id: MagazineLightRifleIncendiary
-  name: "chargeur (.30 fusil incendiaire)"
+  name: "magazine (.30 rifle incendiary)"
   parent: MagazineLightRifle
-  description: Chargeur courbé double rangée de 30 cartouches pour fusils de combat. Destiné aux munitions incendiaires à auto-allumage.
+  description: Curved 30-round double stack magazine for combat rifles. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary
@@ -213,7 +213,7 @@
 
 - type: entity
   id: MagazineLightRifleMaxim
-  name: "chargeur tambour (.30 fusil)"
+  name: "pan magazine (.30 rifle)"
   parent: BaseMagazineLightRifle
   components:
   - type: Tag
@@ -227,7 +227,7 @@
 
 - type: entity
   id: MagazineLightRiflePkBox
-  name: "boîte de munitions PK (.30 fusil)"
+  name: "PK munitions box (.30 rifle)"
   parent: BaseMagazineLightRifle
   components:
   - type: Tag

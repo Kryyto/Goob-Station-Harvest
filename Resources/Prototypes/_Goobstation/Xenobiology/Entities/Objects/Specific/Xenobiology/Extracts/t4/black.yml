@@ -1,7 +1,7 @@
 - type: entity
   id: BlackSlimeExtract
   parent: BaseSlimeExtract
-  name: extrait de slime noir
+  name: black slime extract
   components:
   - type: Sprite
     layers:

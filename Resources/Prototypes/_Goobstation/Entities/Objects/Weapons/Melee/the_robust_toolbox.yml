@@ -1,8 +1,8 @@
 - type: entity
-  name: La boîte à outils robuste
+  name: The robust toolbox
   parent: [ToolboxBase, BaseSyndicateContraband]
   id: Toolboxrobust
-  description: La boîte à outils robuste, transmise de génération en génération de shitters, rien qu'en la tenant vous vous sentez plus robuste que jamais.
+  description: The robust toolbox, passed down from generation to generation of shitters just by holding it you feel more robust than ever.
   components:
   - type: MeleeWeapon
     heavyStaminaCost: 0

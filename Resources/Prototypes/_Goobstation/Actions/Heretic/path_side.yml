@@ -10,8 +10,8 @@
 - type: entity
   parent: BaseAction
   id: ActionHereticIceSpear
-  name: Mystères de la Création
-  description: Activez pour créer la Lance de Glacier ou invoquer une lance déjà existante.
+  name: Mysteries of Creation
+  description: Activate to create the Glacier Spear or summon already existing spear.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -34,8 +34,8 @@
 - type: entity
   parent: BaseAction
   id: ActionHereticCleave
-  name: Fendoir
-  description: Provoque de graves saignements sur une cible et plusieurs cibles autour d'elle.
+  name: Cleave
+  description: Causes severe bleeding on a target and several targets around them.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

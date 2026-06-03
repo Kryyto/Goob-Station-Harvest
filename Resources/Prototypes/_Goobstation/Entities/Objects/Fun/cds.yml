@@ -1,6 +1,6 @@
 - type: entity
-  name: disque CD
-  description: Un disque CD, contient généralement des publicités.
+  name: cd disk
+  description: A cd disk, usually contains ads.
   id: BaseCdDisk
   parent: BaseItem
   abstract: true
@@ -143,8 +143,8 @@
   parent: BaseCdDisk
   id: CdDiskWeird
   abstract: true
-  name: disque CD bizarre
-  description: Un disque CD bizarre, quelque chose vous dit que celui-ci ne contient pas de publicités.
+  name: weird cd disk
+  description: A weird cd disk, something tells you that this one doesn't contain ads.
 
 - type: entity
   parent: CdDiskWeird
@@ -192,7 +192,7 @@
 
 - type: entity
   parent: CdDiskWeird
-  name: disque CD (le procès de Heisenbee)
+  name: cd disk (trial of Heisenbee)
   id: CdDiskHeisenbeeTrial
   components:
   - type: Vinyl
@@ -239,7 +239,7 @@
   parent: BaseCdDisk
   id: JVNECdDisk
   abstract: true
-  description: Le spectacle de June et Eels !
+  description: The June and Eels show!
   components:
   - type: Sprite
     state: jne-cd
@@ -284,7 +284,7 @@
   parent: [BaseSyndicateContraband, BaseCdDisk]
   id: SyndiCdDisk
   abstract: true
-  description: Prends le disque !
+  description: Get da disk!
   components:
   - type: Sprite
     state: synd-cd
@@ -293,7 +293,7 @@
   parent: SyndiCdDisk
   name: cd disk (Numbers)
   id: JVNECdDiskNumber
-  description: Tout autour du mûrier, le singe chassait la belette...
+  description: All around the mulberry bush, the monkey chased the weasel...
   components:
   - type: Vinyl
     song:
@@ -305,7 +305,7 @@
   parent: SyndiCdDisk
   name: cd disk (Syndicate)
   id: JVNECdDiskSyndicate
-  description: 102.9 Radio syndicale
+  description: 102.9 Syndicate radio
   components:
   - type: Vinyl
     song:

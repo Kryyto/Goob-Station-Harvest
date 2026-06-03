@@ -1,7 +1,7 @@
 - type: entity
   id: RatDen
-  name: tanière de rats
-  description: Un tas d'ordures ressemblant vaguement à un nid.
+  name: rat den
+  description: A pile of garbage vaguely ressembling a nest.
   components:
   - type: DamageNearby
     whitelist:

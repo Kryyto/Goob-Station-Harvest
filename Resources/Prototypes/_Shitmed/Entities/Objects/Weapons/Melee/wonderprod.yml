@@ -13,7 +13,7 @@
   name: wonderprod
   parent: [BaseItem, BaseMajorContraband]
   id: Wonderprod
-  description: Outil universel de l'agent ravisseur.
+  description: Universal tool of the abductor agent.
   components:
   - type: Item
     sprite: _Shitmed/Objects/Weapons/Melee/wonderprod.rsi

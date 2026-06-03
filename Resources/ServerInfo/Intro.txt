@@ -1,8 +1,8 @@
-Bienvenue sur Space Station 14 ! Vous venez de commencer votre quart à bord d'une station spatiale Nanotrasen et vous devriez coopérer avec vos coéquipiers, accomplir votre rôle du mieux possible et vous amuser (de préférence pas au détriment des autres).
+Welcome to Space Station 14! You have just started your shift aboard a Nanotrasen space station and along with your crewmates should cooperate, perform your job role to the best of your ability and have fun (not at the expense of others hopefully).
 
-Assurez-vous de bien comprendre les règles du serveur (F1) et si vous avez des questions, consultez ce guide, vos collègues en personne ou via la radio ou Discord. Vous pouvez aussi demander de l'aide aux administrateurs (ahelp) en appuyant sur Échap > aide admin et en tapant un message aux admins connectés. Faites-le surtout si vous êtes témoin d'une infraction aux règles.
+Please make sure you understand the server rules (F1) and if you have any questions, consult this guide, your colleagues on shift in person or over radio or via discord. You can also ask admins for help (ahelp) by hitting the escape key > admin help and typing a message to any online admins. Especially do this if you witness someone breaking rules.
 
-Pour rappel, vous faites tous partie d'un équipage qui travaille ensemble (même le clown) et vous ne devriez pas vous faire de mal mutuellement sauf si vous avez une excellente raison (légitime défense) et même dans ce cas, appelez la sécurité par radio, étourdissez et maîtrisez, ne commettez pas de meurtre si vous n'êtes pas un antagoniste (voir antagoniste plus bas).
+To reiterate, you are all a crew of people who work together (even the clown) and you should not be harming each other unless you have an extremely good reason (self defence) and even then, call security over radio, stun and detain, do not commit murder as a non antagonist (see antagonist further down).
 
 
-Au lieu des intentions, nous avons le mode combat. Vérifiez les contrôles ci-dessous pour le raccourci clavier. Vous ne pouvez attaquer personne avec le mode désactivé, donc plus question de vous frapper avec votre propre pied-de-biche.
+Instead of intents, we have combat mode. Check controls below for its keybind. You can't attack anybody with it off, so no more hitting yourself with your own crowbar.

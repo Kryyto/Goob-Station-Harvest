@@ -341,7 +341,7 @@
   name: salvage Ancient Rogue King Spawner
   id: SpawnCMMobXenoRogueKing
   parent: MarkerBase
-  suffix: NE PAS PLACER #Trop fort pour être placé
+  suffix: DO NOT MAP #Too srong to be mapped
   components:
   - type: Sprite
     layers:
@@ -455,7 +455,7 @@
   name: Ancient Rogue King Spawner
   id: SpawnCMMobXenoRogueKingSentient
   parent: MarkerBase
-  suffix: NE PAS PLACER #Trop fort pour être placé
+  suffix: DO NOT MAP #Too srong to be mapped
   components:
   - type: Sprite
     layers:

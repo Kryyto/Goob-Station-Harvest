@@ -98,10 +98,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: cruche
+  name: jug
   parent: BaseItem
   id: Jug
-  description: Utilisée pour contenir une très grande quantité de produits chimiques ou de solutions. La boire cul-sec est extrêmement déconseillé.
+  description: Used to contain a very large amount of chemicals or solutions. Chugging is extremely ill-advised.
   components:
     - type: SolutionContainerManager
       solutions:

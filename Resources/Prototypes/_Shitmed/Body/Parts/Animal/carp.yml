@@ -19,8 +19,8 @@
 - type: entity
   parent: PartCarpBase
   id: TailCarp
-  name: queue de carpe
-  description: Les glandes uniques de cette queue permettent aux carpes spatiales de voler dans le vide.
+  name: carp tail
+  description: Unique glands in this tail let space carp fly in a vacuum.
   components:
   - type: Sprite
     state: tail
@@ -37,7 +37,7 @@
 - type: entity
   parent: [ PartCarpBase, BaseChest ]
   id: ChestCarp
-  name: torse de carpe
+  name: carp chest
   components:
   - type: Sprite
     state: chest
@@ -47,7 +47,7 @@
 - type: entity
   parent: [ PartCarpBase, BaseGroin ]
   id: GroinCarp
-  name: aine de carpe
+  name: carp groin
   components:
   - type: Sprite
     state: groin

@@ -9,9 +9,9 @@
 #shuttle walls
 - type: entity
   id: WallAbductorDiagonal
-  name: mur de navette
+  name: shuttle wall
   suffix: Diagonal
-  description: Retient l'air à l'intérieur et les récupérateurs assoiffés de sang à l'extérieur.
+  description: Keeps the air in and the bloodthirsty salvagers out.
   placement:
     mode: SnapgridCenter
     snap:
@@ -70,9 +70,9 @@
 - type: entity
   parent: BaseWall
   id: WallAbductor
-  name: mur de navette
-  suffix: Renforcé, Extérieur
-  description: Retient l'air à l'intérieur et les récupérateurs assoiffés de sang à l'extérieur.
+  name: shuttle wall
+  suffix: Reinforced, Exterior
+  description: Keeps the air in and the bloodthirsty salvagers out.
   components:
   - type: Damageable
     damageContainer: StructuralInorganic

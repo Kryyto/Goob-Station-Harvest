@@ -4,7 +4,7 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectTouchOfEvil
-  name: toucher du mal
+  name: touch of evil
   components:
   - type: ActiveTouchOfEvil
 
@@ -13,7 +13,7 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectRally
-  name: ralliement
+  name: rally
   components:
   - type: Rallied
 
@@ -22,7 +22,7 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectShuffle
-  name: mélange
+  name: shuffle
   components:
   - type: SpikerShuffleEffect
 
@@ -31,6 +31,6 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectWeakenedWraith
-  name: affaibli
+  name: weakened
   components:
   - type: WraithWeakened

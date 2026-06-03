@@ -8,7 +8,7 @@
   parent: BaseItem
   name: broomstick
   id: Broomstick
-  description: Pour rester en bonne santé, vous devez balayer au moins 8 heures par jour !
+  description: To stay healthy, you need to sweep at least 8 hours a day!
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Specific/Janitorial/broomstick.rsi
@@ -88,7 +88,7 @@
 - type: entity
   parent: MagicBroomstickVehicle
   id: MagicBroomstickVehicleFolded
-  suffix: replié
+  suffix: folded
   components:
   - type: Foldable
     folded: true

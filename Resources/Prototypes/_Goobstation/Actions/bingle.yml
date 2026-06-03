@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseAction
   id: ActionBingleUpgrade
-  name: Améliorer
-  description: Améliore le bingle en une version plus puissante
+  name: Upgrade
+  description: Upgrades bingle into a stronger version
   components:
   - type: Action
     useDelay: 1

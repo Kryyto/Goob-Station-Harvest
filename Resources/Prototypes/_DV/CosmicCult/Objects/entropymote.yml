@@ -3,8 +3,8 @@
 - type: entity
   parent: [ MaterialBase ]
   id: MaterialCosmicCultEntropy
-  name: mote d'entropie
-  description: Une mote d'essence entropique solidifiée. Engourdissante au toucher.
+  name: mote of entropy
+  description: A solidified mote of entropic essence. Feels numbing to the touch.
   suffix: Full
   components:
   - type: Stack

@@ -15,8 +15,8 @@
 - type: entity
   parent: BaseAction
   id: ActionOpenRadioImplant
-  name: Ouvrir l'implant radio
-  description: Ouvre le compartiment de la clé bluespace de l'implant radio intégré dans votre crâne.
+  name: Open Radio Implant
+  description: Opens the bluespace key compartment of the radio implant embedded in your skull.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -30,8 +30,8 @@
 - type: entity
   parent: BaseAction
   id: ActionOpenMouthStorage
-  name: Ouvrir le stockage des joues
-  description: Vous permet de stocker des objets dans vos joues.
+  name: Open cheek storage
+  description: Allows you to store items in your cheeks.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -43,8 +43,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleSneakMode
-  name: Basculer le mode furtif
-  description: Rampez sous les tables.
+  name: Toggle sneak mode
+  description: Sneak underneath tables.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -57,8 +57,8 @@
 
 - type: entity
   id: ActionChitzite
-  name: Cracher un Chitzite
-  description: Purgez l'excès d'accumulation radioactive de votre corps et obtenez une cool pierre de danger.
+  name: Cough Up Chitzite
+  description: Purge the excess radiation build-up from your body, and gain a cool danger rock.
   components:
   - type: Action
     enabled: false

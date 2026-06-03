@@ -1,25 +1,25 @@
 <Document>
-  # Déconversion
+  # Deconversion
   <Box>
     <GuideEntityEmbed Entity="Bible" Caption=""/>
   </Box>
 
-  Lorsque vous cherchez à contrecarrer le [color=#4cabb3]Culte Cosmique[/color], il existe plusieurs méthodes que l'équipage peut employer pour assurer sa survie et sa sécurité. L'une de ces méthodes est la [color=Yellow]Déconversion[/color].
+  When mounting an effort to thwart the [color=#4cabb3]Cosmic Cult[/color], there are several methods the crew might employ to ensure their survival and safety. One of these methods is [color=Yellow]Deconversion[/color].
 
-  Pour [color=Yellow]Déconvertir[/color] un cultiste cosmique, deux méthodes peuvent être employées. La première consiste à faire boire au cultiste un verre d'[color=#91C3F7]Eau Bénite[/color] — par la force, si nécessaire. L'eau bénite peut être obtenue auprès de :
-  - Des livraisons de fournitures religieuses, disponibles auprès du Cargo. Celles-ci contiennent deux cruches d'eau bénite, ainsi qu'une Bible.
-  - L'utilisation d'une Bible par un Aumônier sur la plupart des contenants d'eau bénira l'eau, la transformant en Eau Bénite.
+  To [color=Yellow]Deconvert[/color] a cosmic cultist, two methods can be employed. The first is by having a cultist drink a glass of [color=#91C3F7]Holy Water[/color] — by force, if neccesary. Holy Water can be procured from:
+  - Shipments of religious supplies, available from Cargo. These contain two jugs of Holy Water, as well as a Bible.
+  - Usage of a Bible by a Chaplain on most containers of water will bless the water, turning it into Holy Water.
 
-  ## Méthodes de Suppression
+  ## Suppression Methods
   <Box>
     <GuideEntityEmbed Entity="Bible" Caption=""/>
     <GuideEntityEmbed Entity="MindShieldImplanter" Caption=""/>
   </Box>
 
-  La déconversion n'est qu'une méthode parmi d'autres pour faire face à un culte grandissant. Les membres de l'équipage à bord de la station peuvent également souhaiter investir dans des implanteurs de [color=Green]Bouclier Mental[/color].
+  Deconversion is but one method for dealing with an encroaching cult. Crew aboard the station may alternatively wish to invest in [color=Green]Mindshield[/color] implanters.
 
-  Ces dispositifs de pointe peuvent empêcher des influences extérieures de manipuler les membres de l'équipage, offrant un outil puissant contre l'influence du culte.
+  These state-of-the-art devices can prevent outside influences from brainwashing crewmembers, providing a powerful utility against the cult's influence.
 
-  La dévotion de l'[color=Yellow]Aumônier[/color] le rend immunisé contre presque tous les pouvoirs du culte cosmique.
+  The [color=Yellow]Chaplain[/color]'s devotion renders them immune to nearly all of the cosmic cult's powers.
 
 </Document>

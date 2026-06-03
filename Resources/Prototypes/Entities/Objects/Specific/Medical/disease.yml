@@ -81,8 +81,8 @@
 - type: entity
   parent: BaseItem
   id: DiseaseSwab
-  name: écouvillon stérile
-  description: Utilisé pour prélever et transférer des échantillons. Stérile jusqu'à ouverture. Usage unique.
+  name: sterile swab
+  description: Used for taking and transferring samples. Sterile until open. Single use only.
   components:
   - type: Item
     size: Tiny
@@ -104,8 +104,8 @@
 - type: entity
   parent: BaseAmmoProvider # this is for cycling swabs out and not spawning 30 entities, trust
   id: BoxMouthSwab
-  name: écouvillon stérile dispenser
-  description: Distribue 30 écouvillons stériles, extrêmement utiles en botanique.
+  name: sterile swab dispenser
+  description: Dispenses 30 sterile swabs, extremely useful for botany.
   components:
   - type: Sprite
     layers:
@@ -126,8 +126,8 @@
 - type: entity
   parent: BaseItem
   id: Vaccine
-  name: vaccin
-  description: Empêche les personnes qui n'ont PAS déjà une maladie de l'attraper.
+  name: vaccine
+  description: Prevents people who DON'T already have a disease from catching it.
   components:
   - type: Item
     size: Tiny

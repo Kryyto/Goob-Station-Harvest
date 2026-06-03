@@ -17,10 +17,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: tournevis sonique
+  name: sonic screwdriver
   parent: BaseItem
   id: SonicScrewdriver
-  suffix: NE PAS PLACER
+  suffix: DO NOT MAP
   description: Wzzzzz....
   components:
   - type: Sprite
@@ -90,10 +90,10 @@
 
 
 - type: entity
-  name: RCD futuriste
+  name: futuristic RCD
   parent: RCD
   id: RCDChrono
-  description: Un outil qui peut construire une station à partir de zéro en quelques minutes.
+  description: A tool that can build a station from scratch in minutes.
   components:
   - type: LimitedCharges
     maxCharges: 100
@@ -109,10 +109,10 @@
   - type: RCD
 
 - type: entity
-  name: télécopieur portable
+  name: handheld fax
   parent: BaseItem
   id: HandheldFax
-  description: Un outil qui peut envoyer des tonnes de papier par télécopieur CentComm.
+  description: A tool that can send ton of paper on Centcomm fax.
   components:
   - type: Item
     size: Huge
@@ -166,10 +166,10 @@
       Paper: !type:ContainerSlot
 
 - type: entity
-  name: télécopieur portable du représentant Nanotrasen
+  name: nanotrasen representative handheld fax
   parent: HandheldFax
   id: HandheldFaxNanorep
-  suffix: Représentant Nanotrasen
+  suffix: Nanotrasen Representative
   components:
   - type: FaxMachine
     name: "Nanotrasen Representative"
@@ -191,10 +191,10 @@
   - type: MultiHandedItem
 
 - type: entity
-  name: télécopieur portable officiel CentComm
+  name: CentComm official handheld fax
   parent: HandheldFax
   id: HandheldFaxOfficial
-  suffix: Officiel CentComm
+  suffix: CentComm Official
   components:
   - type: FaxMachine
     name: "CentComm Official"
@@ -218,10 +218,10 @@
       shader: unshaded
 
 - type: entity
-  name: multioutil de borg
+  name: borg multitool
   parent: Multitool
   id: MultitoolBorg
-  description: Un outil avancé pour copier, stocker et envoyer des impulsions et signaux électriques à travers les fils et machines.
+  description: An advanced tool to copy, store, and send electrical pulses and signals through wires and machines.
   components:
   - type: Tool
     qualities:
@@ -231,9 +231,9 @@
 - type: entity
   id: RPDRecharging
   parent: RPD
-  name: RPD expérimental
-  description: Un dispositif de tuyauterie rapide amélioré par bluespace qui génère passivement sa propre matière comprimée.
-  suffix: Recharge auto
+  name: experimental RPD
+  description: A bluespace-enhanced rapid piping device that passively generates its own compressed matter.
+  suffix: AutoRecharge
   components:
   - type: LimitedCharges
     maxCharges: 20
@@ -243,9 +243,9 @@
 - type: entity
   parent: RCD
   id: RCDRechargingCE
-  name: RCD expérimental
-  description: Dispositif de Construction Rapide qui crée de la matière comprimée à la volée à l'aide d'un fabricateur interne.
-  suffix: Recharge auto
+  name: experimental RCD
+  description: Rapid Construction Device which creates compressed matter on the fly using an internal fabricator.
+  suffix: AutoRecharge
   components:
   - type: LimitedCharges
     maxCharges: 20

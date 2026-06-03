@@ -16,19 +16,19 @@
 - type: entity
   id: CrateSyndicateSurplusBundle
   parent: [ CrateSyndicate, StorePresetUplink, BaseSyndicateContraband ]
-  name: caisse excédentaire du Syndicat
+  name: Syndicate surplus crate
   # Goobstation - Telecrystal rework
-  description: Contient l'équivalent de 250 télécrystaux d'articles Syndicat complètement aléatoires. Ça peut être des déchets inutiles ou quelque chose de vraiment bien.
+  description: Contains 250 telecrystals worth of completely random Syndicate items. It can be useless junk or really good.
   components:
     - type: SurplusBundle
       totalPrice: 250
 
 - type: entity
   id: CrateCybersunJuggernautBundle
-  suffix: Rempli
+  suffix: Filled
   parent: CrateSyndicate
-  name: lot Mastodonte Cybersun
-  description: Contient tout sauf une grande arme pour péter les plombs.
+  name: Cybersun juggernaut bundle
+  description: Contains everything except a big gun to go postal.
   components:
   - type: StorageFill
     contents:
@@ -42,9 +42,9 @@
 - type: entity
   id: CrateSyndicateSuperSurplusBundle
   parent: [ CrateSyndicate, StorePresetUplink, BaseSyndicateContraband ]
-  name: super caisse excédentaire du Syndicat
+  name: Syndicate super surplus crate
   # Goobstation - Telecrystal rework
-  description: Contient l'équivalent de 625 télécrystaux d'articles Syndicat complètement aléatoires.
+  description: Contains 625 telecrystals worth of completely random Syndicate items.
   components:
     - type: SurplusBundle
       totalPrice: 625

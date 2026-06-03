@@ -6,40 +6,40 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Alerte de Station - Violette
+  # Station Alert - Violet
 
   <Box>
-    [italic]Appelée par : Une menace virale à bord de la station.[/italic]
+    [italic]Called by: A viral threat aboard the station.[/italic]
   </Box>
 
-  [bold]Conditions :[/bold]
+  [bold]Conditions:[/bold]
 
-  Il y a une menace virale connue à bord de la station, et toutes les mains sur le pont sont requises pour la combattre.
+  There is a known viral threat aboard the station, and all hands on deck are required to combat it.
 
-  [bold]Sécurité :[/bold]
+  [bold]Security:[/bold]
 
-  La Sécurité doit s'armer pleinement, et à sa discrétion peut également distribuer des armes aux membres de l'équipage de confiance et au Commandement.
+  Security should fully arm themselves, and at their discretion may also hand out arms to trusted crewmembers and Command.
 
-  Le personnel de Sécurité doit prioriser la sécurité de lui-même et du Commandement, et les membres de l'équipage comme la priorité la plus élevée suivante.
+  Security personnel are to prioritize the safety of themselves and Command, and crewmembers as the next-highest priority.
 
-  Le personnel de Sécurité doit s'éloigner des autres afin d'éviter la propagation de pathogènes inconnus.
+  Security personnel should distance themselves from others in order to avoid the spread of unknown pathogens.
 
-  [bold]Zones Sécurisées :[/bold]
+  [bold]Secure Areas:[/bold]
 
-  Stockage EVA, Stockage Technique, Générateur de Gravité, Stockage Sécurisé d'Ingénierie, Téléversement IA, Coffre, Passerelle, n'importe où ailleurs nécessitant un accès de niveau commandement qui n'est pas régulièrement utilisé.
+  EVA Storage, Tech Storage, Gravity Generator, Engineering Secure Storage, AI Upload, Vault, Gateway, anywhere else requiring command level access that does not get regularly used.
 
-  Il est recommandé que toutes les Zones Sécurisées soient verrouillées sauf si leur utilisation est nécessaire ;
+  It is recommended that all Secure Areas be bolted down unless their use is necessary;
 
-  La Passerelle doit être entièrement fermée pour éviter la propagation hors de la station du virus.
+  The Gateway should be fully closed to avoid off-station spread of the virus.
 
-  [bold]Équipage Général :[/bold]
+  [bold]General Crew:[/bold]
 
-  Tout le personnel est tenu de maximiser ses Capteurs de Combinaison ;
+  All personnel are required to maximize their Suit Sensors;
 
-  Le personnel doit s'éloigner des autres membres du personnel là où l'infection ou le statut de porteur est suspecté.
+  Personnel are to distance themselves from other personnel where infection or carrier status is suspected.
 
-  Le personnel doit faire preuve de prudence à tout moment. Suivre des procédures de sécurité simples (comme ne pas aller seul dans la Maintenance) peut prévenir des accidents inutiles.
+  Personnel must exercise caution at all times. Following simple safety procedures (such as not going through Maintenance alone) can prevent needless accidents.
 
-  Le personnel est conseillé de sécuriser un endroit isolé pour passer la menace virale. Stockez autant de nourriture et d'eau que possible.
+  Personnel are advised to secure a secluded location to ride out the viral threat in. Stock as much food and water as is possible.
 
 </Document>

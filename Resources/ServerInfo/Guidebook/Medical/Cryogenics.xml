@@ -12,20 +12,20 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Cryogénie
-La cryogénie peut sembler intimidante à comprendre, mais avec ce rapide tour d'horizon du schéma, vous apprendrez comment la faire fonctionner ! Passons en revue le rôle de chaque élément :
+# Cryogenics
+Cryogenics can be a bit daunting to understand, but hopefully, quick run through of this diagram, you'll learn how to work it! So, let's go over what each part does:
 
-- Entrée d'air : L'air entre ici via le réseau de distribution ou une bouteille d'air, offrant quelque chose à respirer aux occupants et quelque chose à refroidir au congélateur.
-- Pompe à gaz : Limite la pression du réseau pour éviter que les occupants du tube ne soient écrasés.
-- Congélateur : Refroidit l'air et, par extension, les patients dans le tube, afin que la Cryoxadone puisse s'activer.
-- Filtres à gaz : Élimine les gaz résiduels (dioxyde de carbone et protoxyde d'azote) de la boucle.
-- Sortie d'air : Les gaz résiduels s'échappent ici, soit dans un réservoir de stockage, soit dans le réseau de déchets.
+- Air in: Air comes in here through the distro or an air tank, giving those inside something to breathe, and the freezer something to chill.
+- Gas pump: Limits the network pressure, so those in the tube aren't crushed.
+- Freezer: Chills the air, and by extension, patients in the tube, so Cryoxadone can activate.
+- Gas filters: Removes waste gas (Carbon Dioxide and Nitrous Oxide) from the loop.
+- Air out: Waste gasses go here, either into a storage tank, or into the waste network.
 <Box>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="0"/>
-<GuideEntityEmbed Entity="CryoPod" Caption="caisson cryogénique" Rotation="0"/>
+<GuideEntityEmbed Entity="CryoPod" Caption="cryo pod" Rotation="0"/>
 <GuideEntityEmbed Entity="GasThermoMachineFreezerEnabled" Rotation="0"/>
 </Box>
 <Box>
@@ -37,26 +37,26 @@ La cryogénie peut sembler intimidante à comprendre, mais avec ce rapide tour d
 <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="270"/>
 </Box>
 <Box>
-<GuideEntityEmbed Entity="GasPort" Caption="sortie d'air" Rotation="90"/>
+<GuideEntityEmbed Entity="GasPort" Caption="air out" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="180"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="270"/>
-<GuideEntityEmbed Entity="GasPort" Caption="entrée d'air" Rotation="90"/>
+<GuideEntityEmbed Entity="GasPort" Caption="air in" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPressurePump" Rotation="90"/>
 <GuideEntityEmbed Entity="GasPipeBend" Rotation="270"/>
 </Box>
 
-Tous les réseaux ne ressembleront pas à celui-ci, mais cela devrait suffire à vous donner une idée générale de son fonctionnement.
+Not every network will look like this, but hopefully, it's enough to give you the basic gist of how it's functioning.
 
-Un point important à noter : les vêtements d'hiver (et les combinaisons rigides) rendront le traitement cryogénique moins efficace, voire totalement inefficace. Assurez-vous de retirer les vêtements de protection contre le froid avant de placer des personnes dans le caisson.
+An important thing to note, winter clothing (and hardsuits) will make cryogenic treatment less, or completely ineffective. Be sure to remove cold preventative clothing before placing people in the pod.
 
-## Utilisation du caisson
-  Une fois la configuration effectuée, vous aurez besoin de médicaments cryogéniques (tous listés ci-dessous). Ils fournissent chacun des soins lorsqu'un patient est refroidi, et doivent être chargés directement dans le caisson avec un bécher. Notez que les patients ne commenceront à guérir qu'une fois refroidis à la température appropriée ; il peut être utile d'attendre un peu avant de placer un bécher à l'intérieur.
+## Using the Pod
+  Once things have been set up, you're going to require cryogenic medications (all listed below). They each provide healing when a patient is chilled, and should be loaded into the pod directly with a beaker. Do note, patients won't begin to heal until they've chilled to the appropriate temperature, it may be worthwhile to wait a bit before placing a beaker inside.
 
-## Informations supplémentaires :
+## Additional Information:
 
-  La pression standard pour une pompe à gaz est de 100,325 kPa, parfois augmentée pour des résultats plus rapides. La majorité des médicaments cryogéniques fonctionnent en dessous de 213 K (150 K pour l'Opporozidone), mais la pratique standard consiste à régler le congélateur à 100 K pour un refroidissement plus rapide.
+  The standard pressure for a gas pump is 100.325 kpa, and sometimes increased for faster results. A majority of cryogenics medicines work at under 213K (150K for Opporozidone), but it is standard practice to set the freezer to 100K for faster freezing.
 
-  Les caissons cryogéniques séparent chaque réactif du bécher placé dans le caisson et injectent une petite quantité régulière de chacun au patient. Cela permet d'administrer les médicaments deux fois plus efficacement qu'avec une injection ou une administration orale.
+  Cryo pods separate out each reagent from the beaker in the pod, injecting a small, steady amount of each into the patient.  This allows for medicine to be administered twice as efficiently than with injection or oral administration.
 
 <GuideReagentEmbed Reagent="Aloxadone"/>
 <GuideReagentEmbed Reagent="Cryoxadone"/>

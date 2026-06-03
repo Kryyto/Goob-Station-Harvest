@@ -59,8 +59,8 @@
 - type: entity
   parent: [Clothing, ContentsExplosionResistanceBase]
   id: ClothingBackpack
-  name: sac à dos
-  description: On le porte dans le dos et on y range des objets.
+  name: backpack
+  description: You wear this on your back and put items into it.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/backpack.rsi
@@ -118,7 +118,7 @@
   parent: ClothingBackpack
   id: ClothingBackpackClown
   name: giggles von honkerton
-  description: Un sac à dos fabriqué par Honk! Co.
+  description: It's a backpack made by Honk! Co.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/clown.rsi
@@ -129,8 +129,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackIan
-  name: sac à dos d'Ian
-  description: Il le porte parfois.
+  name: Ian's backpack
+  description: Sometimes he wears it.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ian.rsi
@@ -141,8 +141,8 @@
 - type: entity
   parent: [ClothingBackpack, BaseSecurityContraband]
   id: ClothingBackpackSecurity
-  name: sac à dos de sécurité
-  description: Un sac à dos particulièrement robuste.
+  name: security backpack
+  description: It's a very robust backpack.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/security.rsi
@@ -150,8 +150,8 @@
 - type: entity
   parent: [ClothingBackpack, BaseSecurityContraband]
   id: ClothingBackpackBrigmedic
-  name: sac à dos de médecin de brig
-  description: Un sac à dos très stérile.
+  name: brigmedic backpack
+  description: It's a very sterile backpack.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/brigmedic.rsi
@@ -159,8 +159,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackEngineering
-  name: sac à dos d'ingénierie
-  description: Un sac à dos solide pour le labeur quotidien de la vie en station.
+  name: engineering backpack
+  description: It's a tough backpack for the daily grind of station life.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/engineering.rsi
@@ -168,8 +168,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackAtmospherics
-  name: sac à dos d'atmosphérique
-  description: Un sac à dos en fibres ignifuges. Il sent le plasma.
+  name: atmospherics backpack
+  description: It's a backpack made of fire resistant fibers. Smells like plasma.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/atmospherics.rsi
@@ -177,8 +177,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackMedical
-  name: sac à dos médical
-  description: Un sac à dos spécialement conçu pour une utilisation en milieu stérile.
+  name: medical backpack
+  description: It's a backpack especially designed for use in a sterile environment.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/medical.rsi
@@ -186,8 +186,8 @@
 - type: entity
   parent: [ClothingBackpack, BaseCommandContraband]
   id: ClothingBackpackCaptain
-  name: sac à dos du capitaine
-  description: Un sac à dos spécial fabriqué exclusivement pour les officiers de Nanotrasen.
+  name: captain's backpack
+  description: It's a special backpack made exclusively for Nanotrasen officers.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/captain.rsi
@@ -195,8 +195,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackMime
-  name: sac à dos de mime
-  description: Un sac à dos silencieux pour ces travailleurs silencieux. Silence Co.
+  name: mime backpack
+  description: A silent backpack made for those silent workers. Silence Co.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/mime.rsi
@@ -204,8 +204,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackChemistry
-  name: sac à dos de chimie
-  description: Un sac à dos spécialement conçu pour repousser les taches et les liquides dangereux.
+  name: chemistry backpack
+  description: A backpack specially designed to repel stains and hazardous liquids.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/chemistry.rsi
@@ -213,8 +213,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackHydroponics
-  name: sac à dos d'hydroponique
-  description: Un sac à dos en fibres naturelles.
+  name: hydroponics backpack
+  description: It's a backpack made of all-natural fibers.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/hydroponics.rsi
@@ -222,8 +222,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackScience
-  name: sac à dos de science
-  description: Un sac à dos spécialement conçu pour repousser les taches et les liquides dangereux.
+  name: science backpack
+  description: A backpack specially designed to repel stains and hazardous liquids.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/science.rsi
@@ -231,8 +231,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackVirology
-  name: sac à dos de virologie
-  description: Un sac à dos en fibres hypoallergéniques, conçu pour limiter la propagation des maladies. Il sent le singe.
+  name: virology backpack
+  description: A backpack made of hypo-allergenic fibers. It's designed to help prevent the spread of disease. Smells like monkey.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/virology.rsi
@@ -240,8 +240,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackGenetics
-  name: sac à dos de génétique
-  description: Un sac à dos conçu pour être ultra-résistant, au cas où quelqu'un se transformerait en Hulk.
+  name: genetics backpack
+  description: A backpack designed to be super tough, just in case someone hulks out on you.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/genetics.rsi
@@ -249,8 +249,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackCargo
-  name: sac à dos de cargo
-  description: Un sac à dos robuste pour voler le butin du cargo.
+  name: cargo backpack
+  description: A robust backpack for stealing cargo's loot.
   components:
     - type: Sprite
       sprite: _Goobstation/Clothing/Back/Backpacks/cargo.rsi
@@ -258,8 +258,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackSalvage
-  name: sac de récupération
-  description: Un sac à dos robuste pour planquer votre butin.
+  name: salvage bag
+  description: A robust backpack for stashing your loot.
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/salvage.rsi
@@ -267,8 +267,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackMerc
-  name: sac de mercenaire
-  description: Un sac à dos qui a traîné dans de nombreux endroits dangereux, un fidèle sac de combat.
+  name: mercenary bag
+  description: A backpack that has been in many dangerous places, a reliable combat backpack.
   components:
     - type: Sprite
       sprite: Clothing/Back/Backpacks/merc.rsi
@@ -277,8 +277,8 @@
 - type: entity
   parent: [ ClothingBackpack, ContentsExplosionResistanceBase, BaseCentcommContraband ] # Goobstation
   id: ClothingBackpackERTLeader
-  name: sac à dos de chef ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par le commandant d'une équipe de réponse d'urgence.
+  name: ERT leader backpack
+  description: A spacious backpack with lots of pockets, worn by the Commander of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertleader.rsi
@@ -291,8 +291,8 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTSecurity
-  name: sac à dos de sécurité ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par les agents de sécurité d'une équipe de réponse d'urgence.
+  name: ERT security backpack
+  description: A spacious backpack with lots of pockets, worn by Security Officers of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertsec.rsi
@@ -300,8 +300,8 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTMedical
-  name: sac à dos médical ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par les officiers médicaux d'une équipe de réponse d'urgence.
+  name: ERT medical backpack
+  description: A spacious backpack with lots of pockets, worn by Medical Officers of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertmed.rsi
@@ -309,8 +309,8 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTEngineer
-  name: sac à dos d'ingénieur ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par les ingénieurs d'une équipe de réponse d'urgence.
+  name: ERT engineer backpack
+  description: A spacious backpack with lots of pockets, worn by Engineers of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/erteng.rsi
@@ -318,8 +318,8 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTJanitor
-  name: sac à dos de janitor ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par les agents d'entretien d'une équipe de réponse d'urgence.
+  name: ERT janitor backpack
+  description: A spacious backpack with lots of pockets, worn by Janitors of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertjanitor.rsi
@@ -327,8 +327,8 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTClown
-  name: sac à dos de clown ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par les clowns d'une équipe de réponse d'urgence.
+  name: ERT clown backpack
+  description: A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertclown.rsi
@@ -336,8 +336,8 @@
 - type: entity
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTChaplain
-  name: sac à dos d'aumônier ERT
-  description: Un sac à dos spacieux avec de nombreuses poches, porté par les aumôniers d'une équipe de réponse d'urgence.
+  name: ERT chaplain backpack
+  description: A spacious backpack with lots of pockets, worn by Chaplains of an Emergency Response Team.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/ertchaplain.rsi
@@ -345,8 +345,8 @@
 - type: entity
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackDeathSquad
-  name: sac à dos du commando de la mort
-  description: Contient l'équipement des agents les plus redoutés de CentComm.
+  name: death squad backpack
+  description: Holds the kit of CentComm's most feared agents.
   components:
     - type: Storage
       grid:
@@ -360,7 +360,7 @@
 - type: entity
   parent: [ClothingBackpack, BaseSyndicateContraband]
   id: ClothingBackpackSyndicate
-  name: sac à dos du syndicat
+  name: syndicate backpack
   description:
   components:
   - type: Sprite
@@ -378,8 +378,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackHolding
-  name: sac à dos bluespace
-  description: Un sac à dos qui s'ouvre sur une poche localisée de bluespace.
+  name: bag of holding
+  description: A backpack that opens into a localized pocket of bluespace.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/holding.rsi
@@ -412,7 +412,7 @@
   id: ClothingBackpackCluwne
   name: jiggles von jonkerton
   suffix: Unremoveable
-  description: Un sac à dos fabriqué par Jonk! Co.
+  description: It's a backpack made by Jonk! Co.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/cluwne.rsi
@@ -422,9 +422,9 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackElectropack
-  name: électrosac
+  name: electropack
   suffix: SelfUnremovable
-  description: Envoie des décharges sur signal. Utilisé pour maintenir sous contrôle un criminel particulièrement dangereux.
+  description: Shocks on the signal. It is used to keep a particularly dangerous criminal under control.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/electropack.rsi
@@ -446,8 +446,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackDebug
-  name: sacochette
-  description: C'est quoi ce bordel ?
+  name: wackpack
+  description: What the fuck is this?
   suffix: Debug
   components:
   - type: Storage
@@ -464,8 +464,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackDebug2
-  name: grande sacochette
-  description: C'est quoi ce bordel ?
+  name: big wackpack
+  description: What the fuck is this?
   suffix: Debug
   components:
   - type: Storage
@@ -477,8 +477,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackDebug3
-  name: sacochette arc-en-ciel
-  description: C'est quoi ce bordel ?
+  name: gay wackpack
+  description: What the fuck is this?
   suffix: Debug
   components:
   - type: Storage
@@ -500,8 +500,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackDebug4
-  name: sacochette décalée
-  description: C'est quoi ce bordel ?
+  name: offset wackpack
+  description: What the fuck is this?
   suffix: Debug
   components:
   - type: Storage

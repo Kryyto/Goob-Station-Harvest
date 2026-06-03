@@ -28,8 +28,8 @@
 
 - type: entity
   id: ClockworkWindow
-  name: vitre mécanique
-  description: Ne salissez pas le laiton là-dessous.
+  name: clockwork window
+  description: Don't smudge up the brass down there.
   parent: Window
   components:
   - type: Sprite
@@ -86,8 +86,8 @@
 - type: entity
   id: WindowClockworkDirectional
   parent: WindowDirectional
-  name: vitre mécanique directionelle
-  description: Ne salissez pas le laiton là-dessous.
+  name: directional clockwork window
+  description: Don't smudge up the brass down there.
   placement:
     mode: SnapgridCenter
     snap:

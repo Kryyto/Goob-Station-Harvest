@@ -1,1 +1,0 @@
-consume-on-salt-line-component-not-enough-salt-message = Pas assez de sel pour créer une ligne de sel !

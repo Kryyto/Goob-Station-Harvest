@@ -13,7 +13,7 @@
 
 - type: entity
   id: MiningWindow
-  name: vitre de station minière
+  name: mining window
   parent: WindowRCDResistant
   components:
   - type: Sprite

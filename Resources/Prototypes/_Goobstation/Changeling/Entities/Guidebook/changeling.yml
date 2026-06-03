@@ -8,8 +8,8 @@
 
 - type: entity
   id: GuidebookChangelingFluff
-  name: guide changeling
-  description: Vous ne devriez normalement pas voir ça.
+  name: guidebook changeling
+  description: you shouldn't be seeing this normally.
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite

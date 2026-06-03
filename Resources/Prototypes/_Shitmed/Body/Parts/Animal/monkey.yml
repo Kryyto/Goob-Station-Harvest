@@ -25,7 +25,7 @@
 - type: entity
   parent: [PartMonkey, BaseChest]
   id: ChestMonkey
-  name: "torse de singe"
+  name: "monkey chest"
   components:
   - type: Sprite
     state: "chest_m"
@@ -40,7 +40,7 @@
 - type: entity
   parent: [PartMonkey, BaseGroin]
   id: GroinMonkey
-  name: "aine de singe"
+  name: "monkey groin"
   components:
   - type: Sprite
     state: "groin_m"
@@ -55,7 +55,7 @@
 - type: entity
   parent: [PartMonkey, BaseHead]
   id: HeadMonkey
-  name: "tête de singe"
+  name: "monkey head"
   components:
   - type: Sprite
     state: "head_m"
@@ -70,7 +70,7 @@
 - type: entity
   parent: [PartMonkey, BaseLeftArm]
   id: LeftArmMonkey
-  name: "bras gauche singe"
+  name: "left monkey arm"
   components:
   - type: Sprite
     state: "l_arm"
@@ -78,7 +78,7 @@
 - type: entity
   parent: [PartMonkey, BaseRightArm]
   id: RightArmMonkey
-  name: "bras droit singe"
+  name: "right monkey arm"
   components:
   - type: Sprite
     state: "r_arm"
@@ -86,7 +86,7 @@
 - type: entity
   parent: [PartMonkey, BaseLeftHand]
   id: LeftHandMonkey
-  name: "main gauche singe"
+  name: "left monkey hand"
   components:
   - type: Sprite
     state: "l_hand"
@@ -94,7 +94,7 @@
 - type: entity
   parent: [PartMonkey, BaseRightHand]
   id: RightHandMonkey
-  name: "main droite singe"
+  name: "right monkey hand"
   components:
   - type: Sprite
     state: "r_hand"
@@ -102,7 +102,7 @@
 - type: entity
   parent: [PartMonkey, BaseLeftLeg]
   id: LeftLegMonkey
-  name: "jambe gauche singe"
+  name: "left monkey leg"
   components:
   - type: Sprite
     state: "l_leg"
@@ -110,7 +110,7 @@
 - type: entity
   parent: [PartMonkey, BaseRightLeg]
   id: RightLegMonkey
-  name: "jambe droite singe"
+  name: "right monkey leg"
   components:
   - type: Sprite
     state: "r_leg"
@@ -118,7 +118,7 @@
 - type: entity
   parent: [PartMonkey, BaseLeftFoot]
   id: LeftFootMonkey
-  name: "pied gauche singe"
+  name: "left monkey foot"
   components:
   - type: Sprite
     state: "l_foot"
@@ -126,7 +126,7 @@
 - type: entity
   parent: [PartMonkey, BaseRightFoot]
   id: RightFootMonkey
-  name: "pied droit singe"
+  name: "right monkey foot"
   components:
   - type: Sprite
     state: "r_foot"

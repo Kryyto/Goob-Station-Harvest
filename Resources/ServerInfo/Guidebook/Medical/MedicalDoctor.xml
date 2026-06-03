@@ -8,43 +8,43 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Médecin
-Il est temps de soigner. Ou du moins, d'essayer. Les médecins sont les principaux soignants de tous les bobos et douleurs que subissent les membres de l'équipage sur la station, qu'il s'agisse d'une petite égratignure ou d'une peau brûlée.
+# Medical Doctor
+It's time to heal. Or at least, try to heal, anyway. Medical Doctors are the primary caretakers of every boo boo and ouchie crewmembers get on the station, be it a small scratch, or boiled skin.
 
-Ce guide vous donnera un aperçu de base des options de traitement disponibles, du triage et des autres moyens de soins.
+This guide will give you a basic outline of the treatment options you have available, triage, and other avenues of care.
 
-## Les bases
-Il existe deux façons de déterminer ce qui affecte quelqu'un : effectuer un scan (avec un analyseur de santé ou un PDA médical), ou l'examiner avec un clic maj et en cliquant sur le symbole du cœur.
+## The Basics
+There are two ways to tell what's ailing someone: Taking a scan (with a health analyzer or a medical PDA), or examining them, with a shift-click, and clicking the heart symbol.
 
-Utiliser un analyseur de santé est souvent plus puissant que l'examen, car certaines choses (comme le poison ou les radiations) n'apparaissent pas lors d'un examen. Cependant, l'utilisation d'un analyseur présente des inconvénients, car il fait du bruit et consomme de la batterie.
+Using a health analyzer is often more powerful than examination, as some things (such as poison, or radiation) don't show up on examination. However, using an analyzer has its drawbacks, as it makes noise and uses up a battery.
 <Box>
-<GuideEntityEmbed Entity="SignExamroom" Caption="examiner le patient"/>
+<GuideEntityEmbed Entity="SignExamroom" Caption="examine patient"/>
 <GuideEntityEmbed Entity="MedicalPDA"/>
-<GuideEntityEmbed Entity="MedicalInternPDA" Caption="PDA interne"/>
+<GuideEntityEmbed Entity="MedicalInternPDA" Caption="intern PDA"/>
 <GuideEntityEmbed Entity="HandheldHealthAnalyzer"/>
 </Box>
 
-## Médicaments et options de traitement
-Avant d'aller plus loin, il est probablement utile de passer en revue les types de dommages et ce qui les soigne. Le wiki dispose d'informations plus détaillées, mais voici les plus couramment utilisés.
+## Medication and Treatment Options
+Before we go any further, it's probably a good idea to go over damage types, and what will heal them. The wiki has more extensive info available, but these are commonly used.
 
-Note importante : la plupart des médicaments ont un seuil de surdosage qui nuira à votre patient. Les produits chimiques prennent également du temps à être métabolisés sous forme de pilule ; si vous souhaitez une action rapide, utilisez une seringue.
+An important note: Most medication has an overdose level, which will cause harm to your patient. Chemicals also take time to metabolise in pill form, if you want things to act quickly, use a syringe.
 
-- Dommages contondants : Bicaridine ou paquets d'ecchymoses
-- Dommages par brûlure : Dermaline ou onguent
-- Toxines (poison) : Dylovene
-- Toxines (radiation) : Hyronalin ou Arithrazine
-- Perte d'air : Dexaline ou Inaprovaline
-- Perte de sang : Dexaline (Examinez le patient ; s'il est pâle, il a encore besoin de sang ou de fer.)
-- Saignement : Acide tranexamique et gaze (Les saignements peuvent également être cautérisés avec des dommages thermiques.)
+- Brute Damage: Bicaridine or Bruise Packs
+- Burn Damage: Dermaline or Ointment
+- Toxin (Poison): Dylovene
+- Toxin (Radiation) Hyronalin or Arithrazine
+- Airloss: Dexaline or Inaprovaline
+- Bloodloss: Dexaline (Examine the patient, if pale, they still need blood or iron.)
+- Bleeding: Tranexamic acid and Gauze (Bleeding can also be cauterized with burn damage.)
 
-De nombreuses stations sont équipées de trousses en réserve, et tous les médecins disposent de quelques équipements dans leur ceinture de départ.
+Many stations are stocked with kits in storage, and all medics have some equipment in their starting belt.
 
 <Box>
 <GuideEntityEmbed Entity="MedkitFilled"/>
-<GuideEntityEmbed Entity="MedkitBruteFilled" Caption="trousse contondante"/>
-<GuideEntityEmbed Entity="MedkitRadiationFilled" Caption="trousse radiation"/>
-<GuideEntityEmbed Entity="MedkitBurnFilled" Caption="trousse brûlure"/>
-<GuideEntityEmbed Entity="MedkitToxinFilled" Caption="trousse toxines"/>
+<GuideEntityEmbed Entity="MedkitBruteFilled" Caption="brute kit"/>
+<GuideEntityEmbed Entity="MedkitRadiationFilled" Caption="radiation kit"/>
+<GuideEntityEmbed Entity="MedkitBurnFilled" Caption="burn kit"/>
+<GuideEntityEmbed Entity="MedkitToxinFilled" Caption="toxin kit"/>
 </Box>
 
 <Box>
@@ -55,27 +55,27 @@ De nombreuses stations sont équipées de trousses en réserve, et tous les méd
 <GuideEntityEmbed Entity="Gauze"/>
 </Box>
 
-## Traitement de base et triage
-Examinez votre patient et notez les détails importants : est-il en vie ? Saigne-t-il ? Quel type de dommage présente-t-il ?
+## Basic Treatment and Triage
+Examine your patient, and note down the important details: Are they alive? Bleeding? What type of damage?
 
-S'il est en vie, soignez-le du mieux que vous pouvez. Les patients sont en état critique à 100 points de dommage, et morts à 200. Gardez cela à l'esprit lors du choix du traitement. Les stylos d'urgence et l'épinéphrine sont souvent utilisés pour stabiliser les patients.
+If alive, treat them as best as you can. Patients are in critical condition at 100 damage, and dead at 200. Keep this in mind when choosing how to treat them. Emergency Pens and Epinephrine are often used to keep patients stable.
 
-Si possible, attachez-les à un lit médical ; si vous avez besoin de temps pour les traiter, attachez-les plutôt à un lit de stase. Gardez simplement à l'esprit que le métabolisme (et par extension les produits chimiques de soin) est ralenti à l'extrême en stase ; ils devront en être retirés pour que les médicaments soient efficaces. (En revanche, les poches de sang, les onguents et les paquets d'ecchymoses fonctionnent normalement.)
+If possible, buckle them to a medical bed, if you need time to treat them, strap them to a stasis bed instead. Just keep in mind that metabolism (and by extension, healing chemicals) are slowed to a crawl when on stasis, they'll need to be taken off of it for the medicine to be effective. (But Blood Packs, Ointment, and Brute packs all work as normal.)
 <Box>
 <GuideEntityEmbed Entity="MedicalBed"/>
 <GuideEntityEmbed Entity="StasisBed"/>
 </Box>
-## Évaluation des cadavres
-On ne peut pas tous les sauver ; parfois, la mort survient. Selon l'[color=#a4885c]état[/color] du corps, plusieurs choses peuvent être envisagées.
+## Assessing Corpses
+You can't save them all, sometimes, death happens. Depending on the [color=#a4885c]status[/color] of the body, there are a few things that can be done.
 
-1. Une âme y est-elle encore attachée ? Vous pouvez le savoir si, lors de l'examen, la phrase suivante s'affiche : « Son âme s'est envolée. » Si cette phrase n'apparaît pas, il y a encore un joueur qui peut être réanimé.
+1. Do they have a soul attached? You can tell if, when examining, the following phrase is displayed: "Their soul has departed." If this isn't displayed, there is still a player who can be revived.
 
-2. Le corps est-il en décomposition ? Si c'est le cas, malheureusement, il devra être cloné. Un corps en décomposition ne peut pas être ramené à la vie avec un défibrillateur. (Voir Clonage)
+2. Is the body rotting? If it is, sadly, they'll have to be cloned. A rotting body can't be brought back with a defibrillator. (See Cloning)
 
-3. S'il possède une âme et n'est pas en décomposition, il est possible de le réanimer. Pensez à stocker le corps dans un tiroir de morgue si vous n'avez pas suffisamment de temps pour réanimer quelqu'un, car le corps se décomposera si vous attendez trop longtemps.
+3. If they have a soul, and aren't rotten, it's possible to revive them. Consider storing the body in a morgue tray if you don't have enough time to revive someone, as the body will rot if you wait too long.
 
-## Réanimation
-Sans compter la perte d'air, les défibrillateurs peuvent être utilisés pour réanimer des patients présentant moins de 200 points de dommage au total. Les produits chimiques ne se métabolisent pas chez les morts, mais les paquets d'ecchymoses et les onguents peuvent tout de même les soigner. Utilisez-les pour abaisser suffisamment leurs dommages pour permettre la réanimation.
+## Revival
+Not counting airloss, Defibrillator's can be used to revive patients under 200 total damage. Chemicals don't metabolise in the dead, but brute packs and ointment can still patch them up. Use them to bring their numbers down enough for revival.
 
 <Box>
 <GuideEntityEmbed Entity="Brutepack"/>

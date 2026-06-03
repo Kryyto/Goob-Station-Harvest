@@ -145,7 +145,7 @@
 
 - type: entity
   name: syndicate nuke pinpointer
-  description: Produit spécifiquement pour les missions d'opérateurs nucléaires, obtenez cette bombe nucléaire !
+  description: Produced specifically for nuclear operative missions, get that nuclear bomb!
   id: PinpointerSyndicateNuclearFission
   parent: [ PinpointerBase, BaseSyndicateContraband ]
   components:

@@ -171,9 +171,9 @@
 # https://academo.org/demos/colour-temperature-relationship/
 - type: entity
   parent: BaseLightbulb
-  name: ampoule à incandescence
+  name: incandescent light bulb
   id: LightBulb
-  description: Une ampoule.
+  description: A light bulb.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -188,9 +188,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: ampoule LED
+  name: led light bulb
   id: LedLightBulb
-  description: Une ampoule basse consommation.
+  description: A power efficient light bulb.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -207,9 +207,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: ampoule tamisée
+  name: dim light bulb
   id: DimLightBulb
-  description: Une ampoule tamisée pour peupler l'obscurité de la maintenance.
+  description: A dim light bulb for populating the darkness of maintenance.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -224,9 +224,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: ampoule chaude
+  name: warm light bulb
   id: WarmLightBulb
-  description: Une ampoule chaude pour une atmosphère plus cosy.
+  description: A warm light bulb for a more cozy atmosphere.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -241,9 +241,9 @@
 
 - type: entity
   parent: LightBulb
-  name: vieille ampoule à incandescence
+  name: old incandescent light bulb
   id: LightBulbOld
-  description: Une ampoule vieillissante.
+  description: An aging light bulb.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -255,9 +255,9 @@
 - type: entity
   suffix: Broken
   parent: BaseLightbulb
-  name: ampoule à incandescence
+  name: incandescent light bulb
   id: LightBulbBroken
-  description: Une ampoule.
+  description: A light bulb.
   components:
   - type: LightBulb
     startingState: Broken
@@ -265,9 +265,9 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: ampoule de service
+  name: service light bulb
   id: ServiceLightBulb
-  description: Une ampoule verte basse luminosité utilisée dans les lumières de service du personnel d'entretien.
+  description: A low-brightness green lightbulb used in janitorial service lights.
   components:
   - type: LightBulb
     bulb: Bulb
@@ -282,9 +282,9 @@
 
 - type: entity
   parent: BaseLightTube
-  name: tube fluorescent
+  name: fluorescent light tube
   id: LightTube
-  description: Un luminaire.
+  description: A light fixture.
   components:
   - type: LightBulb
     color: "#FFE4CE" # 5000K color temp
@@ -295,9 +295,9 @@
 
 - type: entity
   parent: LightTube
-  name: vieux tube fluorescent
+  name: old fluorescent light tube
   id: LightTubeOld
-  description: Un luminaire vieillissant.
+  description: An aging light fixture.
   components:
   - type: LightBulb
     color: "#FFDABB" # old fluorescents are yellower-4500K temp
@@ -309,17 +309,17 @@
 - type: entity
   suffix: Broken
   parent: BaseLightTube
-  name: tube fluorescent
+  name: fluorescent light tube
   id: LightTubeBroken
-  description: Un luminaire.
+  description: A light fixture.
   components:
   - type: LightBulb
     startingState: Broken
 
 - type: entity
   parent: BaseLightTube
-  name: tube LED
-  description: Une ampoule haute puissance à haute énergie.
+  name: led light tube
+  description: A high power high energy bulb.
   id: LedLightTube
   components:
   - type: LightBulb
@@ -332,8 +332,8 @@
 
 - type: entity
   parent: BaseLightTube
-  name: tube d'éclairage extérieur
-  description: Une ampoule haute puissance à haute énergie pour les profondeurs de l'espace. Peut contenir du mercure.
+  name: exterior light tube
+  description: A high power high energy bulb for the depths of space. May contain mercury.
   id: ExteriorLightTube
   components:
   - type: LightBulb
@@ -346,8 +346,8 @@
 
 - type: entity
   parent: BaseLightTube
-  name: tube au sodium
-  description: Une ampoule haute puissance à haute énergie pour les profondeurs de l'espace. Salée.
+  name: sodium light tube
+  description: A high power high energy bulb for the depths of space. Salty.
   id: SodiumLightTube
   components:
   - type: LightBulb
@@ -360,8 +360,8 @@
 
 - type: entity
   parent: BaseLightTube
-  name: tube à cristal
-  description: Une ampoule haute puissance à haute énergie contenant un petit cristal coloré à l'intérieur.
+  name: crystal light tube
+  description: A high power high energy bulb which has a small colored crystal inside.
   id: BaseLightTubeCrystal
   abstract: true
   components:
@@ -374,7 +374,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal cyan
+  name: cyan crystal light tube
   id: LightTubeCrystalCyan
   components:
   - type: LightBulb
@@ -389,7 +389,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal bleu
+  name: blue crystal light tube
   id: LightTubeCrystalBlue
   components:
   - type: LightBulb
@@ -404,7 +404,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal jaune
+  name: yellow crystal light tube
   id: LightTubeCrystalYellow
   components:
   - type: LightBulb
@@ -419,7 +419,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal rose
+  name: pink crystal light tube
   id: LightTubeCrystalPink
   components:
   - type: LightBulb
@@ -434,7 +434,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal orange
+  name: orange crystal light tube
   id: LightTubeCrystalOrange
   components:
   - type: LightBulb
@@ -449,8 +449,8 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal noir
-  description: Une ampoule haute puissance à haute énergie contenant un petit cristal coloré à l'intérieur. Elle n'est pas très lumineuse.
+  name: black crystal light tube
+  description: A high power high energy bulb which has a small colored crystal inside. It isn't very bright.
   id: LightTubeCrystalBlack
   components:
   - type: LightBulb
@@ -467,7 +467,7 @@
 
 - type: entity
   parent: BaseLightTubeCrystal
-  name: tube à cristal rouge
+  name: red crystal light tube
   id: LightTubeCrystalRed
   components:
   - type: LightBulb
@@ -482,7 +482,7 @@
 
 - type: entity
   parent: LightTubeCrystalCyan
-  name: tube à cristal vert
+  name: green crystal light tube
   id: LightTubeCrystalGreen
   components:
   - type: LightBulb
@@ -498,8 +498,8 @@
 
 - type: entity
   parent: BaseLightbulb
-  name: ampoule à cristal
-  description: Une ampoule haute puissance à haute énergie contenant un petit cristal coloré à l'intérieur.
+  name: crystal light bulb
+  description: A high power high energy bulb which has a small colored crystal inside.
   id: BaseLightbulbCrystal
   abstract: true
   components:
@@ -514,7 +514,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal cyan
+  name: cyan crystal light bulb
   id: LightBulbCrystalCyan
   components:
   - type: LightBulb
@@ -529,7 +529,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal bleu
+  name: blue crystal light bulb
   id: LightBulbCrystalBlue
   components:
   - type: LightBulb
@@ -544,7 +544,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal jaune
+  name: yellow crystal light bulb
   id: LightBulbCrystalYellow
   components:
   - type: LightBulb
@@ -559,7 +559,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal rose
+  name: pink crystal light bulb
   id: LightBulbCrystalPink
   components:
   - type: LightBulb
@@ -574,7 +574,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal orange
+  name: orange crystal light bulb
   id: LightBulbCrystalOrange
   components:
   - type: LightBulb
@@ -589,8 +589,8 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal noir
-  description: Une ampoule haute puissance à haute énergie contenant un petit cristal coloré à l'intérieur. Elle n'est pas très lumineuse.
+  name: black crystal light bulb
+  description: A high power high energy bulb which has a small colored crystal inside. It isn't very bright.
   id: LightBulbCrystalBlack
   components:
   - type: LightBulb
@@ -607,7 +607,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal rouge
+  name: red crystal light bulb
   id: LightBulbCrystalRed
   components:
   - type: LightBulb
@@ -622,7 +622,7 @@
 
 - type: entity
   parent: BaseLightbulbCrystal
-  name: ampoule à cristal vert
+  name: green crystal light bulb
   id: LightBulbCrystalGreen
   components:
   - type: LightBulb

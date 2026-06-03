@@ -6,8 +6,8 @@
 - type: entity
   id: BaseBarrel
   parent: BaseStructureDynamic
-  name: baril noir
-  description: Faites un tonneau roulé !
+  name: black barrel
+  description: Do a barrel roll!
   components:
   - type: Anchorable
   - type: Sprite
@@ -45,8 +45,8 @@
 - type: entity
   id: BarrelFire
   parent: BaseBarrel
-  name: feu de baril
-  description: Parfaitement chaud pour les parfaitement sans emploi !
+  name: barrel fire
+  description: Perfectly warm for the perfectly jobless!
   components:
   - type: Sprite
     noRot: true

@@ -6,45 +6,45 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Vanne pneumatique
-  La vanne pneumatique est une vanne bidirectionnelle contrôlée par une entrée de pression.
+  # Pneumatic Valve
+  The pneumatic valve is a bidirectional valve controlled via a pressure input.
   <Box>
     <GuideEntityEmbed Entity="PressureControlledValve"/>
   </Box>
 
-  La vanne pneumatique dispose de 3 connexions : entrée, sortie et contrôle.
-  Le côté « entrée » correspond à la connexion entrée/sortie ayant la pression la plus élevée, et peut changer de côté, rendant la vanne bidirectionnelle.
+  The pneumatic valve has 3 connections: input, output, and control.
+  The "input" side will be the input/output connection with the highest pressure, and can switch sides, making the valve bidirectional.
 
   <Box>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Entrée/Sortie"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Input/Output"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Contrôle" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Control" Rotation="90"/>
     <GuideEntityEmbed Entity="PressureControlledValve" Caption=""/>
     <GuideEntityEmbed Entity="FloorTileItemSteel" Caption=""/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Entrée/Sortie"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Input/Output"/>
   </Box>
 
-  La vanne [color=green]s'ouvre[/color] lorsque la pression du côté sortie est inférieure à la pression du côté contrôle de [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/> kPa[/color].
+  The valve will [color=green]open[/color] when the pressure on the output side is lower than the pressure on the control side by [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/] kPa[/color].
 
-  La vanne [color=red]se ferme[/color] lorsque la pression du côté sortie atteint la pression du côté contrôle à [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/> kPa[/color] près.
+  The valve will [color=red]close[/color] when the pressure of the output side reaches the pressure of the control side within [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/] kPa[/color].
 
-  Par exemple, une vanne pneumatique avec une pression de contrôle de 500 kPa s'ouvrira lorsque la pression de sortie est de 500 kPa - [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/> kPa[/color] ou moins, et se fermera lorsque la pression de sortie est de 500 kPa - [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/> kPa[/color] ou plus.
+  For example, a pneumatic valve with a control pressure of 500 kPa will open when the output pressure is 500 kPa - [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/] kPa[/color] or lower, and it will close when the output pressure is 500 kPa - [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/] kPa[/color] or higher.
 
-  La pression de contrôle de la vanne est déterminée par une connexion à un réseau de tuyaux, et peut donc être ajustée à la volée par une [textlink="pompe" link="Pumps"] ou une autre source de contrôle de pression.
+  The valve's control pressure is determined by a pipenet connection, and as such can be adjusted on the fly by a [textlink="pump" link="Pumps"] or another source of pressure control.
 
-  ## Différences avec les pompes
+  ## Differences to Pumps
 
-  La vanne pneumatique diffère d'une [textlink="pompe" link="Pumps"] qui déplace le gaz par travail mécanique.
-  La vanne pneumatique est un appareil passif qui déplace le gaz en fonction de la pression la plus élevée du gaz d'entrée, et peut donc parfois remplir des volumes plus rapidement qu'une [textlink="pompe" link="Pumps"].
+  The pneumatic valve is different from a [textlink="pump" link="Pumps"] which moves gas via work.
+  The pneumatic valve is a passive device that moves gas based on the higher pressure of the input gas, and as such it can sometimes fill volumes faster than a [textlink="pump" link="Pumps"] can.
 
-  Par exemple, une vanne pneumatique avec une pression de contrôle de 500 kPa remplira un volume plus rapidement qu'une [textlink="pompe" link="Pumps"] à pression réglée à 500 kPa.
-  Cependant, la [textlink="pompe" link="Pumps"] pourra maintenir la pression dans le volume de manière plus précise.
+  For example, a pneumatic valve with a control pressure of 500 kPa will fill a volume faster than a pressure [textlink="pump" link="Pumps"] set to 500 kPa.
+  However, the [textlink="pump" link="Pumps"] will be able to maintain the pressure in the volume more accurately.
 
-  La vanne pneumatique peut être utilisée dans diverses applications, par exemple :
-  - Pour évacuer automatiquement les gaz dans une chambre de combustion selon l'entrée de contrôle
-  - Pour remplir rapidement un volume en fonction d'une pression de contrôle personnalisable
+  The pneumatic valve can be used in a variety of applications, for example:
+  - To automatically vent gasses in a burn chamber based on control input
+  - The filling of a volume quickly, based on a customizable control pressure
 
 </Document>

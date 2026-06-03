@@ -1,7 +1,7 @@
 - type: entity
   id: SaltLine
-  name: ligne de sel
-  description: Une ligne de sel. Éloigne les esprits, dit-on.
+  name: salt line
+  description: A line of salt. Keeps the spirits away, or so they say.
   placement:
     mode: SnapgridCenter
   components:

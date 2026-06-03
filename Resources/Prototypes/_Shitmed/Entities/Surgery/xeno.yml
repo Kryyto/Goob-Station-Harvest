@@ -18,7 +18,7 @@
 - type: entity
   parent: BaseSurgeryXenoCommon
   id: SurgeryXenoInciseExoskeleton
-  name: Inciser l'exosquelette
+  name: Incise Exoskeleton
   components:
   - type: Surgery
     steps:
@@ -30,7 +30,7 @@
 - type: entity
   parent: BaseSurgeryXenoCommon
   id: SurgeryXenoResealExoskeleton
-  name: Resceller l'exosquelette
+  name: Reseal Exoskeleton
   components:
   - type: Surgery
     requirement: SurgeryXenoResealEndoskeleton
@@ -41,7 +41,7 @@
 - type: entity
   parent: BaseSurgeryXenoCommon
   id: SurgeryXenoExposeEndoskeleton
-  name: Exposer l'endosquelette
+  name: Expose Endoskeleton
   components:
   - type: Surgery
     requirement: SurgeryXenoInciseExoskeleton
@@ -52,7 +52,7 @@
 - type: entity
   parent: BaseSurgeryXenoCommon
   id: SurgeryXenoResealEndoskeleton
-  name: Réparer l'endosquelette
+  name: Repair Endoskeleton
   components:
   - type: Surgery
     steps:
@@ -90,7 +90,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertEyes
-  name: Insérer les yeux xéno
+  name: Insert Xeno Eyes
   components:
   - type: Surgery
     steps:
@@ -106,7 +106,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertLiver
-  name: Insérer le foie xéno
+  name: Insert Xeno Liver
   components:
   - type: Surgery
     steps:
@@ -124,7 +124,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertStomach
-  name: Insérer l'estomac xéno
+  name: Insert Xeno Stomach
   components:
   - type: Surgery
     steps:
@@ -144,7 +144,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertHiveNode
-  name: Insérer le nœud de ruche
+  name: Insert Hive Node
   components:
   - type: Surgery
     steps:
@@ -161,7 +161,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertResinSpinner
-  name: Insérer le fileur de résine
+  name: Insert Resin Spinner
   components:
   - type: Surgery
     steps:
@@ -178,7 +178,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertNeurotoxinGland
-  name: Insérer la glande à neurotoxine
+  name: Insert Neurotoxin Gland
   components:
   - type: Surgery
     steps:
@@ -195,7 +195,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertAcidGland
-  name: Insérer la glande acide
+  name: Insert Acid Gland
   components:
   - type: Surgery
     steps:
@@ -212,7 +212,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertPlasmaVessel
-  name: Insérer le vaisseau à plasma
+  name: Insert Plasma Vessel
   components:
   - type: Surgery
     steps:
@@ -231,7 +231,7 @@
 - type: entity
   parent: BaseSurgeryXenoInsertOrgan
   id: SurgeryXenoInsertEggSack
-  name: Insérer le sac à œufs
+  name: Insert Egg Sack
   components:
   - type: Surgery
     steps:
@@ -268,7 +268,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveEyes
-  name: Retirer les yeux xéno
+  name: Remove Xeno Eyes
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -277,7 +277,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveLiver
-  name: Retirer le foie xéno
+  name: Remove Xeno Liver
   components:
   - type: SurgeryPartCondition
     parts: [ Groin ]
@@ -288,7 +288,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveStomach
-  name: Retirer l'estomac xéno
+  name: Remove Xeno Stomach
   components:
   - type: SurgeryPartCondition
     parts: [ Groin ]
@@ -301,7 +301,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveHiveNode
-  name: Retirer le nœud de ruche
+  name: Remove Hive Node
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -310,7 +310,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveResinSpinner
-  name: Retirer le fileur de résine
+  name: Remove Resin Spinner
   components:
   - type: SurgeryOrganCondition
     organ:
@@ -319,7 +319,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveNeurotoxinGland
-  name: Retirer la glande à neurotoxine
+  name: Remove Neurotoxin Gland
   components:
   - type: Surgery
     steps:
@@ -333,7 +333,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveAcidGland
-  name: Retirer la glande acide
+  name: Remove Acid Gland
   components:
   - type: Surgery
     steps:
@@ -347,7 +347,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemovePlasmaVessel
-  name: Retirer le vaisseau à plasma
+  name: Remove Plasma Vessel
   components:
   - type: Surgery
     steps:
@@ -364,7 +364,7 @@
 - type: entity
   parent: BaseSurgeryXenoRemoveOrgan
   id: SurgeryXenoRemoveEggSack
-  name: Retirer le sac à œufs
+  name: Remove Egg Sack
   components:
   - type: Surgery
     steps:
@@ -383,7 +383,7 @@
 - type: entity
   parent: SurgeryBase
   id: SurgeryXenoTakeSample
-  name: Prélever un échantillon de tissu
+  name: Take tissue sample
   components:
   - type: Surgery
     requirement: SurgeryXenoExposeEndoskeleton

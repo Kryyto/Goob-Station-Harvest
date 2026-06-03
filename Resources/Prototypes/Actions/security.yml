@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleKnuckleDustersStun
-  name: Basculer les coups-de-poing étourdissants
-  description: Bascule la matraque étourdissante intégrée aux coups-de-poing.
+  name: Toggle stun knuckle dusters
+  description: Toggles the duster's built in stun baton.
   components:
   - type: InstantAction
     event: !type:ToggleActionEvent

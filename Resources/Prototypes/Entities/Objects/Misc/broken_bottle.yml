@@ -25,10 +25,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: bouteille cassée
+  name: broken bottle
   parent: BaseItem
   id: BrokenBottle
-  description: Dans les rues de Space Glasgow, on appelle ça une entrée en matière.
+  description: In Space Glasgow this is called a conversation starter.
   components:
   - type: Sharp
   - type: Execution

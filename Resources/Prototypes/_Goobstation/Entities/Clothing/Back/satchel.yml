@@ -17,7 +17,7 @@
   parent: [ BaseCentcommContraband , ClothingBackpackSatchel ]
   id: ClothingBackpackSatchelCentcomm
   name: centcomm satchel
-  description: Une coûteuse sacoche vert foncé. Sent les télécopieurs.
+  description: An expensive dark green satchel. Smells like fax machines.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Back/Satchels/nanorep.rsi
@@ -26,7 +26,7 @@
   parent: [ClothingBackpackSatchel, BaseCentcommContraband]
   id: ClothingBackpackSatchelBlueshield
   name: blueshield satchel
-  description: Une sacoche très protectrice, qui sent le pistolet à énergie.
+  description: A very protective satchel, smells like energy gun.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Back/Satchels/blueshield.rsi

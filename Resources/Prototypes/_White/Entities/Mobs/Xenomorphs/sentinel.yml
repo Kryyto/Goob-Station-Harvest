@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: BaseMobXenomorphSentinel
-  name: xénomorphe sentinelle
-  description: Un spécimen spécialisé conçu pour frapper des cibles à distance. Particulièrement dangereux dans les couloirs étroits et les espaces confinés.
+  name: xenomorph sentinel
+  description: A specialized specimen designed to hit targets at a distance. Particularly dangerous in narrow corridors and confined spaces.
   abstract: true
   components:
   - type: Sprite

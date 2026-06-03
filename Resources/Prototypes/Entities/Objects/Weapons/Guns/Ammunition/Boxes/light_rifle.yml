@@ -23,7 +23,7 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxLightRifle
-  name: boîte de munitions (.30 fusil)
+  name: ammunition box (.30 rifle)
   components:
   # Goobstation edit start
   - type: EmitSoundOnPickup
@@ -60,7 +60,7 @@
 - type: entity
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifleBig
-  name: boîte de munitions (.30 fusil)
+  name: ammunition box (.30 rifle)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -80,8 +80,8 @@
 - type: entity
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifle
-  name: boîte de munitions (.30 fusil)
-  description: Une boîte en carton de munitions de fusil .30. Destinée aux munitions cinétiques polyvalentes.
+  name: ammunition box (.30 rifle)
+  description: A cardboard box of .30 rifle rounds. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifle
@@ -95,8 +95,8 @@
 - type: entity
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRiflePractice
-  name: boîte de munitions (.30 fusil entraînement)
-  description: Une boîte en carton de munitions de fusil .30. Destinée aux munitions à craie inoffensives.
+  name: ammunition box (.30 rifle practice)
+  description: A cardboard box of .30 rifle rounds. Intended to hold non-harmful chalk ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -111,8 +111,8 @@
 - type: entity
   id: MagazineBoxLightRifleIncendiary
   parent: BaseMagazineBoxLightRifle
-  name: boîte de munitions (.30 fusil incendiaire)
-  description: Une boîte en carton de munitions de fusil .30. Destinée aux munitions incendiaires à auto-allumage.
+  name: ammunition box (.30 rifle incendiary)
+  description: A cardboard box of .30 rifle rounds. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary
@@ -127,8 +127,8 @@
 - type: entity
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifleUranium
-  name: boîte de munitions (.30 fusil uranium)
-  description: Une boîte en carton de munitions de fusil .30. Destinée aux munitions exotiques à noyau d'uranium.
+  name: ammunition box (.30 rifle uranium)
+  description: A cardboard box of .30 rifle rounds. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleUranium

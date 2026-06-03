@@ -17,8 +17,8 @@
 - type: entity
   parent: [ BaseCrowbar, BaseMajorContraband ]
   id: CrowbarAbductor
-  name: pied-de-biche high-tech
-  description: Fabriqué dans un métal plus durable que tout ce que Nanotrasen pourrait imaginer.
+  name: high-tech crowbar
+  description: Made out of metal more durable than anything Nanotrasen could dream of.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Abductor/crowbar.rsi
@@ -34,10 +34,10 @@
     - Abductors
 
 - type: entity
-  name: coupe-fil high-tech
+  name: high-tech wirecutter
   parent: [ BaseItem, BaseMajorContraband]
   id: WirecutterAbductor
-  description: Coupe les câbles comme un couteau chaud dans du beurre.
+  description: Cuts through wires like a hot knife through butter.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Abductor/wirecutters.rsi
@@ -89,10 +89,10 @@
     - Abductors
 
 - type: entity
-  name: tournevis high-tech
+  name: high-tech screwdriver
   parent: [ BaseItem, BaseMajorContraband ]
   id: ScrewdriverAbductor
-  description: Plus efficace que tout ce que Nanotrasen pourrait imaginer. À ne pas confondre avec un tournevis sonique.
+  description: More efficient than anything Nanotrasen could dream of. Not to be confused with a sonic screwdriver.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Abductor/screwdriver.rsi
@@ -138,10 +138,10 @@
     - Abductors
 
 - type: entity
-  name: clé à molette high-tech
+  name: high-tech wrench
   parent: [ Wrench, BaseMajorContraband ]
   id: WrenchAbductor
-  description: Peut retirer un boulon en un seul tour. Non destiné au combat au corps à corps.
+  description: Can take a bolt off in a single turn. Not intended for melee combat.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Abductor/wrench.rsi
@@ -164,10 +164,10 @@
     - Abductors
 
 - type: entity
-  name: outil de soudage high-tech
+  name: high-tech welding tool
   parent: [ Welder, BaseMajorContraband ]
   id: WelderAbductor
-  description: "Un soudeur très avancé capable de produire du carburant en quantité infinie."
+  description: "A highly advanced welder capable of producing infinite fuel."
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Specific/Abductor/welder.rsi
@@ -203,10 +203,10 @@
     - Abductors
 
 - type: entity
-  name: multioutil high-tech
+  name: high-tech multitool
   parent: [BaseItem, BaseMajorContraband]
   id: MultitoolAbductor
-  description: Un outil de piratage très avancé capable de visualiser les fonctions des câbles. Peut être utilisé comme séquenceur cryptographique en mode alternatif.
+  description: A highly advanced hacking tool capable of viewing wire functionality. Can be used as Cryptographic sequencer in its alternate mode.
   components:
   - type: EmitSoundOnLand
     sound:

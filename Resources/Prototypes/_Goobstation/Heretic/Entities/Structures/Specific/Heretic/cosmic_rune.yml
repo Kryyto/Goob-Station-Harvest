@@ -1,7 +1,7 @@
 - type: entity
   id: HereticRuneCosmos
-  name: rune cosmique
-  description: Une rune étrange qui peut instantanément transporter des personnes vers un autre endroit.
+  name: cosmic rune
+  description: A strange rune, that can instantly transport people to another location.
   placement:
     mode: SnapgridCenter
   components:
@@ -29,7 +29,7 @@
 
 - type: entity
   id: HereticRuneCosmosLight
-  name: rune cosmique
+  name: cosmic rune
   placement:
     mode: SnapgridCenter
   categories: [ HideSpawnMenu ]

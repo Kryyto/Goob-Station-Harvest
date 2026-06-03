@@ -9,8 +9,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesNightVisionGoggles
-  name: lunettes de vision nocturne
-  description: Vous pouvez maintenant voir dans le noir !
+  name: night vision goggles
+  description: Now you can see in the dark!
   components:
   - type: Sprite
     sprite: _White/Clothing/Eyes/Goggles/nightvision.rsi
@@ -25,8 +25,8 @@
 - type: entity
   parent: [ClothingEyesNightVisionGoggles, ShowMedicalIcons, BaseSyndicateContraband]
   id: ClothingEyesNightVisionGogglesSyndie
-  name: lunettes de vision nocturne syndicales
-  description: Une paire de lunettes de vision nocturne high-tech. Intègre une technologie d'analyse médicale.
+  name: syndicate night vision goggles
+  description: A high-tech pair of night vision goggles. Has medical analysis technology.
   components:
   - type: Sprite
     sprite: _White/Clothing/Eyes/Goggles/snightvision.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesThermalVisionGoggles
-  name: lunettes de vision thermique
-  description: Vous pouvez maintenant voir tout le monde !
+  name: thermal vision goggles
+  description: Now you can see everyone!
   components:
   - type: Sprite
     sprite: _White/Clothing/Eyes/Goggles/thermal.rsi
@@ -63,8 +63,8 @@
 - type: entity
   parent: [ClothingEyesBase, BaseSyndicateContraband]
   id: ClothingEyesThermalVisionGogglesSyndie
-  name: lunettes de vision thermique syndicales
-  description: Une paire de lunettes thermiques high-tech.
+  name: thermal vision goggles
+  description: A high-tech pair of thermal goggles.
   components:
   - type: Sprite
     sprite: _White/Clothing/Eyes/Goggles/sthermals.rsi

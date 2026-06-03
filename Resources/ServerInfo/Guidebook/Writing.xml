@@ -6,22 +6,22 @@ SPDX-License-Identifier: MIT
 -->
 
 <Document>
-# Écriture
+# Writing
 
-Avec un stylo, vous pouvez écrire sur du papier ou dans des livres. Nanotrasen fournit à chacun un stylo de rechange dans son PDA.
+Using a pen, you can write on paper or in books. Nanotrasen provides everyone with a spare pen in their PDA.
 
-## Mise en forme
+## Formatting
 
-Vous pouvez utiliser les balises suivantes :
+You can use the following sigils:
 
-- [color=tan]\[color=couleur\]\[\/color\][/color] — pour changer la couleur du texte
-- [color=tan]\[head=n\]\[\/head\][/color] — où [italic]n[/italic] est le niveau de titre (1 – 3)
-- [color=tan]\[bullet\/\][/color] — pour insérer un point de liste (utile pour les listes)
-- [color=tan][bold]\[bold\]\[\/bold\][/bold][/color], [color=tan][italic]\[italic\]\[\/italic\][/italic][/color] — pour l'emphase
+- [color=tan]\[color=color\]\[\/color\][/color] — to change the color of the text
+- [color=tan]\[head=n\]\[\/head\][/color] — where [italic]n[/italic] is the heading level (1 – 3)
+- [color=tan]\[bullet\/\][/color] — to insert a bullet point (useful for lists)
+- [color=tan][bold]\[bold\]\[\/bold\][/bold][/color], [color=tan][italic]\[italic\]\[\/italic\][/italic][/color] — for emphasis
 
-Vous pouvez combiner les balises [bold][italic]gras et italique[/italic][/bold], ou utiliser le raccourci [color=tan][bolditalic]\[bolditalic\][/bolditalic][/color].
+You can combine [bold][italic]bold and italic[/italic][/bold] tags, or use the shortcut [color=tan][bolditalic]\[bolditalic\][/bolditalic][/color].
 
-La couleur accepte les valeurs hexadécimales ou la plupart des noms de couleurs HTML. Par exemple :
+Color supports either hexadecimal or most HTML color names. For example:
 
 - [color=#ff0000]\[color=#ff0000\]\[\/color\][/color]
 - [color=red]\[color=red\]\[\/color\][/color]

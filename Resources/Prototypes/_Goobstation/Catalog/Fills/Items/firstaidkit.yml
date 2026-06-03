@@ -11,8 +11,8 @@
 
 - type: entity
   id: MedkitCombatStasiziumFilled
-  name: medkit futuriste
-  description: Medkit rempli de médicaments du futur
+  name: futuristic medkit
+  description: Medkit filled with medicines of the future
   suffix: Stazisium
   parent: MedkitCombat
   components:
@@ -26,7 +26,7 @@
 
 - type: entity
   id: MedkitBSOFilled
-  suffix: Rempli
+  suffix: Filled
   parent: MedkitBSO
   components:
   - type: StorageFill
@@ -40,7 +40,7 @@
 
 - type: entity
   id: MedkitBSOIPCFilled
-  suffix: Rempli
+  suffix: Filled
   parent: MedkitBSOIPC
   components:
   - type: StorageFill
@@ -52,7 +52,7 @@
 
 - type: entity
   id: MedkitCombatBlueFilled
-  suffix: Rempli, Pilules
+  suffix: Filled, Pills
   parent: MedkitCombatBlue
   components:
   - type: StorageFill
@@ -68,7 +68,7 @@
 
 - type: entity
   id: MedkitCombatPurpleFilled
-  suffix: Rempli, IPC
+  suffix: Filled, IPC
   parent: MedkitCombatPurple
   components:
   - type: StorageFill

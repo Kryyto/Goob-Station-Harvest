@@ -57,7 +57,7 @@
   parent: BaseBullet
   id: BulletDartGun
   name: chemical dart
-  description: Celui-ci soigne-t-il ou blesse-t-il ?
+  description: Is this one healing or harming?
   components:
   - type: Sprite
     sprite: Objects/Fun/Darts/dart_red.rsi

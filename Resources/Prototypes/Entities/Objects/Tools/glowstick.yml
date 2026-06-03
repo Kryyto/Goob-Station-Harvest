@@ -23,10 +23,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: bâton lumineux vert
+  name: green glowstick
   parent: BaseItem
   id: GlowstickBase
-  description: Utile pour les raves et les urgences.
+  description: Useful for raves and emergencies.
   components:
     - type: SpaceGarbage
     - type: ExpendableLight
@@ -87,7 +87,7 @@
       - Trash
 
 - type: entity
-  name: bâton lumineux rouge
+  name: red glowstick
   parent: GlowstickBase
   id: GlowstickRed
   components:
@@ -98,7 +98,7 @@
       color: "#FF0000"
 
 - type: entity
-  name: bâton lumineux violet
+  name: purple glowstick
   parent: GlowstickBase
   id: GlowstickPurple
   components:
@@ -109,7 +109,7 @@
       color: "#FF00FF"
 
 - type: entity
-  name: bâton lumineux jaune
+  name: yellow glowstick
   parent: GlowstickBase
   id: GlowstickYellow
   components:
@@ -120,7 +120,7 @@
       color: "#FFFF00"
 
 - type: entity
-  name: bâton lumineux bleu
+  name: blue glowstick
   parent: GlowstickBase
   id: GlowstickBlue
   components:

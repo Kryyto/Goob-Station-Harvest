@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: [BaseStructureDynamic, BaseXenoArtifact]
   id: BaseXenoArtifactStructure
-  name: artéfact
+  name: artifact
   abstract: true
   noSpawn: true
   components:

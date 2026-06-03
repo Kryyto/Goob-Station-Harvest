@@ -12,10 +12,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: pack piège à ours inversé
+  name: reverse bear trap pack
   parent: BoxCardboard
   id: BoxReverseBearTrap
-  description: Une boîte pleine d'objets totalement légaux.
+  description: A box full of completely legal stuff.
   components:
   - type: StorageFill
     contents:
@@ -27,11 +27,11 @@
     sprite: _Goobstation/Objects/Storage/boxes.rsi
 
 - type: entity
-  name: boîte d'injecteur de combat
+  name: combat injector box
   parent: BoxCardboard
   id: BoxCombatInjector
-  suffix: NE PAS PLACER
-  description: Une boîte contenant un injecteur de combat et quelques produits chimiques de soin.
+  suffix: DO NOT MAP
+  description: A box containing a combat injector and a few healing chemicals.
   components:
   - type: StorageFill
     contents:
@@ -51,10 +51,10 @@
     sprite: _Goobstation/Objects/Storage/boxes.rsi
 
 - type: entity
-  name: boîte de cartouches d'auto-injecteur
+  name: autoinjector cartridge box
   parent: BoxCardboard
   id: BoxAutoinjectorCartidges
-  description: Une boîte avec des cartouches d'auto-injecteur.
+  description: A box with autoinjector cartridges.
   components:
   - type: StorageFill
     contents:

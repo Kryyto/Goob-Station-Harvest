@@ -1,6 +1,6 @@
 - type: entity
-  name: chaise de verre étrange
-  description: Semble confortable, malgré les arêtes.
+  name: strange glass chair
+  description: Looks comfortable, despite the edges.
   id: ChairFlock
   parent: ChairBase
   components:

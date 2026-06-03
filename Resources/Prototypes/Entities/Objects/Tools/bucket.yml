@@ -102,8 +102,8 @@
 - type: entity
   parent: DrinkBase
   id: Bucket
-  name: seau
-  description: Un vieux seau ordinaire.
+  name: bucket
+  description: It's a boring old bucket.
   components:
   - type: Clickable
   - type: Edible
@@ -174,8 +174,8 @@
 - type: entity
   parent: Bucket
   id: BorgBucket
-  name: réservoir interne
-  description: Le réservoir interne d'un cyborg de maintenance, capable de contenir l'équivalent d'un seau d'eau de nettoyage.
+  name: internal tank
+  description: The internal reservoir of a custodial cyborg, capable of holding a entire mop bucket worth of water.
   components:
   - type: SolutionContainerManager
     solutions:

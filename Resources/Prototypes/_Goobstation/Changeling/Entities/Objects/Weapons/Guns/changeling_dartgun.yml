@@ -6,9 +6,9 @@
 - type: entity
   parent: BaseItem
   id: DartGunChangeling
-  name: dardeur à distance
-  description: Dardeur à réactifs capable de tirer des fléchettes organiques sur des cibles.
-  suffix: Inamovible
+  name: ranged stinger
+  description: Reagent stinger able to fire organic darts at targets.
+  suffix: Unremoveable
   components:
   - type: Sprite
     sprite: _Goobstation/Changeling/dartgun.rsi
@@ -43,8 +43,8 @@
 - type: entity
   id: ChangelingDart
   parent: BaseBullet
-  name: fléchette organique
-  description: Une fléchette fine comme une aiguille, formée d'os.
+  name: organic dart
+  description: A needle thin dart formed of bone.
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -71,9 +71,9 @@
 - type: entity
   id: ChangelingDartMute
   parent: ChangelingDart
-  name: fléchette organique muette
+  name: mute organic dart
   categories: [ HideSpawnMenu ]
-  suffix: Muet
+  suffix: Mute
   components:
   - type: ChangelingDart
     stingConfiguration: StingMute
@@ -81,9 +81,9 @@
 - type: entity
   id: ChangelingDartBlind
   parent: ChangelingDart
-  name: fléchette organique aveuglante
+  name: blinding organic dart
   categories: [ HideSpawnMenu ]
-  suffix: Aveugle
+  suffix: Blind
   components:
   - type: ChangelingDart
     stingConfiguration: StingBlind
@@ -91,7 +91,7 @@
 - type: entity
   id: ChangelingDartCryo
   parent: ChangelingDart
-  name: fléchette organique cryogénique
+  name: cryogenic organic dart
   categories: [ HideSpawnMenu ]
   suffix: Cryo
   components:
@@ -101,9 +101,9 @@
 - type: entity
   id: ChangelingDartLethargic
   parent: ChangelingDart
-  name: fléchette organique léthargique
+  name: lethargic organic dart
   categories: [ HideSpawnMenu ]
-  suffix: Léthargique
+  suffix: Lethargic
   components:
   - type: ChangelingDart
     stingConfiguration: StingLethargic

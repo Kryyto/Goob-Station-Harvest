@@ -9,7 +9,7 @@
 - type: entity
   parent: [ ClothingHeadsetAlt, BaseMajorContraband ]
   id: ClothingHeadsetAltAbductor
-  name: casque supra-auriculaire ravisseur
+  name: abductor over-ear headset
   components:
   - type: ContainerFill
     containers:

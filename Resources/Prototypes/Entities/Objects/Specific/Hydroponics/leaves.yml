@@ -88,10 +88,10 @@
 # Leaves
 
 - type: entity
-  name: feuilles de cannabis
+  name: cannabis leaves
   parent: ProduceBase
   id: LeavesCannabis
-  description: "Récemment légalisé dans la plupart des galaxies."
+  description: "Recently legalized in most galaxies."
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/cannabis.rsi
@@ -107,10 +107,10 @@
 
 
 - type: entity
-  name: feuilles de cannabis séchées
+  name: dried cannabis leaves
   parent: BaseItem
   id: LeavesCannabisDried
-  description: "Feuilles de cannabis séchées, prêtes à être moulues."
+  description: "Dried cannabis leaves, ready to be ground."
   components:
   - type: Stack
     stackType: LeavesCannabisDried
@@ -126,10 +126,10 @@
     state: dried
 
 - type: entity
-  name: cannabis moulu
+  name: ground cannabis
   parent: BaseItem
   id: GroundCannabis
-  description: "Cannabis moulu, prêt à vous emmener en voyage."
+  description: "Ground cannabis, ready to take you on a trip."
   components:
   - type: Stack
     stackType: GroundCannabis
@@ -154,10 +154,10 @@
     size: Tiny
 
 - type: entity
-  name: feuilles de cannabis arc-en-ciel
+  name: rainbow cannabis leaves
   parent: LeavesCannabis
   id: LeavesCannabisRainbow
-  description: "C'est censé briller comme ça... ?"
+  description: "Is it supposed to be glowing like that...?"
   components:
   - type: Sprite
     layers:
@@ -190,10 +190,10 @@
           Quantity: 0.6
 
 - type: entity
-  name: feuilles de cannabis arc-en-ciel séchées
+  name: dried rainbow cannabis leaves
   parent: LeavesCannabisDried
   id: LeavesCannabisRainbowDried
-  description: "Feuilles de cannabis arc-en-ciel séchées, prêtes à être moulues."
+  description: "Dried rainbow cannabis leaves, ready to be ground."
   components:
   - type: Stack
     stackType: LeavesCannabisRainbowDried
@@ -220,10 +220,10 @@
     state: dried
 
 - type: entity
-  name: cannabis arc-en-ciel moulu
+  name: ground rainbow cannabis
   parent: GroundCannabis
   id: GroundCannabisRainbow
-  description: "Cannabis arc-en-ciel moulu, prêt à vous emmener en voyage."
+  description: "Ground rainbow cannabis, ready to take you on a trip."
   components:
   - type: Stack
     stackType: GroundCannabisRainbow
@@ -253,10 +253,10 @@
     node: groundRainbow
 
 - type: entity
-  name: feuilles de thé
+  name: tea leaves
   parent: ProduceBase
   id: LeavesTea
-  description: "Peuvent être séchées pour faire du thé."
+  description: "Can be dried out to make tea."
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/tea_plant.rsi
@@ -270,10 +270,10 @@
           Quantity: 2
 
 - type: entity
-  name: feuilles de thé séchées
+  name: dried tea leaves
   parent: ProduceBase
   id: LeavesTeaDried
-  description: "Feuilles de thé séchées, prêtes à être moulues."
+  description: "Dried tea leaves, ready to be ground."
   components:
   - type: SolutionContainerManager
     solutions:
@@ -286,10 +286,10 @@
     state: dried
 
 - type: entity
-  name: feuilles de tabac
+  name: tobacco leaves
   parent: ProduceBase
   id: LeavesTobacco
-  description: "Séchez-les pour faire des cigarettes."
+  description: "Dry them out to make some smokes."
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/tobacco.rsi
@@ -297,10 +297,10 @@
     seedId: tobacco
 
 - type: entity
-  name: feuilles de tabac séchées
+  name: dried tobacco leaves
   parent: BaseItem
   id: LeavesTobaccoDried
-  description: "Feuilles de tabac séchées, prêtes à être moulues."
+  description: "Dried tobacco leaves, ready to be ground."
   components:
   - type: Stack
     stackType: LeavesTobaccoDried
@@ -316,10 +316,10 @@
     state: dried
 
 - type: entity
-  name: tabac moulu
+  name: ground tobacco
   parent: BaseItem
   id: GroundTobacco
-  description: "Tabac moulu, parfait pour les cigarettes roulées à la main."
+  description: "Ground tobacco, perfect for hand-rolled cigarettes."
   components:
   - type: Stack
     stackType: GroundTobacco

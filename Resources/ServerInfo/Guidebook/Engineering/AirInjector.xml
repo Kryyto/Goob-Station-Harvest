@@ -6,16 +6,16 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Injecteur atmosphérique
-  L'injecteur atmosphérique est un évent spécial qui force les gaz dans l'atmosphère à laquelle il est exposé.
+  #Air Injector
+  The air injector is a special vent that forces gasses into the atmosphere it's exposed to.
   <Box>
     <GuideEntityEmbed Entity="GasOutletInjector"/>
   </Box>
-  Il est principalement utilisé pour forcer des gaz dans des pièces à haute pression comme les [textlink="salles de stockage de gaz" link="GasMiningAndStorage"] de la station ou une chambre de combustion.
+  It is primarily used to force gasses into high-pressure rooms like the station's [textlink="gas storage rooms" link="GasMiningAndStorage"] or a burn chamber.
 
-  L'injecteur atmosphérique ne nécessite pas d'[textlink="alimentation électrique" link="Power"] pour fonctionner.
+  The air injector does not require [textlink="power" link="Power"] to function.
 
-  L'injecteur atmosphérique injectera des gaz dans l'atmosphère à laquelle il est exposé jusqu'à ce que cette atmosphère atteigne [color=orange][protodata="GasOutletInjector" comp="GasOutletInjector" member="MaxPressure"/> kPa[/color].
+  The air injector will inject gasses into the atmosphere it's exposed to until the atmosphere reaches [color=orange][protodata="GasOutletInjector" comp="GasOutletInjector" member="MaxPressure"/] kPa[/color].
 
-  La vitesse de l'injecteur atmosphérique est proportionnelle à la quantité de gaz présente dans l'injecteur.
+  The air injector's speed is proportional to the amount of gas in the injector.
 </Document>

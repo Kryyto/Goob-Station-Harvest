@@ -89,7 +89,7 @@
   parent: [ ClothingHeadBase, BaseMajorContraband ]
   id: ReverseBearTrap
   name: reverse bear trap
-  description: Un terrifiant ensemble de mâchoires métalliques fermées, relié à un minuteur et sécurisé par un cadenas à une pince tête. Pour l'appliquer, frappez quelqu'un avec.
+  description: A horrifying set of shut metal jaws, rigged to a kitchen timer and secured by padlock to a head-mounted clamp. To apply, hit someone with it
   components:
   - type: ReverseBearTrap
     countdownDuration: 60
@@ -155,7 +155,7 @@
   parent: [ClothingHeadHatArmored, ClothingHeadHatCowboyBrown, BaseMajorContraband]
   id: ClothingHeadHatCowboyBrownRobust
   name: authentic brown cowboy hat
-  description: "\"Cette station est trop petite pour nous deux.\""
+  description: "\"This station ain't big enough for the two of us.\""
 
 # Shitchap
 - type: entity
@@ -193,7 +193,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetCage
   name: cage
-  description: Une cage qui entrave la volonté du moi, permettant de voir le monde profane tel qu'il est.
+  description: A cage that restrains the will of the self, allowing one to see the profane world for what it is.
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/cage.rsi
@@ -226,7 +226,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetWitchhunter
   name: witchunter hat
-  description: Ce chapeau a beaucoup servi en son temps.
+  description: This hat saw much use back in the day.
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/witchhunter.rsi
@@ -255,7 +255,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetClock
   name: forgotten helmet
-  description: Il possède le regard inflexible d'un dieu éternellement oublié.
+  description: It has the unyielding gaze of a god eternally forgotten.
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/clock.rsi
@@ -267,7 +267,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetMonk
   name: monk's hood
-  description: Pour quand un homme veut cacher sa tonsure.
+  description: For when a man wants to cover up his tonsure.
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/monkhood.rsi
@@ -279,7 +279,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetBishop
   name: bishop mitre
-  description: Un chapeau opulent qui sert de radio vers Dieu. Ou de paratonnerre, selon qui vous demandez.
+  description: An opulent hat that functions as a radio to God. Or as a lightning rod, depending on who you ask.
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/bishop.rsi
@@ -296,7 +296,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetDragon
   name: dragon hood
-  description: Crachage de boules de feu non inclus.
+  description: Fireball spewing not included.
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/dragonhood.rsi
@@ -320,7 +320,7 @@
   parent: ClothingHeadHatHelmetTemplar
   id: ClothingHeadHatHelmetInquisitor
   name: inquisitor cap
-  description: Une majestueuse calotte dorée. La personnification du châtiment qui s'abattra sur les hérétiques !
+  description: A majestic gilded cap. The personification of the punishment that will befall heretics!
   components:
   - type: Sprite
     sprite: _ShitChap/Clothing/Head/Misc/inquisitor.rsi

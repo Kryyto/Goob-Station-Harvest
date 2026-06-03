@@ -298,7 +298,7 @@
   parent: [BaseClothingModsuitHelmet, BaseClothingModsuitHelmetHideIdentity]
   id: ClothingModsuitHelmetHeadOfSecurity
   name: bulwark modsuit helmet
-  description: Mettez la TÊTE de la sécurité.. Comment voyez-vous à travers ça ?
+  description: Put on the HEAD of security.. How do you see out of this thing?
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance
@@ -482,7 +482,7 @@
   parent: [BaseClothingModsuitHelmet, BaseClothingModsuitHelmetHideIdentity]
   id: ClothingModsuitHelmetEngineer
   name: sapper modsuit helmet
-  description: Une plaque plate avec des caméras permettant votre vision. Vous transforme en aero-baltringue, mais ça n'a pas d'importance dans l'espace.
+  description: A flat plate with cameras allowing your vision. turns you into an aero-cuck, but not like that matters in space.
   categories: [ HideSpawnMenu ]
   components:
   - type: Appearance

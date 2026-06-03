@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseXenoStructure
   id: ResinDoor
-  name: porte de résine
-  description: De la résine épaisse solidifiée en porte.
+  name: resin Door
+  description: Thick resin solidified into a door.
   placement:
     mode: SnapgridCenter
   components:

@@ -6,8 +6,8 @@
 
 - type: entity
   id: StasisCage
-  name: conteneur de stase
-  description: C'est plus petit à l'extérieur qu'à l'intérieur.
+  name: stasis container
+  description: It's smaller on the outside than it is on the inside.
   parent: BaseStructureDynamic
   components:
   - type: Sprite

@@ -1,51 +1,51 @@
 <Document>
   # Revenant
 
-  Un Revenant est un cadavre contrôlé par télékinésie qu'utilise le Héraut pour gagner temporairement un corps physique. C'est votre forme ultime, une courte explosion de puissance écrasante qui vous permet de transformer la station en zone sinistrée.
+  A Revenant is a telekinetically controlled corpse used by the Harbinger to temporarily gain a physical body. This is your peak form, a short burst of overwhelming power that lets you turn the station into a disaster zone.
 
-  Une fois que vous possédez un cadavre, vous perdez l'accès à vos pouvoirs habituels de spectre et gagnez à la place un arsenal limité mais bien plus destructeur. Vous régénérez les PM plus rapidement, mais votre santé se draine constamment et ne peut pas être soignée. Lorsque votre temps est écoulé, le corps s'effondre en fumée et votre esprit retourne dans le vide.
+  Once you possess a corpse, you lose access to your usual wraith powers and instead gain a limited but much more destructive arsenal. You regenerate WP faster, but your health constantly drains and cannot be healed. When your time runs out, the body collapses into smoke and your spirit returns to the void.
 
-  Les Revenants sont visuellement distincts, entourés d'une aura sombre et tourbillonnante. Lorsque l'un d'eux apparaît, la station sait que quelque chose de terrible s'est produit.
+  Revenants are visually distinct, surrounded by a dark, swirling aura. When one appears, the station knows something terrible has happened.
 
-  ## Poussée
+  ## Push
 
-  - Repousse la victime ou l'objet ciblé avec une force télékinétique.
-  - Inflige des dégâts si la cible heurte un mur ou un autre objet.
-  - Utile pour projeter des ennemis dans des dangers ou dégager de l'espace dans des zones étroites.
+  - Shoves the targeted victim or object away with telekinetic force.
+  - Deals damage if the target hits a wall or another object.
+  - Useful for knocking enemies into hazards or clearing space in tight areas.
 
-  ## Commandement de Masse
+  ## Mass Command
 
-  - Lance simultanément tous les objets lâches environnants vers une cible. C'est en substance la capacité Commandement de base, mais sur-vitaminée.
-  - Dévastateur dans les pièces encombrées comme la cargaison ou la chimie. Plus il y a d'objets tranchants à proximité, mieux c'est.
+  - Launches every nearby loose object toward a target at once. It's basically the base command action, but on steroids.
+  - Devastating in cluttered rooms like cargo or chemistry. The more sharp objects nearby, the better.
 
-  ## Onde de Choc
+  ## Shockwave
 
-  - Libère un puissant souffle d'énergie télékinétique qui renverse tout le monde, brise les fenêtres et arrache les revêtements des sols et des murs.
-  - Peut être utilisé pour neutraliser des pièces entières, percer des zones ou s'échapper rapidement.
+  - Releases a massive blast of telekinetic energy that knocks everyone down, shatters windows, and rips plating off floors and walls.
+  - Can be used to disable entire rooms, breach areas, or make quick escapes.
 
-  ## Toucher du Mal
+  ## Touch of Evil
 
-  - Surcharge temporairement vos attaques physiques.
-  - Vos coups de poing infligent d'énormes dégâts et projettent les cibles à travers la pièce.
+  - Temporarily supercharges your physical attacks.
+  - Your punches deal enormous damage and send targets flying across the room.
 
-  ## Écrasement
+  ## Crush
 
-  - Concentre toute votre puissance télékinétique sur une seule cible, la pulvérisant lentement.
-  - Inflige d'immenses dégâts contondants au fil du temps jusqu'à ce que la cible explose en morceaux.
-  - L'effet prend fin si vous perdez la ligne de vue ou êtes interrompu.
-  - Est extrêmement coûteux à utiliser, alors assurez-vous de ne pas le gaspiller.
+  - Focuses your full telekinetic might on a single target, slowly pulverizing them.
+  - Deals immense brute damage over time until the target explodes into gibs.
+  - The effect ends if you lose line of sight or are interrupted.
+  - Is extremely expensive to use, so make sure you don't waste it.
 
-  ### Conseils Généraux
+  ### General Tips
 
-  La forme de Revenant est temporaire, faites en sorte que chaque seconde compte. Vous n'êtes pas là pour survivre ; vous êtes là pour dévaster.
+  Revenant form is temporary, make every second count. You’re not here to survive; you’re here to devastate.
 
-  Utilisez d'abord l'Onde de Choc pour disperser et désarmer l'équipage, puis éliminez les survivants avec le Toucher du Mal ou l'Écrasement.
+  Use Shockwave first to scatter and disarm the crew, then pick off survivors with Touch of Evil or Crush.
 
-  La Poussée et le Commandement de Masse peuvent tous deux être utilisés pour détruire des barricades ou lancer des objets sur l'équipage en fuite.
+  Push and Mass Command can both be used to clear barricades or fling objects at fleeing crew.
 
-  Bien que le revenant ait accès à des compétences terrifiantes, le corps qui le contient reste mortel. Ne vous attendez pas à encaisser une pluie de balles sans raison et à vous en sortir vivant.
+  Though the revenant has access to terrifying skills, the vessel is still mortal. Don't expect to just tank a bunch of bullets for no reason and make it out alive.
 
-  Rappelez-vous : une fois que vous mourez, vous retournez à votre forme de spectre. Ne perdez pas de temps à essayer de battre en retraite, foncez à fond.
+  Remember: once you die, you return to your wraith form. Don’t waste time trying to retreat, just go ham.
 
-  [textlink="Retour au Héraut du Vide" link="Harbinger"]
+  [textlink="Back to Harbinger of the Void" link="Harbinger"]
 </Document>

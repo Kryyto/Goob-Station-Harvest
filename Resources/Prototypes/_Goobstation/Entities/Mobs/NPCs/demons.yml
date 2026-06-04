@@ -86,7 +86,7 @@
   name: ???
   id: MobSpookyGhost1
   parent: MobLivingCurse
-  description: Vous n'avez aucune idée de ce que c'est !
+  description: You have no idea what this is!
   components:
   - type: PointLight
     radius: 1.5

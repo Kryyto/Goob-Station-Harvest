@@ -10,7 +10,7 @@
 - type: entity
   parent: ClothingBackpackSatchelLeather
   id: ClothingBackpackSatchelLeatherFilledNavyOfficer
-  suffix: Rempli, Officier de Marine
+  suffix: Filled, Navy Officer
   components:
   - type: StorageFill
     contents:
@@ -23,7 +23,7 @@
 - type: entity
   parent: ClothingBackpackSatchelLeather
   id: ClothingBackpackSatchelLeatherFilledSpecOps
-  suffix: Rempli, Opérations Spéciales
+  suffix: Filled, Spec Ops
   components:
   - type: StorageFill
     contents:
@@ -38,7 +38,7 @@
 - type: entity
   parent: ClothingBackpackChameleon
   id: ClothingBackpackChameleonFilledUndercover
-  suffix: Rempli, Infiltration
+  suffix: Filled, Undercover
   components:
   - type: StorageFill
     contents:
@@ -52,7 +52,7 @@
 - type: entity
   parent: ClothingBackpackSatchelLeather
   id: ClothingBackpackSatchelLeatherFilledInspector
-  suffix: Rempli, Inspecteur
+  suffix: Filled, Inspector
   components:
   - type: StorageFill
     contents:

@@ -1,15 +1,16 @@
-[color=#ffffff]Options du panneau de spawn d'entités[/color]
-[color=#a4885c]Default[/color] fait apparaître les petites entités comme les tasses sans les aligner sur quoi que ce soit, tout en alignant les entités de type bloc comme les murs sur la grille.
-[color=#a4885c]PlaceFree[/color] fait apparaître toutes les entités sans les aligner.
-[color=#a4885c]PlaceNearby[/color] limite le rayon d'apparition à environ 2 tuiles.
-[color=#a4885c]SnapgridCenter[/color] aligne l'entité au centre de la tuile.
-[color=#a4885c]SnapgridBorder[/color] aligne l'entité sur le bord de la tuile.
 
-[color=#ffffff]Options alignées sur la grille[/color]
-[color=#a4885c]AlignSimilar[/color] colle l'entité aux entités similaires. Actuellement défectueux.
-[color=#a4885c]AlignTileAny[/color] aligne l'entité sur la grille.
-[color=#a4885c]AlignTileEmpty[/color] la tuile cible doit être vide.
-[color=#a4885c]AlignTileNonDense[/color] aucun collider autorisé dans la tuile cible.
-[color=#a4885c]AlignTileDense[/color] des colliders doivent être présents dans la tuile cible.
-[color=#a4885c]AlignWall[/color] colle aux demi-tuiles verticales.
-[color=#a4885c]AlignWallProper[/color] colle l'entité au milieu des bords de tuile.
+[color=#ffffff]Entity spawn panel options[/color]
+[color=#a4885c]Default[/color] spawns small entities like mugs without aligning them to anything, while aligning block entities like walls to the grid.
+[color=#a4885c]PlaceFree[/color] spawns all entities without aligning them.
+[color=#a4885c]PlaceNearby[/color] limits the spawn radius to around 2 tiles.
+[color=#a4885c]SnapgridCenter[/color] aligns the entity to the middle of the tile.
+[color=#a4885c]SnapgridBorder[/color] aligns the entity to the border of the tile.
+
+[color=#ffffff]Grid aligned options[/color]
+[color=#a4885c]AlignSimilar[/color] snaps the entity to similar entities. Currently broken.
+[color=#a4885c]AlignTileAny[/color] aligns the entity to the grid.
+[color=#a4885c]AlignTileEmpty[/color] target tile must be empty
+[color=#a4885c]AlignTileNonDense[/color] no colliders allowed in the target tile.
+[color=#a4885c]AlignTileDense[/color] colliders must be in the target tile.
+[color=#a4885c]AlignWall[/color] snaps to vertical halftiles.
+[color=#a4885c]AlignWallProper[/color] snaps the entity to the middle of the tile edges

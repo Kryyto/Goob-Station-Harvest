@@ -9,42 +9,42 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <Document>
 # Autodoc Mk.XIV
 
-Avec des plans récupérés sur l'épave du KC13, ce titan de la chirurgie mécanique peut être programmé pour accomplir à peu près n'importe quoi.
+With designs rescued from the derelict KC13, this powerhouse of a mechanical surgeon can be programmed to do just about anything.
 
-AVERTISSEMENT : L'utilisation de cet appareil nécessite une certification médicale appropriée et le respect des protocoles médicaux établis.
+WARNING: Operation of this device requires proper medical certification and adherence to established medical protocols.
 
-Pour commencer, utilisez un multioutil pour le relier à une table d'opération proche ; une fois qu'il détecte un patient endormi dessus, vous êtes prêt à opérer !
+To get started, use a multitool to link it to a nearby operating table, once it detects a patient sleeping on it, you are ready to operate!
 
-Avant d'opérer, placez tous les objets dont un programme a besoin dans ses plateaux de stockage. L'Autodoc ne peut pas ramasser d'objets sur votre sol sale et taché de sang.
+Before operating put any items a program needs in its storage trays. The Autodoc cannot pick up items off your dirty, blood-stained floor.
 
-# Comment lui faire faire des trucs, à l'aide
+# How I make it do the thing help
 
-Une unité autodoc possède une liste de programmes, qui contiennent des étapes réalisées dans l'ordre jusqu'à la fin du programme.
+An autodoc unit has a list of programs, which have steps that are completed in order until the program is complete.
 
-Si un problème survient durant ces étapes, il interrompra immédiatement la procédure, à moins que la sécurité du programme ne soit désactivée.
+Should any issues arise during these steps, it will immediately abort the procedure, unless the program has safety disabled.
 
-Pour commencer, créez un nouveau programme avec un nom mémorable, comme « vol d'organe ». Appuyez sur « AJOUTER UNE ÉTAPE » pour ajouter différents types d'étapes :
-- EFFECTUER UNE CHIRURGIE, la bête elle-même. Peut cibler n'importe quelle partie du corps et effectuer n'importe quelle chirurgie. Il appartient au programmeur de s'assurer que des chirurgies compatibles sont sélectionnées ; c'est une mauvaise idée d'installer un cerveau dans les pieds de quelqu'un.
-  Vous n'avez pas besoin d'ajouter les prérequis comme l'ouverture de la cage thoracique, ils sont effectués automatiquement.
-- SAISIR UN OBJET, recherchera dans ses plateaux un objet portant exactement ce nom et le saisira pour l'utiliser dans des chirurgies. Utilisez une étiqueteuse manuelle pour distinguer plusieurs objets identiques.
-- SAISIR UN ORGANE, raccourci pour saisir n'importe quel type d'organe.
-- SAISIR UNE PARTIE, raccourci pour saisir n'importe quel type de partie du corps.
-- STOCKER UN OBJET, place l'objet tenu dans les plateaux de stockage (s'ils ne sont pas pleins). Vous devez faire cela après avoir retiré un objet du patient, sinon les futures opérations seront déposées sur le sol !
-- DÉFINIR UNE ÉTIQUETTE, donne à l'objet tenu une courte étiquette. Extrêmement utile pour les transplantations d'organes, où un organe spécifique est nécessaire.
-- ATTENDRE, attend simplement un certain temps avant de continuer.
+To get started, create a new program with a memorable name, such as "organ stealy". Hit "ADD STEP" to add different kinds of steps:
+- PERFORM SURGERY, the beast itself. Can target any bodypart and complete any surgery. It is up to the programmer to ensure that compatible surgeries are selected, it's a bad idea to install a brain in someones feet.
+  You do not need to add prerequesites like opening the ribcage, they are automatically done.
+- GRAB ITEM, this will look in its item trays for an item with that exact name and grab it for use in surgeries. Use a hand labeler to distinguish multiple of the same item.
+- GRAB ORGAN, this is a shorthand to grab any kind of organ.
+- GRAB PART, this is a shorthand to grab any kind of bodypart.
+- STORE ITEM, this puts the held item in the item trays (if they aren't full). You have to do this after removing an item from the patient, or future operations will get dropped on the floor!
+- SET LABEL, gives the held item a short label. Extremely useful for organ transplants, where specific a organ is needed.
+- WAIT, this just waits a length of time before continuing.
 
-Alors qu'attendez-vous, camarade ? Commettez des crimes de guerre dès aujourd'hui !
+So what are you waiting for comrade? Commit war crimes today!
 
-# Utilisation avancée des programmes
+# Additional program usage
 
-- Désactiver la sécurité d'un programme lui fait ignorer les étapes échouées au lieu d'abandonner le programme entier.
-  Ne faites cela que si vous savez ce que vous faites !
-- Sélectionner une étape vous permet de la supprimer ou d'en ajouter une nouvelle avant elle, au lieu de toujours insérer à la fin.
+- Disabling a program's safety makes it skip failed steps instead of aborting the entire program.
+  Only do this if you know what you are doing!
+- Selecting a step lets you remove it or add a new step before it, instead of always inserting at the end.
 
-# Mises en garde
+# Caveats
 
-- Ne coupez en aucune circonstance le fil de SÉCURITÉ de la machine, la licence médicale du personnel automatisé serait annulée.
-  L'anesthésie est REQUISE pour une opération sécurisée et désactiver cette obligation est hautement contraire à l'éthique envers les patients.
-- L'amputation des jambes ou des bras détachera leurs pieds et leurs mains sur le sol. Une intervention manuelle sera nécessaire, alors coupez-les d'abord si vous en avez besoin.
-- Si les plateaux de stockage sont pleins, stocker des objets sera impossible et l'appareil se bloquera en pratique.
+- Do not under any circumstances snip the machines SAFETY wire, automated personnel medical license would be void.
+  Anesthesia is REQUIRED for safe operation and disabling the need for it is highly unethical to patients.
+- Amputating legs or arms will detach their feet and hands to the floor. Manual intervention will be required, so cut them off first if you need them.
+- If the storage trays are filled, storing items will be impossible and the device will essentially seize up.
 </Document>

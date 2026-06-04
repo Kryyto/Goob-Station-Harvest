@@ -8,8 +8,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChronoBlink
-  name: Décalage temporaire
-  description: Modifie vos coordonnées, vous permettant de vous téléporter vers des emplacements proches.
+  name: Temporary shift
+  description: Changes your coordinates, allowing you to teleport to nearby locations
   categories: [ HideSpawnMenu ]
   components:
   - type: Action

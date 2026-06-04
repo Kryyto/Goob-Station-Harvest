@@ -10,7 +10,7 @@
 
 - type: body
   id: SpaceCobra
-  name: "cobra spatial"
+  name: "space cobra"
   root: chest
   slots:
     chest:

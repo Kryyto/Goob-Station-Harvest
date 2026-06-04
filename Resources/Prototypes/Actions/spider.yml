@@ -10,8 +10,8 @@
 - type: entity
   parent: BaseAction
   id: ActionSpiderWeb
-  name: Toile d'araignée
-  description: Crée une toile qui ralentit votre proie.
+  name: Spider Web
+  description: Spawns a web that slows your prey down.
   components:
   - type: Action
     icon: Interface/Actions/web.png
@@ -22,8 +22,8 @@
 - type: entity
   parent: BaseAction
   id: ActionSericulture
-  name: Tisser de la soie
-  description: Tissez un peu de soie pour des travaux manuels.
+  name: Weave silk
+  description: Weave a bit of silk for use in arts and crafts.
   components:
   - type: Action
     icon: Interface/Actions/web.png

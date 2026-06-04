@@ -9,7 +9,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: barrage arcanique
+  name: arcane barrage
   parent: BaseItem
   id: ArcaneBarrage
   description: Pew Pew Pew.
@@ -49,10 +49,10 @@
   - type: AmmoCounter
 
 - type: entity
-  name: fusil enchanté à verrou
+  name: enchanted bolt action rifle
   parent: [BaseWeaponSniper, BaseGunWieldable]
   id: WeaponBoltActionEnchanted
-  description: Attention à ne pas perdre la tête.
+  description: Careful not to lose your head.
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/Weapons/enchanted_rifle.rsi
@@ -91,10 +91,10 @@
     resetOnHandSelected: false
 
 - type: entity
-  name: hallebarde de supermatière
+  name: supermatter halberd
   parent: [BaseItem, BaseMagicalContraband]
   id: SupermatterHalberd
-  description: L'arme révérée des Exécuteurs de l'Oubli, utilisée pour imposer la volonté de l'Ordre.
+  description: The revered weapon of Oblivion Enforcers, used to enforce the Order's will.
   components:
   - type: Sharp
   - type: Sprite
@@ -167,7 +167,7 @@
   name: gohei
   parent: Gohei
   id: GoheiWizard
-  suffix: Sorcier
+  suffix: Wizard
   components:
   - type: MeleeWeapon
     damage:
@@ -177,10 +177,10 @@
     size: Normal
 
 - type: entity
-  name: bâton de ruban adhésif
+  name: tape staff
   parent: BaseItem
   id: StaffTape
-  description: Un rouleau de ruban adhésif solidement fixé à un bâton.
+  description: A roll of tape snugly attached to a stick.
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/Weapons/tapestaff.rsi
@@ -195,10 +195,10 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/tapestaff.rsi
 
 - type: entity
-  name: lame haute fréquence
+  name: high frequency blade
   parent: [BaseSword, BaseMagicalContraband]
   id: HighFrequencyBlade
-  description: Une épée renforcée par un puissant courant alternatif et résonnant à des fréquences de vibration extrêmement élevées. Cette oscillation affaiblit les liaisons moléculaires de tout ce qu'elle coupe, augmentant ainsi sa capacité de coupe.
+  description: A sword reinforced by a powerful alternating current and resonating at extremely high vibration frequencies. This oscillation weakens the molecular bonds of anything it cuts, thereby increasing its cutting ability.
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/Weapons/hfrequency.rsi
@@ -248,10 +248,10 @@
     price: 50000
 
 - type: entity
-  name: lame magique
+  name: spellblade
   parent: [BaseSword, BaseMagicalContraband]
   id: Spellblade
-  description: Une lame enchantée avec une série de runes sur le côté.
+  description: An enchanted blade with a series of runes along the side.
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/Weapons/spellblade.rsi
@@ -294,8 +294,8 @@
     price: 50000
 
 - type: entity
-  name: katana de l'écho
-  description: Des vibrations traversent constamment cette épée, comme si elles cherchaient désespérément une sortie.
+  name: echo katana
+  description: Vibrations are constantly flowing through this sword, like they desperately try to find a way out.
   parent: [ LavalandBaseKatana, BaseMagicalContraband ]
   id: EchoKatana
   components:

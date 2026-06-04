@@ -61,9 +61,9 @@
 - type: entity
   id: PlasticFlapsClear
   parent: PlasticFlapsBase
-  name: languettes en plastique
+  name: plastic flaps
   suffix: Clear
-  description: Des rabats en plastique ultra-résistants. Impossible de passer à travers. Aucune chance.
+  description: Heavy duty, plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Construction
     graph: PlasticFlapsGraph
@@ -72,9 +72,9 @@
 - type: entity
   id: PlasticFlapsOpaque
   parent: PlasticFlapsBase
-  name: languettes en plastique
+  name: plastic flaps
   suffix: Opaque
-  description: Des rabats en plastique ultra-résistants. Impossible de passer à travers. Aucune chance.
+  description: Heavy duty, plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Fixtures
     fixtures:
@@ -96,9 +96,9 @@
 - type: entity
   id: PlasticFlapsAirtightClear
   parent: PlasticFlapsBase
-  name: languettes en plastique hermétiques
+  name: airtight plastic flaps
   suffix: Airtight, Clear
-  description: Des rabats en plastique ultra-résistants, un peu plus solides et hermétiques. Impossible de passer à travers. Aucune chance.
+  description: Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Destructible
     thresholds:
@@ -115,9 +115,9 @@
 - type: entity
   id: PlasticFlapsAirtightOpaque
   parent: PlasticFlapsBase
-  name: languettes en plastique hermétiques
+  name: airtight plastic flaps
   suffix: Airtight, Opaque
-  description: Des rabats en plastique ultra-résistants, un peu plus solides et hermétiques. Impossible de passer à travers. Aucune chance.
+  description: Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Destructible
     thresholds:

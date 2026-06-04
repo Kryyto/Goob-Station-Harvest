@@ -1,9 +1,9 @@
 - type: entity
   id: MobPlagueRatSmall
-  suffix: Revenant
+  suffix: Wraith
   parent: [ BaseMob, MobCombat ]
-  name: rat pestiféré
-  description: Un rat à l'air malade.
+  name: plague rat
+  description: A diseased looking rat.
   components:
   - type: MindContainer
     showExamineInfo: true
@@ -128,10 +128,10 @@
 
 - type: entity
   id: MobPlagueRatMedium
-  suffix: Revenant
+  suffix: Wraith
   parent: MobPlagueRatSmall
-  name: rat rongé par la peste
-  description: Un rat misérable et dégoûtant.
+  name: plague-ridden rat
+  description: A wretched, disgusting rat.
   components:
   - type: SummonRatDen # allows you to use summon rat den
   - type: ActionGrant
@@ -159,10 +159,10 @@
 
 - type: entity
   id: MobPlagueRatLarge
-  suffix: Revenant
+  suffix: Wraith
   parent: MobPlagueRatMedium
-  name: masse de rats boursouflée
-  description: Une horrible masse de pus et de verrues, qui ressemblait autrefois à un rat.
+  name: Bloated rat mass
+  description: A horrible mass of pus and warts, that once used to look like a rat.
   components:
   - type: Rushdown #TO DO: Change the jump sound, or don't. Werewolf sound isn't perfect but works.
   - type: ActionGrant
@@ -202,10 +202,10 @@
 
 - type: entity
   id: MobMadRat
-  suffix: Revenant
+  suffix: Wraith
   parent: [ BaseMob, MobCombat ]
-  name: rat fou
-  description: Un rat très faible sorti d'une tanière.
+  name: mad rat
+  description: A very weak rat spawned from a den.
   components:
   - type: Sprite
     drawdepth: Mobs

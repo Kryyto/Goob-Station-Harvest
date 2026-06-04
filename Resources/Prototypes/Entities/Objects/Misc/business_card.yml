@@ -8,9 +8,9 @@
 
 - type: entity
   id: SyndicateBusinessCard
-  name: carte de visite du syndicat
+  name: syndicate business card
   parent: [ Paper, BaseSyndicateContraband ]
-  description: Une carte noire arborant le logo du syndicat. Quelque chose est écrit au dos.
+  description: A black card with the syndicate's logo. There's something written on the back.
   components:
     - type: Sprite
       sprite: Objects/Misc/bureaucracy.rsi

@@ -12,7 +12,7 @@
 - type: entity
   parent: ClothingUniformJumpsuitAtmos
   id: ClothingUniformJumpsuitAtmosSyndie
-  suffix: Contorsionniste
+  suffix: Contortionistic
   components:
   - type: ClothingGrantComponent #Goobstation edit
     component:
@@ -22,7 +22,7 @@
 - type: entity  # Goobstation original
   parent: ClothingUniformJumpsuitAtmosSyndie
   id: ClothingUniformJumpsuitAtmosSyndieAdvanced
-  suffix: Contorsionniste, Inventaire
+  suffix: Contortionistic, Inventory
   components:
   - type: ClothingGrantComponent
     component:

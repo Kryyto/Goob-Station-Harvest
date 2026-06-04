@@ -6,17 +6,17 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Vanne manuelle
-  La vanne manuelle est aussi simple qu'il y paraît.
-  Elle autorise ou bloque le flux de gaz selon qu'elle est ouverte ou fermée.
+  # Manual Valve
+  The manual valve is as simple as it gets.
+  Allows or blocks the flow of gasses depending on if it's open or closed.
   <Box>
     <GuideEntityEmbed Entity="GasValve"/>
   </Box>
 
-  Le gaz peut circuler librement entre les deux côtés sans restriction.
+  Gas can freely flow between both sides with no restrictions.
 
-  Les vannes manuelles sont utilisées dans diverses applications, par exemple :
-  - Autoriser ou bloquer le contournement d'un réseau de recyclage, pour évacuer directement les gaz résiduels dans l'espace
-  - Connecter ou isoler des chauffages/refroidisseurs du réseau de distribution de la station
+  Manual valves are used in a variety of applications, for example:
+  - Allowing or blocking the bypass of a recyclernet, to space waste gas directly
+  - Connecting or isolating heaters/coolers from the station's distro
 
 </Document>

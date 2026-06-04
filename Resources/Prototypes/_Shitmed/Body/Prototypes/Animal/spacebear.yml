@@ -10,7 +10,7 @@
 
 - type: body
   id: SpaceBear
-  name: "ours spatial"
+  name: "space bear"
   root: chest
   slots:
     chest:

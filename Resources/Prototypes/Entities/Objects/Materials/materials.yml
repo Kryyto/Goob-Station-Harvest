@@ -116,7 +116,7 @@
   abstract: true
   parent: BaseItem
   id: MaterialBase
-  description: Une matière première.
+  description: A raw material.
   components:
   - type: Sprite
     sprite: Objects/Materials/materials.rsi
@@ -141,7 +141,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialCardboard
-  name: carton
+  name: cardboard
   suffix: Full
   components:
   - type: Material
@@ -207,7 +207,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialCloth
-  name: tissu
+  name: cloth
   suffix: Full
   components:
   - type: Healing
@@ -302,7 +302,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialDurathread
-  name: durafil
+  name: durathread
   suffix: Full
   components:
   - type: Stack
@@ -367,7 +367,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialWoodPlank
-  name: bois
+  name: wood
   suffix: Full
   components:
   - type: Material
@@ -427,7 +427,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialBiomass
-  name: biomasse
+  name: biomass
   suffix: Full
   components:
   - type: Material
@@ -462,7 +462,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialHideBear
-  name: peau d'ours
+  name: bear hide
   components:
   - type: Sprite
     sprite: Objects/Materials/materials.rsi
@@ -489,8 +489,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialHideCorgi
-  name: peau de corgi
-  description: Fourrure de luxe réservée à la mode la plus élitiste. La rumeur dit qu'on la trouve quand un corgi est envoyé à la belle ferme.
+  name: corgi hide
+  description: Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
   components:
   - type: Sprite
     sprite: Objects/Materials/materials.rsi
@@ -509,7 +509,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialDiamond
-  name: diamant raffiné
+  name: refined diamond
   suffix: Full
   components:
   - type: Stack
@@ -564,7 +564,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialCotton
-  name: coton
+  name: cotton
   suffix: Full
   components:
   - type: Stack
@@ -629,7 +629,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialPyrotton
-  name: pyroton
+  name: pyrotton
   suffix: Full
   components:
   - type: Stack
@@ -756,8 +756,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialWebSilk
-  name: soie
-  description: Une matière filamenteuse.
+  name: silk
+  description: A webby material.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -821,8 +821,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialToothSpaceCarp
-  name: dent de carpe spatiale
-  description: Assez petite mais bien méchante. Vous l'aimez mieux quand elle ne s'enfonce pas dans votre chair.
+  name: space carp tooth
+  description: Pretty small but plenty nasty. You like them best when they're not sinking into you.
   suffix: Full
   components:
   - type: Sprite
@@ -864,8 +864,8 @@
 - type: entity
   parent: [ MaterialBase, BaseKnife ]
   id: MaterialToothSharkminnow
-  name: dent de requin-vairon
-  description: Ça a l'air tranchant. Assez tranchant pour crever un œil. Bon sang, c'est énorme.
+  name: sharkminnow tooth
+  description: Looks sharp. Sharp enough to poke someone's eye out. Holy fuck it's big.
   suffix: Full
   components:
   - type: MeleeWeapon
@@ -912,7 +912,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialBones
-  name: os
+  name: bones
   suffix: Full
   components:
   - type: Stack
@@ -956,8 +956,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialGunpowder
-  name: poudre à canon
-  description: Un composé explosif.
+  name: gunpowder
+  description: An explosive compound.
   components:
   - type: Stack
     stackType: Gunpowder
@@ -980,8 +980,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialGoliathHide
-  name: plaques de cuir de goliath
-  description: Fragments de la peau rocailleuse d'un goliath — ils pourraient rendre votre combinaison un peu plus résistante aux attaques de la faune locale.
+  name: goliath hide plates
+  description: Pieces of a goliath's rocky hide, these might be able to make your suit a bit more durable to attack from the local fauna.
   suffix: Full
   components:
   - type: Sprite

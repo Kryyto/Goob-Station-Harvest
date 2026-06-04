@@ -9,7 +9,7 @@
   parent: BaseItem
   id: ReverseBearTrapKey
   name: reverse bear trap key
-  description: Les clés pour déverrouiller le piège à ours inversé.
+  description: The keys to unlock the reverse bear trap.
   components:
   - type: Item
     size: Tiny

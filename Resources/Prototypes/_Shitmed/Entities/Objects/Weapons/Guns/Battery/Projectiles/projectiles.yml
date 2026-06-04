@@ -9,8 +9,8 @@
 
 - type: entity
   id: BaseBulletStarlight
-  name: BalleBase
-  description: Si vous pouvez voir ceci, vous êtes probablement mort !
+  name: BaseBullet
+  description: If you can see this you're probably dead!
   abstract: true
   components:
   - type: Reflective
@@ -57,7 +57,7 @@
 
 - type: entity
   id: BulletDeclone
-  name: balle déclonage # Pas sûr de cette traduction
+  name: decloner bolt
   parent: BaseBulletStarlight
   categories: [ HideSpawnMenu ]
   components:

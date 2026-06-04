@@ -101,10 +101,10 @@
       Steel: 125
 
 - type: entity
-  name: boîte à outils d'urgence
+  name: emergency toolbox
   parent: ToolboxBase
   id: ToolboxEmergency
-  description: Une boîte à outils rouge vif, garnie d'outils d'urgence.
+  description: A bright red toolbox, stocked with emergency tools.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
@@ -113,10 +113,10 @@
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
 
 - type: entity
-  name: boîte à outils mécanique
+  name: mechanical toolbox
   parent: ToolboxBase
   id: ToolboxMechanical
-  description: Une boîte bleue, garnie d'outils mécaniques.
+  description: A blue box, stocked with mechanical tools.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_blue.rsi
@@ -125,10 +125,10 @@
     sprite: Objects/Tools/Toolboxes/toolbox_blue.rsi
 
 - type: entity
-  name: boîte à outils électrique
+  name: electrical toolbox
   parent: ToolboxBase
   id: ToolboxElectrical
-  description: Une boîte à outils généralement garnie de matériel électrique.
+  description: A toolbox typically stocked with electrical gear.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
@@ -137,11 +137,11 @@
     sprite: Objects/Tools/Toolboxes/toolbox_yellow.rsi
 
 - type: entity
-  name: boîte à outils électrique
+  name: electrical toolbox
   suffix: Syndicate, Turret
   parent: ToolboxElectrical
   id: ToolboxElectricalTurret
-  description: Une boîte à outils généralement garnie de matériel électrique.
+  description: A toolbox typically stocked with electrical gear.
   components:
   - type: Damageable
     damageContainer: Inorganic
@@ -168,10 +168,10 @@
     price: 1350
 
 - type: entity
-  name: boîte à outils artistique
+  name: artistic toolbox
   parent: ToolboxBase
   id: ToolboxArtistic
-  description: Une boîte à outils généralement garnie de fournitures artistiques.
+  description: A toolbox typically stocked with artistic supplies.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_green.rsi
@@ -180,10 +180,10 @@
     sprite: Objects/Tools/Toolboxes/toolbox_green.rsi
 
 - type: entity
-  name: boîte à outils suspecte
+  name: suspicious toolbox
   parent: [ToolboxBase, BaseSyndicateContraband]
   id: ToolboxSyndicate
-  description: Une boîte à outils à l'allure sinistre, remplie d'outils d'élite du syndicat.
+  description: A sinister looking toolbox filled with elite syndicate tools.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_syn.rsi
@@ -202,10 +202,10 @@
         Blunt: 20
 
 - type: entity
-  name: boîte à outils dorée
+  name: golden toolbox
   parent: ToolboxBase
   id: ToolboxGolden
-  description: Une boîte à outils en or massif. Un rappeur tuerait pour ça.
+  description: A solid gold toolbox. A rapper would kill for this.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_gold.rsi

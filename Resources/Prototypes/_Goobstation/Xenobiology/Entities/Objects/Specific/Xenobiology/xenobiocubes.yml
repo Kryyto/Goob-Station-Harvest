@@ -1,9 +1,9 @@
 
 - type: entity
   parent: BoxCardboard
-  name: boîte de cubes de slime
+  name: slime cube box
   id: SlimeCubeBox
-  description: Cubes de slime de marque Drymate. Il suffit d'ajouter de l'eau !
+  description: Drymate brand slime cubes. Just add water!
   components:
   - type: StorageFill
     contents:
@@ -15,9 +15,9 @@
     
 - type: entity
   parent: BoxCardboard
-  name: boîte de cubes de slime syndiqués
+  name: syndicate slime cube box
   id: SlimeCubeBoxSyndie
-  description: Cubes de slime de marque Interdyne. Il suffit d'ajouter de l'eau !
+  description: Interdyne brand slime cubes. Just add water!
   components:
   - type: StorageFill
     contents:
@@ -29,9 +29,9 @@
 
 - type: entity
   parent: BaseWrappedCube
-  name: cube de slime emballé
+  name: slime cube wrapped
   id: SlimeCubeWrapped
-  description: Déballez-le pour obtenir un cube de slime.
+  description: Unwrap this to get a slime cube.
   components:
   - type: SpawnItemsOnUse
     items:
@@ -41,9 +41,9 @@
 
 - type: entity
   parent: BaseWrappedCube
-  name: cube de slime syndiqué emballé
+  name: syndicate slime cube wrapped
   id: SlimeCubeWrappedSyndie
-  description: Déballez-le pour obtenir un cube de slime.
+  description: Unwrap this to get a slime cube.
   components:
     - type: SpawnItemsOnUse
       items:
@@ -55,7 +55,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: SlimeCube
-  name: cube de slime
+  name: slime cube
   components:
     - type: Rehydratable
       possibleSpawns:

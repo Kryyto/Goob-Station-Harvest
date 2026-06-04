@@ -6,10 +6,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: empreinte
+  name: footprint
   id: Footprint
   save: false
-  description: Trace de liquide.
+  description: Trace of liquid.
   placement:
     mode: SnapgridCenter
   components:

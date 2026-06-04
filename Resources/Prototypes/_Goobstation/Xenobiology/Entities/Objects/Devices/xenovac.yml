@@ -1,8 +1,8 @@
 - type: entity
   parent: [Clothing, ClothingSlotBase]
   id: ClothingBackpackXenoBioTank
-  name: réservoir xenovac
-  description: Contient de la xénofaune. Dispose également d'une buse aspirante sur le côté. Exactement comme Slime Rancher.
+  name: xenovac containment tank
+  description: Holds xenofauna. Also contains a vacuum nozzle on it's side. It's just like slime rancher.
   components:
   - type: XenoVacuumTank
   - type: Appearance
@@ -63,7 +63,7 @@
 - type: entity
   id: ClothingBackpackXenoBioTankFilled
   parent: ClothingBackpackXenoBioTank
-  suffix: Rempli
+  suffix: Filled
   components:
   - type: ContainerFill
     containers:
@@ -73,8 +73,8 @@
 - type: entity
   id: WeaponXenoVacNozzle
   parent: BaseItem
-  name: buse xenovac
-  description: Une buse aspirante haute puissance utilisée conjointement avec un réservoir de stockage dorsal pour capturer les slimes.
+  name: xenovac nozzle
+  description: A high-powered vacuum nozzle used in conjunction with a backpack-mounted storage tank to store slimes.
   components:
   - type: Sprite
     sprite: _Goobstation/Xenobiology/Specific/Xenobiology/slime_nozzle.rsi

@@ -26,7 +26,7 @@
 
 - type: entity
   id: UraniumWindow
-  name: vitre uranium
+  name: uranium window
   parent: WindowRCDResistant
   components:
   - type: Sprite
@@ -85,8 +85,8 @@
 - type: entity
   id: UraniumWindowDirectional
   parent: WindowDirectionalRCDResistant
-  name: vitre uranium directionelle
-  description: Ne salissez pas la vitre là-dessous.
+  name: directional uranium window
+  description: Don't smudge up the glass down there.
   placement:
     mode: SnapgridCenter
     snap:

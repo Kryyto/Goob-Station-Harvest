@@ -59,7 +59,7 @@
   parent: ClothingOuterBase
   id: SurveillanceWirelessCameraBodyEntertainment
   name: nopro camera
-  description: Une caméra fixée sur le corps. Elle vous observe.
+  description: A body mounted camera. It's watching you.
   components:
     - type: DeviceNetwork
       deviceNetId: Wireless
@@ -94,7 +94,7 @@
 - type: entity
   parent: ClothingOuterWizardCentCommReal
   id: WhiteRobes
-  name: robes de l'élu
+  name: robes of the chosen one
   description: theses white robes are worn by only the finest of Nanotrasen's special operations department.
   suffix: chosen one
   components:
@@ -124,7 +124,7 @@
   parent: ClothingOuterBase
   id: ClothingOuterSuitPickle
   name: pickle suit
-  description: Sent horriblement le vinaigre.
+  description: Smells horribly of vinegar.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/OuterClothing/Misc/pickle.rsi
@@ -153,7 +153,7 @@
   parent: ClothingOuterBaseToggleable
   id: ClothingOuterArmorHereticCostume
   name: occult robes
-  description: Un ensemble de robes en lambeaux et poussiéreux. D'étranges yeux flous tapissent l'intérieur.
+  description: A ragged, dusty set of robes. Strange smudgy eyes line the inside.
   components:
   - type: Sprite
     sprite: _Goobstation/Heretic/Clothing/OuterClothing/toy_armor.rsi

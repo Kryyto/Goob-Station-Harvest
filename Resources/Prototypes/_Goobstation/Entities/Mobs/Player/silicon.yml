@@ -18,7 +18,7 @@
   id: HelpimovCircuitBoard
   parent: BaseElectronics
   name: law board (Helpimov)
-  description: Un circuit contenant l'ensemble de lois Helpimov.
+  description: An electronics board containing the Helpimov lawset.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
@@ -30,7 +30,7 @@
   id: GambamovCircuitBoard
   parent: BaseElectronics
   name: law board (Gambamov)
-  description: Un circuit contenant l'ensemble de lois Gambamov.
+  description: An electronics board containing the Gambamov lawset.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi

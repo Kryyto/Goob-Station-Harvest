@@ -27,7 +27,7 @@
 - type: entity
   parent: ClothingBeltMercWebbing
   id: ClothingBeltMercWebbingHelldiverFilled
-  suffix: Helldiver, Rempli
+  suffix: Helldiver, Filled
   components:
   - type: EntityTableContainerFill
     containers:

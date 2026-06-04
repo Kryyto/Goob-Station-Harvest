@@ -1,8 +1,8 @@
 - type: entity
   parent: FoodMeatBase
   id: XenoTissueSample
-  name: échantillon de tissu
-  description: Un morceau de chair extraterrestre suintant un liquide caustique.
+  name: tissue sample
+  description: A chunk of alien flesh, leaking a caustic goop.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Misc/tissue_sample.rsi

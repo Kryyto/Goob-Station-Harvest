@@ -6,10 +6,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: jumelles
+  name: binoculars
   parent: BaseItem
   id: Binoculars
-  description: Utilisées pour la surveillance à longue distance.
+  description: Used for long-distance surveillance.
   components:
   - type: Sprite
     sprite: Objects/Tools/binoculars.rsi

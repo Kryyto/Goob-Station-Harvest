@@ -10,78 +10,78 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Améliorations de sas
-  Il n'est pas rare que des individus téméraires tentent de contourner un sas en bricolant son câblage interne.
+  # Airlock Upgrades
+  It is not uncommon for plucky individuals to try and bypass an airlock by meddling with its internal wiring.
 
-  Heureusement, certaines contre-mesures peuvent être installées dans les sas pour gêner tout intrus potentiel.
+  Fortunately, certain countermeasures can be installed into airlocks to inconvenience any would-be trespassers.
 
-  ## Sas à sécurité moyenne
-  La forme la plus basique de dissuasion contre les intrusions est d'installer un blindage en acier sécurisé qui empêchera l'accès au câblage interne du sas.
+  ## Medium security airlocks
+  The most basic form of intrusion deterrence is to install a secured steel plating that will prevent access to internal wiring of the airlock.
 
-  Pour améliorer un sas basique en sas à sécurité moyenne, vous aurez besoin des matériaux suivants :
+  To upgrade a basic airlock to a medium security airlock, you will require the following materials:
   <Box HorizontalAlignment="Stretch">
 	  <Box>
-		  <GuideEntityEmbed Entity="SheetSteel" Caption="2 feuilles d'acier"/>
+		  <GuideEntityEmbed Entity="SheetSteel" Caption="2 steel sheets"/>
 	  </Box>
 	  <Box>
-		  <GuideEntityEmbed Entity="Screwdriver" Caption="Tournevis"/>
+		  <GuideEntityEmbed Entity="Screwdriver" Caption="Screwdriver"/>
 	  </Box>
 	  <Box>
-		  <GuideEntityEmbed Entity="Welder" Caption="Soudeur"/>
+		  <GuideEntityEmbed Entity="Welder" Caption="Welder"/>
 	  </Box>
   </Box>
 
-  Pour améliorer un sas basique :
-  - Utilisez le tournevis pour ouvrir le panneau de maintenance du sas.
-  - Ajoutez les feuilles d'acier au sas.
-  - Soudez les feuilles d'acier en place.
-  - Refermez le panneau de maintenance avec le tournevis.
+  To upgrade a basic airlock:
+  -	Use the screwdriver to open the airlock maintenance panel.
+  -	Add the steel sheets to the airlock.
+  -	Weld the steel sheets into place.
+  -	Close the maintenance panel using the screwdriver.
 
-  ## Sas à haute sécurité
-  Pour les sas donnant accès aux zones les plus sensibles de la station spatiale, l'utilisation de moyens de dissuasion plus robustes est conseillée. Les sas à haute sécurité disposent d'un blindage renforcé pour protéger leur câblage interne.
+  ## High security airlocks
+  For airlocks leading to the more sensitive areas of the space station, the use of stronger deterrents are advised. High security airlocks have improved armor plating to protect its internal wiring.
 
-  Pour améliorer un sas à sécurité moyenne en sas à haute sécurité, vous aurez besoin des matériaux suivants :
+  To upgrade a medium security airlock to a high security airlock, you will require the following materials:
   <Box HorizontalAlignment="Stretch">
 	  <Box>
-		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 feuilles de plastacier"/>
+		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 plasteel sheets"/>
 	  </Box>
 	  <Box>
-		  <GuideEntityEmbed Entity="Screwdriver" Caption="Tournevis"/>
+		  <GuideEntityEmbed Entity="Screwdriver" Caption="Screwdriver"/>
 	  </Box>
 	  <Box>
-		  <GuideEntityEmbed Entity="Welder" Caption="Soudeur"/>
+		  <GuideEntityEmbed Entity="Welder" Caption="Welder"/>
 	  </Box>
   </Box>
 
-  Pour améliorer un sas à sécurité moyenne :
-  - Utilisez le tournevis pour ouvrir le panneau de maintenance du sas.
-  - Ajoutez les feuilles de plastacier au sas.
-  - Soudez les feuilles de plastacier en place.
-  - Refermez le panneau de maintenance avec le tournevis.
+  To upgrade a medium security airlock:
+  - Use the screwdriver to open the airlock maintenance panel.
+  - Add the plasteel sheets to the airlock.
+  - Weld the plasteel sheets into place.
+  - Close the maintenance panel using the screwdriver.
 
-  ## Sas à sécurité maximale
-  Vous pouvez éventuellement améliorer un sas à haute sécurité en sas à sécurité maximale. Les sas à sécurité maximale possèdent une couche supplémentaire de grillage électrifié en plus de ses autres protections, capable d'électrocuter tout personnel non autorisé tentant de le manipuler.
+  ## Maximum security airlocks
+  You can optionally upgrade a high security airlock to a maximum security airlock. Maximum security airlocks possess an additional layer of electrified wire mesh on top of its other protections, which can shock any unauthorized personnel attempting to tamper with the airlock.
 
-  Pour améliorer un sas à haute sécurité en sas à sécurité maximale, vous aurez besoin des matériaux suivants :
+  To upgrade a high security airlock to a maximum security airlock, you will require the following materials:
   <Box HorizontalAlignment="Stretch">
 	  <Box>
-		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 feuilles de plastacier"/>
+		  <GuideEntityEmbed Entity="SheetPlasteel" Caption="2 plasteel sheets"/>
 	  </Box>
     <Box>
-      <GuideEntityEmbed Entity="PartRodMetal" Caption="2 tiges métalliques"/>
+      <GuideEntityEmbed Entity="PartRodMetal" Caption="2 metal rods"/>
     </Box>
 	  <Box>
-		  <GuideEntityEmbed Entity="Screwdriver" Caption="Tournevis"/>
+		  <GuideEntityEmbed Entity="Screwdriver" Caption="Screwdriver"/>
 	  </Box>
 	  <Box>
-		  <GuideEntityEmbed Entity="Welder" Caption="Soudeur"/>
+		  <GuideEntityEmbed Entity="Welder" Caption="Welder"/>
 	  </Box>
   </Box>
 
-  Pour améliorer un sas à haute sécurité :
-  - Utilisez le tournevis pour ouvrir le panneau de maintenance du sas.
-  - Ajoutez les feuilles de plastacier au sas.
-  - Soudez les feuilles de plastacier en place.
-  - Ajoutez les tiges métalliques au sas.
-  - Refermez le panneau de maintenance avec le tournevis.
+  To upgrade a high security airlock:
+  -	Use the screwdriver to open the airlock maintenance panel.
+  -	Add the plasteel sheets to the airlock.
+  -	Weld the plasteel sheets into place.
+  - Add the metal rods to the airlock.
+  -	Close the maintenance panel using the screwdriver.
 </Document>

@@ -7,8 +7,8 @@
 - type: entity
   parent: [ GrenadeBase, BaseMinorContraband ]
   id: PipeBomb
-  name: bombe artisanale
-  description: Un explosif artisanal fabriqué à partir de tuyaux et de fils.
+  name: pipe bomb
+  description: An improvised explosive made from pipes and wire.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/pipebomb.rsi
@@ -43,8 +43,8 @@
 - type: entity
   parent: [ BaseItem, BaseMinorContraband ]
   id: PipeBombGunpowder
-  name: bombe artisanale
-  description: Un explosif artisanal fabriqué à partir d'un tuyau. Celui-ci ne contient pas de poudre à canon.
+  name: pipe bomb
+  description: An improvised explosive made from a pipe. This one has no gunpowder.
   suffix: Gunpowder
   components:
   - type: Sprite
@@ -58,8 +58,8 @@
 - type: entity
   parent: [ BaseItem, BaseMinorContraband ]
   id: PipeBombCable
-  name: bombe artisanale
-  description: Un explosif artisanal fabriqué à partir d'un tuyau. Celui-ci ne possède pas de câble.
+  name: pipe bomb
+  description: An improvised explosive made from a pipe. This one has no cable.
   suffix: Cable
   components:
   - type: Sprite

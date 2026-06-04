@@ -33,7 +33,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeLicoxide
-  name: abeille (licoxide)
+  name: bee (licoxide)
   components:
   - type: Bloodstream
     bloodReagent: Licoxide
@@ -41,7 +41,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeAmatoxin
-  name: abeille (amatoxine)
+  name: bee (amatoxin)
   components:
   - type: Bloodstream
     bloodReagent: Amatoxin
@@ -49,7 +49,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeLexorin
-  name: abeille (lexorine)
+  name: bee (lexorin)
   components:
   - type: Bloodstream
     bloodReagent: Lexorin
@@ -57,7 +57,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeChloralHydrate
-  name: abeille (hydrate de chloral)
+  name: bee (chloral hydrate)
   components:
   - type: Bloodstream
     bloodReagent: ChloralHydrate
@@ -65,7 +65,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeUnstableMutagen
-  name: abeille (mutagène instable)
+  name: bee (unstable mutagen)
   components:
   - type: Bloodstream
     bloodReagent: UnstableMutagen
@@ -73,7 +73,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeMindbreakerToxin
-  name: abeille (toxine brise-esprit)
+  name: bee (mindbreaker toxin)
   components:
   - type: Bloodstream
     bloodReagent: MindbreakerToxin
@@ -81,7 +81,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeePax
-  name: abeille (pax)
+  name: bee (pax)
   components:
   - type: Bloodstream
     bloodReagent: Pax
@@ -89,7 +89,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeLead
-  name: abeille (plomb)
+  name: bee (lead)
   components:
   - type: Bloodstream
     bloodReagent: Lead
@@ -97,7 +97,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeLipolicide
-  name: abeille (lipolicide)
+  name: bee (lipolicide)
   components:
   - type: Bloodstream
     bloodReagent: Lipolicide
@@ -105,7 +105,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeImpedrezene
-  name: abeille (impédrozène)
+  name: bee (impedrezene)
   components:
   - type: Bloodstream
     bloodReagent: Impedrezene
@@ -113,7 +113,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeRazorium
-  name: abeille (razorium)
+  name: bee (razorium)
   components:
   - type: Bloodstream
     bloodReagent: Razorium
@@ -121,7 +121,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeMuteToxin
-  name: abeille (toxine muette)
+  name: bee (mute toxin)
   components:
   - type: Bloodstream
     bloodReagent: MuteToxin
@@ -129,7 +129,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeBuzzochloricBees # Bees bees
-  name: abeille (abeilles buzzochloriques)
+  name: bee (buzzochloric bees)
   components:
   - type: Bloodstream
     bloodReagent: BuzzochloricBees
@@ -137,7 +137,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeLaughter
-  name: abeille (rire)
+  name: bee (laughter)
   components:
   - type: Bloodstream
     bloodReagent: Laughter
@@ -145,7 +145,7 @@
 - type: entity
   parent: MobAngryBeeWizard
   id: BeeToxin
-  name: abeille (toxine)
+  name: bee (toxin)
   components:
   - type: Bloodstream
     bloodReagent: Toxin

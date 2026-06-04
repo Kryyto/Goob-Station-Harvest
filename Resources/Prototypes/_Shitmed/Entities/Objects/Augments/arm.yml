@@ -16,8 +16,8 @@
 - type: entity
   parent: BaseAugmentAction
   id: ActionAugmentOpenToolsPanel
-  name: Ouvrir le panneau d'outils
-  description: Accéder aux outils implantés en vous
+  name: Open tools panel
+  description: Access the tools implanted within you
   components:
   - type: Action
     icon: { sprite: Clothing/Belt/utility.rsi, state: icon }
@@ -81,8 +81,8 @@
 - type: entity
   parent: BaseAugmentElectronics
   id: AugmentUtilityPanelElectronics
-  name: électronique de panneau d'outils utilitaires
-  description: Une carte électronique qui programme un panneau d'outils pour contenir un type d'objet spécifique. Celui-ci contient des outils utilitaires.
+  name: utility tools panel electronics
+  description: An electronics board that programs a tool panel to hold a specific type of item. This one holds utility tools.
   components:
   - type: Tag
     tags: [ AugmentUtilityToolElectronics ]
@@ -90,8 +90,8 @@
 - type: entity
   parent: BaseAugmentElectronics
   id: AugmentBotanyPanelElectronics
-  name: électronique de panneau d'outils botaniques
-  description: Une carte électronique qui programme un panneau d'outils pour contenir un type d'objet spécifique. Celui-ci contient des outils botaniques.
+  name: botany tools panel electronics
+  description: An electronics board that programs a tool panel to hold a specific type of item. This one holds botanical tools.
   components:
   - type: Tag
     tags: [ AugmentBotanyToolElectronics ]
@@ -99,8 +99,8 @@
 - type: entity
   parent: BaseAugmentElectronics
   id: AugmentSurgeryPanelElectronics
-  name: électronique de panneau d'outils chirurgicaux
-  description: Une carte électronique qui programme un panneau d'outils pour contenir un type d'objet spécifique. Celui-ci contient des outils chirurgicaux.
+  name: surgery tools panel electronics
+  description: An electronics board that programs a tool panel to hold a specific type of item. This one holds surgical tools.
   components:
   - type: Tag
     tags: [ AugmentSurgeryToolElectronics ]
@@ -108,8 +108,8 @@
 - type: entity
   parent: BaseAugmentElectronics
   id: AugmentPaperworkPanelElectronics
-  name: électronique de panneau d'outils administratifs
-  description: Une carte électronique qui programme un panneau d'outils pour contenir un type d'objet spécifique. Celui-ci contient des outils administratifs.
+  name: paperwork tools panel electronics
+  description: An electronics board that programs a tool panel to hold a specific type of item. This one holds paperwork tools.
   components:
   - type: Tag
     tags: [ AugmentPaperworkToolElectronics ]
@@ -117,8 +117,8 @@
 - type: entity
   parent: BaseAugmentElectronics
   id: AugmentStrengthElectronics
-  name: électronique d'augment de force
-  description: Une carte électronique qui contrôle un augment de force.
+  name: strength augment electronics
+  description: An electronics board that controls a strength augment.
   components:
   - type: Tag
     tags: [ AugmentStrengthElectronics ]
@@ -129,7 +129,7 @@
   abstract: true
   parent: BaseItem
   id: BaseIncompleteAugmentToolPanel
-  description: Peut être implanté dans un corps pour donner accès à des outils spécifiques. Celui-ci est incomplet.
+  description: Can be implanted into a body to provide access to specific tools. This one is incomplete.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Augments/arm.rsi
@@ -141,7 +141,7 @@
 - type: entity
   parent: BaseIncompleteAugmentToolPanel
   id: AugmentToolPanelCasing
-  name: boîtier d'augment de panneau d'outils
+  name: tools panel augment casing
   components:
   - type: Sprite
     state: base
@@ -153,7 +153,7 @@
 - type: entity
   parent: BaseIncompleteAugmentToolPanel
   id: AugmentToolPanelCables
-  name: boîtier d'augment de panneau d'outils avec câbles
+  name: tools panel augment casing with cables
   components:
   - type: Sprite
     state: base_cables
@@ -163,8 +163,8 @@
 - type: entity
   parent: BaseAugmentToolPanel
   id: AugmentToolsPanel
-  name: augment de panneau d'outils utilitaires
-  description: Un panneau pouvant être implanté dans le bras d'un patient pour lui donner accès à son contenu. Celui-ci peut contenir des outils de base.
+  name: utility tools panel augment
+  description: A panel that can be augmented into a patient's arm to provide them access to its contents. This one can hold basic tools.
   components:
   - type: Sprite
     state: engineering
@@ -198,8 +198,8 @@
 - type: entity
   parent: BaseAugmentToolPanel
   id: AugmentBotanyPanel
-  name: augment de panneau d'outils botaniques
-  description: Un panneau pouvant être implanté dans le bras d'un patient pour lui donner accès à son contenu. Celui-ci peut contenir des outils botaniques.
+  name: botanical tools panel augment
+  description: A panel that can be augmented into a patient's arm to provide them access to its contents. This one can hold botanical tools.
   components:
   - type: Sprite
     state: botany
@@ -219,8 +219,8 @@
 - type: entity
   parent: BaseAugmentToolPanel
   id: AugmentPaperworkPanel
-  name: augment de panneau d'outils administratifs
-  description: Un panneau pouvant être implanté dans le bras d'un patient pour lui donner accès à son contenu. Celui-ci peut contenir des outils administratifs.
+  name: paperwork tools panel augment
+  description: A panel that can be augmented into a patient's arm to provide them access to its contents. This one can hold paperwork tools.
   components:
   - type: Sprite
     state: paperwork
@@ -238,8 +238,8 @@
 - type: entity
   parent: BaseAugmentToolPanel
   id: AugmentSurgicalPanel
-  name: augment de panneau d'outils chirurgicaux
-  description: Un panneau pouvant être implanté dans le bras d'un patient pour lui donner accès à son contenu. Celui-ci peut contenir des outils chirurgicaux.
+  name: surgical tools panel augment
+  description: A panel that can be augmented into a patient's arm to provide them access to its contents. This one can hold surgical tools.
   components:
   - type: Sprite
     state: surgical
@@ -259,7 +259,7 @@
   abstract: true
   parent: BaseItem
   id: BaseIncompleteAugmentStrength
-  description: Peut être implanté dans un corps pour augmenter la force physique. Celui-ci est incomplet.
+  description: Can be implanted into a body to increase physical strength. This one is incomplete.
   components:
   - type: Sprite
     sprite: _Shitmed/Objects/Augments/arm.rsi
@@ -271,7 +271,7 @@
 - type: entity
   parent: BaseIncompleteAugmentStrength
   id: AugmentStrengthCasing
-  name: boîtier d'augment de force
+  name: strength augment casing
   components:
   - type: Sprite
     state: base
@@ -283,7 +283,7 @@
 - type: entity
   parent: BaseIncompleteAugmentStrength
   id: AugmentStrengthCables
-  name: boîtier d'augment de force avec câbles
+  name: strength augment casing with cables
   components:
   - type: Sprite
     state: base_cables
@@ -293,8 +293,8 @@
 - type: entity
   parent: BaseAugmentAction
   id: ActionAugmentToggleStrength
-  name: Activer/désactiver l'augment de force
-  description: Augmente vos dégâts au corps à corps de 25 %, consomme 30W lorsqu'actif.
+  name: Toggle strength augment
+  description: Increases your melee damage by 25%, consumes 30W while active.
   components:
   - type: Action
     icon: Interface/Default/blocked.png
@@ -305,8 +305,8 @@
 - type: entity
   parent: BaseArmAugment
   id: AugmentStrength
-  name: augment de force
-  description: Peut être implanté dans un corps pour augmenter la force physique.
+  name: strength augment
+  description: Can be implanted into a body to increase physical strength.
   components:
   - type: Sprite
     state: strength

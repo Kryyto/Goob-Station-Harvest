@@ -7,7 +7,7 @@
   name: wooden wand
   parent: BaseItem
   id: WeaponWoodenWand
-  description: Baguette en bois artisanale avec un noyau d'anomalie.
+  description: Handcrafted wooden wand with a anomaly core.
   components:
     - type: Sprite
       sprite: _Goobstation/Objects/Weapons/Melee/wooden_wand.rsi

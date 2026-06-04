@@ -6,10 +6,10 @@
 
 - type: entity
   id: MultiWand
-  name: baguette magique
-  description: Apparemment une baguette utilisée par le sorcier.
+  name: wizard wand
+  description: Apparently a wand used by the wizard.
   parent: [BaseItem, BaseMagicalContraband]
-  suffix: NE PAS PLACER
+  suffix: DO NOT MAP
   categories: [ DoNotMap ]
   components:
   - type: Sprite
@@ -103,7 +103,7 @@
 - type: entity
   id: MultiWandWizard
   parent: MultiWand
-  suffix: Sorcier, NE PAS PLACER
+  suffix: Wizard, DO NOT MAP
   categories: [ DoNotMap ]
   components:
   - type: ActivatableUiUserWhitelist

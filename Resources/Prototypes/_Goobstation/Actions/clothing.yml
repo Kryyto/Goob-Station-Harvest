@@ -11,8 +11,8 @@
 - type: entity
   parent: BaseAction
   id: ActionClothingSeal
-  name: Sceller les vêtements
-  description: Scelle vos vêtements actuels.
+  name: Seal clothing
+  description: Seals your current clothing.
   categories: [ HideSpawnMenu ]
   components:
   - type: ConfirmableAction
@@ -35,8 +35,8 @@
 - type: entity
   parent: BaseAction
   id: ActionActivateProjector
-  name: Basculer le Clone
-  description: Génère ou dissipe votre gémeaux connecté.
+  name: Toggle Clone
+  description: Generates or dissipates your connected gemini.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -53,8 +53,8 @@
 - type: entity
   parent: BaseAction
   id: ActionHailer
-  name: Héler
-  description: Hélez audiblement l'équipage proche, utile pour donner des ordres rapides.
+  name: Hail
+  description: Audibly hail nearby crew, useful for giving quick orders.
   components:
   - type: Action
     icon: { sprite: Clothing/Mask/gassecurity.rsi, state: icon }

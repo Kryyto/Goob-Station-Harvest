@@ -31,7 +31,7 @@
 - type: entity
   parent: [ PartAbductorBase, BaseChest ]
   id: ChestAbductor
-  name: "torse ravisseur"
+  name: "abductor chest"
   components:
   - type: Sprite
     state: chest
@@ -48,7 +48,7 @@
 - type: entity
   parent: [ PartAbductorBase, BaseGroin ]
   id: GroinAbductor
-  name: "aine ravisseur"
+  name: "abductor groin"
   components:
   - type: Sprite
     state: groin
@@ -65,7 +65,7 @@
 - type: entity
   parent: [ PartAbductorBase, BaseHead ]
   id: HeadAbductor
-  name: "tête ravisseur"
+  name: "abductor head"
   components:
   - type: Sprite
     state: head
@@ -75,39 +75,39 @@
 - type: entity
   parent: [ PartAbductorBase, BaseLeftArm ]
   id: LeftArmAbductor
-  name: "bras gauche ravisseur"
+  name: "left abductor arm"
 
 - type: entity
   parent: [ PartAbductorBase, BaseRightArm ]
   id: RightArmAbductor
-  name: "bras droit ravisseur"
+  name: "right abductor arm"
 
 - type: entity
   parent: [ PartAbductorBase, BaseLeftHand ]
   id: LeftHandAbductor
-  name: "main gauche ravisseur"
+  name: "left abductor hand"
 
 - type: entity
   parent: [ PartAbductorBase, BaseRightHand ]
   id: RightHandAbductor
-  name: "main droite ravisseur"
+  name: "right abductor hand"
 
 - type: entity
   parent: [ PartAbductorBase, BaseLeftLeg ]
   id: LeftLegAbductor
-  name: "jambe gauche ravisseur"
+  name: "left abductor leg"
 
 - type: entity
   parent: [ PartAbductorBase, BaseRightLeg ]
   id: RightLegAbductor
-  name: "jambe droite ravisseur"
+  name: "right abductor leg"
 
 - type: entity
   parent: [ PartAbductorBase, BaseLeftFoot ]
   id: LeftFootAbductor
-  name: "pied gauche ravisseur"
+  name: "left abductor foot"
 
 - type: entity
   parent: [ PartAbductorBase, BaseRightFoot ]
   id: RightFootAbductor
-  name: "pied droit ravisseur"
+  name: "right abductor foot"

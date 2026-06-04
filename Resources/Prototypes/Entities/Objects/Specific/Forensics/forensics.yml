@@ -14,9 +14,9 @@
 
 - type: entity
   id: ForensicPad
-  name: tampon médico-légal
+  name: forensic pad
   parent: BaseItem
-  description: Un tampon médico-légal pour collecter des empreintes digitales ou des fibres.
+  description: A forensic pad for collecting fingerprints or fibers.
   components:
   - type: Item
     size: Tiny

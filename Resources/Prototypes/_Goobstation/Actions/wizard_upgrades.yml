@@ -7,7 +7,7 @@
 - type: entity
   parent: ActionMimeMalaise
   id: ActionMimeMalaiseII
-  name: Malaise du mime II
+  name: Mime Malaise II
   components:
   - type: Action
     useDelay: 25
@@ -15,7 +15,7 @@
 - type: entity
   parent: ActionMimeMalaise
   id: ActionMimeMalaiseIII
-  name: Malaise du mime III
+  name: Mime Malaise III
   components:
   - type: Action
     useDelay: 20
@@ -23,7 +23,7 @@
 - type: entity
   parent: ActionMimeMalaise
   id: ActionMimeMalaiseIV
-  name: Malaise du mime IV
+  name: Mime Malaise IV
   components:
   - type: Action
     useDelay: 15
@@ -31,7 +31,7 @@
 - type: entity
   parent: ActionMimeMalaise
   id: ActionMimeMalaiseV
-  name: Malaise du mime V
+  name: Mime Malaise V
   components:
   - type: Action
     useDelay: 10
@@ -40,7 +40,7 @@
 - type: entity
   parent: ActionCluwneCurse
   id: ActionCluwneCurseII
-  name: Malédiction du cluwne II
+  name: Curse of the Cluwne II
   components:
   - type: Action
     useDelay: 40
@@ -48,7 +48,7 @@
 - type: entity
   parent: ActionCluwneCurse
   id: ActionCluwneCurseIII
-  name: Malédiction du cluwne III
+  name: Curse of the Cluwne III
   components:
   - type: Action
     useDelay: 20
@@ -57,7 +57,7 @@
 - type: entity
   parent: ActionBananaTouch
   id: ActionBananaTouchII
-  name: Toucher banane II
+  name: Banana Touch II
   components:
   - type: Action
     useDelay: 25
@@ -65,7 +65,7 @@
 - type: entity
   parent: ActionBananaTouch
   id: ActionBananaTouchIII
-  name: Toucher banane III
+  name: Banana Touch III
   components:
   - type: Action
     useDelay: 20
@@ -73,7 +73,7 @@
 - type: entity
   parent: ActionBananaTouch
   id: ActionBananaTouchIV
-  name: Toucher banane IV
+  name: Banana Touch IV
   components:
   - type: Action
     useDelay: 15
@@ -81,7 +81,7 @@
 - type: entity
   parent: ActionBananaTouch
   id: ActionBananaTouchV
-  name: Toucher banane V
+  name: Banana Touch V
   components:
   - type: Action
     useDelay: 10
@@ -90,7 +90,7 @@
 - type: entity
   parent: ActionMagicMissile
   id: ActionMagicMissileII
-  name: Missile magique II
+  name: Magic Missile II
   components:
   - type: Action
     useDelay: 13
@@ -98,7 +98,7 @@
 - type: entity
   parent: ActionMagicMissile
   id: ActionMagicMissileIII
-  name: Missile magique III
+  name: Magic Missile III
   components:
   - type: Action
     useDelay: 6
@@ -107,7 +107,7 @@
 - type: entity
   parent: ActionDisableTech
   id: ActionDisableTechII
-  name: Désactiver la technologie II
+  name: Disable Technology II
   components:
   - type: Action
     useDelay: 16
@@ -115,7 +115,7 @@
 - type: entity
   parent: ActionDisableTech
   id: ActionDisableTechIII
-  name: Désactiver la technologie III
+  name: Disable Technology III
   components:
   - type: Action
     useDelay: 12
@@ -123,7 +123,7 @@
 - type: entity
   parent: ActionDisableTech
   id: ActionDisableTechIV
-  name: Désactiver la technologie IV
+  name: Disable Technology IV
   components:
   - type: Action
     useDelay: 8
@@ -131,7 +131,7 @@
 - type: entity
   parent: ActionDisableTech
   id: ActionDisableTechV
-  name: Désactiver la technologie V
+  name: Disable Technology V
   components:
   - type: Action
     useDelay: 4
@@ -140,7 +140,7 @@
 - type: entity
   parent: ActionSmoke
   id: ActionSmokeII
-  name: Fumée II
+  name: Smoke II
   components:
   - type: Action
     useDelay: 7
@@ -148,7 +148,7 @@
 - type: entity
   parent: ActionSmoke
   id: ActionSmokeIII
-  name: Fumée III
+  name: Smoke III
   components:
   - type: Action
     useDelay: 2
@@ -157,7 +157,7 @@
 - type: entity
   parent: ActionRepulse
   id: ActionRepulseII
-  name: Répulsion II
+  name: Repulse II
   components:
   - type: Action
     useDelay: 33.75
@@ -165,7 +165,7 @@
 - type: entity
   parent: ActionRepulse
   id: ActionRepulseIII
-  name: Répulsion III
+  name: Repulse III
   components:
   - type: Action
     useDelay: 27.5
@@ -173,7 +173,7 @@
 - type: entity
   parent: ActionRepulse
   id: ActionRepulseIV
-  name: Répulsion IV
+  name: Repulse IV
   components:
   - type: Action
     useDelay: 21.25
@@ -181,7 +181,7 @@
 - type: entity
   parent: ActionRepulse
   id: ActionRepulseV
-  name: Répulsion V
+  name: Repulse V
   components:
   - type: Action
     useDelay: 15
@@ -190,7 +190,7 @@
 - type: entity
   parent: ActionStopTime
   id: ActionStopTimeII
-  name: Arrêt du temps II
+  name: Stop Time II
   components:
   - type: Action
     useDelay: 35
@@ -198,7 +198,7 @@
 - type: entity
   parent: ActionStopTime
   id: ActionStopTimeIII
-  name: Arrêt du temps III
+  name: Stop Time III
   components:
   - type: Action
     useDelay: 20
@@ -207,7 +207,7 @@
 - type: entity
   parent: ActionBlindSpell
   id: ActionBlindII
-  name: Cécité II
+  name: Blind II
   components:
   - type: Action
     useDelay: 12
@@ -215,7 +215,7 @@
 - type: entity
   parent: ActionBlindSpell
   id: ActionBlindIII
-  name: Cécité III
+  name: Blind III
   components:
   - type: Action
     useDelay: 9
@@ -223,7 +223,7 @@
 - type: entity
   parent: ActionBlindSpell
   id: ActionBlindIV
-  name: Cécité IV
+  name: Blind IV
   components:
   - type: Action
     useDelay: 6
@@ -231,7 +231,7 @@
 - type: entity
   parent: ActionBlindSpell
   id: ActionBlindV
-  name: Cécité V
+  name: Blind V
   components:
   - type: Action
     useDelay: 3
@@ -240,7 +240,7 @@
 - type: entity
   parent: ActionMutateSpell
   id: ActionMutateII
-  name: Mutation II
+  name: Mutate II
   components:
   - type: Action
     useDelay: 30
@@ -249,7 +249,7 @@
 - type: entity
   parent: ActionTeslaBlast
   id: ActionTeslaBlastII
-  name: Explosion tesla II
+  name: Tesla Blast II
   components:
   - type: Action
     useDelay: 23.25
@@ -257,7 +257,7 @@
 - type: entity
   parent: ActionTeslaBlast
   id: ActionTeslaBlastIII
-  name: Explosion tesla III
+  name: Tesla Blast III
   components:
   - type: Action
     useDelay: 16.5
@@ -265,7 +265,7 @@
 - type: entity
   parent: ActionTeslaBlast
   id: ActionTeslaBlastIV
-  name: Explosion tesla IV
+  name: Tesla Blast IV
   components:
   - type: Action
     useDelay: 9.75
@@ -273,7 +273,7 @@
 - type: entity
   parent: ActionTeslaBlast
   id: ActionTeslaBlastV
-  name: Explosion tesla V
+  name: Tesla Blast V
   components:
   - type: Action
     useDelay: 3
@@ -282,7 +282,7 @@
 - type: entity
   parent: ActionLightningBolt
   id: ActionLightningBoltII
-  name: Foudre II
+  name: Lightning Bolt II
   components:
   - type: Action
     useDelay: 6.75
@@ -290,7 +290,7 @@
 - type: entity
   parent: ActionLightningBolt
   id: ActionLightningBoltIII
-  name: Foudre III
+  name: Lightning Bolt III
   components:
   - type: Action
     useDelay: 5.5
@@ -298,7 +298,7 @@
 - type: entity
   parent: ActionLightningBolt
   id: ActionLightningBoltIV
-  name: Foudre IV
+  name: Lightning Bolt IV
   components:
   - type: Action
     useDelay: 4.25
@@ -306,7 +306,7 @@
 - type: entity
   parent: ActionLightningBolt
   id: ActionLightningBoltV
-  name: Foudre V
+  name: Lightning Bolt V
   components:
   - type: Action
     useDelay: 3
@@ -315,7 +315,7 @@
 - type: entity
   parent: ActionHomingToolbox
   id: ActionHomingToolboxII
-  name: Boîte à outils guidée II
+  name: Homing Toolbox II
   components:
   - type: Action
     useDelay: 6.75
@@ -323,7 +323,7 @@
 - type: entity
   parent: ActionHomingToolbox
   id: ActionHomingToolboxIII
-  name: Boîte à outils guidée III
+  name: Homing Toolbox III
   components:
   - type: Action
     useDelay: 5.5
@@ -331,7 +331,7 @@
 - type: entity
   parent: ActionHomingToolbox
   id: ActionHomingToolboxIV
-  name: Boîte à outils guidée IV
+  name: Homing Toolbox IV
   components:
   - type: Action
     useDelay: 4.25
@@ -339,7 +339,7 @@
 - type: entity
   parent: ActionHomingToolbox
   id: ActionHomingToolboxV
-  name: Boîte à outils guidée V
+  name: Homing Toolbox V
   components:
   - type: Action
     useDelay: 3
@@ -348,7 +348,7 @@
 - type: entity
   parent: ActionArcaneBarrage
   id: ActionArcaneBarrageII
-  name: Barrage arcanique II
+  name: Arcane Barrage II
   components:
   - type: Action
     useDelay: 40
@@ -356,7 +356,7 @@
 - type: entity
   parent: ActionArcaneBarrage
   id: ActionArcaneBarrageIII
-  name: Barrage arcanique III
+  name: Arcane Barrage III
   components:
   - type: Action
     useDelay: 20
@@ -365,7 +365,7 @@
 - type: entity
   parent: ActionLesserSummonGuns
   id: ActionLesserSummonGunsII
-  name: Invocation d'armes mineure II
+  name: Lesser Summon Guns II
   components:
   - type: Action
     useDelay: 40
@@ -373,7 +373,7 @@
 - type: entity
   parent: ActionLesserSummonGuns
   id: ActionLesserSummonGunsIII
-  name: Invocation d'armes mineure III
+  name: Lesser Summon Guns III
   components:
   - type: Action
     useDelay: 20
@@ -382,7 +382,7 @@
 - type: entity
   parent: ActionBarnyardCurse
   id: ActionBarnyardCurseII
-  name: Malédiction de la basse-cour II
+  name: Curse of the Barnyard II
   components:
   - type: Action
     useDelay: 9
@@ -390,7 +390,7 @@
 - type: entity
   parent: ActionBarnyardCurse
   id: ActionBarnyardCurseIII
-  name: Malédiction de la basse-cour III
+  name: Curse of the Barnyard III
   components:
   - type: Action
     useDelay: 3
@@ -399,7 +399,7 @@
 - type: entity
   parent: ActionScreamForMe
   id: ActionScreamForMeII
-  name: Criez pour moi II
+  name: Scream For Me II
   components:
   - type: Action
     useDelay: 50
@@ -407,7 +407,7 @@
 - type: entity
   parent: ActionScreamForMe
   id: ActionScreamForMeIII
-  name: Criez pour moi III
+  name: Scream For Me III
   components:
   - type: Action
     useDelay: 40
@@ -415,7 +415,7 @@
 - type: entity
   parent: ActionScreamForMe
   id: ActionScreamForMeIV
-  name: Criez pour moi IV
+  name: Scream For Me IV
   components:
   - type: Action
     useDelay: 30
@@ -423,7 +423,7 @@
 - type: entity
   parent: ActionScreamForMe
   id: ActionScreamForMeV
-  name: Criez pour moi V
+  name: Scream For Me V
   components:
   - type: Action
     useDelay: 20
@@ -432,7 +432,7 @@
 - type: entity
   parent: ActionTeleportWizard
   id: ActionTeleportII
-  name: Téléportation II
+  name: Teleport II
   components:
   - type: Action
     useDelay: 40
@@ -440,7 +440,7 @@
 - type: entity
   parent: ActionTeleportWizard
   id: ActionTeleportIII
-  name: Téléportation III
+  name: Teleport III
   components:
   - type: Action
     useDelay: 20
@@ -449,7 +449,7 @@
 - type: entity
   parent: ActionTrapsSpell
   id: ActionTrapsII
-  name: Les pièges ! II
+  name: The Traps! II
   components:
   - type: Action
     useDelay: 20
@@ -457,7 +457,7 @@
 - type: entity
   parent: ActionTrapsSpell
   id: ActionTrapsIII
-  name: Les pièges ! III
+  name: The Traps! III
   components:
   - type: Action
     useDelay: 15
@@ -465,7 +465,7 @@
 - type: entity
   parent: ActionTrapsSpell
   id: ActionTrapsIV
-  name: Les pièges ! IV
+  name: The Traps! IV
   components:
   - type: Action
     useDelay: 10
@@ -473,7 +473,7 @@
 - type: entity
   parent: ActionTrapsSpell
   id: ActionTrapsV
-  name: Les pièges ! V
+  name: The Traps! V
   components:
   - type: Action
     useDelay: 5
@@ -482,7 +482,7 @@
 - type: entity
   parent: ActionLesserSummonBees
   id: ActionLesserSummonBeesII
-  name: Invocation d'abeilles mineure II
+  name: Lesser Summon Bees II
   components:
   - type: Action
     useDelay: 30
@@ -490,7 +490,7 @@
 - type: entity
   parent: ActionLesserSummonBees
   id: ActionLesserSummonBeesIII
-  name: Invocation d'abeilles mineure III
+  name: Lesser Summon Bees III
   components:
   - type: Action
     useDelay: 10
@@ -499,7 +499,7 @@
 - type: entity
   parent: ActionSanguineStrike
   id: ActionSanguineStrikeII
-  name: Frappe sanguine II
+  name: Sanguine Strike II
   components:
   - type: Action
     useDelay: 10
@@ -507,7 +507,7 @@
 - type: entity
   parent: ActionSanguineStrike
   id: ActionSanguineStrikeIII
-  name: Frappe sanguine III
+  name: Sanguine Strike III
   components:
   - type: Action
     useDelay: 5
@@ -516,7 +516,7 @@
 - type: entity
   parent: ActionSwapSpell
   id: ActionSwapII
-  name: Échange II
+  name: Swap II
   components:
   - type: Action
     useDelay: 15
@@ -524,7 +524,7 @@
 - type: entity
   parent: ActionSwapSpell
   id: ActionSwapIII
-  name: Échange III
+  name: Swap III
   components:
   - type: Action
     useDelay: 5
@@ -533,7 +533,7 @@
 - type: entity
   parent: ActionBlinkSpell
   id: ActionBlinkII
-  name: Clignotement II
+  name: Blink II
   components:
   - type: Action
     useDelay: 2
@@ -541,7 +541,7 @@
 - type: entity
   parent: ActionBlinkSpell
   id: ActionBlinkIII
-  name: Clignotement III
+  name: Blink III
   components:
   - type: Action
     useDelay: 1
@@ -550,7 +550,7 @@
 - type: entity
   parent: ActionForceWall
   id: ActionForceWallII
-  name: Mur de force II
+  name: Force Wall II
   components:
   - type: Action
     useDelay: 8.75
@@ -558,7 +558,7 @@
 - type: entity
   parent: ActionForceWall
   id: ActionForceWallIII
-  name: Mur de force III
+  name: Force Wall III
   components:
   - type: Action
     useDelay: 7.5
@@ -566,7 +566,7 @@
 - type: entity
   parent: ActionForceWall
   id: ActionForceWallIV
-  name: Mur de force IV
+  name: Force Wall IV
   components:
   - type: Action
     useDelay: 6.25
@@ -574,7 +574,7 @@
 - type: entity
   parent: ActionForceWall
   id: ActionForceWallV
-  name: Mur de force V
+  name: Force Wall V
   components:
   - type: Action
     useDelay: 5
@@ -616,7 +616,7 @@
 - type: entity
   parent: ActionMindSwap
   id: ActionMindSwapII
-  name: Échange d'esprits II
+  name: Mind Swap II
   components:
   - type: Action
     useDelay: 40
@@ -624,7 +624,7 @@
 - type: entity
   parent: ActionMindSwap
   id: ActionMindSwapIII
-  name: Échange d'esprits III
+  name: Mind Swap III
   components:
   - type: Action
     useDelay: 20
@@ -633,7 +633,7 @@
 - type: entity
   parent: ActionSmite
   id: ActionSmiteII
-  name: Châtiment II
+  name: Smite II
   components:
   - type: Action
     useDelay: 40
@@ -641,7 +641,7 @@
 - type: entity
   parent: ActionSmite
   id: ActionSmiteIII
-  name: Châtiment III
+  name: Smite III
   components:
   - type: Action
     useDelay: 20
@@ -650,7 +650,7 @@
 - type: entity
   parent: ActionRathenSpell
   id: ActionRathenSpellII
-  name: Le secret de Rathen II
+  name: Rathen's Secret II
   components:
   - type: Action
     useDelay: 35
@@ -658,7 +658,7 @@
 - type: entity
   parent: ActionRathenSpell
   id: ActionRathenSpellIII
-  name: Le secret de Rathen III
+  name: Rathen's Secret III
   components:
   - type: Action
     useDelay: 20
@@ -667,7 +667,7 @@
 - type: entity
   parent: ActionKnock
   id: ActionKnockII
-  name: Coup II
+  name: Knock II
   components:
   - type: Action
     useDelay: 6
@@ -675,7 +675,7 @@
 - type: entity
   parent: ActionKnock
   id: ActionKnockIII
-  name: Coup III
+  name: Knock III
   components:
   - type: Action
     useDelay: 2
@@ -684,7 +684,7 @@
 - type: entity
   parent: ActionSpellCards
   id: ActionSpellCardsII
-  name: Cartes de sort II
+  name: Spell Cards II
   components:
   - type: SpellCardsAction
     useDelay: 4
@@ -692,7 +692,7 @@
 - type: entity
   parent: ActionSpellCards
   id: ActionSpellCardsIII
-  name: Cartes de sort III
+  name: Spell Cards III
   components:
   - type: SpellCardsAction
     useDelay: 2
@@ -701,7 +701,7 @@
 - type: entity
   parent: ActionPolymorphWizardRod
   id: ActionPolymorphWizardRodII
-  name: Forme baguette II
+  name: Rod Form II
   components:
   - type: Action
     useDelay: 21.25
@@ -713,7 +713,7 @@
 - type: entity
   parent: ActionPolymorphWizardRod
   id: ActionPolymorphWizardRodIII
-  name: Forme baguette III
+  name: Rod Form III
   components:
   - type: Action
     useDelay: 17.5
@@ -724,7 +724,7 @@
 - type: entity
   parent: ActionPolymorphWizardRod
   id: ActionPolymorphWizardRodIV
-  name: Forme baguette IV
+  name: Rod Form IV
   components:
   - type: Action
     useDelay: 13.75
@@ -735,7 +735,7 @@
 - type: entity
   parent: ActionPolymorphWizardRod
   id: ActionPolymorphWizardRodV
-  name: Forme baguette V
+  name: Rod Form V
   components:
   - type: Action
     useDelay: 10
@@ -747,7 +747,7 @@
 - type: entity
   parent: ActionSummonSimians
   id: ActionSummonSimiansII
-  name: Invocation de simiens II
+  name: Summon Simians II
   components:
   - type: Action
     useDelay: 75
@@ -759,7 +759,7 @@
 - type: entity
   parent: ActionSummonSimians
   id: ActionSummonSimiansIII
-  name: Invocation de simiens III
+  name: Summon Simians III
   components:
   - type: Action
     useDelay: 60
@@ -774,7 +774,7 @@
 - type: entity
   parent: ActionSummonSimians
   id: ActionSummonSimiansIV
-  name: Invocation de simiens IV
+  name: Summon Simians IV
   components:
   - type: Action
     useDelay: 45
@@ -789,7 +789,7 @@
 - type: entity
   parent: ActionSummonSimians
   id: ActionSummonSimiansV
-  name: Invocation de simiens V
+  name: Summon Simians V
   components:
   - type: Action
     useDelay: 30

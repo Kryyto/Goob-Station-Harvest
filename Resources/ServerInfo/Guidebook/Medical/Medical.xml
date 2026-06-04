@@ -8,22 +8,22 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Médical
-C'est le département où les gens se rendent lorsqu'ils sont blessés ; c'est aux personnes qui y travaillent de les soigner.
+# Medical
+This is the department where people go to when they're hurt, it's up to the folks working here to fix them.
 
 ## Personnel
-Le personnel du département [color=#5b97bc]Médical[/color] est composé d'internes en médecine, de médecins, de paramédicaux et de chimistes. Le département [color=#5b97bc]Médical[/color] est dirigé par le médecin-chef.
+[color=#5b97bc]Medical[/color]'s staff is made up of Medical Interns, Medical Doctors, Paramedics and Chemists. [color=#5b97bc]Medical[/color] is run by the Chief Medical Officer.
 
   <Box>
-    <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="Médecin"/>
-    <GuideEntityEmbed Entity="ToyFigurineParamedic" Caption="Paramédical"/>
-    <GuideEntityEmbed Entity="ToyFigurineChemist" Caption="Chimiste"/>
-    <GuideEntityEmbed Entity="ToyFigurineChiefMedicalOfficer" Caption="MC"/>
+    <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="Doctor"/>
+    <GuideEntityEmbed Entity="ToyFigurineParamedic" Caption="Paramedic"/>
+    <GuideEntityEmbed Entity="ToyFigurineChemist" Caption="Chemist"/>
+    <GuideEntityEmbed Entity="ToyFigurineChiefMedicalOfficer" Caption="CMO"/>
   </Box>
   
-Pour l'instant, la médecine est divisée en deux types de soins distincts :
+Right now, medbay is divided into two different sets of care:
 
-## Traitement médical
+## Medical Treatment
   <Box>
     <GuideEntityEmbed Entity="Brutepack"/>
     <GuideEntityEmbed Entity="Bloodpack"/>
@@ -31,7 +31,7 @@ Pour l'instant, la médecine est divisée en deux types de soins distincts :
     <GuideEntityEmbed Entity="Gauze"/>
     <GuideEntityEmbed Entity="HandheldHealthAnalyzer"/>
   </Box>
-## Production chimique
+## Chemical Production
   <Box>
     <GuideEntityEmbed Entity="ChemDispenser"/>
     <GuideEntityEmbed Entity="LargeBeaker"/>

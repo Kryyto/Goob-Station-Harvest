@@ -22,7 +22,7 @@
   parent: ClothingShoesBootsMag
   id: ClothingShoesBootsChrono
   name: futuristic boots
-  description: Une chaussure futuriste avancée garantissant confort et adhérence totale sur toute surface.
+  description: An advanced futuristic shoe that guarantees wearer comfort and full traction on any surface
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/chronolegioneer.rsi
@@ -44,7 +44,7 @@
 - type: entity
   parent: ClothingShoesBootsChrono
   id: ClothingShoesBootsChronoUnremoveable
-  suffix: Inamovible
+  suffix: Unremoveable
   components:
   - type: Unremoveable
 
@@ -52,7 +52,7 @@
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesResonant
   name: resonant shoes
-  description: N'est-ce pas encore le moment… pour le magnifique rideau de se lever ?
+  description: Is it not time yet… for the splendid curtain to rise?
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/breverb.rsi
@@ -64,7 +64,7 @@
   parent: [ClothingShoesBootsMagAdv, BaseJetpack, BaseCentcommContraband]
   id: ClothingShoesBootsMagEmergencyResponseTeam
   name: tactical response magboots
-  description: Regardez ! Un intervenant d'urgence, nous sommes sauvés !
+  description: Look! An emergency responder, we're saved!
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/emergencyresponseteam.rsi
@@ -96,7 +96,7 @@
   parent: ClothingShoesBootsMagEmergencyResponseTeam
   id: ClothingShoesBootsMagDeathsquad
   name: deathsquad magboots
-  description: Le son de ces bottes est iconique ; le son de la terreur.
+  description: The sound of these boots are iconic; the sound of terror.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/deathsquad.rsi
@@ -180,7 +180,7 @@
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesCreasedJordans
   name: creased air jordans
-  description: Non attendez... ce n'est pas possible... ELLES SONT FROISSÉES !
+  description: No wait... this can't be.... THEY'RE CREASED!
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
@@ -198,7 +198,7 @@
   parent: [BaseCommandContraband, ClothingShoesBootsJack]
   id: ClothingShoesBootsJackAdvanced
   name: advanced jackboots
-  description: Cette paire de rangers a été conçue pour le chef de la sécurité. Personne ne sait pourquoi elles s'appellent avancées, mais elles sont assurément avancées en style.
+  description: This pair of jackboots was designed for the Head of Security. No one knows why are they called advanced, but they are for sure advanced in drip.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/advanced_jackboots.rsi
@@ -213,7 +213,7 @@
   id: ClothingShoesRealJordansAutographed
   suffix: Devil
   name: air jordans
-  description: Ce ne sont pas des Jordans ordinaires, celles-ci ont été signées par Micheal Jordan lui-même. Elles doivent valoir une FORTUNE.
+  description: These aren't just any Jordans, these were signed my Micheal Jordan himself. These must be worth a FORTUNE.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/jordans.rsi
@@ -251,7 +251,7 @@
   parent: [ClothingShoesMilitaryBase, ClothingShoesBaseWinterBoots, BaseCentcommContraband]
   id: ClothingShoesBootsWinterSnowjackBso
   name: blueshield's snowjacks
-  description: Pour quand vous devez sauver un chef d'un changelin sur une station de recherche en Antarctique.
+  description: For when you need to save a head from a changeling on a research station in Antarctica.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/bso_snowjacks.rsi
@@ -273,7 +273,7 @@
   parent: [ClothingShoesMilitaryBase, ClothingShoesBaseWinterBoots, BaseSecurityContraband]
   id: ClothingShoesWinterCombatBoots
   name: snowjacks boots
-  description: Bottes de combat de sécurité standard Nanotrasen pour scénarios et situations de combat. Maintenant en édition hivernale.
+  description: Nanotrasen-issue Security combat boots for combat scenarios or combat situations. Now in winter edition.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/winterbootsjackboot.rsi
@@ -293,7 +293,7 @@
 - type: entity
   parent: ClothingShoesColorBlack
   id: ClothingShoesColorBlackUnremoveable
-  suffix: Inamovible
+  suffix: Unremoveable
   components:
   - type: Unremoveable
 
@@ -302,7 +302,7 @@
   parent: [ClothingShoesMilitaryBase, BaseMajorContraband]
   id: ClothingShoesBootsCowboyBrownRobust
   name: authentic brown cowboy boots
-  description: Pour un vrai cowboy.
+  description: For a real cowboy.
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/cowboybootsbrown.rsi
@@ -315,7 +315,7 @@
   parent: [BaseCommandContraband, ClothingShoesGaloshes]
   id: ClothingShoesBootsJackGaloshes
   name: Jack Galoshes
-  description: Cette paire de rangers a été conçue pour les femmes de chambre d'élite de notre station. Peut-être l'objet le plus convoité de la station.
+  description: This pair of jackboots was designed for the elite maids of our station. Perhaps the most coveted item on station.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Shoes/Boots/jackgaloshes.rsi

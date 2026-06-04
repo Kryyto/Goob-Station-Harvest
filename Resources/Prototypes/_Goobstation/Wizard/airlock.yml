@@ -6,7 +6,7 @@
 - type: entity
   parent: DoorElectronics
   id: DoorElectronicsWizard
-  suffix: Sorcier, Verrouillé
+  suffix: Wizard, Locked
   components:
   - type: AccessReader
     access: [["Wizard"]]
@@ -30,7 +30,7 @@
 - type: entity
   parent: AirlockGlass
   id: AirlockUraniumGlass
-  suffix: Uranium, Verre
+  suffix: Uranium, Glass
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Structures/Airlocks/Glass/uranium.rsi
@@ -46,7 +46,7 @@
 - type: entity
   parent: AirlockUranium
   id: AirlockUraniumWizardLocked
-  suffix: Sorcier, Verrouillé
+  suffix: Wizard, Locked
   components:
   - type: ContainerFill
     containers:
@@ -55,7 +55,7 @@
 - type: entity
   parent: AirlockUraniumGlass
   id: AirlockUraniumGlassWizardLocked
-  suffix: Sorcier, Verrouillé
+  suffix: Wizard, Locked
   components:
   - type: ContainerFill
     containers:
@@ -64,7 +64,7 @@
 # Assembly
 - type: entity
   id: AirlockUraniumAssembly
-  name: assemblage de sas
+  name: airlock assembly
   suffix: Uranium
   parent: AirlockAssembly
   components:
@@ -80,7 +80,7 @@
 - type: entity
   parent: AirlockUraniumAssembly
   id: AirlockUraniumAssemblyGlass
-  suffix: Uranium, Verre
+  suffix: Uranium, Glass
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Structures/Airlocks/Glass/uranium.rsi

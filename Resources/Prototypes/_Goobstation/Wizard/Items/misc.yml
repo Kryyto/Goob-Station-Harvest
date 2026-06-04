@@ -10,7 +10,7 @@
 
 - type: entity
   id: CartridgeMagicBullet
-  name: cartouche de balle magique
+  name: magic bullet cartridge
   parent: [ BaseCartridge, BaseSecurityContraband ]
   components:
   - type: Tag
@@ -28,8 +28,8 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  name: parchemin de téléportation
-  description: Ce parchemin peut vous téléporter n'importe où sur la station.
+  name: scroll of teleportation
+  description: This scroll can teleport you anywhere on the station.
   parent: [BaseItem, BaseMagicalContraband]
   id: ScrollTeleport
   components:
@@ -55,18 +55,18 @@
     price: 1000
 
 - type: entity
-  name: parchemin de téléportation
-  description: Ce parchemin peut vous téléporter n'importe où sur la station. N'a qu'une seule utilisation.
+  name: scroll of teleportation
+  description: This scroll can teleport you anywhere on the station. Only has one use.
   parent: ScrollTeleport
   id: ScrollTeleportApprentice
-  suffix: Apprenti
+  suffix: Apprentice
   components:
   - type: TeleportScroll
     usesLeft: 1
 
 - type: entity
-  name: sachet-sort d'éclair
-  description: Des graines d'oiseaux enveloppées dans du tissu qui crépitent d'électricité.
+  name: lightning bolt spell packet
+  description: Some birdseed wrapped in cloth that crackles with electricity.
   parent: BaseItem
   id: ThrownLightning
   components:
@@ -102,8 +102,8 @@
     offset: 0.0,-0.5
 
 - type: entity
-  name: contrat d'apprentissage
-  description: Un contrat magique préalablement signé par un apprenti. En échange d'un enseignement dans les arts magiques, il est lié à répondre à votre appel à l'aide.
+  name: contract of apprenticeship
+  description: A magic contract previously signed by an apprentice. In exchange for instruction in the magical arts, they are bound to answer your call for aid.
   parent: [BaseItem, BaseMagicalContraband]
   id: ContractApprenticeship
   components:
@@ -149,7 +149,7 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkMugwortTeaGlass
-  suffix: thé à l'armoise
+  suffix: mugwort tea
   components:
   - type: SolutionContainerManager
     solutions:
@@ -169,8 +169,8 @@
 - type: entity
   parent: [DrinkBase, BaseMagicalContraband]
   id: EverfullMug
-  name: chope inépuisable
-  description: Une chope enchantée qui se remplit automatiquement d'omnizine.
+  name: everfull mug
+  description: An enchanted mug which refills omnizine automatically.
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/evermug.rsi
@@ -193,10 +193,10 @@
     price: 25000
 
 - type: entity
-  name: carte d'identité passager
+  name: passenger ID card
   parent: AgentIDCard
   id: WizardIDCard
-  suffix: Sorcier
+  suffix: Wizard
   components:
   - type: Access
     tags:
@@ -205,7 +205,7 @@
 - type: entity
   parent: BaseCrowbar
   id: CrowbarWizard
-  description: Un outil multifonction compact pour forcer les portes et détruire des stations.
+  description: A compact multipurpose tool to pry open doors and destroy stations.
   components:
   - type: MeleeWeapon
     damage:

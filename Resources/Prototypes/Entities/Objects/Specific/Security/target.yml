@@ -60,30 +60,30 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: cible humaine
+  name: human target
   id: TargetHuman
   parent: BaseTarget
-  description: Une cible de tir. Celle-ci est un humain.
+  description: A shooting target. This one is a human.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
     state: target_h
 
 - type: entity
-  name: cible du syndicat
+  name: syndicate target
   id: TargetSyndicate
   parent: BaseTarget
-  description: Une cible de tir. Celle-ci est un agent du syndicat.
+  description: A shooting target. This one is a syndicate agent.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
     state: target_s
 
 - type: entity
-  name: cible clown
+  name: clown target
   id: TargetClown
   parent: BaseTarget
-  description: Une cible de tir. Celle-ci est un clown.
+  description: A shooting target. This one is a clown.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
@@ -91,10 +91,10 @@
 
 # put it on a salvage or something
 - type: entity
-  name: cible étrange
+  name: strange target
   id: TargetStrange
   parent: BaseTarget
-  description: Une cible de tir. Vous n'êtes pas tout à fait sûr de ce que c'est, mais elle semble être particulièrement robuste.
+  description: A shooting target. You aren't quite sure what this one is, but it seems to be extra robust.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi

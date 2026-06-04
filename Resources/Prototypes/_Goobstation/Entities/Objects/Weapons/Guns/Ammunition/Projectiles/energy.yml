@@ -132,7 +132,7 @@
 
 - type: entity 
   name: ashified energy bolt #oh dear me
-  suffix: DÉBOGAGE
+  suffix: DEBUG
   id: RifleBulletEnergyGunAsh
   parent: BaseBullet
   categories: [ Debug, HideSpawnMenu ]

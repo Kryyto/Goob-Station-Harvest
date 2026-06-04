@@ -10,7 +10,7 @@
 
 - type: body
   id: SpaceSpider
-  name: "araignée spatiale"
+  name: "space spider"
   root: chest
   slots:
     chest:

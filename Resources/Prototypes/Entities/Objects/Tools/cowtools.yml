@@ -62,10 +62,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: coupe-foin
+  name: haycutters
   parent: BaseItem
   id: Haycutters
-  description: Ça coupe le câble. Meuh !
+  description: This kills the wire. Moo!
   components:
   - type: Tag
     tags:
@@ -89,10 +89,10 @@
     sprite: Objects/Tools/Cowtools/haycutters.rsi
 
 - type: entity
-  name: tourvache
+  name: moodriver
   parent: BaseItem
   id: Moodriver
-  description: Tournez pour utiliser. Meuh !
+  description: Turn to use. Moo!
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/moodriver.rsi
@@ -112,10 +112,10 @@
     speedModifier: 0.05
 
 - type: entity
-  name: clé à vache
+  name: wronch
   parent: BaseItem
   id: Wronch
-  description: Chose de clé à vache. Meuh !
+  description: Wronch thing. Moo!
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/wronch.rsi
@@ -135,10 +135,10 @@
     speedModifier: 0.05
 
 - type: entity
-  name: pied-de-vache
+  name: cowbar
   parent: BaseItem
   id: Cowbar
-  description: Vacher vos problèmes. Meuh !
+  description: Cow your problems away. Moo!
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/cowbar.rsi
@@ -162,10 +162,10 @@
     delay: 3
 
 - type: entity
-  name: multioutil-vache
+  name: mooltitool
   parent: BaseItem
   id: Mooltitool
-  description: Un outil rudimentaire pour copier, stocker et envoyer des impulsions et signaux électriques dans les câbles et machines. Meuh !
+  description: An crude tool to copy, store, and send electrical pulses and signals through wires and machines. Moo!
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/mooltitool.rsi
@@ -180,10 +180,10 @@
       - Multitool
 
 - type: entity
-  name: chalumeau-vache
+  name: cowelding tool
   parent: Welder
   id: Cowelder
-  description: "Soude tout tant qu'il est alimenté, n'oubliez pas vos lunettes ! Meuh !"
+  description: "Melts anything as long as it's fueled, don't forget your eye protection! Moo!"
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/cowelder.rsi
@@ -194,10 +194,10 @@
     speedModifier: 0.05
 
 - type: entity
-  name: laitomètre
+  name: milkalyzer
   parent: BaseItem
   id: Milkalyzer
-  description: Un scanner environnemental portatif qui indique les niveaux de gaz actuels. Meuh !
+  description: A hand-held environmental scanner which reports current gas levels. Moo!
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/milkalyzer.rsi
@@ -216,10 +216,10 @@
   - type: Appearance
 
 - type: entity
-  name: boîte à outils-vache
+  name: cow toolbox
   parent: ToolboxBase
   id: CowToolbox
-  description: Une boîte de forme étrange, remplie de... outils ??
+  description: A weirdly shaped box, stocked with... tools?
   components:
   - type: Sprite
     sprite: Objects/Tools/Cowtools/cow_toolbox.rsi
@@ -233,7 +233,7 @@
 
 - type: entity
   id: CowToolboxFilled
-  name: boîte à outils-vache
+  name: cow toolbox
   suffix: Filled
   parent: CowToolbox
   components:

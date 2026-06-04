@@ -225,7 +225,7 @@
   name: lootbug
   id: MobLootbug
   parent: SimpleSpaceMobBase
-  description: Il mange du métal, peut-être a-t-il mangé quelque chose de valeur ?
+  description: It eats metal, maybe it's eaten something of value?
   components:
   - type: Sprite
     drawdepth: SmallMobs
@@ -419,7 +419,7 @@
   name: strange mouse
   parent: MobMouse
   id: MobMouseSentient
-  description: Couic ! C'était une personne !
+  description: Squeak! Used to be a person!
   components:
   - type: MobThresholds
     thresholds:
@@ -446,7 +446,7 @@
   name: homunculus
   id: MobHomunculus
   parent: SimpleMobBase
-  description: Quelle bête misérable...
+  description: What a wretched beast...
   components:
   - type: Sprite
     drawdepth: SmallMobs
@@ -623,7 +623,7 @@
   name: brullbar king
   id: MobBrullbarKing
   parent: MobBrullbar
-  description: Il a l'air méchant, il est méchant. Vous feriez mieux de courir.
+  description: Looks mean, is mean. You better run.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -656,7 +656,7 @@
   name: bear
   id: MobBearGoon
   parent: [ SimpleSpaceMobBase, MobCombat ]
-  description: Pourquoi vous regardez fixement ? Vous n'avez jamais vu un ours ?
+  description: Why are you staring? Never seen a bear before?
   components:
   - type: HTN
     rootTask:
@@ -695,7 +695,7 @@
   name: white wolf
   parent: [ SimpleMobBase, MobCombat ]
   id: MobWhiteWolf
-  description: N'essayez pas de caresser celui-là.
+  description: Don't try to pet this one.
   components:
     - type: HTN
       rootTask:
@@ -746,7 +746,7 @@
   name: horse
   parent: [SimpleMobBase, StripableInventoryBase]
   id: MobHorse
-  description: Créature très vile. Pour ceux qui ont envie de frapper.
+  description: Very foul creature. For those that feel like punching.
   components:
   - type: MovementSpeedModifier
     baseSprintSpeed: 5.5
@@ -933,7 +933,7 @@
   name: mustard mothroach
   parent: MobMothroach
   id: MobMothroachMustard
-  description: Un délicieux résultat du croisement de viande et de sauce par les chefs du monde.
+  description: A delightful result of the world's chefs crossing meat with sauce.
   components:
   - type: Sprite
     sprite: _Goobstation/Mobs/Animals/mustard_mothroach.rsi
@@ -953,7 +953,7 @@
   name: leopard mothroach
   parent: MobMothroach
   id: MobMothroachLeopard
-  description: Un résultat charmant de nombreuses tentatives de croisement d'insectes avec des prédateurs.
+  description: A charming result of numerous attempts to crossbreed insects with predators.
   components:
   - type: Sprite
     sprite: _Goobstation/Mobs/Animals/leopard_mothroach.rsi
@@ -993,7 +993,7 @@
   name: lunar mothroach
   parent: MobMothroach
   id: MobMothroachLunar
-  description: Quelqu'un a laissé la mite sous le clair de lune.
+  description: Someone left the moth under the moonlight.
   components:
   - type: Sprite
     sprite: _Goobstation/Mobs/Animals/lunar_mothroach.rsi

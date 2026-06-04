@@ -8,8 +8,8 @@
   abstract: true
   parent: BaseItem
   id: EvidenceMarker
-  name: marqueur de preuves
-  description: Un marqueur jaune numéroté, utile pour identifier les preuves sur une scène de crime.
+  name: evidence marker
+  description: A numbered yellow marker, useful for labeling evidence on a crime scene.
   components:
   - type: Sprite
     sprite: Objects/Specific/Detective/evidence_marker.rsi
@@ -81,10 +81,10 @@
     state: nine
 
 - type: entity
-  name: boîte de marqueurs de preuves
+  name: evidence marker box
   parent: BoxCardboard
   id: BoxEvidenceMarkers
-  description: Un lot de marqueurs jaunes numérotés, utiles pour identifier les preuves sur une scène de crime.
+  description: A pack of numbered yellow markers, useful for labeling evidence on a crime scene.
   components:
     - type: Item
       shape:

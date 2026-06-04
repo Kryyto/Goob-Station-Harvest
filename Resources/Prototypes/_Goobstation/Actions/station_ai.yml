@@ -6,8 +6,8 @@
 - type: entity
   parent: BaseAction
   id: ActionOpenCameraWarpMenu
-  name: Sauter vers une caméra
-  description: Sautez rapidement vers une caméra de la station pour faciliter la navigation !
+  name: Jump to camera
+  description: Quickly jump to a camera on the station for ease of navigation!
   components:
   - type: Action
     checkConsciousness: false

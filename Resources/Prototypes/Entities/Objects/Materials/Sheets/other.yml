@@ -43,7 +43,7 @@
   abstract: true
   parent: BaseItem
   id: SheetOtherBase
-  description: Une plaque de matériau, souvent utilisée dans la station pour diverses applications.
+  description: A sheet of material, used often on the station in various applications.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/other.rsi
@@ -72,7 +72,7 @@
 - type: entity
   parent: SheetOtherBase
   id: SheetPaper
-  name: papier
+  name: paper
   suffix: Full
   components:
   - type: Stack
@@ -107,7 +107,7 @@
 - type: entity
   parent: SheetPaper
   id: SheetPaper1
-  name: papier
+  name: paper
   suffix: Single
   components:
   - type: Sprite
@@ -188,7 +188,7 @@
 - type: entity
   parent: SheetOtherBase
   id: SheetPlastic
-  name: plastique
+  name: plastic
   suffix: Full
   components:
   - type: Tag
@@ -232,7 +232,7 @@
 - type: entity
   parent: SheetPlastic
   id: SheetPlastic10
-  name: plastique
+  name: plastic
   suffix: 10
   components:
   - type: Sprite
@@ -243,7 +243,7 @@
 - type: entity
   parent: SheetPlastic
   id: SheetPlastic1
-  name: plastique
+  name: plastic
   suffix: Single
   components:
   - type: Sprite
@@ -303,7 +303,7 @@
 - type: entity
   parent: SheetOtherBase
   id: MaterialSheetMeat
-  name: plaque de viande
+  name: meat sheet
   suffix: Full
   components:
     - type: Sprite

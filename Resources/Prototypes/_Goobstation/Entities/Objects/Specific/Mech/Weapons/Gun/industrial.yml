@@ -10,7 +10,7 @@
 - type: entity
   id: WeaponMechIndustrialKineticAccelerator
   name: proto-kinetic launcher
-  description: Tire des boulons cinétiques à dégâts immenses à portée moyenne.
+  description: Fires huge damage kinetic bolts at a medium range.
   suffix: Mech Weapon, Gun, Industrial, Kinetic Accelerator
   parent: [ BaseMechWeaponRange, IndustrialMechEquipment ]
   components:

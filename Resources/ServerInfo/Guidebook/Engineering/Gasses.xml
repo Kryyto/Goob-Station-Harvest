@@ -7,14 +7,14 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Gaz
-  Les gaz sont un élément essentiel au fonctionnement de la station.
-  Vous les connaissez peut-être comme ce que vous respirez, mais ils sont également utilisés de bien d'autres façons.
+  # Gasses
+  Gasses are a critical part of the station's operation.
+  You may know them as the stuff you breathe, but they are also used in many other ways.
 
-  Les gaz possèdent certaines propriétés qui les rendent utiles pour différentes tâches.
-  Le service Atmosphérique peut également synthétiser des gaz exotiques à partir d'autres gaz, pouvant être utilisés à des fins particulières.
+  Gasses have certain properties that make them useful for different tasks.
+  Atmospherics can also synthesize exotic gasses from other gasses, which can be used for special purposes.
 
-  ## Oxygène
+  ## Oxygen
   <Box>
     <GuideEntityEmbed Entity="OxygenCanister" Caption=""/>
     <GuideEntityEmbed Entity="OxygenTank" Caption=""/>
@@ -23,12 +23,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="EmergencyOxygenTank" Caption=""/>
   </Box>
 
-  Un gaz courant, utilisé par la plupart des espèces de la station pour respirer.
+  A common gas, used by most species on the station to breathe.
 
-  L'oxygène est un comburant, ce qui signifie qu'il entretient la combustion.
-  Cela le rend à la fois utile lors de la fusion de gaz dans une chambre de combustion, et dangereux lorsqu'il est mélangé à des gaz inflammables.
+  Oxygen is an oxidizer, which means it supports combustion.
+  This makes it both useful when fusing gasses in a burn chamber, and dangerous when mixed with flammable gasses.
 
-  ## Azote
+  ## Nitrogen
   <Box>
     <GuideEntityEmbed Entity="NitrogenCanister" Caption=""/>
     <GuideEntityEmbed Entity="NitrogenTank" Caption=""/>
@@ -37,118 +37,119 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="EmergencyNitrogenTank" Caption=""/>
   </Box>
 
-  Un gaz inerte, utilisé en partie avec l'oxygène pour créer une atmosphère respirable.
+  An inert gas, used in part with oxygen to create a breathable atmosphere.
 
-  L'azote est très stable et constitue la majeure partie d'une atmosphère respirable standard.
+  Nitrogen is very stable and comprises most of a standard breathable atmosphere.
 
-  Certaines espèces comme les Slimes respirent de l'azote, l'espèce Vox nécessitant strictement de l'azote pour respirer.
+  Some species like Slimes breathe nitrogen, with the Vox species requiring strictly nitrogen to breathe.
 
-  ## Mélange d'air
+  ## Air Mix
   <Box>
     <GuideEntityEmbed Entity="AirCanister" Caption=""/>
     <GuideEntityEmbed Entity="AirTank" Caption=""/>
   </Box>
 
-  Un mélange de gaz respirable par la plupart des espèces de la station.
-  Il se compose de 21 % d'oxygène et 79 % d'azote.
+  A mixture of gasses that is breathable to most species on the station.
+  It consists of 21% oxygen and 79% nitrogen.
 
-  ## Dioxyde de carbone
+
+  ## Carbon Dioxide
   <Box>
     <GuideEntityEmbed Entity="CarbonDioxideCanister" Caption=""/>
   </Box>
 
-  Un gaz résiduel produit par la plupart des espèces de la station. Sous-produit courant de la combustion.
+  A waste gas produced by most species on the station. A common byproduct of combustion.
 
-  Malgré son apparente inutilité, certains départements l'utilisent dans leurs activités.
+  Despite seeming useless, some departments use it in their line of work.
 
-  ## Vapeur d'eau
+  ## Water Vapor
   <Box>
     <GuideEntityEmbed Entity="WaterVaporCanister" Caption=""/>
   </Box>
-  Un gaz courant, produit par la combustion du plasma et d'autres processus.
+  A common gas, produced by the burning of plasma and other processes.
 
-  La vapeur d'eau possède une bonne capacité thermique massique comparée aux autres gaz, la rendant utile pour transporter de la chaleur.
+  Water vapor has a good specific heat capacity compared to other gasses, making it useful for moving heat around.
 
   ## Plasma
   <Box>
     <GuideEntityEmbed Entity="PlasmaCanister" Caption=""/>
   </Box>
-  Un gaz hautement inflammable utilisé dans de nombreux processus de la station.
+  A highly flammable gas that is used in many processes on the station.
 
-  L'ingénierie utilise ce gaz pour générer de l'énergie et créer des gaz exotiques.
+  Engineering uses this gas to generate power and create exotic gasses.
 
-  Sa combustion génère beaucoup de chaleur, ainsi que des sous-produits gazeux comme le dioxyde de carbone, la vapeur d'eau et le tritium, selon l'efficacité de la combustion.
+  Burning it generates a lot of heat, as well as gas byproducts such as carbon dioxide, water vapor, and tritium, depending on the efficiency of the burn.
 
-  Le plasma gazeux possède également une bonne capacité thermique massique, le rendant utile pour transporter de la chaleur.
+  Plasma gas also has a good specific heat capacity, making it useful for moving heat around.
 
   ## Tritium
   <Box>
     <GuideEntityEmbed Entity="TritiumCanister" Caption=""/>
   </Box>
-  Un gaz radioactif extrêmement inflammable utilisé dans la création du frezon.
+  An extremely flammable radioactive gas that is used in the creation of frezon.
 
-  Il peut être produit en brûlant 1 % de plasma et 96 % ou plus d'oxygène dans la chambre de combustion (le ratio idéal est 3 % de plasma pour 97 % d'oxygène). Vous pouvez extraire ce gaz via des épurateurs.
+  It can be made by burning 1% Plasma and 96% or more Oxygen in the Burn Chamber (Ideal ratio is 3% Plasma to 97% Oxygen). You can extract this gas through scrubbers.
 
-  Il peut être utilisé pour créer du frezon gazeux dans un processus de mélange complexe.
+  It can be used to create frezon gas in a complicated mixing process.
 
   ## Pluoxium
   <Box>
     <GuideEntityEmbed Entity="PluoxiumCanister" Caption=""/>
   </Box>
-  Le pluoxium est un substitut non réactif de l'oxygène qui délivre huit fois plus d'O2 dans le sang, avec une pression minimale requise aussi faible que 3 kPa pour les équipements respiratoires internes.
+  Pluoxium is a non-reactive Oxygen substitute that delivers eight times as much O2 to the bloodstream, with as little 3 kPa minimum pressure required for internals.
 
-  Le pluoxium peut être créé en exposant de l'O2, du CO2 et du tritium ensemble dans une réaction exothermique entre 50 K et 273 K. De plus, le pluoxium est également créé par la Supermatière lorsque de l'oxygène et du CO2 sont présents.
+  Pluoxium may be created by exposing O2, CO2 and Tritium together in an exothermic reaction between 50 K and 273 K. Furthermore, Pluoxium is also created by the Supermatter, when Oxygen and CO2 are present.
 
   ## Frezon
   <Box>
     <GuideEntityEmbed Entity="FrezonCanister" Caption=""/>
   </Box>
 
-  Un gaz très recherché, en raison de la difficulté à le créer et de ses nombreuses propriétés.
+  A highly sought after gas, due to the difficulty in creating it and its many properties.
 
-  Il possède une capacité thermique massique extrêmement élevée, ce qui le rend excellent pour déplacer de grandes quantités de chaleur.
+  It has an extremely high specific heat capacity, making it excellent for moving large amounts of heat around.
 
-  Le frezon peut se combiner dans l'air avec de l'azote pour créer du protoxyde d'azote, tout en refroidissant significativement l'air à des températures inférieures à zéro.
+  Frezon can combine in the air with nitrogen to create nitrous oxide, alongside cooling down the air significantly to below freezing temperatures.
 
-  Le frezon est très compliqué à créer, nécessitant un mélange de tritium, d'oxygène et d'azote, tous précisément dosés pour produire le gaz.
-  Si vous cherchez à créer ce gaz vous-même, voici ce que vous devez savoir :
-  - Le frezon est produit par la combinaison d'oxygène, de tritium et d'azote.
-  - Le tritium et l'oxygène sont mélangés dans un ratio d'environ 1:8.
-  - L'azote est nécessaire comme catalyseur pour la réaction. La quantité d'azote consommée dépend de l'efficacité de la réaction.
-  - La réaction du frezon ne se produit qu'à des températures cryogéniques, inférieures à 73,15 K. L'efficacité de la réaction (quantité de frezon produite) dépend de la température. Plus on se rapproche de 73,15 K, plus on produit de frezon et moins on consomme d'azote.
+  Frezon is very complicated to create, requiring a mix of tritium, oxygen, and nitrogen, all tuned precisely to create the gas.
+  If you're looking to create this gas yourself, here's what you need to know:
+  - Frezon is produced by the combination of oxygen, tritium, and nitrogen.
+  - Tritium and oxygen are mixed at a ratio of around 1:8.
+  - Nitrogen is required as a catalyst for the reaction. The amount of nitrogen consumed is dependent on the efficiency of the reaction.
+  - The frezon reaction only occurs at cryogenic temperatures, below 73.15 K. The efficency of the reaction (how much frezon is produced) is dependent on the temperature. The closer to 73.15 K, the more frezon is produced, and the less nitrogen is consumed.
 
-  N'oubliez pas que le service Atmosphérique repose sur l'expérimentation et l'optimisation des processus. Essayez jusqu'à ce que vous y arriviez !
+  Remember, atmospherics is all about experimentation and process optimization. Try it until you get it right!
 
-  ## Protoxyde d'azote
+  ## Nitrous Oxide
   <Box>
     <GuideEntityEmbed Entity="NitrousOxideCanister" Caption=""/>
     <GuideEntityEmbed Entity="EmergencyFunnyOxygenTank" Caption=""/>
   </Box>
-  Un gaz récréatif et résiduel, produit par les slimes et la combinaison de frezon et d'azote.
+  A recreational and waste gas, produced by slimes and the combination of frezon and nitrogen.
 
   ## BZ
   <Box>
     <GuideEntityEmbed Entity="BZCanister" Caption=""/>
   </Box>
-  Le gaz BZ est un puissant hallucinogène, ainsi qu'un agent soporifique pour les slimes. Il est fabriqué à partir de plasma et de protoxyde d'azote. Il est toxique à respirer et provoque une irritation respiratoire et de la toux. Le BZ est fréquemment utilisé comme ingrédient dans des réactions gazeuses plus complexes.
+  BZ gas is a potent hallucinogenic, as well as a sleeping agent for slimes. It's made from Plasma and Nitroux Oxide. It is toxic to breathe and causes respiratory irritation and coughing. BZ sees frequent use as an ingredient in more complex gas reactions.
 
   ## Healium
   <Box>
     <GuideEntityEmbed Entity="HealiumCanister" Caption=""/>
   </Box>
-  Le healium est un gaz rouge, formé par le BZ et le frezon dans des environnements froids. Il agit comme un puissant agent soporifique tout en guérissant les brûlures, contusions et dommages par toxines. Un usage excessif entraîne une ivresse.
+  Healium is a red gas, formed by BZ and Frezon in cold environments, which acts as a strong sleeping agent, while healing burns, bruises, and toxin damage. Excessive use will lead to inebriation.
 
-  ## Ammoniaque
+  ## Ammonia
   <Box>
     <GuideEntityEmbed Entity="AmmoniaCanister" Caption=""/>
   </Box>
-  Un gaz produit par la décomposition des corps. Peut être condensé pour créer de l'ammoniaque liquide, utilisable pour fabriquer du nettoyant spatial.
+  A gas produced by the decomposition of bodies. Can be condensed to create ammonia, which can be used to make space cleaner.
 
   ## Nitrium
   <Box>
     <GuideEntityEmbed Entity="NitriumCanister" Caption=""/>
   </Box>
-  Fabriqué à partir de tritium, d'azote et de BZ, le nitrium est un stimulant gazeux qui, lorsqu'il est inhalé, peut améliorer la vitesse et l'endurance. À faibles concentrations, il augmente la vitesse de déplacement maximale lorsque vous êtes en bonne santé et sans altérations. À des concentrations légèrement plus élevées, inhaler du nitrium prévient la somnolence. À fortes concentrations, inhaler du nitrium commence à bloquer les poumons, provoquant une asphyxie.
-  Le nitrium se dégrade en azote et en vapeur d'eau au contact de l'oxygène à température ambiante. Cette réaction peut produire beaucoup de chaleur, rendant la station inconfortablement chaude en cas de fuite.
+  Made from Tritium, Nitrogen and BZ, Nitrium is a gaseous stimulant that when inhaled can enhance speed and endurance. At lower concentrations Nitrium will increase your top running speed while healthy and unimpaired. Additionally, at slightly higher concentrations, breathing Nitrium will prevent drowsiness. At high concentrations breathing it will begin to shut down a person's lungs, causing asphyxiation.
+  Nitrium degrades into nitrogen and water vapor on contact with room temperature oxygen. This reaction can produce a good deal of heat, making the station uncomfortably warm in the event of a leak.
 
 </Document>

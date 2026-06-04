@@ -10,7 +10,7 @@
 - type: entity
   id: PartChitinidBase
   parent: [BaseItem, BasePart]
-  name: "partie du corps de chitinide"
+  name: "Chitinid body part"
   abstract: true
   components:
   - type: Sprite
@@ -34,7 +34,7 @@
 
 - type: entity
   id: ChestChitinid
-  name: "poitrine de chitinide"
+  name: "chitinid chest"
   parent: [PartChitinidBase, BaseChest]
   components:
   - type: Sprite
@@ -52,7 +52,7 @@
 - type: entity
   parent: [ PartChitinidBase, BaseGroin ]
   id: GroinChitinid
-  name: "aine de chitinide"
+  name: "chitinid groin"
   components:
   - type: Sprite
     state: "groin_m"
@@ -61,7 +61,7 @@
 
 - type: entity
   id: HeadChitinid
-  name: "tête de chitinide"
+  name: "chitinid head"
   parent: [PartChitinidBase, BaseHead]
   components:
   - type: Sprite
@@ -76,7 +76,7 @@
 
 - type: entity
   id: LeftArmChitinid
-  name: "bras gauche de chitinide"
+  name: "left chitinid arm"
   parent: [PartChitinidBase, BaseLeftArm]
   components:
   - type: Sprite
@@ -84,7 +84,7 @@
 
 - type: entity
   id: RightArmChitinid
-  name: "bras droit de chitinide"
+  name: "right chitinid arm"
   parent: [PartChitinidBase, BaseRightArm]
   components:
   - type: Sprite
@@ -92,7 +92,7 @@
 
 - type: entity
   id: LeftHandChitinid
-  name: "main gauche de chitinide"
+  name: "left chitinid hand"
   parent: [PartChitinidBase, BaseLeftHand]
   components:
   - type: Sprite
@@ -100,7 +100,7 @@
 
 - type: entity
   id: RightHandChitinid
-  name: "main droite de chitinide"
+  name: "right chitinid hand"
   parent: [PartChitinidBase, BaseRightHand]
   components:
   - type: Sprite
@@ -108,7 +108,7 @@
 
 - type: entity
   id: LeftLegChitinid
-  name: "jambe gauche de chitinide"
+  name: "left chitinid leg"
   parent: [PartChitinidBase, BaseLeftLeg]
   components:
   - type: Sprite
@@ -116,7 +116,7 @@
 
 - type: entity
   id: RightLegChitinid
-  name: "jambe droite de chitinide"
+  name: "right chitinid leg"
   parent: [PartChitinidBase, BaseRightLeg]
   components:
   - type: Sprite
@@ -124,7 +124,7 @@
 
 - type: entity
   id: LeftFootChitinid
-  name: "pied gauche de chitinide"
+  name: "left chitinid foot"
   parent: [PartChitinidBase, BaseLeftFoot]
   components:
   - type: Sprite
@@ -132,7 +132,7 @@
 
 - type: entity
   id: RightFootChitinid
-  name: "pied droit de chitinide"
+  name: "right chitinid foot"
   parent: [PartChitinidBase, BaseRightFoot]
   components:
   - type: Sprite

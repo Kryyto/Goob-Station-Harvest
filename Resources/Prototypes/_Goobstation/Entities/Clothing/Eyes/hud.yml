@@ -36,7 +36,7 @@
 - type: entity
   parent: ClothingEyesHudChrono
   id: ClothingEyesHudChronoUnremoveable
-  suffix: Inamovible
+  suffix: Unremoveable
   components:
   - type: Unremoveable
 
@@ -44,7 +44,7 @@
   parent: [ClothingEyesBase, ShowHealthRelatedIcons]
   id: ClothingEyesHudDiagnosticMedical
   name: meddiag hud
-  description: Un affichage tête haute combinant informations médicales et de diagnostic.
+  description: A heads-up display combining both medical and diagnostic information.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Eyes/Hud/meddiag.rsi
@@ -61,7 +61,7 @@
   parent: ClothingEyesHudMedical
   id: ClothingEyesHudViro
   name: viro hud
-  description: Un HUD médical amélioré avec un scanner de maladies avancé.
+  description: A medical HUD upgraded with advanced disease scanning.
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Eyes/Hud/viro.rsi
@@ -76,7 +76,7 @@
   parent: ClothingEyesHudSyndicate
   id: ClothingEyesHudContractor
   name: contractor visor
-  description: L'affichage tête haute professionnel de la guilde, conçu pour mieux détecter les humanoïdes et faciliter leur capture.
+  description: The guild's professional head-up display, designed for better detection of humanoids and their subsequent capture.
   components:
   - type: ThermalVision
     isEquipment: true

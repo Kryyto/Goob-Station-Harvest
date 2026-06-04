@@ -45,8 +45,8 @@
 - type: entity
   id: BodyBag
   parent: BaseDeployFoldable
-  name: sac mortuaire
-  description: Un sac en plastique conçu pour le stockage et le transport des cadavres afin d'arrêter la décomposition.
+  name: body bag
+  description: A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
   components:
   - type: Item
     size: Small
@@ -159,8 +159,8 @@
 
 - type: entity
   id: BodyBagFolded
-  name: sac mortuaire
-  description: Un sac en plastique conçu pour le stockage et le transport des cadavres afin d'arrêter la décomposition.
+  name: body bag
+  description: A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
   parent: BodyBag
   suffix: folded
   components:
@@ -174,8 +174,8 @@
 - type: entity
   parent: BaseItem
   id: Ash
-  name: cendres
-  description: C'était quelque chose autrefois, mais plus maintenant.
+  name: ash
+  description: This used to be something, but now it's not.
   components:
   - type: Item
     size: Tiny
@@ -205,8 +205,8 @@
 - type: entity
   parent: Ash
   id: Ectoplasm
-  name: ectoplasme
-  description: Beaucoup moins mortel sous cette forme.
+  name: ectoplasm
+  description: Much less deadly in this form.
   components:
     - type: Sprite
       sprite: Mobs/Ghosts/revenant.rsi

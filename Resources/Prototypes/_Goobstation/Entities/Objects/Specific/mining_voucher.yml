@@ -22,8 +22,8 @@
 - type: entity
   parent: BaseItem
   id: MiningVoucher
-  name: bon de minage
-  description: Un bon pour récupérer un équipement. Insérez-le dans votre vendeur de récupération pour le récupérer.
+  name: mining voucher
+  description: A token to redeem a piece of equipment. Insert into your salvage vendor to redeem it.
   components:
   - type: Sprite
     sprite: _DV/Objects/Specific/Salvage/voucher.rsi

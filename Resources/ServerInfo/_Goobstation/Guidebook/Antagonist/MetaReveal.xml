@@ -9,76 +9,76 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Conditions de révélation des antagonistes
+  # Revealing conditions for antags
 
-  La liste suivante indique les conditions de révélation pour les différents antagonistes que vous pouvez rencontrer sur la station.
+  The following list provides revealing conditions for different antags you may see on the station
 
-  ## Hérétiques
-  Les conditions de révélation de ce bouclier sont l'une des suivantes :
-  - Découvrir une rune
-  - Découvrir une fracture de la réalité
-  - Être témoin d'un membre d'équipage utilisant ses pouvoirs
+  ## Heretics
+  The revealing condition for this shield is any of the following:
+  - Finding a rune
+  - Finding a reality fracture
+  - Witnessing a crewmember using their powers
 
-  ## Culte Cosmique
+  ## Cosmic Cult
 
-  Les conditions de révélation de ce bouclier sont l'une des suivantes :
-  - Être témoin d'un membre d'équipage portant le masque caractéristique
-  - Apercevoir un glyphe
-  - Être témoin d'un membre d'équipage absorbant un décalage malveillant
-  - Être témoin d'un membre d'équipage utilisant une capacité propre au culte
-  - Apercevoir de l'équipement du culte, comme des épées entropiques et des armures
+  The revealing condition for this shield is any of the following:
+  - witnessing a crewmember with the telltale facemask
+  - Seeing a glyph
+  - witnessing a crewmember absorb a malign shift
+  - witnessing a crewmember use a cult-specific ability
+  - witnessing cult gear like entropic swords and armor
 
-  ## Diables
+  ## Devils
 
-  Les conditions de révélation de ce bouclier sont l'une des suivantes :
-  - Vous êtes un Diable.
-  - Vous êtes le Chapelain, un avocat ou un membre du Commandement Central. (Y compris le BSO et le NTR)
-  - Vous avez conclu un pacte avec le Diable.
-  - Vous avez été témoin de quelqu'un concluant un pacte.
+  The revealing condition for this shield is any of the following:
+  - You are a Devil.
+  - You are the Chaplain, a lawyer, or a member of Central Command. (Including BSO and NTR)
+  - You have made a deal with the Devil.
+  - You have witnessed someone make a deal.
 
   ## Zombies
 
-  Conditions de révélation du bouclier « Zombie » :
-  - Vous êtes un Opératif Nucléaire
-  - Vous êtes un Agent Syndical
-  - Vous êtes un Zombie
-  - Vous avez vu des Zombies sur la station
+  Revealing conditions to the "Zombie" Shield:
+  - You are a Nuclear Operative
+  - You are a Syndicate Agent
+  - You are a Zombie
+  - You have seen Zombies on the station
 
-  ## Infections (une fois le virus zombie confirmé)
+  ## Infections(Once the zombie virus is proven)
 
-  Conditions de révélation du bouclier « Infections » :
-  - Vous êtes un Chimiste
-  - Vous êtes un Médecin-Chef
-  - La présence de zombies est annoncée comme réelle et à l'échelle de la station
+  Revealing conditions to the "Infections" Shield:
+  - You are a Chemist
+  - You are a Chief Medical Officer
+  - Zombies are announced to be real and station-wide
 
-  ## Escadron de la Mort
+  ## Deathsquad
 
-  Conditions de révélation du bouclier « Escadron de la Mort » :
-  - Vous le saurez.
+  Revealing conditions to the "Deathsquad" Shield:
+  - You'll know.
 
-  ## Implants implantés
+  ## Implanted implants
 
-  Les conditions de révélation de ce bouclier sont l'une des suivantes :
-  - Découvrir un implanteur non-NT, utilisé ou non
-  - Découvrir une boîte d'implant non-NT
-  - Découvrir l'utilisation d'un implant non-NT par qui que ce soit
-  - Vivre une situation pour laquelle absolument aucune autre explication n'est possible
-  - Découvrir un lien déverrouillé
+  The revealing condition for this shield is any of the following:
+  - discovering a non-NT implanter, used or unused
+  - discovering a non-NT implant box
+  - discovering use of a non-NT implant by anyone
+  - experiencing a situation where absolutely no other explanation is possible
+  - discovering an unlocked uplink
 
-  ## Objets Caméléon
+  ## Chameleon Items
 
-  Les conditions de révélation de ce bouclier sont l'une des suivantes :
-  - Voir quelqu'un d'autre provoquer un changement d'un objet caméléon
-  - Trouver des fibres de nanomachines holographiques
-  - Vivre une situation pour laquelle absolument aucune autre explication n'est possible
-  - Découvrir un lien déverrouillé
+  The revealing condition for this shield is any of the following:
+  - seeing someone else cause any chameleon item to change
+  - finding holographic nanomachine fibers
+  - experiencing a situation where absolutely no other explanation is possible
+  - discovering an unlocked uplink
 
-  ## Objets Furtifs
+  ## Stealth Items
 
-  Les conditions de révélation de ce bouclier sont l'une des suivantes :
-  - Voir l'objet se comporter différemment du comportement attendu
-  - Voir l'objet utilisé à des fins dissimulées
-  - Vivre une situation pour laquelle absolument aucune autre explication n'est possible
-  - Découvrir un lien déverrouillé
+  The revealing condition for this shield is any of the following:
+  - seeing the item behave differently than the expected behavior for the item
+  - seeing the item used for its hidden purpose
+  - experiencing a situation where absolutely no other explanation is possible
+  - discovering an unlocked uplink
 
 </Document>

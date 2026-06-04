@@ -9,7 +9,7 @@
   parent: [ BaseMechWeaponMelee, DebugMechEquipment ] # Debug equipment does have all whitelist tags.
   name: debug bam
   suffix: Mech Weapon, DEBUG, Melee
-  description: Un truc robuste.
+  description: A robust thing.
   components:
   - type: Sprite
     state: paddy_claw

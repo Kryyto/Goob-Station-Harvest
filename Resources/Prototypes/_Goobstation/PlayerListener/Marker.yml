@@ -6,7 +6,7 @@
 - type: entity
   id: DormNotifierMarker
   parent: MarkerBase
-  name: Marqueur de Notificateur de Dortoir
+  name: Dorm Notifier Marker
   components:
     - type: DormNotifierMarker
     - type: Sprite

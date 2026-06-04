@@ -193,7 +193,7 @@
 - type: entity
   id: BaseMobXenomorphDungeon
   abstract: true
-  suffix: Donjon
+  suffix: Dungeon
   components:
   - type: Damageable
     damageModifierSet: XenomorphDungeon

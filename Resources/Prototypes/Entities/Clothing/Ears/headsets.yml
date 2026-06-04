@@ -105,8 +105,8 @@
   abstract: true
   parent: Clothing
   id: ClothingHeadset
-  name: oreillette
-  description: Un interphone modulaire mis à jour qui s'adapte autour de la tête. Accepte des clés de chiffrement.
+  name: headset
+  description: An updated, modular intercom that fits over the head. Takes encryption keys.
   components:
   - type: ContainerContainer
     containers:
@@ -141,7 +141,7 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetGrey
-  name: oreillette de passager
+  name: passenger headset
   components:
   - type: Sprite
     sprite: Clothing/Ears/Headsets/base.rsi
@@ -149,8 +149,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetCargo
-  name: oreillette du cargo
-  description: Une oreillette utilisée par les employés du ravitaillement.
+  name: cargo headset
+  description: A headset used by supply employees.
   components:
   - type: ContainerFill
     containers:
@@ -165,8 +165,8 @@
 - type: entity
   parent: ClothingHeadsetCargo
   id: ClothingHeadsetMining
-  name: oreillette des mines
-  description: Une oreillette utilisée par les mineurs.
+  name: mining headset
+  description: Headset used by shaft miners.
   components:
   - type: Sprite
     sprite: Clothing/Ears/Headsets/mining.rsi
@@ -176,8 +176,8 @@
 - type: entity
   parent: [ClothingHeadsetCargo, BaseCommandContraband]
   id: ClothingHeadsetQM
-  name: oreillette du QM
-  description: Une oreillette utilisée par le quartier-maître.
+  name: qm headset
+  description: A headset used by the quartermaster.
   components:
   - type: ContainerFill
     containers:
@@ -189,8 +189,8 @@
 - type: entity
   parent: [ ClothingHeadset, BaseCentcommContraband ]
   id: ClothingHeadsetCentCom
-  name: oreillette de CentComm
-  description: Une oreillette utilisée par les hauts gradés de Nanotrasen.
+  name: CentComm headset
+  description: A headset used by the upper echelons of Nanotrasen.
   components:
   - type: ContainerFill
     containers:
@@ -205,8 +205,8 @@
 - type: entity
   parent: [ClothingHeadset, BaseCommandContraband]
   id: ClothingHeadsetCommand
-  name: oreillette de commandement
-  description: Une oreillette avec un canal de commandement.
+  name: command headset
+  description: A headset with a commanding channel.
   components:
   - type: ContainerFill
     containers:
@@ -220,8 +220,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetEngineering
-  name: oreillette d'ingénierie
-  description: Une oreillette pour que les ingénieurs puissent discuter pendant que la station brûle autour d'eux.
+  name: engineering headset
+  description: A headset for engineers to chat while the station burns around them.
   components:
   - type: ContainerFill
     containers:
@@ -236,8 +236,8 @@
 - type: entity
   parent: [ClothingHeadsetEngineering, BaseCommandContraband]
   id: ClothingHeadsetCE
-  name: oreillette du chef ingénieur
-  description: Une oreillette pour que le chef ingénieur puisse ignorer tous les appels d'urgence.
+  name: ce headset
+  description: A headset for the chief engineer to ignore all emergency calls on.
   components:
   - type: ContainerFill
     containers:
@@ -249,8 +249,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetMedical
-  name: oreillette médicale
-  description: Une oreillette pour le personnel qualifié de l'infirmerie.
+  name: medical headset
+  description: A headset for the trained staff of the medbay.
   components:
   - type: ContainerFill
     containers:
@@ -265,8 +265,8 @@
 - type: entity
   parent: [ClothingHeadsetMedical, BaseCommandContraband]
   id: ClothingHeadsetCMO
-  name: oreillette du CMO
-  description: Une oreillette utilisée par le médecin-chef.
+  name: cmo headset
+  description: A headset used by the CMO.
   components:
   - type: ContainerFill
     containers:
@@ -278,8 +278,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetScience
-  name: oreillette scientifique
-  description: Une oreillette scientifique. Comme d'habitude.
+  name: science headset
+  description: A sciency headset. Like usual.
   components:
   - type: ContainerFill
     containers:
@@ -294,8 +294,8 @@
 - type: entity
   parent: ClothingHeadsetScience
   id: ClothingHeadsetMedicalScience
-  name: oreillette de recherche médicale
-  description: Une oreillette née de l'union entre le médical et la science.
+  name: medical research headset
+  description: A headset that is a result of the mating between medical and science.
   components:
   - type: ContainerFill
     containers:
@@ -310,8 +310,8 @@
 - type: entity
   parent: ClothingHeadsetScience
   id: ClothingHeadsetRobotics
-  name: oreillette de robotique
-  description: Conçue spécialement pour les roboticiens, incapables de choisir entre les départements.
+  name: robotics headset
+  description: Made specifically for the roboticists, who cannot decide between departments.
   components:
   - type: ContainerFill
     containers:
@@ -326,8 +326,8 @@
 - type: entity
   parent: [ClothingHeadsetScience, BaseCommandContraband]
   id: ClothingHeadsetRD
-  name: oreillette du DR
-  description: Lamarr adorait mâchouiller ça...
+  name: rd headset
+  description: Lamarr used to love chewing on this...
   components:
   - type: ContainerFill
     containers:
@@ -339,8 +339,8 @@
 - type: entity
   parent: [ClothingHeadset, BaseSecurityLawyerContraband]
   id: ClothingHeadsetSecurity
-  name: oreillette de sécurité
-  description: Utilisée par votre force de sécurité d'élite.
+  name: security headset
+  description: This is used by your elite security force.
   components:
   - type: ContainerFill
     containers:
@@ -355,8 +355,8 @@
 - type: entity
   parent: [ClothingHeadset, BaseSecurityContraband]
   id: ClothingHeadsetBrigmedic
-  name: oreillette de médecin de brig
-  description: Une oreillette qui aide à entendre les cris d'agonie.
+  name: brigmedic headset
+  description: A headset that helps to hear the death cries.
   components:
   - type: ContainerFill
     containers:
@@ -372,8 +372,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetService
-  name: oreillette des services
-  description: Une oreillette utilisée par le personnel de service, chargé de garder la station approvisionnée, heureuse et propre.
+  name: service headset
+  description: Headset used by the service staff, tasked with keeping the station full, happy and clean.
   components:
   - type: ContainerFill
     containers:
@@ -388,8 +388,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetFreelance
-  name: oreillette de freelance
-  description: Utilisée par un groupe de freelances itinérants.
+  name: freelancer headset
+  description: This is used by a roaming group of freelancers.
   components:
     - type: ContainerFill
       containers:
@@ -403,8 +403,8 @@
 - type: entity
   parent: [ClothingHeadset, BaseMagicalContraband]
   id: ClothingHeadsetWizard
-  name: oreillette de sorcier
-  description: Une oreillette utilisée par les redoutables sorciers de l'espace.
+  name: wizard headset
+  description: A headset used by the dreaded space wizards.
   components:
     - type: ContainerFill
       containers:

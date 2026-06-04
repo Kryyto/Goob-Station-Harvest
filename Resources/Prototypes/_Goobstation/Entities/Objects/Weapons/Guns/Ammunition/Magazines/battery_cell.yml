@@ -71,7 +71,7 @@
   name: SMG power cell
   description: A militarized power cell compatible with SMG scale lasers.
   id: PowerCellIRSMG
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSMG
   components:
   - type: Sprite
@@ -84,7 +84,7 @@
   name: x-ray SMG power cell
   description: A militarized power cell compatible with SMG scale lasers that fires x-rays.
   id: PowerCellXraySMG
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSMG
   components:
   - type: Sprite
@@ -97,7 +97,7 @@
   name: overclocked SMG power cell
   description: A militarized power cell compatible with SMG scale lasers that has been overclocked.
   id: PowerCellOverchargedSMG
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSMG
   components:
   - type: Sprite
@@ -110,7 +110,7 @@
   name: bluespace SMG power cell
   description: A militarized power cell compatible with SMG scale lasers that fires beams of calibrated bluespace particles that bypass few inches of armor.
   id: PowerCellBluespaceSMG
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSMG
   components:
   - type: Battery
@@ -126,7 +126,7 @@
   name: pulse SMG power cell
   description: A militarized power cell compatible with SMG scale lasers that fires pulse beams.
   id: PowerCellPulseSMG
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSMG
   components:
     - type: Sprite
@@ -139,7 +139,7 @@
   name: ion SMG power cell
   description: A militarized power cell compatible with SMG scale lasers that fires ion beams.
   id: PowerCellIonSMG
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSMG
   components:
   - type: Sprite
@@ -185,7 +185,7 @@
   name: sniper power cell
   description: A militarized power cell compatible with laser snipers.
   id: PowerCellIRSniper
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSniper
   components:
   - type: Sprite
@@ -198,7 +198,7 @@
   name: x-ray sniper power cell
   description: A militarized power cell compatible with laser snipers that fires x-rays.
   id: PowerCellXraySniper
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSniper
   components:
   - type: Sprite
@@ -211,7 +211,7 @@
   name: overclocked sniper power cell
   description: A militarized power cell compatible with laser snipers that has been overclocked.
   id: PowerCellOverchargedSniper
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSniper
   components:
   - type: Sprite
@@ -224,7 +224,7 @@
   name: bluespace sniper power cell
   description: A militarized power cell compatible with laser snipers that fires beams of calibrated bluespace particles that bypass few inches of armor.
   id: PowerCellBluespaceSniper
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSniper
   components:
   - type: Battery
@@ -240,7 +240,7 @@
   name: pulse sniper power cell
   description: A militarized power cell compatible with laser snipers that fires pulse beams.
   id: PowerCellPulseSniper
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSniper
   components:
     - type: Sprite
@@ -253,7 +253,7 @@
   name: ion sniper power cell
   description: A militarized power cell compatible with laser snipers that fires ion beams.
   id: PowerCellIonSniper
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellSniper
   components:
   - type: Sprite
@@ -296,7 +296,7 @@
   name: revolver power cell
   description: A militarized power cell compatible with laser revolvers.
   id: PowerCellIRRevolver
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellRevolver
   components:
   - type: Sprite
@@ -322,7 +322,7 @@
   name: x-ray revolver power cell
   description: A militarized power cell compatible with laser revolvers that fires x-rays.
   id: PowerCellXrayRevolver
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellRevolver
   components:
   - type: Sprite
@@ -348,7 +348,7 @@
   name: overclocked revolver power cell
   description: A militarized power cell compatible with laser revolvers that has been overclocked.
   id: PowerCellOverchargedRevolver
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellRevolver
   components:
   - type: Sprite
@@ -374,7 +374,7 @@
   name: bluespace revolver power cell
   description: A militarized power cell compatible with laser revolvers that fires beams of calibrated bluespace particles that bypass few inches of armor.
   id: PowerCellBluespaceRevolver
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellRevolver
   components:
   - type: Sprite
@@ -403,7 +403,7 @@
   name: ion revolver power cell
   description: A militarized power cell compatible with laser revolvers that fires ion beams.
   id: PowerCellIonRevolver
-  suffix: Pleine
+  suffix: Full
   parent: BaseMilitaryPowerCellRevolver
   components:
   - type: Sprite

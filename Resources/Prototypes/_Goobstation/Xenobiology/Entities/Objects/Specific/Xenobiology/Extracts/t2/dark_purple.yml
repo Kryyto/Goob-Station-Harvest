@@ -1,7 +1,7 @@
 - type: entity
   id: DarkPurpleSlimeExtract
   parent: BaseSlimeExtract
-  name: extrait de slime violet foncé
+  name: dark purple slime extract
   components:
   - type: Sprite
     layers:

@@ -1,53 +1,55 @@
 <Document>
 
-  # Judo Corporatif
+  # Corporate Judo
 
   <Box>
     <GuideEntityEmbed Entity="ClothingBeltCorporateJudo" Caption=""/>
   </Box>
 
-  Le Judo Corporatif, ou simplement Judo, est un [textlink="art martial" link="MartialArts"] qui se concentre sur la restriction de votre adversaire avec des mouvements plus complexes mais efficaces. Vous verrez ce style le plus utilisé par les Officiers de Sécurité, car ils ont accès aux ceintures dans leur département.
-  Maîtrisez l'art et frappez tout tider qui se met sur votre chemin. Une bonne compréhension des intentions est requise.
+  Corporate Judo, or simply Judo, is a [textlink="martial art" link="MartialArts"] that focuses on restraining your opponent with more
+  complex but effective moves. You will see this style most used by Security Officers, as they get access to the belts in their department.
+  Harness the art and strike any tider that gets in your way. A good understanding of intents is required.
 
-  ## Capacités spéciales
+  ## Special abilities
 
-  Les utilisateurs de Judo sont meilleurs à l'intention de Nuisance, car leurs attaques à mains nues infligeront des dégâts supplémentaires à l'adversaire.
+  Judo users are better at Harm intent, as their unarmed attacks will deal extra damage to the opponent.
 
-  ### Mépris du Matraque à Étourdissement
+  ### Stunbaton Scorn
 
-  Un utilisateur de Judo est incapable d'utiliser des matraques à étourdissement. Un vrai maître s'appuie sur la technique, utilisant le levier et la force du corps pour soumettre, laissant le besoin de force électrique derrière.
+  A Judo user is unable to use stunbatons. A true master relies on technique, using the
+  body’s leverage and strength to subdue, leaving the need for electrified force behind.
 
-  ## Attaques combinées
+  ## Combo attacks
 
-  ### Étourdir
+  ### Discombobulate
 
   <Box>
     <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
     <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
   </Box>
 
-  Ralentit l'adversaire et réduit temporairement leur résistance à l'endurance.
+  Slows the opponent down and reduces their stamina resistance temporarily.
 
-  ### Pique d'Œil
+  ### Eye Poke
 
   <Box>
     <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
     <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
   </Box>
 
-  Aveugle l'adversaire et floute leur vision, indépendamment de la protection des yeux, et inflige des dégâts Contondants.
+  Blinds the opponent and blurs their vision, regardless of eye protection, and deals some Blunt damage.
 
-  ### Projection de Judo
+  ### Judo Throw
 
   <Box>
     <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
     <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
   </Box>
 
-  Peut seulement être effectué en position debout. Fonctionne seulement sur les adversaires debout, infligeant des dégâts d'Endurance et les faisant tomber.
-  La durée de la mise à terre est affectée par leur résistance à l'endurance.
+  Can only be perfomed while standing. Only works on standing opponents, dealing Stamina damage and knocking them down.
+  Knockdown duration is affected by their Stamina resistance.
 
-  ### Clé de Bras
+  ### Armbar
 
   <Box>
     <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
@@ -55,10 +57,10 @@
     <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
   </Box>
 
-  Fonctionne seulement sur les adversaires à terre. Inflige des dégâts d'Endurance, les désarme, et les verrouille dans une clé de bras jusqu'à ce qu'ils réussissent à se lever.
-  La clé de bras fonctionne de manière similaire à une mise à terre et une prise d'étranglement, et sa durée est affectée par leur résistance à l'endurance.
+  Only works on downed opponents. Inflicts Stamina damage, disarms them, and locks them in an armbar until they manage to stand up.
+  Armbar works similarly to a knockdown and choke grab, and its duration is affected by their Stamina resistance.
 
-  ### Projection de Roue
+  ### Wheel Throw
 
   <Box>
     <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
@@ -66,7 +68,7 @@
     <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
   </Box>
 
-  Fonctionne seulement sur les adversaires verrouillés dans une clé de bras. Fait basculer l'adversaire par-dessus l'épaule,
-  infligeant des dégâts massifs d'Endurance, et force l'utilisateur sur ses pieds.
+  Only works on opponents locked in an armbar. Flips the opponent over the shoulder,
+  inflicting massive Stamina damage, and forces the user back on their feet.
 
 </Document>

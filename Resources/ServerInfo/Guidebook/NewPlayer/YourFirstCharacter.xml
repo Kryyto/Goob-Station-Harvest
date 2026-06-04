@@ -6,56 +6,56 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Les Capitaines et les Clowns
-Ce guide explique comment modifier l'apparence de votre personnage. Assurez-vous d'avoir d'abord lu la Création de personnage.
-En créant votre personnage, vous pourriez être intimidé par l'étendue des options disponibles.
+# The Captains and the Clowns
+This is a guide for editing your character's appearance. Make sure you read Character Creation first.
+Upon creating your character, you may be intimidated by your vast range of options.
+  
+It's okay to make your first character [color=#a4885c]randomized[/color] and roll with it, even experienced players do it.
+Making your first character doesn't have to be precise, either. You can [color=#a4885c]wing it[/color] and see what happens.
+  
+If you'd like to be [color=#a4885c]methodical[/color], though, creating a character is easy to do one step at a time.
 
-C'est tout à fait normal de créer votre premier personnage en mode [color=#a4885c]aléatoire[/color] et de jouer avec, même les joueurs expérimentés le font.
-Créer votre premier personnage n'a pas non plus à être précis. Vous pouvez [color=#a4885c]improviser[/color] et voir ce que ça donne.
+## Choosing a Species
+Most species have minor differences, which you can read about under the [color=#a4885c]Species[/color] entry.
+However, you may find that it's easier to make your first character as a human, moth, dwarf or reptilian.
 
-Si vous préférez être [color=#a4885c]méthodique[/color], créer un personnage est facile en procédant étape par étape.
+This shouldn't discourage you from getting creative with your character, though.
 
-## Choisir une espèce
-La plupart des espèces ont des différences mineures, que vous pouvez lire dans la section [color=#a4885c]Espèces[/color].
-Cependant, il peut être plus simple de créer votre premier personnage en tant qu'humain, mite, nain ou reptilien.
+This guide will assume you are creating a human, but the process is similar across all species.
 
-Cela ne devrait pas vous décourager d'être créatif avec votre personnage.
+## Minor Characteristics
+These include:
+- Age (18-29 for young, 30-59 for middle-aged, 60+ for old)
+- Sex (your sprite, as seen by toggling "Show clothing")
+- Pronouns (what the game will refer to you as)
+- Skin color (may be a slider or RGB depending on species)
+- Eye color (RGB)
+- Hair color (RGB)
 
-Ce guide part du principe que vous créez un humain, mais le processus est similaire pour toutes les espèces.
+These are minor changes and have little effect on gameplay. This is what players will read when they [color=#a4885c]examine you[/color]. ("young man")
 
-## Caractéristiques mineures
-Celles-ci comprennent :
-- L'âge (18-29 pour jeune, 30-59 pour d'âge moyen, 60+ pour âgé)
-- Le sexe (votre sprite, visible en basculant "Afficher les vêtements")
-- Les pronoms (ce par quoi le jeu vous désignera)
-- La couleur de peau (peut être un curseur ou RGB selon l'espèce)
-- La couleur des yeux (RGB)
-- La couleur des cheveux (RGB)
+## Hair and Facial Hair
+Again, you may be intimidated by the vast range of options. That's okay.
 
-Ce sont des changements mineurs qui ont peu d'effet sur le gameplay. C'est ce que les joueurs verront lorsqu'ils vous [color=#a4885c]examinent[/color]. ("jeune homme")
+[color=#a4885c]Take your time with it.[/color] You can skim or click through each of the options and find which one you like.
+Sometimes it's easier to set your desired hair color before looking at the options.
 
-## Cheveux et poils du visage
-Là encore, vous pourriez être intimidé par la multitude d'options. C'est normal.
+If you really can't decide, some popular haircut options include Floorlength Bedhead, Modern, Business, CIA or simply bald.
+Alternatively, [color=#a4885c]randomize[/color] a separate character and see what kind of haircuts they're rocking with. Suprise yourself.
 
-[color=#a4885c]Prenez votre temps.[/color] Vous pouvez parcourir ou cliquer parmi chaque option et trouver celle qui vous convient.
-Il est parfois plus simple de définir la couleur de cheveux souhaitée avant de regarder les options.
+Don't feel obligated to use any of these, though.
+  
+## Markings
+Markings range from [color=#a4885c]scars and snouts[/color] to [color=#a4885c]tattoos and tails[/color].
+Think of them like [color=#a4885c]accessories[/color] that are a part of your body, for giving your character some extra flair and uniqueness. They cannot be changed during the round.
 
-Si vous ne pouvez vraiment pas vous décider, quelques coupes populaires incluent Floorlength Bedhead, Modern, Business, CIA ou simplement le crâne rasé.
-Vous pouvez aussi [color=#a4885c]randomiser[/color] un autre personnage et voir quelles coupes il arbore. Laissez-vous surprendre.
+Some species have more marking options than others. Humans are more limited in terms of markings than moths or reptilians.
 
-Rien ne vous oblige à utiliser l'une d'elles, cela dit.
+You can have a set number of markings in each '[color=#a4885c]category[/color]', as seen at the top. For example, reptilians can have one chest marking but two markings on the top of their heads.
+These are [color=#a4885c]cosmetic[/color] and have no effect on gameplay.
 
-## Marquages
-Les marquages vont des [color=#a4885c]cicatrices et museaux[/color] aux [color=#a4885c]tatouages et queues[/color].
-Considérez-les comme des [color=#a4885c]accessoires[/color] faisant partie de votre corps, pour donner à votre personnage un peu plus de caractère et d'unicité. Ils ne peuvent pas être modifiés en cours de ronde.
+## How to stand out
+Memorable characters are usually remembered for their personality, their deeds and their [color=#a4885c]robustness[/color], but that doesn't mean you have to be some sort of hotshot.
 
-Certaines espèces disposent de plus d'options de marquage que d'autres. Les humains sont plus limités en termes de marquages que les mites ou les reptiliens.
-
-Vous pouvez avoir un certain nombre de marquages dans chaque '[color=#a4885c]catégorie[/color]', comme indiqué en haut. Par exemple, les reptiliens peuvent avoir un marquage sur la poitrine mais deux marquages sur le dessus de la tête.
-Ces marquages sont [color=#a4885c]cosmétiques[/color] et n'ont aucun effet sur le gameplay.
-
-## Comment se démarquer
-Les personnages mémorables sont généralement retenus pour leur personnalité, leurs exploits et leur [color=#a4885c]robustesse[/color], mais cela ne signifie pas que vous deviez être une sorte de crack.
-
-Ne vous préoccupez pas d'avoir un personnage grand, flashy et mémorable. Écrivez votre propre histoire dont on se souviendra.
+Don't sweat having a big, flashy and memorable character. Make your own story that you'll be remembered for.
 </Document>

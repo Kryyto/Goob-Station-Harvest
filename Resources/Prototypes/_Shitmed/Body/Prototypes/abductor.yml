@@ -6,7 +6,7 @@
 
 - type: body
   id: Abductor
-  name: Ravisseur
+  name: Abductor
   root: chest
   slots:
     head:

@@ -1,8 +1,8 @@
 - type: entity
   parent: OrganHumanStomach
   id: OrganOniStomach
-  name: estomac oni
-  description: Beurk, ça vous donne mal au ventre. Plus grand que la normale.
+  name: oni stomach
+  description: Ew, this is hard to stomach. Larger than normal
   components:
   - type: Stomach
     specialDigestible:
@@ -28,7 +28,7 @@
 - type: entity
   parent: OrganHumanLiver
   id: OrganOniLiver
-  name: foie oni
+  name: oni liver
   components:
   - type: Metabolizer
     metabolizerTypes: [Oni]

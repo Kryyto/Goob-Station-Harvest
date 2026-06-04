@@ -17,7 +17,7 @@
 
 - type: entity
   id: ShuttleWindow
-  name: vitre de navette
+  name: shuttle window
   parent: WindowRCDResistant
   components:
   - type: Sprite

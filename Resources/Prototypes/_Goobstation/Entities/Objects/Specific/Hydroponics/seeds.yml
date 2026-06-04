@@ -5,7 +5,7 @@
 
 - type: entity
   parent: SeedBase
-  name: sachet de graines de baies étranges
+  name: packet of strange berry seeds
   id: StrangeBerrySeeds
   components:
     - type: Seed
@@ -15,7 +15,7 @@
 
 - type: entity
   parent: SeedBase
-  name: sachet de graines de tomates bleues
+  name: packet of blue tomato seeds
   id: BluespaceTomatoSeeds
   components:
   - type: Seed

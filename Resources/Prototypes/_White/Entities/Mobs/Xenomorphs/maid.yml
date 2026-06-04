@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: MobXenomorphMaid
-  name: xénomorphe bonne
-  description: Hm, je suppose que c'est un peu mignon ?
+  name: xenomorph maid
+  description: I mean, I guess it is kinda cute?
   components:
   - type: Sprite
     sprite: _White/Mobs/Aliens/Xenomorphs/maid.rsi

@@ -2,7 +2,7 @@
   id: FireEffect
   name: fire
   parent: Acidifier
-  description: Une rafale de flammes !
+  description: A burst of flames!
   components:
   - type: Sprite
     sprite: /Textures/Effects/fire.rsi

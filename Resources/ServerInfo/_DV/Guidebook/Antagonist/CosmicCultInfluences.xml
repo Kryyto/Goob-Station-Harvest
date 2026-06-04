@@ -1,30 +1,30 @@
 <Document>
   # Influences
 
-  Les cultistes commencent avec deux puissantes influences et en débloquent progressivement davantage au fur et à mesure qu'ils font progresser le Monument à travers ses trois stades.
+  Culists begin with two powerful inflences, and will gradually unlock more as they progress the Monument through its three stages.
 
-  Une fois le Monument atteint son deuxième stade, chaque fois qu'un cultiste utilise une influence, il a une chance de générer un [color=#4cabb3]Écho Malin[/color] révélateur. Celui-ci s'estompe après un court instant, mais pourrait alerter des personnes extérieures à la présence de votre culte prématurément !
+  Once the Monument reaches its second stage, any time a cultist uses an influence, they have a chance to generate a telltale [color=#4cabb3]Malign Echo[/color]. These will fade after a short time, but may alert outsiders to the presence of your cult prematurely!
 
-  Utiliser Siphonner l'Entropie ne génère jamais d'Écho Malin.
+  Using Siphon Entropy will never generate a Malign Echo.
 
   <Box>
     <GuideEntityEmbed Entity="CosmicEchoVfx" Caption=""/>
   </Box>
 
-  ## Influences de Départ
-  - [color=#4cabb3][bold]Siphonner l'Entropie :[/bold][/color] Siphonnez silencieusement l'entropie de votre cible, lui infligeant quelques dégâts au passage.
-  - [color=#4cabb3][bold]Regard du Néant :[/bold][/color] Émettez une impulsion de lumière cosmique horrifique, ralentissant et désorientant toute personne autour de vous.
+  ## Starting Influences
+  - [color=#4cabb3][bold]Siphon Entropy:[/bold][/color] Silently siphon entropy from your target, dealing some damage in the process.
+  - [color=#4cabb3][bold]Null Glare:[/bold][/color] Emit a horrific pulse of cosmic light, slowing and disorienting everyone around you.
 
-  ## Influences Actives Débloquables
-  - [color=#4cabb3][bold]Lapsus Aberrant :[/bold][/color] Faites tomber en lapsus la forme corporelle de votre cible, la rendant temporairement immuable, infranchissable et figée sur place.
-  - [color=#4cabb3][bold]Dévier la Subjectivité :[/bold][/color] Expulsez l'esprit de votre cible hors de son corps vers les ténèbres cosmiques, rendant temporairement son corps sans esprit.
-  - [color=#4cabb3][bold]Forcer l'Entrée :[/bold][/color] Utilisez un souffle de puissance concentrée pour forcer l'ouverture d'une porte sécurisée.
-  - [color=#4cabb3][bold]Nova Astrale :[/bold][/color] Lancez un large et perturbateur souffle d'énergie astrale.
-  - [color=#4cabb3][bold]Imposition du Vide :[/bold][/color] Vous annulez tout dégât entrant pendant un court instant.
+  ## Unlockable Active Influences
+  - [color=#4cabb3][bold]Abberant Lapse:[/bold][/color] Lapse your target's corporeal form, temporarily rendering it immutable, impassible, and frozen in place.
+  - [color=#4cabb3][bold]Shunt Subjectivity:[/bold][/color] Shunt your target's mind out of their body and unto the cosmic dark, temporarily rendering their body mindless.
+  - [color=#4cabb3][bold]Force Ingress:[/bold][/color] Use a concentrated blast of power to force a secure doorway open.
+  - [color=#4cabb3][bold]Astral Nova:[/bold][/color] Hurl a large and disruptive blast of astral energy.
+  - [color=#4cabb3][bold]Vacuous Imposition:[/bold][/color] You negate any incoming damage for a short time.
 
-  ## Influences Passives Débloquables
-  - [color=#4cabb3][bold]Abolir le Métabolisme :[/bold][/color] Vos besoins corporels de faim et de soif sont brisés — vous n'avez plus besoin de manger ni de boire.
-  - [color=#4cabb3][bold]Pas Libéré :[/bold][/color] Vous vous déplacez uniquement par rapport au noir sans étoiles — vos mouvements ne sont plus affectés par la gravité.
-  - [color=#4cabb3][bold]Foulée Astrale :[/bold][/color] L'énergie astrale vivifie chacun de vos pas, accélérant subtilement votre vitesse.
-  - [color=#4cabb3][bold]Vitalité du Vide :[/bold][/color] Le vide sans étoiles du Monument submerge votre esprit et votre corps. Votre forme corporelle se régénère lentement en sa présence.
+  ## Unlockable Passive Influences
+  - [color=#4cabb3][bold]Eschew Metabolism:[/bold][/color] Your corporeal needs of hunger and thirst are sundered - you no longer need to eat or drink.
+  - [color=#4cabb3][bold]Unbound Step:[/bold][/color] You move relative only to the starless black - your movement is no longer affected by gravity.
+  - [color=#4cabb3][bold]Astral Stride:[/bold][/color] Astral energy invigorates your every move, subtly hastening your speed.
+  - [color=#4cabb3][bold]Vacuous Vitality:[/bold][/color] The starless emptiness of The Monument overwhelms your mind and body. Your corporeal form slowly regenerates while in its presence.
 </Document>

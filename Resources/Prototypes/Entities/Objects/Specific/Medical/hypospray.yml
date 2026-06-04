@@ -124,7 +124,7 @@
 - type: entity
   name: hypospray
   parent: [BaseItem, BaseGrandTheftContraband]
-  description: Un injecteur stérile pour l'administration rapide de médicaments aux patients.
+  description: A sterile injector for rapid administration of drugs to patients.
   id: Hypospray
   components:
   - type: Sprite
@@ -164,9 +164,9 @@
     solutionName: hypospray
 
 - type: entity
-  name: hypospray Gorlex
+  name: gorlex hypospray
   parent: BaseItem
-  description: En utilisant des plans rétro-ingéniés de NT, Cybersun les a produits en quantités limitées pour les opérateurs des Maraudeurs Gorlex.
+  description: Using reverse engineered designs from NT, Cybersun produced these in limited quantities for Gorlex Marauder operatives.
   id: SyndiHypo
   components:
   - type: Sprite
@@ -201,7 +201,7 @@
 - type: entity
   name: borghypo
   parent: BaseItem
-  description: Un injecteur stérile pour l'administration rapide de médicaments aux patients. A cheaper and more specialised version for medical borgs.
+  description: A sterile injector for rapid administration of drugs to patients. A cheaper and more specialised version for medical borgs.
   id: BorgHypo
   components:
   - type: Sprite
@@ -223,10 +223,10 @@
     delay: 0.5
 
 - type: entity
-  name: hypospray expérimental
+  name: experimental hypospray
   suffix: Admeme
   parent: SyndiHypo
-  description: L'application ultime de la technologie bluespace pour l'administration rapide de produits chimiques.
+  description: The ultimate application of bluespace technology and rapid chemical administration.
   id: AdminHypo
   components:
     - type: SolutionContainerManager
@@ -237,9 +237,9 @@
       delay: 0.0
 
 - type: entity
-  name: médipen chimique
+  name: chemical medipen
   parent: BaseItem
-  description: Un injecteur stérile pour l'administration rapide de médicaments aux patients. Celui-ci ne peut pas être rechargé.
+  description: A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
   id: ChemicalMedipen
   components:
   - type: Sprite
@@ -291,10 +291,10 @@
     solution: pen
 
 - type: entity
-  name: médipen d'urgence
+  name: emergency medipen
   parent: ChemicalMedipen
   id: EmergencyMedipen
-  description: Un moyen rapide et sûr de soigner les blessures mineures, arrêter les saignements et stabiliser les patients pour le personnel sans formation médicale avancée. # goobstation
+  description: A rapid and safe way to heal minor damage, stop bleeding, and stabilize patients for personnel without advanced medical knowledge. # goobstation
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
@@ -323,10 +323,10 @@
     - Trash
 
 - type: entity
-  name: auto-injecteur antipoison
+  name: poison auto-injector
   parent: ChemicalMedipen
   id: AntiPoisonMedipen
-  description: Une dose rapide d'antipoison. Provoque un stress extrême lorsqu'il est mélangé à d'autres médicaments.
+  description: A rapid dose of anti-poison. Causes extreme stress when mixed with other medications.
   components:
   - type: Item
     inhandVisuals:
@@ -360,10 +360,10 @@
        #   Quantity: 5
 
 - type: entity
-  name: auto-injecteur anti-contusions
+  name: brute auto-injector
   parent: ChemicalMedipen
   id: BruteAutoInjector
-  description: Une dose rapide de bicaridine, acide salicylique, acide tranexamique et tramadol, destinée aux applications de combat. L'usage multiple est fortement déconseillé. # goobstation
+  description: A rapid dose of bicaridine, salicylic acid, tranexamic acid, and tramadol, intended for combat applications. Usage of multiple highly recommended against. # goobstation
   components:
   - type: Item
     inhandVisuals:
@@ -406,10 +406,10 @@
           Quantity: 5
 
 - type: entity
-  name: auto-injecteur anti-brûlures
+  name: burn auto-injector
   parent: ChemicalMedipen
   id: BurnAutoInjector
-  description: Une dose rapide d'oxandrolone, léporazine et tramadol, destinée aux applications de combat. # goobstation
+  description: A rapid dose of oxandrolone, leporazine, and tramadol, intended for combat applications. # goobstation
   components:
   - type: Item
     inhandVisuals:
@@ -450,10 +450,10 @@
           Quantity: 5
 
 - type: entity
-  name: auto-injecteur anti-radiation
+  name: rad auto-injector
   parent: ChemicalMedipen
   id: RadAutoInjector
-  description: Une dose rapide d'anti-radiation. Contient de l'arithrazine et de la bicaridine.
+  description: A rapid dose of anti-radiation. Contains arithrazine and bicaridine.
   components:
   - type: Item
     inhandVisuals:
@@ -492,10 +492,10 @@
           Quantity: 5
 
 - type: entity
-  name: auto-injecteur de puncturase
+  name: puncturase auto-injector
   parent: ChemicalMedipen
   id: PunctAutoInjector
-  description: Une dose rapide de puncturase et d'acide tranexamique, destinée aux applications de combat.
+  description: A rapid dose of puncturase and tranexamic acid, intended for combat applications.
   components:
   - type: Item
     inhandVisuals:
@@ -534,10 +534,10 @@
           Quantity: 5
 
 - type: entity
-  name: auto-injecteur de pyrazine
+  name: pyrazine auto-injector
   parent: ChemicalMedipen
   id: PyraAutoInjector
-  description: Une dose rapide de pyrazine et d'oxandrolone, destinée aux applications de combat. # goobstation
+  description: A rapid dose of pyrazine and oxandrolone, intended for combat applications. # goobstation
   components:
   - type: Item
     inhandVisuals:
@@ -576,10 +576,10 @@
           Quantity: 10
 
 - type: entity
-  name: auto-injecteur anti-perte d'air
+  name: airloss auto-injector
   parent: ChemicalMedipen
   id: AirlossAutoInjector
-  description: Une dose rapide de solution saline et de dexaline plus, destinée à remettre quelqu'un sur pied rapidement.
+  description: A rapid dose of saline and dexalin plus, intended to get someone up quickly.
   components:
   - type: Item
     inhandVisuals:
@@ -618,10 +618,10 @@
           Quantity: 20
 
 - type: entity
-  name: médipen de stabilisation environnementale # goobstation
+  name: environmental stabilization medipen # goobstation
   parent: ChemicalMedipen
   id: SpaceMedipen
-  description: Contient un mélange de produits chimiques qui vous protègent temporairement des environnements à basse pression et stabilisent votre température corporelle. # goobstation
+  description: Contains a mix of chemicals that will temporarily protect you from low pressure environments, and stabilizes your body temperature. # goobstation
   components:
   - type: Item
     inhandVisuals:
@@ -666,10 +666,10 @@
     - Trash
 
 - type: entity
-  name: injecteur d'hyperzine
+  name: hyperzine injector
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: Stimpack
-  description: Contient suffisamment d'hyperzine pour ressentir les effets du produit pendant 30 secondes. À utiliser quand vous êtes prêt à vous battre.
+  description: Contains enough hyperzine for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
   components:
   - type: Item
     inhandVisuals:
@@ -710,10 +710,10 @@
     price: 1500
 
 - type: entity
-  name: micro-injecteur d'hyperzine
+  name: hyperzine microinjector
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: StimpackMini
-  description: Un micro-injecteur d'hyperzine qui vous donne environ 15 secondes d'effets.
+  description: A microinjector of hyperzine that give you about 15 seconds of the chemical's effects.
   components:
   - type: Item
     inhandVisuals:
@@ -749,10 +749,10 @@
     price: 583 # 3500 for 6 as a freaky fraction
 
 - type: entity
-  name: médipen de combat
+  name: combat medipen
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: CombatMedipen
-  description: Un médipen à usage unique contenant des produits chimiques qui régénèrent la plupart des types de dommages.
+  description: A single-use medipen containing chemicals that regenerate most types of damage.
   components:
   - type: Item
     inhandVisuals:
@@ -793,10 +793,10 @@
     price: 1500
 
 - type: entity
-  name: stylo
+  name: pen
   suffix: Hypopen
   parent: Pen # It is just like normal pen, isn't it?
-  description: Un stylo à encre noire.
+  description: A dark ink pen.
   id: Hypopen
   components:
   - type: SolutionContainerManager
@@ -821,8 +821,8 @@
 - type: entity
   parent: [ BaseItem, BaseSyndicateContraband ]
   id: HypopenBox
-  name: boîte de hypopen
-  description: Une petite boîte contenant un hypopen. L'emballage se désintègre à l'ouverture, ne laissant aucune preuve.
+  name: hypopen box
+  description: A small box containing a hypopen. Packaging disintegrates when opened, leaving no evidence behind.
   components:
   - type: Item
     size: Tiny
@@ -836,10 +836,10 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: auto-injecteur de Weh
+  name: weh auto-injector
   parent: ChemicalMedipen
   id: WehMedipen
-  description: Une dose rapide de Weh. Contient du jus qui vous fait faire Weh.
+  description: A rapid dose of Weh. Contains juice that makes you Weh.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi

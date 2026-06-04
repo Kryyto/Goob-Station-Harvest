@@ -13,10 +13,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: boîte de traceurs
+  name: tracker box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxTracker
-  description: Une boîte contenant quelques traceurs.
+  description: A box containing a couple trackers.
   components:
   - type: StorageFill
     contents:
@@ -27,10 +27,10 @@
     - state: box
 
 - type: entity
-  name: boîte d'injections létales
+  name: lethal injections box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxLethalInjection
-  description: Une boîte contenant plusieurs seringues d'injection létale.
+  description: A box containing several lethal injection syringes.
   components:
   - type: StorageFill
     contents:
@@ -41,10 +41,10 @@
     - state: box
 
 - type: entity
-  name: boîte de grenades matraque 40mm
+  name: 40mm baton grenade box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxGrenadesBaton
-  description: Une boîte contenant huit grenades matraque 40mm pour étourdir des cibles individuelles.
+  description: A box containing eight 40mm baton grenades for single target stunning.
   components:
   - type: StorageFill
     contents:
@@ -58,10 +58,10 @@
       - Grenade
 
 - type: entity
-  name: boîte de grenades flash 40mm
+  name: 40mm flash grenade box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxGrenadesFlash
-  description: Une boîte contenant huit grenades flash 40mm pour étourdir des cibles en masse.
+  description: A box containing eight 40mm flashbang grenades for mass target stunning.
   components:
   - type: StorageFill
     contents:
@@ -75,10 +75,10 @@
       - Grenade
 
 - type: entity
-  name: boîte de grenades lacrymogènes 40mm
+  name: 40mm tear gas grenade box
   parent: [BoxCardboard, BaseSecurityContraband]
   id: BoxGrenadesTeargas
-  description: Une boîte contenant huit grenades lacrymogènes 40mm pour disperser efficacement les émeutes.
+  description: A box containing eight 40mm tear gas grenades for efficient riot dispersion.
   components:
   - type: StorageFill
     contents:

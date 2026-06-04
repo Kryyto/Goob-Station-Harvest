@@ -9,14 +9,14 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-# Chimiste
-Et voilà, vous l'avez fait. Vous avez choisi le seul métier où les -maths- sont obligatoires. Prenez votre bécher, tirez une chaise, et mettez-vous au travail — il est temps de concocter des produits chimiques.
+# Chemist
+Now you've done it. You picked the one job where -math- is mandatory. Grab your beaker, pull up a chair, and get cracking, it's time to cook up some chems.
 
-Bien que les chimistes fabriquent principalement des médicaments, il existe une très grande variété de produits chimiques pouvant être créés, tous présentés dans la section Produits chimiques du Guide.
+While chemists primarily make medications, there's a very wide variety of chemicals that can be made, all of which are showcased in the Chemicals entry of the Guidebook.
 
-[textlink="Cliquez ici pour voir la liste complète des produits chimiques." link="Chemicals"]
+[textlink="Click here to see a complete list of chemicals." link="Chemicals"]
 
-## Équipement :
+## Equipment:
 
   <Box>
     <GuideEntityEmbed Entity="ChemDispenser"/>
@@ -32,25 +32,25 @@ Bien que les chimistes fabriquent principalement des médicaments, il existe une
     <GuideEntityEmbed Entity="PillCanister"/>
   </Box>
 
-## Les bases :
-La chimie est assez simple une fois que vous savez à quoi vous attendre. Voici un processus simple, étape par étape, pour commencer.
+## The Basics:
+Chemistry is fairly straightforward once you know what to expect. Here's a simple, step-by-step process on how to begin.
 
-- Prenez un bécher, un flacon à pilules et, si vous le souhaitez, quelques bouteilles.
-- Placez le bécher dans le Distributeur chimique, et le flacon à pilules (ou la bouteille) dans le ChemMaster.
-- Ouvrez l'interface du Distributeur chimique et préparez votre mélange. Les recettes se trouvent dans d'autres sections du guide.
-- Faites un clic alternatif sur le distributeur pour retirer votre bécher, et placez-le dans le ChemMaster.
-- Ouvrez l'interface du ChemMaster. Dans l'onglet Entrée, transférez votre mélange dans le tampon.
-- Passez à l'onglet Sortie, personnalisez votre pilule et appuyez sur le bouton Créer.
-- Faites un clic alternatif sur le ChemMaster pour récupérer le flacon à pilules. Il vous faudra peut-être d'abord retirer le bécher.
-- Cliquez sur une table, une caisse ou une autre surface pour vider le flacon à pilules si vous le souhaitez. Vous pouvez également le ranger ou le vider dans un autre contenant de stockage.
+- Grab a beaker, Pill Canister, and if desired, some Bottles.
+- Place the beaker in the Chemical Dispenser, and Pill Canister (or bottle) in the Chem Master.
+- Open the Chemical Dispenser UI, and make your mix. Recipes are in other sections of the guidebook.
+- Alt-click the dispenser to remove your beaker, and place it in the Chem Master.
+- Open the Chem Master UI. On the Input tab, move your mix into the buffer.
+- Move to the Output tab, customise your pill, and press the Create button.
+- Alt-click the Chem Master to get the pill bottle out. You may have to remove the beaker first.
+- Click on a table, crate, or another surface to empty the pill bottle if desired. Alternatively, store or empty it into another storage container.
 
-C'est tout, vous avez fabriqué votre premier lot de pilules ! Pensez à consulter les médecins et les autres membres de l'équipage pour voir ce qui pourrait être demandé, à remplir les trousses de soins dans le stockage de la médecine, ou simplement à expérimenter !
+That's it, you've made your first set of pills! Consider checking with Medical Doctors and other crew to see what else may be requested, refilling the medical kits in medbay storage, or just experimenting!
 
-Vous pouvez également utiliser l'étiqueteuse manuelle pour organiser des bouteilles ou des sacs individuels sans utiliser le système d'étiquetage du ChemMaster.
+You can also use the hand labeler to organize individual bottles or bags without using the Chem Master labeling system.
 
-## Contenu supplémentaire :
+## Extra Content:
 
-En parlant d'expérimentation, il existe quelques jouets supplémentaires que vous pouvez utiliser en chimie. Ce métier demande beaucoup d'essais et d'erreurs, mais il valait la peine de mentionner que ces choses existent ! C'est à vous de trouver quoi en faire.
+Speaking of experimentation, there are a few more toy you can use when it comes to chemistry. This job requires a lot of trial and error, but it was worth mentioning that these things exist! It's up to you to figure out what to make with them.
 
   <Box>
     <GuideEntityEmbed Entity="ModularGrenade"/>

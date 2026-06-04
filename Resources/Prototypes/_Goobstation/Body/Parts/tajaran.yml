@@ -10,7 +10,7 @@
 - type: entity
   id: PartTajaran
   parent: BasePart
-  name: "partie du corps tajarane"
+  name: "Tajaran body part"
   abstract: true
   components:
   - type: Sprite
@@ -24,55 +24,55 @@
 
 - type: entity
   id: ChestTajaran
-  name: torse tajaran
+  name: tajaran chest
   parent: [PartTajaran, BaseChest]
 
 - type: entity
   id: GroinTajaran
-  name: bassin tajaran
+  name: tajaran groin
   parent: [PartTajaran, BaseGroin]
 
 - type: entity
   id: HeadTajaran
-  name: tête tajarane
+  name: tajaran head
   parent: [PartTajaran, BaseHead]
 
 - type: entity
   id: LeftArmTajaran
-  name: bras tajaran gauche
+  name: left tajaran arm
   parent: [PartTajaran, BaseLeftArm]
 
 - type: entity
   id: RightArmTajaran
-  name: bras tajaran droit
+  name: right tajaran arm
   parent: [PartTajaran, BaseRightArm]
 
 - type: entity
   id: LeftHandTajaran
-  name: main tajarane gauche
+  name: left tajaran hand
   parent: [PartTajaran, BaseLeftHand]
 
 - type: entity
   id: RightHandTajaran
-  name: main tajarane droite
+  name: right tajaran hand
   parent: [PartTajaran, BaseRightHand]
 
 - type: entity
   id: LeftLegTajaran
-  name: jambe tajarane gauche
+  name: left tajaran leg
   parent: [PartTajaran, BaseLeftLeg]
 
 - type: entity
   id: RightLegTajaran
-  name: jambe tajarane droite
+  name: right tajaran leg
   parent: [PartTajaran, BaseRightLeg]
 
 - type: entity
   id: LeftFootTajaran
-  name: pied tajaran gauche
+  name: left tajaran foot
   parent: [PartTajaran, BaseLeftFoot]
 
 - type: entity
   id: RightFootTajaran
-  name: pied tajaran droit
+  name: right tajaran foot
   parent: [PartTajaran, BaseRightFoot]

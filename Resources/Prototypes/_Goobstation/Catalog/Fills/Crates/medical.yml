@@ -1,8 +1,8 @@
 - type: entity
   id: CrateBiomass
   parent: CrateGenericSteel
-  name: Caisse de Biomasse
-  description: Une caisse pleine de cubes de biomasse pour le clonage ou d'autres imprimantes.
+  name: Biomass Crate
+  description: A crate full of biomass cubes for use in cloning or other printers.
   components:
   - type: StorageFill
     contents:

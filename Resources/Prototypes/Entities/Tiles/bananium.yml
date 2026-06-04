@@ -36,7 +36,7 @@
 
 - type: entity
   id: FloorBananiumEntity
-  name: sol en bananium
+  name: bananium floor
   placement:
     mode: SnapgridCenter
   components:

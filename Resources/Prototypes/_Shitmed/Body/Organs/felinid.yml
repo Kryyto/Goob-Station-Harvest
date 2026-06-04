@@ -6,8 +6,8 @@
 - type: entity
   id: OrganFelinidEars
   parent: OrganHumanEars
-  name: oreilles de chat
-  description: "Les tenir pourrait potentiellement être contagieux."
+  name: cat ears
+  description: "Holding these might potentially be contagious."
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/catears.rsi
@@ -18,8 +18,8 @@
 - type: entity
   id: OrganFelinidTail
   parent: BaseHumanOrgan
-  name: queue de chat
-  description: "Devriez-vous vraiment avoir ça ?"
+  name: cat tail
+  description: "Should you really have this?"
   components:
   - type: Sprite
     sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi

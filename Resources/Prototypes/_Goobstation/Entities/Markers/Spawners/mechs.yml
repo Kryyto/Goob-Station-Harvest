@@ -20,7 +20,7 @@
 
 - type: entity
   name: H.O.N.K. Spawner
-  suffix: Rempli
+  suffix: Filled
   id: SpawnMechHonkerFilled
   parent: MarkerBase
   components:
@@ -91,7 +91,7 @@
 
 - type: entity
   name: Marauder Spawner
-  suffix: Rempli
+  suffix: Filled
   id: SpawnMechMarauderFilled
   parent: MarkerBase
   components:
@@ -120,7 +120,7 @@
 
 - type: entity
   name: Seraph Spawner
-  suffix: Rempli
+  suffix: Filled
   id: SpawnMechSeraphFilled
   parent: MarkerBase
   components:
@@ -149,7 +149,7 @@
 
 - type: entity
   name: Dark Gygax Spawner
-  suffix: Rempli
+  suffix: Filled
   id: SpawnMechGygaxSyndieFilled
   parent: MarkerBase
   components:
@@ -178,7 +178,7 @@
 
 - type: entity
   name: Mauler Spawner
-  suffix: Rempli
+  suffix: Filled
   id: SpawnMechMaulerSyndieFilled
   parent: MarkerBase
   components:

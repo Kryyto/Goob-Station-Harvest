@@ -42,10 +42,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: savon
+  name: soap
   id: Soap
   parent: BaseItem
-  description: Un savon bon marché. Inodore.
+  description: A cheap bar of soap. Doesn't smell.
   components:
   - type: Tag
     tags:
@@ -120,10 +120,10 @@
     residueColor: residue-green
 
 - type: entity
-  name: savon
+  name: soap
   id: SoapNT
   parent: Soap
-  description: Un savon de marque Nanotrasen. Sent le plasma.
+  description: A Nanotrasen brand bar of soap. Smells of plasma.
   components:
   - type: Sprite
     layers:
@@ -145,10 +145,10 @@
     residueColor: residue-grey
 
 - type: entity
-  name: savon
+  name: soap
   id: SoapDeluxe
   parent: Soap
-  description: Un savon de luxe de marque Waffle Co. Sent la fraise.
+  description: A deluxe Waffle Co. brand bar of soap. Smells of strawberries.
   components:
   - type: Sprite
     layers:
@@ -163,10 +163,10 @@
     residueColor: residue-brown
 
 - type: entity
-  name: savon
+  name: soap
   id: SoapSyndie
   parent: [Soap, BaseSyndicateContraband]
-  description: Un savon peu fiable. Sent la peur.
+  description: An untrustworthy bar of soap. Smells of fear.
   components:
   - type: Sprite
     layers:
@@ -194,11 +194,11 @@
     price: 500
 
 - type: entity
-  name: savonette
+  name: soaplet
   id: SoapletSyndie
   categories: [ HideSpawnMenu ]
   parent: Soap
-  description: Un minuscule morceau de savon du syndicat.
+  description: A tiny piece of syndicate soap.
   components:
   - type: Sprite
     layers:
@@ -237,10 +237,10 @@
         volume: -8
 
 - type: entity
-  name: savon
+  name: soap
   id: SoapHomemade
   parent: Soap
-  description: Un savon fait maison. Sent le... eh bien....
+  description: A homemade bar of soap. Smells of... well....
   components:
   - type: Sprite
     layers:
@@ -264,10 +264,10 @@
     residueColor: residue-red
 
 - type: entity
-  name: savon oméga
+  name: omega soap
   id: SoapOmega
   parent: Soap
-  description: Le savon le plus avancé connu de l'humanité. Sent le bluespace.
+  description: The most advanced soap known to mankind. Smells of bluespace.
   components:
   - type: Sprite
     layers:
@@ -294,10 +294,10 @@
     residueColor: residue-blue
 
 - type: entity
-  name: savon
+  name: soap
   id: SoapBorg # Intended for borg internals, not slippery or food, not a container for soap reagent
   parent: BaseItem
-  description: Un savon de marque Nanotrasen. Sent le plasma et les machines.
+  description: A Nanotrasen brand bar of soap. Smells of plasma and machines.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/soap.rsi

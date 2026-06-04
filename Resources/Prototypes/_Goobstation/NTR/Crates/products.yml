@@ -1,8 +1,8 @@
 - type: entity
   id: NTRCrateSpesosSmall
   parent: CratePrivateSecure
-  name: bonus de spesos
-  description: Les temps difficiles exigent des solutions capitalistes.
+  name: Spesos grant bonus
+  description: Tough times require capitalist solutions.
   components:
   - type: StorageFill
     contents:
@@ -12,8 +12,8 @@
 - type: entity
   id: NTRCratePointDisks
   parent: CrateScienceSecure
-  name: bonus de disques à points
-  description: Progrès, mon ami, progrès.
+  name: Point disks grant bonus
+  description: Progress, my friend, progress.
   components:
   - type: StorageFill
     contents:
@@ -23,8 +23,8 @@
 - type: entity
   id: NTRCrateEmergencyMed
   parent: CrateMedicalSecure
-  name: Fournitures médicales d'urgence
-  description: Pensez à comment vous allez expliquer ça à NT.
+  name: Emergency medical supplies
+  description: Think about how would you explain this to NT.
   components:
   - type: StorageFill
     contents:
@@ -37,8 +37,8 @@
 - type: entity
   id: NTRCrateDisablers
   parent: CrateCommandSecure
-  name: caisse de désactivateurs
-  description: Une caisse avec des désactivateurs. Pourquoi en auriez-vous besoin ?
+  name: Disablers crate
+  description: A crate with disablers, why would you need this?
   components:
   - type: StorageFill
     contents:
@@ -49,8 +49,8 @@
 - type: entity
   id: NTRCrateToolsSmall
   parent: CrateEngineeringSecure
-  name: caisse d'outils
-  description: Une caisse avec des outils NanoTrasen standard.
+  name: Tools crate
+  description: A crate with standard NanoTrasen tools.
   components:
   - type: StorageFill
     contents:
@@ -65,8 +65,8 @@
 - type: entity
   id: NTRBoardTelecom
   parent: CrateCommandSecure
-  name: caisse de cartes de circuit de serveur télécom
-  description: Une caisse contenant 2 cartes de circuit de serveur télécom.
+  name: Telecom server computer board crate
+  description: A crate, containing 2 telecom server machine boards.
   components:
   - type: StorageFill
     contents:
@@ -76,8 +76,8 @@
 - type: entity
   id: NTRBoardHolopad
   parent: CrateCommandSecure
-  name: caisse d'holodal
-  description: Une caisse contenant 2 cartes de circuit d'holodal.
+  name: Holopad crate
+  description: A crate, that contains 2 holopad machine boards.
   components:
   - type: StorageFill
     contents:
@@ -87,7 +87,7 @@
 - type: entity
   id: NTRBoardShuttle
   parent: CrateEngineeringSecure
-  name: caisse paquet constructeur de navette
+  name: Shuttle-maker bundle crate
   components:
   - type: StorageFill
     contents:

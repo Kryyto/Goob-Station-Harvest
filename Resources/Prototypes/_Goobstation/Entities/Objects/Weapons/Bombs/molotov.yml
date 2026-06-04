@@ -104,7 +104,7 @@
 - type: entity
   id: molotovfire
   name: fire
-  description: Ça brûle.
+  description: It is burning
   placement:
     mode: SnapgridCenter
   components:

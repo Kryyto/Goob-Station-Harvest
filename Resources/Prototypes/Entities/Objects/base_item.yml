@@ -94,7 +94,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: "objet"
+  name: "item"
   id: BaseItem
   abstract: true
   components:
@@ -155,7 +155,7 @@
   - type: DamageExaminable
 
 - type: entity
-  name: "objet de stockage"
+  name: "storage item"
   id: BaseStorageItem
   parent: BaseItem
   abstract: true

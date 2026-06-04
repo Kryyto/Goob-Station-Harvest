@@ -2,7 +2,7 @@
   id: StationRadioReceiver
   name: station radio
   parent: [ BaseMachinePowered, ConstructibleMachine ]
-  description: Écoutez les plus grands succès de la radio locale de votre station.
+  description: Listen to the top hits of your stations local radio.
   components:
   - type: Appearance
   - type: Sprite

@@ -1,231 +1,232 @@
 <Document>
-  ## Mortalité
+  ## Mortality
   <Box>
-    [color=#999999][italic]-135 Poids[/italic][/color]
+    [color=#999999][italic]-135 Weight[/italic][/color]
   </Box>
 
-  - Octroie à la cible un nombre illimité de réanimations personnelles.
+  - Grants the target an unlimited amount of self revives.
 
-  ## Faiblesse
+  ## Weakness
   <Box>
-    [color=#999999][italic]-35 Poids[/italic][/color]
+    [color=#999999][italic]-35 Weight[/italic][/color]
   </Box>
 
-  - Réduit de moitié tous les dégâts subis par le client.
-  - Augmente les dégâts sacrés subis.
+  - Cuts all damage the contractee takes in half.
+  - Increases holy damage taken.
 
 <!-- Disabled, Used by shitters  ## Avarice
   <Box>
-    [color=#999999][italic]-30 Poids[/italic][/color]
+    [color=#999999][italic]-30 Weight[/italic][/color]
   </Box>
 
-  - Permet au client d'avaler des choses entières, comme un dragon.
+  - Allows the contractee to devour things whole, just like a dragon.
   -->
 
-  ## Peur de la mort
+  ## Fear of Death
   <Box>
-    [color=#999999][italic]-25 Poids[/italic][/color]
+    [color=#999999][italic]-25 Weight[/italic][/color]
   </Box>
 
-  - Fait en sorte que le client n'ait pas d'état critique. On tient debout, ou on meurt.
+  - Makes the contractee have no critical state. You stand, or you die.
 
-  ## Mort
+  ## Death
   <Box>
-    [color=#999999][italic]-25 Poids[/italic][/color]
+    [color=#999999][italic]-25 Weight[/italic][/color]
   </Box>
 
-  - Permet au client de se ranimer exactement une fois à sa mort.
-  - Présente par défaut sur chaque contrat.
+  - Allows the contractee to revive themselves exactly once on death.
+  - Default on every contract.
 
-  ## Ombres
+  ## Shadows
   <Box>
-    [color=#999999][italic]-25 Poids[/italic][/color]
+    [color=#999999][italic]-25 Weight[/italic][/color]
   </Box>
 
-  - Rend le client invisible.
+  - Makes the contractee invisible.
 
-  ## Richesse
+  ## Brokeness
   <Box>
-    [color=#999999][italic]-20 Poids[/italic][/color]
+    [color=#999999][italic]-20 Weight[/italic][/color]
   </Box>
 
-  - Octroie au client une paire de baskets de compèt', signées par Michael Jordan lui-même.
+  - Grants the contractee a pair of sick fucking jays, signed by Micheal Jordan himself.
 
-  ## Peur du feu
+  ## Fear of Fire
   <Box>
-    [color=#999999][italic]-20 Poids[/italic][/color]
+    [color=#999999][italic]-20 Weight[/italic][/color]
   </Box>
 
-  - Rend le client immunisé au feu et à la mise à feu.
+  - Makes the contractee immune to fire, and immune to being lit on fire.
 
   ## Chance
   <Box>
-    [color=#999999][italic]-15 Poids[/italic][/color]
+    [color=#999999][italic]-15 Weight[/italic][/color]
   </Box>
 
-  - Octroie au client une clause entièrement aléatoire. Prêt à tenter votre chance ?
+  - Grants the contractee a completely random clause. Want to try your luck?
 
-  ## Peur de la mumière
+  ## Fear of Light
   <Box>
-    [color=#999999][italic]-15 Poids[/italic][/color]
+    [color=#999999][italic]-15 Weight[/italic][/color]
   </Box>
 
-  - Rend le client immunisé aux flashs.
+  - Makes the contractee immune to flashes.
 
-  ## Peur de l'électricité
+
+  ## Fear of Electricity
   <Box>
-    [color=#999999][italic]-15 Poids[/italic][/color]
+    [color=#999999][italic]-15 Weight[/italic][/color]
   </Box>
 
-  - Rend le client immunisé aux chocs électriques.
+  - Makes the contractee immune to electrical shocks.
 
-  ## Gloutonnerie
+  ## Gluttony
   <Box>
-    [color=#999999][italic]-10 Poids[/italic][/color]
+    [color=#999999][italic]-10 Weight[/italic][/color]
   </Box>
 
-  - Supprime le besoin de nourriture et d'eau du client.
+  - Makes the contractee not need food or water.
 
-  ## Peur de la noyade
+  ## Fear of Drowning
   <Box>
-    [color=#999999][italic]-10 Poids[/italic][/color]
+    [color=#999999][italic]-10 Weight[/italic][/color]
   </Box>
 
-  - Supprime le besoin de respirer du client.
+  - Disables the contractees need to breathe.
 
-  ## Peur des clowns
+  ## Fear of Clowns
   <Box>
-    [color=#999999][italic]-10 Poids[/italic][/color]
+    [color=#999999][italic]-10 Weight[/italic][/color]
   </Box>
 
-  - Empêche le client de glisser.
+  - Disables the contractees ability to slip.
 
-  ## Peur d'être écrasé
+  ## Fear of Crushing
   <Box>
-    [color=#999999][italic]-10 Poids[/italic][/color]
+    [color=#999999][italic]-10 Weight[/italic][/color]
   </Box>
 
-  - Rend le client immunisé aux dégâts de pression.
+  - Makes the contractee immune to pressure damage.
 
-  ## Peur du Gel
+  ## Fear of Freezing
   <Box>
-    [color=#999999][italic]-10 Poids[/italic][/color]
+    [color=#999999][italic]-10 Weight[/italic][/color]
   </Box>
 
-  - Rend le client immunisé aux basses températures.
+  - Makes the contractee immune to low temperatures.
 
-  ## Cupidité
+  ## Greed
   <Box>
-    [color=#999999][italic]-10 Poids[/italic][/color]
+    [color=#999999][italic]-10 Weight[/italic][/color]
   </Box>
 
-  - Octroie à la cible une grande quantité d'argent liquide.
+  - Grants the target a ton of cash-money.
 
-  ## Douleur
+  ## Pain
   <Box>
-    [color=#999999][italic]-5 Poids[/italic][/color]
+    [color=#999999][italic]-5 Weight[/italic][/color]
   </Box>
 
-  - Le client ne ressent plus la douleur et n'en subit plus les effets négatifs.
+  - Makes the contractee feel no pain, and suffer no negatives from pain.
 
-  ## Paix intérieure
+  ## Inner Peace
   <Box>
-    [color=#999999][italic]5 Poids[/italic][/color]
+    [color=#999999][italic]5 Weight[/italic][/color]
   </Box>
 
-  - Octroie à la cible la paix. Pour l'éternité.
+  - Grants the target peace. Everlasting.
 
-  ## La voix
+  ## Voice
   <Box>
-    [color=#999999][italic]20 Poids[/italic][/color]
+    [color=#999999][italic]20 Weight[/italic][/color]
   </Box>
 
-  - Rend le client muet de façon permanente.
+  - Permanently mutes the contractee.
 
-  ## Une main
+  ## A hand
   <Box>
-    [color=#999999][italic]20 Poids[/italic][/color]
+    [color=#999999][italic]20 Weight[/italic][/color]
   </Box>
 
-  - Tranche immédiatement l'une des mains du client.
+  - Immediately severs one of the contractees hands.
 
-  ## Une jambe
+  ## A leg
   <Box>
-    [color=#999999][italic]20 Poids[/italic][/color]
+    [color=#999999][italic]20 Weight[/italic][/color]
   </Box>
 
-  - Tranche immédiatement l'une des jambes du client.
+  - Immediately severs one of the contractees legs.
 
-  ## Propriété de l'âme
+  ## Soul Ownership
   <Box>
-    [color=#999999][italic]25 Poids[/italic][/color]
+    [color=#999999][italic]25 Weight[/italic][/color]
   </Box>
 
-  - Transfère la propriété d'une âme au prestataire.
-  - Présente par défaut sur chaque contrat.
+  - Transfers ownership of a soul to the contractor.
+  - Default on every contract.
 
-  ## Force
+  ## Strength
   <Box>
-    [color=#999999][italic]30 Poids[/italic][/color]
+    [color=#999999][italic]30 Weight[/italic][/color]
   </Box>
 
-  - Le client subit le double des dégâts.
+  - Makes the contractee take double damage.
 
-  ## Cohérence
+  ## Coherence
   <Box>
-    [color=#999999][italic]30 Poids[/italic][/color]
+    [color=#999999][italic]30 Weight[/italic][/color]
   </Box>
 
-  - Rend le client maladroit et perturbe son élocution.
+  - Makes the contractee clumsy and messes up their speech.
 
-  ## Éveil
+  ## Awake
   <Box>
-    [color=#999999][italic]35 Poids[/italic][/color]
+    [color=#999999][italic]35 Weight[/italic][/color]
   </Box>
 
-  - Rend la cible narcoleptique.
+  - Turns the target narcoleptic.
 
-  ## Un organe
+  ## An organ
   <Box>
-    [color=#999999][italic]30 Poids[/italic][/color]
+    [color=#999999][italic]30 Weight[/italic][/color]
   </Box>
 
-  - Fait tomber l'un des organes du client par terre.
-  - Il s'agit très probablement du cœur.
+  - Dumps one of the contractees organs on the ground.
+  - This is most likely the heart.
 
-  ## Les jambes
+  ## Legs
   <Box>
-    [color=#999999][italic]40 Poids[/italic][/color]
+    [color=#999999][italic]40 Weight[/italic][/color]
   </Box>
 
-  - Paralyse définitivement les deux jambes du client.
+  - Permanently paralyzes both of the contractees legs.
 
-  ## La vue
+  ## Sight
   <Box>
-    [color=#999999][italic]60 Poids[/italic][/color]
+    [color=#999999][italic]60 Weight[/italic][/color]
   </Box>
 
-  - Aveugle définitivement le client.
+  - Permanently blinds the contractee.
 
-  ## La volonté de se battre
+  ## Will to fight
   <Box>
-    [color=#999999][italic]60 Poids[/italic][/color]
+    [color=#999999][italic]60 Weight[/italic][/color]
   </Box>
 
-  - Pacifie définitivement le client.
+  - Permanently pacifies the contractee.
 
-  ## Humanité
+  ## Humanity
   <Box>
-    [color=#999999][italic]80 Poids[/italic][/color]
+    [color=#999999][italic]80 Weight[/italic][/color]
   </Box>
 
-  - Transforme le client en grenouille.
-  - C'est permanent.
+  - Turns the contractee into a frog.
+  - This is permanent.
 
-  ## Le temps
+  ## Time
   <Box>
-    [color=#999999][italic]150 Poids[/italic][/color]
+    [color=#999999][italic]150 Weight[/italic][/color]
   </Box>
 
-  - Tue le client au bout de cinq minutes.
+  - Kills the contractee after five minutes.
 </Document>

@@ -78,7 +78,7 @@
 
 - type: entity
   id: LockerWardenFilledHardsuit
-  suffix: Rempli, Combinaison rigide
+  suffix: Filled, Hardsuit
   parent: LockerWarden
   components:
   - type: EntityTableContainerFill
@@ -92,7 +92,7 @@
 
 - type: entity
   id: LockerWardenFilled
-  suffix: Rempli
+  suffix: Filled
   parent: LockerWarden
   components:
   - type: EntityTableContainerFill
@@ -141,7 +141,7 @@
 
 - type: entity
   id: LockerSecurityFilled
-  suffix: Rempli
+  suffix: Filled
   parent: LockerSecurity
   components:
   - type: EntityTableContainerFill
@@ -187,7 +187,7 @@
 
 - type: entity
   id: LockerBrigmedicFilled
-  suffix: Médecin de brigade, Rempli
+  suffix: Brigmedic, Filled
   parent: LockerBrigmedic
   components:
   - type: EntityTableContainerFill
@@ -214,7 +214,7 @@
 
 - type: entity
   id: LockerDetectiveFilled
-  suffix: Rempli
+  suffix: Filled
   parent: LockerDetective
   components:
   - type: EntityTableContainerFill
@@ -255,7 +255,7 @@
 - type: entity
   id: ClosetBombFilled
   parent: ClosetBomb
-  suffix: Rempli
+  suffix: Filled
   components:
   - type: EntityTableContainerFill
     containers:
@@ -276,7 +276,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeDisabler
-  name: coffre de désactivateurs
+  name: disabler safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -293,7 +293,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafePistolMk58
-  name: coffre mk58
+  name: mk58 safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -312,7 +312,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeRifleLecter
-  name: coffre lecter
+  name: lecter safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -331,7 +331,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeSubMachineGunDrozd
-  name: coffre drozd
+  name: drozd safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -350,7 +350,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeShotgunEnforcer
-  name: coffre enforcer
+  name: enforcer safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -369,7 +369,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeShotgunKammerer
-  name: coffre kammerer
+  name: kammerer safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -389,7 +389,7 @@
   id: GunSafeSubMachineGunWt550
   suffix: Wt550
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
-  name: coffre wt550
+  name: wt550 safe
   components:
   - type: EntityTableContainerFill
     containers:
@@ -408,7 +408,7 @@
 - type: entity
   parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeLaserCarbine
-  name: coffre laser
+  name: laser safe
   components:
   - type: EntityTableContainerFill
     containers:

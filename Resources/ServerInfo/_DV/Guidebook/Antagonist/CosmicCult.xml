@@ -1,76 +1,76 @@
 <Document>
-  # Le Culte Cosmique
+  # The Cosmic Cult
 
   <Box>
-    [color=#999999][italic]« Une révélation sans pareille. Une fin à la souffrance cyclique et sisyphéenne. »[/italic][/color]
+    [color=#999999][italic]"A revelation beyond compare. An end to cyclic, sisyphean suffering."[/italic][/color]
   </Box>
   <Box>
-    [color=#999999][italic]« Un doux tomber de rideau. »[/italic][/color]
+    [color=#999999][italic]"A gentle curtain call."[/italic][/color]
   </Box>
   <Box>
     <GuideEntityEmbed Entity="CosmicGlyphTruth" Caption=""/>
   </Box>
 
-  Un savoir d'un autre monde inonde votre esprit ! Bienvenue dans le [color=#4cabb3]Culte Cosmique[/color], un antagoniste de conversion de groupe dont l'objectif est la fin de toute chose.
+  Otherworldly knowledge floods your mind! Welcome to the [color=#4cabb3]Cosmic Cult[/color], a group conversion antagonist that has set its sights on the end of all things.
 
-  Utilisez [color=#4cabb3]:a[/color] pour communiquer avec vos camarades cultistes via le [color=#4cabb3]Murmure Astral[/color].
+  Use [color=#4cabb3]:a[/color] to communicate with fellow cultists through the [color=#4cabb3]Astral Murmur[/color].
 
-  ## Objectifs
-  - [color=#4cabb3][bold]Siphonner l'Entropie[/bold][/color] — Siphonnez collectivement une certaine quantité d'Entropie de l'équipage. Plus vous siphonnez d'entropie, plus vous pourrez renforcer le Monument !
-  - [color=#4cabb3][bold]Renforcer le Monument[/bold][/color] — Veillez à ce que le Monument atteigne sa pleine puissance. Plus vous renforcez le Monument, plus le culte gagne en puissance.
-  - [color=#4cabb3][bold]Annoncer la Fin[/bold][/color] — Une fois le Monument à pleine puissance, accomplissez le rituel final pour invoquer l'Inconnu et détruire la station.
+  ## Objectives
+  - [color=#4cabb3][bold]Siphon Entropy[/bold][/color]  - Collectively siphon a certain amount of Entropy from the crew. The more entropy you siphon, the more you can empower the Monument!
+  - [color=#4cabb3][bold]Empower The Monument[/bold][/color] - Ensure that the Monument is brought to full power. The more you empower The Monument, the more power the cult gains access to.
+  - [color=#4cabb3][bold]Usher In The End[/bold][/color] - Once the Monument is at full power, complete the final ritual to beckon the Unknown and destroy the station.
 
-  La progression vers les objectifs est partagée par l'ensemble du culte.
+  Progress towards objectives is shared by the entire cult.
 
-  Les membres de l'équipage doivent être en vie pour que vous puissiez leur [color=#4cabb3]Siphonner l'Entropie[/color], et convertir des membres de l'équipage renforcera les rangs de votre culte, facilitant la collecte d'entropie. Pour cette raison, il est souvent dans votre intérêt de vous assurer que l'équipage reste en [italic]vie[/italic] — du moins aussi longtemps que cela est pertinent pour vos objectifs.
+  Crewmembers must be alive for you to [color=#4cabb3]Siphon Entropy[/color] from them, and converting crewmembers will bolster your cult's ranks, making it easier to collect entropy. For this reason, it is often in your best interests to ensure the crew is kept [italic]alive[/italic] - at least for as long as is relevant to your goals.
 
-  ## Entropie
+  ## Entropy
   <Box>
     <GuideEntityEmbed Entity="MaterialCosmicCultEntropy1" Caption=""/>
-    <GuideEntityEmbed Entity="MaterialCosmicCultEntropy3" Caption="Motes d'Entropie"/>
+    <GuideEntityEmbed Entity="MaterialCosmicCultEntropy3" Caption="Motes of Entropy"/>
     <GuideEntityEmbed Entity="MaterialCosmicCultEntropy5" Caption=""/>
   </Box>
 
-  Tous les cultistes commencent avec deux capacités, ou [color=#4cabb3][bold]Influences[/bold][/color] — dont l'une est [italic][color=#4cabb3]Siphonner l'Entropie[/color][/italic]. C'est votre pain quotidien en tant que cultiste cosmique, et vous voudrez l'utiliser aussi souvent que possible.
+  All cultists start with two abilities, or [color=#4cabb3][bold]Influences[/bold][/color] - one of which is [italic][color=#4cabb3]Siphon Entropy[/color][/italic]. This is your bread and butter as a cosmic cultist, and you'll want to use it as often as possible.
 
-  Utiliser Siphonner l'Entropie sur un membre de l'équipage sans méfiance vous accordera discrètement de l'[color=#4cabb3]Entropie[/color]. Cela provoquera la dégradation progressive d'une petite partie de la santé du membre de l'équipage.
+  Using Siphon Entropy on an unsuspecting crewmember will stealthily award you [color=#4cabb3]Entropy[/color]. This will cause a small a portion of the crewmember's health to decay over time.
 
-  Vous pouvez porter jusqu'à 14 Motes d'Entropie, et vous approcher du Monument déposera automatiquement toute l'Entropie que vous possédez.
+  You can hold up to 14 Motes of Entropy, and approaching The Monument will automatically deposit all Entropy you posess.
 
-  [textlink="Pour en savoir plus sur le Monument, cliquez ici." link="CosmicCultMonument"]
+  [textlink="For more on the Monument, click here." link="CosmicCultMonument"]
 
-  [textlink="Pour en savoir plus sur les Influences, cliquez ici." link="CosmicCultInfluences"]
+  [textlink="For more on Influences, click here." link="CosmicCultInfluences"]
 
   <Box>
-    <GuideEntityEmbed Entity="CosmicVacuousSpire" Caption="Une flèche du vide"/>
+    <GuideEntityEmbed Entity="CosmicVacuousSpire" Caption="A vacuous spire"/>
   </Box>
 
-  Si le culte réussit à renforcer le Monument, il acquiert la capacité de créer des [color=#4cabb3]Flèches du Vide[/color]. Elles peuvent être fabriquées en transmutant un Épurateur Portable sur un [color=#4cabb3]Glyphe[/color].
+  If the cult is successful in empowering the Monument, they gain the ability to make [color=#4cabb3]Vacuous Spires[/color]. These can be made by transmuting a Portable Scrubber at a [color=#4cabb3]Glyph[/color].
 
-  Lorsqu'une flèche du vide est ancrée en place, elle dévore rapidement l'atmosphère environnante ! Ce processus provoque la condensation de [color=#4cabb3]Motes d'Entropie[/color] à la surface d'une flèche, constituant une puissante source d'entropie en fin de partie.
+  When anchored in place, a vacuous spire rapidly devours the surrounding atmosphere! This process causes [color=#4cabb3]Motes of Entropy[/color] to condense from a spire's surface, acting as a powerful lategame source of entropy.
 
   ## Conversion
   <Box>
-    <GuideEntityEmbed Entity="CosmicGlyphKnowledge" Caption="Un Glyphe de Connaissance"/>
+    <GuideEntityEmbed Entity="CosmicGlyphKnowledge" Caption="A Glyph of Knowledge"/>
   </Box>
 
-  Une fois le Monument construit, vous pouvez commencer à convertir des membres de l'équipage en cultistes. Pour ce faire, vous devrez utiliser le Monument pour tracer un [color=#4cabb3]Glyphe[/color] approprié, et interagir avec le glyphe pendant qu'un membre de l'équipage se tient dessus. Les glyphes sont visibles par les non-cultistes, soyez prudent !
+  Once the Monument has been constructed, you can begin converting crewmembers into cultists. To do this, you will need to use the monument to scribe an appropriate [color=#4cabb3]Glyph[/color], and interact with the glyph while a crewmember is standing over it. Glyphs are visible to non-cultists, so be careful!
 
-  Les aumôniers ou les membres de l'équipage possédant un bouclier mental ne peuvent pas être convertis à l'aide d'un Glyphe de Connaissance. Une fois le Monument entièrement renforcé, le Glyphe de Vérité peut être utilisé pour convertir ces membres de l'équipage.
+  Any chaplains or crewmembers with a mindshield cannot be converted using a Glyph of Knowledge. Once the Monument is fully empowered, the Glyph of Truth can be used to convert these crewmembers.
 
-  Vous aurez besoin qu'un certain nombre de membres de l'équipage soient présents pour que la conversion réussisse. Le nombre requis peut être vérifié en accédant au Monument. [italic]Si un nombre insuffisant de cultistes est présent, la conversion échouera et votre culte risque d'être exposé.[/italic]
+  You will need a certain amount of crewmembers to be present for conversion to succeed. The number required can be checked by accessing the Monument. [italic]If not enough cultists are present, conversion will fail, and your cult may be exposed.[/italic]
 
-  [textlink="Pour des informations sur la déconversion, cliquez ici." link="CosmicCultDeconversion"]
+  [textlink="For information on deconversion, click here." link="CosmicCultDeconversion"]
 
-  ## Failles Malignes
+  ## Malign Rifts
   <Box>
     <GuideEntityEmbed Entity="CosmicMalignRift" Caption=""/>
   </Box>
-  Au fur et à mesure que votre culte progresse, des [color=#4cabb3]Failles Malignes[/color] commenceront à apparaître dans l'environnement alentour. Ces failles dans l'espace réel laissent se déverser une puissance astrale instable, et doivent être localisées dès que possible !
+  As your cult progresses, [color=#4cabb3]Malign Rifts[/color] will begin to spawn throughout the surrounding environment. These rifts in realspace bleed unstable astral power, and should be located as soon as possible!
 
-  Les cultistes peuvent discrètement [color=#4cabb3]absorber[/color] une Faille Maligne en interagissant avec elle.
+  Cultists may stealthily [color=#4cabb3]absorb[/color] a Malign Rift by interacting with it.
 
-  L'absorption réussie d'une Faille Maligne renforcera [bold]définitivement[/bold] le cultiste qui l'effectue, augmentant la puissance de toutes les [color=#4cabb3]Influences[/color] qu'il possède et doublant l'[color=#4cabb3]Entropie[/color] qu'il gagne en siphonnant des membres de l'équipage. Les cultistes renforcés n'ont également plus besoin de respirer et sont immunisés contre le vide de l'espace.
+  Successful absorbtion of a Malign Rift will [bold]permanently[/bold] empower the cultist doing so, increasing the strength of all the [color=#4cabb3]Influences[/color] they possess, and doubling the [color=#4cabb3]Entropy[/color] they gain from siphoning crewmembers. Empowered cultists also no longer need to breathe, and are immune to the vaccuum of space.
 
-  Les Failles Malignes peuvent être purgées en interagissant avec elles à l'aide d'une bible.
+  Malign Rifts can be purged by interacting with them using a bible.
 </Document>

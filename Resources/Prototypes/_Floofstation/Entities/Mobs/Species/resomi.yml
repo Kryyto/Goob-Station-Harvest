@@ -289,7 +289,7 @@
   parent: BaseSpeciesDummy
   id: MobResomiDummy
   save: false
-  description: Un resomi factice destiné à être utilisé dans la configuration du personnage.
+  description: A dummy resomi meant to be used in character setup.
   components:
   - type: HumanoidAppearance
     species: Resomi

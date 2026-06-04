@@ -71,7 +71,7 @@
 - type: entity
   parent: RehydratableItem
   id: RehydratableAnimalCube
-  description: Ajoutez simplement de l'eau !
+  description: Just add water!
   abstract: true
   components:
   - type: Sprite
@@ -100,7 +100,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: MonkeyCube
-  name: cube singe
+  name: monkey cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -113,7 +113,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: KoboldCube
-  name: cube kobold
+  name: kobold cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -122,7 +122,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: CowCube
-  name: cube vache
+  name: cow cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -131,7 +131,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: GoatCube
-  name: cube chèvre
+  name: goat cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -140,7 +140,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: MothroachCube
-  name: cube mithblatte
+  name: mothroach cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -149,7 +149,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: MoproachCube
-  name: cube serpente
+  name: moproach cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -158,7 +158,7 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: MouseCube
-  name: cube souris
+  name: mouse cube
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -167,8 +167,8 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: CockroachCube
-  name: cube cafard
-  description: Ajoutez de l'ea- MON DIEU !
+  name: cockroach cube
+  description: Just add wa- OH GOD!
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -177,8 +177,8 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: SpaceCarpCube
-  name: cube carpe
-  description: Ajoutez simplement de l'eau ! À vos risques et périls.
+  name: carp cube
+  description: Just add water! At your own risk.
   components:
   - type: SolutionContainerManager
     solutions:
@@ -198,8 +198,8 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: SpaceTickCube
-  name: cube tique
-  description: Ajoutez simplement de l'eau ! À vos risques et périls.
+  name: tick cube
+  description: Just add water! At your own risk.
   components:
   - type: Rehydratable
     possibleSpawns:
@@ -208,8 +208,8 @@
 - type: entity
   parent: RehydratableAnimalCube
   id: AbominationCube
-  name: cube abomination
-  description: Ajoutez simplement du sang !
+  name: abomination cube
+  description: Just add blood!
   components:
   - type: Reactive
     reactions:
@@ -228,8 +228,8 @@
 - type: entity
   parent: [PlushieCarp, RehydratableItem, BaseSyndicateContraband]
   id: DehydratedSpaceCarp
-  name: carpe spatiale déshydratée
-  description: Ressemble à une peluche carpe, mais ajoutez de l'eau et elle devient une vraie carpe spatiale !
+  name: dehydrated space carp
+  description: Looks like a plush toy carp, but just add water and it becomes a real-life space carp!
   components:
   - type: SolutionContainerManager
     solutions:
@@ -290,8 +290,8 @@
 - type: entity
   parent: RehydratableItem
   id: MopBucketCube
-  name: cube seau de serpillière
-  description: Ajoutez simplement de l'eau ! Et encore de l'eau !
+  name: mop bucket cube
+  description: Just add water! And then more water!
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/janitorial.rsi

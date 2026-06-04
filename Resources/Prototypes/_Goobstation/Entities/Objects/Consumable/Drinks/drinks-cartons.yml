@@ -38,7 +38,7 @@
   parent: [DrinkCartonVisualsOpenable, DrinkCartonBaseFull]
   id: DrinkMilkCartonMiniChocolate
   name: mini choco milk
-  description: Une boisson au lait aromatisée au chocolat.
+  description: A milk drink flavored with chocolate.
   components:
   - type: SolutionContainerManager
     solutions:

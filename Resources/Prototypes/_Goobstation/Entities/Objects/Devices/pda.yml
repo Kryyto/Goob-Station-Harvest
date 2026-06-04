@@ -22,7 +22,7 @@
   parent: AdminPDA
   id: ChronoPDA
   name: futuristic PDA
-  description: Un puissant ordinateur quantique déguisé en PDA ordinaire.
+  description: A powerful quantum computer disguised as a regular pda for disguise.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Devices/pda.rsi
@@ -49,7 +49,7 @@
   parent: AdminPDA
   id: GmanPDA
   name: strange PDA
-  description: Votre esprit ne peut pas vraiment comprendre ça.
+  description: Your mind can't quite comprehend this.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Devices/pda.rsi # todo - make a unique texture.
@@ -76,7 +76,7 @@
   parent: SalvagePDA
   id: HelldiverPDA
   name: salvage diver PDA
-  description: Sent les cadavres d'insectes et d'androïdes.
+  description: Smells like corpses of insects and androids.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Devices/pda.rsi
@@ -101,7 +101,7 @@
   parent: CentcomPDA
   id: HecuPDA
   name: HECU PDA
-  description: Sent la poudre à canon.
+  description: Smells of gunpowder.
   components:
   - type: Appearance
     appearanceDataInit:
@@ -122,7 +122,7 @@
   parent: BaseMedicalPDA
   id: BlueshieldPDA
   name: blueshield officer PDA
-  description: Le bouclier argenté du Bouclier Bleu est gravé sur le devant.
+  description: The silver shield of the Blueshield is engraved on the front.
   components:
   - type: Appearance
     appearanceDataInit:
@@ -144,7 +144,7 @@
   parent: CentcomPDA
   id: DeathsquadPDA
   name: deathsquad PDA
-  description: Déchire et arrache jusqu'à ce que ce soit fait.
+  description: Rip and tear until it is done.
   components:
   - type: Appearance
     appearanceDataInit:
@@ -169,7 +169,7 @@
   parent: CentcomPDA
   id: NanotrasenRepresentativePDA
   name: nanotrasen representative's PDA
-  description: Le diable est dans les détails.
+  description: The devil's in the details.
   components:
   - type: Pda
     id: NanotrasenRepresentativeIDCard
@@ -178,7 +178,7 @@
   parent: CentcomPDA
   id: TrainerPDA
   name: nct's PDA
-  description: Un PDA standard de formateur de carrière Nanotrasen.
+  description: A standard-issue nanotrasen career trainer PDA.
   components:
   - type: Pda
     id: NanotrasenCareerTrainerIDCard
@@ -187,7 +187,7 @@
   parent: CentcomPDA
   id: NavyCaptainPDA
   name: navy captain's PDA
-  description: Le diable est dans les détails.
+  description: The devil's in the details.
   components:
   - type: Pda
     id: CentcomIDCardNavyCaptain
@@ -244,7 +244,7 @@
   parent: SyndiPDA
   id: SyndiPDANukie
   name: syndicate PDA
-  description: Ok, temps d'être un membre productif de- oh super je suis un méchant temps de tuer des gens !
+  description: Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
   components:
   - type: Pda
     id: NukieAgentIDCard
@@ -253,7 +253,7 @@
   parent: NavyCaptainPDA
   id: HighCommandPDA
   name: high commander PDA
-  description: Un PDA syndical ordinaire, orné de symboles dorés. Son propriétaire est clairement de rang supérieur.
+  description: An ordinary syndicate PDA, adorned with gilded symbols. It's owner is clearly of a higher standing.
   components:
   - type: Appearance
     appearanceDataInit:
@@ -286,7 +286,7 @@
   parent: BaseMedicalPDA
   id: VirologistPDA
   name: virology PDA
-  description: Vous n'êtes pas sûr qu'il soit sécuritaire de le toucher.
+  description: You're not sure if touching it is safe.
   components:
   - type: Pda
     id: VirologistIDCard
@@ -306,7 +306,7 @@
   parent: ClownPDA
   id: SecurityClownPDA
   name: security clown PDA
-  description: Qui a un PDA rose dans la sécurité ?
+  description: Who has a pink PDA in security?
   components:
   - type: Pda
     id: SecurityClownIDCard
@@ -332,7 +332,7 @@
   parent: BasePDA
   id: RoboticistPDA
   name: roboticist PDA
-  description: Il est couvert d'ambitions échouées.
+  description: It's covered with failed ambitions.
   components:
   - type: Pda
     id: RoboticistIDCard
@@ -351,7 +351,7 @@
   parent: BasePDA
   id: RadioHostPDA
   name: radio host PDA
-  description: Vous écoutez les sons doux de 145.9 FM.
+  description: You're listening to the smooth sounds of 145.9 FM.
   components:
   - type: Pda
     id: RadioHostIDCard

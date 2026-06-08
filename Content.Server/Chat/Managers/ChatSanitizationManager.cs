@@ -99,6 +99,11 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         Entry("lel", "chatsan-laughs"),
         Entry("kek", "chatsan-laughs"),
         Entry("rofl", "chatsan-laughs"),
+        Entry("mdr", "chatsan-laughs"), // French translation
+        Entry("ptdr", "chatsan-laughs"), // French translation
+        Entry("xptdr", "chatsan-laughs"), // French translation
+        Entry("jpp", "chatsan-sighs"), // French translation
+        Entry("jsp", "chatsan-shrugs"), // French translation
         Entry("o7", "chatsan-salutes"),
         Entry(";_;7", "chatsan-tearfully-salutes"),
         Entry("idk", "chatsan-shrugs"),

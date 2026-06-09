@@ -2,7 +2,7 @@
   id: StarlightKiloton
   mapName: 'Kiloton Station'
   mapPath: /Maps/_Starlight/Stations/Kiloton.yml
-  minPlayers: 50
+  minPlayers: 10
   maxPlayers: 350
   stations:
     StarlightKiloton:

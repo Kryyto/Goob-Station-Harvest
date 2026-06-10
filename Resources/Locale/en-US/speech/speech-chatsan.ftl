@@ -272,7 +272,7 @@ chatsan-replacement-quelquun = quelqu'un
 chatsan-word-90 = qqch
 chatsan-replacement-90 = quelque chose
 
-# chatsan-word-91 = a+ // interprêté comme juste "a", ce qui casse bcp de phrases
+# chatsan-word-91 = a+ // interprété comme juste "a", ce qui casse bcp de phrases
 # chatsan-replacement-91 = à plus
 
 chatsan-word-92 = att

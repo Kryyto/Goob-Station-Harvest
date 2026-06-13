@@ -1,0 +1,61 @@
+<!--
+SPDX-FileCopyrightText: 2026 Harvest Station
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<DefaultWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    Title="{Loc admin-teleport-to-window-title}" MinSize="600 500">
+    <BoxContainer Orientation="Vertical" Margin="4">
+
+        <!-- Source: entity to move -->
+        <Label Text="{Loc admin-teleport-to-source-label}" FontColorOverride="#AAAAAA"/>
+        <LineEdit Name="SourceFilter" PlaceHolder="{Loc admin-entity-list-filter-hint}" Margin="0 2 0 2"/>
+        <ScrollContainer MinHeight="150" MaxHeight="180">
+            <BoxContainer Name="SourceEntityList" Orientation="Vertical"/>
+        </ScrollContainer>
+
+        <!-- Direction buttons -->
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="0 6 0 6">
+            <Button Name="TeleportToTargetButton"
+                    Text="{Loc admin-teleport-to-target-button}"
+                    HorizontalExpand="True"
+                    Disabled="True"/>
+            <Button Name="TeleportTargetToMeButton"
+                    Text="{Loc admin-teleport-target-to-me-button}"
+                    HorizontalExpand="True"
+                    Disabled="True"
+                    Margin="4 0 0 0"/>
+        </BoxContainer>
+
+        <!-- Destination: player OR warp point -->
+        <BoxContainer Orientation="Horizontal" Margin="0 0 0 4">
+            <Label Text="{Loc admin-teleport-to-dest-label}" HorizontalExpand="True"/>
+            <Button Name="DestModePlayerButton"
+                    Text="{Loc admin-teleport-dest-mode-player}"
+                    ToggleMode="True"
+                    Pressed="True"/>
+            <Button Name="DestModeWarpButton"
+                    Text="{Loc admin-teleport-dest-mode-warp}"
+                    ToggleMode="True"
+                    Margin="4 0 0 0"/>
+        </BoxContainer>
+
+        <!-- Entity destination list (player mode) -->
+        <LineEdit Name="DestEntityFilter" PlaceHolder="{Loc admin-entity-list-filter-hint}" Margin="0 2 0 2"/>
+        <ScrollContainer Name="DestEntityScroll" MinHeight="150" MaxHeight="180">
+            <BoxContainer Name="DestEntityList" Orientation="Vertical"/>
+        </ScrollContainer>
+
+        <!-- Warp destination list (hidden by default) -->
+        <BoxContainer Name="WarpContainer" Orientation="Vertical" Visible="False" MinHeight="150">
+            <LineEdit Name="WarpFilter" PlaceHolder="{Loc admin-teleport-warp-filter-hint}"/>
+            <ScrollContainer VerticalExpand="True">
+                <BoxContainer Name="WarpList" Orientation="Vertical"/>
+            </ScrollContainer>
+        </BoxContainer>
+
+    </BoxContainer>
+</DefaultWindow>

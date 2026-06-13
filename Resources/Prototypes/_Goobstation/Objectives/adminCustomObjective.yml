@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2026 Harvest Station
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: AdminCustomObjective
+  parent: BaseObjective
+  name: Custom Objective
+  description: An admin-defined custom objective.
+  components:
+  - type: Objective
+    issuer: objective-issuer-admin
+    difficulty: 1
+    unique: false
+    icon:
+      sprite: Interface/Misc/job_icons.rsi
+      state: Captain
+  - type: CustomTextObjective

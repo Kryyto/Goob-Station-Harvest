@@ -1,0 +1,32 @@
+<!--
+SPDX-FileCopyrightText: 2026 Harvest Station
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<DefaultWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    Title="{Loc admin-control-mob-window-title}" MinSize="600 450">
+    <BoxContainer Orientation="Vertical" Margin="4">
+        <BoxContainer Orientation="Horizontal" VerticalExpand="True">
+            <!-- Left: controller (the player who will control) -->
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="0 0 4 0">
+                <Label Text="{Loc admin-control-mob-controller-label}" FontColorOverride="#AAAAAA"/>
+                <cc:PlayerListControl Name="ControllerList" VerticalExpand="True"/>
+            </BoxContainer>
+            <!-- Right: target mob (the entity to be controlled) -->
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="4 0 0 0">
+                <Label Text="{Loc admin-control-mob-target-label}" FontColorOverride="#AAAAAA"/>
+                <LineEdit Name="TargetFilter" PlaceHolder="{Loc admin-entity-list-filter-hint}" Margin="0 2 0 2"/>
+                <ScrollContainer VerticalExpand="True">
+                    <BoxContainer Name="TargetEntityList" Orientation="Vertical"/>
+                </ScrollContainer>
+            </BoxContainer>
+        </BoxContainer>
+        <Button Name="SubmitButton"
+                Text="{Loc admin-control-mob-window-button}"
+                Disabled="True"
+                Margin="0 4 0 0"/>
+    </BoxContainer>
+</DefaultWindow>

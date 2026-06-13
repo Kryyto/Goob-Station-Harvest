@@ -1,0 +1,18 @@
+<!--
+SPDX-FileCopyrightText: 2026 Harvest Station
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<DefaultWindow
+    xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    Title="{Loc admin-objectives-launcher-title}" MinSize="300 400">
+    <BoxContainer Orientation="Vertical" Margin="4">
+        <cc:PlayerListControl Name="PlayerList" VerticalExpand="True"/>
+        <Button Name="SubmitButton"
+                Text="{Loc admin-objectives-launcher-open}"
+                Disabled="True"
+                Margin="0 4 0 0"/>
+    </BoxContainer>
+</DefaultWindow>

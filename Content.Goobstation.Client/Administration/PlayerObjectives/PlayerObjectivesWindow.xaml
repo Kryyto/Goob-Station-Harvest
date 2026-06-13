@@ -1,0 +1,27 @@
+<DefaultWindow
+    xmlns="https://spacestation14.io"
+    Title="{Loc admin-objectives-window-title}" MinSize="500 500">
+    <BoxContainer Orientation="Vertical" Margin="4">
+        <Label Name="PlayerLabel" Margin="0 0 0 4"/>
+        <Control MinSize="0 1" Margin="0 4"/>
+
+        <Label Text="{Loc admin-objectives-current}" FontColorOverride="#AAAAAA"/>
+        <ScrollContainer VerticalExpand="True" MinHeight="180">
+            <BoxContainer Name="ObjectivesList" Orientation="Vertical"/>
+        </ScrollContainer>
+
+        <Control MinSize="0 1" Margin="0 8"/>
+
+        <Label Text="{Loc admin-objectives-add-new}" FontColorOverride="#AAAAAA"/>
+        <BoxContainer Orientation="Horizontal" Margin="0 4 0 0">
+            <LineEdit Name="ProtoIdEdit" PlaceHolder="{Loc admin-objectives-prototype-hint}" HorizontalExpand="True"/>
+            <Button Name="AddButton" Text="{Loc admin-objectives-add-button}" Disabled="True" Margin="4 0 0 0"/>
+        </BoxContainer>
+
+        <Control MinSize="0 1" Margin="0 8"/>
+
+        <Label Text="{Loc admin-objectives-add-custom}" FontColorOverride="#AAAAAA"/>
+        <LineEdit Name="CustomTextEdit" PlaceHolder="{Loc admin-objectives-custom-hint}" HorizontalExpand="True" Margin="0 4 0 0"/>
+        <Button Name="AddCustomButton" Text="{Loc admin-objectives-add-button}" Disabled="True" Margin="0 4 0 0"/>
+    </BoxContainer>
+</DefaultWindow>

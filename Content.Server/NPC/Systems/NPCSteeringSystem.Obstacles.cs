@@ -91,17 +91,42 @@ public sealed partial class NPCSteeringSystem
                     if (!doorQuery.TryGetComponent(ent, out var door))
                         continue;
 
+                    if (door.State == DoorState.Open)
+                        return SteeringObstacleStatus.Completed;
+
+                    if (door.State == DoorState.Opening)
+                        return SteeringObstacleStatus.Continuing;
+
                     if (!door.BumpOpen && (component.Flags & PathFlags.Interact) != 0x0)
                     {
-                        if (door.State != DoorState.Opening)
-                        {
-                            _interaction.InteractionActivate(uid, ent);
-                            return SteeringObstacleStatus.Continuing;
-                        }
+                        _interaction.InteractionActivate(uid, ent);
+                        return SteeringObstacleStatus.Continuing;
                     }
                 }
 
                 // If we get to here then didn't succeed for reasons.
+            }
+            else if (isDoor && isAccessRequired && (component.Flags & PathFlags.Access) != 0x0)
+            {
+                var doorQuery = GetEntityQuery<DoorComponent>();
+
+                foreach (var ent in obstacleEnts)
+                {
+                    if (!doorQuery.TryGetComponent(ent, out var door))
+                        continue;
+
+                    if (door.State == DoorState.Open)
+                        return SteeringObstacleStatus.Completed;
+
+                    if (door.State == DoorState.Opening)
+                        return SteeringObstacleStatus.Continuing;
+
+                    if (!door.BumpOpen)
+                    {
+                        _interaction.InteractionActivate(uid, ent);
+                        return SteeringObstacleStatus.Continuing;
+                    }
+                }
             }
 
             if ((component.Flags & PathFlags.Prying) != 0x0 && isDoor)

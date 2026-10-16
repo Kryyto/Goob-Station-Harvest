@@ -456,15 +456,49 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         if (steering.Pathfind || targetDistance < steering.RepathRange)
             return;
 
+        // Pathfinding needs grid-relative coordinates. If the entity (or target) is parented to the
+        // map, convert both points to the entity's current grid before asking for a path.
+        if (xform.GridUid is not { Valid: true } gridUid)
+        {
+            steering.CurrentPath.Clear();
+            steering.FailedPathCount++;
+
+            if (steering.FailedPathCount >= NPCSteeringComponent.FailedPathLimit)
+            {
+                steering.Status = SteeringStatus.NoPath;
+            }
+
+            return;
+        }
+
+        var startMap = _transform.GetMapCoordinates(uid, xform: xform);
+        var endMap = _transform.ToMapCoordinates(steering.Coordinates);
+
+        var startCoords = _transform.ToCoordinates(new Entity<TransformComponent?>(gridUid, null), startMap);
+        var endCoords = _transform.ToCoordinates(new Entity<TransformComponent?>(gridUid, null), endMap);
+
+        if (!startCoords.IsValid(EntityManager) || !endCoords.IsValid(EntityManager))
+        {
+            steering.CurrentPath.Clear();
+            steering.FailedPathCount++;
+
+            if (steering.FailedPathCount >= NPCSteeringComponent.FailedPathLimit)
+            {
+                steering.Status = SteeringStatus.NoPath;
+            }
+
+            return;
+        }
+
         // Short-circuit with no path.
-        var targetPoly = _pathfindingSystem.GetPoly(steering.Coordinates);
+        var targetPoly = _pathfindingSystem.GetPoly(endCoords);
 
         // If this still causes issues future sloth adjust the collision mask.
         // Thanks past sloth I already realised.
         if (targetPoly != null &&
-            steering.Coordinates.Position.Equals(Vector2.Zero) &&
+            endCoords.Position.Equals(Vector2.Zero) &&
             TryComp<PhysicsComponent>(uid, out var physics) &&
-            _interaction.InRangeUnobstructed(uid, steering.Coordinates.EntityId, range: 30f, (CollisionGroup)physics.CollisionMask))
+            _interaction.InRangeUnobstructed(uid, endCoords.EntityId, range: 30f, (CollisionGroup)physics.CollisionMask))
         {
             steering.CurrentPath.Clear();
             steering.CurrentPath.Enqueue(targetPoly);
@@ -473,12 +507,12 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         steering.PathfindToken = new CancellationTokenSource();
 
-        var flags = _pathfindingSystem.GetFlags(uid);
+        var flags = steering.Flags;
 
         var result = await _pathfindingSystem.GetPathSafe(
             uid,
-            xform.Coordinates,
-            steering.Coordinates,
+            startCoords,
+            endCoords,
             steering.Range,
             steering.PathfindToken.Token,
             flags);

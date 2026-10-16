@@ -87,7 +87,10 @@ public sealed class DrainSystem : EntitySystem
         args.Verbs.Add(verb);
     }
 
-    private void Empty(Entity<DrainComponent> ent, EntityUid user, EntityUid container)
+    /// <summary>
+    /// Empties a drainable container into the drain, spilling whatever does not fit.
+    /// </summary>
+    public void Empty(Entity<DrainComponent> ent, EntityUid user, EntityUid container)
     {
         // Find the solution in the container that is emptied.
         if (!_solutionContainerSystem.TryGetDrainableSolution(container, out var containerSoln, out var containerSolution) || containerSolution.Volume == FixedPoint2.Zero)

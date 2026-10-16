@@ -1,0 +1,38 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Android-specific janitor uniform that always broadcasts coordinates on suit sensors.
+- type: entity
+  id: ClothingUniformJumpsuitAndroidJanitor
+  parent: ClothingUniformJumpsuitJanitor
+  name: android janitor jumpsuit
+  suffix: Android
+  components:
+  - type: SuitSensor
+    randomMode: false
+    controlsLocked: true
+    mode: SensorCords
+    activationSlot: jumpsuit
+
+- type: entity
+  id: ClothingUniformJumpsuitAndroidChef
+  parent: ClothingUniformJumpsuitChef
+  name: android chef uniform
+  suffix: Android
+  components:
+  - type: SuitSensor
+    randomMode: false
+    controlsLocked: true
+    mode: SensorCords
+    activationSlot: jumpsuit
+
+- type: entity
+  id: ClothingUniformJumpsuitAndroidBartender
+  parent: ClothingUniformJumpsuitBartender
+  name: android bartender's uniform
+  suffix: Android
+  components:
+  - type: SuitSensor
+    randomMode: false
+    controlsLocked: true
+    mode: SensorCords
+    activationSlot: jumpsuit

@@ -1,0 +1,52 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+# Androïdes
+
+Les androïdes sont des membres d'équipage synthétiques qui tiennent les postes de service quand la station manque de monde : concierge, cuisinier et barman. Ils portent l'uniforme de leur poste, un nom du type « Androïde Gérard » et une carte d'identité.
+
+- Ils arrivent tout seuls quand il y a peu de joueurs et qu'un de ces postes est libre.
+- Si un joueur prend leur poste, l'androïde lui laisse la place et part en cryostase.
+- Un androïde détruit est retiré, puis remplacé au bout de quelques minutes si le poste est toujours libre.
+
+## Leur parler
+Un androïde ne réagit qu'aux messages qui lui sont adressés, à voix haute et à portée de voix (pas par radio).
+
+- **Par son prénom**, n'importe où dans la phrase : « Gérard, suis-moi », « Salut Gérard ».
+- **À tout le groupe**, avec le mot « androïde(s) » ou « android(s) » : « Androïdes, suivez-moi ». Tous obéissent à un ordre, mais seul l'androïde le plus proche répond, pour éviter qu'ils parlent tous en même temps.
+
+Ils répondent dans la langue de votre message, en français ou en anglais. Laissez-leur une seconde : ils « réfléchissent » avant de répondre.
+
+## Les ordres
+N'importe qui peut donner un ordre à un androïde en se tenant tout près (4 cases). De plus loin, il faut l'accès du département de l'androïde, ou l'accès Capitaine ou Chef du personnel.
+
+- **Me suivre** : « suis-moi », « viens avec moi », « viens ici », « follow me ».
+- **Aller quelque part** : « va à l'infirmerie », « va au bar », « rends-toi en ingénierie », « go to medical ».
+- **Rejoindre quelqu'un** : « va voir Alice », « rejoins Bob », « go see Alice ».
+- **Faire une pause** : « va en pause », « prends une pause », « take a break ».
+- **Retourner au travail** : « retourne travailler », « au boulot », « get back to work ».
+- **Savoir ce qu'il fait** (tout le monde peut demander) : « qu'est-ce que tu fais ? », « what are you doing? ».
+
+Un ordre expire au bout de quelques minutes. Si l'androïde n'arrive pas à l'exécuter (personne introuvable, lieu inaccessible, ordre expiré), il vous prévient : à voix haute si vous êtes proche, sinon sur la radio Service.
+
+## La conversation
+En dehors des ordres, vous pouvez leur parler normalement. Ils comprennent ce que vous voulez (salut, question, plainte, demande de nettoyage, urgence...) et le ton employé. Certaines demandes ont un effet :
+
+- **« Il y a du sang à l'infirmerie »** : un concierge va nettoyer, au lieu cité ou là où vous êtes.
+- **« Je peux t'emprunter ta serpillière ? »** : un concierge vous donne l'outil demandé.
+- **« Une bière s'il te plaît »** : un barman ou un cuisinier prépare la commande et la pose devant vous.
+- **« Au feu ! Il y a un incendie à la cuisine »** : l'androïde évacue et prévient la station sur la radio commune.
+- **Une menace** : l'androïde refuse et signale l'incident à la Sécurité.
+
+## En pause
+Régulièrement, un androïde fait une pause au bar ou en cuisine. Il s'assoit sur un tabouret libre et commande à boire ou à manger. Servez-le et il vous laissera un pourboire sur le comptoir. S'il attend trop longtemps, il repart mécontent. Demandez-lui « qu'as-tu commandé ? » s'il faut lui faire répéter sa commande.
+
+## Pour les admins
+- **androidstatus** : liste les androïdes ; **androidstatus** nom : détaille l'un d'eux.
+- **androidtree** nom : montre quelles branches de comportement l'androïde a exécutées.
+- **androidforceorder** nom ordre cible : donne un ordre sans vérifier les accès (la cible est facultative).
+- **spawnandroid** métier prénom : fait apparaître un androïde (Janitor, Cook ou Bartender ; les deux sont facultatifs).
+- **despawnandroid** nom : le supprime ; **despawnandroid** nom leave : l'envoie en cryostase.
+</Document>

@@ -1,0 +1,33 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+# Androïde concierge
+
+L'androïde concierge fait le tour de la station et nettoie tout ce qu'il trouve.
+
+<Box>
+<GuideEntityEmbed Entity="MopItem"/>
+<GuideEntityEmbed Entity="Bucket"/>
+<GuideEntityEmbed Entity="TrashBag"/>
+<GuideEntityEmbed Entity="WetFloorSign"/>
+<GuideEntityEmbed Entity="LightReplacer"/>
+</Box>
+
+## Ce qu'il fait tout seul
+- Il fait des rondes de département en département.
+- Il nettoie les flaques, les empreintes et les taches, et ramasse les déchets.
+- Il pose un panneau « sol mouillé » après avoir lavé, puis le reprend quand c'est sec.
+- Il remplace les ampoules cassées.
+- Il chasse les souris et dépose les corps en cuisine.
+- Il essore sa serpillière, change l'eau de son seau à un évier et vide son sac poubelle dans un vide-ordures.
+- Il va se réapprovisionner au local du concierge quand il lui manque du matériel.
+
+## Lui demander quelque chose
+- **Signaler une saleté** : « Gérard, il y a du vomi au bar », « there's blood in medbay ». Il se rend au lieu cité, ou à côté de vous si vous ne précisez pas.
+- **Signaler un danger** (sol glissant, lumière cassée, nuisibles) : il vient s'en occuper.
+- **Emprunter du matériel** : « je peux prendre ta serpillière ? », « tu me prêtes un seau ? ». Il vous donne l'objet s'il l'a sur lui : serpillière, seau, savon, sac poubelle, panneau, spray nettoyant, remplaceur d'ampoules, lampe torche.
+
+Ces trois demandes suivent les mêmes règles d'accès que les ordres : il faut se tenir tout près de lui ou avoir l'accès Concierge.
+</Document>

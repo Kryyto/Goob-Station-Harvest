@@ -213,6 +213,10 @@
   - type: Construction
     graph: Seat
     node: stoolBar
+  - type: Tag
+    tags:
+    - Chair
+    - BarStool
 
 - type: entity
   name: chaise en laiton

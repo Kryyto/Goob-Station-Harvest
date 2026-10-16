@@ -1,0 +1,33 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+# Androïde cuisinier
+
+L'androïde cuisinier reste en cuisine et prépare les plats qu'on lui commande. Il simule la préparation : le plat apparaît devant le client après quelques secondes, sans utiliser les vraies recettes.
+
+## Commander
+Adressez-vous à lui par son prénom (ou « androïde ») en nommant le plat : « Marcel, un burger s'il te plaît », « une pizza », « I'd like a soup ». S'il ne connaît pas le plat demandé, il vous le dit et vous prépare autre chose de sa carte. Il sert aussi les androïdes qui viennent commander pendant leur pause.
+
+## Au travail
+Entre deux commandes, il se déplace dans la cuisine et ramasse l'argent laissé sur les plans de travail. Il prend ses pauses au bar, jamais dans sa propre cuisine.
+
+## La carte
+<Box>
+<GuideEntityEmbed Entity="FoodBurgerPlain"/>
+<GuideEntityEmbed Entity="FoodBurgerCheese"/>
+<GuideEntityEmbed Entity="FoodBurgerBig"/>
+<GuideEntityEmbed Entity="FoodPizzaMargherita"/>
+<GuideEntityEmbed Entity="FoodSoupTomato"/>
+</Box>
+<Box>
+<GuideEntityEmbed Entity="FoodSaladCaesar"/>
+<GuideEntityEmbed Entity="FoodDonut"/>
+<GuideEntityEmbed Entity="FoodPieApple"/>
+<GuideEntityEmbed Entity="FoodNoodles"/>
+<GuideEntityEmbed Entity="FoodBreadPlainSlice"/>
+</Box>
+
+Mots reconnus : burger, cheeseburger, gros burger, pizza, soupe, salade, donut ou beignet, tarte, nouilles ou pâtes, pain.
+</Document>

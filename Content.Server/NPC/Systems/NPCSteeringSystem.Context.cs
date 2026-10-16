@@ -231,9 +231,12 @@ public sealed partial class NPCSteeringSystem
                 lock (_obstacles)
                 {
                     // We're still coming to a stop so wait for the do_after.
-                    if (body.LinearVelocity.LengthSquared() > 0.01f)
+                    // Only prying and climbing actually create do_afters; other interactions
+                    // (e.g. access / interact doors) can be attempted while moving.
+                    if ((steering.Flags & (PathFlags.Prying | PathFlags.Climbing)) != 0x0 &&
+                        body.LinearVelocity.LengthSquared() > 0.01f)
                     {
-                        return true;
+                        return false;
                     }
 
                     status = TryHandleFlags(uid, steering, node);
@@ -252,7 +255,8 @@ public sealed partial class NPCSteeringSystem
                         return false;
                     case SteeringObstacleStatus.Continuing:
                         CheckPath(uid, steering, xform, needsPath, targetDistance);
-                        return true;
+                        // Hold still so the prying/climbing do-after is not cancelled by steering.
+                        return false;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
@@ -546,8 +550,16 @@ public sealed partial class NPCSteeringSystem
         // Depending on what's going on we may return the target or a pathfind node.
 
         // Even if we're at the last node may not be able to head to target in case we get stuck on a corner or the likes.
-        if (_pathfinding && steering.CurrentPath.Count >= 1 && steering.CurrentPath.TryPeek(out var nextTarget))
+        if (_pathfinding &&
+            steering.CurrentPath.Count >= 1 &&
+            steering.CurrentPath.TryPeek(out var nextTarget))
         {
+            // If the last path node is a free tile, aim directly at the final target coordinate
+            // and use steering.Range for arrival. The path node is just a tile hint; requiring the
+            // NPC to step inside a tiny sub-tile can make it fail to reach items or other small targets.
+            if (steering.CurrentPath.Count == 1 && nextTarget.Data.IsFreeSpace)
+                return steering.Coordinates;
+
             return GetCoordinates(nextTarget);
         }
 

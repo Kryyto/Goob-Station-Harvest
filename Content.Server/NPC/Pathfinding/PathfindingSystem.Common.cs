@@ -63,6 +63,11 @@ public sealed partial class PathfindingSystem
             {
                 modifier += 0.5f;
             }
+            // Door we can open with proper access.
+            else if (isDoor && isAccess && (request.Flags & PathFlags.Access) != 0x0)
+            {
+                modifier += 0.5f;
+            }
             // Door we can force open one way or another
             else if (isDoor && isAccess && (request.Flags & PathFlags.Prying) != 0x0)
             {

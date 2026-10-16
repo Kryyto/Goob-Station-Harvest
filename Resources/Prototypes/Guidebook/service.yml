@@ -6,6 +6,7 @@
   text: "/ServerInfo/Guidebook/Service/Service.xml"
   filterEnabled: True
   children:
+  - Androids # Harvest
   - Bartender
   - Botany
   - Chaplain

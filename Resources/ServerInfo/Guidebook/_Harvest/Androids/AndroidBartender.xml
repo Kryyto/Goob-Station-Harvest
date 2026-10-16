@@ -1,0 +1,35 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+# Androïde barman
+
+L'androïde barman reste derrière le bar et sert les boissons qu'on lui commande. Il simule la préparation : le verre apparaît devant le client après quelques secondes, et les canettes et bouteilles sont servies ouvertes.
+
+## Commander
+Adressez-vous à lui par son prénom (ou « androïde ») en nommant la boisson : « René, un mojito s'il te plaît », « une bière », « a whiskey please ». S'il ne connaît pas la boisson demandée, il vous le dit et vous sert autre chose de sa carte. Il sert aussi les androïdes en pause assis au bar.
+
+## Au travail
+Entre deux commandes, il se déplace derrière le bar et ramasse l'argent laissé sur le comptoir et les tables du bar. Il prend ses pauses en cuisine, jamais à son propre bar.
+
+## La carte
+<Box>
+<GuideEntityEmbed Entity="DrinkMojito"/>
+<GuideEntityEmbed Entity="DrinkCubaLibreGlass"/>
+<GuideEntityEmbed Entity="DrinkMargaritaGlass"/>
+<GuideEntityEmbed Entity="DrinkScrewdriverCocktailGlass"/>
+<GuideEntityEmbed Entity="DrinkGinTonicglass"/>
+<GuideEntityEmbed Entity="DrinkWhiskeyGlass"/>
+</Box>
+<Box>
+<GuideEntityEmbed Entity="DrinkVodkaGlass"/>
+<GuideEntityEmbed Entity="DrinkWineGlass"/>
+<GuideEntityEmbed Entity="DrinkBeerglass"/>
+<GuideEntityEmbed Entity="DrinkColaCan"/>
+<GuideEntityEmbed Entity="DrinkHotCoffee"/>
+<GuideEntityEmbed Entity="DrinkWaterBottleFull"/>
+</Box>
+
+Mots reconnus : mojito, cuba libre, margarita, tournevis, gin, whisky, vodka, vin, bière ou pinte, cola ou soda, café, eau.
+</Document>

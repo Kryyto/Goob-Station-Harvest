@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Android species definition. Only the chest/base layer is rendered;
+# all other body part layers are left empty and are hidden by the humanoid system.
+- type: species
+  id: Android
+  name: species-name-android
+  roundStart: false
+  prototype: MobAndroid
+  sprites: MobAndroidSprites
+  markingLimits: MobHumanMarkingLimits
+  dollPrototype: MobAndroid
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+
+- type: speciesBaseSprites
+  id: MobAndroidSprites
+  sprites:
+    Chest: MobAndroidBody
+
+- type: humanoidBaseSprite
+  id: MobAndroidBody
+  baseSprite:
+    sprite: _Harvest/Mobs/Android/android.rsi
+    state: full
+  matchSkin: false

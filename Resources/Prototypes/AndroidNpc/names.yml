@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: androidNamePool
+  id: French
+  names:
+  - Gérard
+  - Sarah
+  - Marcel
+  - Lucie
+  - René
+  - Colette
+  - Albert
+  - Simone
+  - Henri
+  - Pauline
+  - Fernand
+  - Yvette
+  - Roger
+  - Monique
+  - Léon
+  - Denise
+  - Maurice
+  - Thérèse
+  - Raymond
+  - Odette

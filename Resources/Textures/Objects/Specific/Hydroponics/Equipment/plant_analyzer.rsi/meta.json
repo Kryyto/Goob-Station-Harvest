@@ -33,6 +33,12 @@
         {
             "name": "analyzer-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "icon"
+        },
+        {
+            "name": "analyzer"
         }
     ]
 }

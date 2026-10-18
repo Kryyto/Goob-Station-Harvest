@@ -8,7 +8,7 @@
   id: BaseVampireAction
   components:
   - type: Action
-    raiseOnAction: true
+    raiseOnUser: true
     itemIconStyle: BigAction
 
 - type: entity

@@ -6,7 +6,6 @@
   description: Bends someone to your will after a 15 second channel. Can't thrall mindshielded, vampires, and the chaplain.
   components:
   - type: Action
-    raiseOnAction: false
     raiseOnUser: true # this action requires VampireThrallsComponent which is stored in the body
     sound:
       path: /Audio/_Goobstation/Vampires/Actions/vampire_enthrall.ogg
@@ -169,7 +168,6 @@
   description: On cast, link to all nearby thralls. if a thrall goes more than 7 tiles away from you, the link is broken. All members of the network share damage equally between each-other.
   components:
   - type: Action
-    raiseOnAction: false # requires thralls to use
     raiseOnUser: true
     sound:
       path: /Audio/_Goobstation/Wizard/ghost2.ogg # idc

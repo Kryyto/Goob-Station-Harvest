@@ -33,3 +33,8 @@
 - type: metabolismGroup
   id: PlantMetabolisms
   name: metabolism-group-plant-metabolisms
+
+# Vampire metabolism
+- type: metabolismGroup
+  id: Vampire
+  name: metabolism-group-vampire

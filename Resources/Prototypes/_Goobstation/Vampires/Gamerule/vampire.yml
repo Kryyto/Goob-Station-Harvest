@@ -54,8 +54,7 @@
   rules:
   - BasicRoundstartVariation
   - BasicStationEventScheduler
-  - BasicAntagEventScheduler
-  - ModerateAntagEventScheduler
+  - AntagStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - SubGamemodesRule

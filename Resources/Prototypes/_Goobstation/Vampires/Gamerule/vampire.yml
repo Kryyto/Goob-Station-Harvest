@@ -34,7 +34,7 @@
     - VampireSurviveObjective
   - type: AntagSelection
     agentName: roles-antag-vampire-name
-    antags:
+    definitions:
     - !type:LinearAntagCount
       proto: Vampire
       range:

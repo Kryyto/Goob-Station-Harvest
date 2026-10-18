@@ -33,7 +33,7 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 1, 1 ]
-            Boxer: [ 1, 1 ]
+            #Boxer: [ 1, 1 ] #Boxer doesn't exist in goob
             Reporter: [ 1, 1 ]
             #engineering (4-5)
             AtmosphericTechnician: [ 2, 2 ]

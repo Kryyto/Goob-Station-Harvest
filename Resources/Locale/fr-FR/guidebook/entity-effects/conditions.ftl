@@ -115,3 +115,9 @@ entity-condition-guidebook-internals =
                 [true] utilise des internales
                 *[false] respire l'air atmosphérique
                }
+
+entity-condition-guidebook-on-fire =
+    la cible { $invert ->
+            [true] n'est pas
+            *[false] est
+           } en feu

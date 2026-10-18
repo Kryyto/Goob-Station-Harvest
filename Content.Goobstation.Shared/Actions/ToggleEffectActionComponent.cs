@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared.Actions;
+using Content.Shared.EntityConditions;
 using Content.Shared.EntityEffects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.GameStates;
@@ -25,6 +26,13 @@ public sealed partial class ToggleEffectActionComponent : Component
     /// </summary>
     [DataField(required: true)]
     public EntityEffect[] OffToggle = default!;
+
+    /// <summary>
+    /// Conditions that must be met for the toggle to activate.
+    /// If any condition fails, the toggle will not happen and effects will not be applied.
+    /// </summary>
+    [DataField]
+    public EntityCondition[]? OnToggleConditions;
 
     /// <summary>
     /// Whether the action is toggled, or not.

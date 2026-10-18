@@ -10,4 +10,6 @@ role-subtype-slasher = Le Slasheur
 role-type-sentient-animal-name = Animal Conscient
 role-type-sentient-animal-color = #ffff00
 role-subtype-contractor = Contractor
+role-subtype-vampire = Vampire
+role-subtype-vampire-thrall = Thrall Vampire
 role-subtype-gemini = Gemini

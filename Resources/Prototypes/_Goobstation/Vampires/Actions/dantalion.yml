@@ -109,6 +109,24 @@
       time: 6
     - !type:SpawnClone
       settings: ShadowCloneSettings
+      # componentsToAdd:
+      # - type: TimedDespawn
+      #   lifetime: 8
+      # - type: NpcFactionMember
+      #   factions:
+      #   - VampireFaction
+      # - type: HTN
+      #   rootTask:
+      #     task: IdleCompound
+      #   blackboard:
+      #     NavClimb: !type:Bool
+      #       true
+      #     NavSmash: !type:Bool
+      #       true
+      # componentsToRemove:
+      # - type: MindContainer
+      # - type: MindExaminable
+      # - type: Hands
   - type: VampireCostAction
     bloodCost: 30
 

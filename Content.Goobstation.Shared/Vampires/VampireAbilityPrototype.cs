@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.EntityConditions;
 using Content.Shared.EntityEffects;
 using Content.Goobstation.Shared.MobClass;
 using Robust.Shared.Prototypes;
@@ -46,6 +47,12 @@ public sealed partial class VampireAbilityPrototype : IPrototype, IInheritingPro
     /// </summary>
     [DataField]
     public int Cost;
+
+    /// <summary>
+    /// Conditions that must be met to unlock this ability.
+    /// </summary>
+    [DataField]
+    public EntityCondition[]? Conditions;
 
     /// <summary>
     /// Effects to run when unlocking this ability.

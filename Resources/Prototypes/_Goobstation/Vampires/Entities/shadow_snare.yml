@@ -35,7 +35,7 @@
           components:
           - VampireThrall
           - Vampire
-      effectProto: StatusEffectBlindness
+      effectProto: StatusEffectTemporaryBlindness
       time: 15
     - !type:RelayInventory # Note: modsuit lights are borked, im not bothering fixing them. Works for helmets
       effect: !type:NestedEffect

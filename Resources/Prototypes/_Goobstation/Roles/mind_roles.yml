@@ -107,6 +107,17 @@
     subtype: role-subtype-vampire
   - type: VampireRole
 
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleVampireThrall
+  name: Vampire Thrall Role
+  components:
+  - type: MindRole
+    antagPrototype: VampireThrall
+    exclusiveAntag: true
+    roleType: SoloAntagonist
+    subtype: role-subtype-vampire-thrall
+
 # Gemini
 
 - type: entity

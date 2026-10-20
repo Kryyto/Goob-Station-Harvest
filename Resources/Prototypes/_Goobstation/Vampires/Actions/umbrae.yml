@@ -106,7 +106,7 @@
     useDelay: 40
     sound:
       path: /Audio/_Goobstation/Vampires/Actions/dark_passage.ogg
-    raiseOnAction: false
+    raiseOnUser: false
     icon:
       sprite: _Goobstation/Vampires/actions.rsi
       state: dark_passage

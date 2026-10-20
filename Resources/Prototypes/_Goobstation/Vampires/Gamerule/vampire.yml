@@ -7,8 +7,6 @@
     minPlayers: 20
   - type: AntagPlayerEffects
     effects:
-    - !type:NestedEffect
-      proto: HereticSkills
     - !type:ChangeFactionEntityEffect
       newFaction: VampireFaction
     - !type:AdjustAlert            # Shows usable and total blood to the vampire via a popup
@@ -34,7 +32,7 @@
     - VampireSurviveObjective
   - type: AntagSelection
     agentName: roles-antag-vampire-name
-    antags:
+    definitions:
     - !type:LinearAntagCount
       proto: Vampire
       range:
@@ -54,8 +52,7 @@
   rules:
   - BasicRoundstartVariation
   - BasicStationEventScheduler
-  - BasicAntagEventScheduler
-  - ModerateAntagEventScheduler
+  - AntagStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - SubGamemodesRule

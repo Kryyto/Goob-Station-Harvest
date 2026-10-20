@@ -11,3 +11,5 @@ roles-antag-vampire-thrall-objective = Follow the directions of your master.
 
 vampire-preset-title = Vampires
 vampire-preset-description = Hungry bloodsuckers hide among the crew.
+
+vampire-round-end-name = vampire

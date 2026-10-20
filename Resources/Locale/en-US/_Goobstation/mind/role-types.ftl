@@ -11,4 +11,5 @@ role-type-sentient-animal-name = Sentient Animal
 role-type-sentient-animal-color = #ffff00
 role-subtype-contractor = Contractor
 role-subtype-vampire = Vampire
+role-subtype-vampire-thrall = Vampire Thrall
 role-subtype-gemini = Gemini

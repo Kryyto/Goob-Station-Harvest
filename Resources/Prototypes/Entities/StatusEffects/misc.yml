@@ -92,3 +92,11 @@
   parent: [ StatusEffectWoozy, StatusEffectSlurred ]
   id: StatusEffectDrunk
   name: ivre
+
+# Causes temporary blindness
+- type: entity
+  parent: MobStatusEffectDebuff
+  id: StatusEffectTemporaryBlindness
+  name: cécité temporaire
+  components:
+  - type: TemporaryBlindness

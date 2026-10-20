@@ -174,7 +174,6 @@
       path: /Audio/_Goobstation/Wizard/ghost2.ogg
       params:
         pitch: 0.05
-    raiseOnAction: false
     raiseOnUser: true
     icon:
       sprite: _Goobstation/Vampires/actions.rsi
@@ -241,7 +240,6 @@
       time: null
       type: Remove
     - !type:PlaySoundEffect
-      predicted: false
       sound: /Audio/_Goobstation/Vampires/Actions/vampire_duel_end.ogg
   - type: ActionArena # Makes the arena. Can be re-used for other actions
     delay: 0.5 # So we have time to get thrown there

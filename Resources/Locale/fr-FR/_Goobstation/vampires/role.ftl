@@ -11,3 +11,5 @@ roles-antag-vampire-thrall-objective = Suivez les ordres de votre maître.
 
 vampire-preset-title = Vampires
 vampire-preset-description = Des suceurs de sang se cachent parmi l'équipage.
+
+vampire-round-end-name = vampire

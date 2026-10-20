@@ -2,6 +2,7 @@
 
 using Content.Shared.Actions;
 using Content.Shared.Actions.Events;
+using Content.Shared.EntityConditions;
 using Content.Shared.EntityEffects;
 using Robust.Shared.Timing;
 
@@ -10,6 +11,7 @@ namespace Content.Goobstation.Shared.Actions;
 public sealed partial class EffectActionSystem : EntitySystem
 {
     [Dependency] private SharedEntityEffectsSystem _effects = default!;
+    [Dependency] private SharedEntityConditionsSystem _conditions = default!;
 
     public override void Initialize()
     {
@@ -57,6 +59,17 @@ public sealed partial class EffectActionSystem : EntitySystem
             return;
 
         bool targetState = !comp.Toggled;
+
+        // Check toggle conditions before allowing the toggle to happen
+        if (targetState && comp.OnToggleConditions is { Length: > 0 })
+        {
+            if (!_conditions.TryConditions(args.Performer, comp.OnToggleConditions))
+            {
+                // Conditions failed - cancel the toggle
+                args.Handled = false;
+                return;
+            }
+        }
 
         args.Handled = true;
 

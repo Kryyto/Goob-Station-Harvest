@@ -14,6 +14,7 @@ using Content.Shared.Tag;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Robust.Shared.GameObjects;
+using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -31,6 +32,7 @@ public sealed class AndroidSafetySystem : EntitySystem
     [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly TagSystem _tag = default!;
+    [Dependency] private readonly AndroidCombatSystem _combat = default!;
 
     /// <summary>
     /// How long an android keeps fleeing after being hurt.
@@ -55,6 +57,8 @@ public sealed class AndroidSafetySystem : EntitySystem
     /// </summary>
     private void OnDamaged(EntityUid uid, AndroidComponent android, DamageChangedEvent args)
     {
+        _combat.OnHurt(uid, android, args);
+
         if (!args.DamageIncreased || args.DamageDelta is not { } delta || delta.GetTotal() < 5 ||
             args.Origin is { } origin && _tag.HasTag(origin, MouseTag))
         {
@@ -62,6 +66,8 @@ public sealed class AndroidSafetySystem : EntitySystem
         }
 
         android.LastHurtAt = _timing.CurTime;
+        android.FleeFrom = args.Origin is { } attacker && Exists(attacker) ? Transform(attacker).Coordinates : Transform(uid).Coordinates;
+        android.FleeTarget = EntityCoordinates.Invalid;
     }
 
     public override void Update(float frameTime)
@@ -76,13 +82,28 @@ public sealed class AndroidSafetySystem : EntitySystem
             if (android.Status == AndroidStatus.Leaving)
                 continue;
 
+            // A fighting android stands its ground until it goes down itself.
+            if (android.FightTarget != null)
+            {
+                if (_entityManager.TryGetComponent<MobStateComponent>(uid, out var mob) && mob.CurrentState != MobState.Alive)
+                    _combat.EndFight(uid, android);
+                else
+                    continue;
+            }
+
             if (IsInDanger(uid, android, config))
             {
+                // A hazard (fire, bad air, alert) is fled from where it was first felt.
+                if (android.Status != AndroidStatus.Fleeing)
+                    android.FleeFrom ??= Transform(uid).Coordinates;
+
                 android.Status = AndroidStatus.Fleeing;
             }
             else if (android.Status == AndroidStatus.Fleeing)
             {
                 android.Status = AndroidStatus.Working;
+                android.FleeFrom = null;
+                android.FleeTarget = EntityCoordinates.Invalid;
             }
         }
     }

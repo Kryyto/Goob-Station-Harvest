@@ -359,6 +359,9 @@ public sealed class StartPullPestAction : IBehaviorNode
 
         var pulling = blackboard.EntityManager.System<PullingSystem>();
 
+        // Pulling takes a free hand: with the mop and another tool in hand, put one away first.
+        blackboard.System<AndroidInventorySystem>().TryFreeHand(owner);
+
         // Use force so the android can pull a dead/crit pest immediately after attacking it,
         // without being blocked by its own attack cooldown.
         if (pulling.TryStartPull(owner, pest.Value, pullableComp: pullable, force: true))
@@ -498,7 +501,7 @@ public sealed class StopPullPestAction : IBehaviorNode
             blackboard.EntityManager.TryGetComponent<PullableComponent>(pest.Value, out var pullable))
         {
             var pulling = blackboard.EntityManager.System<PullingSystem>();
-            pulling.TryStopPull(pest.Value, pullable);
+            pulling.TryStopPull(pest.Value, pullable, owner, ignoreGrab: true);
         }
 
         // If the android reached the kitchen disposal target, leave the corpse there for the chef

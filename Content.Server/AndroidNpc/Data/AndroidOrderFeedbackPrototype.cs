@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Server.AndroidNpc.Components;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.AndroidNpc.Data;
@@ -18,16 +19,6 @@ public sealed partial class AndroidOrderFeedbackPrototype : IPrototype
     /// Acknowledgement prefix, e.g. "Acknowledged.".
     /// </summary>
     [DataField("acknowledgementPrefix")] public string AcknowledgementPrefix { get; private set; } = "Acknowledged.";
-
-    /// <summary>
-    /// Response when the issuer is not authorized.
-    /// </summary>
-    [DataField("notAuthorized")] public string NotAuthorized { get; private set; } = "Sorry, I do not take orders from you.";
-
-    /// <summary>
-    /// Response when the issuer has no valid job/id.
-    /// </summary>
-    [DataField("noAuthority")] public string NoAuthority { get; private set; } = "No authority.";
 
     /// <summary>
     /// Acknowledgement for a FollowMe order.
@@ -152,12 +143,63 @@ public sealed partial class AndroidOrderFeedbackPrototype : IPrototype
 
     [DataField("statusReportServing")] public string StatusReportServing { get; private set; } = "I am preparing an order for {target}.";
 
+    [DataField("statusReportFighting")] public string StatusReportFighting { get; private set; } = "I am defending myself.";
+
+    /// <summary>
+    /// Shouted when the android starts fighting back.
+    /// </summary>
+    [DataField("retaliate")] public List<string> Retaliate { get; private set; } = new();
+
     [DataField("statusReportLeaving")] public string StatusReportLeaving { get; private set; } = "My shift is over, I am heading to cryostorage.";
 
     /// <summary>
     /// Shown when examining an android: how to talk to it. {name} is its first name.
     /// </summary>
     [DataField("examineHint")] public string ExamineHint { get; private set; } = "To talk to it, start with its first name: \"{name}, follow me\".";
+
+    /// <summary>
+    /// Second line of the answer to "what can you do", after the job's own capabilities line.
+    /// </summary>
+    [DataField("capabilitiesOrders")] public string CapabilitiesOrders { get; private set; } = "You can also tell me: follow me, back to work, take a break, go to a place or go see someone.";
+
+    /// <summary>
+    /// Answer to "what can you serve". {items} is a few menu names, {count} the size of the menu.
+    /// </summary>
+    [DataField("menuSample")] public string MenuSample { get; private set; } = "I have {count} things on my menu, for example: {items}.";
+
+    /// <summary>
+    /// Answer to "what can you serve" from an android without a menu.
+    /// </summary>
+    [DataField("menuNone")] public string MenuNone { get; private set; } = "I don't serve anything. Ask the bartender or the cook.";
+
+    /// <summary>
+    /// What the player says when picking an order in the android's context menu. {name} is its first name;
+    /// each line must contain one of the order phrases.
+    /// </summary>
+    [DataField("contextMenu")] public Dictionary<AndroidOrderType, string> ContextMenu { get; private set; } = new();
+
+    [DataField("ackHealMe")] public string AckHealMe { get; private set; } = "On my way, don't move.";
+
+    [DataField("ackInjured")] public string AckInjured { get; private set; } = "On my way.";
+
+    [DataField("ackInjuredAt")] public string AckInjuredAt { get; private set; } = "On my way to {target}.";
+
+    /// <summary>
+    /// A paramedic asked to treat someone who is not hurt.
+    /// </summary>
+    [DataField("notHurt")] public string NotHurt { get; private set; } = "I don't see any injury.";
+
+    /// <summary>
+    /// Another android asked for medical care.
+    /// </summary>
+    /// <summary>
+    /// A paramedic asked to treat an injury its kits and medicines cannot help.
+    /// </summary>
+    [DataField("cannotTreat")] public string CannotTreat { get; private set; } = "I can't treat that here. Go to medbay.";
+
+    [DataField("notAMedic")] public string NotAMedic { get; private set; } = "I'm not a medic. Call the paramedic.";
+
+    [DataField("statusReportTreating")] public string StatusReportTreating { get; private set; } = "I am taking care of {target}.";
 
     [DataField("forcedOrderIssuer")] public string ForcedOrderIssuer { get; private set; } = "Central Command";
 

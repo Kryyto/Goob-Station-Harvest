@@ -206,18 +206,44 @@ public static class AndroidAddressing
 }
 
 /// <summary>
-/// Matches spoken messages against the order phrase definitions.
+/// Matches spoken messages against the order phrase definitions. Case, accents, hyphens and curly apostrophes
+/// are ignored, so "Suis moi" matches "suis-moi".
 /// </summary>
 public sealed class OrderPhraseMatcher
 {
-    private readonly AndroidOrderPhrasesPrototype _phrases;
+    private readonly List<(AndroidOrderType Type, string Phrase)> _phrases = new();
 
     /// <summary>
     /// Creates a matcher backed by the provided phrase prototype.
     /// </summary>
     public OrderPhraseMatcher(AndroidOrderPhrasesPrototype phrases)
     {
-        _phrases = phrases;
+        foreach (var (type, list) in new[]
+                 {
+                     (AndroidOrderType.FollowMe, phrases.FollowMe),
+                     (AndroidOrderType.ReturnToWork, phrases.ReturnToWork),
+                     (AndroidOrderType.GoToDepartment, phrases.GoToDepartment),
+                     (AndroidOrderType.GoToPerson, phrases.GoToPerson),
+                     (AndroidOrderType.TakeBreak, phrases.TakeBreak),
+                     (AndroidOrderType.StatusReport, phrases.StatusReport),
+                     (AndroidOrderType.RepeatOrder, phrases.RepeatOrder),
+                     (AndroidOrderType.Capabilities, phrases.Capabilities),
+                     (AndroidOrderType.Menu, phrases.Menu),
+                     (AndroidOrderType.HealMe, phrases.HealMe),
+                     (AndroidOrderType.Injured, phrases.Injured),
+                 })
+        {
+            foreach (var phrase in list)
+                _phrases.Add((type, Normalize(phrase)));
+        }
+    }
+
+    /// <summary>
+    /// Lowercase, without accents, hyphens as spaces and straight apostrophes; keeps the length of the text.
+    /// </summary>
+    private static string Normalize(string text)
+    {
+        return NameMatcher.RemoveAccents(text).ToLowerInvariant().Replace('-', ' ').Replace('’', '\'');
     }
 
     /// <summary>
@@ -232,56 +258,41 @@ public sealed class OrderPhraseMatcher
         orderType = AndroidOrderType.ReturnToWork;
         target = null;
         string? best = null;
+        var normalized = Normalize(message);
 
         // The longest matching phrase wins, so "va en pause" is a break and not "go to: pause".
-        foreach (var (type, phrases) in new[]
-                 {
-                     (AndroidOrderType.FollowMe, _phrases.FollowMe),
-                     (AndroidOrderType.ReturnToWork, _phrases.ReturnToWork),
-                     (AndroidOrderType.GoToDepartment, _phrases.GoToDepartment),
-                     (AndroidOrderType.GoToPerson, _phrases.GoToPerson),
-                     (AndroidOrderType.TakeBreak, _phrases.TakeBreak),
-                     (AndroidOrderType.StatusReport, _phrases.StatusReport),
-                     (AndroidOrderType.RepeatOrder, _phrases.RepeatOrder),
-                 })
+        foreach (var (type, phrase) in _phrases)
         {
-            foreach (var phrase in phrases)
-            {
-                if (best != null && phrase.Length <= best.Length || !NameMatcher.ContainsIgnoreCaseAndAccents(message, phrase))
-                    continue;
+            if (best != null && phrase.Length <= best.Length || !normalized.Contains(phrase, StringComparison.Ordinal))
+                continue;
 
-                best = phrase;
-                orderType = type;
-            }
+            best = phrase;
+            orderType = type;
         }
 
         if (best == null)
             return false;
 
-        target = ExtractTarget(message, best);
+        target = ExtractTarget(message, normalized, best);
         return true;
     }
 
     /// <summary>
-    /// Extracts the substring following a matched phrase, if the phrase ends with whitespace.
+    /// Extracts the text following a matched phrase, if the phrase ends with whitespace.
     /// </summary>
-    private static string? ExtractTarget(string message, string phrase)
+    private static string? ExtractTarget(string message, string normalized, string phrase)
     {
         if (!phrase.EndsWith(' '))
             return null;
 
-        var normalized = NameMatcher.RemoveAccents(message).ToLowerInvariant();
-        var needle = NameMatcher.RemoveAccents(phrase).ToLowerInvariant();
-        var index = normalized.IndexOf(needle, StringComparison.Ordinal);
-
+        var index = normalized.IndexOf(phrase, StringComparison.Ordinal);
         if (index < 0)
             return null;
 
-        var start = index + needle.Length;
-        if (start >= message.Length)
-            return null;
-
-        return message[start..].Trim();
+        // Decomposed accents in the input change its length; the normalized text is used then.
+        var source = normalized.Length == message.Length ? message : normalized;
+        var start = index + phrase.Length;
+        return start >= source.Length ? null : source[start..].Trim();
     }
 }
 

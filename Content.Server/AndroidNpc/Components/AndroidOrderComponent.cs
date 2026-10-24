@@ -18,7 +18,32 @@ public enum AndroidOrderType
     TakeBreak,
     StatusReport,
     RepeatOrder,
-    CleanArea
+    CleanArea,
+
+    /// <summary>
+    /// "What can you do?": the android describes its job and the orders it takes.
+    /// </summary>
+    Capabilities,
+
+    /// <summary>
+    /// "What can you serve?": a cook or bartender lists some of its menu.
+    /// </summary>
+    Menu,
+
+    /// <summary>
+    /// "Heal me": a paramedic treats the speaker.
+    /// </summary>
+    HealMe,
+
+    /// <summary>
+    /// "Someone is hurt at the bar": a paramedic goes there.
+    /// </summary>
+    Injured,
+
+    /// <summary>
+    /// A paramedic walking to a reported casualty; it then treats whoever needs it there.
+    /// </summary>
+    RespondToCall
 }
 
 /// <summary>

@@ -67,9 +67,9 @@ public sealed partial class AndroidJobPrototype : IPrototype
     [DataField("trashTags")] public List<string> TrashTags { get; private set; } = new();
 
     /// <summary>
-    /// Access tags that allow a crew member to give orders to this android.
+    /// What the android fights back with when someone hurts it badly; spawned the first time if it has none.
     /// </summary>
-    [DataField("orderAccessTags")] public List<string> OrderAccessTags { get; private set; } = new();
+    [DataField("retaliationWeapon")] public EntProtoId? RetaliationWeapon { get; private set; }
 
     /// <summary>
     /// Words that make a message count as addressed to this android, besides its name.
@@ -77,7 +77,7 @@ public sealed partial class AndroidJobPrototype : IPrototype
     [DataField("addressKeywords")] public List<string> AddressKeywords { get; private set; } = new();
 
     /// <summary>
-    /// Items a service android can prepare on request, matched against what the customer says.
+    /// Hand-written menu entries, matched before the generated <see cref="AndroidMenuPrototype"/> of the job.
     /// </summary>
     [DataField("menu")] public List<AndroidMenuItem> Menu { get; private set; } = new();
 
@@ -93,14 +93,6 @@ public sealed partial class AndroidJobPrototype : IPrototype
     [DataField("breakVenue")] public AndroidBreakVenue? BreakVenue { get; private set; }
 
     /// <summary>
-    /// Name of a menu or fallback item in the given language, or the entity name.
-    /// </summary>
-    public string? MenuName(EntProtoId item, string language)
-    {
-        return Menu.FirstOrDefault(m => m.Item == item)?.Names.GetValueOrDefault(language);
-    }
-
-    /// <summary>
     /// Voice lines per language code.
     /// </summary>
     [DataField("lines")] public Dictionary<string, AndroidJobLines> Lines { get; private set; } = new();
@@ -112,6 +104,17 @@ public sealed partial class AndroidJobPrototype : IPrototype
     {
         return Lines.GetValueOrDefault(language) ?? Lines.GetValueOrDefault("en") ?? Lines.Values.FirstOrDefault();
     }
+}
+
+/// <summary>
+/// Generated menu of a service job (menus.yml, from Tools/android_npc_gen_menus.py); the id is the job.
+/// </summary>
+[Prototype]
+public sealed partial class AndroidMenuPrototype : IPrototype
+{
+    [IdDataField] public string ID { get; private set; } = default!;
+
+    [DataField("items")] public List<AndroidMenuItem> Items { get; private set; } = new();
 }
 
 /// <summary>
@@ -142,6 +145,11 @@ public sealed partial class AndroidMenuItem
 [DataDefinition]
 public sealed partial class AndroidJobLines
 {
+    /// <summary>
+    /// Answer to "what can you do": what the job does.
+    /// </summary>
+    [DataField("capabilities")] public List<string> Capabilities { get; private set; } = new();
+
     [DataField("mess")] public List<string> Mess { get; private set; } = new();
 
     [DataField("break")] public List<string> Break { get; private set; } = new();
@@ -173,4 +181,24 @@ public sealed partial class AndroidJobLines
     /// Said when the order is not on the menu and something else is prepared instead. {item} is replaced.
     /// </summary>
     [DataField("unknownOrder")] public List<string> UnknownOrder { get; private set; } = new();
+
+    /// <summary>
+    /// Paramedic: starting to treat someone. {patient} is replaced.
+    /// </summary>
+    [DataField("treating")] public List<string> Treating { get; private set; } = new();
+
+    /// <summary>
+    /// Paramedic: done treating someone. {patient} is replaced.
+    /// </summary>
+    [DataField("treated")] public List<string> Treated { get; private set; } = new();
+
+    /// <summary>
+    /// Paramedic: giving epinephrine to a critical patient. {patient} is replaced.
+    /// </summary>
+    [DataField("stabilizing")] public List<string> Stabilizing { get; private set; } = new();
+
+    /// <summary>
+    /// Paramedic: dragging a patient to medbay. {patient} is replaced.
+    /// </summary>
+    [DataField("carrying")] public List<string> Carrying { get; private set; } = new();
 }

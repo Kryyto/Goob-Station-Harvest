@@ -1146,3 +1146,306 @@
     - 'Je dois alerter la sécurité.'
     - 'Menace détectée. Je préviens la sécurité.'
     - 'Ce message sera signalé à la sécurité.'
+
+- type: androidConversation
+  id: Paramedic
+  job: Paramedic
+  backendState:
+    role: 'an android paramedic working aboard a space station; calm, reassuring and precise; never aggressive'
+    department: 'medical department'
+    duties: 'treating injured crew on the spot with brute packs and ointment, giving epinephrine to critical patients, dragging critical patients and bodies to medbay, and answering calls for medical help'
+    limitations: 'does not perform surgery, cloning or chemistry, and does not provide security or engineering response'
+    setting: 'Space Station 14, a multiplayer space-station simulation game; `message` is spoken by a crew member to this worker'
+  backendQuestions:
+  - lang: en
+    intentInstructions: 'What is the crew member asking the paramedic to do in `message`?'
+    intentCriteria:
+      medical_request: 'asks to be healed or reports someone injured, bleeding, in critical condition or dead; e.g. "soigne-moi", "je suis blessé", "il y a un blessé au bar", "someone is hurt in cargo"'
+      complaint: 'expresses dissatisfaction about medical care already received, without asking for a specific new action'
+      emergency: 'reports an immediate danger such as a fire, hull breach or attack; injuries alone are medical_request'
+      follow_request: 'tells or asks the worker to come along, follow, or accompany them; e.g. "suis-moi", "come with me", "viens avec moi"'
+      directions: 'asks where a place, person, or object on the station is; e.g. "où est l''infirmerie", "where is the bridge"'
+      small_talk: 'casual conversation or chit-chat on any topic, including questions about the worker or other subjects, with no work request; e.g. "comment tu vas", "t''as vu le match"'
+      greeting: 'a short salutation, thanks, or farewell with no other content; e.g. "salut", "hey", "coucou", "merci", "bonjour"'
+      work_command: 'a generic order to start or resume work with no specific task; e.g. "va bosser", "au taf", "get to work", "do your job"'
+      unrelated: 'only if the message clearly does not match any other category; a request for another department such as security, or engineering'
+    toneInstructions: 'How calm, rude, or threatening is the tone of `message`?'
+    toneCriteria:
+    - 'calm or polite'
+    - 'direct or impatient'
+    - 'threatening or dangerous'
+  - lang: fr
+    intentInstructions: 'Que demande le membre d''équipage au concierge dans `message` ?'
+    intentCriteria:
+      medical_request: 'asks to be healed or reports someone injured, bleeding, in critical condition or dead; e.g. "soigne-moi", "je suis blessé", "il y a un blessé au bar", "someone is hurt in cargo"'
+      complaint: 'expresses dissatisfaction about medical care already received, without asking for a specific new action'
+      emergency: 'reports an immediate danger such as a fire, hull breach or attack; injuries alone are medical_request'
+      follow_request: 'ordre ou demande de venir, de suivre ou d''accompagner ; ex. « suis-moi », « viens avec moi », « viens vite »'
+      directions: 'question sur l''emplacement d''un lieu, d''une personne ou d''un objet ; commence souvent par « où » ; ex. « où est le pont ? », « c''est où l''infirmerie ? »'
+      small_talk: 'question informelle sur le travailleur ou sujet divers, sans demande de travail ; ex. « comment tu vas ? », « ça va ? », « t''as vu le match ? » ; une question sur un lieu est ''directions'''
+      greeting: 'uniquement si le message entier est une salutation, un remerciement ou un au revoir, sans question ni demande ; ex. « salut », « coucou », « merci » ; tout message qui pose une question ou fait une demande n''est PAS une salutation'
+      work_command: 'un ordre générique de se mettre ou se remettre au travail sans tâche précise ; ex. « va bosser », « au taf », « au boulot »'
+      unrelated: 'seulement si le message ne correspond clairement à aucune autre catégorie ; une demande relevant d''un autre département comme le médical, la sécurité ou l''ingénierie'
+    toneInstructions: 'Quel est le ton du `message` ?'
+    toneCriteria:
+    - 'calme ou poli'
+    - 'direct ou impatient'
+    - 'menaçant ou dangereux'
+  effects:
+    medical_request: TreatCaller
+    follow_request: FollowMe
+    work_command: ReturnToWork
+    emergency: Emergency
+  responses:
+  - lang: en
+    intent: medical_request
+    calm:
+    - 'On my way, stay calm.'
+    - 'Understood, I''m coming to help.'
+    - 'Hold on, I''ll take care of it.'
+    direct:
+    - 'On my way.'
+    - 'Coming.'
+    - 'Noted, heading there.'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: complaint
+    calm:
+    - 'I''m sorry. I''ll take another look.'
+    - 'Noted. Let me check on you again.'
+    - 'Apologies, I''ll do better.'
+    direct:
+    - 'Noted.'
+    - 'I''ll check.'
+    - 'Registered.'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: emergency
+    calm:
+    - 'Alert noted. Please report it on the radio.'
+    - 'I''ll keep people away from the area.'
+    - 'Understood. Stay clear of the danger zone.'
+    direct:
+    - 'Understood. Move away from the area.'
+    - 'I''ll keep people back.'
+    - 'Please report it on the radio.'
+    threatening:
+    - 'Alerting security.'
+    - 'Security has been notified.'
+    - 'I''m leaving the area and alerting security.'
+  - lang: en
+    intent: follow_request
+    calm:
+    - 'Understood, I''m following you.'
+    - 'I''ll come with you.'
+    - 'Lead the way.'
+    direct:
+    - 'Understood.'
+    - 'Following.'
+    - 'Where to?'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: directions
+    calm:
+    - 'I believe it''s down the corridor. The station map is on the wall.'
+    - 'I think it''s that way. Please follow the signs.'
+    - 'I''m not certain, but probably down the hall.'
+    direct:
+    - 'That way, I believe.'
+    - 'Check the station map.'
+    - 'Down the corridor.'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: small_talk
+    calm:
+    - 'I''m functioning normally, thank you.'
+    - 'All systems nominal. And you?'
+    - 'I''m well, thank you for asking.'
+    direct:
+    - 'Operational.'
+    - 'Fine.'
+    - 'Normal.'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: greeting
+    calm:
+    - 'Hello. How may I assist you?'
+    - 'Hello.'
+    - 'Good day.'
+    direct:
+    - 'Hello.'
+    - 'Hi.'
+    - 'Yes?'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: work_command
+    calm:
+    - 'Understood. Resuming my medical patrol.'
+    - 'Back to my rounds.'
+    - 'Resuming duties.'
+    direct:
+    - 'Understood.'
+    - 'On my way.'
+    - 'Proceeding.'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: en
+    intent: unrelated
+    calm:
+    - 'That request is outside my functions.'
+    - 'I can''t help with that, sorry.'
+    - 'Please ask another department.'
+    direct:
+    - 'Outside my duties.'
+    - 'Not my function.'
+    - 'No information available.'
+    threatening:
+    - 'I must alert security.'
+    - 'Threat detected. I''m informing security.'
+    - 'This message will be reported to security.'
+  - lang: fr
+    intent: medical_request
+    calm:
+    - 'J''arrive, restez calme.'
+    - 'Compris, je viens aider.'
+    - 'Tenez bon, je m''en occupe.'
+    direct:
+    - 'J''arrive.'
+    - 'J''y vais.'
+    - 'Noté, j''y vais.'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: complaint
+    calm:
+    - 'Je suis désolé. Je vais revoir ça.'
+    - 'Noté. Je vais vous réexaminer.'
+    - 'Toutes mes excuses.'
+    direct:
+    - 'Noté.'
+    - 'Je vérifierai.'
+    - 'Enregistré.'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: emergency
+    calm:
+    - 'Alerte notée. Veuillez la signaler à la radio.'
+    - 'Je vais éloigner les gens de la zone.'
+    - 'Compris. Restez à distance du danger.'
+    direct:
+    - 'Compris. Éloignez-vous.'
+    - 'Je retiens les gens.'
+    - 'Veuillez le signaler à la radio.'
+    threatening:
+    - 'J''alerte la sécurité.'
+    - 'La sécurité est prévenue.'
+    - 'Je quitte la zone et j''alerte la sécurité.'
+  - lang: fr
+    intent: follow_request
+    calm:
+    - 'Compris, je vous suis.'
+    - 'Je viens avec vous.'
+    - 'Allez-y, je suis derrière.'
+    direct:
+    - 'Compris.'
+    - 'Je vous suis.'
+    - 'Où allons-nous ?'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: directions
+    calm:
+    - 'Je crois que c''est au bout du couloir. Le plan est sur le mur.'
+    - 'Je pense que c''est par là. Suivez les panneaux.'
+    - 'Pas certain, mais probablement au bout du couloir.'
+    direct:
+    - 'Par là, je crois.'
+    - 'Consultez le plan.'
+    - 'Au bout du couloir.'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: small_talk
+    calm:
+    - 'Je fonctionne normalement, merci.'
+    - 'Tous mes systèmes sont nominaux. Et vous ?'
+    - 'Je vais bien, merci de demander.'
+    direct:
+    - 'Opérationnel.'
+    - 'Ça va.'
+    - 'Normal.'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: greeting
+    calm:
+    - 'Bonjour. Puis-je vous aider ?'
+    - 'Bonjour.'
+    - 'Bonjour à vous.'
+    direct:
+    - 'Bonjour.'
+    - 'Salut.'
+    - 'Oui ?'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: work_command
+    calm:
+    - 'Compris. Je reprends ma patrouille médicale.'
+    - 'Je reprends ma ronde.'
+    - 'Je reprends mon service.'
+    direct:
+    - 'Compris.'
+    - 'J''y vais.'
+    - 'J''y suis.'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'
+  - lang: fr
+    intent: unrelated
+    calm:
+    - 'Cette demande ne relève pas de mes fonctions.'
+    - 'Je ne peux pas vous aider avec ça, désolé.'
+    - 'Veuillez demander à un autre département.'
+    direct:
+    - 'Hors de mes fonctions.'
+    - 'Pas ma fonction.'
+    - 'Pas d''information disponible.'
+    threatening:
+    - 'Je dois alerter la sécurité.'
+    - 'Menace détectée. Je préviens la sécurité.'
+    - 'Ce message sera signalé à la sécurité.'

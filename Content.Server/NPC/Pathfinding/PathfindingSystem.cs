@@ -439,7 +439,10 @@ namespace Content.Server.NPC.Pathfinding
                 (layer, mask) = _physics.GetHardCollision(entity, fixtures);
             }
 
-            return new AStarPathRequest(start, end, flags, range, layer, mask, cancelToken);
+            return new AStarPathRequest(start, end, flags, range, layer, mask, cancelToken)
+            {
+                BlockedDoors = (flags & PathFlags.Access) != 0x0 ? GetBlockedDoors(entity) : null, // Harvest
+            };
         }
 
         public PathFlags GetFlags(EntityUid uid)

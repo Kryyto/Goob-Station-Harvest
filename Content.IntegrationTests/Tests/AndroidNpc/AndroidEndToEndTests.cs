@@ -18,6 +18,7 @@ using Content.Shared.Atmos;
 using Content.Shared.Chat;
 using Content.Shared.Doors.Components;
 using Content.Shared.NPC;
+using Content.Shared.Speech.Components;
 using NUnit.Framework;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.GameObjects;
@@ -264,7 +265,11 @@ public sealed class AndroidEndToEndTests
         {
             ClearLastSaid(sEnt);
             Say(sEnt, speaker, "Androïdes, suivez-moi");
-            allowed = androids.Count(a => server.System<AndroidOrderSystem>().CanOrder(speaker, a));
+            // Every android that heard the group order obeys it.
+            var xforms = server.System<SharedTransformSystem>();
+            var origin = xforms.GetWorldPosition(speaker);
+            allowed = androids.Count(a => sEnt.TryGetComponent<ActiveListenerComponent>(a, out var listener) &&
+                                          (xforms.GetWorldPosition(a) - origin).Length() <= listener.Range);
         });
 
         await server.WaitRunTicks(90);
@@ -276,7 +281,7 @@ public sealed class AndroidEndToEndTests
             var fr = server.ResolveDependency<IPrototypeManager>().AndroidFeedback("fr");
 
             Assert.That(following, Is.EqualTo(allowed),
-                "Every android allowed to obey follows");
+                "Every android that heard the order follows");
             // Other lines may happen meanwhile (a janitor chasing a mouse shouts), but only one android acknowledges.
             Assert.That(acks.Count(a => a == $"{fr.AcknowledgementPrefix} {fr.AckFollowMe}"), Is.EqualTo(1), "One French acknowledgement for the group");
         });
@@ -360,7 +365,7 @@ public sealed class AndroidEndToEndTests
 
             var protos = server.ResolveDependency<IPrototypeManager>();
             var said = sEnt.GetComponent<AndroidComponent>(bartender).LastSaid;
-            var item = protos.AndroidJobData(AndroidJob.Bartender)!.MenuName("DrinkBeerglass", "fr");
+            var item = server.System<AndroidServiceSystem>().MenuName(AndroidJob.Bartender, "DrinkBeerglass", "fr");
             var expected = protos.AndroidJobData(AndroidJob.Bartender)!.LinesFor("fr")!.Served
                 .Select(l => AndroidData.Format(l, ("item", item), ("customer", sEnt.GetComponent<MetaDataComponent>(customer).EntityName)));
             Assert.That(served, Is.True, "A beer should be put down next to the customer");

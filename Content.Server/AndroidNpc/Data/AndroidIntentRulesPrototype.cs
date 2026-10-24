@@ -86,11 +86,6 @@ public sealed partial class AndroidConversationLanguage
     /// Reply used when a requested supply is not carried.
     /// </summary>
     [DataField("noSupply")] public string NoSupply { get; private set; } = string.Empty;
-
-    /// <summary>
-    /// Reply used when the speaker cannot order the android to act.
-    /// </summary>
-    [DataField("notAuthorized")] public string NotAuthorized { get; private set; } = string.Empty;
 }
 
 /// <summary>

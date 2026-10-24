@@ -3,6 +3,7 @@
 
 Usage: python Tools/android_npc_gen_conversation.py <path to Android-generic-responses/backend>
 Writes Resources/Prototypes/AndroidNpc/conversation_rules.yml and conversation_jobs.yml.
+Job profiles come from the backend's jobs/ folder, or from Tools/android_npc_jobs/ for jobs it does not have.
 """
 import json
 import sys
@@ -13,6 +14,7 @@ if len(sys.argv) != 2:
 
 SRC = Path(sys.argv[1]).resolve()
 DST = Path(__file__).resolve().parent.parent / "Resources" / "Prototypes" / "AndroidNpc"
+LOCAL_JOBS = Path(__file__).resolve().parent / "android_npc_jobs"
 sys.path.insert(0, str(SRC))
 import laya_client as lc  # noqa: E402
 
@@ -74,14 +76,12 @@ ALERTS = {
         "emergency": "Emergency reported by {speaker} near {location}. Clearing the area.",
         "noLocation": "an unknown area",
         "noSupply": "I do not have that with me.",
-        "notAuthorized": "I cannot follow that request from you.",
     },
     "fr": {
         "threat": "Alerte sécurité : {speaker} m'a menacé près de {location}.",
         "emergency": "Urgence signalée par {speaker} près de {location}. J'évacue la zone.",
         "noLocation": "une zone inconnue",
         "noSupply": "Je n'ai pas ça sur moi.",
-        "notAuthorized": "Je ne peux pas suivre cette demande venant de vous.",
     },
 }
 
@@ -132,6 +132,7 @@ JOBS = {
     },
     "Cook": {"file": "chef", "effects": {"food_order": "PrepareOrder", "follow_request": "FollowMe", "work_command": "ReturnToWork", "emergency": "Emergency"}, "supplies": []},
     "Bartender": {"file": "bartender", "effects": {"drink_order": "PrepareOrder", "follow_request": "FollowMe", "work_command": "ReturnToWork", "emergency": "Emergency"}, "supplies": []},
+    "Paramedic": {"file": "paramedic", "effects": {"medical_request": "TreatCaller", "follow_request": "FollowMe", "work_command": "ReturnToWork", "emergency": "Emergency"}, "supplies": []},
 }
 
 
@@ -141,7 +142,7 @@ def rules_yaml() -> str:
     for lang in LANGS:
         out.append(f"  - id: {lang}\n    hints:\n{qlist(LANG_HINTS[lang], 4)}")
         a = ALERTS[lang]
-        for key in ("threat", "emergency", "noLocation", "noSupply", "notAuthorized"):
+        for key in ("threat", "emergency", "noLocation", "noSupply"):
             out.append(f"    {key}: {q(a[key])}\n")
     out.append("  phrases:\n")
     for lang in LANGS:
@@ -162,7 +163,8 @@ def rules_yaml() -> str:
 
 
 def job_yaml(job: str, spec: dict) -> str:
-    data = json.loads((SRC / "jobs" / f"{spec['file']}.json").read_text(encoding="utf-8"))
+    path = SRC / "jobs" / f"{spec['file']}.json"
+    data = json.loads((path if path.exists() else LOCAL_JOBS / f"{spec['file']}.json").read_text(encoding="utf-8"))
     out = [f"\n- type: androidConversation\n  id: {job}\n  job: {job}\n"]
     out.append("  backendState:\n")
     for key, value in data["hidden_state"].items():

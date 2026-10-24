@@ -20,10 +20,7 @@
   namePrefix: "Androïde"
   defaultFirstName: "Unité"
   unknownSpeakerName: "someone"
-  universalOrderAccess:
-  - Captain
-  - HeadOfPersonnel
-  spawnDelaySeconds: 30
+  spawnDelaySeconds: 0
   scanRadius: 20
   scanIntervalTicks: 30
   blacklistTtlSeconds: 30
@@ -46,6 +43,8 @@
   conversationThreatThreshold: 0.65
   conversationImpatientThreshold: 0.45
   emergencyFleeSeconds: 30
+  retaliationDamage: 50
+  retaliationGiveUpSeconds: 30
   securityRadioChannel: Security
   emergencyRadioChannel: Common
   handOverRange: 1.5

@@ -41,6 +41,7 @@ public sealed class AndroidCustomerSystem : EntitySystem
     [Dependency] private readonly AndroidDialogueSystem _dialogue = default!;
     [Dependency] private readonly TagSystem _tag = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
+    [Dependency] private readonly AndroidServiceSystem _service = default!;
 
     private static readonly TimeSpan MinWait = TimeSpan.FromMinutes(3);
     private static readonly TimeSpan MaxWait = TimeSpan.FromMinutes(5);
@@ -100,7 +101,7 @@ public sealed class AndroidCustomerSystem : EntitySystem
         if (_doAfter.TryStartDoAfter(doAfterArgs, out var id))
             order.WaitDoAfter = id;
 
-        SpeakFormatted(android, venue == AndroidBreakVenue.Bar ? customer.BarOrder : customer.KitchenOrder, choiceProto.Name);
+        SpeakFormatted(android, venue == AndroidBreakVenue.Bar ? customer.BarOrder : customer.KitchenOrder, ItemName(venue, order.RequestedItem));
     }
 
     /// <summary>
@@ -124,7 +125,7 @@ public sealed class AndroidCustomerSystem : EntitySystem
             return false;
 
         var customer = _proto.AndroidFeedback().Customer;
-        SpeakFormatted(android, order.Venue == AndroidBreakVenue.Bar ? customer.BarReminder : customer.KitchenReminder, proto.Name);
+        SpeakFormatted(android, order.Venue == AndroidBreakVenue.Bar ? customer.BarReminder : customer.KitchenReminder, ItemName(order.Venue, order.RequestedItem));
         return true;
     }
 
@@ -132,6 +133,15 @@ public sealed class AndroidCustomerSystem : EntitySystem
     /// Cancels an android's active order without tipping or complaint, e.g. because the android
     /// had to abandon its break for something more important.
     /// </summary>
+    /// <summary>
+    /// What the customer calls its order: the venue's menu name ("bière"), not the entity name ("verre métamorphe").
+    /// </summary>
+    private string ItemName(AndroidBreakVenue venue, EntProtoId item)
+    {
+        var job = venue == AndroidBreakVenue.Bar ? AndroidJob.Bartender : AndroidJob.Cook;
+        return _service.MenuName(job, item, _proto.AndroidConfig().Language);
+    }
+
     public void CancelOrder(EntityUid android)
     {
         if (!TryComp<AndroidCustomerOrderComponent>(android, out var order))
@@ -192,11 +202,19 @@ public sealed class AndroidCustomerSystem : EntitySystem
         EntityUid? found = null;
         var bestDist = ScanRadius * ScanRadius;
 
+        // What the bartender or cook put down for it comes first.
+        if (order.ServedItem is { } served && !Deleted(served) && !order.Refused.Contains(served) &&
+            _transform.InRange(Transform(served).Coordinates, xform.Coordinates, ScanRadius))
+        {
+            found = served;
+            bestDist = -1f;
+        }
+
         // Uncontained only - items still held in someone's hand or stashed in a bag/box don't
         // count as "left out" for the android to notice and take.
         foreach (var ent in _lookup.GetEntitiesInRange(xform.Coordinates, ScanRadius, LookupFlags.Uncontained))
         {
-            if (ent == android)
+            if (ent == android || order.Refused.Contains(ent))
                 continue;
 
             if (!TryComp<EdibleComponent>(ent, out var edible))
@@ -229,9 +247,11 @@ public sealed class AndroidCustomerSystem : EntitySystem
         _hands.TryPickupAnyHand(android, item);
         _openable.TryOpen(item, user: android);
 
+        // Something it cannot eat (a sealed packet at its feet...) is left alone from now on.
         if (!_ingestion.TryIngest(android, android, item))
         {
             _hands.TryDrop(android, item);
+            order.Refused.Add(item);
             return;
         }
 

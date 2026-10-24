@@ -36,3 +36,15 @@
     controlsLocked: true
     mode: SensorCords
     activationSlot: jumpsuit
+
+- type: entity
+  id: ClothingUniformJumpsuitAndroidParamedic
+  parent: ClothingUniformJumpsuitParamedic
+  name: android paramedic jumpsuit
+  suffix: Android
+  components:
+  - type: SuitSensor
+    randomMode: false
+    controlsLocked: true
+    mode: SensorCords
+    activationSlot: jumpsuit

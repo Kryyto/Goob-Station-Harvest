@@ -185,148 +185,81 @@ public sealed class FollowMeAction : IBehaviorNode
 }
 
 /// <summary>
-/// Picks a point away from the android and moves there, avoiding space and dangerous atmos.
+/// Runs away from danger: to the reachable tile, through doors the android can open, that is farthest from
+/// what hurt it (the attacker, or where the hazard was felt), on breathable air. A new spot is picked when
+/// it gets there while still in danger, every few seconds, or when the way is blocked.
 /// </summary>
 public sealed class FleeAction : IBehaviorNode
 {
-    private readonly MoveToAction _moveTo;
-    private readonly AtmosphereSystem _atmosphere;
-    private readonly SharedMapSystem _mapSystem;
-    private readonly SharedPhysicsSystem _physics;
-    private readonly IEntityManager _entityManager;
+    private const float SearchRange = 20f;
+    private const int MaxVisited = 1500;
+    private const int SafetyChecks = 40;
+    private static readonly TimeSpan Repick = TimeSpan.FromSeconds(10);
 
-    /// <summary>
-    /// Creates a flee action that prefers safe tiles while moving away from danger.
-    /// </summary>
+    private readonly MoveToAction _moveTo;
+
     public FleeAction()
     {
-        _atmosphere = EntitySystem.Get<AtmosphereSystem>();
-        _mapSystem = EntitySystem.Get<SharedMapSystem>();
-        _physics = EntitySystem.Get<SharedPhysicsSystem>();
-        _entityManager = IoCManager.Resolve<IEntityManager>();
-
-        _moveTo = new MoveToAction((owner, blackboard) =>
+        _moveTo = new MoveToAction((owner, bb) =>
         {
-            if (!_entityManager.TryGetComponent<AndroidComponent>(owner, out var android))
+            if (!bb.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android))
                 return null;
 
-            if (!_entityManager.TryGetComponent<TransformComponent>(owner, out var xform))
-                return null;
-
-            if (android.FleeTarget.IsValid(_entityManager) && !android.FleeTarget.Equals(EntityCoordinates.Invalid))
+            if (android.FleeTarget.IsValid(bb.EntityManager) && bb.Timing.CurTime < android.FleeTargetUntil)
                 return android.FleeTarget;
 
-            var target = PickSafeFleePoint(owner, xform, blackboard);
-            android.FleeTarget = target ?? xform.Coordinates;
-            return android.FleeTarget;
-        });
+            android.FleeTarget = PickFleePoint(owner, android, bb) ?? EntityCoordinates.Invalid;
+            android.FleeTargetUntil = bb.Timing.CurTime + Repick;
+            return android.FleeTarget.IsValid(bb.EntityManager) ? android.FleeTarget : null;
+        }, 1f, (owner, bb) => ResetTarget(owner, bb));
     }
 
     /// <inheritdoc />
     public BehaviorStatus Tick(EntityUid owner, AndroidBlackboard blackboard, float frameTime)
     {
         var status = _moveTo.Tick(owner, blackboard, frameTime);
-
         if (status == BehaviorStatus.Success)
-        {
-            if (_entityManager.TryGetComponent<AndroidComponent>(owner, out var android))
-                android.FleeTarget = EntityCoordinates.Invalid;
+            ResetTarget(owner, blackboard);
 
-            return BehaviorStatus.Success;
-        }
-
-        return status;
+        // Nowhere to run to: the android cowers where it is rather than going back to work in danger.
+        return status == BehaviorStatus.Failure ? BehaviorStatus.Running : status;
     }
 
-    private EntityCoordinates? PickSafeFleePoint(EntityUid owner, TransformComponent xform, AndroidBlackboard blackboard)
+    private static void ResetTarget(EntityUid owner, AndroidBlackboard bb)
     {
-        var gridUid = xform.GridUid;
-        var mapId = xform.MapID;
+        if (bb.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android))
+            android.FleeTarget = EntityCoordinates.Invalid;
+    }
 
-        if (gridUid is null && !TryGetMapEntity(mapId, out _))
+    private static EntityCoordinates? PickFleePoint(EntityUid owner, AndroidComponent android, AndroidBlackboard bb)
+    {
+        if (bb.CoordinatesOf(owner) is not { } here)
             return null;
 
-        var transform = _entityManager.System<SharedTransformSystem>();
-        var ownerWorld = transform.ToMapCoordinates(xform.Coordinates).Position;
-        var actualGrid = gridUid ?? xform.ParentUid;
+        var danger = bb.Transform.ToMapCoordinates(android.FleeFrom ?? here).Position;
+        var origin = bb.Transform.ToMapCoordinates(here).Position;
+        var candidates = AndroidSpots.ReachableTiles(bb, owner, here, SearchRange, MaxVisited)
+            .Select(c => (Coords: c, World: bb.Transform.ToMapCoordinates(c).Position))
+            // Away from the danger first, then not needlessly far.
+            .OrderByDescending(c => (c.World - danger).Length() - 0.25f * (c.World - origin).Length())
+            .Take(SafetyChecks)
+            .ToList();
 
-        // Rotate the sampled directions by a random offset so different androids
-        // and different flee attempts don't always prefer the same orientation.
-        var baseAngle = blackboard.Random.NextFloat() * MathF.Tau;
-
-        // Cast rays in several directions and pick the first open, safe tile.
-        // This prevents fleeing straight into walls or room corners.
-        for (var distance = 8f; distance >= 1f; distance -= 1f)
+        var atmosphere = bb.EntityManager.System<AtmosphereSystem>();
+        var maps = bb.EntityManager.System<SharedMapSystem>();
+        var mapUid = bb.Transform.GetMap(here);
+        foreach (var (coords, _) in candidates)
         {
-            for (var i = 0; i < 12; i++)
-            {
-                var angle = baseAngle + MathF.Tau * i / 12f;
-                var dir = new Vector2(MathF.Cos(angle), MathF.Sin(angle));
-                var candidateWorld = ownerWorld + dir * distance;
+            if (!bb.EntityManager.TryGetComponent<MapGridComponent>(coords.EntityId, out var grid))
+                continue;
 
-                var ray = new CollisionRay(ownerWorld, dir, (int) CollisionGroup.MobMask);
-
-                bool Ignored(EntityUid hit)
-                {
-                    // Other mobs and climbable furniture don't count as walls for this check.
-                    return hit == owner ||
-                           _entityManager.HasComponent<MobStateComponent>(hit) ||
-                           _entityManager.HasComponent<ClimbableComponent>(hit);
-                }
-
-                if (_physics.IntersectRayWithPredicate(mapId, ray, distance, Ignored, true).Any())
-                    continue;
-
-                var candidate = transform.ToCoordinates(
-                    new Entity<TransformComponent?>(actualGrid, null),
-                    new MapCoordinates(candidateWorld, mapId));
-
-                if (!candidate.IsValid(_entityManager))
-                    continue;
-
-                if (gridUid is not null && !IsTileSafe(gridUid.Value, mapId, candidate))
-                    continue;
-
-                return candidate;
-            }
+            var tile = maps.CoordinatesToTile(coords.EntityId, grid, coords);
+            if (atmosphere.GetTileMixture(coords.EntityId, mapUid, tile) is { } air && atmosphere.IsMixtureProbablySafe(air))
+                return coords;
         }
 
-        // If no safe distant tile was found, at least stay where we are instead
-        // of running into space or superheated atmos.
-        return null;
-    }
-
-    private bool IsTileSafe(EntityUid gridUid, MapId mapId, EntityCoordinates coordinates)
-    {
-        Entity<MapAtmosphereComponent?>? mapAtmos = null;
-
-        if (_mapSystem.TryGetMap(mapId, out var mapUid) && mapUid is { } map)
-        {
-            _entityManager.TryGetComponent(map, out MapAtmosphereComponent? mapComp);
-            mapAtmos = new Entity<MapAtmosphereComponent?>(map, mapComp);
-        }
-
-        if (!_entityManager.TryGetComponent<MapGridComponent>(gridUid, out var mapGrid))
-            return false;
-
-        var tile = _mapSystem.CoordinatesToTile(gridUid, mapGrid, coordinates);
-
-        _entityManager.TryGetComponent(gridUid, out GridAtmosphereComponent? gridComp);
-        var gridAtmos = new Entity<GridAtmosphereComponent?>(gridUid, gridComp);
-
-        if (_atmosphere.IsTileSpace(gridAtmos, mapAtmos, tile))
-            return false;
-
-        var mixture = _atmosphere.GetTileMixture(gridAtmos, mapAtmos, tile);
-        if (mixture is null)
-            return false;
-
-        return _atmosphere.IsMixtureProbablySafe(mixture);
-    }
-
-    private bool TryGetMapEntity(MapId mapId, out EntityUid? mapUid)
-    {
-        return _mapSystem.TryGetMap(mapId, out mapUid);
+        // No breathable air in reach: still get away from what hurt it.
+        return candidates.Count > 0 && (candidates[0].World - origin).Length() > 1f ? candidates[0].Coords : null;
     }
 }
 

@@ -57,6 +57,10 @@ public sealed partial class PathfindingSystem
             var isAccess = (end.Data.Flags & PathfindingBreadcrumbFlag.Access) != 0x0;
             var isClimb = (end.Data.Flags & PathfindingBreadcrumbFlag.Climb) != 0x0;
 
+            // Harvest: a door the requester cannot open is a wall, unless it can be pried.
+            if (isDoor && (request.Flags & PathFlags.Prying) == 0x0 && IsBlockedDoor(request, end))
+                return 0f;
+
             // TODO: Handling power + door prying
             // Door we should be able to open
             if (isDoor && !isAccess && (request.Flags & PathFlags.Interact) != 0x0)
@@ -79,7 +83,8 @@ public sealed partial class PathfindingSystem
             }
             else if (isClimb && (request.Flags & PathFlags.Climbing) != 0x0)
             {
-                modifier += 0.5f;
+                // Harvest: androids (access requests) climb tables only when there is no other way.
+                modifier += (request.Flags & PathFlags.Access) != 0x0 ? 20f : 0.5f;
             }
             else
             {

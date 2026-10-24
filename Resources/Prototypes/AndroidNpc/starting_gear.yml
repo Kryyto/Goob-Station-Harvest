@@ -44,3 +44,20 @@
     id: BartenderPDA
     ears: ClothingHeadsetService
     back: ClothingBackpackSatchel
+
+- type: startingGear
+  id: ParamedicAndroidGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAndroidParamedic
+    shoes: ClothingShoesColorBlue
+    head: ClothingHeadHatParamedicsoft
+    outerClothing: ClothingOuterCoatParamedicWB
+    id: ParamedicPDA
+    ears: ClothingHeadsetMedical
+    back: ClothingBackpackSatchelMedical
+  storage:
+    back:
+    - Brutepack
+    - Ointment
+    - EmergencyMedipen
+    - EmergencyMedipen

@@ -12,6 +12,7 @@ using Content.Shared.Access.Systems;
 using Content.Shared.Climbing.Components;
 using Content.Shared.Doors.Components;
 using Content.Shared.Doors.Systems;
+using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Components;
 using Robust.Shared.Physics.Components;
@@ -44,7 +45,20 @@ public sealed class MoveToAction : IBehaviorNode
     {
         public EntityCoordinates? LastResolvedTarget;
         public bool ClimbAllowed;
+
+        // Progress watchdog: the closest the android got to the current target, and when.
+        public EntityCoordinates? WatchedTarget;
+        public float BestDistance;
+        public TimeSpan BestAt;
     }
+
+    /// <summary>
+    /// A move that has not brought the android half a tile closer for this long has failed: it is walking in
+    /// circles around something it cannot reach (an item under a machine, a customer behind a counter).
+    /// </summary>
+    private static readonly TimeSpan StuckTime = TimeSpan.FromSeconds(8);
+
+    private const float DoorAheadRange = 1.3f;
 
     private readonly Dictionary<EntityUid, MoveState> _states = new();
     private MoveState _state = new();
@@ -184,9 +198,7 @@ public sealed class MoveToAction : IBehaviorNode
 
             // Climbing tables and railings is only used as a last resort when no walkable
             // path is found. The first attempt is always made without the climbing flag.
-            if (_state.ClimbAllowed &&
-                blackboard.EntityManager.TryGetComponent<ClimbingComponent>(owner, out var climbing) &&
-                climbing.CanClimb)
+            if (_state.ClimbAllowed && CanClimb(owner, blackboard))
             {
                 steering.Flags |= PathFlags.Climbing;
             }
@@ -231,6 +243,15 @@ public sealed class MoveToAction : IBehaviorNode
             case SteeringStatus.Moving:
                 sawmill.Debug($"[MoveTo] Moving toward {steering.Coordinates} (distance {diagnostics.distance:F2})");
                 UpdatePathProgress(owner, blackboard, ownerPos);
+                if (IsStuck(blackboard, resolvedTarget, ownerPos))
+                {
+                    sawmill.Debug($"[MoveTo] no progress towards {resolvedTarget} for {StuckTime.TotalSeconds} s; giving up");
+                    _state.WatchedTarget = null;
+                    blackboard.Steering.Unregister(owner, steering);
+                    FailAndCleanup(owner, blackboard);
+                    return BehaviorStatus.Failure;
+                }
+
                 return BehaviorStatus.Running;
 
             default:
@@ -257,9 +278,7 @@ public sealed class MoveToAction : IBehaviorNode
         steering.Flags |= PathFlags.Interact | PathFlags.Access;
 
         // Climbing is only allowed as a last resort; set it here so the next path request uses it.
-        if (_state.ClimbAllowed &&
-            blackboard.EntityManager.TryGetComponent<ClimbingComponent>(owner, out var climbing) &&
-            climbing.CanClimb)
+        if (_state.ClimbAllowed && CanClimb(owner, blackboard))
         {
             steering.Flags |= PathFlags.Climbing;
         }
@@ -343,6 +362,26 @@ public sealed class MoveToAction : IBehaviorNode
         inventory.ConsecutiveNoPathCount = 0;
         inventory.NoPathStartTime = TimeSpan.Zero;
         inventory.NoPathLastReregisterTime = TimeSpan.Zero;
+    }
+
+    private bool IsStuck(AndroidBlackboard blackboard, EntityCoordinates target, Vector2 ownerPos)
+    {
+        var now = blackboard.Timing.CurTime;
+        var targetPos = blackboard.Transform.ToMapCoordinates(target).Position;
+        var distance = (targetPos - ownerPos).Length();
+
+        // A new target, a target that moved away (someone being followed), or real progress restarts the clock.
+        if (_state.WatchedTarget is not { } watched ||
+            (blackboard.Transform.ToMapCoordinates(watched).Position - targetPos).Length() > 1f ||
+            distance < _state.BestDistance - 0.5f)
+        {
+            _state.WatchedTarget = target;
+            _state.BestDistance = distance;
+            _state.BestAt = now;
+            return false;
+        }
+
+        return now - _state.BestAt > StuckTime;
     }
 
     private static void UpdatePathProgress(EntityUid owner, AndroidBlackboard blackboard, Vector2 ownerPos)
@@ -560,6 +599,15 @@ public sealed class MoveToAction : IBehaviorNode
     /// Bolted doors, blast doors with no interaction, and doors lacking the required access are treated
     /// as impassable so the android stops ramming them and the tree can fall back.
     /// </summary>
+    /// <summary>
+    /// Climbing over tables is a last resort, and impossible while dragging someone.
+    /// </summary>
+    private static bool CanClimb(EntityUid owner, AndroidBlackboard blackboard)
+    {
+        return blackboard.EntityManager.TryGetComponent<ClimbingComponent>(owner, out var climbing) && climbing.CanClimb &&
+               !(blackboard.EntityManager.TryGetComponent<PullerComponent>(owner, out var puller) && puller.Pulling != null);
+    }
+
     private static bool IsPathAccessible(EntityUid owner, NPCSteeringComponent steering, AndroidBlackboard blackboard)
     {
         var access = blackboard.EntityManager.System<AccessReaderSystem>();
@@ -604,17 +652,13 @@ public sealed class MoveToAction : IBehaviorNode
     }
 
     /// <summary>
-    /// Tries to "click" closed doors within interaction range so the android opens them like a player
-    /// instead of walking into them and waiting for bump logic. Respects access, bolts and broken doors.
-    /// </summary>
-    /// <summary>
-    /// Opens closed doors the android is about to walk through, like a player clicking them. Only doors on the
-    /// next steps of the current path count: a door that merely stands next to the android (seated at a bar
-    /// next to an airlock) is left alone instead of being reopened forever.
+    /// Opens closed doors the android is about to walk through, like a player clicking them: doors on the next
+    /// steps of the path, and a door right ahead of it (a body being dragged can keep it from bumping the door open).
+    /// A door that merely stands next to the android (seated at a bar next to an airlock) is left alone.
     /// </summary>
     private static void TryOpenDoorsOnPath(EntityUid owner, AndroidBlackboard blackboard, NPCSteeringComponent steering)
     {
-        if (steering.CurrentPath.Count == 0 || !blackboard.EntityManager.TryGetComponent<TransformComponent>(owner, out var ownerXform))
+        if (!blackboard.EntityManager.TryGetComponent<TransformComponent>(owner, out var ownerXform))
             return;
 
         var doors = blackboard.EntityManager.System<SharedDoorSystem>();
@@ -622,10 +666,27 @@ public sealed class MoveToAction : IBehaviorNode
         var mapSys = blackboard.EntityManager.System<SharedMapSystem>();
         var ownerPos = blackboard.Transform.GetWorldPosition(ownerXform);
 
-        foreach (var node in steering.CurrentPath.Take(3))
+        var candidates = steering.CurrentPath.Take(3)
+            .Select(node => FindDoorInPoly(node, blackboard, mapSys))
+            .OfType<EntityUid>()
+            .ToHashSet();
+
+        var waypoint = steering.CurrentPath.TryPeek(out var next) ? next.Coordinates : steering.Coordinates;
+        var heading = blackboard.Transform.ToMapCoordinates(waypoint).Position - ownerPos;
+        if (heading.LengthSquared() > 0.01f)
         {
-            if (FindDoorInPoly(node, blackboard, mapSys) is not { } door ||
-                !blackboard.EntityManager.TryGetComponent<DoorComponent>(door, out var doorComp) ||
+            foreach (var (door, _) in blackboard.EntityManager.System<EntityLookupSystem>()
+                         .GetEntitiesInRange<DoorComponent>(ownerXform.Coordinates, DoorAheadRange, LookupFlags.Static))
+            {
+                var toDoor = blackboard.Transform.GetWorldPosition(door) - ownerPos;
+                if (Vector2.Dot(Vector2.Normalize(toDoor), Vector2.Normalize(heading)) > 0.5f)
+                    candidates.Add(door);
+            }
+        }
+
+        foreach (var door in candidates)
+        {
+            if (!blackboard.EntityManager.TryGetComponent<DoorComponent>(door, out var doorComp) ||
                 doorComp.State is DoorState.Open or DoorState.Opening ||
                 !doorComp.BumpOpen && !doorComp.ClickOpen ||
                 doors.IsBolted(door) ||

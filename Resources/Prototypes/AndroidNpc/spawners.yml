@@ -54,3 +54,16 @@
     - state: bartender
   - type: AndroidSpawner
     job: Bartender
+
+- type: entity
+  id: SpawnPointAndroidParamedic
+  parent: SpawnPointAndroid
+  name: android spawner
+  suffix: Paramedic
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: paramedic
+  - type: AndroidSpawner
+    job: Paramedic

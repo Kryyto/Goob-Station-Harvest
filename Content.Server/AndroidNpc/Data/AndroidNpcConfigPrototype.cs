@@ -56,11 +56,6 @@ public sealed partial class AndroidNpcConfigPrototype : IPrototype
     [DataField("unknownSpeakerName")] public string UnknownSpeakerName { get; private set; } = "someone";
 
     /// <summary>
-    /// Job access tags that can issue orders to any android.
-    /// </summary>
-    [DataField("universalOrderAccess")] public List<string> UniversalOrderAccess { get; private set; } = new();
-
-    /// <summary>
     /// Delay after round start before androids may spawn, in seconds.
     /// </summary>
     [DataField("spawnDelaySeconds")] public float SpawnDelaySeconds { get; private set; } = 30f;
@@ -219,6 +214,16 @@ public sealed partial class AndroidNpcConfigPrototype : IPrototype
     /// How long an android evacuates after an emergency is reported to it, in seconds.
     /// </summary>
     [DataField("emergencyFleeSeconds")] public float EmergencyFleeSeconds { get; private set; } = 30f;
+
+    /// <summary>
+    /// Damage one attacker must deal before the android fights back, until the attacker is in critical condition.
+    /// </summary>
+    [DataField("retaliationDamage")] public float RetaliationDamage { get; private set; } = 50f;
+
+    /// <summary>
+    /// The android stops fighting after losing sight of its attacker for this long, in seconds.
+    /// </summary>
+    [DataField("retaliationGiveUpSeconds")] public float RetaliationGiveUpSeconds { get; private set; } = 30f;
 
     /// <summary>
     /// Radio channel used to report threats against the android.

@@ -47,6 +47,18 @@ public sealed partial class AndroidCustomerOrderComponent : Component
     public bool Delivered;
 
     /// <summary>
+    /// The item a service android put down for this customer; taken before anything else lying around.
+    /// </summary>
+    [ViewVariables]
+    public EntityUid? ServedItem;
+
+    /// <summary>
+    /// Items the android failed to eat or drink (sealed packets, wrong containers); never tried again.
+    /// </summary>
+    [ViewVariables]
+    public HashSet<EntityUid> Refused = new();
+
+    /// <summary>
     /// Item the android is currently eating/drinking, if it has found a matching order nearby.
     /// Cleared (and the order finished) once the item is empty or deleted.
     /// </summary>

@@ -27,10 +27,11 @@ public sealed class AndroidBreakSystem : EntitySystem
     [Dependency] private readonly SharedBuckleSystem _buckle = default!;
     [Dependency] private readonly NPCSteeringSystem _steering = default!;
     [Dependency] private readonly ClaimedTargetsSystem _claims = default!;
+    [Dependency] private readonly AndroidCustomerSystem _customer = default!;
 
     /// <summary>
-    /// Ends the android's break, wherever it is in it: frees and leaves its chair, puts out the cigarette
-    /// and resets the break state. The next break timer is left to the caller.
+    /// Ends the android's break, wherever it is in it: frees and leaves its chair, puts out the cigarette,
+    /// drops any pending bar/kitchen order and resets the break state. The next break timer is left to the caller.
     /// </summary>
     public void EndBreak(EntityUid uid)
     {
@@ -44,6 +45,7 @@ public sealed class AndroidBreakSystem : EntitySystem
             _buckle.TryUnbuckle(uid, uid);
 
         StopSmoking(uid);
+        _customer.CancelOrder(uid);
         _steering.Unregister(uid);
 
         android.BreakState = AndroidBreakState.None;

@@ -42,7 +42,9 @@ public static class OrderTree
                     (owner, bb) => bb.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android) ? android.PersonalSpace : 1.5f),
                 GoTo("GoToDepartment", AndroidOrderType.GoToDepartment, GetDepartmentTarget, (_, _) => 0.5f),
                 // Go where a mess was reported, then resume work so the scan picks it up.
-                GoTo("CleanArea", AndroidOrderType.CleanArea, GetCleanAreaTarget, (_, _) => 1f)
+                GoTo("CleanArea", AndroidOrderType.CleanArea, GetCleanAreaTarget, (_, _) => 1f),
+                // A paramedic goes where a casualty was reported, then its rescue branch finds the patient.
+                GoTo("RespondToCall", AndroidOrderType.RespondToCall, GetCleanAreaTarget, (_, _) => 1f)
             }
         };
     }
@@ -71,9 +73,11 @@ public static class OrderTree
             {
                 new SequenceNode
                 {
+                    // Beacons often stand on a counter or a table: aim at the walkable tile next to them.
                     new MoveToAction(
-                        (owner, bb) => bb.EntityManager.TryGetComponent<AndroidOrderComponent>(owner, out var order)
-                            ? target(owner, bb, order)
+                        (owner, bb) => bb.EntityManager.TryGetComponent<AndroidOrderComponent>(owner, out var order) &&
+                                       target(owner, bb, order) is { } coords
+                            ? AndroidSpots.NearestFreeTile(bb, coords) ?? coords
                             : null,
                         range),
                     Clear()
@@ -103,11 +107,8 @@ public static class OrderTree
         if (locator.TryFindBeacon(origin, order.Target, out var coords))
             return coords;
 
-        // Spoken names such as "l'infirmerie" go through the same location aliases as conversation.
-        return bb.System<AndroidDialogueSystem>().Classifier.FindLocation(order.Target) is { } location &&
-               locator.TryFindBeacon(origin, location, out coords)
-            ? coords
-            : null;
+        // Spoken names such as "l'infirmerie" go through the location aliases, then the beacons' map names.
+        return locator.TryFindPlace(origin, order.Target, bb.System<AndroidDialogueSystem>().Classifier, out _, out coords) ? coords : null;
     }
 
     private static EntityCoordinates? GetCleanAreaTarget(EntityUid owner, AndroidBlackboard bb, AndroidOrderComponent order)

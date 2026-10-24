@@ -298,7 +298,7 @@ public sealed class AndroidNpcLogicTests
     }
 
     [Test]
-    public async Task UnauthorizedOrder_FarAway_IsRejected()
+    public async Task Order_FromAnySpeaker_IsObeyed()
     {
         var pair = await PoolManager.GetServerClient();
         var server = pair.Server;
@@ -329,53 +329,9 @@ public sealed class AndroidNpcLogicTests
 
         await server.WaitAssertion(() =>
         {
-            Assert.That(sEnt.HasComponent<AndroidOrderComponent>(android), Is.False, "An unauthorized far-away speaker should not be able to order the android");
-        });
-
-        await pair.CleanReturnAsync();
-    }
-
-    [Test]
-    public async Task AuthorizedOrder_ByAccess_IsAcceptedEvenFarAway()
-    {
-        var pair = await PoolManager.GetServerClient();
-        var server = pair.Server;
-        var testMap = await pair.CreateTestMap();
-        var sEnt = server.EntMan;
-
-        EntityUid android = default;
-        EntityUid speaker = default;
-
-        await server.WaitAssertion(() =>
-        {
-            android = sEnt.SpawnEntity("MobAndroidJanitor", testMap.MapCoords);
-            speaker = sEnt.SpawnEntity("MobHuman", testMap.MapCoords);
-            SetAndroidIdentity(sEnt, android, "Gerard");
-
-            var xform = sEnt.System<SharedTransformSystem>();
-            xform.SetWorldPosition(speaker, testMap.MapCoords.Position + new Vector2(100f, 100f));
-
-            var mindSys = server.System<MindSystem>();
-            var mind = mindSys.CreateMind(null);
-            mindSys.TransferTo(mind.Owner, speaker, false, false);
-
-            sEnt.AddComponent<AccessComponent>(speaker);
-            sEnt.System<AccessSystem>().TrySetTags(speaker, new List<ProtoId<AccessLevelPrototype>> { "Captain" });
-        });
-
-        await server.WaitRunTicks(2);
-
-        await server.WaitAssertion(() =>
-        {
-            sEnt.EventBus.RaiseLocalEvent(android, new ListenEvent("Gerard suis-moi", speaker));
-        });
-
-        await server.WaitRunTicks(2);
-
-        await server.WaitAssertion(() =>
-        {
-            Assert.That(sEnt.TryGetComponent<AndroidOrderComponent>(android, out var order), Is.True, "A speaker with the right access tag should be able to order the android");
-            Assert.That(order.OrderType, Is.EqualTo(AndroidOrderType.FollowMe));
+            // Anyone who can be heard may give orders: there is no access or rank check.
+            Assert.That(sEnt.TryGetComponent<AndroidOrderComponent>(android, out var order), Is.True, "A speaker without any access is obeyed");
+            Assert.That(order!.OrderType, Is.EqualTo(AndroidOrderType.FollowMe));
             Assert.That(order.Issuer, Is.EqualTo(speaker));
         });
 

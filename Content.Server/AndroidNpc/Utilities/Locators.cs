@@ -3,11 +3,19 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Content.Server.AndroidNpc.Components;
 using Content.Server.AndroidNpc.Data;
 using Content.Server.AndroidNpc.BehaviorTree;
 using Content.Server.NPC.Pathfinding;
+using Content.Shared.Access;
+using Content.Shared.Access.Components;
+using Content.Shared.Access.Systems;
 using Content.Shared.Doors.Components;
+using Content.Shared.Doors.Systems;
+using Content.Shared.NPC;
+using Content.Shared.StationRecords;
+using Robust.Shared.Prototypes;
 using Content.Shared.Humanoid;
 using Content.Shared.Pinpointer;
 using Robust.Shared.GameObjects;
@@ -129,6 +137,74 @@ public sealed class NavMapBeaconLocator
         entity = bestUid;
         coordinates = _entityManager.GetComponent<TransformComponent>(bestUid).Coordinates;
         return true;
+    }
+
+    /// <summary>
+    /// Finds the place a message names: a known alias ("l'infirmerie" is medical) or any beacon's map name.
+    /// <paramref name="name"/> is the beacon's name as shown on the station map.
+    /// </summary>
+    public bool TryFindPlace(
+        EntityCoordinates origin,
+        string text,
+        AndroidIntentClassifier classifier,
+        [NotNullWhen(true)] out string? name,
+        [NotNullWhen(true)] out EntityCoordinates? coordinates)
+    {
+        if (classifier.FindLocation(text) is { } location && TryFindBeacon(origin, location, out var beacon, out coordinates))
+        {
+            var nav = _entityManager.GetComponent<NavMapBeaconComponent>(beacon.Value);
+            name = nav.Text ?? (nav.DefaultText is { } locId ? Loc.GetString(locId) : location);
+            return true;
+        }
+
+        return TryFindBeaconInText(origin, text, out name, out coordinates);
+    }
+
+    /// <summary>
+    /// Finds a place by the name of its beacon as shown on the station map ("il y a un blessé en chimie",
+    /// "go to atmos"): the longest beacon name the text contains as whole words, on the android's grid.
+    /// </summary>
+    public bool TryFindBeaconInText(
+        EntityCoordinates origin,
+        string text,
+        [NotNullWhen(true)] out string? name,
+        [NotNullWhen(true)] out EntityCoordinates? coordinates)
+    {
+        name = null;
+        coordinates = null;
+
+        if (!TryGetOriginGrid(origin, out var originGridUid))
+            return false;
+
+        var folded = $" {string.Join(' ', Regex.Split(AndroidIntentClassifier.Fold(text), @"[^\p{L}\p{N}]+"))} ";
+        var bestLength = 0;
+        var bestDist = float.MaxValue;
+        var query = _entityManager.AllEntityQueryEnumerator<NavMapBeaconComponent, TransformComponent>();
+
+        while (query.MoveNext(out var uid, out var beacon, out var xform))
+        {
+            if (!beacon.Enabled || xform.GridUid != originGridUid)
+                continue;
+
+            var label = beacon.Text ?? (beacon.DefaultText is { } locId ? Loc.GetString(locId) : null);
+            if (string.IsNullOrWhiteSpace(label))
+                continue;
+
+            var key = string.Join(' ', Regex.Split(AndroidIntentClassifier.Fold(label), @"[^\p{L}\p{N}]+").Where(t => t.Length > 0));
+            if (key.Length < 3 || key.Length < bestLength || !folded.Contains($" {key} ", StringComparison.Ordinal))
+                continue;
+
+            var dist = (xform.Coordinates.Position - origin.Position).LengthSquared();
+            if (key.Length == bestLength && dist >= bestDist)
+                continue;
+
+            bestLength = key.Length;
+            bestDist = dist;
+            name = label;
+            coordinates = xform.Coordinates;
+        }
+
+        return name != null;
     }
 
     /// <summary>
@@ -411,6 +487,80 @@ public static class AndroidSpots
 {
     private const float MinSpacing = 0.9f;
     private const int MaxVisited = 200;
+
+    /// <summary>
+    /// Free tiles reachable from the point, walking through doors the android can open, up to a distance.
+    /// </summary>
+    public static List<EntityCoordinates> ReachableTiles(AndroidBlackboard blackboard, EntityUid owner, EntityCoordinates center, float maxDistance, int maxVisited)
+    {
+        var result = new List<EntityCoordinates>();
+        if (FindStartPoly(blackboard, center) is not { } start ||
+            !blackboard.EntityManager.TryGetComponent<MapGridComponent>(start.GraphUid, out var grid))
+        {
+            return result;
+        }
+
+        var mapSys = blackboard.EntityManager.System<SharedMapSystem>();
+        var access = blackboard.EntityManager.System<AccessReaderSystem>();
+        var tags = access.FindAccessTags(owner);
+        var visited = new HashSet<PathPoly> { start };
+        var queue = new Queue<PathPoly>();
+        queue.Enqueue(start);
+
+        while (queue.TryDequeue(out var poly) && visited.Count < maxVisited)
+        {
+            if (poly.Data.IsFreeSpace)
+                result.Add(poly.Coordinates);
+
+            foreach (var next in poly.Neighbors)
+            {
+                if ((next.Box.Center - start.Box.Center).Length() > maxDistance ||
+                    !next.Data.IsFreeSpace && !IsPassableDoor(next, grid, mapSys, blackboard, access, tags) ||
+                    !visited.Add(next))
+                {
+                    continue;
+                }
+
+                queue.Enqueue(next);
+            }
+        }
+
+        return result;
+    }
+
+    private static bool IsPassableDoor(
+        PathPoly poly,
+        MapGridComponent grid,
+        SharedMapSystem mapSys,
+        AndroidBlackboard blackboard,
+        AccessReaderSystem access,
+        ICollection<ProtoId<AccessLevelPrototype>> tags)
+    {
+        if ((poly.Data.Flags & PathfindingBreadcrumbFlag.Door) == 0)
+            return false;
+
+        foreach (var ent in mapSys.GetLocalAnchoredEntities(poly.GraphUid, grid, poly.Box))
+        {
+            if (!blackboard.EntityManager.TryGetComponent<DoorComponent>(ent, out var door))
+                continue;
+
+            return door.State is DoorState.Open or DoorState.Opening ||
+                   (door.BumpOpen || door.ClickOpen) &&
+                   !blackboard.EntityManager.System<SharedDoorSystem>().IsBolted(ent) &&
+                   (!blackboard.EntityManager.TryGetComponent<AccessReaderComponent>(ent, out var reader) ||
+                    access.IsAllowed(tags, Array.Empty<StationRecordKey>(), ent, reader));
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// The walkable tile nearest to a point, e.g. next to a beacon standing on a counter or a table.
+    /// </summary>
+    public static EntityCoordinates? NearestFreeTile(AndroidBlackboard blackboard, EntityCoordinates center)
+    {
+        return FindStartPoly(blackboard, center)?.Coordinates;
+    }
 
     public static EntityCoordinates? PickFreeTile(AndroidBlackboard blackboard, EntityUid owner, EntityCoordinates center, float maxDistance)
     {

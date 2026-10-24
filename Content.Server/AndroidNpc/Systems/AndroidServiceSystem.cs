@@ -46,6 +46,25 @@ public sealed class AndroidServiceSystem : EntitySystem
     private const float DefaultPrepSeconds = 6f;
     private const float TipSearchRange = 5f;
 
+    private readonly Dictionary<AndroidJob, AndroidMenuMatcher> _menus = new();
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<PrototypesReloadedEventArgs>(_ => _menus.Clear());
+    }
+
+    /// <summary>
+    /// The job's whole menu, hand-written entries first, built once.
+    /// </summary>
+    public AndroidMenuMatcher Menu(AndroidJob job)
+    {
+        if (!_menus.TryGetValue(job, out var menu))
+            _menus[job] = menu = new AndroidMenuMatcher(_prototypeManager.AndroidMenu(job), _prototypeManager);
+
+        return menu;
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -72,24 +91,21 @@ public sealed class AndroidServiceSystem : EntitySystem
     {
         substitution = null;
 
-        if (!TryComp<AndroidComponent>(worker, out var android) ||
-            _prototypeManager.AndroidJobData(android.Job) is not { Menu.Count: > 0 } job)
-        {
+        if (!TryComp<AndroidComponent>(worker, out var android) || Menu(android.Job) is not { } menu || !menu.Items.Any())
             return false;
-        }
 
-        var folded = AndroidIntentClassifier.Fold(request);
-        if (job.Menu.FirstOrDefault(m => Mentions(m, folded)) is { } item)
+        if (menu.Match(request, language, fuzzy: true) is { } item)
             return Enqueue(worker, customer, item.Item, item.PrepSeconds, language);
 
-        var fallback = job.FallbackMenu.Count > 0 ? _random.Pick(job.FallbackMenu) : _random.Pick(job.Menu).Item;
-        var prep = job.Menu.FirstOrDefault(m => m.Item == fallback)?.PrepSeconds ?? DefaultPrepSeconds;
+        var job = _prototypeManager.AndroidJobData(android.Job);
+        var fallback = job is { FallbackMenu.Count: > 0 } ? _random.Pick(job.FallbackMenu) : _random.Pick(menu.Items.ToList()).Item;
+        var prep = menu.Items.FirstOrDefault(m => m.Item == fallback)?.PrepSeconds ?? DefaultPrepSeconds;
 
         if (!Enqueue(worker, customer, fallback, prep, language, substituted: true))
             return false;
 
-        if (job.LinesFor(language) is { } lines && _dialogue.Pick(lines.UnknownOrder) is { } line)
-            substitution = AndroidData.Format(line, ("item", DisplayName(job, fallback, language)));
+        if (job?.LinesFor(language) is { } lines && _dialogue.Pick(lines.UnknownOrder) is { } line)
+            substitution = AndroidData.Format(line, ("item", MenuName(android.Job, fallback, language)));
 
         return true;
     }
@@ -97,31 +113,35 @@ public sealed class AndroidServiceSystem : EntitySystem
     /// <summary>
     /// What the android calls an item when speaking: the menu name in that language, or the entity name.
     /// </summary>
-    private string DisplayName(AndroidJobPrototype? job, EntProtoId item, string language)
+    public string MenuName(AndroidJob job, EntProtoId item, string language)
     {
-        return job?.MenuName(item, language) ??
+        return Menu(job).Items.FirstOrDefault(m => m.Item == item)?.Names.GetValueOrDefault(language) ??
                (_prototypeManager.TryIndex(item, out var proto) ? proto.Name : item.Id);
     }
 
     /// <summary>
-    /// Returns true if the text names an item on the job's menu.
+    /// Returns true if the text names an item on the job's menu, without allowing typos.
     /// </summary>
-    public bool MentionsMenuItem(AndroidJob job, string text)
+    public bool MentionsMenuItem(AndroidJob job, string text, string language)
     {
-        var folded = AndroidIntentClassifier.Fold(text);
-        return _prototypeManager.AndroidJobData(job)?.Menu.Any(m => Mentions(m, folded)) == true;
+        return Menu(job).Match(text, language, fuzzy: false) != null;
     }
 
-    private bool Mentions(AndroidMenuItem item, string folded)
+    /// <summary>
+    /// A few menu names to answer "what can you serve": the hand-written favourites first, then random picks.
+    /// </summary>
+    public List<string> MenuSample(AndroidJob job, string language, int count)
     {
-        if (_prototypeManager.TryIndex(item.Item, out var proto) &&
-            folded.Contains(AndroidIntentClassifier.Fold(proto.Name), StringComparison.Ordinal))
-        {
-            return true;
-        }
+        var featured = _prototypeManager.AndroidJobData(job)?.Menu.Select(m => m.Item).ToHashSet() ?? new();
+        var items = Menu(job).Items.ToList();
+        var others = items.Where(i => !featured.Contains(i.Item)).ToList();
+        _random.Shuffle(others);
 
-        return item.Names.Values.Any(name => folded.Contains(AndroidIntentClassifier.Fold(name), StringComparison.Ordinal)) ||
-               item.Patterns.Any(p => AndroidIntentClassifier.IsMatch(p, folded));
+        return items.Where(i => featured.Contains(i.Item)).Take(count / 2)
+            .Concat(others)
+            .Take(count)
+            .Select(i => MenuName(job, i.Item, language))
+            .ToList();
     }
 
     private bool Enqueue(EntityUid worker, EntityUid customer, EntProtoId item, float prepSeconds, string language, bool substituted = false)
@@ -129,7 +149,7 @@ public sealed class AndroidServiceSystem : EntitySystem
         if (!_prototypeManager.HasIndex(item) || !TryComp<AndroidComponent>(worker, out var android))
             return false;
 
-        var name = DisplayName(_prototypeManager.AndroidJobData(android.Job), item, language);
+        var name = MenuName(android.Job, item, language);
         var service = EnsureComp<AndroidServiceComponent>(worker);
         service.Pending.Enqueue(new AndroidServiceRequest(customer, Name(customer), item, name, prepSeconds, language, substituted));
         return true;
@@ -150,7 +170,7 @@ public sealed class AndroidServiceSystem : EntitySystem
         if (venue == null || !TryComp<TransformComponent>(worker, out var workerXform))
             return;
 
-        var menu = _prototypeManager.AndroidJobData(android.Job)?.Menu;
+        var menu = Menu(android.Job).Items;
         var query = EntityQueryEnumerator<AndroidCustomerOrderComponent, TransformComponent>();
 
         while (query.MoveNext(out var customer, out var order, out var xform))
@@ -166,14 +186,14 @@ public sealed class AndroidServiceSystem : EntitySystem
             if (service.Current?.Customer == customer || service.Pending.Any(r => r.Customer == customer))
                 continue;
 
-            Enqueue(worker, customer, order.RequestedItem, menu?.FirstOrDefault(m => m.Item == order.RequestedItem)?.PrepSeconds ?? DefaultPrepSeconds,
+            Enqueue(worker, customer, order.RequestedItem, menu.FirstOrDefault(m => m.Item == order.RequestedItem)?.PrepSeconds ?? DefaultPrepSeconds,
                 _prototypeManager.AndroidConfig().Language);
         }
     }
 
     /// <summary>
-    /// Selects the order to work on and returns where to walk to serve it (the customer), or null if there is
-    /// nothing to serve. The item is put down on the nearest counter next to the customer.
+    /// Selects the order to work on and returns where to walk to serve it, or null if there is nothing to serve.
+    /// The item is put down on the nearest counter or table next to the customer.
     /// </summary>
     public EntityCoordinates? GetServeCoordinates(EntityUid worker)
     {
@@ -193,8 +213,10 @@ public sealed class AndroidServiceSystem : EntitySystem
             service.DropCoordinates = FindDropCoordinates(next.Customer);
         }
 
+        // Walk to the counter or table next to the customer, reached from the venue's side, rather than out
+        // to the customer; only without such a surface does the order go to the customer's feet.
         return service.Current is { } request && TryComp<TransformComponent>(request.Customer, out var customerXform)
-            ? customerXform.Coordinates
+            ? service.DropCoordinates ?? customerXform.Coordinates
             : null;
     }
 
@@ -231,7 +253,10 @@ public sealed class AndroidServiceSystem : EntitySystem
             _openable.SetOpen(served, true, openable);
 
         if (TryComp<AndroidCustomerOrderComponent>(request.Customer, out var order))
+        {
             order.Delivered = true;
+            order.ServedItem = served;
+        }
 
         if (lines != null)
             _dialogue.SpeakRandom(worker, lines.Served, values);

@@ -21,6 +21,7 @@ using Content.Shared.Fluids.EntitySystems;
 using Content.Shared.Item;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory;
 using Content.Shared.Mobs.Components;
@@ -696,6 +697,53 @@ public sealed class AndroidInventorySystem : EntitySystem
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// Makes sure a hand is free, e.g. to pull a body: puts a held item in the bag, keeping the job's weapon
+    /// (the mop) in hand when possible, and drops one only when the bag is full.
+    /// </summary>
+    public bool TryFreeHand(EntityUid owner)
+    {
+        if (!_entityManager.TryGetComponent<HandsComponent>(owner, out var hands))
+            return false;
+
+        if (_hands.TryGetEmptyHand((owner, hands), out _))
+            return true;
+
+        var weapon = GetJobFor(owner)?.RetaliationWeapon;
+        var held = hands.Hands.Keys
+            .Select(hand => (Hand: hand, Item: _hands.GetHeldItem((owner, hands), hand)))
+            .Where(h => h.Item is { } item && !_entityManager.HasComponent<VirtualItemComponent>(item))
+            .OrderBy(h => _entityManager.GetComponent<MetaDataComponent>(h.Item!.Value).EntityPrototype?.ID == weapon?.Id)
+            .ToList();
+
+        foreach (var (_, item) in held)
+        {
+            if (TryStowItem(owner, item!.Value, hands))
+                return true;
+        }
+
+        return held.Count > 0 && _hands.TryDrop((owner, hands), held[0].Hand);
+    }
+
+    /// <summary>
+    /// Puts away whatever the android holds besides <paramref name="keep"/>, so a two-handed weapon can be wielded.
+    /// Items that do not fit in the bag are dropped.
+    /// </summary>
+    public void FreeOtherHands(EntityUid owner, EntityUid keep)
+    {
+        if (!_entityManager.TryGetComponent<HandsComponent>(owner, out var hands))
+            return;
+
+        foreach (var handId in hands.Hands.Keys.ToList())
+        {
+            if (_hands.GetHeldItem((owner, hands), handId) is not { } held || held == keep)
+                continue;
+
+            if (!TryStowItem(owner, held, hands))
+                _hands.TryDrop((owner, hands), handId);
+        }
     }
 
     /// <summary>

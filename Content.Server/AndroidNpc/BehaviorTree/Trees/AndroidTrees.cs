@@ -25,6 +25,17 @@ public static class AndroidTrees
                     (owner, bb) => bb.System<AndroidLifecycleSystem>().FinishLeaving(owner)),
                 new DoNode((owner, bb) => bb.System<AndroidLifecycleSystem>().FinishLeaving(owner))
             },
+            new SequenceNode("Retaliate")
+            {
+                new ConditionNode((owner, bb) => bb.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android) &&
+                                                 android.FightTarget != null),
+                new SelectorNode
+                {
+                    new TickNode((owner, bb) => bb.System<AndroidCombatSystem>().Attack(owner)),
+                    new MoveToAction((owner, bb) => bb.System<AndroidCombatSystem>().TargetCoordinates(owner),
+                        (owner, bb) => bb.System<AndroidCombatSystem>().ApproachRange(owner))
+                }
+            },
             new SequenceNode("Flee")
             {
                 new ConditionNode((owner, bb) => bb.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android) &&
@@ -37,6 +48,7 @@ public static class AndroidTrees
         var branches = job switch
         {
             AndroidJob.Janitor => JanitorTree.Branches(),
+            AndroidJob.Paramedic => MedicTree.Branches(),
             _ => ServiceTree.Branches(),
         };
 

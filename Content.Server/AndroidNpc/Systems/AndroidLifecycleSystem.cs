@@ -51,6 +51,7 @@ public sealed class AndroidLifecycleSystem : EntitySystem
         SubscribeLocalEvent<AndroidSpawnerComponent, MapInitEvent>(OnSpawnerMapInit);
         SubscribeLocalEvent<GameRunLevelChangedEvent>(OnRunLevelChanged);
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawned);
+        SubscribeLocalEvent<RulePlayerJobsAssignedEvent>(OnPlayersSpawned);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
         SubscribeLocalEvent<AndroidComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<AndroidComponent, ComponentShutdown>(OnAndroidShutdown);
@@ -80,6 +81,16 @@ public sealed class AndroidLifecycleSystem : EntitySystem
         _nextCheck = ev.New == GameRunLevel.InRound
             ? _timing.CurTime + TimeSpan.FromSeconds(_prototypeManager.AndroidConfig().SpawnDelaySeconds)
             : TimeSpan.MaxValue;
+    }
+
+    /// <summary>
+    /// The round-start crew has just spawned: fill the jobs left free right away.
+    /// </summary>
+    private void OnPlayersSpawned(RulePlayerJobsAssignedEvent ev)
+    {
+        var config = _prototypeManager.AndroidConfig();
+        if (config.Enabled && config.AutoSpawnEnabled)
+            FillFreeJobs(config);
     }
 
     private void OnRoundRestart(RoundRestartCleanupEvent ev)

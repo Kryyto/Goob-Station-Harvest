@@ -8,6 +8,7 @@ using Content.Server.AndroidNpc.Components;
 using Content.Server.AndroidNpc.Data;
 using Content.Server.AndroidNpc.Services;
 using Content.Server.AndroidNpc.Utilities;
+using Content.Shared.Damage;
 using Content.Server.Radio.EntitySystems;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -28,10 +29,16 @@ public sealed class AndroidConversationEvent : EntityEventArgs
     public readonly EntityUid Source;
     public readonly string Message;
 
-    public AndroidConversationEvent(EntityUid source, string message)
+    /// <summary>
+    /// Radio channel the message came on, answered on the same channel; null when spoken.
+    /// </summary>
+    public readonly ProtoId<RadioChannelPrototype>? Radio;
+
+    public AndroidConversationEvent(EntityUid source, string message, ProtoId<RadioChannelPrototype>? radio = null)
     {
         Source = source;
         Message = message;
+        Radio = radio;
     }
 }
 
@@ -51,6 +58,7 @@ public sealed class AndroidConversationSystem : EntitySystem
     [Dependency] private readonly AndroidInventorySystem _inventory = default!;
     [Dependency] private readonly RadioSystem _radio = default!;
     [Dependency] private readonly AndroidServiceSystem _service = default!;
+    [Dependency] private readonly AndroidMedicSystem _medic = default!;
 
     public const string ModelSource = "model";
     public const string FallbackSource = "fallback";
@@ -74,7 +82,8 @@ public sealed class AndroidConversationSystem : EntitySystem
         string Language,
         AndroidIntentMatch? Rule,
         int Tone,
-        string ConversationId);
+        string ConversationId,
+        ProtoId<RadioChannelPrototype>? Radio);
 
     public override void Initialize()
     {
@@ -133,12 +142,12 @@ public sealed class AndroidConversationSystem : EntitySystem
         // Naming something on a cook's or bartender's menu is an order, unless it is a question about the menu.
         if (rule?.Intent is not ("menu_question" or "complaint" or "directions" or "emergency") &&
             proto.Effects.FirstOrDefault(e => e.Value == AndroidConversationEffect.PrepareOrder).Key is { } orderIntent &&
-            _service.MentionsMenuItem(android.Job, text))
+            _service.MentionsMenuItem(android.Job, text, language))
         {
             rule = new AndroidIntentMatch(orderIntent, MenuSource);
         }
         var tone = Classifier.DetectTone(ev.Message);
-        var request = new PendingConversation(uid, ev.Source, ev.Message, text, language, rule, tone, proto.ID);
+        var request = new PendingConversation(uid, ev.Source, ev.Message, text, language, rule, tone, proto.ID, ev.Radio);
 
         var query = BuildQuery(proto, text, language);
 
@@ -272,7 +281,7 @@ public sealed class AndroidConversationSystem : EntitySystem
         Log.Debug($"[AndroidNpc] {ToPrettyString(request.Android)} heard \"{request.Text}\": intent={intent} ({source}), tone={tone}, lang={request.Language}, effect={effect}");
 
         if (!string.IsNullOrWhiteSpace(reply))
-            _dialogue.Reply(request.Android, reply);
+            _dialogue.Reply(request.Android, reply, request.Radio);
     }
 
     private string? ApplyEffect(
@@ -289,9 +298,6 @@ public sealed class AndroidConversationSystem : EntitySystem
             case AndroidConversationEffect.FollowMe:
             case AndroidConversationEffect.ReturnToWork:
             case AndroidConversationEffect.CleanArea:
-                if (!_orders.CanOrder(request.Speaker, android))
-                    return lines?.NotAuthorized ?? reply;
-
                 if (effect == AndroidConversationEffect.FollowMe)
                     _orders.IssueOrder(android, request.Speaker, AndroidOrderType.FollowMe, null);
                 else if (effect == AndroidConversationEffect.ReturnToWork)
@@ -300,6 +306,11 @@ public sealed class AndroidConversationSystem : EntitySystem
                     IssueCleanArea(request);
 
                 return reply;
+
+            case AndroidConversationEffect.TreatCaller:
+                // "I'm hurt" asks for care; anything else reports someone else's injury, maybe with a place.
+                var hurt = TryComp<DamageableComponent>(request.Speaker, out var damage) && damage.TotalDamage > 0;
+                return _medic.Call(android, request.Speaker, hurt, request.Text, request.Language);
 
             case AndroidConversationEffect.GiveSupply:
                 return GiveSupply(request, proto, lines, reply);
@@ -327,16 +338,12 @@ public sealed class AndroidConversationSystem : EntitySystem
     private void IssueCleanArea(PendingConversation request)
     {
         var androidCoords = Transform(request.Android).Coordinates;
-        var location = Classifier.FindLocation(request.Text);
         EntityCoordinates target;
 
-        if (location != null && new NavMapBeaconLocator(EntityManager).TryFindBeacon(androidCoords, location, out var beacon))
+        if (new NavMapBeaconLocator(EntityManager).TryFindPlace(androidCoords, request.Text, Classifier, out var location, out var beacon))
             target = beacon.Value;
         else
-        {
-            location = null;
             target = Transform(request.Speaker).Coordinates;
-        }
 
         _orders.IssueOrder(request.Android, request.Speaker, AndroidOrderType.CleanArea, location, target);
     }
@@ -348,9 +355,6 @@ public sealed class AndroidConversationSystem : EntitySystem
 
         if (rule == null)
             return reply;
-
-        if (!_orders.CanOrder(request.Speaker, request.Android))
-            return lines?.NotAuthorized ?? reply;
 
         if (!TryComp<AndroidInventoryComponent>(request.Android, out var inventory) ||
             !_inventory.TryGiveItem(request.Android, inventory, rule.Items, request.Speaker, _prototypeManager.AndroidConfig().HandOverRange, out _))

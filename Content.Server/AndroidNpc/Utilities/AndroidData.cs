@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using System.Linq;
 using Content.Server.AndroidNpc.Components;
 using Content.Server.AndroidNpc.Data;
 using Robust.Shared.Prototypes;
@@ -56,6 +57,18 @@ public static class AndroidData
         }
 
         return null;
+    }
+
+    /// <summary>
+    /// The job's whole menu: its hand-written entries (jobs.yml) first, then the generated ones (menus.yml).
+    /// </summary>
+    public static List<AndroidMenuItem> AndroidMenu(this IPrototypeManager protos, AndroidJob job)
+    {
+        var menu = new List<AndroidMenuItem>(protos.AndroidJobData(job)?.Menu ?? new());
+        if (protos.TryIndex<AndroidMenuPrototype>(job.ToString(), out var generated))
+            menu.AddRange(generated.Items.Where(i => menu.All(m => m.Item != i.Item)));
+
+        return menu;
     }
 
     public static AndroidConversationPrototype? AndroidConversation(this IPrototypeManager protos, AndroidJob job)

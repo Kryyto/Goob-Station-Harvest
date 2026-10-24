@@ -31,13 +31,14 @@
   trashTags:
   - Trash
   - GlassShard
-  orderAccessTags:
-  - Janitor
+  retaliationWeapon: MopItem
   addressKeywords:
   - android
   - androïde
   lines:
     en:
+      capabilities:
+      - "I clean puddles and trash, put up wet floor signs, hunt mice and replace broken lights."
       mess:
       - "This is gonna take a while."
       - "Who did this?"
@@ -85,6 +86,8 @@
       - "Shift's over for me. Good luck!"
       - "A real crew member? I'll leave you to it."
     fr:
+      capabilities:
+      - "Je nettoie les flaques et les déchets, je pose des panneaux sol glissant, je chasse les souris et je change les ampoules."
       mess:
       - "Ça va prendre un moment."
       - "Qui a fait ça ?"
@@ -152,8 +155,7 @@
   - FoodPieApple
   - FoodNoodles
   - FoodBreadPlainSlice
-  orderAccessTags:
-  - Kitchen
+  retaliationWeapon: KitchenKnife
   addressKeywords:
   - android
   - androïde
@@ -215,6 +217,8 @@
     prepSeconds: 3
   lines:
     en:
+      capabilities:
+      - "I cook the kitchen menu: burgers, pizzas, soups, salads, cakes and more. Ask me what I serve."
       break: *breakEn
       backToWork: *backEn
       flee: *fleeEn
@@ -237,6 +241,8 @@
       - "That's not on my menu. How about a {item}? Coming up."
       - "Never heard of it. You're getting a {item}."
     fr:
+      capabilities:
+      - "Je prépare les plats de la carte : burgers, pizzas, soupes, salades, gâteaux et plus. Demandez-moi ce que je sers."
       break: *breakFr
       backToWork: *backFr
       flee: *fleeFr
@@ -279,8 +285,7 @@
   - DrinkWineGlass
   - DrinkBeerglass
   - DrinkColaCan
-  orderAccessTags:
-  - Bar
+  retaliationWeapon: WeaponShotgunDoubleBarreledRubber
   addressKeywords:
   - android
   - androïde
@@ -351,6 +356,8 @@
     prepSeconds: 2
   lines:
     en:
+      capabilities:
+      - "I serve cocktails, spirits, beer, wine, juices and sodas. Ask me what I serve."
       break: *breakEn
       backToWork: *backEn
       flee: *fleeEn
@@ -373,6 +380,8 @@
       - "That's not on my list. How about a {item}? Coming up."
       - "Never heard of it. You're getting a {item}."
     fr:
+      capabilities:
+      - "Je sers cocktails, alcools, bière, vin, jus et sodas. Demandez-moi ce que je sers."
       break: *breakFr
       backToWork: *backFr
       flee: *fleeFr
@@ -395,4 +404,89 @@
       - "Ce n'est pas sur ma carte. Je vous prépare {item} à la place."
       - "Jamais entendu parler. Vous aurez : {item}."
 
-
+- type: androidJob
+  id: Paramedic
+  job: Paramedic
+  jobTitle: Paramédic
+  entityPrototype: MobAndroidParamedic
+  stationJob: Paramedic
+  radioChannel: Medical
+  workBeacon: station-beacon-medbay
+  resupplyBeacon: station-beacon-medical
+  patrolRoute:
+  - station-beacon-medical
+  - station-beacon-service
+  - station-beacon-science
+  - station-beacon-engineering
+  - station-beacon-cargo
+  - station-beacon-command
+  requiredLoadout:
+  - Brutepack
+  - Ointment
+  - EmergencyMedipen
+  - EmergencyMedipen
+  retaliationWeapon: CrowbarRed
+  addressKeywords:
+  - android
+  - androïde
+  lines:
+    en:
+      capabilities:
+      - "I treat the injured with my kits, give epinephrine to critical patients and bring them and the dead to medbay. Tell me \"heal me\" or \"someone is hurt at the bar\"."
+      break: *breakEn
+      backToWork: *backEn
+      flee: *fleeEn
+      idle:
+      - "Everyone feeling alright?"
+      - "Medical patrol, nothing to report."
+      - "Remember to wear your suit sensors."
+      - "Stay safe out there."
+      attack:
+      - "Stand down!"
+      - "Back off!"
+      - "Medical override!"
+      despawn: *despawnEn
+      treating:
+      - "Hold still, {patient}, I'm patching you up."
+      - "Let me take a look, {patient}."
+      - "Treating you now, {patient}."
+      treated:
+      - "There you go, {patient}. Take it easy."
+      - "All patched up, {patient}."
+      - "You're good to go, {patient}."
+      stabilizing:
+      - "Patient critical! Administering epinephrine."
+      - "Stay with me, {patient}! Epinephrine going in."
+      carrying:
+      - "Taking {patient} to medbay."
+      - "Moving the patient to medbay, make way!"
+    fr:
+      capabilities:
+      - "Je soigne les blessés avec mes trousses, j'injecte de l'épinéphrine aux patients critiques et je les ramène à l'infirmerie, les morts aussi. Dites-moi « soigne-moi » ou « il y a un blessé au bar »."
+      break: *breakFr
+      backToWork: *backFr
+      flee: *fleeFr
+      idle:
+      - "Tout le monde va bien ?"
+      - "Patrouille médicale, rien à signaler."
+      - "Pensez à activer vos capteurs de combinaison."
+      - "Soyez prudents."
+      attack:
+      - "Reculez !"
+      - "Arrêtez ça !"
+      - "Intervention médicale !"
+      despawn: *despawnFr
+      treating:
+      - "Ne bougez pas, {patient}, je vous soigne."
+      - "Laissez-moi regarder ça, {patient}."
+      - "Je m'occupe de vous, {patient}."
+      treated:
+      - "Voilà, {patient}. Ménagez-vous."
+      - "C'est réparé, {patient}."
+      - "Vous pouvez y aller, {patient}."
+      stabilizing:
+      - "Patient critique ! J'injecte de l'épinéphrine."
+      - "Restez avec moi, {patient} ! Épinéphrine."
+      carrying:
+      - "J'emmène {patient} à l'infirmerie."
+      - "Patient en transfert vers l'infirmerie, laissez passer !"

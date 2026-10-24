@@ -15,6 +15,8 @@
     range: 8
   - type: AdminOverride
     dismemberable: false
+  # Banana peels and soap must not stop an android in its tracks.
+  - type: NoSlip
   - type: HumanoidAppearance
     species: Android
     sex: Unsexed
@@ -35,6 +37,11 @@
   components:
   - type: Android
     job: Janitor
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Service
   - type: AndroidIdentity
     jobTitle: Concierge
   - type: AndroidInventory
@@ -55,6 +62,11 @@
   components:
   - type: Android
     job: Cook
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Service
   - type: AndroidService
   - type: AndroidIdentity
     jobTitle: Cuisinier
@@ -75,6 +87,11 @@
   components:
   - type: Android
     job: Bartender
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Service
   - type: AndroidService
   - type: AndroidIdentity
     jobTitle: Barman
@@ -86,3 +103,28 @@
     - Bar
     - Service
     - Maintenance
+
+- type: entity
+  parent: MobAndroid
+  id: MobAndroidParamedic
+  name: Androïde
+  suffix: Paramedic
+  components:
+  - type: Android
+    job: Paramedic
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Medical
+  - type: AndroidMedic
+  - type: AndroidIdentity
+    jobTitle: Paramédic
+  - type: Loadout
+    prototypes: [ParamedicAndroidGear]
+  - type: Access
+    enabled: true
+    tags:
+    - Medical
+    - Maintenance
+    - External

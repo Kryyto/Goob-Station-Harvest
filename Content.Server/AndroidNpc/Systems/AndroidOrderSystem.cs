@@ -1,13 +1,18 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using System.Linq;
 using Content.Server.AndroidNpc.Components;
 using Content.Server.AndroidNpc.Data;
 using Content.Server.AndroidNpc.Utilities;
-using Content.Shared.Access.Systems;
+using Content.Server.Chat.Systems;
+using Content.Server.Radio;
+using Content.Shared.Radio.Components;
+using Content.Shared.Radio;
+using Content.Shared.Chat;
 using Content.Shared.Fluids.Components;
-using Content.Shared.Mind;
 using Content.Shared.Speech;
 using Content.Shared.Speech.Components;
+using Content.Shared.Verbs;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
@@ -16,7 +21,7 @@ using Robust.Shared.Timing;
 namespace Content.Server.AndroidNpc.Systems;
 
 /// <summary>
-/// Parses spoken orders addressed to androids, checks the speaker's authority, and owns the order lifecycle:
+/// Parses spoken orders addressed to androids (anyone may give them) and owns the order lifecycle:
 /// issue, expiry and failure reports (spoken, or over the radio when the issuer is out of earshot).
 /// Addressed messages that are not orders are forwarded to <see cref="AndroidConversationSystem"/>.
 /// </summary>
@@ -24,17 +29,32 @@ public sealed class AndroidOrderSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly AccessReaderSystem _access = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly AndroidBreakSystem _breaks = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly AndroidCustomerSystem _customer = default!;
     [Dependency] private readonly AndroidDialogueSystem _dialogue = default!;
+    [Dependency] private readonly AndroidServiceSystem _service = default!;
+    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly AndroidMedicSystem _medic = default!;
+
+    private const int MenuSampleSize = 8;
+
+    private static readonly VerbCategory OrdersCategory = new("android-verb-category", "/Textures/Interface/character.svg.192dpi.png");
 
     /// <summary>
-    /// Anyone standing this close may give orders, regardless of access.
+    /// Orders offered in the android's context menu; picking one makes the player say it out loud.
     /// </summary>
-    private const float ProximityOrderRange = 4f;
+    private static readonly (AndroidOrderType Order, string Label)[] ContextOrders =
+    {
+        (AndroidOrderType.FollowMe, "android-verb-follow-me"),
+        (AndroidOrderType.ReturnToWork, "android-verb-return-to-work"),
+        (AndroidOrderType.TakeBreak, "android-verb-take-break"),
+        (AndroidOrderType.StatusReport, "android-verb-status-report"),
+        (AndroidOrderType.Capabilities, "android-verb-capabilities"),
+        (AndroidOrderType.Menu, "android-verb-menu"),
+        (AndroidOrderType.HealMe, "android-verb-heal-me"),
+        (AndroidOrderType.RepeatOrder, "android-verb-repeat-order"),
+    };
 
     private OrderPhraseMatcher _phraseMatcher = default!;
 
@@ -46,29 +66,82 @@ public sealed class AndroidOrderSystem : EntitySystem
 
         _phraseMatcher = new OrderPhraseMatcher(_prototypeManager.AndroidPhrases());
         SubscribeLocalEvent<AndroidComponent, ListenEvent>(OnListen);
+        SubscribeLocalEvent<AndroidComponent, RadioReceiveEvent>(OnRadio);
+        SubscribeLocalEvent<AndroidComponent, GetVerbsEvent<Verb>>(OnGetVerbs);
+    }
+
+    private void OnGetVerbs(EntityUid uid, AndroidComponent component, GetVerbsEvent<Verb> args)
+    {
+        if (args.User == uid || !args.CanInteract || component.Status == AndroidStatus.Leaving ||
+            !TryComp<AndroidIdentityComponent>(uid, out var identity))
+        {
+            return;
+        }
+
+        var lines = FeedbackFor(null).ContextMenu;
+        var user = args.User;
+
+        foreach (var (order, label) in ContextOrders)
+        {
+            if (order == AndroidOrderType.Menu && !_service.Menu(component.Job).Items.Any() ||
+                order == AndroidOrderType.HealMe && !HasComp<AndroidMedicComponent>(uid) ||
+                order == AndroidOrderType.RepeatOrder && !(TryComp<AndroidCustomerOrderComponent>(uid, out var waiting) && !waiting.Served) ||
+                lines.GetValueOrDefault(order) is not { } line)
+            {
+                continue;
+            }
+
+            var spoken = AndroidData.Format(line, ("name", identity.FirstName));
+            args.Verbs.Add(new Verb
+            {
+                Text = Loc.GetString(label),
+                Category = OrdersCategory,
+                Act = () => _chat.TrySendInGameICMessage(user, spoken, InGameICChatType.Speak, ChatTransmitRange.Normal),
+            });
+        }
     }
 
     private void OnListen(EntityUid uid, AndroidComponent component, ListenEvent ev)
     {
-        // Radio messages are prefixed; orders must be spoken in person.
-        if (ev.Message.StartsWith('[') || component.Status == AndroidStatus.Leaving)
+        // Radio messages arrive through OnRadio as well; their spoken echo is prefixed.
+        if (!ev.Message.StartsWith('['))
+            Heard(uid, component, ev.Source, ev.Message, null);
+    }
+
+    /// <summary>
+    /// A radio message on one of the android's channels, e.g. "Fernand, il y a un blessé au bar" on Common.
+    /// It is handled like speech and answered on the same channel.
+    /// </summary>
+    private void OnRadio(EntityUid uid, AndroidComponent component, ref RadioReceiveEvent args)
+    {
+        Heard(uid, component, args.MessageSource, args.OriginalChatMsg.Message, args.Channel.ID);
+    }
+
+    private void Heard(EntityUid uid, AndroidComponent component, EntityUid source, string message, string? radio)
+    {
+        // Androids ignore each other: a bartender saying "here is your beer, Gérard" to an android customer
+        // is not a question for Gérard.
+        if (component.Status == AndroidStatus.Leaving || source == uid || HasComp<AndroidComponent>(source))
             return;
 
-        var address = AndroidAddressing.GetAddress(EntityManager, _prototypeManager, uid, ev.Message);
+        var address = AndroidAddressing.GetAddress(EntityManager, _prototypeManager, uid, message);
         if (address == AndroidAddress.None)
             return;
 
-        // Addressed as a group ("androids, ..."): everyone obeys orders, but only the nearest one answers.
-        var answers = address == AndroidAddress.Name || IsGroupSpokesperson(uid, ev.Source);
+        // Addressed as a group ("androids, ..."): everyone obeys orders, but only one answers: the nearest one,
+        // or on the radio the first android on the channel.
+        var answers = address == AndroidAddress.Name ||
+                      (radio == null ? IsGroupSpokesperson(uid, source) : IsRadioSpokesperson(uid, radio));
 
-        RecordInteraction(uid, ev.Source);
-        var language = _dialogue.DetectLanguage(ev.Message);
+        RecordInteraction(uid, source);
+        var language = _dialogue.DetectLanguage(message);
         var feedback = FeedbackFor(language);
+        ProtoId<RadioChannelPrototype>? channel = radio;
 
-        if (!_phraseMatcher.TryMatch(ev.Message, out var orderType, out var target))
+        if (!_phraseMatcher.TryMatch(message, out var orderType, out var target))
         {
             if (answers)
-                RaiseLocalEvent(uid, new AndroidConversationEvent(ev.Source, ev.Message));
+                RaiseLocalEvent(uid, new AndroidConversationEvent(source, message, channel));
 
             return;
         }
@@ -78,25 +151,48 @@ public sealed class AndroidOrderSystem : EntitySystem
             // Anyone may ask for a status report or for the android's own bar/kitchen order.
             case AndroidOrderType.StatusReport:
                 if (answers)
-                    SpeakLines(uid, GetStatusReport(uid, language));
+                    SpeakLines(uid, GetStatusReport(uid, language), channel);
                 return;
             case AndroidOrderType.RepeatOrder:
                 if (answers && !_customer.TryRestateOrder(uid))
-                    _dialogue.Reply(uid, feedback.NoActiveCustomerOrder);
+                    _dialogue.Reply(uid, feedback.NoActiveCustomerOrder, channel);
+                return;
+            case AndroidOrderType.Capabilities:
+                if (answers)
+                    SpeakLines(uid, GetCapabilities(uid, component, language), channel);
+                return;
+            case AndroidOrderType.Menu:
+                if (answers)
+                    _dialogue.Reply(uid, GetMenuAnswer(component, language), channel);
+                return;
+            // Only a paramedic answers a call for care, even one made to the whole group.
+            case AndroidOrderType.HealMe or AndroidOrderType.Injured:
+                if (HasComp<AndroidMedicComponent>(uid))
+                    _dialogue.Reply(uid, _medic.Call(uid, source, orderType == AndroidOrderType.HealMe, target, language), channel);
+                else if (address == AndroidAddress.Name)
+                    _dialogue.Reply(uid, feedback.NotAMedic, channel);
                 return;
         }
 
-        if (!CanOrder(ev.Source, uid))
-        {
-            if (answers)
-                _dialogue.Reply(uid, feedback.NotAuthorized);
-            return;
-        }
-
-        IssueOrder(uid, ev.Source, orderType, target, language: language);
+        IssueOrder(uid, source, orderType, target, language: language);
 
         if (answers)
-            _dialogue.Reply(uid, $"{feedback.AcknowledgementPrefix} {GetOrderAck(feedback, orderType, target)}");
+            _dialogue.Reply(uid, $"{feedback.AcknowledgementPrefix} {GetOrderAck(feedback, orderType, target)}", channel);
+    }
+
+    /// <summary>
+    /// For a group message on the radio, the android with the lowest id on that channel answers for the group.
+    /// </summary>
+    private bool IsRadioSpokesperson(EntityUid android, string channel)
+    {
+        var query = EntityQueryEnumerator<AndroidComponent, ActiveRadioComponent>();
+        while (query.MoveNext(out var uid, out var comp, out var radio))
+        {
+            if (comp.Status != AndroidStatus.Leaving && radio.Channels.Contains(channel) && uid.Id < android.Id)
+                return false;
+        }
+
+        return true;
     }
 
     /// <summary>
@@ -130,8 +226,8 @@ public sealed class AndroidOrderSystem : EntitySystem
     }
 
     /// <summary>
-    /// Gives an order to the android without any spoken acknowledgement. Authorization must be checked
-    /// beforehand with <see cref="CanOrder"/>. <paramref name="issuerName"/> overrides the issuer's entity name.
+    /// Gives an order to the android without any spoken acknowledgement. <paramref name="issuerName"/> overrides
+    /// the issuer's entity name.
     /// </summary>
     public void IssueOrder(
         EntityUid android,
@@ -142,12 +238,16 @@ public sealed class AndroidOrderSystem : EntitySystem
         string? issuerName = null,
         string? language = null)
     {
-        var hadBreakOrder = TryComp<AndroidOrderComponent>(android, out var existing) && existing.OrderType == AndroidOrderType.TakeBreak;
-        var order = EnsureComp<AndroidOrderComponent>(android);
-
-        // A break order replaced by another command: stand up and reset the break state.
-        if (hadBreakOrder && orderType != AndroidOrderType.TakeBreak)
+        // Any order interrupts a break, ordered or automatic: the android stands up and its break timer restarts.
+        if (orderType != AndroidOrderType.TakeBreak && TryComp<AndroidComponent>(android, out var comp) &&
+            (comp.BreakState != AndroidBreakState.None || comp.Status == AndroidStatus.OnBreak ||
+             TryComp<AndroidOrderComponent>(android, out var existing) && existing.OrderType == AndroidOrderType.TakeBreak))
+        {
             CancelBreak(android);
+            comp.NextBreakAt = _timing.CurTime + TimeSpan.FromSeconds(_prototypeManager.AndroidConfig().BreakIntervalSeconds);
+        }
+
+        var order = EnsureComp<AndroidOrderComponent>(android);
 
         order.OrderType = orderType;
         order.Issuer = issuer;
@@ -199,53 +299,6 @@ public sealed class AndroidOrderSystem : EntitySystem
     /// </summary>
     public bool IsOrderMessage(string message) => _phraseMatcher.TryMatch(message, out _, out _);
 
-    /// <summary>
-    /// Returns true if the issuer may give orders to the android: by job/access, or by standing close to it.
-    /// </summary>
-    public bool CanOrder(EntityUid issuer, EntityUid android)
-    {
-        if (IsAuthorizedByAccess(issuer, android))
-            return true;
-
-        return TryComp<TransformComponent>(issuer, out var issuerXform) &&
-               TryComp<TransformComponent>(android, out var androidXform) &&
-               issuerXform.MapID == androidXform.MapID &&
-               (_transform.GetWorldPosition(issuerXform) - _transform.GetWorldPosition(androidXform)).Length() <= ProximityOrderRange;
-    }
-
-    /// <summary>
-    /// Returns true if the issuer carries a universal command access or one of the job's order access tags.
-    /// </summary>
-    public bool IsAuthorizedByAccess(EntityUid issuer, EntityUid android)
-    {
-        if (issuer == android)
-            return true;
-
-        if (!_mind.TryGetMind(issuer, out _, out _))
-            return false;
-
-        var tags = _access.FindAccessTags(issuer);
-        if (tags.Count == 0)
-            return false;
-
-        foreach (var tag in _prototypeManager.AndroidConfig().UniversalOrderAccess)
-        {
-            if (tags.Contains(tag))
-                return true;
-        }
-
-        if (!TryComp<AndroidComponent>(android, out var comp) || _prototypeManager.AndroidJobData(comp.Job) is not { } job)
-            return false;
-
-        foreach (var tag in job.OrderAccessTags)
-        {
-            if (tags.Contains(tag))
-                return true;
-        }
-
-        return false;
-    }
-
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -290,7 +343,7 @@ public sealed class AndroidOrderSystem : EntitySystem
             var target = order.Target ?? feedback.DefaultTarget;
             lines.Add(order.OrderType switch
             {
-                AndroidOrderType.GoToDepartment or AndroidOrderType.CleanArea =>
+                AndroidOrderType.GoToDepartment or AndroidOrderType.CleanArea or AndroidOrderType.RespondToCall =>
                     AndroidData.Format(feedback.StatusReportGoingToDepartment, ("target", target)),
                 AndroidOrderType.GoToPerson => AndroidData.Format(feedback.StatusReportGoingToPerson, ("target", target)),
                 AndroidOrderType.TakeBreak => feedback.StatusReportOnBreak,
@@ -312,6 +365,9 @@ public sealed class AndroidOrderSystem : EntitySystem
             case AndroidStatus.Leaving:
                 lines.Add(feedback.StatusReportLeaving);
                 return lines;
+            case AndroidStatus.Fighting:
+                lines.Add(feedback.StatusReportFighting);
+                return lines;
             case AndroidStatus.OnBreak:
                 lines.Add(feedback.StatusReportOnBreak);
                 return lines;
@@ -321,6 +377,12 @@ public sealed class AndroidOrderSystem : EntitySystem
         }
 
         lines.Add(feedback.StatusReportWorking);
+
+        if (TryComp<AndroidMedicComponent>(uid, out var medic) && medic.Patient is { } patient)
+        {
+            lines.Add(AndroidData.Format(feedback.StatusReportTreating, ("target", Name(patient))));
+            return lines;
+        }
 
         if (TryComp<AndroidServiceComponent>(uid, out var service) && service.Current is { } request)
         {
@@ -347,6 +409,28 @@ public sealed class AndroidOrderSystem : EntitySystem
         return lines;
     }
 
+    private List<string> GetCapabilities(EntityUid uid, AndroidComponent android, string language)
+    {
+        var lines = new List<string>();
+        if (_dialogue.LinesFor(uid, language) is { } jobLines && _dialogue.Pick(jobLines.Capabilities) is { } line)
+            lines.Add(line);
+
+        lines.Add(FeedbackFor(language).CapabilitiesOrders);
+        return lines;
+    }
+
+    private string GetMenuAnswer(AndroidComponent android, string language)
+    {
+        var feedback = FeedbackFor(language);
+        var count = _service.Menu(android.Job).Items.Count();
+        if (count == 0)
+            return feedback.MenuNone;
+
+        return AndroidData.Format(feedback.MenuSample,
+            ("count", count.ToString()),
+            ("items", string.Join(", ", _service.MenuSample(android.Job, language, MenuSampleSize))));
+    }
+
     private static string GetOrderAck(AndroidOrderFeedbackPrototype feedback, AndroidOrderType type, string? target)
     {
         var template = type switch
@@ -365,10 +449,10 @@ public sealed class AndroidOrderSystem : EntitySystem
     /// <summary>
     /// Says several short lines half a second apart instead of one wall of text.
     /// </summary>
-    private void SpeakLines(EntityUid android, List<string> lines)
+    private void SpeakLines(EntityUid android, List<string> lines, ProtoId<RadioChannelPrototype>? radio = null)
     {
         for (var i = 0; i < lines.Count; i++)
-            _dialogue.Speak(android, AndroidData.Format(lines[i], ("name", Name(android))), 0.5f + 0.8f * i);
+            _dialogue.Speak(android, AndroidData.Format(lines[i], ("name", Name(android))), 0.5f + 0.8f * i, radio);
     }
 
     private void CancelBreak(EntityUid uid) => _breaks.EndBreak(uid);

@@ -8,6 +8,7 @@
   - AndroidJanitor
   - AndroidCook
   - AndroidBartender
+  - AndroidParamedic
 
 - type: guideEntry
   id: AndroidJanitor
@@ -23,3 +24,8 @@
   id: AndroidBartender
   name: guide-entry-android-bartender
   text: "/ServerInfo/Guidebook/_Harvest/Androids/AndroidBartender.xml"
+
+- type: guideEntry
+  id: AndroidParamedic
+  name: guide-entry-android-paramedic
+  text: "/ServerInfo/Guidebook/_Harvest/Androids/AndroidParamedic.xml"

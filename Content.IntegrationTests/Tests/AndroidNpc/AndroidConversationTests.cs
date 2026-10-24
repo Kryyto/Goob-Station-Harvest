@@ -185,12 +185,14 @@ public sealed class AndroidConversationTests
         await server.WaitAssertion(() =>
         {
             var conversations = protos.EnumeratePrototypes<AndroidConversationPrototype>().ToList();
-            Assert.That(conversations.Select(c => c.Job), Is.EquivalentTo(new[] { AndroidJob.Janitor, AndroidJob.Cook, AndroidJob.Bartender }));
+            Assert.That(conversations.Select(c => c.Job), Is.EquivalentTo(Enum.GetValues<AndroidJob>()));
 
             foreach (var conversation in conversations)
             {
                 var intents = conversation.Responses.Select(r => r.Intent).Distinct().ToList();
-                Assert.That(intents, Has.Count.EqualTo(11), conversation.ID);
+                // Every intent the model may pick has replies.
+                foreach (var questions in conversation.BackendQuestions)
+                    Assert.That(intents, Is.EquivalentTo(questions.IntentCriteria.Keys), $"{conversation.ID} {questions.Lang}");
 
                 foreach (var lang in new[] { "en", "fr" })
                 foreach (var intent in intents)
@@ -346,26 +348,6 @@ public sealed class AndroidConversationTests
             Assert.That(order.OrderType, Is.EqualTo(AndroidOrderType.CleanArea));
             Assert.That(order.Issuer, Is.EqualTo(speaker));
             Assert.That(order.TargetCoordinates, Is.EqualTo(sEnt.GetComponent<TransformComponent>(speaker).Coordinates));
-        });
-
-        await pair.CleanReturnAsync();
-    }
-
-    [Test]
-    public async Task CleaningRequest_FromFarUnauthorizedSpeaker_IsRefused()
-    {
-        var (pair, android, speaker) = await SpawnAndroidAndSpeaker(new Vector2(8, 0));
-        var sEnt = pair.Server.EntMan;
-
-        await pair.Server.WaitAssertion(() =>
-        {
-            sEnt.EventBus.RaiseLocalEvent(android, new ListenEvent("Gerard, there is vomit everywhere", speaker));
-
-            var conversation = sEnt.GetComponent<AndroidConversationComponent>(android);
-            var rules = sEnt.System<AndroidConversationSystem>().Classifier.GetLanguage("en")!;
-            Assert.That(conversation.LastIntent, Is.EqualTo("cleaning_request"));
-            Assert.That(conversation.LastReply, Is.EqualTo(rules.NotAuthorized));
-            Assert.That(sEnt.HasComponent<AndroidOrderComponent>(android), Is.False);
         });
 
         await pair.CleanReturnAsync();

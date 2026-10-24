@@ -138,6 +138,7 @@ namespace Content.Client.Entry
             // Android NPC system: server-only prototype kinds.
             _prototypeManager.RegisterIgnore("androidNpc");
             _prototypeManager.RegisterIgnore("androidJob");
+            _prototypeManager.RegisterIgnore("androidMenu");
             _prototypeManager.RegisterIgnore("androidNamePool");
             _prototypeManager.RegisterIgnore("androidOrderPhrases");
             _prototypeManager.RegisterIgnore("androidOrderFeedback");

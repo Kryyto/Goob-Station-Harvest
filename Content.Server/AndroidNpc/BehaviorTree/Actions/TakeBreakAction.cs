@@ -9,10 +9,11 @@ using Content.Server.AndroidNpc.Components;
 using Content.Server.AndroidNpc.Data;
 using Content.Server.AndroidNpc.Systems;
 using Content.Server.AndroidNpc.Utilities;
-using Content.Server.Power.Components;
+using Content.Server.NPC.Pathfinding;
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
 using Content.Shared.CombatMode;
+using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Pinpointer;
 using Content.Shared.Tag;
@@ -33,8 +34,7 @@ namespace Content.Server.AndroidNpc.BehaviorTree.Actions;
 public sealed class TakeBreakAction : IBehaviorNode
 {
     // Larger search radii so androids can find the venue even when it is at the edge of a big station.
-    private const float ApcSearchRadius = 128f;
-    private const float ChairSearchRadius = 20f;
+    private const float ChairSearchRadius = 12f;
     private const float ResupplyChairSearchRadius = 16f;
     private const float AnchorStandOffRange = 2.5f;
     private const int MaxSeatAttempts = 3;
@@ -154,6 +154,7 @@ public sealed class TakeBreakAction : IBehaviorNode
         {
             var center = blackboard.CoordinatesOf(android.BreakChair) ?? blackboard.CoordinatesOf(owner);
             android.BreakSpot = center is { } c ? AndroidSpots.PickFreeTile(blackboard, owner, c, 3f) : null;
+            android.BreakChair = null;
         }
 
         if (android.BreakChair is { } chair && blackboard.EntityManager.HasComponent<StrapComponent>(chair))
@@ -189,20 +190,40 @@ public sealed class TakeBreakAction : IBehaviorNode
             return BehaviorStatus.Running;
 
         if (moveStatus == BehaviorStatus.Failure)
-        {
-            if (android.BreakChair is { } abandoned)
-                blackboard.Claims.ReleaseClaim(abandoned);
-
-            android.BreakChair = null;
-            android.BreakState = AndroidBreakState.Resting;
-            return BehaviorStatus.Running;
-        }
+            return Retry(owner, blackboard, android);
 
         // Only real seats can be sat on; a stand-off spot or anchor means resting where it stands.
         android.BreakState = android.BreakChair is { } target && blackboard.EntityManager.HasComponent<StrapComponent>(target)
             ? AndroidBreakState.Sitting
             : AndroidBreakState.Resting;
         return BehaviorStatus.Running;
+    }
+
+    /// <summary>
+    /// The seat or spot could not be reached: remember it and try another; after a few failures the android
+    /// skips this break and goes back to work rather than resting wherever it got stuck.
+    /// </summary>
+    private static BehaviorStatus Retry(EntityUid owner, AndroidBlackboard blackboard, AndroidComponent android)
+    {
+        if (android.BreakChair is { } abandoned)
+        {
+            blackboard.Claims.ReleaseClaim(abandoned);
+            blackboard.Blacklist.RecordFailure(android, abandoned, 1, FailedSeatMemory, blackboard.Timing.CurTime);
+        }
+
+        android.BreakChair = null;
+        android.BreakSpot = null;
+        android.BreakSeatAttempts++;
+
+        if (android.BreakSeatAttempts < MaxSeatAttempts)
+        {
+            android.BreakState = AndroidBreakState.Finding;
+            return BehaviorStatus.Running;
+        }
+
+        blackboard.System<AndroidBreakSystem>().EndBreak(owner);
+        android.NextBreakAt = blackboard.Timing.CurTime + TimeSpan.FromSeconds(blackboard.Config.BreakIntervalSeconds);
+        return BehaviorStatus.Success;
     }
 
     /// <summary>
@@ -243,14 +264,7 @@ public sealed class TakeBreakAction : IBehaviorNode
 
         var interaction = blackboard.EntityManager.System<SharedInteractionSystem>();
         if (!interaction.InRangeUnobstructed(owner, android.BreakChair.Value, SharedInteractionSystem.InteractionRange))
-        {
-            if (android.BreakChair is { } abandoned)
-                blackboard.Claims.ReleaseClaim(abandoned);
-
-            android.BreakChair = null;
-            android.BreakState = AndroidBreakState.Resting;
-            return BehaviorStatus.Running;
-        }
+            return Retry(owner, blackboard, android);
 
         var buckle = blackboard.EntityManager.System<SharedBuckleSystem>();
         if (buckle.TryBuckle(owner, owner, android.BreakChair.Value))
@@ -369,47 +383,13 @@ public sealed class TakeBreakAction : IBehaviorNode
 
         var venuePos = transform.ToMapCoordinates(venueCoords).Position;
 
-        // Prefer the venue's own APC as an anchor: it almost always sits inside the room itself,
-        // which is a more reliable seat-search center than the beacon (which can be near a doorway).
-        EntityUid? bestApc = null;
-        var bestApcDist = ApcSearchRadius * ApcSearchRadius;
+        // Only stools in sight of the venue: a seat behind the wall is in maintenance, not at the bar.
+        // Regular chairs at a nearby table do not count as being at the bar/kitchen counter.
+        var chair = FindChairNear(owner, ownerGrid.Value, venueCoords, ChairSearchRadius, blackboard, tagSystem, BarStoolTag);
+        if (chair.HasValue)
+            return (chair.Value, true);
 
-        var apcQuery = blackboard.EntityManager.EntityQueryEnumerator<ApcComponent, TransformComponent>();
-        while (apcQuery.MoveNext(out var apc, out _, out var apcXform))
-        {
-            if (!apcXform.Anchored || apcXform.GridUid != ownerGrid)
-                continue;
-
-            var apcPos = transform.GetWorldPosition(apcXform);
-            var dist = (apcPos - venuePos).LengthSquared();
-
-            if (dist < bestApcDist)
-            {
-                bestApcDist = dist;
-                bestApc = apc;
-            }
-        }
-
-        // Only bar stools count as a valid seat for placing a food/drink order - regular chairs
-        // (e.g. at a nearby table) don't count as "being at the bar/kitchen counter".
-        if (bestApc is { } apcUid)
-        {
-            var apcPos = transform.GetWorldPosition(blackboard.EntityManager.GetComponent<TransformComponent>(apcUid));
-            var chair = FindChairNear(owner, ownerGrid.Value, apcPos, ChairSearchRadius, blackboard, tagSystem, BarStoolTag);
-            if (chair.HasValue)
-                return (chair.Value, true);
-        }
-
-        // No luck around the APC (or none found); search directly around the beacon itself.
-        var directChair = FindChairNear(owner, ownerGrid.Value, venuePos, ChairSearchRadius, blackboard, tagSystem, BarStoolTag);
-        if (directChair.HasValue)
-            return (directChair.Value, true);
-
-        // No seat available - still "arrive" at the venue by standing next to the APC or beacon,
-        // rather than giving up and going somewhere unrelated.
-        if (bestApc.HasValue)
-            return (bestApc.Value, true);
-
+        // No free stool: still "arrive" at the venue, standing on a free tile of the room next to its anchor.
         if (venueBeacon.HasValue)
             return (venueBeacon.Value, true);
 
@@ -448,7 +428,7 @@ public sealed class TakeBreakAction : IBehaviorNode
             return null;
 
         var resupplyPos = transform.ToMapCoordinates(resupplyCoords.Value).Position;
-        var resupplyChair = FindChairNear(owner, ownerGrid, resupplyPos, ResupplyChairSearchRadius, blackboard, tagSystem, ChairTag);
+        var resupplyChair = FindChairNear(owner, ownerGrid, resupplyCoords.Value, ResupplyChairSearchRadius, blackboard, tagSystem, ChairTag);
 
         // No chair at the resupply point; rest at the desk itself.
         return resupplyChair ?? resupplyEntity;
@@ -457,12 +437,15 @@ public sealed class TakeBreakAction : IBehaviorNode
     private static EntityUid? FindChairNear(
         EntityUid owner,
         EntityUid grid,
-        Vector2 anchor,
+        EntityCoordinates anchorCoords,
         float radius,
         AndroidBlackboard blackboard,
         TagSystem tagSystem,
         ProtoId<TagPrototype> requiredTag)
     {
+        var examine = blackboard.EntityManager.System<ExamineSystemShared>();
+        var anchorMap = blackboard.Transform.ToMapCoordinates(anchorCoords);
+        var anchor = anchorMap.Position;
         var transform = blackboard.EntityManager.System<SharedTransformSystem>();
         blackboard.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android);
         EntityUid? bestChair = null;
@@ -477,8 +460,11 @@ public sealed class TakeBreakAction : IBehaviorNode
             if (chairXform.GridUid != grid)
                 continue;
 
-            if (!tagSystem.HasTag(tag, requiredTag))
+            if (!tagSystem.HasTag(tag, requiredTag) ||
+                !examine.InRangeUnOccluded(anchorMap, transform.GetMapCoordinates(chair, chairXform), radius, null))
+            {
                 continue;
+            }
 
             if (strap.BuckledEntities.Count > 0 ||
                 blackboard.Claims.IsClaimedByOther(chair, owner) ||

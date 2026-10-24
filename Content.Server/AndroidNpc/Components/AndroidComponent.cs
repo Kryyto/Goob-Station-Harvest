@@ -49,6 +49,13 @@ public sealed partial class AndroidComponent : Component
     /// </summary>
     [ViewVariables] public EntityCoordinates FleeTarget { get; set; } = EntityCoordinates.Invalid;
 
+    [ViewVariables] public TimeSpan FleeTargetUntil { get; set; }
+
+    /// <summary>
+    /// Where the danger is: the attacker's position, or where the android felt the hazard.
+    /// </summary>
+    [ViewVariables] public EntityCoordinates? FleeFrom { get; set; }
+
     /// <summary>
     /// Until this time the android evacuates because an emergency was reported to it.
     /// </summary>
@@ -58,6 +65,23 @@ public sealed partial class AndroidComponent : Component
     /// Last time the android took a real hit; it flees for a few seconds afterwards.
     /// </summary>
     [ViewVariables] public TimeSpan LastHurtAt { get; set; }
+
+    /// <summary>
+    /// Damage dealt to the android by each attacker; past the retaliation threshold it fights back.
+    /// </summary>
+    [ViewVariables] public Dictionary<EntityUid, float> DamageTaken { get; } = new();
+
+    /// <summary>
+    /// The attacker the android is fighting, until it is in critical condition or out of sight for too long.
+    /// </summary>
+    [ViewVariables] public EntityUid? FightTarget { get; set; }
+
+    [ViewVariables] public TimeSpan FightTargetSeenAt { get; set; }
+
+    /// <summary>
+    /// When the android's empty gun is refilled during a fight.
+    /// </summary>
+    [ViewVariables] public TimeSpan? ReloadAt { get; set; }
 
     /// <summary>
     /// Last line the android said, for debugging and tests.

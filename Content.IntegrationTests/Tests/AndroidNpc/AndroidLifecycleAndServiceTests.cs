@@ -30,7 +30,7 @@ namespace Content.IntegrationTests.Tests.AndroidNpc;
 [TestOf(typeof(AndroidServiceSystem))]
 public sealed class AndroidLifecycleAndServiceTests
 {
-    private static async Task<(TestPair Pair, TestMapData Map)> Setup()
+    internal static async Task<(TestPair Pair, TestMapData Map)> Setup()
     {
         var pair = await PoolManager.GetServerClient();
         var map = await pair.CreateTestMap();
@@ -44,7 +44,7 @@ public sealed class AndroidLifecycleAndServiceTests
         return (pair, map);
     }
 
-    private static void Name(IEntityManager sEnt, EntityUid android, string firstName)
+    internal static void Name(IEntityManager sEnt, EntityUid android, string firstName)
     {
         var identity = sEnt.GetComponent<AndroidIdentityComponent>(android);
         identity.FirstName = firstName;
@@ -225,7 +225,7 @@ public sealed class AndroidLifecycleAndServiceTests
     }
 
     [Test]
-    public async Task ForceOrderCommand_BypassesAuthority()
+    public async Task ForceOrderCommand_GivesTheOrder()
     {
         var (pair, map) = await Setup();
         var server = pair.Server;

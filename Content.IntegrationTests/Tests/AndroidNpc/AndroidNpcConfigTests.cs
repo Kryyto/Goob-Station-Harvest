@@ -95,11 +95,21 @@ public sealed class AndroidNpcConfigTests
                     Assert.That(data.AddressKeywords, Is.Not.Empty, $"{job} address keywords");
                 });
 
-                if (job != AndroidJob.Janitor)
+                if (job is AndroidJob.Cook or AndroidJob.Bartender)
                 {
                     Assert.That(data!.Menu, Is.Not.Empty, $"{job} is a service job without a menu");
                     Assert.That(data.LinesFor("fr")!.Preparing, Is.Not.Empty);
                     Assert.That(data.LinesFor("fr")!.Served, Is.Not.Empty);
+                }
+
+                if (job == AndroidJob.Paramedic)
+                {
+                    Assert.That(data!.RequiredLoadout, Does.Contain("Brutepack"), "The paramedic carries kits");
+                    foreach (var lang in new[] { "en", "fr" })
+                    {
+                        var lines = data.LinesFor(lang)!;
+                        Assert.That(lines.Treating.Concat(lines.Treated).Concat(lines.Stabilizing).Concat(lines.Carrying), Is.Not.Empty, $"{lang} care lines");
+                    }
                 }
             }
         });

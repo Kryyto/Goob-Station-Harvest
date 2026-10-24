@@ -6,7 +6,8 @@ public enum AndroidJob
 {
     Janitor,
     Cook,
-    Bartender
+    Bartender,
+    Paramedic
 }
 
 public enum AndroidStatus
@@ -20,7 +21,12 @@ public enum AndroidStatus
     /// <summary>
     /// A player took the android's job; it is walking to cryostorage to despawn.
     /// </summary>
-    Leaving
+    Leaving,
+
+    /// <summary>
+    /// Fighting back against someone who hurt it badly.
+    /// </summary>
+    Fighting
 }
 
 /// <summary>
@@ -38,5 +44,10 @@ public enum AndroidConversationEffect
     /// <summary>
     /// Queue a food or drink order with a service android.
     /// </summary>
-    PrepareOrder
+    PrepareOrder,
+
+    /// <summary>
+    /// A paramedic treats the speaker, or goes to the casualty reported.
+    /// </summary>
+    TreatCaller
 }

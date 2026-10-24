@@ -121,17 +121,18 @@ public sealed class AndroidDialogueSystem : EntitySystem
     /// Queues a line to be said after the delay. Androids never speak from inside an event handler, so replies
     /// cannot cascade through other listeners within a single tick.
     /// </summary>
-    public void Speak(EntityUid source, string message, float delaySeconds = 0f)
+    public void Speak(EntityUid source, string message, float delaySeconds = 0f, ProtoId<RadioChannelPrototype>? radio = null)
     {
-        Enqueue(source, message, null, delaySeconds);
+        Enqueue(source, message, radio, delaySeconds);
     }
 
     /// <summary>
     /// Queues a reply after a short random "thinking" delay, so several androids never answer in the same tick.
+    /// A message heard on the radio is answered on the same channel.
     /// </summary>
-    public void Reply(EntityUid source, string message)
+    public void Reply(EntityUid source, string message, ProtoId<RadioChannelPrototype>? radio = null)
     {
-        Enqueue(source, message, null, _random.NextFloat(0.4f, 1.4f));
+        Enqueue(source, message, radio, _random.NextFloat(0.4f, 1.4f));
     }
 
     private void Enqueue(EntityUid source, string message, ProtoId<RadioChannelPrototype>? radio, float delaySeconds)

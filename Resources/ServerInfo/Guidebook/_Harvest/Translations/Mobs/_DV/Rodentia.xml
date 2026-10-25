@@ -1,0 +1,44 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Rodentia
+
+  <Box>
+    <GuideEntityEmbed Entity="MobRodentiaDummy" Caption=""/>
+  </Box>
+
+  Les Rodentia sont une race d'êtres humanoïdes ressemblant à des rongeurs. Débrouillards, évasifs, sournois, mais fragiles.
+
+  ## Capacités uniques
+
+  ### Fouille
+
+  - Les Rodentia peuvent fouiller dans les goulottes d'évacuation, ce qui peut parfois [color=#1e90ff]déterrer de la nourriture.[/color] Miam !
+
+  ### Bajoues
+
+  - Les Rodentia peuvent stocker de petits objets dans leurs joues. Avoir des objets dans la bouche rend leur parole inintelligible, et ils lâcheront tous les objets dans leur bouche s'ils sont attaqués, étourdis ou poussés.
+
+  ### Faufilage
+
+  - Grâce à leur petite stature et leurs instincts de rongeur, les Rodentia peuvent [color=#1e90ff]se faufiler sous les tables.[/color] Cependant, ils ne peuvent pas se faufiler sous les portes.
+
+  ## Régime alimentaire
+
+  - Peut manger de la viande crue.
+  - Est [color=#FFA500]empoisonné[/color] par la Théobromine (Chocolat, Thé, Café) et l'Allicine (Oignon, Ail).
+
+  ## Avantages
+
+  - Ils peuvent utiliser leurs griffes pour faire des dégâts [color=#ec3a3a]Tranchants[/color] et [color=#ec3a3a]Contondants[/color].
+  - Ils peuvent rentrer dans des sacs de sport.
+
+  ## Inconvénients
+
+  - Subit [color=#FFA500]15 % de Contondants, Tranchants et Perforants en plus.[/color]
+  - Déclenche toujours les pièges à souris, qu'ils portent des chaussures ou non.
+  - A [color=#FFA500]faim 33 % plus vite.[/color]
+
+</Document>

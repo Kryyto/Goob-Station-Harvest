@@ -1,0 +1,73 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # I.P.C.
+  <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
+  Un IPC (abrégé de Châssis Positronique Intégré) est un type de robot conscient et est considéré comme un individu indépendant, ce qui signifie qu'il n'est guidé par aucune loi de la robotique. Les IPC ne peuvent pas être piratés par les Emags car ils n'ont pas à suivre de directives prédéfinies dans leur système. [color=red]Les IPC sont des êtres à base de silicium, donc ils sont généralement soignés par la Science ou l'Ingénierie au lieu du Médical.[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="PositronicBrain" Caption="Cerveau Positronique"/>
+  </Box>
+  Comme les borgs, les IPC ont un cerveau positronique comme source de traitement. Cependant, contrairement à eux, les IPC ne peuvent pas être assemblés. "C'est moins cher de créer un châssis qui vous obéit qu'un qui ne le fait pas ! [italic]*clin d'œil*[/italic]"
+
+  ## Capacités uniques
+
+  ### Recharger un IPC
+   <Box>
+    <GuideEntityEmbed Entity="APCBasic" Caption="Terminal APC"/>
+    <GuideEntityEmbed Entity="BorgCharger" Caption="Chargeur Borg"/>
+    <GuideEntityEmbed Entity="PowerCellMedium" Caption="Cellules d'énergie"/>
+  </Box>
+  Les IPC peuvent être rechargés de trois façons différentes :
+
+  - Terminal APC : Les IPC peuvent utiliser les terminaux APC pour recharger. Appuyez sur [color=yellow]Alt + clic gauche[/color] sur un terminal autant de fois que nécessaire pour recharger complètement.
+
+  - Chargeurs Borg : Les IPC peuvent utiliser les chargeurs borg pour recharger. Priorisez toujours ceux en dehors de la zone Sci pour éviter les maux de tête.
+
+  - Cellules d'énergie : Les IPC peuvent boire l'énergie des cellules d'énergie pour charger leur batterie interne. [color=yellow]Clic droit et sélectionner Drainer[/color] sur une cellule d'énergie ou un appareil alimenté par batterie pour en boire.
+
+  ### Radio Intégrée
+  <Box>
+    <GuideEntityEmbed Entity="EncryptionKeyScience" Caption="Clé de chiffrement"/>
+  </Box>
+
+  - Les IPC n'utilisent [bold]pas[/bold] de radios externes parce qu'ils en ont déjà une intégrée. Ils n'ont besoin que d'obtenir une clé de chiffrement d'une radio. En cliquant sur un IPC avec un [color=yellow]coupe-fil[/color], vous pouvez retirer leurs clés.
+  Vous pouvez trouver de nouvelles clés partout sur la station ou en retirer une d'une radio de secteur en utilisant un [color=yellow]tournevis[/color].
+
+  ### Réparation
+  <Box HorizontalAlignment="Stretch">
+    <GuideEntityEmbed Entity="WelderIndustrialAdvanced" Caption="Soudeur"/>
+    Les soudeurs peuvent être utilisés pour réparer les dégâts [color=yellow]Bruts[/color].
+  </Box>
+  <Box HorizontalAlignment="Stretch">
+    <GuideEntityEmbed Entity="CableApcStack" Caption="Câbles (n'importe quel type)"/>
+    Les câbles peuvent être utilisés pour réparer les [color=yellow]Brûlures[/color].
+  </Box>
+  <Box HorizontalAlignment="Stretch">
+    <GuideEntityEmbed Entity="SheetGlass" Caption="Plaques de verre (n'importe quel type)"/>
+    Les plaques de verre peuvent être utilisées pour réparer la [color=yellow]Cécité[/color].
+  </Box>
+  <Box HorizontalAlignment="Stretch">
+    - Dans le cas où un IPC meurt, après avoir été entièrement réparé, il devrait être redémarré en utilisant le bouton [color=yellow]"Redémarrer"[/color] (situé par clic droit).
+  </Box>
+  <Box HorizontalAlignment="Stretch">
+    [color=red]N'ÉLECTROCUTEZ JAMAIS UN IPC avec un défibrillateur ou de quelque façon que ce soit pendant qu'il est mort, car cela fera décharger la batterie en rayons d'énergie vers l'extérieur ![/color]
+  </Box>
+
+  ## Régime alimentaire
+
+  - Les IPC étant des êtres à base de silicium, ils n'ont besoin ni de nourriture ni d'eau pour survivre, et sont incapables de manger.
+
+  ## Avantages
+
+  - Ils subissent [color=#1e90ff]20 % de dégâts Bruts en moins, et 60 % de dégâts de Radiation en moins.[/color]
+  - Pas d'os à briser.
+
+  ## Inconvénients
+
+  - Ils subissent [color=#ffa500]70 % de dégâts de Chaleur en plus et 100 % de dégâts de Choc en plus.[/color]
+  - Ils ne peuvent [color=red](et ne doivent)[/color] pas être défibrillés.
+
+</Document>

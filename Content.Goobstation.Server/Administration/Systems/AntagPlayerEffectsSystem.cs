@@ -10,9 +10,9 @@ namespace Content.Goobstation.Server.Administration.Systems;
 /// <summary>
 ///     Applies entity effects defined in <see cref="AntagPlayerEffectsComponent"/> when an antag is selected.
 /// </summary>
-public sealed class AntagPlayerEffectsSystem : EntitySystem
+public sealed partial class AntagPlayerEffectsSystem : EntitySystem
 {
-    [Dependency] private readonly SharedEntityEffectsSystem _effects = default!;
+    [Dependency] private SharedEntityEffectsSystem _effects = default!;
 
     public override void Initialize()
     {

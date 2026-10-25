@@ -1,0 +1,40 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Hommes-slime
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSlimePerson" Caption=""/>
+  </Box>
+
+  Composée de slime, cette espèce humanoïde respire de l'azote au lieu d'oxygène. Celui-ci est abondant dans l'air de la station, mais plus difficile à trouver compressé dans des bouteilles de gaz.
+  Ils exhalent du protoxyde d'azote et ne sont pas affectés par celui-ci.
+
+  ## Capacités uniques
+
+  ### Stockage membranaire
+
+  - Les Hommes-slime ont un [bold]inventaire de stockage interne 2x3[/bold] à l'intérieur de leur membrane gélatineuse.
+  - N'importe qui peut voir ce qu'il y a dedans et le sortir de vous sans demander, donc faites attention.
+
+  ## Régime alimentaire
+  - Le Sang-slime est techniquement une source de nourriture modérément rassasiante pour les autres espèces, bien que boire le sang de vos collègues soit généralement mal vu.
+
+  ## Avantages
+
+  - Ils [color=#1e90ff]s'asphyxient 80 % plus lentement.[/color] Cela en fait de loin l'espèce la plus capable de survivre dans le vide total. Pour un temps.
+  - Ils subissent [color=#1e90ff]40 % de dégâts Contondants en moins et 20 % de Poison en moins[/color].
+  - Les Hommes-slime ont une [color=#1e90ff]régénération accélérée[/color] comparée aux autres humanoïdes.
+  - Les Hommes-slime n'ont [color=#1e90ff]pas d'os à briser.[/color]
+
+  ## Inconvénients
+
+  - Ils subissent [color=#ffa500]des dégâts significatifs s'ils sont aspergés ou éclaboussés d'eau[/color], mais peuvent (et comme les autres espèces, ont besoin de) la boire sans danger pour rester hydratés.
+  - Ils subissent [color=#ffa500]50 % de Froid en plus, 15 % de Tranchants en plus et 15 % de Perforants en plus[/color].
+  - Comme ils n'ont pas d'os, [color=#ffa500]leurs membres se détachent plus facilement.[/color]
+  - Leur corps [color=#ffa500]ne traite que deux toxines à la fois[/color] comparé à trois.
+  - Ils subissent [color=#ffa500]des dégâts de pression 9 % plus vite.[/color]
+
+</Document>

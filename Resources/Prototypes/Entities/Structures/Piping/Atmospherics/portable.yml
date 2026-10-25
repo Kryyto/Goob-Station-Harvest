@@ -6,6 +6,7 @@
   name: nettoyeur portable
   description: Il nettoie, et il est portable !
   components:
+  - type: ESVerbAnchorable # Goob
   - type: Transform
     anchored: false
   - type: Physics
@@ -111,6 +112,7 @@
   description: Appareil utilisant la technologie bluespace qui modifie la température locale. Communément appelé "radiateur spatial".
   suffix: Unanchored
   components:
+  - type: ESVerbAnchorable # Goob
   - type: StationAiWhitelist
   - type: Transform
     anchored: false

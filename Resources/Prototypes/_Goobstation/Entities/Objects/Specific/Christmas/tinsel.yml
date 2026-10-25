@@ -4,6 +4,8 @@
 # Pointlight masks were coded in hell and sent up to us ong
 - type: entity
   id: SpawnerChristmasTinselWhite
+  name: Christmas Tinsel Spawner
+  suffix: White
   parent: MarkerBase
   components:
   - type: Sprite
@@ -23,6 +25,8 @@
 
 - type: entity
   id: SpawnerChristmasTinselRed
+  name: Christmas Tinsel Spawner
+  suffix: Red
   parent: MarkerBase
   components:
   - type: Sprite
@@ -43,6 +47,8 @@
 
 - type: entity
   id: SpawnerChristmasTinselBlue
+  name: Christmas Tinsel Spawner
+  suffix: Blue
   parent: MarkerBase
   components:
   - type: Sprite
@@ -63,7 +69,8 @@
 
 - type: entity
   id: ChristmasTinselWhite1
-  description: Des guirlandes de Noël blanches. C'est un peu brillant.
+  name: white christmas tinsel
+  description: Some white tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -74,11 +81,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselWhite2
-  description: Des guirlandes de Noël blanches. C'est un peu brillant.
+  name: white christmas tinsel
+  description: Some white tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -89,11 +97,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselWhite3
-  description: Des guirlandes de Noël blanches. C'est un peu brillant.
+  name: white christmas tinsel
+  description: Some white tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -104,11 +113,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselWhite4
-  description: Des guirlandes de Noël blanches. C'est un peu brillant.
+  name: white christmas tinsel
+  description: Some white tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -119,11 +129,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselWhite5
-  description: Des guirlandes de Noël blanches. C'est un peu brillant.
+  name: white christmas tinsel
+  description: Some white tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -134,11 +145,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselWhite6
-  description: Des guirlandes de Noël blanches. C'est un peu brillant.
+  name: white christmas tinsel
+  description: Some white tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -149,11 +161,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselRed1
-  description: Des guirlandes de Noël rouges. C'est un peu brillant.
+  name: red christmas tinsel
+  description: Some red tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -165,11 +178,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselRed2
-  description: Des guirlandes de Noël rouges. C'est un peu brillant.
+  name: red christmas tinsel
+  description: Some red tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -181,11 +195,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselRed3
-  description: Des guirlandes de Noël rouges. C'est un peu brillant.
+  name: red christmas tinsel
+  description: Some red tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -197,11 +212,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselRed4
-  description: Des guirlandes de Noël rouges. C'est un peu brillant.
+  name: red christmas tinsel
+  description: Some red tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -213,11 +229,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselRed5
-  description: Des guirlandes de Noël rouges. C'est un peu brillant.
+  name: red christmas tinsel
+  description: Some red tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -229,11 +246,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselRed6
-  description: Des guirlandes de Noël rouges. C'est un peu brillant.
+  name: red christmas tinsel
+  description: Some red tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -245,11 +263,12 @@
     color: "#f9f375"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselBlue1
-  description: Des guirlandes de Noël bleues. C'est un peu brillant.
+  name: blue christmas tinsel
+  description: Some blue tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -261,11 +280,12 @@
     color: "#61accf"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselBlue2
-  description: Des guirlandes de Noël bleues. C'est un peu brillant.
+  name: blue christmas tinsel
+  description: Some blue tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -277,11 +297,12 @@
     color: "#61accf"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselBlue3
-  description: Des guirlandes de Noël bleues. C'est un peu brillant.
+  name: blue christmas tinsel
+  description: Some blue tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -293,11 +314,12 @@
     color: "#61accf"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselBlue4
-  description: Des guirlandes de Noël bleues. C'est un peu brillant.
+  name: blue christmas tinsel
+  description: Some blue tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -309,11 +331,12 @@
     color: "#61accf"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselBlue5
-  description: Des guirlandes de Noël bleues. C'est un peu brillant.
+  name: blue christmas tinsel
+  description: Some blue tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -325,11 +348,12 @@
     color: "#61accf"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle
 
 - type: entity
   id: ChristmasTinselBlue6
-  description: Des guirlandes de Noël bleues. C'est un peu brillant.
+  name: blue christmas tinsel
+  description: Some blue tinsel. It's a bit sparkly.
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/tinsel.rsi"
@@ -341,4 +365,4 @@
     color: "#61accf"
     radius: 3
     energy: 4
-    mask: /Textures/Effects/LightMasks/sparklemask.png
+    lightMask: Sparkle

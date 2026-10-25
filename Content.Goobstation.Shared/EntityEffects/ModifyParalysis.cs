@@ -29,8 +29,8 @@ public sealed partial class ModifyParalysis : EntityEffectBase<ModifyParalysis>
 
 public sealed partial class ModifyParalysisSystem : EntityEffectSystem<MetaDataComponent, ModifyParalysis>
 {
-    [Dependency] private readonly SharedStunSystem _stun = default!;
-    [Dependency] private readonly StatusEffectsSystem _status = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
+    [Dependency] private StatusEffectsSystem _status = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<ModifyParalysis> args)
     {

@@ -9,9 +9,9 @@ namespace Content.Goobstation.Shared.Actions;
 /// <summary>
 /// Handles spawning entities at world target locations for actions with <see cref="ActionWorldTargetSpawnComponent"/>.
 /// </summary>
-public sealed class ActionWorldTargetSpawnSystem : EntitySystem
+public sealed partial class ActionWorldTargetSpawnSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
 
     public override void Initialize()
     {

@@ -1,0 +1,76 @@
+<Document>
+  # Hommes-plasma
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPlasmaman" Caption=""/>
+  </Box>
+
+  Les Hommes-plasma sont une espèce reconnaissable à son apparence squelettique. Ils respirent du plasma, et l'oxygène est hautement toxique pour eux quand inhalé.
+  Être exposé à l'oxygène les met en feu.
+
+
+  ## Capacités uniques
+
+  ### Coque d'envirocombinaison
+
+  - Pour prévenir l'inflammation, ils portent des combinaisons scellées composées d'une envirocombinaison (dans l'emplacement combinaison) et d'un casque enviro [bold]spatial[/bold].
+  - D'autres combinaisons comme les combinaisons EVA, combinaisons vacu, et hardsuits les scelleront aussi de l'exposition à l'oxygène.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingUniformEnvirosuit" Caption="envirocombinaison"/>
+    <GuideEntityEmbed Entity="ClothingHeadEnvirohelm" Caption="casque enviro"/>
+    <GuideEntityEmbed Entity="DoubleEmergencyPlasmaTankFilled" />
+  </Box>
+
+  - Tous les Hommes-plasma commencent avec une envirocombinaison, un casque enviro, et un réservoir plasma interne.
+
+  - Leurs envirocombinaisons contiennent un [color=#1e90ff]auto-extincteur[/color] à charges limitées, qu'ils peuvent activer quand ils sont en feu
+  et portent leur casque enviro. L'auto-extincteur a besoin de recharger entre les utilisations.
+
+  - Leurs casques enviro sont [bold]spatiaux[/bold] et fournissent une protection soudure. La visière du casque peut s'allumer comme une lampe torche, utilisant la cellule d'énergie insérée comme batterie.
+  - Ils ne peuvent ni manger ni boire sans enlever leur casque enviro.
+
+  - Le réservoir plasma interne dure environ une heure avant d'avoir besoin d'être remplacé ou rechargé.
+
+  ### Traitement médical en stase
+  <Box>
+    <GuideEntityEmbed Entity="StasisBed" />
+  </Box>
+
+  - Avant de faire une chirurgie sur un Homme-plasma, son envirocombinaison doit être retirée d'abord, ce qui est désastreux dans un environnement oxygéné.
+
+  - Pour contourner ça, l'Homme-plasma peut être attaché à un [bold]lit de stase[/bold] avant de retirer son envirocombinaison
+  pour l'empêcher de s'enflammer pendant la procédure chirurgicale.
+
+  <Box HorizontalAlignment="Stretch">
+    - Leurs casques enviro les empêchent de manger des pilules, mais leurs envirocombinaisons permettent aux produits chimiques d'être injectés à travers.
+    <GuideEntityEmbed Entity="Syringe" Caption=""/>
+  </Box>
+
+
+
+  ### Que des os !
+  - Ils ne ressentent ni faim ni soif.
+  - Ils n'ont pas de sang et ne peuvent pas saigner à mort.
+
+  - Grâce à leur corps squelette, ils peuvent consommer du Lait pour gagner un moodlet positif et soigner lentement les dégâts Bruts, de Chaleur, de Choc et Caustiques.
+  - Ils peuvent aussi consommer du Plasma pour gagner un plus gros moodlet positif et soigner chaque type de dégâts plus vite, sauf les dégâts Cellulaires.
+
+  <Box>
+    <GuideEntityEmbed Entity="DrinkCartonMilk" />
+    <GuideEntityEmbed Entity="SheetPlasma1" />
+  </Box>
+
+  ## Avantages
+
+  - Ils imprègnent leurs poings de poussière de plasma qui s'enflamme quand ils frappent, infligeant [color=orange]5 Chaleur[/color] et [color=red]2,25 Contondant[/color] de dégâts.
+  - Ils subissent [color=#1e90ff]25 % de dégâts Perforants en moins, 20 % de Poison en moins, et 15 % de Tranchants en moins[/color].
+  - Ils sont [color=#1e90ff]immunisés aux dégâts de Radiation et de Froid[/color]. Grâce à leur [color=#1e90ff]immunité au Froid[/color], ils peuvent vivre dans des environnements froids sans besoin de manteau d'hiver.
+
+  ## Inconvénients
+
+  - Chaque coup réussi inflige [color=orange]2 Chaleur[/color] de dégâts à leurs mains.
+  - Ils subissent [color=#ffa500]50 % de Contondants en plus et 50 % de Chaleur en plus[/color].
+  - Ils ont une densité légèrement inférieure à l'espèce moyenne. Cela entraîne des faiblesses telles que, sans s'y limiter : être légèrement plus vulnérables à être poussés, ramassés et projetés par le Vent Spatial, et avoir plus de mal à tirer des objets lourds.
+
+</Document>

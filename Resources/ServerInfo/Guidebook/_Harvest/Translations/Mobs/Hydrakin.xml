@@ -1,0 +1,38 @@
+<Document>
+  # Hydrakin
+
+  <Box>
+    <GuideEntityEmbed Entity="MobHydrakin" Caption=""/>
+  </Box>
+  Les Hydrakin sont une espèce définie par ses cybernétiques et par la capacité de son corps à tirer profit de gaz normalement dangereux.
+
+  ## Capacités uniques
+
+  ### Régulation thermique
+
+  - Les corps des Hydrakin [color=#FFA500]chauffent constamment[/color]. Ils peuvent donc devoir évacuer manuellement la chaleur de leur corps.
+  - Ils peuvent tolérer la chaleur sans isolation, mais porter des hardsuits ou manteaux commencera immédiatement à [color=#FFA500]les chauffer à 67°C[/color].
+  - La Léporazine et le Péranol ont un effet rafraîchissant [color=#4169E1]amplifié[/color] sur leur corps.
+  - Cependant, utiliser n'importe quel type de produits chimiques cryo fera [color=#FFA500]s'endormir[/color] les hydrakin si leur température corporelle est assez basse pour l'activer.
+  - De plus, la régulation thermique des Hydrakin échoue totalement en état critique ainsi qu'à la mort.
+
+  ### Adaptation atmosphérique
+
+  - Les Hydrakin sont capables de respirer tous les gaz, le dioxyde de carbone et la vapeur d'eau étant une exception.
+  - Les gaz uniques (tels que Plasma, Tritium, Frezon, Nitrium, Hélium, etc.) ont un effet majoritairement [color=#4169E1]positif[/color] sur eux, décrit dans l'entrée du guidebook "Produits chimiques".
+
+  ## Régime alimentaire
+
+  - Les Hydrakin préfèrent surtout la nourriture crue.
+  - Ils sont [color=#FFA500]empoisonnés[/color] par la Théobromine (Chocolat, Thé, Café) et l'Allicine (Oignon, Ail).
+
+  ## Avantages
+  - Ils sont [color=#1e90ff]10 % plus résistants aux dégâts contondants[/color].
+  - Les gaz uniques ont souvent un effet positif sur la biologie des Hydrakin.
+
+  ## Inconvénients
+
+  - Ils subissent [color=#FFA500]25 % de dégâts de chaleur en plus et 15 % de dégâts tranchants en plus[/color].
+  - Porter des lunettes est [color=#FFA500]impossible[/color] à cause de l'anatomie de la tête.
+
+</Document>

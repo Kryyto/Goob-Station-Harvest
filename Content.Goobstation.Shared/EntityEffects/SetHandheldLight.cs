@@ -20,7 +20,7 @@ public sealed partial class SetHandheldLight : EntityEffectBase<SetHandheldLight
 
 public sealed partial class SetHandheldLightSystem : EntityEffectSystem<HandheldLightComponent, SetHandheldLight>
 {
-    [Dependency] private readonly SharedHandheldLightSystem _handheld = default!;
+    [Dependency] private SharedHandheldLightSystem _handheld = default!;
 
     protected override void Effect(Entity<HandheldLightComponent> entity, ref EntityEffectEvent<SetHandheldLight> args)
     {

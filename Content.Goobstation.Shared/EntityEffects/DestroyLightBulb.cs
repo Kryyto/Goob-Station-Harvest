@@ -23,7 +23,7 @@ public sealed partial class DestroyLightBulb : EntityEffectBase<DestroyLightBulb
 
 public sealed partial class DestroyLightBulbSystem : EntityEffectSystem<MetaDataComponent, DestroyLightBulb>
 {
-    [Dependency] private readonly SharedPointLightSystem _pointLight = default!;
+    [Dependency] private SharedPointLightSystem _pointLight = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<DestroyLightBulb> args)
     {

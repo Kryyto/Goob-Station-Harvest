@@ -23,7 +23,7 @@
     tags:
     - Sidearm
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/viper.rsi #GoobStation Resprite
     quickEquip: false
     slots:
     - suitStorage
@@ -109,7 +109,7 @@
   description: Un pistolet-mitrailleur élégant conçu par la Waffle Corporation. Doté d'un sélecteur de tir basculant entre semi-auto et rafale, le Viper frappe bien au-dessus de sa catégorie de poids vu sa compacité et sa dissimulabilité. Utilise des chargeurs .35 Auto.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/viper.rsi #GoobStation Resprite
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -179,14 +179,14 @@
   description: Un pistolet semi-automatique à silencieux intégré ne laissant aucune trace. Étant subsonique, les balles sont quasi silencieuses au prix de dégâts réduits. Utilise des chargeurs 9,5mm.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/cobra.rsi #GoobStation Resprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/cobra.rsi #GoobStation Resprite
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
@@ -230,14 +230,14 @@
   description: Un pistolet semi-automatique standard chambré en 35. Mince, simple et précis entre de bonnes mains, c'est l'une des fiertés de NanoTrasen Small Arms et l'arme de poing la plus courante dans le monde libre. Utilise des chargeurs .35 Auto.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/mk58.rsi #GoobStation Resprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/mk58.rsi #GoobStation Resprite
   - type: Item
     storedOffset: 0,-2
   - type: Gun
@@ -246,6 +246,49 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+  # mk58 upgrade start
+  - type: ItemUpgradeable
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      flashlight: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 1
+        insertDelay: 0.4
+        ejectDelay: 0.2
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flashlight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  # mk58 upgrade end
   - type: StealTarget
     stealGroup: OfficerHandgun
 
@@ -256,14 +299,14 @@
   description: Un canon de poing ridiculement surconçu tirant une cartouche de revolver. Bien que la cadence de tir se mesure en dysfonctionnements par seconde, c'est devenu un symbole de statut parmi l'élite NanoTrasen grâce à sa puissance et son prix exorbitant. Utilise des chargeurs .45 Magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/N1984.rsi #GoobStation Resprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/N1984.rsi #GoobStation Resprite
   - type: Gun
     minAngle: 1
     # Goob edit start

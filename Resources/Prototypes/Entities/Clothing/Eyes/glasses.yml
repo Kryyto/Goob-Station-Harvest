@@ -3,8 +3,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesGar
-  name: lunettes gar
-  description: Dépassez l'impossible et écrasez la raison sous vos pieds !
+  name: gar glasses
+  description: Go beyond impossible and kick reason to the curb!
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/gar.rsi
@@ -19,8 +19,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesGarOrange
-  name: lunettes gar orange
-  description: Mais qui diable pensez-vous que je suis ?!
+  name: orange gar glasses
+  description: Just who the hell do you think I am?!
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/gar.rsi
@@ -38,8 +38,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesGarGiga
-  name: lunettes gar géantes
-  description: Nous évoluons au-delà de la personne que nous étions il y a une minute. Peu à peu, nous avançons à chaque tour. C'est comme ça qu'une perceuse fonctionne !
+  name: giga gar glasses
+  description: We evolve past the person we were a minute before. Little by little we advance with each turn. That's how a drill works!
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/gar.rsi
@@ -57,14 +57,14 @@
 - type: entity
   parent: ClothingEyesBase # goobstation - tider nation - no longer contra
   id: ClothingEyesGlassesMeson
-  name: lunettes meson # goobstation - they're called MESONS!!!!
-  description: Des lunettes teintées de vert utilisant un polymère propriétaire qui offre une protection contre tous les types de dommages oculaires.
+  name: meson goggles # goobstation - they're called MESONS!!!!
+  description: Green-tinted engineering goggles that use THz radiation and mesons to reveal sub-floor infrastructure. # Goob
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/meson.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/meson.rsi
-  - type: EyeProtection
+  # Goob - EyeProtection removed, mesons are T-ray scanners now
   - type: IdentityBlocker
     coverage: EYES
   - type: Tag
@@ -73,12 +73,20 @@
     - MesonGoggles
     - WhitelistChameleon
     - PetWearable # Goobstation?
+  - type: TrayScanner # Goob
+  - type: TrayScannerToggle # Goob
+    soundOn: # Goob
+      path: /Audio/Items/flashlight_on.ogg # Goob
+    soundOff: # Goob
+      path: /Audio/Items/flashlight_off.ogg # Goob
+  - type: GoggleShader # Goob
+    color: '#5AB43CCC' # Goob
 
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlasses
-  name: lunettes
-  description: En y regardant de plus près, vous réalisez que ces verres sont en fait faits de plastique. # Goobstation
+  name: glasses
+  description: Upon closer inspection, you realize these lenses are infact made of plastic. # Goobstation
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/glasses.rsi
@@ -93,8 +101,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesJensen
-  name: lunettes jensen
-  description: Une paire de lunettes jaunes teintées pliables. Vous ne les aviez jamais demandées.
+  name: jensen glasses
+  description: A pair of yellow tinted folding glasses. You never asked for these.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/jensen.rsi
@@ -107,8 +115,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesJamjar
-  name: lunettes jamjar
-  description: Ces lunettes rétro vous rappellent une époque plus simple.
+  name: jamjar glasses
+  description: These retro glasses remind you of a simpler time.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/jamjar.rsi
@@ -123,8 +131,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesOutlawGlasses
-  name: lunettes hors-la-loi
-  description: Un incontournable pour tout agent infiltré qui se respecte.
+  name: outlaw glasses
+  description: A must for every self-respecting undercover agent.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/outlawglasses.rsi
@@ -138,8 +146,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesCheapSunglasses
-  name: lunettes de soleil bon marché
-  description: Une paire de lunettes de soleil noires. Ne bloque pas bien la lumière, plutôt un accessoire qu'une chose utile.
+  name: cheap sunglasses
+  description: A pair of black sunglasses. Doesn't block light well, more of an accessory than something useful.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
@@ -157,8 +165,8 @@
 - type: entity
   parent: ClothingEyesGlassesCheapSunglasses
   id: ClothingEyesGlassesSunglasses
-  name: lunettes de soleil
-  description: Une paire de lunettes de soleil noires.
+  name: sun glasses
+  description: A pair of black sunglasses.
   components:
   - type: FlashImmunity
   - type: EyeProtection
@@ -174,8 +182,8 @@
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesSecurity
-  name: lunettes de sécurité
-  description: Des lunettes de soleil améliorées qui offrent une immunité aux flashs et un HUD de sécurité.
+  name: security glasses
+  description: Upgraded sunglasses that provide flash immunity and a security HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/secglasses.rsi
@@ -220,8 +228,8 @@
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]
   id: ClothingEyesGlassesCommand
-  name: lunettes d'administration
-  description: Des lunettes de soleil améliorées qui offrent une immunité aux flashs et affichent le statut de la carte d'identité.
+  name: administration glasses
+  description: Upgraded sunglasses that provide flash immunity and show ID card status.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/commandglasses.rsi
@@ -243,8 +251,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesMercenary
-  name: lunettes de mercenaire
-  description: Des lunettes faites pour le combat, pour protéger les yeux des flashs aveuglants lumineux.
+  name: mercenary glasses
+  description: Glasses made for combat, to protect the eyes from bright blinding flashes.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/mercglasses.rsi
@@ -277,8 +285,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesThermal
-  name: scanner thermique optique
-  description: Des thermals en forme de lunettes.
+  name: optical thermal scanner
+  description: Thermals in the shape of glasses.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/thermal.rsi
@@ -307,8 +315,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesChemical
-  name: lunettes d'analyse chimique
-  description: Des lunettes qui peuvent scanner la composition chimique d'une solution.
+  name: chemical analysis goggles
+  description: Goggles that can scan the chemical composition of a solution.
   components:
     - type: Sprite
       sprite: Clothing/Eyes/Glasses/science.rsi
@@ -336,8 +344,8 @@
 - type: entity
   parent: [ClothingEyesBase, BaseHighlyIllegalContraband]
   id: ClothingEyesVisorNinja
-  name: visière de ninja
-  description: Une visière avancée protégeant les yeux d'un ninja des lumières clignotantes.
+  name: ninja visor
+  description: An advanced visor protecting a ninja's eyes from flashing lights.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
@@ -367,8 +375,8 @@
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesNoir
-  name: lunettes noir-tech
-  description: Une paire de lunettes qui simulent à quoi le monde ressemblait avant l'invention de la couleur.
+  name: noir-tech glasses
+  description: A pair of glasses that simulate what the world looked like before the invention of color.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/noir.rsi

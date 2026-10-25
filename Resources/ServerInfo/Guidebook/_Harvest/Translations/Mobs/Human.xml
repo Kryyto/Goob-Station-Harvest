@@ -1,0 +1,19 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Humains
+
+  <Box>
+    <GuideEntityEmbed Entity="MobHumanDummy" Caption=""/>
+  </Box>
+
+  Selon qui vous demandez, les humains sont soit peu remarquables, soit la norme universelle à laquelle tout le reste est comparé.
+
+  ## Avantages
+  - Ils interagissent [color=#1e90ff]environ 20 % plus vite[/color] par rapport aux autres espèces.
+
+  ## Inconvénients
+  - Aucun !
+</Document>

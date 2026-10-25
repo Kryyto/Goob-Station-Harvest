@@ -1,0 +1,29 @@
+<Document>
+  # Feroxi
+
+  <Box>
+    <GuideEntityEmbed Entity="MobFeroxiDummy" Caption=""/>
+  </Box>
+
+  Les Feroxi (fer-ox-i) sont une race d'êtres humanoïdes requins. Carnivores par nature avec une force de morsure puissante.
+
+  ## Régime alimentaire
+
+  - Ne peut manger QUE de la viande.
+
+  ## Avantages
+
+  - Utilisent leurs mâchoires pour faire des dégâts [color=#ec3a3a]Perforants[/color], et plus fort que les autres espèces, rivalisant avec les Oni.
+  - Leur squelette cartilagineux leur fait subir [color=#1e90ff]10 % de dégâts Contondants en moins.[/color]
+  - Leur adaptation aux environnements natifs leur fait subir [color=#1e90ff]10 % de dégâts de froid en moins.[/color]
+  - Leur biologie leur permet de respirer la vapeur d'eau.
+
+  ## Inconvénients
+
+  - Ils subissent [color=#FFA500]10 % de dégâts Tranchants en plus.[/color]
+  - Ont [color=#FFA500]soif 100 % plus vite[/color].
+  - Quand la soif tombe à "Assoiffé", ils commencent à [color=#FFA500]s'asphyxier.[/color] Ayez de l'eau à portée de main !
+  - Le sérum physiologique est trop salé ! Il vous hydrate beaucoup moins !
+  - Vos poumons sont inamovibles car ils sont intégrés à vos branchies.
+
+</Document>

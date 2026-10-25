@@ -15,6 +15,7 @@
   name: tourelle balistique jetable
   suffix: Syndicate, Disposable
   components:
+  - type: ExplosionEffect # Goob
   - type: NpcFactionMember
     factions:
     - Syndicate

@@ -513,13 +513,17 @@ public enum LogType
     /// </summary>
     SiliconLaws = 10005, // Goobstation
 
+    // Harvest start - kept apart from the Goobstation values so upstream additions do not collide.
     /// <summary>
     /// Vampire related interactions.
     /// </summary>
-    Vampire = 10006, // Goobstation
+    Vampire = 20000,
 
     /// <summary>
     /// Mob class selection related interactions.
     /// </summary>
-    MobClass = 10007, // Goobstation
+    MobClass = 20001,
+    // Harvest end
+
+    Paint = 10006, // Goobstation
 }

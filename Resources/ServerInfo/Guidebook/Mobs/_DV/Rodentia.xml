@@ -9,28 +9,36 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="MobRodentiaDummy" Caption=""/>
   </Box>
 
-  Les Rodentia sont une race d'êtres humanoïdes ressemblant à des rongeurs. Débrouillards, évasifs, sournois, mais fragiles.
+  Rodentia are a race of humanoid beings resembling rodents. Resourceful, evasive, sneaky, but fragile.
 
-  ## Régime
+  ## Unique Abilities
 
-  - Peut manger de la viande crue.
-  - Sera empoisonné par la Théobromine (Chocolat, Thé, Café) et l'Allicine (Oignon, Ail).
+  ### Rummaging
 
-  ## Avantages
+  - Rodentia can rummage in disposal chutes, which can sometimes [color=#1e90ff]dig up food.[/color] Yum!
 
-  - Utilisent leurs griffes pour faire des dégâts Tranchants et Contondants.
-  - Peut rentrer dans des sacs de sport.
+  ### Rodent Storage
 
-  ## Spécial
+  - Rodentia can store small items in their cheeks. Having items in their mouth makes their speech unintelligible, and they will drop all items in their mouth if attacked, stunned, or shoved.
 
-  - Peut Fouiller dans les goulottes d'évacuation, ce qui peut parfois déterrer de la nourriture.
-  - Peut stocker de petits objets dans leurs joues. Avoir des objets dans la bouche rend leur parole inintelligible, et ils lâcheront tous les objets dans leur bouche s'ils sont attaqués, étourdis, ou poussés.
-  - Peut "se faufiler" sous les tables, mais pas les portes.
-  - Plus petits que la plupart des autres espèces.
+  ### Sneaking
 
-  ## Inconvénients
+  - Due to their small stature and rodent instincts, Rodentia can [color=#1e90ff]sneak underneath tables.[/color] However, they are unable to sneak under doors.
 
-  - Subit 15 % de Contondants, Tranchants, et Perforants en plus.
-  - Déclenche toujours les pièges à souris, peu importe s'ils portent des chaussures ou non.
-  - A faim 33 % plus vite.
+  ## Diet
+
+  - Can eat raw meat.
+  - Will get [color=#FFA500]poisoned[/color] by Theobromine (Chocolate, Tea, Coffee) and Allicin (Onion, Garlic).
+
+  ## Benefits
+
+  - They can use their claws to do some [color=#ec3a3a]Slashing[/color] and [color=#ec3a3a]Blunt[/color] damage.
+  - They can fit in duffelbags.
+
+  ## Drawbacks
+
+  - Takes [color=#FFA500]15% more Blunt, Slash, and Piercing damage.[/color]
+  - Always triggers mousetraps, regardless of whether or not they are wearing shoes.
+  - Gets [color=#FFA500]hungry 33% faster.[/color]
+
 </Document>

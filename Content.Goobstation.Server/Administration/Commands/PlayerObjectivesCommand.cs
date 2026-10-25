@@ -12,10 +12,10 @@ using Robust.Shared.Console;
 namespace Content.Goobstation.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
-public sealed class PlayerObjectivesCommand : LocalizedCommands
+public sealed partial class PlayerObjectivesCommand : LocalizedCommands
 {
-    [Dependency] private readonly IPlayerManager _players = null!;
-    [Dependency] private readonly EuiManager _euis = null!;
+    [Dependency] private IPlayerManager _players = null!;
+    [Dependency] private EuiManager _euis = null!;
 
     public override string Command => "playerobjectives";
 

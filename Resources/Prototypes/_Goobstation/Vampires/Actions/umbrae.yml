@@ -1,4 +1,4 @@
-﻿# Cloak of Darkness
+# Cloak of Darkness
 - type: entity
   parent: BaseVampireAction
   id: ActionCloakDarkness
@@ -134,7 +134,7 @@
     event: !type:EffectInstantActionEvent
   - type: EffectAction
     effects:
-    - !type:RelayNearby
+    - !type:VampireRelayNearby
       compName: PointLight
       range: 10
       effect: !type:NestedEffect

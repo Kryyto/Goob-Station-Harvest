@@ -28,7 +28,7 @@ public sealed partial class ModifyKnockdown : EntityEffectBase<ModifyKnockdown>
 
 public sealed partial class ModifyKnockdownSystem : EntityEffectSystem<MetaDataComponent, ModifyKnockdown>
 {
-    [Dependency] private readonly SharedStunSystem _stun = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<ModifyKnockdown> args)
     {

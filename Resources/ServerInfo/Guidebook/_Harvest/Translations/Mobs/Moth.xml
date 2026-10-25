@@ -1,0 +1,36 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Hommes-mite
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMoth" Caption=""/>
+  </Box>
+
+  Les Hommes-mite sont une espèce ailée, arborant des antennes et des traits semblables à ceux des insectes. L'un de leurs traits les plus marquants est leur obsession pour le nombre "65".
+
+  ## Capacités uniques
+
+  ### Dash ailé
+
+  - Les Hommes-mite peuvent [color=#1e90ff]faire un dash sur de courtes distances toutes les 6,5 secondes[/color] en utilisant leurs ailes, mais cela nécessite la présence de gravité.
+
+  ## Régime alimentaire
+
+  - Ils peuvent manger du coton, des tissus et des vêtements, mais pratiquement aucune nourriture que les autres considéreraient "comestible".
+
+  ## Avantages
+
+  - Ils subissent [color=#1e90ff]30 % de dégâts de Froid en moins[/color].
+  - Leurs ailes leur donnent une meilleure accélération s'il n'y a pas de gravité sur la station, mais ils ne peuvent toujours pas bouger sans équipement lorsqu'ils flottent dans l'espace.
+  - Ils sont aussi [color=#1e90ff]6,5 % plus légers que la plupart des espèces.[/color]
+
+  ## Inconvénients
+
+  - Ils se déplacent [color=#ffa500]6,5 % plus lentement[/color] que les autres espèces à cause de leurs jambes faibles.
+  - Ils subissent [color=#ffa500]30 % de dégâts de Chaleur et 6,5 % de dégâts Bruts en plus, et s'enflamment plus facilement[/color].
+  - Ils préfèrent une gamme de température légèrement inférieure à celle des humains, ce qui les rend plus sensibles aux températures élevées.
+
+</Document>

@@ -1,6 +1,7 @@
 - type: entity
   id: ShadowlingGlareEffect
-  name: effet du regard de l'ombrelin
+  name: shadowling glare effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.35
@@ -21,7 +22,8 @@
 
 - type: entity
   id: ShadowlingShadowWalkInEffect
-  name: effet d'entrée de marche dans l'ombre
+  name: shadowling shadow walk in effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.5
@@ -40,7 +42,8 @@
 
 - type: entity
   id: ShadowlingShadowWalkOutEffect
-  name: effet de sortie de marche dans l'ombre
+  name: shadowling shadow walk out effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.5
@@ -59,7 +62,8 @@
 
 - type: entity
   id: ShadowlingCollectiveMindEffect
-  name: effet d'esprit collectif de l'ombrelin
+  name: shadowling collective mind effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.35
@@ -80,7 +84,8 @@
 
 - type: entity
   id: ShadowlingRapidRehatchEffect
-  name: effet de rééclosion rapide de l'ombrelin
+  name: shadowling rapid rehatch effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.85
@@ -101,7 +106,8 @@
 
 - type: entity
   id: ShadowlingIcyVeinsEffect
-  name: effet de veines glacées de l'ombrelin
+  name: shadowling icy veins effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.85
@@ -122,7 +128,8 @@
 
 - type: entity
   id: ShadowlingNullChargeEffect
-  name: effet de charge annihilante de l'ombrelin
+  name: shadowling null charge effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.85
@@ -143,7 +150,8 @@
 
 - type: entity
   id: ShadowlingSonicScreechEffect
-  name: effet de cri sonique de l'ombrelin
+  name: shadowling sonic screech effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 1.2
@@ -165,7 +173,8 @@
 
 - type: entity
   id: ShadowlingBlackRecuperationEffect # plays on Thralls
-  name: effet de récupération noire de l'ombrelin
+  name: shadowling black recuperation effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 0.85
@@ -186,7 +195,8 @@
 
 - type: entity
   id: ShadowlingAscendingEffect
-  name: effet d'ascension de l'ombrelin
+  name: shadowling ascending effect
+  categories: [ HideSpawnMenu ] #goob - clean up spawn menu
   components:
   - type: TimedDespawn
     lifetime: 8.02

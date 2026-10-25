@@ -723,6 +723,10 @@
   name: bonnet
   description: Rouge, blanc et ajusté. Il rayonne une sensation de chaleur domestique, si votre maison se trouve être froide et remplie de cafés.
   components:
+  - type: ClothingGrantComponent # Goobstation - Voice chat
+    component:
+    - type: VoiceChatCanadian
+      sensitivity: 0.8
   - type: Sprite
     sprite: Clothing/Head/Hats/beanie.rsi
     layers:

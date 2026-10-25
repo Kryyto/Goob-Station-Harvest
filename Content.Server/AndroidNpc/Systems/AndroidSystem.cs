@@ -23,6 +23,7 @@ using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared._Shitmed.Body.Part;
 using Content.Shared._Shitmed.Cybernetics;

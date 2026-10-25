@@ -15,9 +15,9 @@ namespace Content.Goobstation.Server.Objectives;
 /// <summary>
 /// Shows admin-assigned custom objectives in the round-end summary.
 /// </summary>
-public sealed class CustomObjectiveRoundEndSystem : EntitySystem
+public sealed partial class CustomObjectiveRoundEndSystem : EntitySystem
 {
-    [Dependency] private readonly ObjectivesSystem _objectivesSystem = null!;
+    [Dependency] private ObjectivesSystem _objectivesSystem = null!;
 
     public override void Initialize()
     {

@@ -1,0 +1,60 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Diona
+
+  <Box>
+    <GuideEntityEmbed Entity="MobDiona" Caption=""/>
+  </Box>
+
+  Les Dionas sont une masse humanoïde de matière végétale consciente, connue pour son inflammabilité et sa robustesse.
+
+  ## Capacités uniques
+
+  ### Enracinement
+  - Un Diona peut s'enraciner dans le sol à tout moment, devenant [color=#1e90ff]insensible à de nombreuses glissades[/color]. Cependant, il absorbera aussi les liquides sous lui par ses racines.
+
+  ### Deviens Un Arbre Et Casse-toi
+  <Box>
+    <GuideEntityEmbed Entity="FloraTree" Caption=""/>
+  </Box>
+  - Une exposition excessive à la Récolte Robuste fera pousser un Diona hors de contrôle, le transformant en [color=#ffa500]arbre immobile (lâchant tout son équipement)[/color].
+  Abattre l'arbre "restaure" le Diona à son état mobile.
+
+
+  ### Nymphes Diona
+  <Box>
+    <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
+    <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
+    <GuideEntityEmbed Entity="MobDionaNymph" Caption=""/>
+  </Box>
+  - Après la mort, un Diona peut volontairement détruire son propre corps, libérant ses "organes internes" sous forme de trois Nymphes,
+  le joueur prenant le contrôle de la Nymphe Cerveau.
+  Elle peut parler mais n'a ni mains ni inventaire, et ne peut pas faire grand-chose.
+
+  - Après 10 minutes, une Nymphe peut se reformer en un Diona complet. Ce sera un nouveau corps aléatoire avec un nom aléatoire,
+  et il y aura peu ou pas de preuve au-delà de sa parole sur qui il était avant.
+
+  ## Régime alimentaire
+
+  Le régime des Dionas ne présente aucune différence notable avec celui des humains.
+
+  ## Avantages
+
+  - Ils subissent [color=#1e90ff]30 % de dégâts Contondants en moins et 20 % de dégâts Tranchants en moins.[/color]
+  - Ils sont faits de bois lourd, leur permettant de tirer les espèces plus légères avec facilité.
+  - Grâce à leur structure robuste, ils ne sont [color=#1e90ff]pas ralentis par leur équipement.[/color]
+  - Ils ont faim et soif plus lentement.
+  - Étant des plantes, la Récolte Robuste [color=#1e90ff]les soigne[/color] (mais pas sans [color=#ffa500]risque en cas de surdose ![/color])
+
+  ## Inconvénients
+
+  - Ils subissent [color=#ffa500]50 % de dégâts de Chaleur en plus, 20 % de dégâts de Choc en plus, et ils peuvent facilement
+  s'enflammer en recevant assez de dégâts de Chaleur de N'IMPORTE QUELLE source.[/color]
+  - Leur "sang" est de la sève d'arbre et [color=#ffa500]ne peut pas être métabolisé à partir de Fer.[/color]
+  - À cause de leur stature lourde, ils sont [color=#ffa500]incapables de sprinter.[/color]
+  - Étant des plantes, l'Herbicide [color=#ffa500]les empoisonne.[/color]
+
+</Document>

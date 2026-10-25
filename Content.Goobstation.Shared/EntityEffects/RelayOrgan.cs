@@ -25,8 +25,8 @@ public sealed partial class RelayOrgan : EntityEffectBase<RelayOrgan>
 
 public sealed partial class RelayOrganSystem : EntityEffectSystem<BodyComponent, RelayOrgan>
 {
-    [Dependency] private readonly SharedBodySystem _body = default!;
-    [Dependency] private readonly SharedEntityEffectsSystem _entityEffects = default!;
+    [Dependency] private SharedBodySystem _body = default!;
+    [Dependency] private SharedEntityEffectsSystem _entityEffects = default!;
 
     protected override void Effect(Entity<BodyComponent> entity, ref EntityEffectEvent<RelayOrgan> args)
     {

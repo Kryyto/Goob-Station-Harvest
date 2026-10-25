@@ -16,8 +16,8 @@ namespace Content.Goobstation.Server.EntityEffects;
 /// </summary>
 public sealed partial class AdjustReagentGroupSystem : EntityEffectSystem<BloodstreamComponent, AdjustReagentGroup>
 {
-    [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private SharedSolutionContainerSystem _solutionContainer = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     protected override void Effect(Entity<BloodstreamComponent> entity, ref EntityEffectEvent<AdjustReagentGroup> args)
     {

@@ -1,4 +1,4 @@
-﻿- type: entityEffect
+- type: entityEffect
   id: ShadowSnare
   effects:
   - !type:SetHandheldLight        # False by default
@@ -14,12 +14,12 @@
 - type: entityEffect
   id: EternalDarkness
   effects:
-  - !type:RelayNearby
+  - !type:VampireRelayNearby
     compName: Temperature
     range: 8
     effect: !type:NestedEffect
       proto: EternalDarknessTemp
-  - !type:RelayNearby
+  - !type:VampireRelayNearby
     compName: MobState
     range: 8
     effect: !type:NestedEffect

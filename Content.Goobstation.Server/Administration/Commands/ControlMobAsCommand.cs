@@ -12,10 +12,10 @@ using Robust.Shared.Console;
 namespace Content.Goobstation.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Fun)]
-public sealed class ControlMobAsCommand : IConsoleCommand
+public sealed partial class ControlMobAsCommand : IConsoleCommand
 {
-    [Dependency] private readonly IEntityManager _entities = null!;
-    [Dependency] private readonly IPlayerManager _players = null!;
+    [Dependency] private IEntityManager _entities = null!;
+    [Dependency] private IPlayerManager _players = null!;
 
     public string Command => "controlmobas";
     public string Description => "Force a player to control a target entity.";

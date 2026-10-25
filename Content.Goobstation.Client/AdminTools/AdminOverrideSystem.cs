@@ -4,9 +4,9 @@ using Robust.Shared.Utility;
 
 namespace Content.Goobstation.Client.AdminTools;
 
-public sealed class AdminOverrideSystem : EntitySystem
+public sealed partial class AdminOverrideSystem : EntitySystem
 {
-    [Dependency] private readonly SpriteSystem _sprite = null!;
+    [Dependency] private SpriteSystem _sprite = null!;
 
     public override void Initialize()
     {

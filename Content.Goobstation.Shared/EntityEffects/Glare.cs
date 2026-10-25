@@ -26,7 +26,7 @@ public sealed partial class Glare : EntityEffectBase<Glare>
 
 public sealed partial class GlareSystem : EntityEffectSystem<MetaDataComponent, Glare>
 {
-    [Dependency] private readonly SharedFlashSystem _flash = default!;
+    [Dependency] private SharedFlashSystem _flash = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<Glare> args)
     {

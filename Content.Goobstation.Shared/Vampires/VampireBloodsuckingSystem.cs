@@ -19,7 +19,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Goobstation.Shared.Vampires;
 
-public abstract class SharedVampireBloodsuckingSystem : EntitySystem
+public abstract partial class SharedVampireBloodsuckingSystem : EntitySystem
 {
     [Dependency] protected SharedBloodstreamSystem _bloodstream = default!;
     [Dependency] protected IngestionSystem _ingestion = default!;

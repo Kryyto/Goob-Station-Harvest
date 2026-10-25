@@ -19,7 +19,7 @@ public sealed partial class ThrowAtFacingDirection : EntityEffectBase<ThrowAtFac
 
 public sealed partial class ThrowAtFacingDirectionSystem : EntityEffectSystem<TransformComponent, ThrowAtFacingDirection>
 {
-    [Dependency] private readonly ThrowingSystem _throwing = default!;
+    [Dependency] private ThrowingSystem _throwing = default!;
 
     protected override void Effect(Entity<TransformComponent> entity, ref EntityEffectEvent<ThrowAtFacingDirection> args)
     {

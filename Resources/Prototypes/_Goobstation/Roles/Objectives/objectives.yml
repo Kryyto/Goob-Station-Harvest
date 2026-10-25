@@ -111,12 +111,14 @@
   - type: RoleplayObjective
 
 - type: entity
-  parent: BaseKeepAliveObjective
+  parent: BaseTargetObjective
   id: DarkPriestProtectObjective
   name: Protéger un Membre de l'Équipage
   description: Protéger un membre de l'équipage qui a éveillé votre intérêt.
   components:
+  - type: KeepAliveCondition
   - type: Objective
+    unique: false
     difficulty: 2
     icon:
       sprite: Objects/Misc/folders.rsi

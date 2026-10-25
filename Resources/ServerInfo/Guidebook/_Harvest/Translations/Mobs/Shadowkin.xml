@@ -1,0 +1,34 @@
+<Document>
+  # Ombres
+
+  <Box>
+    <GuideEntityEmbed Entity="MobShadowkinDummy" Caption=""/>
+  </Box>
+
+  Ce sont des êtres hautement intellectuels d'origine inconnue, possédant une physiologie assez unique jamais vue auparavant. Adaptées aux atmosphères des cavernes, ces créatures viennent des ténèbres. Certains disent qu'elles viennent d'une déchirure dans l'espace bleu, d'autres qu'elles viennent des profondeurs d'une planète lointaine. Leur langue naturelle est le Marish.
+  Concernant leur anatomie, ils possèdent de grandes oreilles, [color=#1e90ff]des yeux très sensibles[/color], et une queue pour l'équilibre. Il vaut aussi la peine de noter que leur sang a une concentration en fer bien plus élevée que celui des autres espèces.
+
+  ## Capacités uniques
+
+  ### Empathie
+
+  - On les a observés [color=#1e90ff]maintenir un lien télépathique[/color] avec d'autres Ombres, pouvant communiquer par une ruche mentale.
+
+  ## Avantages
+
+  - Ils sont capables de survivre dans l'espace étonnamment plus longtemps que prévu, subissant [color=#1e90ff]50 % de dégâts de pression en moins[/color].
+  - Leur sang concentré en fer réduit significativement leur consommation d'oxygène et leur permet de survivre sans pendant des périodes beaucoup plus prolongées.
+  - Ils semblent avoir une certaine affinité avec l'obscurité, étant réputés capables de [color=#1e90ff]voir dans l'obscurité totale[/color], contrairement aux autres espèces.
+  - Leur [color=#1e90ff]vitesse est légèrement plus rapide que celle des humains[/color] grâce à leur densité osseuse diminuée et leur agilité supérieure.
+  - Leurs attaques à mains nues infligent [color=#ec3a3a]5 Tranchant[/color].
+
+
+  ## Inconvénients
+
+  - Ils préfèrent les environnements plus froids que les humains, ce qui les rend plus sensibles aux températures élevées.
+  - Leur stature plus petite leur fait subir [color=#ffa500]25 % de dégâts bruts en plus.[/color]
+  - Ils subissent [color=#ffa500]50 % de dégâts de chaleur en plus[/color].
+  - À cause de leurs yeux sensibles, les flashs ont un effet plus fort sur eux.
+  - Leur densité osseuse diminuée rend plus difficile le fait de traîner des objets et des personnes.
+
+</Document>

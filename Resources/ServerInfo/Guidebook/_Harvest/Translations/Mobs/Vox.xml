@@ -1,0 +1,47 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Vox
+
+  <Box>
+    <GuideEntityEmbed Entity="MobVox" Caption=""/>
+  </Box>
+
+  [color=red]Avertissement ! Cette espèce n'est pas recommandée pour les nouveaux joueurs à cause de leur allergie fatale à l'oxygène ![/color]
+
+  Mi-organiques mi-silicium, les Vox [color=#1e90ff]respirent de l'azote[/color], et [color=#ffa500] l'oxygène est toxique pour eux.[/color]
+  Malheureusement, les stations spatiales ont tendance à être pleines d'oxygène,
+  donc les Vox doivent utiliser une réserve d'azote interne presque en permanence pour éviter une exposition fatale.
+
+  Les Vox apparaissent toujours avec un équipement respiratoire azote fonctionnel.
+  Un masque respiratoire de secours et une bonbonne d'azote d'urgence sont fournis dans leur boîte de survie.
+
+  ## Capacités uniques
+
+  ### Biologie modifiée
+
+  - Les Vox [color=#1e90ff]récupèrent lentement de faibles niveaux de dégâts de poison[/color] par eux-mêmes,
+  tant qu'ils font attention à ne pas dépasser 20 dégâts de poison.
+  - Cela leur permet de supporter de respirer l'air de la station jusqu'à trente secondes à la fois sans dégâts durables,
+  leur permettant de manger, boire, prendre des médicaments oraux, etc. rapidement.
+  - Une exposition de trente secondes à l'oxygène leur prend deux minutes pour récupérer.
+  - Si leur santé ne semble pas s'améliorer dans la minute suivant l'exposition à l'oxygène, ils devraient chercher des soins médicaux.
+
+  ## Régime alimentaire
+
+  - En plus des aliments normaux, les Vox peuvent aussi manger divers emballages de snacks, peaux de banane, coquilles d'œuf, et viande crue sans effets néfastes. Ils aiment aussi boire du carburant à souder.
+
+  ## Avantages
+
+  - Vous récupérez lentement des dégâts de poison en dessous de 20.
+  - Les Vox infligent des dégâts Tranchants avec leur attaque à mains nues.
+  - [color=#1e90ff]Vous ne pourrissez pas.[/color]
+
+  ## Inconvénients
+
+  - [color=#ffa500]L'oxygène est toxique[/color] pour la biologie des Vox.
+  - [color=#ffa500]Impossible d'être cloné.[/color]
+
+</Document>

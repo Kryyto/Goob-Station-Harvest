@@ -1,0 +1,30 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Tajaran
+
+  <Box>
+    <GuideEntityEmbed Entity="MobTajaran" Caption=""/>
+  </Box>
+
+  Les Tajara sont une espèce d'humanoïdes bipèdes omnivores avec des traits ressemblant fortement aux félins terrestres.
+  Leurs traits les plus distinctifs incluent une couche de fourrure, de grandes oreilles au sommet de leur tête, et une queue qui aide à l'équilibre.
+  Ils viennent de la lune glacée d'[color=turquoise]Ahdomai[/color], ne faisant leur entrée sur la scène galactique que relativement récemment.
+  À l'origine une société centrée sur les clans, les Tajara ont enduré des siècles de dictature.
+  Après une guerre civile, leur gouvernement s'est fracturé, et le pouvoir est revenu aux clans, où il reste à ce jour.
+
+  ## Avantages
+
+  - Leurs pieds doux leur permettent de [color=#1e90ff]marcher sans chaussures sans faire de bruit[/color].
+  - Ils peuvent [color=#1e90ff]rentrer dans des sacs de sport[/color].
+  - Ils utilisent leurs griffes pour les attaques à mains nues, infligeant des dégâts [color=#ec3a3a]Tranchants[/color] et [color=#ec3a3a]Perforants[/color].
+  - Leur couche de fourrure leur fait subir [color=#1e90ff]20 % de dégâts de Froid en moins.[/color]
+
+  ## Inconvénients
+
+  - Du fait de leur petite stature, les Tajara subissent [color=#ffa500]15 % de dégâts Bruts en plus.[/color]
+  - Ils subissent [color=#ffa500]20 % de dégâts de Chaleur en plus.[/color]
+
+</Document>

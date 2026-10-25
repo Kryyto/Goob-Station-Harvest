@@ -1,3 +1,209 @@
 Name: Harvestlog
 Order: -2
-Entries: []
+Entries:
+- author: Kryyto
+  changes:
+    - type: Tweak
+      message: Le bouton « Lier le compte Discord » est désactivé.
+  id: 1
+  time: '2026-05-09T11:00:51.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Remove
+      message: La fenêtre Patreon de Goob ne s'ouvre plus au lancement du jeu.
+  id: 2
+  time: '2026-05-09T11:03:04.0000000+00:00'
+- author: Eazeon
+  changes:
+    - type: Add
+      message: Mise à jour depuis Goob Station.
+  id: 3
+  time: '2026-05-18T05:05:50.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Remove
+      message: Le son de Metal Gear ne se joue plus quand on écrit « ! ».
+  id: 4
+  time: '2026-06-04T12:15:39.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: « mdr », « ptdr », « xptdr », « jpp » et « jsp » deviennent des émotes (rire, soupir, haussement d'épaules).
+  id: 5
+  time: '2026-06-08T07:55:12.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Les abréviations courantes du chat (« svp »...) sont écrites en entier en jeu.
+  id: 6
+  time: '2026-06-08T07:56:40.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Fix
+      message: Le mot « a » n'est plus remplacé par erreur dans le chat.
+  id: 7
+  time: '2026-06-11T18:08:51.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Ajout de la carte Kiloton (port de Starlight).
+  id: 8
+  time: '2026-06-11T18:09:18.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Add
+      message: Panneau admin (F7) pour gérer les objectifs d'un joueur, y compris des objectifs personnalisés affichés en fin de round.
+    - type: Add
+      message: Panneau admin (F7) pour téléporter une entité vers une autre.
+    - type: Add
+      message: Panneau admin (F7) pour faire contrôler une entité par un joueur.
+  id: 9
+  time: '2026-06-13T12:55:23.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Les mots de code des traîtres et des autres antagonistes sont traduits.
+  id: 10
+  time: '2026-07-06T07:50:39.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Add
+      message: Les sons sont étouffés par les murs et les portes (port de Trauma).
+  id: 11
+  time: '2026-07-06T07:50:57.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Fix
+      message: « lv » et « mv » ne sont plus remplacés dans le chat, pour ne pas gêner les câbles.
+    - type: Tweak
+      message: « cc » devient « CentComm » dans le chat.
+  id: 12
+  time: '2026-07-27T08:24:39.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Le menu Échap et les options sont traduits.
+  id: 13
+  time: '2026-08-03T08:24:52.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Les lois de l'IA et le menu des lois sont traduits.
+  id: 14
+  time: '2026-08-03T08:26:01.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Mise à jour depuis Goob Station.
+  id: 15
+  time: '2026-08-03T08:31:01.0000000+00:00'
+- author: Eazeon
+  changes:
+    - type: Add
+      message: Nouvel écran de lobby, le gardien, dessiné par PoPPo.
+  id: 16
+  time: '2026-08-04T22:21:15.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Add
+      message: Outil admin AdminOverride pour modifier le sprite, la taille, la santé et le démembrement d'une entité.
+  id: 17
+  time: '2026-08-06T08:20:25.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Deux traits de tolérance à l'alcool, « Poids plume » et « Véritable tonneau » (port de Cosmatic Drift).
+  id: 18
+  time: '2026-08-07T08:59:33.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Add
+      message: Nouvel antagoniste Vampire, avec deux spécialisations, Sang et Ombres.
+  id: 19
+  time: '2026-08-10T07:29:24.0000000+00:00'
+- author: Shun-Lassal
+  changes:
+    - type: Add
+      message: Le silo à matériaux possède un aimant activable depuis son interface.
+    - type: Add
+      message: Le silo aspire, stocke et éjecte aussi les minerais et les matériaux bruts.
+    - type: Fix
+      message: Les feuilles de plasma peuvent être insérées dans le silo.
+  id: 20
+  time: '2026-08-17T18:26:18.0000000+00:00'
+- author: Shun-Lassal
+  changes:
+    - type: Add
+      message: Analyseur de graines, une machine qui compare les caractéristiques génétiques d'une graine et imprime un rapport.
+    - type: Add
+      message: Analyseur de santé des plantes, disponible dans l'équipement des botanistes, le TechFab Service et le NutriMax.
+  id: 21
+  time: '2026-08-17T18:28:06.0000000+00:00'
+- author: Shun-Lassal
+  changes:
+    - type: Fix
+      message: L'analyseur de santé n'ouvre plus l'interface de l'analyseur de plantes.
+  id: 22
+  time: '2026-08-18T21:21:56.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Le jeu est entièrement traduit en français ! Signalez les erreurs sur le Discord.
+  id: 23
+  time: '2026-08-25T12:21:37.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Fix
+      message: Le client ne plante plus avec la traduction française.
+  id: 24
+  time: '2026-08-26T13:56:19.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Remove
+      message: L'événement de vérification du réseau électrique ne se déclenche plus.
+  id: 25
+  time: '2026-09-21T21:37:12.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Fix
+      message: Nombreuses corrections de traduction.
+  id: 26
+  time: '2026-10-16T13:05:30.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Add
+      message: Des androïdes concierge, barman et cuisinier occupent les postes libres quand il y a peu de joueurs.
+  id: 27
+  time: '2026-10-16T18:04:31.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Ajout de la carte Dove (port de Harmony).
+  id: 28
+  time: '2026-10-17T12:53:18.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Amber revient dans la rotation des cartes.
+    - type: Tweak
+      message: Amber, Omega, Packed et Cluster peuvent être choisies même avec peu de joueurs.
+  id: 29
+  time: '2026-10-17T12:53:46.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Fix
+      message: Corrections diverses sur l'antagoniste Vampire.
+  id: 30
+  time: '2026-10-20T18:39:37.0000000+00:00'
+- author: Tarta
+  changes:
+    - type: Add
+      message: Des chapeaux melons sont disponibles dans le DetDrobe et le ClothesMate.
+  id: 31
+  time: '2026-10-20T20:09:48.0000000+00:00'
+- author: Kryyto
+  changes:
+    - type: Add
+      message: Onglet Harvest dans le journal des modifications.
+  id: 32
+  time: '2026-10-24T23:05:47.0000000+00:00'

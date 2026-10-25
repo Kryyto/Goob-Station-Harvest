@@ -24,7 +24,7 @@ public sealed class AndroidNpcConfigTests
     [Test]
     public async Task GlobalConfig_IsLoadedWithSaneValues()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var protos = server.ResolveDependency<IPrototypeManager>();
 
@@ -61,7 +61,7 @@ public sealed class AndroidNpcConfigTests
     [Test]
     public async Task EveryJob_HasValidPrototypesLinesAndTree()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var protos = server.ResolveDependency<IPrototypeManager>();
 
@@ -120,7 +120,7 @@ public sealed class AndroidNpcConfigTests
     [Test]
     public async Task ConversationPatterns_AllCompile()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var protos = server.ResolveDependency<IPrototypeManager>();
 

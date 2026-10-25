@@ -19,7 +19,7 @@
     tags:
     - Sidearm
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/deckard.rsi #GoobStation Resprite
     quickEquip: false
     slots:
     - suitStorage
@@ -81,7 +81,7 @@
   description: Un revolver magnifiquement usiné, fabriqué sur mesure. Utilisé quand il n'y a pas le temps pour le test de Voight-Kampff. Charge 5 coups .45 magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/deckard.rsi #GoobStation Resprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -109,9 +109,9 @@
   description: Un revolver double action fabriqué par diverses compagnies. Disponible sur le marché civil, c'est un choix populaire parmi les détectives privés. Vous vous sentez chanceux rien qu'en le tenant. Charge 6 coups .45 magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/inspector.rsi #GoobStation Resprite
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/inspector.rsi #GoobStation Resprite
   - type: Item
     storedOffset: 0,-2
   - type: RevolverAmmoProvider
@@ -128,9 +128,9 @@
   description: Un revolver semi-automatique rare et magnifique. Fourni uniquement à l'élite Nanotrasen, le Mateba arbore un design de canon unique qui réduit considérablement le relèvement du canon. Beaucoup ont fixé le canon de cette arme, et encore moins ont survécu pour raconter l'histoire. Charge 6 coups .45 Magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/mateba.rsi #GoobStation Resprite
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/mateba.rsi #GoobStation Resprite
   - type: Item
     storedOffset: 0,-3
   - type: Gun
@@ -166,9 +166,9 @@
   description: Un puissant revolver double action conçu par la Waffle Corporation. Bruyant et tape-à-l'œil, parfait pour tout agent cherchant à faire une déclaration. Charge 6 coups .45 magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/python.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/python.rsi #GoobStation Resprite
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Revolvers/python.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/python.rsi #GoobStation Resprite
   - type: Item
     storedOffset: 0,-2
   - type: Gun
@@ -199,9 +199,9 @@
   description: Un revolver monocoup grossier fabriqué à la main par un pirate de l'espace. Vieux et couvert de rouille, il fonctionne pourtant encore. Charge 5 coups .45 magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi #GoobStation Resprite
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi #GoobStation Resprite
   - type: Item
     storedOffset: 1,-5
   - type: Gun

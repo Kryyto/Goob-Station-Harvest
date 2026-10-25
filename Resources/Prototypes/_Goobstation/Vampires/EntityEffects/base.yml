@@ -1,4 +1,4 @@
-﻿- type: entityEffect
+- type: entityEffect
   id: VampireRejuvI
   effects:
   - !type:TakeStaminaDamage
@@ -62,7 +62,7 @@
 - type: entityEffect
   id: VampireFlameBurst
   effects:
-  - !type:Flammable
+  - !type:VampireFlammable
     multiplier: 5
   - !type:Ignite
 

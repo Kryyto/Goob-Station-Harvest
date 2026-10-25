@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Damage.Systems;
+using Content.Shared.Damage.Components;
 using System.Linq;
 using Content.Server.AndroidNpc.BehaviorTree.Nodes;
 using Content.Server.AndroidNpc.Components;
@@ -575,7 +577,7 @@ public sealed class AndroidMedicSystem : EntitySystem
                     break;
 
                 if (HasComp<WoundableComponent>(part) &&
-                    _damageable.TryChangeDamage(part, healing, true, origin: medic, ignoreBlockers: true, canMiss: false) is { } healed)
+                    _damageable.TryChangeDamage(part, healing, out var healed, true, origin: medic, ignoreBlockers: true, canMiss: false))
                 {
                     healing += -healed;
                 }

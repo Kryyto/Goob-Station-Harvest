@@ -22,7 +22,7 @@ public sealed partial class SetToggleAction : EntityEffectBase<SetToggleAction>
 
 public sealed partial class SetToggleActionSystem : EntityEffectSystem<ActionsComponent, SetToggleAction>
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private SharedActionsSystem _actions = default!;
 
     protected override void Effect(Entity<ActionsComponent> entity, ref EntityEffectEvent<SetToggleAction> args)
     {

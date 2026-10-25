@@ -17,10 +17,10 @@ using Robust.Shared.Physics.Systems;
 namespace Content.Goobstation.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
-public sealed class WarpPlayerCommand : LocalizedCommands
+public sealed partial class WarpPlayerCommand : LocalizedCommands
 {
-    [Dependency] private readonly IEntityManager _entities = null!;
-    [Dependency] private readonly IPlayerManager _players = null!;
+    [Dependency] private IEntityManager _entities = null!;
+    [Dependency] private IPlayerManager _players = null!;
 
     public override string Command => "warpplayer";
 

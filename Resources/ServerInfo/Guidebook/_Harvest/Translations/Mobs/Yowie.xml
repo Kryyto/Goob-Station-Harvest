@@ -1,0 +1,41 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Yowie
+
+  <Box>
+    <GuideEntityEmbed Entity="MobYowie" Caption=""/>
+  </Box>
+
+  Les Yowie sont un mythe urbain autrefois cru, devenu espèce mystique nouvellement découverte de créature bipède poilue.
+  D'après les discussions entre nos espèces, il semble qu'historiquement ils vivaient aux côtés de l'humanité pendant son existence sur Terre, dans certaines régions d'Australie, ce qui les a menés à développer un fort accent australien, argot inclus.
+
+  ## Capacités uniques
+
+  ### Putain de skiz, mec
+  <Box>
+    <GuideEntityEmbed Entity="Joint" Caption=""/>
+  </Box>
+
+  - Ils semblent avoir passé la plupart de leur temps à expérimenter avec certaines des drogues les plus dangereuses et expérimentales, et au vu des résultats, ils ont développé une plus grande tolérance à la plupart des produits chimiques. De manière unique, leur foie s'occupe de métaboliser les produits chimiques.
+
+  ## Régime alimentaire
+
+  - Grâce à leur résistance à la plupart des drogues et toxines, ils peuvent consommer presque n'importe quel objet comestible.
+
+  ## Avantages
+
+  - Ils subissent 25 % de dégâts Contondants, Tranchants et Perforants en moins.
+  - Leur stature fait que leur coup de poing à mains nues inflige [color=#ec3a3a]2x les dégâts[/color] d'un coup de poing humain.
+  - Leur fourrure leur permet de subir [color=#1e90ff]moins de dégâts de froid[/color].
+  - Ils pèsent plus, ce qui leur permet de tirer les espèces plus légères avec facilité.
+
+  ## Inconvénients
+
+  - Leur corps est plus grand que la plupart des autres espèces, avec l'inconvénient qu'ils [color=#ffa500]ne peuvent pas rentrer dans la plupart des tenues externes ou chaussures Nanotrasen[/color] (ils rentrent à peine dans les combinaisons souples).
+  - Ils ne peuvent pas être portés par les autres.
+  - Ils sont plus faciles à toucher à cause de leur taille.
+
+</Document>

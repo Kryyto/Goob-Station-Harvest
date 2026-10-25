@@ -1,0 +1,13 @@
+bark-name-Baritone = Baryton
+bark-name-Bass = Basse
+bark-name-Tenor = Ténor
+bark-name-Arachnid = Arachnide
+bark-name-Lizard = Lézard
+bark-name-Harpy = Harpie
+bark-name-Squeak = Couinement
+bark-name-MaleAvali = Avali Mâle
+bark-name-FemaleAvali = Avali Femelle
+bark-name-BorgSyndie = Borg Syndie
+bark-name-Aviu1 = Impertinent
+bark-name-Aviu2 = Puissant
+bark-name-Aviu4 = Éthéré

@@ -19,7 +19,7 @@ public sealed partial class VampireVomit : EntityEffectBase<VampireVomit>
 
 public sealed partial class VampireVomitSystem : EntityEffectSystem<MetaDataComponent, VampireVomit>
 {
-    [Dependency] private readonly VomitSystem _vomit = default!;
+    [Dependency] private VomitSystem _vomit = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<VampireVomit> args)
     {

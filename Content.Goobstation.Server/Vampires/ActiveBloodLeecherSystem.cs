@@ -6,7 +6,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Goobstation.Server.Vampires;
 
-public sealed class ActiveBloodLeecherSystem : SharedActiveBloodLeecherSystem
+public sealed partial class ActiveBloodLeecherSystem : SharedActiveBloodLeecherSystem
 {
     [Dependency] private BeamSystem _beam = default!;
 

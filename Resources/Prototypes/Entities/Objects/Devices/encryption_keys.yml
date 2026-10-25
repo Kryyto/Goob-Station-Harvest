@@ -248,11 +248,10 @@
   name: clé traducteur binaire
   description: Une clé de cryptage qui traduit les signaux binaires utilisés par les siliciums.
   components:
-  # Goobstation - replaced with collective mind
-  #- type: EncryptionKey
-  #  channels:
-  #  - Binary
-  #  defaultChannel: Binary
+  - type: EncryptionKey
+    channels:
+    - Binary
+    defaultChannel: Binary
   - type: Sprite
     layers:
     - state: crypt_silver
@@ -264,11 +263,10 @@
   name: clé traducteur binaire
   description: Une clé de cryptage du Syndicat qui traduit les signaux binaires utilisés par les siliciums.
   components:
-  # Goobstation - replaced with collective mind
-  #- type: EncryptionKey
-  #  channels:
-  #  - Binary
-  #  defaultChannel: Binary
+  - type: EncryptionKey
+    channels:
+    - Binary
+    defaultChannel: Binary
   - type: Sprite
     layers:
     - state: crypt_red

@@ -3,18 +3,16 @@ SPDX-License-Identifier: MIT
 -->
 
 <Document>
-  # Arachnides
+  # Arachnids
 
   <Box>
     <GuideEntityEmbed Entity="MobArachnid" Caption=""/>
   </Box>
+  Arachnids are a humanoid species with features resembling those of the common tarantula.
+  
+  ## Unique Abilities
 
-  Ils ont deux emplacements de poche supplémentaires dans leur inventaire. Ils peuvent manger de la viande crue sans effets néfastes, mais certains aliments comme le chocolat et l'oignon les empoisonnent.
-  Ils s'asphyxient 50 % plus vite, et leur Sang Bleu ne peut pas être métabolisé à partir de Fer, étant basé sur du Cuivre à la place.
-
-  Leurs attaques à mains nues infligent des dégâts Perforants au lieu de Contondants.
-
-  ## Sériculture
+  ### Sericulture
 
   <Box>
     <GuideEntityEmbed Entity="MaterialWebSilk" Caption=""/>
@@ -23,7 +21,24 @@ SPDX-License-Identifier: MIT
     <GuideEntityEmbed Entity="WallWeb" Caption=""/>
   </Box>
 
-  Les Arachnides peuvent créer de la Soie-toile au prix d'avoir plus faim. Eux (et seulement eux) peuvent fabriquer des ballots de soie-toile en divers objets, des vêtements et boucliers jusqu'à des murs entiers.
+  - Arachnids can create Websilk at the cost of getting hungrier. They (and only they) can craft bundles of websilk into various items, from clothing and shields to entire walls.
+
+  ## Diet
+
+  - They can eat raw meat without any ill effects.
+  - They will get [color=#FFA500]poisoned[/color] by Theobromine (Chocolate, Tea, Coffee) and Allicin (Onion, Garlic).
+
+  ## Benefits
+
+  - They have two additional Pocket slots in their inventory.
+  - Their unarmed attacks deal [color=#ec3a3a]Piercing[/color] damage instead of Blunt.
+
+  ## Drawbacks
+  
+  - They [color=#FFA500]suffocate 50% faster.[/color]
+  - their Blue Blood [color=#FFA500]can't be metabolised from Iron[/color], being based on Copper instead.
+
+  
 
 
 </Document>

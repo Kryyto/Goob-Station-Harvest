@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Goobstation.Shared.Actions;
 using Content.Goobstation.Shared.Vampires.Haemomancer;
 using Content.Shared.Mind.Components;
@@ -14,7 +16,7 @@ using System.Linq;
 
 namespace Content.Goobstation.Server.Vampires;
 
-public sealed class PredatorSensesSystem : EntitySystem
+public sealed partial class PredatorSensesSystem : EntitySystem
 {
     [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private SharedPopupSystem _popup = default!;

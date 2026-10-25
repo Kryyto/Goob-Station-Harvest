@@ -27,10 +27,10 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  name: buisson poussiéreux
+  name: dusty bush
   id: FloraAshBush
   parent: BaseLavalandFlora
-  description: Un buisson recouvert de cendre. Il a l'air mort, mais il est en fait vivant !
+  description: A bush that is covered in ash. It may look like it's dead, but it's actually alive!
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Decoration/Flora/Misc/bush.rsi
@@ -57,10 +57,10 @@
   #      - id: FoodSpaceshroom
 
 - type: entity
-  name: pousses grises
+  name: gray sprouts
   id: FloraAshSprouts
   parent: BaseLavalandFlora
-  description: Des pousses qui semblent complètement propres, elles semblent avoir une surface très lisse.
+  description: Sprouts that look completely clean, they seem to have a very smooth surface.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Decoration/Flora/Misc/dark_sprouts.rsi
@@ -76,20 +76,15 @@
         sprout4: ""
         sprout5: ""
         sprout6: ""
-  #- type: Gatherable # TODO add proper loot
-  #  toolWhitelist:
-  #    components:
-  #    - Hands
-  #  loot:
-  #    All: !type:GroupSelector
-  #      children:
-  #      - id: FoodSpaceshroom
+  - type: Harvestable
+    delay: 2
+    loot: MaterialFlowersAsh1
 
 - type: entity
-  name: pousses pâles
+  name: pale sprouts
   id: FloraPaleSprouts
   parent: BaseLavalandFlora
-  description: Des pousses qui semblent complètement propres, elles semblent avoir une surface très lisse. Celles-ci ont l'air plus naturelles.
+  description: Sprouts that look completely clean, they seem to have a very smooth surface. These ones look more natural.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Decoration/Flora/Misc/light_sprouts.rsi
@@ -105,20 +100,15 @@
         sprout4: ""
         sprout5: ""
         sprout6: ""
-  #- type: Gatherable # TODO add proper loot
-  #  toolWhitelist:
-  #    components:
-  #    - Hands
-  #  loot:
-  #    All: !type:GroupSelector
-  #      children:
-  #      - id: FoodSpaceshroom
+  - type: Harvestable
+    delay: 2
+    loot: MaterialFlowersPale1
 
 - type: entity
-  name: fleurs jaunes
+  name: yellow flowers
   id: FloraAshYellowFlowers
   parent: BaseLavalandFlora
-  description: Un groupe de fleurs jaunes. Elles semblent fragiles, et pourtant parviennent à survivre ici.
+  description: A group of yellow flowers. They look weak, and yet still manage to survive in this place.
   components:
   - type: Sprite
     sprite: _Lavaland/Objects/Decoration/Flora/Misc/yellow_flowers.rsi
@@ -131,11 +121,6 @@
         flowers1: ""
         flowers2: ""
         flowers3: ""
-  #- type: Gatherable # TODO add proper loot
-  #  toolWhitelist:
-  #    components:
-  #    - Hands
-  #  loot:
-  #    All: !type:GroupSelector
-  #      children:
-  #      - id: FoodSpaceshroom
+  - type: Harvestable
+    delay: 2
+    loot: MaterialFlowersPale1 # TODO add yellow flowers and something with them

@@ -16,10 +16,10 @@ using Robust.Shared.Player;
 
 namespace Content.Goobstation.Server.Administration;
 
-public sealed class PlayerObjectivesEui : BaseEui
+public sealed partial class PlayerObjectivesEui : BaseEui
 {
-    [Dependency] private readonly IEntityManager _entities = null!;
-    [Dependency] private readonly IAdminManager _admins = null!;
+    [Dependency] private IEntityManager _entities = null!;
+    [Dependency] private IAdminManager _admins = null!;
 
     private readonly ICommonSession _targetSession;
 

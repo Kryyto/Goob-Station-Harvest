@@ -25,8 +25,8 @@ public sealed partial class RelayHands : EntityEffectBase<RelayHands>
 
 public sealed partial class RelayHandsSystem : EntityEffectSystem<HandsComponent, RelayHands>
 {
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedEntityEffectsSystem _entityEffects = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedEntityEffectsSystem _entityEffects = default!;
 
     protected override void Effect(Entity<HandsComponent> entity, ref EntityEffectEvent<RelayHands> args)
     {

@@ -10,7 +10,7 @@ namespace Content.Goobstation.Shared.StatusEffects;
 /// System that prevents entities with UnableToShootStatusEffectComponent from using guns.
 /// </summary>
 [UsedImplicitly]
-public sealed class UnableToShootStatusEffectSystem : EntitySystem
+public sealed partial class UnableToShootStatusEffectSystem : EntitySystem
 {
     [Dependency] private SharedPopupSystem _popup = default!;
 

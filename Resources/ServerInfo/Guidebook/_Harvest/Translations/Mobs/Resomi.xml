@@ -1,0 +1,32 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Resomi
+
+  <Box>
+    <GuideEntityEmbed Entity="MobResomiDummy" Caption=""/>
+  </Box>
+
+  Les Resomi sont une petite espèce aviaire originaire d'un monde glacé.
+
+  ## Régime alimentaire
+
+  - Comme la plupart des autres espèces non-humaines, les Resomi sont capables de digérer de la viande crue et d'autres protéines animales non cuites.
+
+  ## Avantages
+
+  - Du fait des conditions de leur planète d'origine et de leur sang à base d'ammoniac, les Resomi sont [color=#1e90ff]immunisés contre tout dégât de froid et autres effets.[/color]
+  - Du fait de leur petite taille, ils peuvent tenir dans des sacs de sport.
+  - Leur attaque à mains nues inflige des dégâts [color=#ec3a3a]Tranchants[/color].
+
+  ## Inconvénients
+
+  - Ils trouvent les températures que la plupart des autres espèces trouvent confortables insupportablement chaudes, se retrouvant à [color=#ffa500]souffrir dès 30°C.[/color]
+  - Avec leurs tolérances de température, ils [color=#ffa500]subissent 30 % de dégâts de chaleur en plus et 15 % de dégâts bruts en plus.[/color]
+  - Ils ont des os plus fragiles.
+  - Ils pèsent moins, ce qui rend plus difficile pour eux de tirer d'autres espèces.
+  - Les Resomi ont [color=#ffa500]33 % de sang en moins[/color], ce qui les fait souffrir de la perte de sang bien plus tôt.
+
+</Document>

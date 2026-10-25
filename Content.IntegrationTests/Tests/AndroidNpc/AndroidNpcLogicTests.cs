@@ -83,7 +83,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task AndroidSpawns_WithNameAndJob()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
 
@@ -117,7 +117,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task AndroidSpawner_SpawnsJanitor()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
 
@@ -186,7 +186,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task FollowMeOrder_IsRecognized()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -224,7 +224,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task GoToDepartmentOrder_ExtractsTarget()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -258,7 +258,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task OrderAddressedByName_IsRecognized()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -300,7 +300,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Order_FromAnySpeaker_IsObeyed()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -341,7 +341,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Order_Expires_IsRemovedAndStatusReset()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -380,7 +380,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task GoToPersonOrder_ExtractsTarget()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -416,7 +416,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task OrderRequiresAddressing_UnaddressedMessageIgnored()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -452,7 +452,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task AndroidSpawns_InitialStateIsWorking()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -474,7 +474,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task AndroidSpawns_UsesAndroidSpeciesAndNoSsdExamine()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -503,7 +503,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task StatusReport_IsRecognizedAndDoesNotCreateOrder()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -535,7 +535,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_CleansPuddle_WhenOneIsNearby()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -608,7 +608,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_CleansDirtyTile_WhenOneIsNearby()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -654,7 +654,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_MovesToAndCleansPuddle_TwoTilesAway()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -728,7 +728,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task AddressedGreeting_DoesNotCreateOrderAndIsRemembered()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -776,7 +776,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_Loadout_BucketAndMopFilledWithWater()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -817,7 +817,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_IgnoresTrashInsideContainers()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -847,7 +847,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_WringsDirtyMopIntoCarriedBucket()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -897,7 +897,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_EmptiesDirtyBucketAndRefillsAtSink()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -955,7 +955,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_EmptiesTrashBagIntoDisposalUnit()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1014,7 +1014,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_DoesNotKeepScrubbingWithASpentMop()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1072,7 +1072,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_IgnoresPuddlesThatAreOnlyWater()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1119,7 +1119,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_CanPickUpBananaPeel()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1148,7 +1148,7 @@ public sealed class AndroidNpcLogicTests
     [TestCase("TrashBakedBananaPeel")]
     public async Task Janitor_PicksUpBananaPeelOverTime(string peelPrototype)
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1199,7 +1199,7 @@ public sealed class AndroidNpcLogicTests
     [TestCase("TrashBakedBananaPeel")]
     public async Task Janitor_TreePicksUpBananaPeel(string peelPrototype)
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1273,7 +1273,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_DirectEquipPicksUpBananaPeel()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1309,7 +1309,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_TreeSelectsClosestBananaPeel()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1365,7 +1365,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_OpensAirlockToReachBananaPeel()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1499,7 +1499,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task AndroidSpawns_SuitSensorCoordinatesEnabled()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1524,7 +1524,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_DoesNotOpenLockedAirlock()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1602,7 +1602,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_EquipsAndUsesLightReplacerOnBrokenFixture()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1666,7 +1666,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_GoesOnBreakAtBarAfterInterval()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;
@@ -1750,7 +1750,7 @@ public sealed class AndroidNpcLogicTests
     [Test]
     public async Task Janitor_ReachesBarFromOppositeEndOfSaltern()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var mapSys = sEnt.System<SharedMapSystem>();

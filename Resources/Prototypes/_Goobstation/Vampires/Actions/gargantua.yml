@@ -1,4 +1,4 @@
-﻿# Rejuv Garg
+# Rejuv Garg
 - type: entity
   parent: BaseRejuvAction
   id: ActionVampGargRejuv
@@ -107,7 +107,7 @@
     event: !type:EffectInstantActionEvent
   - type: EffectAction
     effects:
-    - !type:RelayNearby
+    - !type:VampireRelayNearby
       compName: StatusEffects
       range: 5
       effect: !type:NestedEffect

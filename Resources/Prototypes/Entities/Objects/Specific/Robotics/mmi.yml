@@ -6,6 +6,8 @@
   name: interface homme-machine
   description: Une machine capable de faciliter la communication entre un cerveau biologique et l'électronique, permettant à l'équipage de continuer à apporter de la valeur après des incidents liés au travail.
   components:
+  - type: VoiceChatEffect # Goobstation - Voice chat
+    effect: Robot
   - type: Sprite
     sprite: Objects/Specific/Robotics/mmi.rsi
     layers:
@@ -25,19 +27,15 @@
   - type: BorgBrain
   - type: BlockMovement
   - type: Examiner
+  - type: IntellicardableMind # Goobstation - we can finally turn clankers into humans
   - type: IntrinsicRadioReceiver
-  #- type: IntrinsicRadioTransmitter
-  #  channels:
-  #  - Binary # Goobstation - replaced with collective mind
-  - type: ActiveRadio
-    channels:
-    # - Binary # Goobstation - replaced with collective mind
-    - Common
-  # Goobstation
-  - type: CollectiveMind
-    defaultChannel: Binary
+  - type: IntrinsicRadioTransmitter
     channels:
     - Binary
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
   - type: NameIdentifier
     group: MMI
   - type: DoAfter
@@ -87,6 +85,8 @@
   name: cerveau positronique
   description: Un cerveau artificiel capable d'activité neurale spontanée.
   components:
+    - type: VoiceChatEffect # Goobstation - Voice chat
+      effect: Robot
     - type: Sprite
       sprite: Objects/Specific/Robotics/mmi.rsi
       layers:
@@ -109,6 +109,7 @@
       stopSearchVerbText: positronic-brain-stop-searching-verb-text
       stopSearchVerbPopup: positronic-brain-stopped-searching
       job: Borg
+      canBeWiped: false # Goob - sorry shitters
     - type: Organ
       slotId: posbrain
     - type: Brain
@@ -117,18 +118,13 @@
     - type: BorgBrain
     - type: IntellicardableMind # Goobstation - intellicard on more AIs
     - type: IntrinsicRadioReceiver
-    #- type: IntrinsicRadioTransmitter
-    #  channels:
-    #  - Binary # Goobstation - replaced with collective mind
-    - type: ActiveRadio
-      channels:
-      # - Binary # Goobstation - replaced with collective mind
-      - Common
-    # Goobstation
-    - type: CollectiveMind
-      defaultChannel: Binary
+    - type: IntrinsicRadioTransmitter
       channels:
       - Binary
+    - type: ActiveRadio
+      channels:
+      - Binary
+      - Common
     - type: NameIdentifier
       group: PositronicBrain
     - type: DoAfter

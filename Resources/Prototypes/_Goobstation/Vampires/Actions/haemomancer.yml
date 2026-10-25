@@ -1,4 +1,4 @@
-﻿# Vampiric Claws
+# Vampiric Claws
 - type: entity
   parent: BaseVampireAction
   id: ActionVampiricClaws
@@ -130,7 +130,7 @@
     event: !type:EffectInstantActionEvent
   - type: EffectAction
     effects:
-    - !type:RelayNearby
+    - !type:VampireRelayNearby
       compName: Puddle
       range: 5
       skipSameTile: true

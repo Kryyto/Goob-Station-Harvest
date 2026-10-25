@@ -21,7 +21,7 @@ public sealed partial class HasVampireBlood : EntityConditionBase<HasVampireBloo
 
 public sealed partial class HasVampireBloodSystem : EntityConditionSystem<VampireComponent, HasVampireBlood>
 {
-    [Dependency] private readonly SharedVampireSystem _vampire = default!;
+    [Dependency] private SharedVampireSystem _vampire = default!;
 
     protected override void Condition(Entity<VampireComponent> entity, ref EntityConditionEvent<HasVampireBlood> args)
     {

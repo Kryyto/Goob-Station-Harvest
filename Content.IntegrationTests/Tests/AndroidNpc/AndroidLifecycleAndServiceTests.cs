@@ -32,7 +32,7 @@ public sealed class AndroidLifecycleAndServiceTests
 {
     internal static async Task<(TestPair Pair, TestMapData Map)> Setup()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var map = await pair.CreateTestMap();
 
         await pair.Server.WaitAssertion(() =>
@@ -415,7 +415,7 @@ public sealed class AndroidLifecycleAndServiceTests
         await server.WaitAssertion(() =>
         {
             var blunt = server.ResolveDependency<IPrototypeManager>().Index<Content.Shared.Damage.Prototypes.DamageTypePrototype>("Blunt");
-            server.System<Content.Shared.Damage.DamageableSystem>().TryChangeDamage(android, new Content.Shared.Damage.DamageSpecifier(blunt, 10));
+            server.System<Content.Shared.Damage.Systems.DamageableSystem>().TryChangeDamage(android, new Content.Shared.Damage.DamageSpecifier(blunt, 10));
         });
 
         await server.WaitRunTicks(5);

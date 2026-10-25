@@ -21,8 +21,8 @@ public sealed partial class AnyNearbyCondition : EntityConditionBase<AnyNearbyCo
 
 public sealed partial class AnyNearbyConditionSystem : EntityConditionSystem<MetaDataComponent, AnyNearbyCondition>
 {
-    [Dependency] private readonly IComponentFactory _componentFactory = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private IComponentFactory _componentFactory = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
 
     protected override void Condition(Entity<MetaDataComponent> entity, ref EntityConditionEvent<AnyNearbyCondition> args)
     {

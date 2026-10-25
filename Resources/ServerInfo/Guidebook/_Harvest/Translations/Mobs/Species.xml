@@ -1,0 +1,41 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Espèces
+
+  Nanotrasen emploie une variété d'espèces sapientes. Il est sage d'apprendre à les connaître pour savoir ce dont vos collègues ont besoin.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobArachnid" Caption="Arachnide"/>
+    <GuideEntityEmbed Entity="MobDiona" Caption="Diona"/>
+    <GuideEntityEmbed Entity="MobDwarf" Caption="Nain"/>
+    <GuideEntityEmbed Entity="MobGingerbread" Caption="Pain d'épice"/>
+    <GuideEntityEmbed Entity="MobHarpy" Caption="Harpie"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobHuman" Caption="Humain"/>
+    <GuideEntityEmbed Entity="MobIPCDummy" Caption="IPC"/>
+    <GuideEntityEmbed Entity="MobMoth" Caption="Homme-mite"/>
+    <GuideEntityEmbed Entity="MobOni" Caption="Oni"/>
+    <GuideEntityEmbed Entity="MobReptilian" Caption="Reptilien"/>
+    <GuideEntityEmbed Entity="MobResomi" Caption="Resomi"/>
+    <GuideEntityEmbed Entity="MobRodentia" Caption="Rodentia"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobSlimePerson" Caption="Homme-slime"/>
+    <GuideEntityEmbed Entity="MobTajaran" Caption="Tajaran"/>
+    <GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
+    <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vulpkanin"/>
+    <GuideEntityEmbed Entity="MobYowie" Caption="Yowie"/>
+    <GuideEntityEmbed Entity="MobChitinid" Caption="Chitinide"/>
+    <GuideEntityEmbed Entity="MobFeroxi" Caption="Feroxi"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobShadowkin" Caption="Ombre"/>
+    <GuideEntityEmbed Entity="MobHydrakin" Caption="Hydrakin"/>
+    <GuideEntityEmbed Entity="MobSynth" Caption="Synth"/> <!-- Goob - Afterlight -->
+  </Box>
+
+</Document>

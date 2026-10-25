@@ -21,7 +21,7 @@ public sealed partial class ReagentsCondition : EntityConditionBase<ReagentsCond
 
 public sealed partial class ReagentsConditionSystem : EntityConditionSystem<SolutionContainerManagerComponent, ReagentsCondition>
 {
-    [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
+    [Dependency] private SharedSolutionContainerSystem _solution = default!;
 
     protected override void Condition(Entity<SolutionContainerManagerComponent> entity, ref EntityConditionEvent<ReagentsCondition> args)
     {

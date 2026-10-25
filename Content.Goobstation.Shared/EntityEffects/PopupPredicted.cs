@@ -22,7 +22,7 @@ public sealed partial class PopupPredicted : EntityEffectBase<PopupPredicted>
 
 public sealed partial class PopupPredictedSystem : EntityEffectSystem<MetaDataComponent, PopupPredicted>
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<PopupPredicted> args)
     {

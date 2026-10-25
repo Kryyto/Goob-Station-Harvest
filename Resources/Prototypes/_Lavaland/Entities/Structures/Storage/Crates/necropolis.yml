@@ -17,6 +17,7 @@
   name: coffre nécropole
   suffix: Filled
   components:
+  - type: AlmanacBladeChestSpawner
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:NestedSelector

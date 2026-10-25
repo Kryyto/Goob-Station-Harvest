@@ -15,7 +15,7 @@ namespace Content.Goobstation.Shared.EntityEffects;
 /// </summary>
 public sealed partial class BlindNonShadowlingSystem : EntityEffectSystem<HumanoidAppearanceComponent, BlindNonShadowling>
 {
-    [Dependency] private readonly StatusEffectsSystem _status = default!;
+    [Dependency] private StatusEffectsSystem _status = default!;
 
     protected override void Effect(Entity<HumanoidAppearanceComponent> entity, ref EntityEffectEvent<BlindNonShadowling> args)
     {

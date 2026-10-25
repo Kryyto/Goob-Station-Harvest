@@ -145,3 +145,8 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "dannyy_uwu - CHUDSHIFT- deer destroyer"
   source: "https://youtu.be/vbGYg9chpGY"
+
+- files: ["exposure.ogg"]
+  license: "Custom"
+  copyright: "Exposure composed primarily by Eric Shumaker, Look Outside"
+  source: "https://soundcloud.com/user-624189121/look-outside-ost-exposure"

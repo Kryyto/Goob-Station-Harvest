@@ -20,15 +20,15 @@ namespace Content.Goobstation.Server.Vampires;
 /// <summary>
 ///     Server-side system for handling vampire antag logic.
 /// </summary>
-public sealed class VampireSystem : GameRuleSystem<VampireRuleComponent>
+public sealed partial class VampireSystem : GameRuleSystem<VampireRuleComponent>
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly MindSystem _mind = default!;
-    [Dependency] private readonly AntagSelectionSystem _antag = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly NpcFactionSystem _npcFaction = default!;
-    [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
+    [Dependency] private SharedActionsSystem _actions = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private MindSystem _mind = default!;
+    [Dependency] private AntagSelectionSystem _antag = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private NpcFactionSystem _npcFaction = default!;
+    [Dependency] private StatusEffectsSystem _statusEffects = default!;
 
     public override void Initialize()
     {

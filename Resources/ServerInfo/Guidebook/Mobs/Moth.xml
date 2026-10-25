@@ -3,19 +3,35 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <Document>
-  # Hommes-mite
+  # Moth People
 
   <Box>
     <GuideEntityEmbed Entity="MobMoth" Caption=""/>
   </Box>
 
-  Ils peuvent manger du coton, des tissus et des vêtements, mais pratiquement aucune nourriture que les autres considéreraient "comestible". Ils préfèrent une gamme de température légèrement inférieure à celle des humains. Ils sont obsédés par le nombre "65".
+  Moth people are a winged species, sporting antennae and similar bug-like features. One of their key defining traits is that they are obsessed with the number "65".
 
-  Leurs ailes leur donnent une meilleure accélération s'il n'y a pas de gravité sur la station, mais ils ne peuvent toujours pas bouger sans équipement lorsqu'ils flottent dans l'espace.
-  Ils peuvent aussi faire un dash sur de courtes distances toutes les 6,5 secondes en utilisant leurs ailes, mais cela nécessite la présence de gravité. Cependant ils se déplacent 6,5 % plus lentement que les autres espèces à cause de leurs jambes faibles.
+  ## Unique Abilities
 
-  Ils subissent [color=#1e90ff]30 % de dégâts de Froid en moins[/color] mais [color=#ffa500]30 % de dégâts de Chaleur et 6,5 % de dégâts Contondants en plus, et s'enflamment plus facilement[/color].
+  ### Winged Dash
 
-  Ils sont aussi 6,5 % plus légers que la plupart des espèces.
+  - Moth people can [color=#1e90ff]dash small distances once in 6.5 seconds[/color] using their wings, but that requires the gravity to be present. 
+
+  ## Diet
+
+  - They can eat cotton, fabrics and clothing, but virtually none of the food that others would consider "edible".
+
+  ## Benefits 
+
+  - They take [color=#1e90ff]30% less Cold damage[/color]
+  - Their wings give them better acceleration if there is no gravity on the station, but they still can't move without equipment when floating out in space.
+  - They are also [color=#1e90ff]6.5% lighter than most species.[/color]
+  
+  ## Drawbacks
+
+  - They move [color=#ffa500]6.5% slower[/color] than other species due to their weak legs. 
+  - They take [color=#ffa500]30% more Heat and 6.5% more Brute damage, and catch on fire more easily[/color].
+  - They prefer a somewhat lower temperature range than humans, making them more susceptible to higher temperatures.
+  
 
 </Document>

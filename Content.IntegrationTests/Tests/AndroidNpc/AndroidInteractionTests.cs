@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Damage.Systems;
+using Content.Shared.Damage.Components;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -67,7 +69,7 @@ public sealed class AndroidInteractionTests
     [TestCaseSource(nameof(MenuRequests))]
     public async Task Menu_FindsTheMostSpecificItemDespiteTypos(AndroidJob job, string request, string language, string expected)
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var service = pair.Server.System<AndroidServiceSystem>();
 
         await pair.Server.WaitAssertion(() =>
@@ -79,7 +81,7 @@ public sealed class AndroidInteractionTests
     [Test]
     public async Task Menu_IsLargeAndSmallTalkIsNotAnOrder()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var service = pair.Server.System<AndroidServiceSystem>();
 
         await pair.Server.WaitAssertion(() =>
@@ -125,7 +127,7 @@ public sealed class AndroidInteractionTests
     [TestCaseSource(nameof(OrderWordings))]
     public async Task OrderPhrases_UnderstandCommonWordings(string message, AndroidOrderType expected, string? target)
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
 
         await pair.Server.WaitAssertion(() =>
         {
@@ -219,7 +221,7 @@ public sealed class AndroidInteractionTests
     [Test]
     public async Task Androids_DoNotSlip()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var factory = pair.Server.ResolveDependency<IComponentFactory>();
 
         await pair.Server.WaitAssertion(() =>
@@ -261,7 +263,7 @@ public sealed class AndroidInteractionTests
     [Test]
     public async Task Pathfinding_AndroidsWalkAroundTablesRatherThanClimbThem()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();
@@ -561,7 +563,7 @@ public sealed class AndroidInteractionTests
     [TestCase("AirlockJanitorLocked", true, false)]
     public async Task Pathfinding_OnlyGoesThroughDoorsTheAndroidCanOpen(string airlock, bool bolted, bool expectPath)
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();
@@ -595,7 +597,7 @@ public sealed class AndroidInteractionTests
     [Test]
     public async Task Janitor_NeverBumpsADoorItCannotOpen()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();

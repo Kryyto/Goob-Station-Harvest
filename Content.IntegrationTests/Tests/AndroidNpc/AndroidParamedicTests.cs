@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Damage.Systems;
+using Content.Shared.Damage.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -96,7 +98,7 @@ public sealed class AndroidParamedicTests
     [Test]
     public async Task RoundStart_FillsEveryFreeAndroidJob()
     {
-        var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true, DummyTicker = false, Dirty = true, Map = "Saltern" });
+        var pair = await AndroidTestPool.GetServerClient(new PoolSettings { Connected = true, DummyTicker = false, Dirty = true, Map = "Saltern" });
         var server = pair.Server;
         var sEnt = server.EntMan;
 
@@ -146,7 +148,7 @@ public sealed class AndroidParamedicTests
     [Test]
     public async Task Paramedic_CarriesBodiesToMedbay()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();
@@ -200,7 +202,7 @@ public sealed class AndroidParamedicTests
     [Test]
     public async Task Paramedic_GoesToCriticalCrewAnywhereButLeavesTheMorgueAlone()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();
@@ -267,7 +269,7 @@ public sealed class AndroidParamedicTests
     [Test]
     public async Task Paramedic_PutsTheCriticalPatientOnAStasisBed()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();
@@ -333,7 +335,7 @@ public sealed class AndroidParamedicTests
     [Test]
     public async Task Android_FleesAwayFromItsAttacker()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();
@@ -381,7 +383,7 @@ public sealed class AndroidParamedicTests
     [Test]
     public async Task Paramedic_KeepsCarryingAPatientDriftingInAndOutOfCrit()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         var map = await pair.CreateTestMap();

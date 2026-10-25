@@ -1,0 +1,27 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Pain d'épice
+
+  <Box>
+    <GuideEntityEmbed Entity="MobGingerbread" Caption=""/>
+  </Box>
+
+  Les Pains d'épice sont une espèce de confiserie consciente. Ils ont du sucre pour sang, et peuvent être découpés pour faire des biscuits.
+
+  ## Avantages
+
+  - Étant faits de pâte, ils pèsent la moitié des espèces faites de chair.
+  - Les Pains d'épice subissent [color=#1e90ff]3x moins de dégâts de feu[/color] que les Humains.
+  - Ils [color=#1e90ff]ne subissent pas de dégâts d'Asphyxie[/color] (bien qu'ils respirent encore et soient mal à l'aise sans oxygène).
+  - Ils [color=#1e90ff]ne subissent pas de dégâts de Perte de sang[/color] (bien qu'encore une fois, ils soient mal à l'aise sans sucre).
+  - Ils [color=#1e90ff]ne subissent pas de dégâts de Froid[/color] (bien qu'ils soient ralentis par le froid).
+
+  ## Inconvénients
+
+  - Ils subissent [color=#FFA500]1,5x plus de dégâts Contondants.[/color]
+  - Ils subissent beaucoup de [color=#FFA500]dégâts de Chaleur[/color] en étant exposés à l'eau extérieurement.
+
+</Document>

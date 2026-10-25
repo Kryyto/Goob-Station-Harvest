@@ -1,0 +1,22 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Vulpkanin
+  <Box>
+    <GuideEntityEmbed Entity="MobVulpkanin" Caption=""/>
+  </Box>
+
+  Les Vulpkanin sont des humanoïdes canins, dotés d'oreilles et de queues distinctes. Ils voient le monde en rouge et vert.
+
+  ## Avantages
+
+  - Ils infligent des dégâts [color=#ec3a3a]Contondants[/color] et [color=#ec3a3a]Tranchants[/color] avec leurs griffes.
+  - Leur fourrure les isole de la température ambiante.
+
+  ## Inconvénients
+
+  - Ils subissent [color=#ffa500]15 % de dégâts de Chaleur en plus.[/color]
+
+</Document>

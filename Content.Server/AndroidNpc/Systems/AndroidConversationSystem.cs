@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Damage.Components;
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Threading;

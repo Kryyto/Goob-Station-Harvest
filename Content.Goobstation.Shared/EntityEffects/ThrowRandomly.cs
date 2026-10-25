@@ -22,8 +22,8 @@ public sealed partial class ThrowRandomly : EntityEffectBase<ThrowRandomly>
 
 public sealed partial class ThrowRandomlySystem : EntityEffectSystem<TransformComponent, ThrowRandomly>
 {
-    [Dependency] private readonly ThrowingSystem _throwing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private ThrowingSystem _throwing = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     protected override void Effect(Entity<TransformComponent> entity, ref EntityEffectEvent<ThrowRandomly> args)
     {

@@ -5,8 +5,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodBreadBun
-  name: petit pain
-  description: Un petit pain pour hamburger. Rond et pratique à tenir.
+  name: bun
+  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/burger.rsi
@@ -30,8 +30,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodBreadBunBottom
-  name: bun du bas
-  description: Il est temps de commencer à construire la tour de burger.
+  name: bottom bun
+  description: It's time to start building the burger tower.
   components:
   - type: Item
     size: Normal #patch until there is an adequate resizing system in place
@@ -65,8 +65,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodBreadBunTop
-  name: bun du haut
-  description: La finition parfaite pour votre tour de burger.
+  name: top bun
+  description: The perfect finish for your burger tower.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/burger_sequence.rsi
@@ -102,9 +102,9 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 7
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Vitamin
-          Quantity: 3
+          Quantity: 5 # Goobstation - cooked food more useful
   - type: Item
     sprite: Objects/Consumable/Food/burger.rsi
     shape:
@@ -113,10 +113,10 @@
 # Custom Burger Example
 
 - type: entity
-  name: burger à la gelée
+  name: jelly burger
   parent: FoodBurgerBase
   id: FoodBurgerJelly
-  description: Délice culinaire..?
+  description: Culinary delight..?
   components:
   - type: FlavorProfile
     flavors:
@@ -146,10 +146,10 @@
 # Burger
 
 - type: entity
-  name: burger à l'appendice
+  name: appendix burger
   parent: FoodBurgerBase
   id: FoodBurgerAppendix
-  description: A goût d'appendicite.
+  description: Tastes like appendicitis.
   components:
   - type: FlavorProfile
     flavors:
@@ -188,10 +188,10 @@
 # Tastes like bun, grass.
 
 - type: entity
-  name: burger au bacon
+  name: bacon burger
   parent: FoodBurgerBase
   id: FoodBurgerBacon
-  description: La combinaison parfaite de toutes choses américaines.
+  description: The perfect combination of all things American.
   components:
   - type: FlavorProfile
     flavors:
@@ -228,10 +228,10 @@
 # Tastes like bun, bacon.
 
 - type: entity
-  name: burger baseball
+  name: baseball burger
   parent: FoodBurgerBase
   id: FoodBurgerBaseball
-  description: Il est encore chaud. La vapeur qui en émane sent un peu la transpiration.
+  description: It's still warm. The steam coming off of it smells kinda sweaty.
   components:
   - type: FlavorProfile
     flavors:
@@ -267,8 +267,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerBear
-  name: ourser
-  description: Meilleur servi cruuuar.
+  name: bearger
+  description: Best served rawr.
   components:
   - type: Item
     storedOffset: 0,1
@@ -289,7 +289,7 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Protein
           Quantity: 6
         - ReagentId: Vitamin
@@ -302,7 +302,7 @@
   parent: FoodBurgerBase
   id: FoodBurgerBig
   name: big bite burger
-  description: Oubliez le Big Mac. ÇA c'est l'avenir!
+  description: Forget the Big Mac. THIS is the future!
   components:
   - type: Item
     size: Normal
@@ -325,9 +325,9 @@
         maxVol: 33
         reagents:
         - ReagentId: Nutriment
-          Quantity: 17
+          Quantity: 20 # Goobstation - cooked food more useful
         - ReagentId: Vitamin
-          Quantity: 9
+          Quantity: 10 # Goobstation - cooked food more useful
   - type: Sprite
     state: bigbite
   - type: Tag
@@ -338,8 +338,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerBrain
-  name: burger cerveau
-  description: Un burger au apparence étrange. Il semble presque conscient.
+  name: brain burger
+  description: A strange looking burger. It looks almost sentient.
   components:
   - type: Item
     storedOffset: 0,1
@@ -373,8 +373,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCat
-  name: burger chat
-  description: Enfin, ces chats et personnes-chats valent quelque chose!
+  name: cat burger
+  description: Finally those cats and catpeople are worth something!
   components:
   - type: Item
     storedOffset: -1,1
@@ -411,7 +411,7 @@
   name: cheese burger
   parent: FoodBurgerBase
   id: FoodBurgerCheese
-  description: Ce burger noble se tient fier, vêtu de fromage doré.
+  description: This noble burger stands proudly clad in golden cheese.
   components:
   - type: FlavorProfile
     flavors:
@@ -426,7 +426,7 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 5 # Goobstation - cooked food more useful
         - ReagentId: Vitamin
           Quantity: 7
         - ReagentId: Protein
@@ -451,10 +451,10 @@
 # Tastes like bun, beef patty, cheese.
 
 - type: entity
-  name: sandwich au poulet # Burger for you euro-cucks
+  name: chicken sandwich # Burger for you euro-cucks
   parent: FoodBurgerBase
   id: FoodBurgerChicken
-  description: Un délicieux sandwich au poulet, on dit que les revenus de cette friandise aident à criminialiser le fait de désarmer les gens à la frontière de l'espace.
+  description: A delicious chicken sandwich, it is said the proceeds from this treat helps criminalize disarming people on the space frontier.
   components:
   - type: FlavorProfile
     flavors:
@@ -468,11 +468,11 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 5 # Goobstation - cooked food more useful
         - ReagentId: Protein
-          Quantity: 7
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 5 # Goobstation - cooked food more useful
         - ReagentId: Mayo
           Quantity: 3
   - type: Tag
@@ -497,8 +497,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerClown
-  name: burger clown
-  description: Ça a un drôle de goût...
+  name: clown burger
+  description: This tastes funny...
   components:
   - type: Item
     storedOffset: 0,1
@@ -532,7 +532,7 @@
   name: corger #not curger
   parent: FoodBurgerBase
   id: FoodBurgerCorgi
-  description: Le favori du Chef du Personnel!
+  description: The Head of Personnel's favorite!
   components:
   - type: FlavorProfile
     flavors:
@@ -560,10 +560,10 @@
       - state: dog-inhand-right
 
 - type: entity
-  name: burger crabe
+  name: crab burger
   parent: FoodBurgerBase
   id: FoodBurgerCrab
-  description: Un délicieux steak de crabe, placé entre deux pains.
+  description: A delicious patty of the crabby kind, slapped in between a bun.
   components:
   - type: FlavorProfile
     flavors:
@@ -603,8 +603,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCrazy
-  name: hamburger fou # Burger for you euro-cucks
-  description: Cela ressemble au genre de nourriture qu'un clown taré dans un imper ferait.
+  name: crazy hamburger # Burger for you euro-cucks
+  description: This looks like the sort of food that a demented clown in a trenchcoat would make.
   components:
   - type: Item
     size: Normal
@@ -646,8 +646,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerDuck
-  name: sandwich canard # Burger for you sick bastards
-  description: Un sandwich au canard, seuls les criminellement fou oseraient manger la viande d'une si adorable créature.
+  name: duck sandwich # Burger for you sick bastards
+  description: A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
   components:
   - type: Item
     storedOffset: 0,1
@@ -676,11 +676,11 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 5 # Goobstation - cooked food more useful
         - ReagentId: Protein
-          Quantity: 7
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 5 # Goobstation - cooked food more useful
   - type: Tag
     tags:
     - Meat
@@ -689,8 +689,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerEmpowered
-  name: burger surpuissant
-  description: C'est électrisant bon, si vous vivez d'électricité.
+  name: empowered burger
+  description: It's shockingly good, if you live off of electricity that is.
   components:
   - type: Item
     storedOffset: -2,1
@@ -711,7 +711,7 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 8
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Licoxide
           Quantity: 5
 # Tastes like bun, pure electricity.
@@ -719,8 +719,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCarp
-  name: burger filet-o-carpe
-  description: Presque comme si une carpe criait quelque part...
+  name: fillet-o-carp burger
+  description: Almost like a carp is yelling somewhere...
   components:
   - type: Item
     storedOffset: 0,1
@@ -751,8 +751,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerFive
-  name: burger cinq alarmes
-  description: CHAUD ! CHAUD ! CHAUD !
+  name: five alarm burger
+  description: HOT! HOT! HOT!
   components:
   - type: Item
     size: Normal
@@ -792,8 +792,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerGhost
-  name: burger fantôme
-  description: Trop effrayant !
+  name: ghost burger
+  description: Too spooky!
   components:
   - type: Item
     size: Normal
@@ -837,10 +837,10 @@
 # Tastes like bun, ectoplasm.
 
 - type: entity
-  name: burger humain
+  name: human burger
   parent: FoodBurgerBase
   id: FoodBurgerHuman
-  description: On ne peut pas dire de quoi c'est fait...
+  description: You cant tell who this is made of...
   components:
   - type: FlavorProfile
     flavors:
@@ -872,8 +872,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerMcguffin
-  name: MacGuffin
-  description: Une imitation bon marché et grasse des œufs Bénédicte.
+  name: McGuffin
+  description: A cheap and greasy imitation of an eggs Benedict.
   components:
   - type: Item
     storedOffset: 0,1
@@ -914,8 +914,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerMcrib
-  name: Sandwich Côtes BBQ
-  description: Un sandwich en forme de côtes avec une disponibilité limitée à travers la galaxie. Pas aussi bon que vous vous en souvenez.
+  name: BBQ Rib Sandwich
+  description: An elusive rib shaped burger with limited availability across the galaxy. Not as good as you remember it.
   components:
   - type: Edible
     trash:
@@ -932,11 +932,11 @@
         maxVol: 30
         reagents:
         - ReagentId: Nutriment
-          Quantity: 2
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Protein
-          Quantity: 7
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: Vitamin
-          Quantity: 4
+          Quantity: 10 # Goobstation - cooked food more useful
         - ReagentId: BbqSauce
           Quantity: 1
   - type: Tag
@@ -959,10 +959,10 @@
 # Tastes like bun, pork patty.
 
 - type: entity
-  name: burger mime
+  name: mime burger
   parent: FoodBurgerBase
   id: FoodBurgerMime
-  description: Son goût défie la langue.
+  description: Its taste defies language.
   components:
   - type: FlavorProfile
     flavors:
@@ -992,10 +992,10 @@
 # Tastes like  .
 
 - type: entity
-  name: burger nature
+  name: plain burger
   parent: FoodBurgerBase
   id: FoodBurgerPlain
-  description: Un burger ennuyeux et sec.
+  description: A boring, dry burger.
   components:
   - type: FlavorProfile
     flavors:
@@ -1009,7 +1009,7 @@
         maxVol: 25
         reagents:
         - ReagentId: Nutriment
-          Quantity: 2
+          Quantity: 5 # Goobstation - cooked food more useful
         - ReagentId: Protein
           Quantity: 6
         - ReagentId: Vitamin
@@ -1025,10 +1025,10 @@
       - state: plain-inhand-right
 
 - type: entity
-  name: burger rat
+  name: rat burger
   parent: FoodBurgerBase
   id: FoodBurgerRat
-  description: À peu près ce à quoi vous vous attendiez...
+  description: Pretty much what you'd expect...
   components:
   - type: FlavorProfile
     flavors:
@@ -1065,7 +1065,7 @@
   name: roburger
   parent: FoodBurgerBase
   id: FoodBurgerRobot
-  description: La laitue est le seul composant organique. Bip.
+  description: The lettuce is the only organic component. Beep.
   components:
   - type: FlavorProfile
     flavors:
@@ -1107,8 +1107,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerSoy
-  name: burger au soylent
-  description: Après avoir mangé ceci, vous avez envie irrésistible d'acheter des figurines de super-héros hors de prix.
+  name: soylent burger
+  description: After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
   components:
   - type: Item
     storedOffset: 0,1
@@ -1147,8 +1147,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerSpell
-  name: burger sort
-  description: Ceci est absolument Ei Nath.
+  name: spell burger
+  description: This is absolutely Ei Nath.
   components:
   - type: Item
     size: Normal
@@ -1183,7 +1183,7 @@
   parent: FoodBurgerBase
   id: FoodBurgerSuper
   name: super bite burger
-  description: C'est une montagne de burger. NOURRITURE !
+  description: This is a mountain of a burger. FOOD!
   components:
   - type: Item
     size: Normal
@@ -1221,10 +1221,10 @@
 # Tastes like bun, diabetes.
 
 - type: entity
-  name: burger tofu
+  name: tofu burger
   parent: FoodBurgerBase
   id: FoodBurgerTofu
-  description: Qu'est-ce... que c'est que cette viande?
+  description: What... is that meat?
   components:
   - type: FlavorProfile
     flavors:
@@ -1260,10 +1260,10 @@
 # Tastes like bun, tofu.
 
 - type: entity
-  name: xénoburger
+  name: xenoburger
   parent: FoodBurgerBase
   id: FoodBurgerXeno
-  description: Sent l'acide. Sent comme de l'hérésie.
+  description: Smells caustic. Tastes like heresy.
   components:
   - type: FlavorProfile
     flavors:
@@ -1308,8 +1308,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerMothRoach
-  name: burger mitard
-  description: La dernière lampe qu'elle ait vue était celle à l'intérieur du micro-ondes.
+  name: mothroachburger
+  description: The last lamp it saw was the one inside the microwave.
   components:
   - type: Item
     shape:
@@ -1332,7 +1332,7 @@
         maxVol: 15
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 5 # Goobstation - cooked food more useful
         - ReagentId: Protein
           Quantity: 4
         - ReagentId: Vitamin
@@ -1340,85 +1340,3 @@
   - type: Tag
     tags:
     - Meat
-
-## Goobstation
-- type: entity
-  name: burger rien
-  parent: FoodBurgerBase
-  id: FoodBurgerChud
-  description: Un burger pour quand rien ne se passe.
-  components:
-  - type: FlavorProfile
-    flavors:
-      - bun
-      - nothing
-  - type: Sprite
-    sprite: _Goobstation/Objects/Consumable/Food/chud_burger.rsi
-    state: icon
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: Protein
-          Quantity: 6
-        - ReagentId: Nothing
-          Quantity: 5
-  - type: Tag
-    tags:
-    - Meat
-
-- type: entity
-  parent: FoodBurgerBase
-  name: burger mitard
-  description: La dernière lampe qu'elle ait vue était celle à l'intérieur du micro-ondes.
-  id: FoodBurgerMustard
-  components:
-  - type: FlavorProfile
-    flavors:
-      - bun
-      - meaty
-      - light
-  - type: Sprite
-    sprite: _Goobstation/Objects/Consumable/Food/mothroach_burger.rsi
-    state: mustard_mothroach
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: Protein
-          Quantity: 4
-        - ReagentId: Vitamin
-          Quantity: 7
-  - type: Tag
-    tags:
-    - Meat
-
-- type: entity
-  parent: FoodBurgerMustard
-  id: FoodBurgerleopard
-  components:
-  - type: Sprite
-    sprite: _Goobstation/Objects/Consumable/Food/mothroach_burger.rsi
-    state: leopard_mothroach
-
-- type: entity
-  parent: FoodBurgerMustard
-  id: FoodBurgerlunar
-  components:
-  - type: Sprite
-    sprite: _Goobstation/Objects/Consumable/Food/mothroach_burger.rsi
-    state: lunar_mothroach
-
-- type: entity
-  parent: FoodBurgerMustard
-  id: FoodBurgerCecropia
-  components:
-  - type: Sprite
-    sprite: _Goobstation/Objects/Consumable/Food/mothroach_burger.rsi
-    state: cecropia_mothroach

@@ -1,0 +1,30 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Oni
+
+  <Box>
+    <GuideEntityEmbed Entity="MobOni" Caption=""/>
+  </Box>
+
+  De grands êtres à cornes qui existent en une variété de couleurs. Leur précision avec les armes à feu est terrible, mais leur force physique leur apporte beaucoup d'avantages dans et hors combat.
+
+  ## Régime alimentaire
+
+  - À peu près n'importe quoi. Peut même manger beaucoup de choses crues.
+
+  ## Avantages
+
+  - Ils subissent [color=#1e90ff]15 % de Contondants, Perforants et Tranchants en moins.[/color]
+  - Font plus de dégâts au corps-à-corps ; [color=#1e90ff]25 % de Contondants, Tranchants, Perforants, Endurance et Structurels en plus.[/color]
+  - Du fait de leur grande taille, ils peuvent facilement porter et tirer n'importe quelle autre espèce.
+
+  ## Inconvénients
+
+  - Les Oni sont [color=#FFA500]incapables de tirer avec précision avec n'importe quelle arme[/color], certains rapports mentionnant des balles parties même derrière eux.
+  - Ils sont plus difficiles à porter et tirer.
+  - Ils sont plus grands que les Humains, les rendant plus faciles à toucher.
+
+</Document>

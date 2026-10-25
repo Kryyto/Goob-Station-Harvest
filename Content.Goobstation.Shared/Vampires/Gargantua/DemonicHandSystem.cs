@@ -6,7 +6,7 @@ using Content.Shared.Throwing;
 
 namespace Content.Goobstation.Shared.Vampires.Gargantua;
 
-public abstract class SharedDemonicHandSystem : EntitySystem
+public abstract partial class SharedDemonicHandSystem : EntitySystem
 {
     [Dependency] protected SharedCombatModeSystem _combat = default!;
     [Dependency] protected SharedTransformSystem _transform = default!;

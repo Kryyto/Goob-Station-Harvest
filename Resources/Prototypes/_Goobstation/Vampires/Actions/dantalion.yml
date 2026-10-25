@@ -1,4 +1,4 @@
-﻿# Enthrall
+# Enthrall
 - type: entity
   parent: BaseVampireAction
   id: ActionDanEnthrall
@@ -205,7 +205,7 @@
     effects:
     - !type:SpawnParticles
       particleProto: Hysteria
-    - !type:RelayNearby
+    - !type:VampireRelayNearby
       compName: StatusEffects
       range: 8
       effect: !type:NestedEffect

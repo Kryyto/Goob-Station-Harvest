@@ -45,7 +45,7 @@ public sealed class AndroidEndToEndTests
     /// </summary>
     private static async Task<Station> LoadSaltern()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var sEnt = server.EntMan;
         EntityUid grid = default;

@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Goobstation.Shared.Vampires;
 
-public abstract class SharedVampireAbilitiesSystem : EntitySystem
+public abstract partial class SharedVampireAbilitiesSystem : EntitySystem
 {
     [Dependency] protected ISharedAdminLogManager _admin = default!;
     [Dependency] protected SharedEntityEffectsSystem _effects = default!;

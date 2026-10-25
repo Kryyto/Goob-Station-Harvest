@@ -5,7 +5,7 @@ using Content.Goobstation.Shared.Vampires.Haemomancer;
 
 namespace Content.Goobstation.Shared.Vampires;
 
-public abstract class SharedVampireSystem : EntitySystem
+public abstract partial class SharedVampireSystem : EntitySystem
 {
     [Dependency] protected SharedPopupSystem _popup = default!;
 

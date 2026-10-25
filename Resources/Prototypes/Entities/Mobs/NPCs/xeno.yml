@@ -6,6 +6,8 @@
   parent: SimpleSpaceMobBase
   description: Ils viennent surtout la nuit. Surtout.
   components:
+  - type: VoiceChatEffect # Goobstation - Voice chat
+    effect: Alien
   - type: Insulated
   - type: CombatMode
   - type: InputMover

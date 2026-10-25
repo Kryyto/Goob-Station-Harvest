@@ -15,6 +15,7 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Wieldable;
 using Content.Shared.Wieldable.Components;
+using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -40,6 +41,7 @@ public sealed class AndroidCombatSystem : EntitySystem
     [Dependency] private readonly AndroidInventorySystem _inventory = default!;
     [Dependency] private readonly AndroidBreakSystem _breaks = default!;
     [Dependency] private readonly AndroidDialogueSystem _dialogue = default!;
+    [Dependency] private readonly SharedContainerSystem _containers = default!;
 
     private const float MeleeRange = 1.2f;
     private const float RangedRange = 6f;
@@ -58,7 +60,7 @@ public sealed class AndroidCombatSystem : EntitySystem
     public void OnHurt(EntityUid uid, AndroidComponent android, DamageChangedEvent args)
     {
         if (!args.DamageIncreased || args.DamageDelta is not { } delta ||
-            args.Origin is not { } attacker || attacker == uid || !HasComp<MobStateComponent>(attacker))
+            ResolveAttacker(args.Origin) is not { } attacker || attacker == uid)
         {
             return;
         }
@@ -68,6 +70,24 @@ public sealed class AndroidCombatSystem : EntitySystem
 
         if (android.FightTarget == null && total >= _prototypeManager.AndroidConfig().RetaliationDamage && _mobState.IsAlive(attacker))
             StartFight(uid, android, attacker);
+    }
+
+    /// <summary>
+    /// The living attacker behind some damage. Hitscan weapons (lasers) give the gun as the origin: follow it to
+    /// whoever holds it.
+    /// </summary>
+    private EntityUid? ResolveAttacker(EntityUid? origin)
+    {
+        var current = origin;
+        for (var depth = 0; current is { } ent && depth < 3; depth++)
+        {
+            if (HasComp<MobStateComponent>(ent))
+                return ent;
+
+            current = _containers.TryGetContainingContainer((ent, null, null), out var container) ? container.Owner : null;
+        }
+
+        return null;
     }
 
     public void StartFight(EntityUid uid, AndroidComponent android, EntityUid target)

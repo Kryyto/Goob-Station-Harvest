@@ -495,6 +495,45 @@ public sealed class AndroidInteractionTests
     }
 
     [Test]
+    public async Task Retaliation_AgainstSomeoneShootingALaser()
+    {
+        var (pair, map) = await Setup();
+        var server = pair.Server;
+        var sEnt = server.EntMan;
+        EntityUid shooter = default, android = default, gun = default;
+
+        await server.WaitAssertion(() =>
+        {
+            shooter = sEnt.SpawnEntity("MobHuman", map.GridCoords);
+            android = sEnt.SpawnEntity("MobAndroidJanitor", map.GridCoords.Offset(new Vector2(2f, 0)));
+            gun = sEnt.SpawnEntity("WeaponLaserGun", map.GridCoords);
+            Assert.That(server.System<Content.Shared.Hands.EntitySystems.SharedHandsSystem>().TryPickupAnyHand(shooter, gun), Is.True);
+        });
+
+        await server.WaitRunTicks(2);
+
+        // The laser is hitscan: its damage comes from the gun, held by the shooter.
+        for (var shot = 0; shot < 20 && sEnt.GetComponent<AndroidComponent>(android).FightTarget == null; shot++)
+        {
+            await server.WaitPost(() =>
+            {
+                var gunComp = sEnt.GetComponent<Content.Shared.Weapons.Ranged.Components.GunComponent>(gun);
+                server.System<Content.Shared.Weapons.Ranged.Systems.SharedGunSystem>()
+                    .AttemptShoot(shooter, gun, gunComp, sEnt.GetComponent<TransformComponent>(android).Coordinates, android);
+            });
+            await server.WaitRunTicks(20);
+        }
+
+        await server.WaitAssertion(() =>
+        {
+            Assert.That(sEnt.GetComponent<DamageableComponent>(android).TotalDamage.Float(), Is.GreaterThan(0f), "The laser should hit the android");
+            Assert.That(sEnt.GetComponent<AndroidComponent>(android).FightTarget, Is.EqualTo(shooter), "Laser burns from a shooter start a fight");
+        });
+
+        await pair.CleanReturnAsync();
+    }
+
+    [Test]
     [TestCase("MobAndroidJanitor", "MopItem", 0.8f)]
     [TestCase("MobAndroidCook", "KitchenKnife", 0.8f)]
     [TestCase("MobAndroidBartender", "WeaponShotgunDoubleBarreledRubber", 3f)]

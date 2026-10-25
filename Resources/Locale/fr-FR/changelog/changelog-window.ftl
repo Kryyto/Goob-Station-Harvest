@@ -22,6 +22,7 @@ changelog-button = Journal des modifications
 changelog-button-new-entries = Journal des modifications (nouveau !)
 
 # Goobstation
+changelog-tab-title-Harvestlog = Harvest
 changelog-tab-title-Changelog = Wizden
 changelog-tab-title-Admin = Admin
 changelog-tab-title-Maps = Cartes

@@ -10,7 +10,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Goobstation.Shared.EntityEffects;
 
 [UsedImplicitly]
-public sealed partial class RelayNearby : EntityEffectBase<RelayNearby>
+public sealed partial class VampireRelayNearby : EntityEffectBase<VampireRelayNearby>
 {
     [DataField(required: true)]
     public string CompName = string.Empty;
@@ -43,14 +43,14 @@ public sealed partial class RelayNearby : EntityEffectBase<RelayNearby>
         => null;
 }
 
-public sealed partial class RelayNearbySystem : EntityEffectSystem<TransformComponent, RelayNearby>
+public sealed partial class VampireRelayNearbySystem : EntityEffectSystem<TransformComponent, VampireRelayNearby>
 {
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly IComponentFactory _componentFactory = default!;
-    [Dependency] private readonly SharedEntityEffectsSystem _entityEffects = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private IComponentFactory _componentFactory = default!;
+    [Dependency] private SharedEntityEffectsSystem _entityEffects = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
 
-    protected override void Effect(Entity<TransformComponent> entity, ref EntityEffectEvent<RelayNearby> args)
+    protected override void Effect(Entity<TransformComponent> entity, ref EntityEffectEvent<VampireRelayNearby> args)
     {
         if (!_componentFactory.TryGetRegistration(args.Effect.CompName, out var registration))
             return;

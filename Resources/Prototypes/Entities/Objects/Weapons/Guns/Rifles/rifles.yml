@@ -186,6 +186,9 @@
   id: WeaponRifleLecter
   description: "Un fusil d'assaut militaire ayant connu plus de guerres qu'on ne peut s'en souvenir. La taille complète et le recul stable du Lecter le rendent excellent dans une chose : la précision chirurgicale. Utilise des chargeurs .20 Rifle."
   components:
+  - type: Tag
+    tags:
+    - WeaponRifleLecter # Goobstation - S.E.C. cyborg lethal module
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
     layers:

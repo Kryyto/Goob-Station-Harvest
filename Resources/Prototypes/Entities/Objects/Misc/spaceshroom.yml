@@ -51,6 +51,7 @@
   description: Un champignon sauvage. On ne sait pas quel effet il pourrait avoir...
   components:
   - type: Produce
+    seedId: spaceshroom # GoobStation - growable spaceshrooms
   - type: Sprite
     sprite: Objects/Misc/spaceshroom.rsi
     state: object

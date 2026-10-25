@@ -24,7 +24,7 @@ public sealed partial class WhitelistCondition : EntityConditionBase<WhitelistCo
 
 public sealed partial class WhitelistConditionSystem : EntityConditionSystem<MetaDataComponent, WhitelistCondition>
 {
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
 
     protected override void Condition(Entity<MetaDataComponent> entity, ref EntityConditionEvent<WhitelistCondition> args)
     {

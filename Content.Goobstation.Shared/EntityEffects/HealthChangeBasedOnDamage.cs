@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.EntityEffects;
 using Content.Goobstation.Maths.FixedPoint;
 using JetBrains.Annotations;
@@ -26,7 +27,7 @@ public sealed partial class HealthChangeBasedOnDamage : EntityEffectBase<HealthC
 
 public sealed partial class HealthChangeBasedOnDamageSystem : EntityEffectSystem<DamageableComponent, HealthChangeBasedOnDamage>
 {
-    [Dependency] private readonly DamageableSystem _damageable = default!;
+    [Dependency] private DamageableSystem _damageable = default!;
 
     protected override void Effect(Entity<DamageableComponent> entity, ref EntityEffectEvent<HealthChangeBasedOnDamage> args)
     {

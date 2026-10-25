@@ -4,6 +4,8 @@
   name: xénomorphe facehugger
   description: Un cauchemar grouillant. Le facehugger s'accroche au visage de sa victime en y insérant de force un fœtus xénomorphe.
   components:
+  - type: VoiceChatEffect # Goobstation - Voice chat
+    effect: Alien
   - type: Sprite
     sprite: _White/Mobs/Aliens/Xenomorphs/facehugger.rsi
     layers:

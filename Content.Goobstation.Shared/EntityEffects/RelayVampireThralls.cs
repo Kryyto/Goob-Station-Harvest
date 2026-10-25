@@ -23,8 +23,8 @@ public sealed partial class RelayVampireThralls : EntityEffectBase<RelayVampireT
 
 public sealed partial class RelayVampireThrallsSystem : EntityEffectSystem<TransformComponent, RelayVampireThralls>
 {
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedEntityEffectsSystem _entityEffects = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private SharedEntityEffectsSystem _entityEffects = default!;
 
     protected override void Effect(Entity<TransformComponent> entity, ref EntityEffectEvent<RelayVampireThralls> args)
     {

@@ -1,0 +1,46 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Harpie
+
+  <Box>
+    <GuideEntityEmbed Entity="MobHarpy" Caption=""/>
+  </Box>
+
+  Les Harpies sont une mutation humaine aviaire, poussant des ailes à plumes et queues ébouriffées.
+  Elles voient le monde à travers une vue ultraviolette, et marchent sur des pattes digitigrades.
+  Leur capacité la plus iconique, cependant, est de prendre les airs !
+
+  ## Capacités uniques
+
+  ### Chante de tout ton cœur
+
+  - Les Harpies sont capables de chanter un air sur le champ avec leur voix, vous permettant de jouer de la musique où que vous soyez,
+  tant que vous n'êtes pas bâillonné.
+
+  ### Prends ton envol !
+
+  - Les Harpies peuvent voler avec leurs ailes pour [color=#1e90ff]augmenter considérablement leur vitesse de déplacement[/color], au prix d'une [color=#FFA500]forte consommation d'endurance et d'une incapacité temporaire à utiliser leurs mains.[/color]
+
+  - Leurs ailes leur donnent une meilleure accélération s'il n'y a pas de gravité sur la station, mais elles ne peuvent toujours pas bouger sans équipement lorsqu'elles flottent dans l'espace.
+
+  ## Régime alimentaire
+
+  - Les Harpies ont un régime similaire à celui des humains.
+
+  ## Avantages
+
+  - Elles [color=#1e90ff]courent 10 % plus vite[/color] que les autres espèces.
+  - Elles griffent avec leurs griffes, infligeant des dégâts [color=#ec3a3a]Perforants[/color].
+
+  ## Inconvénients
+
+  - À cause de leurs pattes digitigrades, elles sont [color=#FFA500]incapables de porter tout type de chaussures.[/color]
+  - Les Harpies respirent aussi [color=#1e90ff]3 fois plus vite[/color] que les autres races.
+  - Elles sont très légères, rendant difficile pour elles de tirer n'importe quelle autre espèce.
+  - Elles subissent [color=#FFA500]15 % de dégâts Contondants en plus.[/color]
+  - Elles ont des [color=#FFA500]os plus fragiles.[/color]
+
+</Document>

@@ -1,0 +1,41 @@
+<!--
+SPDX-License-Identifier: MIT
+-->
+
+<Document>
+  # Arachnides
+
+  <Box>
+    <GuideEntityEmbed Entity="MobArachnid" Caption=""/>
+  </Box>
+  Les Arachnides sont une espèce humanoïde aux traits rappelant ceux de la tarentule commune.
+
+  ## Capacités uniques
+
+  ### Sériculture
+
+  <Box>
+    <GuideEntityEmbed Entity="MaterialWebSilk" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingUniformJumpskirtWeb" Caption=""/>
+    <GuideEntityEmbed Entity="WebShield" Caption=""/>
+    <GuideEntityEmbed Entity="WallWeb" Caption=""/>
+  </Box>
+
+  - Les Arachnides peuvent créer de la Soie-toile au prix d'avoir plus faim. Eux (et seulement eux) peuvent fabriquer des ballots de soie-toile en divers objets, des vêtements et boucliers jusqu'à des murs entiers.
+
+  ## Régime alimentaire
+
+  - Ils peuvent manger de la viande crue sans effets néfastes.
+  - Ils sont [color=#FFA500]empoisonnés[/color] par la Théobromine (Chocolat, Thé, Café) et l'Allicine (Oignon, Ail).
+
+  ## Avantages
+
+  - Ils ont deux emplacements de poche supplémentaires dans leur inventaire.
+  - Leurs attaques à mains nues infligent des dégâts [color=#ec3a3a]Perforants[/color] au lieu de Contondants.
+
+  ## Inconvénients
+
+  - Ils [color=#FFA500]s'asphyxient 50 % plus vite.[/color]
+  - Leur Sang Bleu [color=#FFA500]ne peut pas être métabolisé à partir de Fer[/color], étant basé sur du Cuivre à la place.
+
+</Document>

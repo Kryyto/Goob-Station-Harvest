@@ -1,0 +1,33 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Document>
+  # Reptiliens
+
+  <Box>
+    <GuideEntityEmbed Entity="MobReptilian" Caption=""/>
+  </Box>
+  Les Reptiliens sont une espèce humanoïde, arborant une queue et un museau prononcé. Leur physiologie les a amenés à adopter un accent semblable à celui des cobras.
+
+  ## Capacités uniques
+
+  ### Traîner avec la queue
+
+  - Grâce à leur capacité à manipuler leur queue, les Reptiliens peuvent traîner des objets avec leur queue, gardant leurs deux mains libres.
+
+  ## Régime alimentaire
+
+  - Ils peuvent manger de la viande crue et boire du sang sans effets néfastes.
+
+  ## Avantages
+
+  - Ils préfèrent une gamme de température légèrement plus élevée que les humains, ce qui les rend un peu moins sensibles aux températures élevées.
+
+  - Leurs attaques de griffes à mains nues infligent des dégâts [color=#ec3a3a]Tranchants[/color] au lieu de Contondants.
+
+  ## Inconvénients
+
+  - Ils subissent [color=#ffa500]30 % de dégâts de Froid en plus.[/color]
+
+</Document>

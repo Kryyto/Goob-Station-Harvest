@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Goobstation.Shared.EntityEffects;
 
 [UsedImplicitly]
-public sealed partial class Flammable : EntityEffectBase<Flammable>
+public sealed partial class VampireFlammable : EntityEffectBase<VampireFlammable>
 {
     [DataField]
     public float Multiplier = 1f;
@@ -18,9 +18,9 @@ public sealed partial class Flammable : EntityEffectBase<Flammable>
         => null;
 }
 
-public sealed partial class FlammableSystem : EntityEffectSystem<FlammableComponent, Flammable>
+public sealed partial class VampireFlammableSystem : EntityEffectSystem<FlammableComponent, VampireFlammable>
 {
-    protected override void Effect(Entity<FlammableComponent> entity, ref EntityEffectEvent<Flammable> args)
+    protected override void Effect(Entity<FlammableComponent> entity, ref EntityEffectEvent<VampireFlammable> args)
     {
         var flammable = entity.Comp;
 

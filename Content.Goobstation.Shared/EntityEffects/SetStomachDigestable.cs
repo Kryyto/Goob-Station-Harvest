@@ -22,7 +22,7 @@ public sealed partial class SetStomachDigestable : EntityEffectBase<SetStomachDi
 
 public sealed partial class SetStomachDigestableSystem : EntityEffectSystem<StomachComponent, SetStomachDigestable>
 {
-    [Dependency] private readonly StomachSystem _stomach = default!;
+    [Dependency] private StomachSystem _stomach = default!;
 
     protected override void Effect(Entity<StomachComponent> entity, ref EntityEffectEvent<SetStomachDigestable> args)
     {

@@ -22,7 +22,7 @@ public sealed partial class RemoveOnIgniteStatusEffectComponent : Component
 
 public sealed partial class RemoveOnIgniteStatusEffectSystem : EntitySystem
 {
-    [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
+    [Dependency] private StatusEffectsSystem _statusEffects = default!;
 
     public override void Initialize()
     {

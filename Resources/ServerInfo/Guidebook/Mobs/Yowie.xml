@@ -9,22 +9,33 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="MobYowie" Caption=""/>
   </Box>
 
-  Les Yowie sont un mythe urbain autrefois cru, devenu espèce mystique nouvellement découverte de créature bipède poilue.
-  Leur corps est plus grand que la plupart des autres espèces en stature, avec l'inconvénient qu'ils [color=#AAFF00]ne peuvent pas rentrer dans la plupart des tenues externes ou chaussures Nanotrasen[/color] (ils rentrent à peine dans les combinaisons souples), ou [color=#AAFF00] pouvoir être portés par les autres[/color].
-  Leur fourrure leur permet aussi de subir [color=#baf2ef]moins de dégâts de froid[/color].
+  Yowie are a once-thought urban myth, turned newly discovered mystical species of bipedal hairy creature. 
+  From discussions had between our species, it seems historically they were living beside humanity during its existence on Earth in parts of Australia, lending them to develop a thick australian accent with slang included.
 
-  Leur stature fait que leur coup de poing à mains nues inflige [color=#ec3a3a]2x les dégâts[/color] d'un coup de poing humain.
+  ## Unique Abilities
 
-  Ils sont plus grands, les rendant plus faciles à toucher au combat, mais ils subissent 25 % de dégâts Contondants, Tranchants et Perforants en moins.
-  Ils pèsent aussi plus, leur permettant de tirer les espèces plus légères avec facilité.
-
-  ## Putain de skiz, mec
+  ### Fuckin' skiz, mate
   <Box>
     <GuideEntityEmbed Entity="Joint" Caption=""/>
   </Box>
+  
+  - They seem to have spent most of their time experimenting with some of the most dangerous and experimental drugs, and on review, they've built up a bigger tolerance to most chemicals. Uniquely, their liver carries out the task of metabolizing chemicals.
 
-  D'après les discussions entre nos espèces, il semble qu'historiquement ils vivaient aux côtés de l'humanité pendant son existence sur Terre en Australie, les menant à développer un fort accent australien avec argot inclus.
-  Ils semblent avoir passé la plupart de leur temps à expérimenter avec certaines des drogues les plus dangereuses et expérimentales, et au vu des résultats, ils ont développé une plus grande tolérance à la plupart des produits chimiques. De manière unique, leur foie s'occupe de métaboliser les produits chimiques.
+  ## Diet
 
+  - Due to their resistance to most drugs and toxins, they are able to consume almost any edible items.
+
+  ## Benefits
+
+  - They take 25% less Blunt, Slash and Piercing damage.
+  - Their stature makes their unarmed punch deal [color=#ec3a3a]2x the damage[/color] of a human punch.
+  - Their fur allows them to take [color=#1e90ff]less cold damage[/color].
+  - They weigh more, allowing them to pull lighter species with ease.
+
+  ## Drawbacks
+
+  - Their body is larger than most other species in stature, with the downside of them [color=#ffa500]not being able to fit into most Nanotrasen external wear or shoes[/color] (they can barely squeeze into softsuits)
+  - They are unable to be carried by others.
+  - They are easier to hit due to their size.
 
 </Document>

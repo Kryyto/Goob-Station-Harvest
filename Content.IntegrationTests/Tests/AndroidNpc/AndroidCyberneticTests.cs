@@ -25,7 +25,7 @@ public sealed class AndroidCyberneticTests
     [Test]
     public async Task AndroidSpawns_AlwaysHasCyberneticHead()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
 
@@ -76,7 +76,7 @@ public sealed class AndroidCyberneticTests
     [Test]
     public async Task AndroidSpawns_CyberneticCompositionAroundSeventyPercent()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
 
@@ -128,7 +128,7 @@ public sealed class AndroidCyberneticTests
     [Test]
     public async Task AndroidSpawns_CyberneticOrgansReplaced()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
 

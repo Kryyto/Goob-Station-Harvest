@@ -17,7 +17,7 @@ public sealed partial class Uncuff : EntityEffectBase<Uncuff>
 
 public sealed partial class UncuffSystem : EntityEffectSystem<CuffableComponent, Uncuff>
 {
-    [Dependency] private readonly SharedCuffableSystem _cuffable = default!;
+    [Dependency] private SharedCuffableSystem _cuffable = default!;
 
     protected override void Effect(Entity<CuffableComponent> entity, ref EntityEffectEvent<Uncuff> args)
     {

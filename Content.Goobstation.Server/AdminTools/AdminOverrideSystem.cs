@@ -6,9 +6,9 @@ using Content.Shared.Sprite;
 
 namespace Content.Goobstation.Server.AdminTools;
 
-public sealed class AdminOverrideSystem : EntitySystem
+public sealed partial class AdminOverrideSystem : EntitySystem
 {
-    [Dependency] private readonly SharedScaleVisualsSystem _scale = null!;
+    [Dependency] private SharedScaleVisualsSystem _scale = null!;
 
     private readonly Dictionary<EntityUid, AdminOverrideCache> _cache = new();
 

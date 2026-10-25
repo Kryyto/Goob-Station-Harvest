@@ -1,75 +1,77 @@
 <Document>
-  # Hommes-plasma
+  # Plasmamen
 
   <Box>
     <GuideEntityEmbed Entity="MobPlasmaman" Caption=""/>
   </Box>
 
-  Ils respirent du plasma, et l'oxygène est hautement toxique pour eux quand inhalé.
-  Être exposé à l'oxygène les met en feu.
+  Plasmamen are a species discerned by their skeletal appearance. They breathe plasma, and oxygen is highly toxic to them when inhaled.
+  Being exposed to oxygen sets them on fire.
 
-  Pour prévenir l'inflammation, ils portent des combinaisons scellées composées d'une envirocombinaison (dans l'emplacement combinaison) et d'un [bold]casque enviro spatial[/bold].
-  D'autres combinaisons comme les combinaisons EVA, combinaisons vacu, et hardsuits les scelleront aussi de l'exposition à l'oxygène.
 
-  Ils ne ressentent ni faim ni soif.
-  Ils n'ont pas de sang et ne peuvent pas saigner à mort.
+  ## Unique Abilities
 
-  Grâce à leur corps squelette, ils peuvent consommer du Lait pour gagner un moodlet positif et soigner lentement les dégâts Contondants, Chaleur, Choc, et Caustiques.
-  Ils peuvent aussi consommer du Plasma pour gagner un plus gros moodlet positif et soigner chaque type de dégâts plus vite, sauf les dégâts Cellulaires.
+  ### Envirosuit Shell
+  
+  - To prevent ignition, they wear sealed suits made up of an envirosuit (in the jumpsuit slot) and a [bold]spaceworthy[/bold] envirosuit helmet.
+  - Other suits like EVA suits, vacsuits, and hardsuits will also seal them from oxygen exposure.
+  
+  <Box>
+    <GuideEntityEmbed Entity="ClothingUniformEnvirosuit" Caption="envirosuit"/>
+    <GuideEntityEmbed Entity="ClothingHeadEnvirohelm" Caption="envirosuit helmet"/>
+    <GuideEntityEmbed Entity="DoubleEmergencyPlasmaTankFilled" />
+  </Box>
+
+  - All Plasmamen start with an envirosuit, an envirosuit helmet, and a plasma internals tank.
+
+  - Their envirosuits contain a [color=#1e90ff]self-extinguisher[/color] with limited charges, which they can activate when they are on fire
+  and wearing their envirosuit helmet. The self-extinguisher needs to recharge between uses.
+
+  - Their envirosuit helmets are [bold]spaceworthy[/bold] and provide welding protection. The helmet's visor can be lit up like a flashlight, using the inserted power cell as a battery.
+  - They cannot eat nor drink without taking off their envirosuit helmet.
+
+  - The plasma internals tank lasts roughly an hour before needing to be replaced or refilled.
+
+  ### Stasis Medical Treatment
+  <Box>
+    <GuideEntityEmbed Entity="StasisBed" />
+  </Box>
+
+  - Before performing surgery on a Plasmaman, their envirosuit needs to be unequipped first, which is disastrous in an oxygenated environment.
+
+  - To get around this, the Plasmaman can be buckled to a [bold]stasis bed[/bold] before removing their envirosuit
+  to prevent them from self-igniting throughout the surgical procedure.
+
+  <Box HorizontalAlignment="Stretch">
+    - Their envirosuit helmets prevents them from eating pills, but their envirosuits allow chemicals to be injected through them.
+    <GuideEntityEmbed Entity="Syringe" Caption=""/>
+  </Box>
+
+
+
+  ### All Bones!
+  - They don't experience hunger nor thirst.
+  - They don't have blood and cannot bleed out.
+
+  - Due to their skeleton body, they can consume Milk to gain a positive moodlet and slowly heal Brute, Heat, Shock, and Caustic damage.
+  - They can also consume Plasma to gain a bigger positive moodlet and heal every damage type faster, except for Cellular damage.
 
   <Box>
     <GuideEntityEmbed Entity="DrinkCartonMilk" />
     <GuideEntityEmbed Entity="SheetPlasma1" />
   </Box>
 
-  Ils imprègnent leurs poings de poussière de plasma qui s'enflamme quand ils frappent, infligeant [color=orange]5 Chaleur[/color] et [color=red]2,25 Contondant[/color] dégâts. Cependant, chaque coup réussi inflige [color=orange]1 Chaleur[/color] dégâts à leurs mains.
+  ## Benefits
+  
+  - They infuse their fists with plasma dust that combusts when they punch, dealing [color=orange]5 Heat[/color] and [color=red]2.25 Blunt[/color] damage. 
+  - They take [color=#1e90ff]25% less Piercing, 20% less Poison, and 15% less Slash damage[/color]
+  - They are [color=#1e90ff]immune to Radiation and Cold damage[/color]. Due to their [color=#1e90ff]Cold immunity[/color], they can live in cold environments without the need of a winter coat.
+  
+  ## Drawbacks
 
-  Les Hommes-plasma avec les traits [bold]Griffes[/bold], [bold]Serres[/bold] ou [bold]Retrait Armes Naturelles[/bold] ont moins de dégâts à mains nues mais ne subissent pas d'auto-dégâts des attaques à mains nues.
+  - Each successful punch deals [color=orange]2 Heat[/color] damage to their hands.
+  - They take [color=#ffa500]50% more Blunt and 50% more Heat damage[/color].
+  - They have a slightly lower density than the average species. This results in weaknesses such as but not limited to: being slightly more vulnerable to being shoved, picked up, and thrown by Space Wind, and having a harder time pulling heavy objects.
 
-  Ils subissent [color=#1e90ff]25 % de dégâts Perforants en moins, 20 % de Poison en moins, et 15 % de Tranchants en moins[/color],
-  et sont [color=#8658fc]immunisés aux dégâts de Radiation et Froid[/color],
-  mais subissent [color=#ffa500]50 % de Contondants en plus et 50 % de Chaleur en plus[/color].
-
-  Grâce à leur [color=#8658fc]immunité au Froid[/color], ils peuvent vivre dans des environnements froids sans besoin de manteau d'hiver.
-
-  Ils ont une densité légèrement inférieure à l'espèce moyenne. Cela résulte en faiblesses telles que mais sans s'y limiter : être légèrement plus vulnérable à être poussé, ramassé, et lancé par le Vent Spatial, et avoir plus de mal à tirer des objets lourds.
-
-  ## Équipement
-  <Box>
-    <GuideEntityEmbed Entity="ClothingUniformEnvirosuit" Caption="envirocombinaison"/>
-    <GuideEntityEmbed Entity="ClothingHeadEnvirohelm" Caption="casque enviro"/>
-    <GuideEntityEmbed Entity="DoubleEmergencyPlasmaTankFilled" />
-  </Box>
-
-  Tous les Hommes-plasma commencent avec une envirocombinaison, un casque enviro, et un réservoir plasma interne.
-
-  Leurs envirocombinaisons contiennent un [color=#1e90ff]auto-extincteur[/color] à charges limitées, qu'ils peuvent activer quand ils sont en feu
-  et portent leur casque enviro. L'auto-extincteur a besoin de recharger entre les utilisations.
-
-  <Box HorizontalAlignment="Stretch">
-    Les recharges de cartouche de l'auto-extincteur de l'envirocombinaison peuvent être achetées dans [bold]Équipements[/bold], ou imprimées au fabricateur médical après recherche.
-    Une recharge rend un auto-extincteur en recharge immédiatement utilisable à nouveau.
-    <GuideEntityEmbed Entity="EnvirosuitExtinguisherRefill" />
-  </Box>
-
-  Leurs casques enviro sont [bold]spatiaux[/bold] et fournissent une protection soudure. La visière du casque peut s'allumer comme une lampe torche, utilisant la cellule d'énergie insérée comme batterie.
-  Ils ne peuvent ni manger ni boire sans enlever leur casque enviro.
-
-  Le réservoir plasma interne dure environ une heure avant d'avoir besoin d'être remplacé ou rechargé.
-
-  ## Traitement Médical
-  <Box>
-    <GuideEntityEmbed Entity="StasisBed" />
-  </Box>
-
-  Avant de faire une chirurgie sur un Homme-plasma, leur envirocombinaison doit être retirée d'abord, ce qui est désastreux dans un environnement oxygéné.
-
-  Pour contourner ça, l'Homme-plasma peut être attaché à un [bold]lit de stase[/bold] avant de retirer leur envirocombinaison
-  pour les empêcher de s'enflammer pendant la procédure chirurgicale.
-
-  <Box HorizontalAlignment="Stretch">
-    Leurs casques enviro les empêchent de manger des pilules, mais leurs envirocombinaisons permettent aux produits chimiques d'être injectés à travers.
-    <GuideEntityEmbed Entity="Syringe" Caption=""/>
-  </Box>
 
 </Document>

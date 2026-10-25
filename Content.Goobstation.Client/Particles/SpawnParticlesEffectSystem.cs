@@ -7,11 +7,11 @@ using Robust.Shared.Random;
 
 namespace Content.Goobstation.Client.Particles;
 
-public sealed class SpawnParticlesEffectSystem : SharedSpawnParticlesEffectSystem
+public sealed partial class SpawnParticlesEffectSystem : SharedSpawnParticlesEffectSystem
 {
-    [Dependency] private readonly ParticleSystem _particles = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private ParticleSystem _particles = default!;
+    [Dependency] private IRobustRandom _random = default!; // Harvest
+    [Dependency] private SharedTransformSystem _transform = default!; // Harvest
 
     public override void Initialize()
     {

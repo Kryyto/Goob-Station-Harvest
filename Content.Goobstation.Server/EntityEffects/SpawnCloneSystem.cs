@@ -14,7 +14,7 @@ namespace Content.Goobstation.Server.EntityEffects;
 /// </summary>
 public sealed partial class SpawnCloneSystem : EntityEffectSystem<MetaDataComponent, SpawnClone>
 {
-    [Dependency] private readonly CloningSystem _cloning = default!;
+    [Dependency] private CloningSystem _cloning = default!;
 
     protected override void Effect(Entity<MetaDataComponent> entity, ref EntityEffectEvent<SpawnClone> args)
     {

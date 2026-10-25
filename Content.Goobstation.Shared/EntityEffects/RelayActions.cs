@@ -38,9 +38,9 @@ public sealed partial class RelayActions : EntityEffectBase<RelayActions>
 
 public sealed partial class RelayActionsSystem : EntityEffectSystem<ActionsComponent, RelayActions>
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
-    [Dependency] private readonly SharedEntityEffectsSystem _entityEffects = default!;
+    [Dependency] private SharedActionsSystem _actions = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private SharedEntityEffectsSystem _entityEffects = default!;
 
     protected override void Effect(Entity<ActionsComponent> entity, ref EntityEffectEvent<RelayActions> args)
     {

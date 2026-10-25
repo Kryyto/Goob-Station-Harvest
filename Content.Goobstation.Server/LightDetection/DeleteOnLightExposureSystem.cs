@@ -3,9 +3,9 @@ using Robust.Shared.Timing;
 
 namespace Content.Goobstation.Server.LightDetection;
 
-public sealed class DeleteOnLightExposureSystem : EntitySystem
+public sealed partial class DeleteOnLightExposureSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     public override void Update(float frameTime)
     {

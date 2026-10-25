@@ -19,7 +19,7 @@ public sealed partial class SetStanding : EntityEffectBase<SetStanding>
 
 public sealed partial class SetStandingSystem : EntityEffectSystem<StandingStateComponent, SetStanding>
 {
-    [Dependency] private readonly StandingStateSystem _standing = default!;
+    [Dependency] private StandingStateSystem _standing = default!;
 
     protected override void Effect(Entity<StandingStateComponent> entity, ref EntityEffectEvent<SetStanding> args)
     {

@@ -41,7 +41,7 @@ public sealed class AndroidConversationTests
     [Test]
     public async Task Classifier_MatchesPythonRules()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
 
         await server.WaitAssertion(() =>
@@ -126,7 +126,7 @@ public sealed class AndroidConversationTests
     [Test]
     public async Task Backend_RequestUsesJobContextAndLanguageQuestions()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
 
         await server.WaitAssertion(() =>
@@ -157,7 +157,7 @@ public sealed class AndroidConversationTests
     [Explicit("Needs a THX-01 server on http://localhost:8095")]
     public async Task Backend_LiveThx01Server()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         AndroidConversationQuery? query = null;
 
@@ -178,7 +178,7 @@ public sealed class AndroidConversationTests
     [Test]
     public async Task YamlData_HasRepliesForEveryIntentToneAndLanguage()
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var protos = server.ResolveDependency<IPrototypeManager>();
 
@@ -223,7 +223,7 @@ public sealed class AndroidConversationTests
 
     private static async Task<Setup> SpawnAndroidAndSpeaker(Vector2 speakerOffset = default)
     {
-        var pair = await PoolManager.GetServerClient();
+        var pair = await AndroidTestPool.GetServerClient();
         var server = pair.Server;
         var testMap = await pair.CreateTestMap();
         var sEnt = server.EntMan;

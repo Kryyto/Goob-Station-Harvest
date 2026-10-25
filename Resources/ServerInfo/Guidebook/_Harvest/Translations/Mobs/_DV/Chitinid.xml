@@ -1,0 +1,28 @@
+<Document>
+  # Chitinide
+
+  <Box>
+    <GuideEntityEmbed Entity="MobChitinid" Caption=""/>
+  </Box>
+
+  Une espèce hyménoptère industrieuse, les Chitinides sont forts et diligents. Grâce à l'évolution, ils ont développé une résistance aiguë aux radiations, mais pas sans effets secondaires.
+
+  ## Régime alimentaire
+
+  - Peut manger de la viande crue.
+
+  ## Avantages
+
+  - Subit [color=#1e90ff]80 % de dégâts de Radiation en moins, et 10 % de Tranchants, Contondants et Perforants en moins.[/color]
+  - Leurs corps [color=#1e90ff]récupèrent naturellement des dégâts de radiation légers jusqu'à un certain point[/color] ; une fois qu'ils accumulent assez de radiations, ils doivent les purger de leur système sous forme d'un petit caillou [color=#ff0f0f]AVERTISSEMENT : La Chitzite qu'ils expulsent est légèrement radioactive[/color].
+  - Ils possèdent une bioluminescence.
+
+  ## Inconvénients
+
+  - Ils subissent [color=#FFA500]15 % de dégâts de Choc en plus[/color] à cause de leur biologie.
+  - À cause de leurs systèmes hyperactifs, ils ont [color=#FFA500]faim 33 % plus vite.[/color]
+  - Le froid ne convient pas à leur biologie et rend leur [color=#FFA500]mouvement plus lent plus il fait froid[/color]. Le froid leur fait aussi plus de mal qu'aux autres, leur causant [color=#FFA500]25 % de dégâts en plus.[/color]
+  - Le Sang d'insecte ne peut pas être synthétisé à partir de fer.
+  - Les exosquelettes des Chitinides ne peuvent pas être percés par les seringues et les hyposprays.
+
+</Document>

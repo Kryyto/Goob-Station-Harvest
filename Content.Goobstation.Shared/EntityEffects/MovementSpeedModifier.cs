@@ -30,7 +30,7 @@ public sealed partial class MovementSpeedModifier : EntityEffectBase<MovementSpe
 
 public sealed partial class MovementSpeedModifierEntityEffectSystem : EntityEffectSystem<MovementSpeedModifierComponent, MovementSpeedModifier>
 {
-    [Dependency] private readonly MovementModStatusSystem _movementMod = default!;
+    [Dependency] private MovementModStatusSystem _movementMod = default!;
 
     protected override void Effect(Entity<MovementSpeedModifierComponent> entity, ref EntityEffectEvent<MovementSpeedModifier> args)
     {

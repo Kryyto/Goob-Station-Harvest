@@ -9,6 +9,7 @@
 - type: bark
   id: Alto
   name: Alto
+  volume: 1.7 # goob edit - normalising bark volume
   soundCollection:
     collection: AltoBark
 
@@ -22,8 +23,8 @@
 
 - type: bark
   id: Baritone
-  name: Baryton
-  volume: 1
+  name: Baritone
+  volume: 2 # goob edit - normalising bark volume
   soundCollection:
     collection: BaritoneBark
 
@@ -37,8 +38,8 @@
 
 - type: bark
   id: Bass
-  name: Basse
-  volume: 2
+  name: Bass
+  volume: 3 # goob edit - normalising bark volume (this one is quiet still but i don't want to distort the audio)
   soundCollection:
     collection: BassBark
 
@@ -52,8 +53,8 @@
 
 - type: bark
   id: Tenor
-  name: Ténor
-  volume: 1
+  name: Tenor
+  volume: 2 # goob edit - normalising bark volume
   soundCollection:
     collection: TenorBark
 
@@ -67,8 +68,8 @@
 
 - type: bark
   id: Arachnid
-  name: Arachnide
-  volume: 1
+  name: Arachnid
+  volume: 1.3 # goob edit - normalising bark volume
   soundCollection:
     collection: ArachnidBark
   speciesWhitelist:
@@ -84,7 +85,7 @@
 
 - type: bark
   id: Lizard
-  name: Lézard
+  name: Lizard
   volume: 0.4
   soundCollection:
     collection: LizardBark
@@ -121,6 +122,7 @@
   id: Vox
   name: Vox
   volume: 0.5
+  frequency: 0.3 # goob edit - less overlap
   soundCollection:
     collection: VoxBark
   speciesWhitelist:
@@ -134,7 +136,7 @@
 
 - type: bark
   id: Harpy
-  name: Harpie
+  name: Harpy
   volume: 1
   soundCollection:
     collection: HarpyBark
@@ -152,7 +154,8 @@
 - type: bark
   id: Vulpkanin
   name: Vulpkanin
-  volume: 1
+  volume: 1.4 # goob edit - normalising bark volume
+  frequency: 0.5 # goob edit - less overlap
   soundCollection:
     collection: VulpkaninBark
   speciesWhitelist:
@@ -166,7 +169,8 @@
 
 - type: bark
   id: Squeak
-  name: Couinement
+  name: Squeak
+  volume: 0.7 # goob edit - normalising bark volume
   frequency: 0.3
   minPitch: 0.8
   maxPitch: 1.1
@@ -185,7 +189,7 @@
 
 - type: bark
   id: MaleAvali
-  name: Avali Mâle
+  name: MaleAvali
   frequency: 0.5
   volume: 0.7
   soundCollection:
@@ -203,7 +207,7 @@
 
 - type: bark
   id: FemaleAvali
-  name: Avali Femelle
+  name: FemaleAvali
   volume: 0.7
   frequency: 0.5
   soundCollection:
@@ -257,7 +261,7 @@
 
 - type: bark
   id: BorgSyndie
-  name: Borg Syndie
+  name: BorgSyndie
   roundStart: false
   volume: 0.5
   frequency: 0.35
@@ -298,7 +302,8 @@
 
 - type: bark
   id: Aviu1
-  name: Impertinent
+  name: Impudent
+  volume: 0.35 # goob edit - normalising bark volume
   frequency: 0.7
   soundCollection:
     collection: Aviu1Bark
@@ -315,7 +320,8 @@
 
 - type: bark
   id: Aviu2
-  name: Puissant
+  name: Strong
+  volume: 0.6 # goob edit - normalising bark volume
   frequency: 0.7
   soundCollection:
     collection: Aviu2Bark
@@ -333,6 +339,7 @@
 - type: bark
   id: Aviu3
   name: Alien
+  volume: 0.5 # goob edit - normalising bark volume
   frequency: 0.7
   soundCollection:
     collection: Aviu3Bark
@@ -349,7 +356,8 @@
 
 - type: bark
   id: Aviu4
-  name: Éthéré
+  name: Ethereal
+  volume: 0.45 # goob edit - normalising bark volume
   frequency: 0.7
   soundCollection:
     collection: Aviu4Bark

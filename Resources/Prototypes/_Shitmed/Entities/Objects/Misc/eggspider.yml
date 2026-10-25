@@ -6,7 +6,6 @@
   name: œuf d'araignée
   description: Est-ce une gemme ? Est-ce un œuf ? Ça a l'air cher.
   components:
-  - type: Timer
   - type: TimedSpawner
     prototypes:
     - MobGiantSpider

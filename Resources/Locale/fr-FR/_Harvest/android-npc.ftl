@@ -13,3 +13,5 @@ android-verb-capabilities = Tu peux faire quoi ?
 android-verb-menu = Tu peux servir quoi ?
 android-verb-heal-me = Soigne-moi
 android-verb-repeat-order = Qu'est-ce que tu veux ?
+
+species-name-android = Androïde

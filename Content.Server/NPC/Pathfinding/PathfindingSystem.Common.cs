@@ -67,7 +67,7 @@ public sealed partial class PathfindingSystem
             {
                 modifier += 0.5f;
             }
-            // Door we can open with proper access.
+            // Harvest: door we can open with proper access.
             else if (isDoor && isAccess && (request.Flags & PathFlags.Access) != 0x0)
             {
                 modifier += 0.5f;

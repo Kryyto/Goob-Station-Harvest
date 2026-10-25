@@ -2,7 +2,7 @@
 """Regenerates the android conversation prototypes from the Android-generic-responses project.
 
 Usage: python Tools/android_npc_gen_conversation.py <path to Android-generic-responses/backend>
-Writes Resources/Prototypes/AndroidNpc/conversation_rules.yml and conversation_jobs.yml.
+Writes Resources/Prototypes/_Harvest/AndroidNpc/conversation_rules.yml and conversation_jobs.yml.
 Job profiles come from the backend's jobs/ folder, or from Tools/android_npc_jobs/ for jobs it does not have.
 """
 import json
@@ -13,7 +13,7 @@ if len(sys.argv) != 2:
     sys.exit(__doc__)
 
 SRC = Path(sys.argv[1]).resolve()
-DST = Path(__file__).resolve().parent.parent / "Resources" / "Prototypes" / "AndroidNpc"
+DST = Path(__file__).resolve().parent.parent / "Resources" / "Prototypes" / "_Harvest" / "AndroidNpc"
 LOCAL_JOBS = Path(__file__).resolve().parent / "android_npc_jobs"
 sys.path.insert(0, str(SRC))
 import laya_client as lc  # noqa: E402

@@ -13,3 +13,5 @@ android-verb-capabilities = What can you do?
 android-verb-menu = What can you serve?
 android-verb-heal-me = Heal me
 android-verb-repeat-order = What would you like?
+
+species-name-android = Android

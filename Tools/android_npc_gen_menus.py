@@ -2,10 +2,11 @@
 """Regenerates the android cook and bartender menus from the game prototypes.
 
 Usage: python Tools/android_npc_gen_menus.py
-Writes Resources/Prototypes/AndroidNpc/menus.yml:
+Writes Resources/Prototypes/_Harvest/AndroidNpc/menus.yml:
 - bartender: every pre-filled metamorphic glass of a standard drink, named after its reagent (en-US and fr-FR locale);
-- cook: every standard dish a microwave recipe makes. French names are the prototype names; English names come from
-  the prototypes before the French translation commit (TRANSLATION_PARENT), read with `git show`.
+- cook: every standard dish a microwave recipe makes. French names come from the fr-FR `ent-<id>` keys, else the
+  prototype names; English names from the en-US keys, else the prototypes before the French translation commit
+  (TRANSLATION_PARENT), read with `git show`.
 Edit the exclusion lists below, then regenerate.
 """
 import re
@@ -15,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PROTOS = ROOT / "Resources" / "Prototypes"
 LOCALE = ROOT / "Resources" / "Locale"
-DST = PROTOS / "AndroidNpc" / "menus.yml"
+DST = PROTOS / "_Harvest" / "AndroidNpc" / "menus.yml"
 
 # Last commit with the original English prototype names.
 TRANSLATION_PARENT = "25d6b81e23^"
@@ -80,6 +81,18 @@ def ftl(lang: str):
     return out
 
 
+def entity_keys(lang: str):
+    """id -> name from the `ent-<id>` keys of a locale (the game prefers them over the prototype name)."""
+    out = {}
+    for path in (LOCALE / lang).rglob("*.ftl"):
+        if not path.is_file():
+            continue
+        for line in path.read_text(encoding="utf-8-sig").splitlines():
+            if m := re.match(r"^ent-([\w-]+) *= *(\S.*)$", line):
+                out[m.group(1)] = m.group(2).strip()
+    return out
+
+
 def entity_names(texts):
     """id -> (name, parents) for every entity in the given YAML texts."""
     out = {}
@@ -130,18 +143,20 @@ def drinks():
 
 def food():
     results = sorted(set(re.findall(r"^  result: *(\w+)", RECIPES.read_text(encoding="utf-8"), flags=re.M)))
-    current = entity_names(p.read_text(encoding="utf-8") for p in (ROOT / FOOD_DIR).rglob("*.yml"))
+    # Upstream moves dishes between folders, so look through every prototype.
+    current = entity_names(p.read_text(encoding="utf-8", errors="replace") for p in PROTOS.rglob("*.yml") if p.is_file())
     old_files = git("ls-tree", "-r", "--name-only", TRANSLATION_PARENT, "--", FOOD_DIR).split()
     old = entity_names(git("show", f"{TRANSLATION_PARENT}:{f}") for f in old_files if f.endswith(".yml"))
+    fr_keys, en_keys = entity_keys("fr-FR"), entity_keys("en-US")
 
     items = []
     for ident in results:
         if not ident.startswith("Food") or FOOD_EXCLUDED.search(ident):
             continue
-        fr = resolve_name(ident, current)
+        fr = fr_keys.get(ident) or resolve_name(ident, current)
         if not fr:
             continue
-        en = resolve_name(ident, old) or fr
+        en = en_keys.get(ident) or resolve_name(ident, old) or resolve_name(ident, current) or fr
         items.append((ident, {"en": en, "fr": fr}, 8))
     return sorted(items, key=lambda i: i[1]["fr"])
 

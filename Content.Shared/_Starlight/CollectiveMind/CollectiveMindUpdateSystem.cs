@@ -14,7 +14,7 @@ public sealed class CollectiveMindUpdateSystem : EntitySystem
     [Dependency] private readonly IComponentFactory _componentFactory = default!;
     [Dependency] private readonly TagSystem _tag = default!;
 
-    private readonly ConcurrentDictionary<string, int> _currentId = new();
+    private readonly ConcurrentDictionary<string, int> _currentId = new(); // Harvest - per instance and thread-safe
 
     public void UpdateCollectiveMind(EntityUid uid, CollectiveMindComponent collective)
     {

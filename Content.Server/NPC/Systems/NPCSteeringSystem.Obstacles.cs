@@ -106,7 +106,7 @@ public sealed partial class NPCSteeringSystem
 
                 // If we get to here then didn't succeed for reasons.
             }
-            else if (isDoor && isAccessRequired && (component.Flags & PathFlags.Access) != 0x0)
+            else if (isDoor && isAccessRequired && (component.Flags & PathFlags.Access) != 0x0) // Harvest - open access doors on the path
             {
                 var doorQuery = GetEntityQuery<DoorComponent>();
 

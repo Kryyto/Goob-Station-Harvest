@@ -456,7 +456,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         if (steering.Pathfind || targetDistance < steering.RepathRange)
             return;
 
-        // Pathfinding needs grid-relative coordinates. If the entity (or target) is parented to the
+        // Harvest: pathfinding needs grid-relative coordinates. If the entity (or target) is parented to the
         // map, convert both points to the entity's current grid before asking for a path.
         if (xform.GridUid is not { Valid: true } gridUid)
         {

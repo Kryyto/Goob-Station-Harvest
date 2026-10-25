@@ -135,7 +135,7 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("story"); // Goobstation
             _prototypeManager.RegisterIgnore("storyBeat"); // Goobstation
 
-            // Android NPC system: server-only prototype kinds.
+            // Harvest: android NPC server-only prototype kinds.
             _prototypeManager.RegisterIgnore("androidNpc");
             _prototypeManager.RegisterIgnore("androidJob");
             _prototypeManager.RegisterIgnore("androidMenu");

@@ -71,9 +71,6 @@
   id: Chair
 
 - type: Tag
-  id: BarStool
-
-- type: Tag
   id: ClothingBeltGeminiHoloProjector
 
 - type: Tag

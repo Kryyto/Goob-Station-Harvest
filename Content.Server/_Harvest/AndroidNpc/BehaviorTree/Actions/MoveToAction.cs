@@ -41,6 +41,9 @@ public sealed class MoveToAction : IBehaviorNode
     // Climbing tables is a last resort. We first try a path without climbing and only allow it
     // after the pathfinder reports NoPath. The tree is shared by every android of a job, so this state is
     // kept per android and loaded at the start of each tick.
+    // Closest a move has to get to the tile standing in for its target.
+    private const float MinResolvedRange = 0.4f;
+
     private sealed class MoveState
     {
         public EntityCoordinates? LastResolvedTarget;
@@ -60,6 +63,11 @@ public sealed class MoveToAction : IBehaviorNode
 
     private const float DoorAheadRange = 1.3f;
 
+    /// <summary>
+    /// How long a tile given up on (NoPath) stays refused: see <see cref="AndroidComponent.UnreachableTiles"/>.
+    /// </summary>
+    private static readonly TimeSpan UnreachableMemory = TimeSpan.FromSeconds(60);
+
     private readonly Dictionary<EntityUid, MoveState> _states = new();
     private MoveState _state = new();
 
@@ -68,6 +76,13 @@ public sealed class MoveToAction : IBehaviorNode
     /// </summary>
     [ViewVariables]
     public float? NoPathRetryWindow { get; set; }
+
+    /// <summary>
+    /// Whether a target given up on (NoPath) is refused for <see cref="UnreachableMemory"/>: for routine moves that
+    /// pick the same unreachable spot again and again (patrol beacons, messes in locked rooms). Off for urgent moves
+    /// (patients, orders, fleeing), where one failed search must not stop the android from trying again.
+    /// </summary>
+    public bool RemembersUnreachable { get; init; }
 
     /// <summary>
     /// Creates a move action with a target provider and arrival range.
@@ -146,6 +161,13 @@ public sealed class MoveToAction : IBehaviorNode
         }
 
         var resolvedTarget = target.Value;
+        if (RemembersUnreachable && IsUnreachable(owner, resolvedTarget, blackboard))
+        {
+            sawmill.Debug($"[MoveTo] {resolvedTarget} was unreachable a moment ago; failing at once");
+            FailAndCleanup(owner, blackboard);
+            return BehaviorStatus.Failure;
+        }
+
         var steering = blackboard.EntityManager.GetComponentOrNull<NPCSteeringComponent>(owner);
 
         // A new target resets the "try climbing" fallback so we always attempt to go around first.
@@ -163,6 +185,11 @@ public sealed class MoveToAction : IBehaviorNode
         var resolvedMap = blackboard.Transform.ToMapCoordinates(resolvedTarget);
         if (resolvedMap != MapCoordinates.Nullspace)
         {
+            // The tile stands in for the real target (money on a table): get as much closer to it as the tile is
+            // farther, so arriving there also means being in range of the target.
+            if (rawMap != MapCoordinates.Nullspace && rawMap.MapId == resolvedMap.MapId)
+                range = Math.Max(MinResolvedRange, range - (rawMap.Position - resolvedMap.Position).Length());
+
             var resolvedDistance = (resolvedMap.Position - ownerPos).Length();
             if (resolvedDistance <= range)
             {
@@ -176,15 +203,21 @@ public sealed class MoveToAction : IBehaviorNode
             }
         }
 
-        // If we are not yet steering to the right coordinates, register.
+        // If we are not yet steering to the right coordinates, register. The status still describes the previous
+        // target (InRange of the patient just picked up, say) until steering updates: never trust it this tick.
         if (steering == null ||
-            !blackboard.EntityManager.EntityExists(steering.Coordinates.EntityId))
+            !blackboard.EntityManager.EntityExists(steering.Coordinates.EntityId) ||
+            ShouldReRegister(steering.Coordinates, resolvedTarget))
         {
+            var previous = steering != null && blackboard.EntityManager.EntityExists(steering.Coordinates.EntityId)
+                ? blackboard.Transform.ToMapCoordinates(steering.Coordinates)
+                : MapCoordinates.Nullspace;
             steering = blackboard.Steering.Register(owner, resolvedTarget, steering);
-        }
-        else if (ShouldReRegister(steering.Coordinates, resolvedTarget))
-        {
-            steering = blackboard.Steering.Register(owner, resolvedTarget, steering);
+
+            // Same place written relative to another entity (an item on a counter) is not a new target.
+            var next = blackboard.Transform.ToMapCoordinates(resolvedTarget);
+            if (previous.MapId != next.MapId || (previous.Position - next.Position).Length() > 1f)
+                steering.Status = SteeringStatus.Moving;
         }
 
         // Keep the steering target up to date for moving targets without cancelling pathfinding every tick.
@@ -346,12 +379,33 @@ public sealed class MoveToAction : IBehaviorNode
             return BehaviorStatus.Running;
         }
 
-        sawmill.Info($"[MoveTo] NoPath persisted for {window.TotalSeconds:F1}s after {inventory.ConsecutiveNoPathCount} ticks, giving up on {resolvedTarget}");
+        sawmill.Info($"[MoveTo] {blackboard.EntityManager.ToPrettyString(owner)}: NoPath persisted for {window.TotalSeconds:F1}s after {inventory.ConsecutiveNoPathCount} ticks, giving up on {resolvedTarget}");
         ResetNoPathCounters(owner, blackboard);
+        if (RemembersUnreachable)
+            RememberUnreachable(owner, resolvedTarget, blackboard);
         blackboard.Steering.Unregister(owner, steering);
         FailAndCleanup(owner, blackboard);
         _state.ClimbAllowed = false;
         return BehaviorStatus.Failure;
+    }
+
+    private static bool IsUnreachable(EntityUid owner, EntityCoordinates target, AndroidBlackboard blackboard)
+    {
+        return blackboard.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android) &&
+               android.UnreachableTiles.TryGetValue((target.EntityId, target.Position.Floored()), out var since) &&
+               blackboard.Timing.CurTime - since < UnreachableMemory;
+    }
+
+    private static void RememberUnreachable(EntityUid owner, EntityCoordinates target, AndroidBlackboard blackboard)
+    {
+        if (!blackboard.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android))
+            return;
+
+        var now = blackboard.Timing.CurTime;
+        foreach (var expired in android.UnreachableTiles.Where(t => now - t.Value >= UnreachableMemory).Select(t => t.Key).ToList())
+            android.UnreachableTiles.Remove(expired);
+
+        android.UnreachableTiles[(target.EntityId, target.Position.Floored())] = now;
     }
 
     private static void ResetNoPathCounters(EntityUid owner, AndroidBlackboard blackboard)

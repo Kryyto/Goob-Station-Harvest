@@ -28,7 +28,9 @@
   orderExpirySeconds: 300
   followLostDistance: 15
   followLostTimeoutSeconds: 30
-  breakIntervalSeconds: 120
+  # A break every 8 to 10 minutes.
+  breakIntervalSeconds: 480
+  breakIntervalJitterSeconds: 120
   breakDurationSeconds: 60
   resupplyThreshold: 0.2
   hearingRange: 10

@@ -2,6 +2,7 @@
 
 using Content.Shared.Radio;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Server._Harvest.AndroidNpc.Data;
 
@@ -102,9 +103,22 @@ public sealed partial class AndroidNpcConfigPrototype : IPrototype
     [DataField("followLostTimeoutSeconds")] public float FollowLostTimeoutSeconds { get; private set; } = 30f;
 
     /// <summary>
-    /// Time between micro-breaks, in seconds.
+    /// Shortest time between breaks, in seconds.
     /// </summary>
-    [DataField("breakIntervalSeconds")] public float BreakIntervalSeconds { get; private set; } = 120f;
+    [DataField("breakIntervalSeconds")] public float BreakIntervalSeconds { get; private set; } = 480f;
+
+    /// <summary>
+    /// Random extra time added to <see cref="BreakIntervalSeconds"/>, so androids do not all break together.
+    /// </summary>
+    [DataField("breakIntervalJitterSeconds")] public float BreakIntervalJitterSeconds { get; private set; } = 120f;
+
+    /// <summary>
+    /// Time until the next break: between <see cref="BreakIntervalSeconds"/> and that plus the jitter.
+    /// </summary>
+    public TimeSpan NextBreakDelay(IRobustRandom random)
+    {
+        return TimeSpan.FromSeconds(BreakIntervalSeconds + random.NextFloat() * BreakIntervalJitterSeconds);
+    }
 
     /// <summary>
     /// Duration of a micro-break, in seconds.

@@ -179,8 +179,7 @@ public sealed class AndroidSystem : EntitySystem
         component.NextTreeTickAt = _timing.CurTime + TimeSpan.FromSeconds(_random.NextFloat() * _prototypeManager.AndroidConfig().TreeTickIntervalSeconds);
 
         var config = _prototypeManager.AndroidConfig();
-        var breakInterval = TimeSpan.FromSeconds(config.BreakIntervalSeconds);
-        component.NextBreakAt = _timing.CurTime + breakInterval;
+        component.NextBreakAt = _timing.CurTime + config.NextBreakDelay(_random);
 
         if (_entityManager.TryGetComponent<TransformComponent>(uid, out var xform))
         {

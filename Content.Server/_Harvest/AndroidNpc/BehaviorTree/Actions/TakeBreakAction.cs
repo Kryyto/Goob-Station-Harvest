@@ -15,7 +15,9 @@ using Content.Shared.Buckle.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
+using Content.Shared.Climbing.Components;
 using Content.Shared.Pinpointer;
+using Content.Shared.Placeable;
 using Content.Shared.Tag;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
@@ -35,6 +37,7 @@ public sealed class TakeBreakAction : IBehaviorNode
 {
     // Larger search radii so androids can find the venue even when it is at the edge of a big station.
     private const float ChairSearchRadius = 12f;
+    private const float DiningTableRange = 1.2f;
     private const float ResupplyChairSearchRadius = 16f;
     private const float AnchorStandOffRange = 2.5f;
     private const int MaxSeatAttempts = 3;
@@ -222,7 +225,7 @@ public sealed class TakeBreakAction : IBehaviorNode
         }
 
         blackboard.System<AndroidBreakSystem>().EndBreak(owner);
-        android.NextBreakAt = blackboard.Timing.CurTime + TimeSpan.FromSeconds(blackboard.Config.BreakIntervalSeconds);
+        android.NextBreakAt = blackboard.Timing.CurTime + blackboard.Config.NextBreakDelay(blackboard.Random);
         return BehaviorStatus.Success;
     }
 
@@ -321,8 +324,7 @@ public sealed class TakeBreakAction : IBehaviorNode
             blackboard.System<AndroidBreakSystem>().EndBreak(owner);
 
             var config = blackboard.Config;
-            var breakInterval = TimeSpan.FromSeconds(config.BreakIntervalSeconds);
-            android.NextBreakAt = now + breakInterval;
+            android.NextBreakAt = now + config.NextBreakDelay(blackboard.Random);
 
             // After a break, head to a different cardinal part of the station.
             PatrolAction.SetRandomPatrolNudge(owner, blackboard, clearVisited: true);
@@ -383,11 +385,19 @@ public sealed class TakeBreakAction : IBehaviorNode
 
         var venuePos = transform.ToMapCoordinates(venueCoords).Position;
 
-        // Only stools in sight of the venue: a seat behind the wall is in maintenance, not at the bar.
-        // Regular chairs at a nearby table do not count as being at the bar/kitchen counter.
-        var chair = FindChairNear(owner, ownerGrid.Value, venueCoords, ChairSearchRadius, blackboard, tagSystem, BarStoolTag);
+        // Only seats in sight of the venue: a seat behind the wall is in maintenance, not at the bar.
+        // At the bar, its stools; for the kitchen, a chair at a table of the dining room in front of it.
+        var chair = venue == AndroidBreakVenue.Kitchen
+            ? FindChairNear(owner, ownerGrid.Value, venueCoords, ChairSearchRadius, blackboard, tagSystem, ChairTag,
+                chair => HasTableNextTo(blackboard, chair))
+            : FindChairNear(owner, ownerGrid.Value, venueCoords, ChairSearchRadius, blackboard, tagSystem, BarStoolTag);
         if (chair.HasValue)
             return (chair.Value, true);
+
+        // A kitchen without a dining room is a staff area: an android that may take its break elsewhere goes to
+        // the bar instead. Only one kept away from the bar (the bartender) waits by the kitchen.
+        if (venue == AndroidBreakVenue.Kitchen && (android == null || FixedVenue(android, blackboard) != AndroidBreakVenue.Kitchen))
+            return (null, false);
 
         // No free stool: still "arrive" at the venue, standing on a free tile of the room next to its anchor.
         if (venueBeacon.HasValue)
@@ -434,6 +444,24 @@ public sealed class TakeBreakAction : IBehaviorNode
         return resupplyChair ?? resupplyEntity;
     }
 
+    /// <summary>
+    /// Whether a table (or any surface one eats at) stands right next to the seat.
+    /// </summary>
+    private static bool HasTableNextTo(AndroidBlackboard blackboard, EntityUid seat)
+    {
+        var lookup = blackboard.EntityManager.System<EntityLookupSystem>();
+        foreach (var near in lookup.GetEntitiesInRange(seat, DiningTableRange, LookupFlags.Static))
+        {
+            if (blackboard.EntityManager.HasComponent<PlaceableSurfaceComponent>(near) &&
+                blackboard.EntityManager.HasComponent<ClimbableComponent>(near))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private static EntityUid? FindChairNear(
         EntityUid owner,
         EntityUid grid,
@@ -441,7 +469,8 @@ public sealed class TakeBreakAction : IBehaviorNode
         float radius,
         AndroidBlackboard blackboard,
         TagSystem tagSystem,
-        ProtoId<TagPrototype> requiredTag)
+        ProtoId<TagPrototype> requiredTag,
+        Func<EntityUid, bool>? accept = null)
     {
         var examine = blackboard.EntityManager.System<ExamineSystemShared>();
         var anchorMap = blackboard.Transform.ToMapCoordinates(anchorCoords);
@@ -468,7 +497,8 @@ public sealed class TakeBreakAction : IBehaviorNode
 
             if (strap.BuckledEntities.Count > 0 ||
                 blackboard.Claims.IsClaimedByOther(chair, owner) ||
-                android != null && blackboard.Blacklist.IsBlacklisted(android, chair, 1))
+                android != null && blackboard.Blacklist.IsBlacklisted(android, chair, 1) ||
+                accept != null && !accept(chair))
             {
                 continue;
             }

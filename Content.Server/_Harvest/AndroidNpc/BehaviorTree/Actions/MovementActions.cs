@@ -282,7 +282,10 @@ public sealed class PatrolAction : IBehaviorNode
     {
         _moveTo = new MoveToAction(
             GetNextPatrolTarget,
-            0.5f);
+            0.5f)
+        {
+            RemembersUnreachable = true,
+        };
     }
 
     public BehaviorStatus Tick(EntityUid owner, AndroidBlackboard blackboard, float frameTime)

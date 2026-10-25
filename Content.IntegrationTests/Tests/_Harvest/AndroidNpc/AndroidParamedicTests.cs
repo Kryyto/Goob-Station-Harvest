@@ -25,6 +25,9 @@ using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory;
+using Content.Server.Medical.SuitSensors;
+using Content.Shared.Medical.SuitSensor;
+using Content.Shared.Medical.SuitSensors;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
@@ -57,6 +60,17 @@ public sealed class AndroidParamedicTests
     }
 
     private static float Damage(IEntityManager sEnt, EntityUid uid) => sEnt.GetComponent<DamageableComponent>(uid).TotalDamage.Float();
+
+    /// <summary>
+    /// Dresses the mob in a jumpsuit whose suit sensor reports the given mode, as crew wear them.
+    /// </summary>
+    internal static void WearSensors(IIntegrationInstance server, EntityUid mob, SuitSensorMode mode = SuitSensorMode.SensorCords)
+    {
+        var sEnt = server.EntMan;
+        var suit = sEnt.SpawnEntity("ClothingUniformJumpsuitColorGrey", sEnt.GetComponent<TransformComponent>(mob).Coordinates);
+        Assert.That(server.System<InventorySystem>().TryEquip(mob, suit, "jumpsuit", silent: true, force: true), Is.True);
+        server.System<SuitSensorSystem>().SetSensor((suit, null), mode, mob);
+    }
 
     [Test]
     [TestCase(false)]
@@ -170,7 +184,7 @@ public sealed class AndroidParamedicTests
         {
             Assert.That(xforms.GetWorldPosition(body).X, Is.LessThan(4f),
                 $"The body was carried to medbay; medic at {xforms.GetWorldPosition(medic)}, body at {xforms.GetWorldPosition(body)}, said: {string.Join(" | ", sEnt.GetComponent<AndroidComponent>(medic).RecentLines)}");
-            Assert.That(sEnt.GetComponent<PullableComponent>(body).Puller, Is.Null, "and left there for the doctors");
+            Assert.That(server.System<AndroidMedicSystem>().IsCarrying(medic, body), Is.False, "and left there for the doctors");
         });
 
         await pair.CleanReturnAsync();
@@ -213,9 +227,11 @@ public sealed class AndroidParamedicTests
         {
             sEnt.SpawnEntity("DefaultStationBeaconMorgue", new EntityCoordinates(map.Grid.Owner, 20.5f, 0.5f));
             var body = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 21.5f, 0.5f));
+            WearSensors(server, body);
             server.System<MobStateSystem>().ChangeMobState(body, MobState.Dead);
 
             critical = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 36.5f, 0.5f));
+            WearSensors(server, critical);
             Hurt(server, critical, 120);
             medic = sEnt.SpawnEntity("MobAndroidParamedic", new EntityCoordinates(map.Grid.Owner, 1.5f, 0.5f));
         });
@@ -223,7 +239,49 @@ public sealed class AndroidParamedicTests
 
         await server.WaitAssertion(() =>
             Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).Patient, Is.EqualTo(critical),
-                "A critical crew member 35 tiles away is attended to; the body at the morgue is left there"));
+                "A critical crew member 35 tiles away shows on the crew monitor and is attended to; the body at the morgue is left there"));
+
+        await pair.CleanReturnAsync();
+    }
+
+    /// <summary>
+    /// Far away crew only show on the crew monitor when their sensors give coordinates, and only while the
+    /// paramedic still carries the monitor.
+    /// </summary>
+    [Test]
+    [TestCase(SuitSensorMode.SensorVitals, true)]
+    [TestCase(SuitSensorMode.SensorCords, false)]
+    public async Task Paramedic_SeesFarCrewOnlyThroughTheCrewMonitor(SuitSensorMode mode, bool keepMonitor)
+    {
+        var pair = await AndroidTestPool.GetServerClient();
+        var server = pair.Server;
+        var sEnt = server.EntMan;
+        var map = await pair.CreateTestMap();
+        await BuildHall(server, map, 40);
+        EntityUid medic = default;
+
+        await server.WaitAssertion(() => medic = sEnt.SpawnEntity("MobAndroidParamedic", new EntityCoordinates(map.Grid.Owner, 1.5f, 0.5f)));
+        await server.WaitRunTicks(5);
+        await server.WaitAssertion(() =>
+        {
+            var medicSystem = server.System<AndroidMedicSystem>();
+            Assert.That(medicSystem.CarriesCrewMonitor(medic), Is.True, "The paramedic spawns with its crew monitor");
+            if (!keepMonitor)
+            {
+                var inventory = sEnt.GetComponent<AndroidInventoryComponent>(medic);
+                sEnt.DeleteEntity(server.System<AndroidInventorySystem>().FindItemByPrototype(medic, inventory, "HandheldCrewMonitor"));
+                Assert.That(medicSystem.CarriesCrewMonitor(medic), Is.False);
+            }
+
+            var critical = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 36.5f, 0.5f));
+            WearSensors(server, critical, mode);
+            Hurt(server, critical, 120);
+        });
+        await server.WaitRunTicks(10);
+
+        await server.WaitAssertion(() =>
+            Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).Patient, Is.Null,
+                keepMonitor ? "Sensors without coordinates do not say where the patient is" : "Without its crew monitor the paramedic does not know"));
 
         await pair.CleanReturnAsync();
     }
@@ -403,10 +461,10 @@ public sealed class AndroidParamedicTests
         for (var i = 0; i < 30 && !pulled; i++)
         {
             await server.WaitRunTicks(10);
-            await server.WaitAssertion(() => pulled = sEnt.GetComponent<PullableComponent>(patient).Puller == medic);
+            await server.WaitAssertion(() => pulled = server.System<AndroidMedicSystem>().IsCarrying(medic, patient));
         }
 
-        Assert.That(pulled, Is.True, "The paramedic started dragging the critical patient");
+        Assert.That(pulled, Is.True, "The paramedic picked up the critical patient");
 
         for (var i = 0; i < 4; i++)
         {
@@ -419,8 +477,8 @@ public sealed class AndroidParamedicTests
         {
             var carrying = server.ProtoMan.AndroidJobData(AndroidJob.Paramedic)!.LinesFor("fr")!.Carrying;
             var said = sEnt.GetComponent<AndroidComponent>(medic).RecentLines;
-            Assert.That(sEnt.GetComponent<PullableComponent>(patient).Puller, Is.EqualTo(medic),
-                $"Still dragging the patient; said: {string.Join(" | ", said)}");
+            Assert.That(server.System<AndroidMedicSystem>().IsCarrying(medic, patient), Is.True,
+                $"Still carrying the patient; said: {string.Join(" | ", said)}");
             Assert.That(said.Count(carrying.Contains), Is.LessThanOrEqualTo(1), "The transfer is announced once");
         });
 

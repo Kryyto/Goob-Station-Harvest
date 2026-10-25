@@ -180,6 +180,13 @@ public sealed partial class AndroidComponent : Component
     public TimeSpan NextBreakAt { get; set; } = TimeSpan.Zero;
 
     /// <summary>
+    /// Tiles the android recently gave up reaching (NoPath), and when; <c>MoveToAction</c> refuses them for a minute
+    /// instead of searching the station again.
+    /// </summary>
+    [ViewVariables]
+    public Dictionary<(EntityUid Grid, Vector2i Tile), TimeSpan> UnreachableTiles { get; } = new();
+
+    /// <summary>
     /// Coordinates of the bar beacon on the current grid, cached so the android does not need to
     /// rediscover it every time it goes on break.
     /// </summary>

@@ -48,6 +48,12 @@ public sealed partial class AndroidMedicComponent : Component
     [ViewVariables] public TimeSpan PlacesRefreshAt { get; set; }
 
     /// <summary>
+    /// Tiles the paramedic can walk to from the medbay beacon (through the doors it can open), refreshed with the
+    /// places: only beds next to one of them are used.
+    /// </summary>
+    [ViewVariables] public HashSet<(EntityUid Grid, Vector2i Tile)> MedbayReachable { get; } = new();
+
+    /// <summary>
     /// When each critical patient last got epinephrine.
     /// </summary>
     [ViewVariables] public Dictionary<EntityUid, TimeSpan> InjectedAt { get; } = new();
@@ -58,9 +64,19 @@ public sealed partial class AndroidMedicComponent : Component
     [ViewVariables] public HashSet<EntityUid> Delivered { get; } = new();
 
     /// <summary>
+    /// Patients found critical or dead: brought to medbay even when epinephrine briefly brings them back.
+    /// </summary>
+    [ViewVariables] public HashSet<EntityUid> ToDeliver { get; } = new();
+
+    /// <summary>
     /// Medbay bed claimed for the patient being carried.
     /// </summary>
     [ViewVariables] public EntityUid? Bed { get; set; }
+
+    /// <summary>
+    /// Beds the paramedic could not reach with a patient, and when: skipped for a while.
+    /// </summary>
+    [ViewVariables] public Dictionary<EntityUid, TimeSpan> UnreachableBeds { get; } = new();
 
     /// <summary>
     /// When each patient last got each medicine (dylovene, dexalin).

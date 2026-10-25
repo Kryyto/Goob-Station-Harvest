@@ -66,6 +66,21 @@ public sealed class NavMapBeaconLocator
         ["arrivals"] = "station-beacon-arrivals",
     };
 
+    /// <summary>
+    /// Maps without a beacon for a place (Oasis has no bar or kitchen beacon, Packed no medical one): the place is
+    /// found by the fixtures that stand there instead. The one with the most of them around wins (a medbay has
+    /// several beds, the brig's infirmary one), then the nearest. No medbay entry: the paramedic falls back to the
+    /// medical beacon first.
+    /// </summary>
+    private static readonly Dictionary<string, string[]> FallbackAnchors = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["station-beacon-bar"] = new[] { "BoozeDispenser", "VendingMachineBooze" },
+        ["station-beacon-kitchen"] = new[] { "VendingMachineDinnerware", "VendingMachineChefDrobe", "KitchenMicrowave" },
+        ["station-beacon-medical"] = new[] { "StasisBed", "MedicalBed", "VendingMachineMedical" },
+    };
+
+    private const float FallbackClusterRange = 8f;
+
     public NavMapBeaconLocator(IEntityManager entityManager)
     {
         _entityManager = entityManager;
@@ -132,7 +147,7 @@ public sealed class NavMapBeaconLocator
         }
 
         if (best is not { } bestUid)
-            return false;
+            return TryFindFallbackAnchor(origin, originGridUid, beaconKey, out entity, out coordinates);
 
         entity = bestUid;
         coordinates = _entityManager.GetComponent<TransformComponent>(bestUid).Coordinates;
@@ -152,8 +167,8 @@ public sealed class NavMapBeaconLocator
     {
         if (classifier.FindLocation(text) is { } location && TryFindBeacon(origin, location, out var beacon, out coordinates))
         {
-            var nav = _entityManager.GetComponent<NavMapBeaconComponent>(beacon.Value);
-            name = nav.Text ?? (nav.DefaultText is { } locId ? Loc.GetString(locId) : location);
+            var nav = _entityManager.GetComponentOrNull<NavMapBeaconComponent>(beacon.Value);
+            name = nav?.Text ?? (nav?.DefaultText is { } locId ? Loc.GetString(locId) : location);
             return true;
         }
 
@@ -275,6 +290,42 @@ public sealed class NavMapBeaconLocator
         return TryFindBeacon(origin, resupplyKey, out entity, out coordinates);
     }
 
+    private bool TryFindFallbackAnchor(
+        EntityCoordinates origin,
+        EntityUid grid,
+        string beaconKey,
+        [NotNullWhen(true)] out EntityUid? entity,
+        [NotNullWhen(true)] out EntityCoordinates? coordinates)
+    {
+        entity = null;
+        coordinates = null;
+        if (!FallbackAnchors.TryGetValue(beaconKey, out var prototypes))
+            return false;
+
+        var candidates = new List<(EntityUid Uid, EntityCoordinates Coords)>();
+        var query = _entityManager.AllEntityQueryEnumerator<MetaDataComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var meta, out var xform))
+        {
+            if (xform.GridUid == grid && meta.EntityPrototype?.ID is { } id && Array.IndexOf(prototypes, id) >= 0)
+                candidates.Add((uid, xform.Coordinates));
+        }
+
+        var bestScore = (Cluster: -1, Distance: float.PositiveInfinity);
+        foreach (var (uid, coords) in candidates)
+        {
+            var cluster = candidates.Count(c => (c.Coords.Position - coords.Position).Length() <= FallbackClusterRange);
+            var distance = (coords.Position - origin.Position).LengthSquared();
+            if (cluster < bestScore.Cluster || cluster == bestScore.Cluster && distance >= bestScore.Distance)
+                continue;
+
+            bestScore = (cluster, distance);
+            entity = uid;
+            coordinates = coords;
+        }
+
+        return entity != null && coordinates != null;
+    }
+
     private static string ResolveBeaconKey(string query)
     {
         if (Aliases.TryGetValue(query, out var alias))
@@ -312,85 +363,25 @@ public sealed class NavMapBeaconLocator
 }
 
 /// <summary>
-/// Finds a reasonable "kitchen" anchor point on a grid. Most station kitchens don't have their own
-/// nav beacon (unlike the bar), so instead this looks for appliances that are effectively unique to
-/// kitchens: the dinnerware vending machine or the chef's uniform vendor (ChefDrobe). As a last
-/// resort it falls back to the nearest plain sink, since those also show up in other rooms.
+/// Finds the station kitchen: its nav beacon, else a fixture only kitchens have (see the locator's fallbacks).
+/// Sinks are not used: they stand in medbay, maintenance and bathrooms too.
 /// </summary>
 public static class KitchenLocator
 {
-    private static readonly string[] PrimaryAnchorPrototypes =
-    {
-        "VendingMachineDinnerware",
-        "VendingMachineChefDrobe",
-    };
-
-    private static readonly string[] FallbackAnchorPrototypes =
-    {
-        "Sink",
-        "SinkWide",
-        "SinkStemless",
-    };
-
     /// <summary>
     /// Tries to find the nearest kitchen anchor entity on the given grid, relative to the given origin.
     /// </summary>
     public static bool TryFindKitchenAnchor(IEntityManager entityManager, EntityUid grid, EntityCoordinates origin, out EntityUid anchor)
     {
-        var transform = entityManager.System<SharedTransformSystem>();
-        var originPos = transform.ToMapCoordinates(origin).Position;
-
-        if (TryFindNearest(entityManager, transform, grid, originPos, PrimaryAnchorPrototypes, out anchor))
-            return true;
-
-        return TryFindNearest(entityManager, transform, grid, originPos, FallbackAnchorPrototypes, out anchor);
-    }
-
-    private static bool TryFindNearest(
-        IEntityManager entityManager,
-        SharedTransformSystem transform,
-        EntityUid grid,
-        Vector2 originPos,
-        string[] prototypes,
-        out EntityUid anchor)
-    {
         anchor = default;
-        var bestDist = float.MaxValue;
-        var found = false;
-
-        var query = entityManager.EntityQueryEnumerator<MetaDataComponent, TransformComponent>();
-        while (query.MoveNext(out var uid, out var meta, out var xform))
+        if (!new NavMapBeaconLocator(entityManager).TryFindBeacon(origin, "kitchen", out var entity, out _) ||
+            entityManager.GetComponent<TransformComponent>(entity.Value).GridUid != grid)
         {
-            if (xform.GridUid != grid)
-                continue;
-
-            var protoId = meta.EntityPrototype?.ID;
-            if (protoId == null)
-                continue;
-
-            var matches = false;
-            foreach (var candidate in prototypes)
-            {
-                if (protoId == candidate)
-                {
-                    matches = true;
-                    break;
-                }
-            }
-
-            if (!matches)
-                continue;
-
-            var dist = (transform.GetWorldPosition(xform) - originPos).LengthSquared();
-            if (dist >= bestDist)
-                continue;
-
-            bestDist = dist;
-            anchor = uid;
-            found = true;
+            return false;
         }
 
-        return found;
+        anchor = entity.Value;
+        return true;
     }
 }
 

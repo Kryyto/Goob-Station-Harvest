@@ -5,6 +5,8 @@ using Content.Shared.Damage.Components;
 using System.Linq;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree.Nodes;
 using Content.Server._Harvest.AndroidNpc.Components;
+using Content.Server._Harvest.AndroidNpc.BehaviorTree;
+using Content.Server._Harvest.AndroidNpc.Services;
 using Content.Server._Harvest.AndroidNpc.Utilities;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
@@ -16,14 +18,19 @@ using Content.Shared._Shitmed.Medical.Surgery.Wounds.Components;
 using Content.Shared.Damage;
 using Content.Shared.Humanoid;
 using Content.Shared.Medical.Healing;
+using Content.Shared.Medical.SuitSensor;
+using Content.Shared.Medical.SuitSensors;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Pulling.Components;
-using Content.Shared.Movement.Pulling.Systems;
+using Content.Shared._DV.Carrying;
+using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Stacks;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 namespace Content.Server._Harvest.AndroidNpc.Systems;
@@ -36,6 +43,7 @@ namespace Content.Server._Harvest.AndroidNpc.Systems;
 public sealed class AndroidMedicSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
@@ -45,7 +53,9 @@ public sealed class AndroidMedicSystem : EntitySystem
     [Dependency] private readonly SharedBuckleSystem _buckle = default!;
     [Dependency] private readonly SharedStackSystem _stack = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutions = default!;
-    [Dependency] private readonly PullingSystem _pulling = default!;
+    [Dependency] private readonly CarryingSystem _carrying = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly ClaimedTargetsSystem _claims = default!;
     [Dependency] private readonly AndroidInventorySystem _inventory = default!;
     [Dependency] private readonly AndroidDialogueSystem _dialogue = default!;
@@ -59,6 +69,11 @@ public sealed class AndroidMedicSystem : EntitySystem
     private const float CareRange = 2f;
 
     /// <summary>
+    /// How close the paramedic must be to grab a patient; pulling fails a bit further.
+    /// </summary>
+    private const float PullRange = 1.2f;
+
+    /// <summary>
     /// A patient this close to the medbay beacon has arrived and is left to the doctors.
     /// </summary>
     private const float MedbayRadius = 2.5f;
@@ -69,6 +84,11 @@ public sealed class AndroidMedicSystem : EntitySystem
     private const float MedbayArea = 5f;
 
     private const string MorgueBeacon = "station-beacon-morgue";
+
+    /// <summary>
+    /// With it, the paramedic sees the downed crew whose suit sensors report their position, anywhere on the station.
+    /// </summary>
+    private const string CrewMonitor = "HandheldCrewMonitor";
     private static readonly TimeSpan PlacesRefresh = TimeSpan.FromSeconds(30);
 
     /// <summary>
@@ -99,6 +119,7 @@ public sealed class AndroidMedicSystem : EntitySystem
     /// Beds this close to the medbay beacon are medbay's.
     /// </summary>
     private const float BedSearchRange = 15f;
+    private static readonly TimeSpan UnreachableBedMemory = TimeSpan.FromMinutes(2);
 
     private enum Need
     {
@@ -121,7 +142,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         if (TryComp<AndroidComponent>(medic, out var android) && (android.BreakState != AndroidBreakState.None || android.Status == AndroidStatus.OnBreak))
         {
             _breaks.EndBreak(medic);
-            android.NextBreakAt = _timing.CurTime + TimeSpan.FromSeconds(_prototypeManager.AndroidConfig().BreakIntervalSeconds);
+            android.NextBreakAt = _timing.CurTime + _prototypeManager.AndroidConfig().NextBreakDelay(_random);
         }
 
         if (healMe)
@@ -166,9 +187,14 @@ public sealed class AndroidMedicSystem : EntitySystem
             return current;
         }
 
-        // Done with a patient: look for the next one right away instead of wandering off on patrol.
-        if (comp.Patient != null)
+        // Done with a patient: look for the next one right away instead of wandering off on patrol. One still on
+        // the paramedic's back is put down (on a bed if one is at hand).
+        if (comp.Patient is { } done)
+        {
             comp.NextScanAt = TimeSpan.Zero;
+            if (IsCarrying(medic, done))
+                FinishCarry(medic);
+        }
 
         DropPatient(medic, comp);
 
@@ -185,15 +211,10 @@ public sealed class AndroidMedicSystem : EntitySystem
         EntityUid? best = null;
         var bestScore = float.MinValue;
 
-        // Nearby crew, plus anyone critical or dead anywhere on the station, as the crew monitor would show.
+        // Nearby crew, plus the downed crew the crew monitor shows anywhere on the station.
         var candidates = _lookup.GetEntitiesInRange<MobStateComponent>(Transform(medic).Coordinates, ScanRange).Select(e => e.Owner).ToHashSet();
-        var grid = Transform(medic).GridUid;
-        var downed = EntityQueryEnumerator<MobStateComponent, HumanoidAppearanceComponent, TransformComponent>();
-        while (downed.MoveNext(out var uid, out var mob, out _, out var xform))
-        {
-            if (mob.CurrentState != MobState.Alive && xform.GridUid == grid)
-                candidates.Add(uid);
-        }
+        if (CarriesCrewMonitor(medic))
+            candidates.UnionWith(DownedOnSensors(Transform(medic).GridUid));
 
         // Whoever called for care, by voice or on the radio, wherever they are.
         if (comp.Caller is { } calling)
@@ -220,6 +241,48 @@ public sealed class AndroidMedicSystem : EntitySystem
         return chosen;
     }
 
+    /// <summary>
+    /// Whether the paramedic still has its crew monitor on it (in hand, worn or in its bags).
+    /// </summary>
+    public bool CarriesCrewMonitor(EntityUid medic)
+    {
+        if (!TryComp<AndroidInventoryComponent>(medic, out var inventory) ||
+            _inventory.FindItemByPrototype(medic, inventory, CrewMonitor) is not { } monitor)
+        {
+            return false;
+        }
+
+        var parent = Transform(monitor).ParentUid;
+        while (parent.IsValid())
+        {
+            if (parent == medic)
+                return true;
+
+            parent = Transform(parent).ParentUid;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Critical or dead crew on the grid whose suit sensors give their coordinates, as the crew monitor lists them.
+    /// </summary>
+    private IEnumerable<EntityUid> DownedOnSensors(EntityUid? grid)
+    {
+        var sensors = EntityQueryEnumerator<SuitSensorComponent>();
+        while (sensors.MoveNext(out var sensor))
+        {
+            if (sensor.Mode != SuitSensorMode.SensorCords || sensor.User is not { } user ||
+                !TryComp<MobStateComponent>(user, out var mob) || mob.CurrentState == MobState.Alive ||
+                Transform(user).GridUid != grid)
+            {
+                continue;
+            }
+
+            yield return user;
+        }
+    }
+
     public EntityCoordinates? PatientCoordinates(EntityUid medic)
     {
         return TryComp<AndroidMedicComponent>(medic, out var comp) && comp.Patient is { } patient && Exists(patient)
@@ -244,7 +307,17 @@ public sealed class AndroidMedicSystem : EntitySystem
 
         var need = NeedOf(medic, comp, patient);
         if (need is Need.None or Need.Carry)
+        {
+            // Settled in medbay while still on the paramedic's back: put it down (on a bed if one is at hand).
+            if (need == Need.None && IsCarrying(medic, patient))
+                FinishCarry(medic);
+
             return BehaviorStatus.Success;
+        }
+
+        // Epinephrine is given on the paramedic's back; treating with kits waits until the patient is put down.
+        if (need == Need.Treat && IsCarrying(medic, patient))
+            FinishCarry(medic);
 
         if ((_transform.GetWorldPosition(patient) - _transform.GetWorldPosition(medic)).Length() > CareRange)
         {
@@ -276,24 +349,29 @@ public sealed class AndroidMedicSystem : EntitySystem
     }
 
     /// <summary>
-    /// Takes hold of the patient to drag it to medbay. Running until the pull starts.
+    /// Picks the patient up to carry it to medbay (fireman carry: no drag to snag on door frames, the patient
+    /// stays lying down). Running until it is on the paramedic's back.
     /// </summary>
     public BehaviorStatus StartCarry(EntityUid medic)
     {
         if (!TryComp<AndroidMedicComponent>(medic, out var comp) || comp.Patient is not { } patient ||
-            !TryComp<PullableComponent>(patient, out var pullable))
+            !TryComp<CarriableComponent>(patient, out var carriable))
         {
             return BehaviorStatus.Failure;
         }
 
-        if (pullable.Puller == medic)
+        if (IsCarrying(medic, patient))
             return BehaviorStatus.Success;
 
-        if ((_transform.GetWorldPosition(patient) - _transform.GetWorldPosition(medic)).Length() > CareRange)
+        // Picking up needs to be closer than treating: walk up to the patient first.
+        if ((_transform.GetWorldPosition(patient) - _transform.GetWorldPosition(medic)).Length() > PullRange)
             return BehaviorStatus.Failure;
 
-        _inventory.TryFreeHand(medic);
-        if (!_pulling.TryStartPull(medic, patient, pullableComp: pullable, force: true))
+        // Carrying takes both hands.
+        for (var i = 0; i < carriable.FreeHandsRequired && _hands.CountFreeHands(medic) < carriable.FreeHandsRequired; i++)
+            _inventory.TryFreeHand(medic);
+
+        if (!_carrying.TryCarry(medic, (patient, carriable)))
             return BehaviorStatus.Running;
 
         // Said once per patient, not every time a patient drifting in and out of crit is picked up again.
@@ -334,6 +412,35 @@ public sealed class AndroidMedicSystem : EntitySystem
             ? coords
             : null;
         comp.Morgue = locator.TryFindBeacon(origin, MorgueBeacon, out var morgue) ? morgue : null;
+
+        // A bed in a room the paramedic cannot get into (behind a door it has no access to) is no use.
+        comp.MedbayReachable.Clear();
+        if (comp.Medbay is { } medbay)
+        {
+            var blackboard = AndroidBlackboard.Create(EntityManager, medic, new BlacklistManager());
+            foreach (var tile in AndroidSpots.ReachableTiles(blackboard, medic, medbay, BedSearchRange + 3f, 800))
+                comp.MedbayReachable.Add((tile.EntityId, tile.Position.Floored()));
+        }
+    }
+
+    /// <summary>
+    /// Whether the paramedic can walk up to the bed from medbay; unknown (navmesh not built yet) counts as yes.
+    /// </summary>
+    private bool CanReachBed(AndroidMedicComponent comp, EntityUid bed)
+    {
+        if (comp.MedbayReachable.Count == 0)
+            return true;
+
+        var coords = Transform(bed).Coordinates;
+        var tile = coords.Position.Floored();
+        for (var dx = -1; dx <= 1; dx++)
+        for (var dy = -1; dy <= 1; dy++)
+        {
+            if (comp.MedbayReachable.Contains((coords.EntityId, tile + new Vector2i(dx, dy))))
+                return true;
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -346,6 +453,17 @@ public sealed class AndroidMedicSystem : EntitySystem
             : MedbayCoordinates(medic);
     }
 
+    public bool IsCarrying(EntityUid medic, EntityUid patient)
+    {
+        return TryComp<BeingCarriedComponent>(patient, out var carried) && carried.Carrier == medic;
+    }
+
+    private void PutDown(EntityUid medic, EntityUid patient)
+    {
+        if (IsCarrying(medic, patient))
+            _carrying.DropCarried(medic, patient);
+    }
+
     /// <summary>
     /// Puts the patient on the bed it was carried to, or lets go of it at medbay, where the doctors take over.
     /// </summary>
@@ -354,8 +472,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         if (!TryComp<AndroidMedicComponent>(medic, out var comp) || comp.Patient is not { } patient)
             return;
 
-        if (TryComp<PullableComponent>(patient, out var pullable) && pullable.Puller == medic)
-            _pulling.TryStopPull(patient, pullable, medic, ignoreGrab: true);
+        PutDown(medic, patient);
 
         if (FreeBed(medic, comp) is { } bed)
             _buckle.TryBuckle(patient, medic, bed, popup: false);
@@ -400,8 +517,34 @@ public sealed class AndroidMedicSystem : EntitySystem
         return comp.Bed;
     }
 
+    /// <summary>
+    /// The way to the bed failed with a patient in tow: that bed is skipped for a while and the next one (or the
+    /// medbay beacon) is tried, still holding the patient. Failing on the way to the beacon lets go of it.
+    /// </summary>
+    public void CarryFailed(EntityUid medic)
+    {
+        if (!TryComp<AndroidMedicComponent>(medic, out var comp))
+            return;
+
+        if (comp.Bed is not { } bed)
+        {
+            DropPatient(medic, comp);
+            return;
+        }
+
+        comp.UnreachableBeds[bed] = _timing.CurTime;
+        _claims.ReleaseClaim(bed);
+        comp.Bed = null;
+    }
+
     private bool IsFreeBed(EntityUid medic, AndroidMedicComponent comp, EntityUid bed)
     {
+        if (comp.UnreachableBeds.TryGetValue(bed, out var failedAt) && _timing.CurTime - failedAt < UnreachableBedMemory ||
+            !CanReachBed(comp, bed))
+        {
+            return false;
+        }
+
         return !Deleted(bed) &&
                TryComp<StrapComponent>(bed, out var strap) && strap.Enabled &&
                strap.BuckledEntities.All(b => b == comp.Patient) &&
@@ -413,8 +556,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         if (comp.Patient is { } patient)
         {
             _claims.ReleaseClaim(patient);
-            if (TryComp<PullableComponent>(patient, out var pullable) && pullable.Puller == medic)
-                _pulling.TryStopPull(patient, pullable, medic, ignoreGrab: true);
+            PutDown(medic, patient);
         }
 
         if (comp.Bed is { } bed)
@@ -431,16 +573,23 @@ public sealed class AndroidMedicSystem : EntitySystem
             !TryComp<MobStateComponent>(patient, out var mob) ||
             !TryComp<DamageableComponent>(patient, out var damage) ||
             _containers.IsEntityInContainer(patient) ||
-            TryComp<PullableComponent>(patient, out var pullable) && pullable.Puller is { } puller && puller != medic)
+            TryComp<PullableComponent>(patient, out var pullable) && pullable.Puller is { } puller && puller != medic ||
+            TryComp<BeingCarriedComponent>(patient, out var carried) && carried.Carrier != medic)
         {
             return Need.None;
         }
 
-        // A badly hurt patient being dragged to medbay is not dropped because it briefly comes out of crit.
-        if (pullable?.Puller == medic && mob.CurrentState == MobState.Alive && damage.TotalDamage >= InjuredDamage &&
-            !Settled(medic, comp, patient))
+        if (mob.CurrentState is MobState.Critical or MobState.Dead)
+            comp.ToDeliver.Add(patient);
+
+        // A patient found critical goes to medbay even when it briefly comes out of crit on the way,
+        // unless it was patched up in the meantime.
+        if (comp.ToDeliver.Contains(patient) && mob.CurrentState == MobState.Alive)
         {
-            return Need.Carry;
+            if (damage.TotalDamage < InjuredDamage || Settled(medic, comp, patient))
+                comp.ToDeliver.Remove(patient);
+            else
+                return Need.Carry;
         }
 
         if (mob.CurrentState == MobState.Critical &&
@@ -476,9 +625,13 @@ public sealed class AndroidMedicSystem : EntitySystem
         if (MedbayCoordinates(medic) is not { } medbay)
             return true;
 
+        // A body lying at the morgue is left there; a living patient, or one carried past the morgue, is not.
         var coords = Transform(patient).Coordinates;
-        if (comp.Morgue is { } morgue && _transform.InRange(morgue, coords, MedbayArea))
+        if (comp.Morgue is { } morgue && _transform.InRange(morgue, coords, MedbayArea) &&
+            _mobState.IsDead(patient) && !IsCarrying(medic, patient))
+        {
             return true;
+        }
 
         if (comp.Patient == patient ? FreeBed(medic, comp) != null : AnyFreeBed(medic, comp, medbay))
             return false;

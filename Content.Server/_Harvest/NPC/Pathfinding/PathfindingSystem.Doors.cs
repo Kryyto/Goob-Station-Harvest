@@ -51,6 +51,17 @@ public sealed partial class PathfindingSystem
         return blocked;
     }
 
+    /// <summary>
+    /// Androids (access requests) cross the whole station: 512 nodes only covers a few rooms. The search is
+    /// still split over ticks by <see cref="PathTime"/>, so a longer search does not cost more per tick.
+    /// </summary>
+    private const int AccessNodeLimit = 8192;
+
+    private static int NodeLimitFor(PathRequest request)
+    {
+        return (request.Flags & PathFlags.Access) != 0x0 ? AccessNodeLimit : NodeLimit;
+    }
+
     private static bool IsBlockedDoor(PathRequest request, PathPoly poly)
     {
         return request.BlockedDoors is { Count: > 0 } blocked &&

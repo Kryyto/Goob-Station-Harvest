@@ -16,6 +16,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 namespace Content.Server._Harvest.AndroidNpc.Systems;
@@ -28,6 +29,7 @@ namespace Content.Server._Harvest.AndroidNpc.Systems;
 public sealed class AndroidOrderSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly AndroidBreakSystem _breaks = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
@@ -244,7 +246,7 @@ public sealed class AndroidOrderSystem : EntitySystem
              TryComp<AndroidOrderComponent>(android, out var existing) && existing.OrderType == AndroidOrderType.TakeBreak))
         {
             CancelBreak(android);
-            comp.NextBreakAt = _timing.CurTime + TimeSpan.FromSeconds(_prototypeManager.AndroidConfig().BreakIntervalSeconds);
+            comp.NextBreakAt = _timing.CurTime + _prototypeManager.AndroidConfig().NextBreakDelay(_random);
         }
 
         var order = EnsureComp<AndroidOrderComponent>(android);

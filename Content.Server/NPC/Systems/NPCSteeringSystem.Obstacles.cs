@@ -121,7 +121,8 @@ public sealed partial class NPCSteeringSystem
                     if (door.State == DoorState.Opening)
                         return SteeringObstacleStatus.Continuing;
 
-                    if (!door.BumpOpen)
+                    // Bump-open airlocks too: dragging someone, the android does not bump them open.
+                    if (!door.BumpOpen || door.ClickOpen)
                     {
                         _interaction.InteractionActivate(uid, ent);
                         return SteeringObstacleStatus.Continuing;

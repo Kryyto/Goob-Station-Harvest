@@ -68,7 +68,7 @@ public sealed partial class PathfindingSystem
         var count = 0;
         var arrived = false;
 
-        while (request.Frontier.Count > 0 && count < NodeLimit)
+        while (request.Frontier.Count > 0 && count < NodeLimitFor(request)) // Harvest - was NodeLimit
         {
             // Handle whether we need to pause if we've taken too long
             if (count % 20 == 0 && count > 0 && request.Stopwatch.Elapsed > PathTime)

@@ -69,7 +69,7 @@ public static class JanitorTree
         yield return new SequenceNode(ResupplyBranch)
         {
             InventoryCondition(ResupplyBranch, (inv, owner, inventory) => inv.NeedsResupply(owner, inventory)),
-            new MoveToAction(GetResupplyCoordinates, 0.5f, OnResupplyMoveFailed),
+            new MoveToAction(GetResupplyCoordinates, 0.5f, OnResupplyMoveFailed) { RemembersUnreachable = true },
             new RestockAtAction()
         };
 
@@ -84,7 +84,7 @@ public static class JanitorTree
         yield return new SequenceNode("Pest")
         {
             new SelectPestTargetAction(),
-            new MoveToAction((owner, bb) => bb.CoordinatesOf(Inventory(owner, bb)?.PestTarget), 1.0f),
+            new MoveToAction((owner, bb) => bb.CoordinatesOf(Inventory(owner, bb)?.PestTarget), 1.0f) { RemembersUnreachable = true },
             new AttackPestAction(),
             new StartPullPestAction(),
             new SelectorNode
@@ -113,7 +113,7 @@ public static class JanitorTree
         {
             new ConditionNode(HasPuddleCluster),
             new EquipItemAction((_, _) => "CleanerGrenade"),
-            new MoveToAction(GetPuddleClusterCenter, 0.5f),
+            new MoveToAction(GetPuddleClusterCenter, 0.5f) { RemembersUnreachable = true },
             new UseCleanadeAction()
         };
 
@@ -140,7 +140,7 @@ public static class JanitorTree
         {
             new ConditionNode(HasDirtyTile),
             new SelectDirtyTileAction(),
-            new MoveToAction((owner, bb) => Memory(owner, bb)?.CurrentDirtyTile, 0.5f, OnDirtyTileMoveFailed),
+            new MoveToAction((owner, bb) => Memory(owner, bb)?.CurrentDirtyTile, 0.5f, OnDirtyTileMoveFailed) { RemembersUnreachable = true },
             new ConditionNode(DirtyTileStillDirty),
             new EquipItemAction(SelectScrubTool),
             new UseItemOnTileAction()
@@ -156,7 +156,7 @@ public static class JanitorTree
         {
             new ConditionNode(FlashlightNeedsCharging),
             new EquipItemAction((_, _) => "FlashlightLantern"),
-            new MoveToAction(FindFlashlightChargerCoordinates, 0.5f),
+            new MoveToAction(FindFlashlightChargerCoordinates, 0.5f) { RemembersUnreachable = true },
             new RechargeFlashlightAction()
         };
 
@@ -210,7 +210,7 @@ public static class JanitorTree
         {
             InventoryCondition(branch, needsService),
             new SelectServiceStationAction(kind),
-            new MoveToAction((owner, bb) => bb.CoordinatesOf(Inventory(owner, bb)?.ServiceTarget), 0.5f, OnServiceMoveFailed),
+            new MoveToAction((owner, bb) => bb.CoordinatesOf(Inventory(owner, bb)?.ServiceTarget), 0.5f, OnServiceMoveFailed) { RemembersUnreachable = true },
             action
         };
     }

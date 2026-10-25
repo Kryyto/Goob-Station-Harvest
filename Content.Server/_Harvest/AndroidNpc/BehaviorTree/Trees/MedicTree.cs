@@ -15,6 +15,12 @@ public static class MedicTree
 {
     private const string ResupplyBranch = "Resupply";
 
+    /// <summary>
+    /// A path across the station is searched over several ticks and can come back empty while doors open and close
+    /// on the way: a rescue keeps asking a bit longer than an ordinary move before giving up.
+    /// </summary>
+    private const float RescueNoPathWindow = 6f;
+
     public static IEnumerable<IBehaviorNode> Branches()
     {
         yield return new SequenceNode("Rescue")
@@ -32,18 +38,27 @@ public static class MedicTree
                         // Walk up to the patient; the pull starts on a later tick, never carry nothing to medbay.
                         new SequenceNode
                         {
-                            new MoveToAction((owner, bb) => bb.System<AndroidMedicSystem>().PatientCoordinates(owner), 1f),
+                            new MoveToAction((owner, bb) => bb.System<AndroidMedicSystem>().PatientCoordinates(owner), 1f)
+                            {
+                                NoPathRetryWindow = RescueNoPathWindow,
+                            },
                             new ConditionNode((_, _) => false)
                         }
                     },
                     new MoveToAction((owner, bb) => bb.System<AndroidMedicSystem>().CarryCoordinates(owner), 1.2f,
-                        (owner, bb) => Drop(owner, bb)),
+                        (owner, bb) => bb.System<AndroidMedicSystem>().CarryFailed(owner))
+                    {
+                        NoPathRetryWindow = RescueNoPathWindow,
+                    },
                     new DoNode((owner, bb) => bb.System<AndroidMedicSystem>().FinishCarry(owner))
                 },
                 new SelectorNode("Care")
                 {
                     new TickNode((owner, bb) => bb.System<AndroidMedicSystem>().Care(owner)),
                     new MoveToAction((owner, bb) => bb.System<AndroidMedicSystem>().PatientCoordinates(owner), 1f, Drop)
+                    {
+                        NoPathRetryWindow = RescueNoPathWindow,
+                    }
                 }
             }
         };

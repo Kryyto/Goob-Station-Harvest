@@ -2,7 +2,7 @@
   id: Dove
   mapName: 'Dove'
   mapPath: /Maps/_Harmony/dove.yml
-  minPlayers: 1
+  minPlayers: 0
   maxPlayers: 35
   stations:
     Dove:
@@ -65,3 +65,9 @@
             #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
+        # blob-config-start SMALL+
+        - type: StationBlobConfig
+          stageBegin: 25
+          stageCritical: 350
+          stageTheEnd: 700
+        # blob-config-end

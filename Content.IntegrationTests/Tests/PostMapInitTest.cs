@@ -113,7 +113,7 @@ namespace Content.IntegrationTests.Tests
             // Goobstation edit:
             // order this list alphabetically, mark dev maps
             // if upstreaming take ours here and edit manually.
-            //"Amber", kill
+            "Amber",          // Harvest - Reenabled
             "Atlas",
             "Bagel",
             "Barratry",
@@ -126,6 +126,7 @@ namespace Content.IntegrationTests.Tests
             "Delta",
             "Dev",            // Dev map
             "dm01-entryway",  // Deathmatch
+            "Dove",           // Harvest - Harmony Port
             "Europa",         // Not in pool.
             "Exo",          // okay fine fuck it.
             "Fland",

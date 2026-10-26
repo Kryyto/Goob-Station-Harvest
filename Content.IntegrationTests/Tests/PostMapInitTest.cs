@@ -158,7 +158,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMapsInCurrentPool = // plus dev
         {
             // order this list alphabetically, mark dev maps
-              //"Amber", kill
+              "Amber",         // Harvest - reenabled
               "Atlas",
               "Bagel",
              //  "Barratry", kill memory concerns
@@ -171,6 +171,7 @@ namespace Content.IntegrationTests.Tests
               "Delta",
               "Dev",            // Dev map
             //"dm01-entryway",  // Deathmatch
+              "Dove",           // Harvest - Harmony Port
             //"Europa",         // Not in pool.
               "Exo",
             //  "Fland",        // kill due to mem

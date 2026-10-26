@@ -170,7 +170,7 @@ public sealed class DeviceListSystem : SharedDeviceListSystem
         if (!Resolve(list.Owner, ref list.Comp))
             return;
 
-        list.Comp.Devices.Remove(device.Owner);
+        list.Comp.Devices.Remove(device);
         Dirty(list);
 
         VerifyDeviceList(list.Owner, list.Comp); // Goobstation - Fix desync of configurator lists

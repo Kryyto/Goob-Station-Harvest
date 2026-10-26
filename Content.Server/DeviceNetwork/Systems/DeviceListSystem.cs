@@ -166,15 +166,14 @@ public sealed class DeviceListSystem : SharedDeviceListSystem
 
     public void OnDeviceShutdown(Entity<DeviceListComponent?> list, Entity<DeviceNetworkComponent> device)
     {
-        // Harvest fix for Dovestation: move VerifyDeviceList BEFORE device.Comp.DeviceLists.Remove
-        VerifyDeviceList(list.Owner, list.Comp); // Goobstation - Fix desync of configurator lists
-
         device.Comp.DeviceLists.Remove(list.Owner);
         if (!Resolve(list.Owner, ref list.Comp))
             return;
 
         list.Comp.Devices.Remove(device);
         Dirty(list);
+
+        VerifyDeviceList(list.Owner, list.Comp); // Goobstation - Fix desync of configurator lists
     }
 
     private void OnMapSave(BeforeSerializationEvent ev)

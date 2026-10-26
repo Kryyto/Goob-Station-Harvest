@@ -391,6 +391,13 @@ namespace Content.IntegrationTests.Tests
                 "StatusEffect", // doesnt make sense to spawn unattached, fails test with weather schedulers
                 "AshJaunt", // spawns jaunt end animation
                 // </Trauma>
+                // <Harvest>
+                "Android", // Android components - androids have complex inventories with container contents that don't clean up properly
+                "AndroidIdentity",
+                "AndroidMemory",
+                "AndroidInventory",
+                "AndroidService",
+                // <Harvest>
             };
 
             Assert.That(server.CfgMan.GetCVar(CVars.NetPVS), Is.False);

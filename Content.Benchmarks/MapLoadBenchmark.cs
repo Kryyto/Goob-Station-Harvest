@@ -46,7 +46,7 @@ public class MapLoadBenchmark
 
     [GlobalCleanup]
     public async Task Cleanup()
-    {f
+    {
         await _pair.DisposeAsync();
         PoolManager.Shutdown();
     }

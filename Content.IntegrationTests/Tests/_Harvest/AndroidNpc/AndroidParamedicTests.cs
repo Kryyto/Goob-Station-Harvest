@@ -139,13 +139,14 @@ public sealed class AndroidParamedicTests
         var sEnt = server.EntMan;
         EntityUid patient = default, medic = default;
 
+        // Hurt before the paramedic arrives: its first scan finds the patient. Finding nobody, it would patrol
+        // off the one-tile test grid and drift away in space.
         await server.WaitAssertion(() =>
         {
-            medic = sEnt.SpawnEntity("MobAndroidParamedic", map.GridCoords);
             patient = sEnt.SpawnEntity("MobHuman", map.GridCoords.Offset(new Vector2(0.8f, 0)));
+            Hurt(server, patient, 40);
+            medic = sEnt.SpawnEntity("MobAndroidParamedic", map.GridCoords);
         });
-        await server.WaitRunTicks(5);
-        await server.WaitAssertion(() => Hurt(server, patient, 40));
         await server.WaitRunTicks(300);
 
         await server.WaitAssertion(() =>

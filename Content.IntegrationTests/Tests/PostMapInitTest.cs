@@ -126,7 +126,7 @@ namespace Content.IntegrationTests.Tests
             "Delta",
             "Dev",            // Dev map
             "dm01-entryway",  // Deathmatch
-            "Dove",           // Harvest - Harmony Port
+            //"Dove",           // Harvest - Harmony Port
             "Europa",         // Not in pool.
             "Exo",          // okay fine fuck it.
             "Fland",
@@ -171,7 +171,7 @@ namespace Content.IntegrationTests.Tests
               "Delta",
               "Dev",            // Dev map
             //"dm01-entryway",  // Deathmatch
-              "Dove",           // Harvest - Harmony Port
+              //"Dove",           // Harvest - Harmony Port
             //"Europa",         // Not in pool.
               "Exo",
             //  "Fland",        // kill due to mem

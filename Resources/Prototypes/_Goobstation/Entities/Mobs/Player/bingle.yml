@@ -23,7 +23,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
-    - map: ["enum.CombatModeVisualLayers.CombatEnabled"]
+    - map: ["enum.BingleVisual.Combat"]
       state: combat
       shader: unshaded
   - type: MobThresholds
@@ -133,17 +133,15 @@
     drawdepth: Mobs
     sprite: _Harmony/Mobs/Aliens/Bingles/bingleupgraded_harmony.rsi # Points towards the revamped sprite
     layers:
-    - map: [ "enum.DamageStateVisualLayers.Base", "movement" ]
-      state: Upgraded
-    - map: [ "enum.BingleVisual.Combat" ]
+    - map: ["enum.BingleVisual.Combat"]
       state: combat
-      visible: false
+      shader: unshaded
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: Upgraded
+        Base: alive
       Dead:
-        Base: dead_upgraded
+        Base: dead
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg

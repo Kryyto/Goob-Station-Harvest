@@ -1,27 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: humanoidBaseSprite
-  id: MobCyberneticBishopHead
-  baseSprite:
-    sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi
-    state: "head"
-  matchSkin: false
-
-- type: humanoidBaseSprite
-  id: MobCyberneticBishopChest
-  baseSprite:
-    sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi
-    state: "torso-primary"
-  matchSkin: false
-
-- type: humanoidBaseSprite
-  id: MobCyberneticBishopGroin
-  baseSprite:
-    sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi
-    state: "torso-secondary"
-  matchSkin: false
-
-- type: humanoidBaseSprite
   id: MobCyberneticBishopLArm
   baseSprite:
     sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi

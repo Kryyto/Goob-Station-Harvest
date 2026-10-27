@@ -1,0 +1,22 @@
+# Android body sprites (cybernetic bishop parts).
+- type: humanoidBaseSprite
+  id: MobCyberneticBishopHead
+  baseSprite:
+    sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi
+    state: "head"
+  matchSkin: false
+
+- type: humanoidBaseSprite
+  id: MobCyberneticBishopChest
+  baseSprite:
+    sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi
+    state: "torso-primary"
+  matchSkin: false
+
+- type: humanoidBaseSprite
+  id: MobCyberneticBishopGroin
+  baseSprite:
+    sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_main.rsi
+    state: "torso-secondary"
+  matchSkin: false
+

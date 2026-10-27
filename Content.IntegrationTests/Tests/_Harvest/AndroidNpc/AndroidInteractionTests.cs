@@ -495,6 +495,29 @@ public sealed class AndroidInteractionTests
     }
 
     [Test]
+    public async Task Ghosts_CanWarpToLivingAndroids()
+    {
+        var (pair, map) = await Setup();
+        var server = pair.Server;
+        var sEnt = server.EntMan;
+
+        await server.WaitAssertion(() =>
+        {
+            var android = sEnt.SpawnEntity("MobAndroidJanitor", map.GridCoords);
+            var ghosts = server.System<Content.Server.Ghost.GhostSystem>();
+            var warp = ghosts.GetAndroidWarps().SingleOrDefault(w => w.Entity == sEnt.GetNetEntity(android));
+
+            Assert.That(warp.DisplayName, Is.EqualTo($"{sEnt.GetComponent<MetaDataComponent>(android).EntityName} (Concierge)"));
+            Assert.That(warp.IsWarpPoint, Is.False, "Listed with the players");
+
+            server.System<Content.Shared.Mobs.Systems.MobStateSystem>().ChangeMobState(android, MobState.Dead);
+            Assert.That(ghosts.GetAndroidWarps().Any(w => w.Entity == sEnt.GetNetEntity(android)), Is.False, "Dead androids are not listed, like players");
+        });
+
+        await pair.CleanReturnAsync();
+    }
+
+    [Test]
     public async Task Retaliation_AgainstSomeoneShootingALaser()
     {
         var (pair, map) = await Setup();

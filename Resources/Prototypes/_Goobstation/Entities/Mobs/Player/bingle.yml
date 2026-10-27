@@ -120,7 +120,12 @@
     prime: true
   - type: Sprite
     sprite: _Goobstation/Mobs/Aliens/Bingles/bingle.rsi # Prime bingles use the old sprite
-
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+    - map: ["enum.BingleVisual.Combat"]
+      state: combat
+      shader: unshaded
 
 - type: entity
   id: MobBingleUpgraded

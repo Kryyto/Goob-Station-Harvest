@@ -21,7 +21,7 @@
   - type: Sprite
     sprite: _Harmony/Mobs/Aliens/Bingles/bingle_harmony.rsi # Points towards the revamped sprite
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: alive
     - map: ["enum.BingleVisual.Combat"]
       state: combat
@@ -121,7 +121,7 @@
   - type: Sprite
     sprite: _Goobstation/Mobs/Aliens/Bingles/bingle.rsi # Prime bingles use the old sprite
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: alive
     - map: ["enum.BingleVisual.Combat"]
       state: combat
@@ -138,6 +138,8 @@
     drawdepth: Mobs
     sprite: _Harmony/Mobs/Aliens/Bingles/bingleupgraded_harmony.rsi # Points towards the revamped sprite
     layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: alive
     - map: ["enum.BingleVisual.Combat"]
       state: combat
       shader: unshaded

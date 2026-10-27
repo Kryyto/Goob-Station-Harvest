@@ -101,3 +101,8 @@
 - Flags: ADMINCHAT
   Commands:
     - achatwindow
+
+# Harvest
+- Flags: FUN
+  Commands:
+    - squadmode

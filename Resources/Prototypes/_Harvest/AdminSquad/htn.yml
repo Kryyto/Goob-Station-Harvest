@@ -1,0 +1,110 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Root task of an NPC under an admin squad order (AdminSquadSystem).
+- type: htnCompound
+  id: AdminSquadCompound
+  branches:
+  # Attack order, or an obstacle in the way: hit it until it is down.
+  - preconditions:
+    - !type:KeyExistsPrecondition
+      key: AdminSquadAttackTarget
+    tasks:
+    - !type:HTNCompoundTask
+      task: AdminSquadAttackCompound
+
+  # Move order: walk to the destination, ignoring enemies.
+  - preconditions:
+    - !type:KeyExistsPrecondition
+      key: AdminSquadForceMove
+    - !type:CoordinatesNotInRangePrecondition
+      targetKey: AdminSquadTarget
+      rangeKey: AdminSquadRange
+    tasks:
+    - !type:HTNCompoundTask
+      task: AdminSquadMoveCompound
+
+  # Attack-move and hold: fight whatever is around.
+  - tasks:
+    - !type:HTNCompoundTask
+      task: InnateRangedCombatCompound
+  - tasks:
+    - !type:HTNCompoundTask
+      task: RangedCombatCompound
+  - tasks:
+    - !type:HTNCompoundTask
+      task: MeleeCombatCompound
+
+  # Then go (back) to the destination.
+  - preconditions:
+    - !type:CoordinatesNotInRangePrecondition
+      targetKey: AdminSquadTarget
+      rangeKey: AdminSquadRange
+    tasks:
+    - !type:HTNCompoundTask
+      task: AdminSquadMoveCompound
+
+  # And stand there.
+  - tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:RandomOperator
+        targetKey: AdminSquadWait
+        minKey: MinimumIdleTime
+        maxKey: MaximumIdleTime
+    - !type:HTNPrimitiveTask
+      operator: !type:WaitOperator
+        key: AdminSquadWait
+      preconditions:
+      - !type:KeyExistsPrecondition
+        key: AdminSquadWait
+
+- type: htnCompound
+  id: AdminSquadMoveCompound
+  branches:
+  - tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:MoveToOperator
+        pathfindInPlanning: true
+        targetKey: AdminSquadTarget
+        rangeKey: AdminSquadRange
+        removeKeyOnFinish: false
+
+- type: htnCompound
+  id: AdminSquadAttackCompound
+  branches:
+  # Mobs that are guns themselves shoot it.
+  - preconditions:
+    - !type:GunAmmoPrecondition
+      minPercent: 0.001
+    - !type:GunCanFirePrecondition
+    tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:MoveToOperator
+        shutdownState: PlanFinished
+        pathfindInPlanning: true
+        removeKeyOnFinish: false
+        targetKey: AdminSquadAttackCoordinates
+        stopOnLineOfSight: true
+        rangeKey: AdminSquadAttackRange
+    - !type:HTNPrimitiveTask
+      operator: !type:GunOperator
+        targetKey: AdminSquadAttackTarget
+        requireLOS: true
+
+  # Everything else hits it.
+  - tasks:
+    - !type:HTNPrimitiveTask
+      operator: !type:MoveToOperator
+        shutdownState: PlanFinished
+        pathfindInPlanning: true
+        removeKeyOnFinish: false
+        targetKey: AdminSquadAttackCoordinates
+        rangeKey: AdminSquadAttackRange
+    - !type:HTNPrimitiveTask
+      operator: !type:MeleeOperator
+        targetKey: AdminSquadAttackTarget
+      preconditions:
+      - !type:KeyExistsPrecondition
+        key: AdminSquadAttackTarget
+      - !type:TargetInRangePrecondition
+        targetKey: AdminSquadAttackTarget
+        rangeKey: AdminSquadAttackRange

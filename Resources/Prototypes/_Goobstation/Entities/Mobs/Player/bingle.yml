@@ -19,6 +19,7 @@
     raffle:
       settings: default
   - type: Sprite
+    drawdepth: Mobs
     sprite: _Harmony/Mobs/Aliens/Bingles/bingle_harmony.rsi # Points towards the revamped sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
@@ -119,7 +120,7 @@
   - type: Bingle
     prime: true
   - type: Sprite
-    sprite: _Goobstation/Mobs/Aliens/Bingles/bingle.rsi # Prime bingles use the old sprite
+    sprite: _Goobstation/Mobs/Bingle/bingle.rsi # Prime bingles use the old sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: alive

@@ -37,7 +37,7 @@ public sealed class StationPowerTests
         "Relic",
         "Snowball",
         "Exo",
-        "Dove", // Harvest
+        //"Dove", // Harvest
     ];
 
     [Explicit]

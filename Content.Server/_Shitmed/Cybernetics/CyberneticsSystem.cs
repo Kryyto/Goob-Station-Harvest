@@ -44,13 +44,13 @@ internal sealed class CyberneticsSystem : EntitySystem
                 var disableEvent = new BodyPartEnableChangedEvent(false);
                 RaiseLocalEvent(cyberEnt, ref disableEvent);
 
-                if (TryComp(cyberEnt, out DamageableComponent? damageable)
-                    && part.Body is not null)
+                if (part.Body is not null
+                    && TryComp(part.Body.Value, out DamageableComponent? bodyDamageable))
                 {
                     var shock = new DamageSpecifier(_prototypes.Index<DamageTypePrototype>("Shock"), 30);
                     var targetPart = _body.GetTargetBodyPart(part);
-                    _damageable.ChangeDamage((part.Body.Value, damageable), shock, ignoreResistances: true, targetPart: targetPart);
-                    Dirty(cyberEnt, damageable);
+                    _damageable.ChangeDamage((part.Body.Value, bodyDamageable), shock, ignoreResistances: true, targetPart: targetPart);
+                    Dirty(part.Body.Value, bodyDamageable);
                 }
             }
         }

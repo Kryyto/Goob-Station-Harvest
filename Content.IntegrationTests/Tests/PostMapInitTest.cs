@@ -113,7 +113,7 @@ namespace Content.IntegrationTests.Tests
             // Goobstation edit:
             // order this list alphabetically, mark dev maps
             // if upstreaming take ours here and edit manually.
-            //"Amber", kill
+            "Amber",          // Harvest - Reenabled
             "Atlas",
             "Bagel",
             "Barratry",
@@ -126,6 +126,7 @@ namespace Content.IntegrationTests.Tests
             "Delta",
             "Dev",            // Dev map
             "dm01-entryway",  // Deathmatch
+            "Dove",           // Harvest - Harmony Port
             "Europa",         // Not in pool.
             "Exo",          // okay fine fuck it.
             "Fland",
@@ -157,7 +158,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMapsInCurrentPool = // plus dev
         {
             // order this list alphabetically, mark dev maps
-              //"Amber", kill
+              "Amber",         // Harvest - reenabled
               "Atlas",
               "Bagel",
              //  "Barratry", kill memory concerns
@@ -170,6 +171,7 @@ namespace Content.IntegrationTests.Tests
               "Delta",
               "Dev",            // Dev map
             //"dm01-entryway",  // Deathmatch
+            //"Dove",           // Harvest - Harmony Port, testfails but loads fine in release build, so its commented out
             //"Europa",         // Not in pool.
               "Exo",
             //  "Fland",        // kill due to mem

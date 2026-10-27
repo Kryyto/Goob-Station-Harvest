@@ -19,17 +19,13 @@
     raffle:
       settings: default
   - type: Sprite
-    drawdepth: Mobs
-    sprite: _Goobstation/Mobs/Bingle/bingle.rsi
+    sprite: _Harmony/Mobs/Aliens/Bingles/bingle_harmony.rsi # Points towards the revamped sprite
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
-    - map: ["enum.BingleVisual.Upgraded"]
-      state: Upgraded
-      visible: false
-    - map: ["enum.BingleVisual.Combat"]
+    - map: ["enum.CombatModeVisualLayers.CombatEnabled"]
       state: combat
-      visible: false
+      shader: unshaded
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -122,6 +118,9 @@
   components:
   - type: Bingle
     prime: true
+  - type: Sprite
+    sprite: _Goobstation/Mobs/Aliens/Bingles/bingle.rsi # Prime bingles use the old sprite
+
 
 - type: entity
   id: MobBingleUpgraded
@@ -132,7 +131,7 @@
     upgraded: true
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Goobstation/Mobs/Bingle/bingle.rsi
+    sprite: _Harmony/Mobs/Aliens/Bingles/bingleupgraded_harmony.rsi # Points towards the revamped sprite
     layers:
     - map: [ "enum.DamageStateVisualLayers.Base", "movement" ]
       state: Upgraded

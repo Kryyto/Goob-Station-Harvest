@@ -258,6 +258,7 @@
     - id: CellRechargerCircuitboard
     - id: SpaceVillainArcadeComputerCircuitboard
     - id: BlockGameArcadeComputerCircuitboard
+    - id: AstroMinerArcadeComputerCircuitboard # Harvest
 
 - type: entity
   parent: ToteBase

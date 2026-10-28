@@ -13196,28 +13196,6 @@ entities:
       parent: 2
     - type: DeviceLinkSink
       invokeCounter: 1
-- proto: BlockGameArcade
-  entities:
-  - uid: 856
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -5.5,-27.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 12746
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,-373.5
-      parent: 2
-  - uid: 17754
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,-373.5
-      parent: 2
 - proto: BodyBagFolded
   entities:
   - uid: 858
@@ -38597,6 +38575,38 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,-258.5
+      parent: 2
+- proto: RandomArcade
+  entities:
+  - uid: 856
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -5.5,-27.5
+      parent: 2
+  - uid: 12746
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,-373.5
+      parent: 2
+  - uid: 17754
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,-373.5
+      parent: 2
+  - uid: 12747
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 4.5,-373.5
+      parent: 2
+  - uid: 13606
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 1.5,-258.5
       parent: 2
 - proto: computerBodyScanner
   entities:
@@ -91793,22 +91803,6 @@ entities:
     - type: Transform
       pos: 17.648165,-82.3042
       parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 12747
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,-373.5
-      parent: 2
-  - uid: 13606
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,-258.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: SpawnMobAlexander
   entities:
   - uid: 13608

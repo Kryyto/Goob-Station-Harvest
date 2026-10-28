@@ -16,6 +16,7 @@ namespace Content.Server.Spawners.EntitySystems
         [Dependency] private readonly IRobustRandom _robustRandom = default!;
         [Dependency] private readonly GameTicker _ticker = default!;
         [Dependency] private readonly EntityTableSystem _entityTable = default!;
+        [Dependency] private readonly SharedTransformSystem _transform = default!; // Harvest
 
         public override void Initialize()
         {
@@ -119,7 +120,9 @@ namespace Content.Server.Spawners.EntitySystems
 
             var coordinates = Transform(uid).Coordinates.Offset(new Vector2(xOffset, yOffset));
 
-            Spawn(_robustRandom.Pick(component.Prototypes), coordinates);
+            var spawned = Spawn(_robustRandom.Pick(component.Prototypes), coordinates);
+            if (component.KeepRotation) // Harvest
+                _transform.SetLocalRotation(spawned, Transform(uid).LocalRotation); // Harvest
         }
 
         private void Spawn(Entity<EntityTableSpawnerComponent> ent)

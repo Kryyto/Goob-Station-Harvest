@@ -7118,16 +7118,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -24.5,38.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 473
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -19.5,10.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: Bloodpack
   entities:
   - uid: 474
@@ -57020,6 +57010,12 @@ entities:
     components:
     - type: Transform
       pos: -18.5,-29.5
+      parent: 2
+  - uid: 473
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -19.5,10.5
       parent: 2
 - proto: RandomArtifactSpawner
   entities:

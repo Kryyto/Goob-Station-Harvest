@@ -28956,14 +28956,6 @@ entities:
     - type: Transform
       pos: 41.5,-45.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 2231
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -32.5,-2.5
-      parent: 2
 - proto: BlockGameArcadeComputerCircuitboard
   entities:
   - uid: 2232
@@ -121121,6 +121113,17 @@ entities:
     - type: Transform
       pos: 12.5,-62.5
       parent: 2
+  - uid: 2231
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -32.5,-2.5
+      parent: 2
+  - uid: 19212
+    components:
+    - type: Transform
+      pos: 51.5,-15.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 17481
@@ -131145,13 +131148,6 @@ entities:
     components:
     - type: Transform
       pos: 4.4929867,-19.3717
-      parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 19212
-    components:
-    - type: Transform
-      pos: 51.5,-15.5
       parent: 2
 - proto: SpawnMechRipley
   entities:

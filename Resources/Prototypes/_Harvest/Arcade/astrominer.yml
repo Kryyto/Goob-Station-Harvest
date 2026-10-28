@@ -1,0 +1,114 @@
+- type: entity
+  id: AstroMinerArcade
+  name: AstroMiner arcade
+  description: An arcade cabinet where a salvage miner digs for plasma crystals, dodging boulders and space carps.
+  parent: ArcadeBase
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/arcade.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: arcade
+    - map: ["computerLayerScreen"]
+      sprite: _Harvest/Arcade/astrominer_screen.rsi
+      state: screen_astrominer
+    - map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      state: panel
+      visible: false
+  - type: PointLight
+    color: "#3fd8c8"
+  - type: AstroMinerArcade
+    possibleRewards:
+    - PlushieCarp
+    - PlushieHolocarp
+    - PlushieMagicarp
+    - PlushieRainbowCarp
+    - ToyAi
+    - ToyRipley
+    - ToyFireRipley
+    - ToyDeathRipley
+    - ToyOdysseus
+    - ToyGygax
+    - ToyDurand
+    - GlowstickGreen
+    - GlowstickBlue
+    - GlowstickPurple
+    - BalloonNT
+    - MysteryFigureBox
+    - FoamCrossbow
+    - FoamBlade
+    - CrayonBox
+    - SnapPopBox
+    - BeachBall
+    - ToyRubberDuck
+    # Space and mining
+    - ClothingHeadHelmetEVA
+    - DrinkBeerCan
+    - DrinkSpaceMountainWindCan
+    - FoodSnackOortrocks
+    - FoodSnackEnergyBar
+    - FoodSnackPlutoniumrods
+    - FoodSnackSaturnos
+    - ToyFigurineSalvage
+    - ToyFigurineSpaceDragon
+    - ToyFigurineCargoTech
+    - PlushieSpaceLizard
+    - ShardCrystalBlue
+    - ShardCrystalGreen
+    - ShardCrystalPink
+    - SilverOre1
+    - GoldOre1
+    - PlasmaOre1
+    - Flare
+    - FlashlightLantern
+    - SpaceCash10
+  - type: ActivatableUI
+    key: enum.AstroMinerUiKey.Key
+  - type: ActivatableUIRequiresPower
+  - type: StationAiWhitelist
+  - type: UserInterface
+    interfaces:
+      enum.AstroMinerUiKey.Key:
+        type: AstroMinerBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: AstroMinerArcadeComputerCircuitboard
+  - type: Vocalizer
+    minVocalizeInterval: 1m # Arcades are noisy
+    maxVocalizeInterval: 4m
+    hideChat: true
+  - type: DatasetVocalizer
+    dataset: AstroMinerAds
+  - type: SpeakOnUIClosed
+    pack: AstroMinerGoodbyes
+
+- type: entity
+  id: AstroMinerArcadeFilled
+  parent: AstroMinerArcade
+  suffix: Filled
+  components:
+  - type: AstroMinerArcade
+    rewardMinAmount: 5
+    rewardMaxAmount: 8
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AstroMinerArcadeComputerCircuitboard
+  name: AstroMiner arcade board
+  description: A computer printed circuit board for an AstroMiner arcade cabinet.
+  components:
+  - type: ComputerBoard
+    prototype: AstroMinerArcade
+
+- type: localizedDataset
+  id: AstroMinerAds
+  values:
+    prefix: advertisement-astrominer-
+    count: 6
+
+- type: localizedDataset
+  id: AstroMinerGoodbyes
+  values:
+    prefix: thankyou-astrominer-
+    count: 5

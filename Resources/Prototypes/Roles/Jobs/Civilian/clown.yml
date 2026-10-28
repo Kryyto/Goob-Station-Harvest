@@ -27,6 +27,7 @@
     - type: SleepEmitSound
       snore: /Audio/Voice/Misc/silly_snore.ogg
       interval: 10
+    - type: ClownFart # Harvest
   - !type:AddImplantSpecial
     implants: [ SadTromboneImplant ]
 

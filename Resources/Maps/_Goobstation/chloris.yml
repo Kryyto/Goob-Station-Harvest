@@ -33328,20 +33328,6 @@ entities:
       parent: 2
     - type: Door
       performCollisionCheck: False
-- proto: BlockGameArcade
-  entities:
-  - uid: 2245
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 84.5,73.5
-      parent: 2
-  - uid: 2246
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 87.5,73.5
-      parent: 2
 - proto: Bloodpack
   entities:
   - uid: 2248
@@ -250115,6 +250101,48 @@ entities:
     - type: Transform
       pos: 15.5,60.5
       parent: 2
+  - uid: 2245
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 84.5,73.5
+      parent: 2
+  - uid: 2246
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 87.5,73.5
+      parent: 2
+  - uid: 3716
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 122.5,123.5
+      parent: 2
+  - uid: 41233
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 87.5,75.5
+      parent: 2
+  - uid: 41234
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 87.5,74.5
+      parent: 2
+  - uid: 41235
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 84.5,75.5
+      parent: 2
+  - uid: 41236
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 84.5,74.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 38712
@@ -263665,38 +263693,6 @@ entities:
     components:
     - type: Transform
       pos: 45.40471,64.507675
-      parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 3716
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 122.5,123.5
-      parent: 2
-  - uid: 41233
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 87.5,75.5
-      parent: 2
-  - uid: 41234
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 87.5,74.5
-      parent: 2
-  - uid: 41235
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 84.5,75.5
-      parent: 2
-  - uid: 41236
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 84.5,74.5
       parent: 2
 - proto: SpawnMechHonkerFilled
   entities:

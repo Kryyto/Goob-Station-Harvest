@@ -11826,14 +11826,6 @@ entities:
     - type: Transform
       pos: 5.5,33.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 870
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,50.5
-      parent: 2
 - proto: Bloodpack
   entities:
   - uid: 871
@@ -84916,6 +84908,18 @@ entities:
     - type: Transform
       pos: -47.5,31.5
       parent: 2
+  - uid: 870
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -4.5,50.5
+      parent: 2
+  - uid: 14323
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,50.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 12749
@@ -93632,14 +93636,6 @@ entities:
     components:
     - type: Transform
       pos: -8.43362,72.6124
-      parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 14323
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,50.5
       parent: 2
 - proto: SpawnMechRipley
   entities:

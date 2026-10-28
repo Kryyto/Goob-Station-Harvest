@@ -93,14 +93,6 @@ entities:
     - type: Transform
       pos: -3.5,-6.5
       parent: 1
-- proto: BlockGameArcade
-  entities:
-  - uid: 4
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,-1.5
-      parent: 1
 - proto: ChairPilotSeat
   entities:
   - uid: 5
@@ -326,6 +318,14 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-5.5
+      parent: 1
+- proto: RandomArcade
+  entities:
+  - uid: 4
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -4.5,-1.5
       parent: 1
 - proto: ReinforcedGirder
   entities:

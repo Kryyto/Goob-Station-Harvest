@@ -100,13 +100,6 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-- proto: BlockGameArcade
-  entities:
-  - uid: 52
-    components:
-    - type: Transform
-      pos: -1.5,2.5
-      parent: 1
 - proto: CartridgeMagnum
   entities:
   - uid: 55
@@ -181,6 +174,18 @@ entities:
     - type: Transform
       pos: 2.4022496,1.536186
       parent: 1
+- proto: RandomArcade
+  entities:
+  - uid: 52
+    components:
+    - type: Transform
+      pos: -1.5,2.5
+      parent: 1
+  - uid: 53
+    components:
+    - type: Transform
+      pos: 2.5,2.5
+      parent: 1
 - proto: SpaceCash100
   entities:
   - uid: 76
@@ -231,13 +236,6 @@ entities:
     components:
     - type: Transform
       pos: 3.4959996,0.8033912
-      parent: 1
-- proto: SpaceVillainArcade
-  entities:
-  - uid: 53
-    components:
-    - type: Transform
-      pos: 2.5,2.5
       parent: 1
 - proto: TableCarpet
   entities:

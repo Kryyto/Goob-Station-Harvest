@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created for Goob-Station-Harvest AstroMiner by Kryyto",
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "empty"
+    },
+    {
+      "name": "dirt"
+    },
+    {
+      "name": "wall"
+    },
+    {
+      "name": "hull"
+    },
+    {
+      "name": "boulder",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "crystal",
+      "delays": [
+        [
+          0.6,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "exit_closed"
+    },
+    {
+      "name": "exit_open",
+      "delays": [
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "miner",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "miner_2",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "carp",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "explosion",
+      "delays": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ]
+    },
+    {
+      "name": "foundry",
+      "delays": [
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "blob",
+      "delays": [
+        [
+          0.35,
+          0.35,
+          0.35
+        ]
+      ]
+    }
+  ]
+}

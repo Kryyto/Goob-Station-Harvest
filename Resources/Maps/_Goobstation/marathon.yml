@@ -15109,22 +15109,6 @@ entities:
     - type: Transform
       pos: 0.5,83.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 1040
-    components:
-    - type: Transform
-      pos: -49.5,25.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1041
-    components:
-    - type: Transform
-      pos: -44.5,67.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: BookAtmosAirAlarms
   entities:
   - uid: 1042
@@ -55308,6 +55292,28 @@ entities:
         15698:
         - - ArtifactAnalyzerSender
           - ArtifactAnalyzerReceiver
+- proto: RandomArcade
+  entities:
+  - uid: 1040
+    components:
+    - type: Transform
+      pos: -49.5,25.5
+      parent: 2
+  - uid: 1041
+    components:
+    - type: Transform
+      pos: -44.5,67.5
+      parent: 2
+  - uid: 18506
+    components:
+    - type: Transform
+      pos: 18.5,44.5
+      parent: 2
+  - uid: 18507
+    components:
+    - type: Transform
+      pos: 37.5,45.5
+      parent: 2
 - proto: computerBodyScanner
   entities:
   - uid: 8664
@@ -121628,22 +121634,6 @@ entities:
     - type: Transform
       pos: -74.5,-64.5
       parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 18506
-    components:
-    - type: Transform
-      pos: 18.5,44.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 18507
-    components:
-    - type: Transform
-      pos: 37.5,45.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: SpawnMechRipley
   entities:
   - uid: 18508

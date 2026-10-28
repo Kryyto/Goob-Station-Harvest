@@ -2610,20 +2610,6 @@ entities:
     - type: Transform
       pos: -40.5,27.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 2419
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,13.5
-      parent: 2
-  - uid: 2422
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,14.5
-      parent: 2
 - proto: Bloodpack
   entities:
   - uid: 2600
@@ -6985,6 +6971,26 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: RandomArcade
+  entities:
+  - uid: 2419
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,13.5
+      parent: 2
+  - uid: 2422
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,14.5
+      parent: 2
+  - uid: 2423
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,15.5
+      parent: 2
 - proto: hydroponicsTray
   entities:
   - uid: 2123
@@ -8786,14 +8792,6 @@ entities:
     components:
     - type: Transform
       pos: 6.5,0.5
-      parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 2423
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,15.5
       parent: 2
 - proto: SpawnMobBear
   entities:

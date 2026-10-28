@@ -14,4 +14,6 @@
     prototypes:
       - BlockGameArcade
       - SpaceVillainArcadeFilled
+      - AstroMinerArcadeFilled # Harvest
     chance: 1
+    keepRotation: true # Harvest: arcades face the way they were mapped

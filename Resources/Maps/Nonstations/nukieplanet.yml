@@ -10334,6 +10334,18 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.5,-8.5
       parent: 104
+- proto: RandomArcade
+  entities:
+  - uid: 1652
+    components:
+    - type: Transform
+      pos: 10.5,-6.5
+      parent: 104
+  - uid: 1653
+    components:
+    - type: Transform
+      pos: 9.5,-6.5
+      parent: 104
 - proto: computerBodyScanner
   entities:
   - uid: 2436
@@ -12916,22 +12928,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,-8.5
       parent: 104
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 1652
-    components:
-    - type: Transform
-      pos: 10.5,-6.5
-      parent: 104
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1653
-    components:
-    - type: Transform
-      pos: 9.5,-6.5
-      parent: 104
-    - type: SpamEmitSound
-      enabled: False
 - proto: SpawnMobLizard
   entities:
   - uid: 2473

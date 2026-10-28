@@ -36200,32 +36200,6 @@ entities:
     - type: Transform
       pos: 23.5,-50.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 1228
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -46.5,-41.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1229
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -45.5,-41.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1230
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -44.5,-41.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: Bloodpack
   entities:
   - uid: 17236
@@ -80355,6 +80329,41 @@ entities:
     components:
     - type: Transform
       pos: -29.5,43.5
+      parent: 2
+- proto: RandomArcade
+  entities:
+  - uid: 1228
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -46.5,-41.5
+      parent: 2
+  - uid: 1229
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -45.5,-41.5
+      parent: 2
+  - uid: 1230
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -44.5,-41.5
+      parent: 2
+  - uid: 18390
+    components:
+    - type: Transform
+      pos: -46.5,-37.5
+      parent: 2
+  - uid: 18391
+    components:
+    - type: Transform
+      pos: -45.5,-37.5
+      parent: 2
+  - uid: 18392
+    components:
+    - type: Transform
+      pos: -44.5,-37.5
       parent: 2
 - proto: computerBodyScanner
   entities:
@@ -161617,29 +161626,6 @@ entities:
     - type: Transform
       pos: -47.508194,-23.288473
       parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 18390
-    components:
-    - type: Transform
-      pos: -46.5,-37.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 18391
-    components:
-    - type: Transform
-      pos: -45.5,-37.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 18392
-    components:
-    - type: Transform
-      pos: -44.5,-37.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: SpawnMobAdultSlimesBlueAngry
   entities:
   - uid: 21574

@@ -15209,24 +15209,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 11.5,-57.5
-- proto: BlockGameArcade
-  entities:
-  - uid: 1374
-    components:
-    - type: Transform
-      parent: 2
-      pos: 32.5,-15.5
-  - uid: 1375
-    components:
-    - type: Transform
-      parent: 2
-      pos: 31.5,-15.5
-  - uid: 1376
-    components:
-    - type: Transform
-      parent: 2
-      rot: 3.141592653589793 rad
-      pos: 30.5,-43.5
 - proto: BoardGameSpawner100
   entities:
   - uid: 1377
@@ -50304,6 +50286,48 @@ entities:
     - type: Transform
       parent: 2
       pos: 16.5,3.5
+- proto: RandomArcade
+  entities:
+  - uid: 1374
+    components:
+    - type: Transform
+      parent: 2
+      pos: 32.5,-15.5
+  - uid: 1375
+    components:
+    - type: Transform
+      parent: 2
+      pos: 31.5,-15.5
+  - uid: 1376
+    components:
+    - type: Transform
+      parent: 2
+      rot: 3.141592653589793 rad
+      pos: 30.5,-43.5
+  - uid: 18326
+    components:
+    - type: Transform
+      parent: 2
+      rot: 1.5707963267948966 rad
+      pos: 26.5,-16.5
+  - uid: 18327
+    components:
+    - type: Transform
+      parent: 2
+      rot: 1.5707963267948966 rad
+      pos: 26.5,-17.5
+  - uid: 18328
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: 29.5,-16.5
+  - uid: 18329
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: 29.5,-17.5
 - proto: d6Dice
   entities:
   - uid: 8184
@@ -121989,32 +122013,6 @@ entities:
     - type: Transform
       parent: 2
       pos: -33.83732,14.349987
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 18326
-    components:
-    - type: Transform
-      parent: 2
-      rot: 1.5707963267948966 rad
-      pos: 26.5,-16.5
-  - uid: 18327
-    components:
-    - type: Transform
-      parent: 2
-      rot: 1.5707963267948966 rad
-      pos: 26.5,-17.5
-  - uid: 18328
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 29.5,-16.5
-  - uid: 18329
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 29.5,-17.5
 - proto: SpawnMechRipley
   entities:
   - uid: 18330

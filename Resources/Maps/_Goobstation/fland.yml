@@ -30340,36 +30340,6 @@ entities:
     - type: Transform
       pos: 123.5,48.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 2308
-    components:
-    - type: Transform
-      pos: -21.5,22.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 2309
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 89.5,19.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 2310
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 68.5,-51.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 2311
-    components:
-    - type: Transform
-      pos: 46.5,25.5
-      parent: 2
 - proto: BodyBag
   entities:
   - uid: 2312
@@ -180609,6 +180579,64 @@ entities:
     - type: Transform
       pos: 112.5,12.5
       parent: 2
+  - uid: 2308
+    components:
+    - type: Transform
+      pos: -21.5,22.5
+      parent: 2
+  - uid: 2309
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 89.5,19.5
+      parent: 2
+  - uid: 2310
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 68.5,-51.5
+      parent: 2
+  - uid: 2311
+    components:
+    - type: Transform
+      pos: 46.5,25.5
+      parent: 2
+  - uid: 29048
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -7.5,-14.5
+      parent: 2
+  - uid: 29049
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 26.5,-35.5
+      parent: 2
+  - uid: 29050
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 89.5,18.5
+      parent: 2
+  - uid: 29051
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 89.5,20.5
+      parent: 2
+  - uid: 29052
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 68.5,-52.5
+      parent: 2
+  - uid: 29053
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 68.5,-53.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 26904
@@ -193038,56 +193066,6 @@ entities:
     - type: Transform
       pos: 29.221989,-29.186216
       parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 29048
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -7.5,-14.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29049
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 26.5,-35.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29050
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 89.5,18.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29051
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 89.5,20.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29052
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 68.5,-52.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29053
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 68.5,-53.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: SpawnMechRipley
   entities:
   - uid: 29054

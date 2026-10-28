@@ -587,13 +587,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -16.5,15.5
       parent: 1
-- proto: BlockGameArcade
-  entities:
-  - uid: 41
-    components:
-    - type: Transform
-      pos: -14.5,15.5
-      parent: 1
 - proto: BoxBeaker
   entities:
   - uid: 42
@@ -2181,6 +2174,16 @@ entities:
     - type: Transform
       pos: -12.5,15.5
       parent: 1
+  - uid: 41
+    components:
+    - type: Transform
+      pos: -14.5,15.5
+      parent: 1
+  - uid: 396
+    components:
+    - type: Transform
+      pos: -13.5,15.5
+      parent: 1
 - proto: RandomPosterAny
   entities:
   - uid: 344
@@ -2766,13 +2769,6 @@ entities:
     components:
     - type: Transform
       pos: -3.5,14.5
-      parent: 1
-- proto: SpaceVillainArcade
-  entities:
-  - uid: 396
-    components:
-    - type: Transform
-      pos: -13.5,15.5
       parent: 1
 - proto: SpawnerRandomLightMobLavaland
   entities:

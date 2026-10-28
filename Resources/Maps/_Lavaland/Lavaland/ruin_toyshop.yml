@@ -364,18 +364,6 @@ entities:
     - type: Transform
       pos: 1.536891,6.8689013
       parent: 1
-- proto: BlockGameArcade
-  entities:
-  - uid: 35
-    components:
-    - type: Transform
-      pos: 2.5,3.5
-      parent: 1
-  - uid: 36
-    components:
-    - type: Transform
-      pos: 3.5,3.5
-      parent: 1
 - proto: BoxCartridgeCap
   entities:
   - uid: 37
@@ -1943,6 +1931,23 @@ entities:
     - type: Transform
       pos: 5.5,12.5
       parent: 1
+- proto: RandomArcade
+  entities:
+  - uid: 35
+    components:
+    - type: Transform
+      pos: 2.5,3.5
+      parent: 1
+  - uid: 36
+    components:
+    - type: Transform
+      pos: 3.5,3.5
+      parent: 1
+  - uid: 304
+    components:
+    - type: Transform
+      pos: 4.5,3.5
+      parent: 1
 - proto: RevolverCapGun
   entities:
   - uid: 295
@@ -2003,13 +2008,6 @@ entities:
     components:
     - type: Transform
       pos: 2.590444,11.404713
-      parent: 1
-- proto: SpaceVillainArcade
-  entities:
-  - uid: 304
-    components:
-    - type: Transform
-      pos: 4.5,3.5
       parent: 1
 - proto: SpeedLoaderCap
   entities:

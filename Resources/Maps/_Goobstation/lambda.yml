@@ -42838,23 +42838,6 @@ entities:
     - type: Transform
       pos: -2.5,13.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 5066
-    components:
-    - type: Transform
-      pos: 93.5,32.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 5067
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -18.5,38.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: Bloodpack
   entities:
   - uid: 5068
@@ -184611,6 +184594,39 @@ entities:
     - type: Transform
       pos: 70.5,-6.5
       parent: 2
+  - uid: 5066
+    components:
+    - type: Transform
+      pos: 93.5,32.5
+      parent: 2
+  - uid: 5067
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -18.5,38.5
+      parent: 2
+  - uid: 29591
+    components:
+    - type: Transform
+      pos: 28.5,100.5
+      parent: 2
+  - uid: 29592
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 93.5,20.5
+      parent: 2
+  - uid: 29593
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -19.5,38.5
+      parent: 2
+  - uid: 29594
+    components:
+    - type: Transform
+      pos: 71.5,-6.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 27545
@@ -197997,36 +198013,6 @@ entities:
     components:
     - type: Transform
       pos: 72.58993,-6.611989
-      parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 29591
-    components:
-    - type: Transform
-      pos: 28.5,100.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29592
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 93.5,20.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29593
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -19.5,38.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 29594
-    components:
-    - type: Transform
-      pos: 71.5,-6.5
       parent: 2
 - proto: SpawnMechRipley
   entities:

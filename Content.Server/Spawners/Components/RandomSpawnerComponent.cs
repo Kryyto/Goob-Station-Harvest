@@ -36,5 +36,11 @@ namespace Content.Server.Spawners.Components
         /// </summary>
         [DataField]
         public bool DeleteSpawnerAfterSpawn = true;
+
+        /// <summary>
+        /// Give the spawned entity the spawner's rotation, for machines that must face the way they were mapped.
+        /// </summary>
+        [DataField]
+        public bool KeepRotation; // Harvest
     }
 }

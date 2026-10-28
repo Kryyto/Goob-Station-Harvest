@@ -11545,29 +11545,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 11.5,53.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 1148
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 27.5,-0.5
-      parent: 2
-  - uid: 1149
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -9.5,-47.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1151
-    components:
-    - type: Transform
-      pos: -22.5,5.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: BookAtmosAirAlarms
   entities:
   - uid: 1152
@@ -68498,6 +68475,29 @@ entities:
     - type: Transform
       pos: -23.5,5.5
       parent: 2
+  - uid: 1148
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 27.5,-0.5
+      parent: 2
+  - uid: 1149
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -9.5,-47.5
+      parent: 2
+  - uid: 1151
+    components:
+    - type: Transform
+      pos: -22.5,5.5
+      parent: 2
+  - uid: 13516
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -28.5,27.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 10036
@@ -74692,14 +74692,6 @@ entities:
     components:
     - type: Transform
       pos: -42.5,0.5
-      parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 13516
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -28.5,27.5
       parent: 2
 - proto: SpawnMechRipley
   entities:

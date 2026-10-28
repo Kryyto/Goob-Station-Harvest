@@ -17008,53 +17008,6 @@ entities:
     - type: Transform
       pos: -5.5,33.5
       parent: 2
-- proto: BlockGameArcade
-  entities:
-  - uid: 1120
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 47.5,-33.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1121
-    components:
-    - type: Transform
-      pos: 5.5,-13.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1122
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 27.5,-0.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1123
-    components:
-    - type: Transform
-      pos: 74.5,12.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1124
-    components:
-    - type: Transform
-      pos: 7.5,-51.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 1125
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -9.5,47.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: BodyBagFolded
   entities:
   - uid: 1126
@@ -133421,6 +133374,73 @@ entities:
     - type: Transform
       pos: -33.5,24.5
       parent: 2
+  - uid: 1120
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 47.5,-33.5
+      parent: 2
+  - uid: 1121
+    components:
+    - type: Transform
+      pos: 5.5,-13.5
+      parent: 2
+  - uid: 1122
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 27.5,-0.5
+      parent: 2
+  - uid: 1123
+    components:
+    - type: Transform
+      pos: 74.5,12.5
+      parent: 2
+  - uid: 1124
+    components:
+    - type: Transform
+      pos: 7.5,-51.5
+      parent: 2
+  - uid: 1125
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -9.5,47.5
+      parent: 2
+  - uid: 22166
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 47.5,-32.5
+      parent: 2
+  - uid: 22167
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 27.5,-1.5
+      parent: 2
+  - uid: 22168
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 27.5,-2.5
+      parent: 2
+  - uid: 22169
+    components:
+    - type: Transform
+      pos: 72.5,12.5
+      parent: 2
+  - uid: 22170
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 47.5,-34.5
+      parent: 2
+  - uid: 22171
+    components:
+    - type: Transform
+      pos: -4.5,45.5
+      parent: 2
 - proto: RandomArtifactSpawner
   entities:
   - uid: 20204
@@ -144857,54 +144877,6 @@ entities:
     - type: Transform
       pos: 75.53078,12.7389765
       parent: 2
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 22166
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 47.5,-32.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 22167
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 27.5,-1.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 22168
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 27.5,-2.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 22169
-    components:
-    - type: Transform
-      pos: 72.5,12.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 22170
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 47.5,-34.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
-  - uid: 22171
-    components:
-    - type: Transform
-      pos: -4.5,45.5
-      parent: 2
-    - type: SpamEmitSound
-      enabled: False
 - proto: SpawnMechRipley
   entities:
   - uid: 22172

@@ -44590,6 +44590,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 49.5,42.5
       parent: 1
+- proto: RandomArcade
+  entities:
+  - uid: 14474
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 43.5,52.5
+      parent: 1
 - proto: d6Dice
   entities:
   - uid: 3061
@@ -95503,14 +95511,6 @@ entities:
     components:
     - type: Transform
       pos: 81.39564,33.40956
-      parent: 1
-- proto: SpaceVillainArcadeFilled
-  entities:
-  - uid: 14474
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 43.5,52.5
       parent: 1
 - proto: SpawnMechRipley
   entities:

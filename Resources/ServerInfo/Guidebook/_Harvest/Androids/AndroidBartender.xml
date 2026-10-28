@@ -8,10 +8,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 L'androïde barman reste derrière le bar et sert les boissons qu'on lui commande. Il simule la préparation : le verre apparaît devant le client après quelques secondes, et les canettes et bouteilles sont servies ouvertes.
 
 ## Commander
-Adressez-vous à lui par son prénom (ou « androïde ») en nommant la boisson : « René, un mojito s'il te plaît », « une bière », « a whiskey please ». S'il ne connaît pas la boisson demandée, il vous le dit et vous sert autre chose de sa carte. Il sert aussi les androïdes en pause assis au bar.
+Adressez-vous à lui par son prénom (ou « androïde ») en nommant la boisson : « René, un mojito s'il te plaît », « une bière », « a whiskey please ». Il connaît tous les alcools, cocktails, jus et sodas standards (plus de 150), en français comme en anglais, et comprend les petites fautes : « un mohito », « une margharita ». Demandez-lui « tu sers quoi ? » pour un aperçu de la carte. S'il ne connaît pas la boisson demandée, il vous le dit et vous sert autre chose. Il sert aussi les androïdes en pause assis au bar.
 
 ## Au travail
-Entre deux commandes, il se déplace derrière le bar et ramasse l'argent laissé sur le comptoir et les tables du bar. Il prend ses pauses en cuisine, jamais à son propre bar.
+Entre deux commandes, il se déplace derrière le bar et ramasse l'argent laissé sur le comptoir et les tables du bar. Il prend ses pauses dans la salle à manger devant la cuisine, jamais à son propre bar.
 
 ## La carte
 <Box>
@@ -31,5 +31,5 @@ Entre deux commandes, il se déplace derrière le bar et ramasse l'argent laiss�
 <GuideEntityEmbed Entity="DrinkWaterBottleFull"/>
 </Box>
 
-Mots reconnus : mojito, cuba libre, margarita, tournevis, gin, whisky, vodka, vin, bière ou pinte, cola ou soda, café, eau.
+Quelques classiques ci-dessus. Les mots seuls donnent la boisson de base : bière ou pinte, vin, whisky, vodka, gin, cola ou soda, café, eau.
 </Document>

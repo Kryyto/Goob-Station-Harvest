@@ -216,7 +216,7 @@
   - type: Tag
     tags:
     - Chair
-    - BarStool
+    - BarStool # Harvest
 
 - type: entity
   name: chaise en laiton

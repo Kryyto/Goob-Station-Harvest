@@ -314,7 +314,7 @@ namespace Content.Server.Ghost
                 return;
             }
 
-            var response = new GhostWarpsResponseEvent(GetPlayerWarps(entity).Concat(GetLocationWarps()).ToList());
+            var response = new GhostWarpsResponseEvent(GetPlayerWarps(entity).Concat(GetAndroidWarps()).Concat(GetLocationWarps()).ToList()); // Harvest - androids
             RaiseNetworkEvent(response, args.SenderSession.Channel);
         }
 

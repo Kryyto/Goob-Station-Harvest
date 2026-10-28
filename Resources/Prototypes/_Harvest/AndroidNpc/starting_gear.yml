@@ -1,0 +1,64 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: startingGear
+  id: JanitorAndroidGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAndroidJanitor
+    shoes: ClothingShoesGaloshes
+    gloves: ClothingHandsGlovesJanitor
+    head: ClothingHeadHatPurplesoft
+    id: JanitorPDA
+    back: ClothingBackpackSatchel
+    belt: ClothingBeltJanitorFilled
+    ears: ClothingHeadsetService
+    outerClothing: ClothingOuterWinterJani
+  inhand:
+  - MopItem
+  storage:
+    back:
+    - TrashBag
+    - WetFloorSign
+    - WetFloorSign
+    - WetFloorSign
+    - WetFloorSign
+    - Bucket
+
+- type: startingGear
+  id: CookAndroidGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAndroidChef
+    shoes: ClothingShoesChef
+    head: ClothingHeadHatChef
+    outerClothing: ClothingOuterApronChef
+    id: ChefPDA
+    ears: ClothingHeadsetService
+    belt: ClothingBeltChefFilled
+    back: ClothingBackpackSatchel
+
+- type: startingGear
+  id: BartenderAndroidGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAndroidBartender
+    shoes: ClothingShoesColorBlack
+    outerClothing: ClothingOuterVest
+    id: BartenderPDA
+    ears: ClothingHeadsetService
+    back: ClothingBackpackSatchel
+
+- type: startingGear
+  id: ParamedicAndroidGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAndroidParamedic
+    shoes: ClothingShoesColorBlue
+    head: ClothingHeadHatParamedicsoft
+    outerClothing: ClothingOuterCoatParamedicWB
+    id: ParamedicPDA
+    ears: ClothingHeadsetMedical
+    back: ClothingBackpackSatchelMedical
+  storage:
+    back:
+    - Brutepack
+    - Ointment
+    - EmergencyMedipen
+    - EmergencyMedipen
+    - HandheldCrewMonitor

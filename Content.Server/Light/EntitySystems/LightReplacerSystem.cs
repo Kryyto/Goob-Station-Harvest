@@ -147,7 +147,7 @@ public sealed class LightReplacerSystem : SharedLightReplacerSystem
         // found bulb in inserted storage
         if (bulb.Valid) // FirstOrDefault can return default/invalid uid.
         {
-            // Force the remove so that container-is-removing-attempt events from other systems
+            // Harvest: force the remove so that container-is-removing-attempt events from other systems
             // cannot block a light replacer from consuming its own bulb.
             var hasRemoved = _container.Remove((bulb, null, null), replacer.InsertedBulbs, true, true);
             if (!hasRemoved)

@@ -1,0 +1,130 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Base android humanoid entity.
+- type: entity
+  parent: MobHuman
+  id: MobAndroid
+  name: Androïde
+  description: A synthetic crew member.
+  components:
+  - type: Android
+  - type: AndroidIdentity
+  - type: AndroidMemory
+  - type: AndroidInventory
+  - type: ActiveListener
+    range: 8
+  - type: AdminOverride
+    dismemberable: false
+  # Banana peels and soap must not stop an android in its tracks.
+  - type: NoSlip
+  - type: HumanoidAppearance
+    species: Android
+    sex: Unsexed
+  - type: Icon
+    sprite: _Harvest/Mobs/Android/android.rsi
+    state: full
+  - type: Access
+    enabled: true
+    tags:
+    - Maintenance
+
+# Janitor android variant.
+- type: entity
+  parent: MobAndroid
+  id: MobAndroidJanitor
+  name: Androïde
+  suffix: Janitor
+  components:
+  - type: Android
+    job: Janitor
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Service
+  - type: AndroidIdentity
+    jobTitle: Concierge
+  - type: AndroidInventory
+  - type: Loadout
+    prototypes: [JanitorAndroidGear]
+  - type: Access
+    enabled: true
+    tags:
+    - Janitor
+    - Service
+    - Maintenance
+
+- type: entity
+  parent: MobAndroid
+  id: MobAndroidCook
+  name: Androïde
+  suffix: Cook
+  components:
+  - type: Android
+    job: Cook
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Service
+  - type: AndroidService
+  - type: AndroidIdentity
+    jobTitle: Cuisinier
+  - type: Loadout
+    prototypes: [CookAndroidGear]
+  - type: Access
+    enabled: true
+    tags:
+    - Kitchen
+    - Service
+    - Maintenance
+
+- type: entity
+  parent: MobAndroid
+  id: MobAndroidBartender
+  name: Androïde
+  suffix: Bartender
+  components:
+  - type: Android
+    job: Bartender
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Service
+  - type: AndroidService
+  - type: AndroidIdentity
+    jobTitle: Barman
+  - type: Loadout
+    prototypes: [BartenderAndroidGear]
+  - type: Access
+    enabled: true
+    tags:
+    - Bar
+    - Service
+    - Maintenance
+
+- type: entity
+  parent: MobAndroid
+  id: MobAndroidParamedic
+  name: Androïde
+  suffix: Paramedic
+  components:
+  - type: Android
+    job: Paramedic
+  # Hears radio messages addressed to it; answered by AndroidOrderSystem on the same channel.
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Medical
+  - type: AndroidMedic
+  - type: AndroidIdentity
+    jobTitle: Paramédic
+  - type: Loadout
+    prototypes: [ParamedicAndroidGear]
+  - type: Access
+    enabled: true
+    tags:
+    - Medical
+    - Maintenance
+    - External

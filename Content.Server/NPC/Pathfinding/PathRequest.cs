@@ -37,6 +37,11 @@ public abstract class PathRequest
     public readonly int CollisionLayer;
     public readonly int CollisionMask;
 
+    /// <summary>
+    /// Harvest: closed door tiles the requester cannot open, set when <see cref="PathFlags.Access"/> is used.
+    /// </summary>
+    public HashSet<(EntityUid Grid, Vector2i Tile)>? BlockedDoors;
+
     #endregion
 
     public PathRequest(EntityCoordinates start, PathFlags flags, int layer, int mask, CancellationToken cancelToken)

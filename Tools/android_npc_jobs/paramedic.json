@@ -1,0 +1,407 @@
+{
+  "key": "paramedic",
+  "display_names": {
+    "en": "Paramedic",
+    "fr": "Paramédic"
+  },
+  "description": {
+    "en": "Patrols the station, treats injured crew on the spot, stabilizes critical patients and brings them and the dead to medbay.",
+    "fr": "Patrouille la station, soigne les blessés sur place, stabilise les patients critiques et les ramène à l'infirmerie avec les morts."
+  },
+  "profile": {
+    "name": "Camille Roux",
+    "employee_id": "MD-021-PAR",
+    "species": {
+      "en": "Android",
+      "fr": "Androïde"
+    },
+    "assignment": {
+      "en": "Medical patrol",
+      "fr": "Patrouille médicale"
+    },
+    "current_state": {
+      "en": "Alert, focused",
+      "fr": "Alerte, concentré"
+    },
+    "location": {
+      "en": "Medbay",
+      "fr": "Infirmerie"
+    },
+    "sprite": "assets/ss14/paramedic-uniform.png",
+    "mental": {
+      "tiredness": 3,
+      "stress": 35
+    }
+  },
+  "hidden_state": {
+    "role": "an android paramedic working aboard a space station; calm, reassuring and precise; never aggressive",
+    "department": "medical department",
+    "duties": "treating injured crew on the spot with brute packs and ointment, giving epinephrine to critical patients, dragging critical patients and bodies to medbay, and answering calls for medical help",
+    "limitations": "does not perform surgery, cloning or chemistry, and does not provide security or engineering response",
+    "setting": "Space Station 14, a multiplayer space-station simulation game; `message` is spoken by a crew member to this worker"
+  },
+  "questions": {
+    "intent": {
+      "type": "choice",
+      "instructions": "What is the crew member asking the paramedic to do in `message`?",
+      "criteria": {
+        "medical_request": "asks to be healed or reports someone injured, bleeding, in critical condition or dead; e.g. \"soigne-moi\", \"je suis blessé\", \"il y a un blessé au bar\", \"someone is hurt in cargo\"",
+        "complaint": "expresses dissatisfaction about medical care already received, without asking for a specific new action",
+        "emergency": "reports an immediate danger such as a fire, hull breach or attack; injuries alone are medical_request",
+        "follow_request": "tells or asks the worker to come along, follow, or accompany them; e.g. \"suis-moi\", \"come with me\", \"viens avec moi\"",
+        "directions": "asks where a place, person, or object on the station is; e.g. \"où est l'infirmerie\", \"where is the bridge\"",
+        "small_talk": "casual conversation or chit-chat on any topic, including questions about the worker or other subjects, with no work request; e.g. \"comment tu vas\", \"t'as vu le match\"",
+        "greeting": "a short salutation, thanks, or farewell with no other content; e.g. \"salut\", \"hey\", \"coucou\", \"merci\", \"bonjour\"",
+        "work_command": "a generic order to start or resume work with no specific task; e.g. \"va bosser\", \"au taf\", \"get to work\", \"do your job\"",
+        "unrelated": "only if the message clearly does not match any other category; a request for another department such as security, or engineering"
+      }
+    },
+    "tone": {
+      "type": "score",
+      "instructions": "How calm, rude, or threatening is the tone of `message`?",
+      "criteria": [
+        "calm or polite",
+        "direct or impatient",
+        "threatening or dangerous"
+      ]
+    }
+  },
+  "questions_fr": {
+    "intent": {
+      "type": "choice",
+      "instructions": "Que demande le membre d'équipage au concierge dans `message` ?",
+      "criteria": {
+        "medical_request": "asks to be healed or reports someone injured, bleeding, in critical condition or dead; e.g. \"soigne-moi\", \"je suis blessé\", \"il y a un blessé au bar\", \"someone is hurt in cargo\"",
+        "complaint": "expresses dissatisfaction about medical care already received, without asking for a specific new action",
+        "emergency": "reports an immediate danger such as a fire, hull breach or attack; injuries alone are medical_request",
+        "follow_request": "ordre ou demande de venir, de suivre ou d'accompagner ; ex. « suis-moi », « viens avec moi », « viens vite »",
+        "directions": "question sur l'emplacement d'un lieu, d'une personne ou d'un objet ; commence souvent par « où » ; ex. « où est le pont ? », « c'est où l'infirmerie ? »",
+        "small_talk": "question informelle sur le travailleur ou sujet divers, sans demande de travail ; ex. « comment tu vas ? », « ça va ? », « t'as vu le match ? » ; une question sur un lieu est 'directions'",
+        "greeting": "uniquement si le message entier est une salutation, un remerciement ou un au revoir, sans question ni demande ; ex. « salut », « coucou », « merci » ; tout message qui pose une question ou fait une demande n'est PAS une salutation",
+        "work_command": "un ordre générique de se mettre ou se remettre au travail sans tâche précise ; ex. « va bosser », « au taf », « au boulot »",
+        "unrelated": "seulement si le message ne correspond clairement à aucune autre catégorie ; une demande relevant d'un autre département comme le médical, la sécurité ou l'ingénierie"
+      }
+    },
+    "tone": {
+      "type": "score",
+      "instructions": "Quel est le ton du `message` ?",
+      "criteria": [
+        "calme ou poli",
+        "direct ou impatient",
+        "menaçant ou dangereux"
+      ]
+    }
+  },
+  "responses": {
+    "en": {
+      "medical_request": [
+        [
+          "On my way, stay calm.",
+          "Understood, I'm coming to help.",
+          "Hold on, I'll take care of it."
+        ],
+        [
+          "On my way.",
+          "Coming.",
+          "Noted, heading there."
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "complaint": [
+        [
+          "I'm sorry. I'll take another look.",
+          "Noted. Let me check on you again.",
+          "Apologies, I'll do better."
+        ],
+        [
+          "Noted.",
+          "I'll check.",
+          "Registered."
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "emergency": [
+        [
+          "Alert noted. Please report it on the radio.",
+          "I'll keep people away from the area.",
+          "Understood. Stay clear of the danger zone."
+        ],
+        [
+          "Understood. Move away from the area.",
+          "I'll keep people back.",
+          "Please report it on the radio."
+        ],
+        [
+          "Alerting security.",
+          "Security has been notified.",
+          "I'm leaving the area and alerting security."
+        ]
+      ],
+      "follow_request": [
+        [
+          "Understood, I'm following you.",
+          "I'll come with you.",
+          "Lead the way."
+        ],
+        [
+          "Understood.",
+          "Following.",
+          "Where to?"
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "directions": [
+        [
+          "I believe it's down the corridor. The station map is on the wall.",
+          "I think it's that way. Please follow the signs.",
+          "I'm not certain, but probably down the hall."
+        ],
+        [
+          "That way, I believe.",
+          "Check the station map.",
+          "Down the corridor."
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "small_talk": [
+        [
+          "I'm functioning normally, thank you.",
+          "All systems nominal. And you?",
+          "I'm well, thank you for asking."
+        ],
+        [
+          "Operational.",
+          "Fine.",
+          "Normal."
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "greeting": [
+        [
+          "Hello. How may I assist you?",
+          "Hello.",
+          "Good day."
+        ],
+        [
+          "Hello.",
+          "Hi.",
+          "Yes?"
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "work_command": [
+        [
+          "Understood. Resuming my medical patrol.",
+          "Back to my rounds.",
+          "Resuming duties."
+        ],
+        [
+          "Understood.",
+          "On my way.",
+          "Proceeding."
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ],
+      "unrelated": [
+        [
+          "That request is outside my functions.",
+          "I can't help with that, sorry.",
+          "Please ask another department."
+        ],
+        [
+          "Outside my duties.",
+          "Not my function.",
+          "No information available."
+        ],
+        [
+          "I must alert security.",
+          "Threat detected. I'm informing security.",
+          "This message will be reported to security."
+        ]
+      ]
+    },
+    "fr": {
+      "medical_request": [
+        [
+          "J'arrive, restez calme.",
+          "Compris, je viens aider.",
+          "Tenez bon, je m'en occupe."
+        ],
+        [
+          "J'arrive.",
+          "J'y vais.",
+          "Noté, j'y vais."
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "complaint": [
+        [
+          "Je suis désolé. Je vais revoir ça.",
+          "Noté. Je vais vous réexaminer.",
+          "Toutes mes excuses."
+        ],
+        [
+          "Noté.",
+          "Je vérifierai.",
+          "Enregistré."
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "emergency": [
+        [
+          "Alerte notée. Veuillez la signaler à la radio.",
+          "Je vais éloigner les gens de la zone.",
+          "Compris. Restez à distance du danger."
+        ],
+        [
+          "Compris. Éloignez-vous.",
+          "Je retiens les gens.",
+          "Veuillez le signaler à la radio."
+        ],
+        [
+          "J'alerte la sécurité.",
+          "La sécurité est prévenue.",
+          "Je quitte la zone et j'alerte la sécurité."
+        ]
+      ],
+      "follow_request": [
+        [
+          "Compris, je vous suis.",
+          "Je viens avec vous.",
+          "Allez-y, je suis derrière."
+        ],
+        [
+          "Compris.",
+          "Je vous suis.",
+          "Où allons-nous ?"
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "directions": [
+        [
+          "Je crois que c'est au bout du couloir. Le plan est sur le mur.",
+          "Je pense que c'est par là. Suivez les panneaux.",
+          "Pas certain, mais probablement au bout du couloir."
+        ],
+        [
+          "Par là, je crois.",
+          "Consultez le plan.",
+          "Au bout du couloir."
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "small_talk": [
+        [
+          "Je fonctionne normalement, merci.",
+          "Tous mes systèmes sont nominaux. Et vous ?",
+          "Je vais bien, merci de demander."
+        ],
+        [
+          "Opérationnel.",
+          "Ça va.",
+          "Normal."
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "greeting": [
+        [
+          "Bonjour. Puis-je vous aider ?",
+          "Bonjour.",
+          "Bonjour à vous."
+        ],
+        [
+          "Bonjour.",
+          "Salut.",
+          "Oui ?"
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "work_command": [
+        [
+          "Compris. Je reprends ma patrouille médicale.",
+          "Je reprends ma ronde.",
+          "Je reprends mon service."
+        ],
+        [
+          "Compris.",
+          "J'y vais.",
+          "J'y suis."
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ],
+      "unrelated": [
+        [
+          "Cette demande ne relève pas de mes fonctions.",
+          "Je ne peux pas vous aider avec ça, désolé.",
+          "Veuillez demander à un autre département."
+        ],
+        [
+          "Hors de mes fonctions.",
+          "Pas ma fonction.",
+          "Pas d'information disponible."
+        ],
+        [
+          "Je dois alerter la sécurité.",
+          "Menace détectée. Je préviens la sécurité.",
+          "Ce message sera signalé à la sécurité."
+        ]
+      ]
+    }
+  }
+}

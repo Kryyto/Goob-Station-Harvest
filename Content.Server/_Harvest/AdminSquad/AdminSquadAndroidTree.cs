@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Numerics;
-using Content.Server.AndroidNpc.BehaviorTree.Actions;
-using Content.Server.AndroidNpc.BehaviorTree.Nodes;
+using Content.Server._Harvest.AndroidNpc.BehaviorTree.Actions;
+using Content.Server._Harvest.AndroidNpc.BehaviorTree.Nodes;
 using Robust.Shared.Map;
 
 namespace Content.Server._Harvest.AdminSquad;

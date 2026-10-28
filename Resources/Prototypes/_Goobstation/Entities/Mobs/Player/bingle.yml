@@ -20,16 +20,13 @@
       settings: default
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Goobstation/Mobs/Bingle/bingle.rsi
+    sprite: _Harmony/Mobs/Aliens/Bingles/bingle_harmony.rsi # Points towards the revamped sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: alive
-    - map: ["enum.BingleVisual.Upgraded"]
-      state: Upgraded
-      visible: false
     - map: ["enum.BingleVisual.Combat"]
       state: combat
-      visible: false
+      shader: unshaded
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -122,6 +119,14 @@
   components:
   - type: Bingle
     prime: true
+  - type: Sprite
+    sprite: _Goobstation/Mobs/Bingle/bingle.rsi # Prime bingles use the old sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: alive
+    - map: ["enum.BingleVisual.Combat"]
+      state: combat
+      shader: unshaded
 
 - type: entity
   id: MobBingleUpgraded
@@ -132,19 +137,19 @@
     upgraded: true
   - type: Sprite
     drawdepth: Mobs
-    sprite: _Goobstation/Mobs/Bingle/bingle.rsi
+    sprite: _Harmony/Mobs/Aliens/Bingles/bingleupgraded_harmony.rsi # Points towards the revamped sprite
     layers:
-    - map: [ "enum.DamageStateVisualLayers.Base", "movement" ]
-      state: Upgraded
-    - map: [ "enum.BingleVisual.Combat" ]
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: alive
+    - map: ["enum.BingleVisual.Combat"]
       state: combat
-      visible: false
+      shader: unshaded
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: Upgraded
+        Base: alive
       Dead:
-        Base: dead_upgraded
+        Base: dead
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg

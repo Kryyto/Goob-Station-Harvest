@@ -1,0 +1,52 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: androidNpc
+  id: Default
+  enabled: true
+  # Language of ambient lines; replies follow the language the crew member spoke.
+  language: fr
+  customerDrinks:
+  - DrinkWaterBottleFull
+  - DrinkColaCan
+  - DrinkBeerCan
+  - DrinkHotCoffee
+  - DrinkSodaWaterCan
+  customerFood:
+  - FoodBurgerPlain
+  - FoodDonut
+  - FoodSoupTomato
+  - FoodSaladCaesar
+  maxAndroids: 5
+  namePrefix: "Androïde"
+  defaultFirstName: "Unité"
+  unknownSpeakerName: "someone"
+  spawnDelaySeconds: 0
+  scanRadius: 20
+  scanIntervalTicks: 30
+  blacklistTtlSeconds: 30
+  blacklistThreshold: 3
+  orderExpirySeconds: 300
+  followLostDistance: 15
+  followLostTimeoutSeconds: 30
+  # A break every 8 to 10 minutes.
+  breakIntervalSeconds: 480
+  breakIntervalJitterSeconds: 120
+  breakDurationSeconds: 60
+  resupplyThreshold: 0.2
+  hearingRange: 10
+  claimTtlSeconds: 60
+  dialogueRateLimitSeconds: 10
+  # THX-01 typed-decision server running next to the SS14 server (see AGENTS.md). Empty = local rules only.
+  conversationEndpoint: "http://localhost:8095"
+  conversationTimeoutSeconds: 4
+  conversationApiKeyEnvVar: THX01_API_KEY
+  conversationMinConfidence: 0.3
+  conversationEffectMinConfidence: 0.5
+  conversationThreatThreshold: 0.65
+  conversationImpatientThreshold: 0.45
+  emergencyFleeSeconds: 30
+  retaliationDamage: 50
+  retaliationGiveUpSeconds: 30
+  securityRadioChannel: Security
+  emergencyRadioChannel: Common
+  handOverRange: 1.5

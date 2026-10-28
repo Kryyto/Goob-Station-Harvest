@@ -3,10 +3,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using Content.IntegrationTests.Tests.AndroidNpc;
+using Content.IntegrationTests.Tests._Harvest.AndroidNpc;
 using Content.IntegrationTests.Pair;
 using Content.Server._Harvest.AdminSquad;
-using Content.Server.AndroidNpc.Components;
+using Content.Server._Harvest.AndroidNpc.Components;
 using Content.Server.Atmos.Components;
 using Content.Server.NPC.HTN;
 using Content.Shared._Harvest.AdminSquad;

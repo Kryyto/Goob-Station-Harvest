@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Server._Harvest.AdminSquad;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree.Actions;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree.Nodes;
 using Content.Server._Harvest.AndroidNpc.Components;
@@ -17,6 +18,7 @@ public static class AndroidTrees
     {
         var root = new SelectorNode(job.ToString())
         {
+            AdminSquadAndroidTree.Build(), // Harvest - admin squad orders come first
             new SequenceNode("LeaveForCryo")
             {
                 new ConditionNode((owner, bb) => bb.EntityManager.TryGetComponent<AndroidComponent>(owner, out var android) &&

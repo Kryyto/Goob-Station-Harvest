@@ -3,6 +3,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Numerics;
+using Content.Server._Harvest.AdminSquad;
 using Content.Server._Harvest.AndroidNpc.BehaviorTree.Nodes;
 using Content.Server._Harvest.AndroidNpc.Components;
 using Content.Server._Harvest.AndroidNpc.Data;
@@ -228,6 +229,8 @@ public sealed class MoveToAction : IBehaviorNode
 
             // Androids can open normal doors and airlocks they have access to.
             steering.Flags |= PathFlags.Interact | PathFlags.Access;
+            if (blackboard.System<AdminSquadSystem>().IsOrdered(owner))
+                steering.Flags |= PathFlags.Smashing; // Harvest - under admin orders, break what blocks the way
 
             // Climbing tables and railings is only used as a last resort when no walkable
             // path is found. The first attempt is always made without the climbing flag.
@@ -309,6 +312,8 @@ public sealed class MoveToAction : IBehaviorNode
 
         // Androids can open normal doors and airlocks they have access to.
         steering.Flags |= PathFlags.Interact | PathFlags.Access;
+        if (blackboard.System<AdminSquadSystem>().IsOrdered(owner))
+            steering.Flags |= PathFlags.Smashing; // Harvest - under admin orders, break what blocks the way
 
         // Climbing is only allowed as a last resort; set it here so the next path request uses it.
         if (_state.ClimbAllowed && CanClimb(owner, blackboard))

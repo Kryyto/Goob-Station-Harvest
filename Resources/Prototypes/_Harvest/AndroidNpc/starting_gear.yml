@@ -57,8 +57,4 @@
     back: ClothingBackpackSatchelMedical
   storage:
     back:
-    - Brutepack
-    - Ointment
-    - EmergencyMedipen
-    - EmergencyMedipen
     - HandheldCrewMonitor

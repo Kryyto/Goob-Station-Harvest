@@ -19,6 +19,8 @@ using Content.Shared.Damage.Prototypes;
 using Content.Server.Atmos.Components;
 using Content.Server.Radio;
 using Content.Shared._EinsteinEngines.Language;
+using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chat;
 using Content.Shared.Gravity;
 using Content.Shared.Radio;
@@ -288,6 +290,58 @@ public sealed class AndroidParamedicTests
     }
 
     [Test]
+    public async Task Paramedic_ComesToAFarCallerOnTheRadioAndInjectsBicaridine()
+    {
+        var pair = await AndroidTestPool.GetServerClient();
+        var server = pair.Server;
+        var sEnt = server.EntMan;
+        var map = await pair.CreateTestMap();
+        var xforms = sEnt.System<SharedTransformSystem>();
+        await BuildHall(server, map, 40);
+        EntityUid medic = default, caller = default;
+
+        await server.WaitAssertion(() =>
+        {
+            caller = sEnt.SpawnEntity("MobHuman", new EntityCoordinates(map.Grid.Owner, 36.5f, 0.5f));
+            medic = sEnt.SpawnEntity("MobAndroidParamedic", new EntityCoordinates(map.Grid.Owner, 1.5f, 0.5f));
+            Name(sEnt, medic, "Zephyrin");
+        });
+        await server.WaitRunTicks(5);
+
+        await server.WaitAssertion(() =>
+        {
+            Hurt(server, caller, 30);
+            var channel = server.ProtoMan.Index<RadioChannelPrototype>("Medical");
+            var language = server.ProtoMan.Index<LanguagePrototype>("TauCetiBasic");
+            var chat = new ChatMessage(ChatChannel.Radio, "Zephyrin, soigne-moi", string.Empty, sEnt.GetNetEntity(caller), null);
+            var ev = new RadioReceiveEvent(caller, channel, chat, chat, language, caller);
+            sEnt.EventBus.RaiseLocalEvent(medic, ref ev);
+            Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).Caller, Is.EqualTo(caller));
+        });
+
+        var reached = false;
+        for (var i = 0; i < 40 && !reached; i++)
+        {
+            await server.WaitRunTicks(30);
+            await server.WaitAssertion(() =>
+                reached = (xforms.GetWorldPosition(medic) - xforms.GetWorldPosition(caller)).Length() < 2.5f);
+        }
+
+        Assert.That(reached, Is.True, "The paramedic walked the 35 tiles to the caller");
+        await server.WaitRunTicks(120);
+
+        await server.WaitAssertion(() =>
+        {
+            Assert.That(server.System<SharedSolutionContainerSystem>().TryGetInjectableSolution(caller, out _, out var blood), Is.True);
+            var brute = sEnt.GetComponent<DamageableComponent>(caller).DamagePerGroup.GetValueOrDefault("Brute").Float();
+            Assert.That(blood!.GetReagentQuantity(new ReagentId("Bicaridine", null)) > 0 || brute < 30f, Is.True,
+                "Bicaridine was injected and is healing the bruises; nothing is healed directly");
+        });
+
+        await pair.CleanReturnAsync();
+    }
+
+    [Test]
     public async Task Paramedic_AnswersOnTheRadio()
     {
         var (pair, map) = await Setup();
@@ -384,7 +438,9 @@ public sealed class AndroidParamedicTests
 
         await server.WaitAssertion(() =>
         {
-            Assert.That(sEnt.GetComponent<AndroidMedicComponent>(medic).MedicatedAt.ContainsKey((patient, "Dylovene")), Is.True);
+            // Dylovene was injected and is healing the poison over time.
+            var toxin = sEnt.GetComponent<DamageableComponent>(patient).DamagePerGroup.GetValueOrDefault("Toxin").Float();
+            Assert.That(toxin, Is.LessThan(15f), "The poison is going down");
             Assert.That(sEnt.GetComponent<AndroidComponent>(medic).RecentLines, Does.Contain(fr.AckHealMe));
         });
 

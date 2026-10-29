@@ -104,7 +104,7 @@ public sealed class AndroidNpcConfigTests
 
                 if (job == AndroidJob.Paramedic)
                 {
-                    Assert.That(data!.RequiredLoadout, Does.Contain("Brutepack"), "The paramedic carries kits");
+                    Assert.That(data!.RequiredLoadout, Does.Contain("HandheldCrewMonitor"), "The paramedic carries a crew monitor");
                     foreach (var lang in new[] { "en", "fr" })
                     {
                         var lines = data.LinesFor(lang)!;

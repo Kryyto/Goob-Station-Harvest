@@ -34,10 +34,11 @@ public sealed class RobustOfficerSimulationTest
         _ => "#..................#",
     }).ToArray();
 
-    private static RobustOfficerSimulation Create(RobustOfficerRun run, int seconds = 0, RobustOfficerBoss? boss = null, float bossHealth = 1f)
+    private static RobustOfficerSimulation Create(RobustOfficerRun run, int seconds = 0, RobustOfficerBoss? boss = null, float bossHealth = 1f,
+        float health = 1f)
     {
         return new RobustOfficerSimulation(new RobustOfficerRoom(boss == null ? Map : BossMap, seconds, boss, new List<RobustOfficerWave>(),
-            bossHealthMultiplier: bossHealth), run);
+            healthMultiplier: health, bossHealthMultiplier: bossHealth), run);
     }
 
     private const int Second = RobustOfficerSimulation.TicksPerSecond;
@@ -174,10 +175,31 @@ public sealed class RobustOfficerSimulationTest
         Assert.That(run.Credits, Is.EqualTo(1));
     }
 
+    /// <summary>
+    /// Enemy health is rounded to the nearest: a greytider still dies in one hit at 1.4x, takes two at 1.6x.
+    /// </summary>
+    [TestCase(1.4f, true)]
+    [TestCase(1.6f, false)]
+    public void EnemyHealthIsRoundedToTheNearest(float health, bool oneHit)
+    {
+        var sim = Create(new RobustOfficerRun(3), seconds: 60, health: health);
+        sim.AddEnemy(RobustOfficerEnemy.Greytider, new Vector2(9.5f, 3.5f));
+        sim.Shoot = new Vector2i(1, 0);
+        var events = RobustOfficerEvents.None;
+        for (var i = 0; i < 2 * Second && !events.HasFlag(RobustOfficerEvents.EnemyHit); i++)
+        {
+            events = sim.Tick();
+        }
+
+        Assert.That(events.HasFlag(RobustOfficerEvents.EnemyHit));
+        Assert.That(events.HasFlag(RobustOfficerEvents.EnemyKilled), Is.EqualTo(oneHit));
+    }
+
     [Test]
     public void LaterBossesHaveMoreHealth()
     {
-        var sim = Create(new RobustOfficerRun(3), boss: RobustOfficerBoss.XenoQueen, bossHealth: 3);
+        // The room's enemy health multiplier leaves the boss alone.
+        var sim = Create(new RobustOfficerRun(3), boss: RobustOfficerBoss.XenoQueen, bossHealth: 3, health: 5);
         Ticks(sim, (int) ((RobustOfficerSimulation.BossDelay + 0.5f) * Second));
         Assert.That(sim.BossHealth()?.MaxHealth, Is.EqualTo(RobustOfficerSimulation.BossBaseHealth(RobustOfficerBoss.XenoQueen) * 3));
     }

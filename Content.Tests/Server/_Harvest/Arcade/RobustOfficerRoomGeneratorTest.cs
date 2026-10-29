@@ -40,6 +40,18 @@ public sealed class RobustOfficerRoomGeneratorTest
     }
 
     [Test]
+    public void HealthKeepsRisingWavesStopGrowing()
+    {
+        Assert.That(RobustOfficerRoomGenerator.Generate(1, 1).HealthMultiplier, Is.EqualTo(1f).Within(0.001f));
+        Assert.That(RobustOfficerRoomGenerator.Generate(20, 1).HealthMultiplier, Is.EqualTo(4.8f).Within(0.001f));
+
+        var at15 = RobustOfficerRoomGenerator.Generate(15, 1);
+        var at35 = RobustOfficerRoomGenerator.Generate(35, 1);
+        Assert.That(at35.SpawnRate, Is.EqualTo(at15.SpawnRate));
+        Assert.That(at35.Waves.Select(w => (w.Interval, w.Group)), Is.EqualTo(at15.Waves.Select(w => (w.Interval, w.Group))));
+    }
+
+    [Test]
     public void SameSeedSameRoom()
     {
         var a = RobustOfficerRoomGenerator.Generate(7, 42);

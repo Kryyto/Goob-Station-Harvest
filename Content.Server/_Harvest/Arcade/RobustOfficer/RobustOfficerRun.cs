@@ -184,6 +184,9 @@ public sealed class RobustOfficerRoom(
     public readonly RobustOfficerBoss? Boss = boss;
     public readonly List<RobustOfficerWave> Waves = waves;
     public readonly int Theme = theme;
+    /// <summary>
+    /// Multiplies the health of the enemies, rounded to the nearest; bosses only follow <see cref="BossHealthMultiplier"/>.
+    /// </summary>
     public readonly float HealthMultiplier = healthMultiplier;
 
     /// <summary>

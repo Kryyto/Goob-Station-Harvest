@@ -24,7 +24,7 @@ public sealed partial class RobustOfficerSimulation
     private void SpawnBoss(RobustOfficerBoss boss)
     {
         _bossSpawned = true;
-        var health = (int) MathF.Ceiling(BossBaseHealth(boss) * _room.HealthMultiplier * _room.BossHealthMultiplier);
+        var health = (int) MathF.Ceiling(BossBaseHealth(boss) * _room.BossHealthMultiplier);
         _newEnemies.Add(new Enemy
         {
             Id = NextId(),

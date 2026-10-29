@@ -445,7 +445,7 @@ public sealed partial class RobustOfficerSimulation
         }
 
         var stats = EnemyStats.Of(type);
-        var health = (int) MathF.Ceiling(stats.Health * _room.HealthMultiplier);
+        var health = Math.Max(1, (int) MathF.Round(stats.Health * _room.HealthMultiplier, MidpointRounding.AwayFromZero));
         var enemy = new Enemy
         {
             Id = NextId(),

@@ -14,6 +14,16 @@ public static class RobustOfficerRoomGenerator
     public const int BossEvery = 4;
 
     /// <summary>
+    /// Enemy health added per room, as a fraction of their base health.
+    /// </summary>
+    public const float HealthPerRoom = 0.2f;
+
+    /// <summary>
+    /// Past this room the waves stop getting bigger and faster; only the enemies' health keeps rising.
+    /// </summary>
+    public const int WaveGrowthEnd = 15;
+
+    /// <summary>
     /// Enemies met from a given depth on.
     /// </summary>
     private static readonly (int Depth, RobustOfficerEnemy Enemy)[] Unlocks =
@@ -52,8 +62,8 @@ public static class RobustOfficerRoomGenerator
 
         map ??= Layout(random, depth, boss != null, false);
 
-        var health = 1f + 0.06f * (depth - 1);
-        var spawnRate = MathF.Min(1.8f, 1f + 0.03f * (depth - 1));
+        var health = 1f + HealthPerRoom * (depth - 1);
+        var spawnRate = MathF.Min(1.8f, 1f + 0.03f * (Math.Min(depth, WaveGrowthEnd) - 1));
         var seconds = 50 + Math.Min(depth * 3, 40);
         // The nth boss met has n times its health.
         return new RobustOfficerRoom(map, seconds, boss, Waves(random, depth, seconds, boss != null), theme, health, spawnRate,
@@ -215,11 +225,12 @@ public static class RobustOfficerRoomGenerator
             return [new RobustOfficerWave(0, 6f, 1, pool.Take(2).Select(p => p.Enemy).ToList())];
         }
 
+        var growth = Math.Min(depth, WaveGrowthEnd);
         var waves = new List<RobustOfficerWave>();
         for (var i = 0; i < 3; i++)
         {
-            var interval = MathF.Max(0.6f, 1.8f - depth * 0.045f - i * 0.3f);
-            var group = 2 + (depth + i) / 4 + (i == 2 ? 1 : 0);
+            var interval = MathF.Max(0.6f, 1.8f - growth * 0.045f - i * 0.3f);
+            var group = 2 + (growth + i) / 4 + (i == 2 ? 1 : 0);
             waves.Add(new RobustOfficerWave(seconds * i / 3f, interval, Math.Min(group, 7), enemies.OrderBy(_ => random.Next()).ToList()));
         }
 

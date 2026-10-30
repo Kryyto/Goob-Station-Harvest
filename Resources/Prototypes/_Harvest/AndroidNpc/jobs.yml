@@ -420,8 +420,6 @@
   - station-beacon-engineering
   - station-beacon-cargo
   - station-beacon-command
-  requiredLoadout:
-  - HandheldCrewMonitor
   retaliationWeapon: CrowbarRed
   addressKeywords:
   - android

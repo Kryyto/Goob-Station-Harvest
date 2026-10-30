@@ -55,6 +55,3 @@
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     back: ClothingBackpackSatchelMedical
-  storage:
-    back:
-    - HandheldCrewMonitor

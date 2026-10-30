@@ -17,6 +17,7 @@ using Content.Server._Harvest.AndroidNpc.BehaviorTree;
 using Content.Server._Harvest.AndroidNpc.Services;
 using Content.Server._Harvest.AndroidNpc.Utilities;
 using Content.Shared.Bed.Components;
+using Content.Shared._Shitmed.Medical.Surgery;
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -90,10 +91,6 @@ public sealed class AndroidMedicSystem : EntitySystem
 
     private const string MorgueBeacon = "station-beacon-morgue";
 
-    /// <summary>
-    /// With it, the paramedic sees the downed crew whose suit sensors report their position, anywhere on the station.
-    /// </summary>
-    private const string CrewMonitor = "HandheldCrewMonitor";
     private static readonly TimeSpan PlacesRefresh = TimeSpan.FromSeconds(30);
 
     /// <summary>
@@ -118,7 +115,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         ("Brute", "Bicaridine"), ("Burn", "Dermaline"), ("Toxin", "Dylovene"), ("Airloss", "Dexalin"),
     };
 
-    private const float MedicineUnits = 5f;
+    private const float MedicineUnits = 10f;
     private const float MedicineDamage = 5f;
     private const float RedoseBelow = 1f;
 
@@ -220,10 +217,10 @@ public sealed class AndroidMedicSystem : EntitySystem
         EntityUid? best = null;
         var bestScore = float.MinValue;
 
-        // Nearby crew, plus the downed crew the crew monitor shows anywhere on the station.
+        // Nearby crew, plus the downed crew whose suit sensors give their position anywhere on the station: the
+        // android reads the sensors itself, so there is no crew monitor to loot from it.
         var candidates = _lookup.GetEntitiesInRange<MobStateComponent>(Transform(medic).Coordinates, ScanRange).Select(e => e.Owner).ToHashSet();
-        if (CarriesCrewMonitor(medic))
-            candidates.UnionWith(DownedOnSensors(Transform(medic).GridUid));
+        candidates.UnionWith(DownedOnSensors(Transform(medic).GridUid));
 
         // Whoever called for care, by voice or on the radio, wherever they are.
         if (comp.Caller is { } calling)
@@ -248,29 +245,6 @@ public sealed class AndroidMedicSystem : EntitySystem
 
         comp.Patient = chosen;
         return chosen;
-    }
-
-    /// <summary>
-    /// Whether the paramedic still has its crew monitor on it (in hand, worn or in its bags).
-    /// </summary>
-    public bool CarriesCrewMonitor(EntityUid medic)
-    {
-        if (!TryComp<AndroidInventoryComponent>(medic, out var inventory) ||
-            _inventory.FindItemByPrototype(medic, inventory, CrewMonitor) is not { } monitor)
-        {
-            return false;
-        }
-
-        var parent = Transform(monitor).ParentUid;
-        while (parent.IsValid())
-        {
-            if (parent == medic)
-                return true;
-
-            parent = Transform(parent).ParentUid;
-        }
-
-        return false;
     }
 
     /// <summary>
@@ -509,7 +483,7 @@ public sealed class AndroidMedicSystem : EntitySystem
         var bestScore = float.MaxValue;
         foreach (var (strap, _) in _lookup.GetEntitiesInRange<StrapComponent>(medbay, BedSearchRange, LookupFlags.Static))
         {
-            if (!HasComp<StasisBedComponent>(strap) && !HasComp<HealOnBuckleComponent>(strap) || !IsFreeBed(medic, comp, strap))
+            if (!IsBedFor(comp.Patient, strap) || !IsFreeBed(medic, comp, strap))
                 continue;
 
             var score = (HasComp<StasisBedComponent>(strap) ? 0f : 100f) + (_transform.GetWorldPosition(strap) - _transform.ToMapCoordinates(medbay).Position).Length();
@@ -642,22 +616,37 @@ public sealed class AndroidMedicSystem : EntitySystem
             return true;
         }
 
-        if (comp.Patient == patient ? FreeBed(medic, comp) != null : AnyFreeBed(medic, comp, medbay))
+        if (comp.Patient == patient ? FreeBed(medic, comp) != null : AnyFreeBed(medic, comp, medbay, patient))
             return false;
 
         var radius = comp.Patient == patient ? MedbayRadius : MedbayArea;
         return comp.Delivered.Contains(patient) || _transform.InRange(medbay, coords, radius);
     }
 
-    private bool AnyFreeBed(EntityUid medic, AndroidMedicComponent comp, EntityCoordinates medbay)
+    private bool AnyFreeBed(EntityUid medic, AndroidMedicComponent comp, EntityCoordinates medbay, EntityUid patient)
     {
         foreach (var (strap, _) in _lookup.GetEntitiesInRange<StrapComponent>(medbay, BedSearchRange, LookupFlags.Static))
         {
-            if ((HasComp<StasisBedComponent>(strap) || HasComp<HealOnBuckleComponent>(strap)) && IsFreeBed(medic, comp, strap))
+            if (IsBedFor(patient, strap) && IsFreeBed(medic, comp, strap))
                 return true;
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// A body only goes on a stasis bed, where it does not rot and the doctors see it; a critical patient on a
+    /// stasis bed or a medical bed. Never an operating table.
+    /// </summary>
+    private bool IsBedFor(EntityUid? patient, EntityUid bed)
+    {
+        if (HasComp<OperatingTableComponent>(bed))
+            return false;
+
+        if (HasComp<StasisBedComponent>(bed))
+            return true;
+
+        return HasComp<HealOnBuckleComponent>(bed) && !(patient is { } p && _mobState.IsDead(p));
     }
 
     private bool CanTreat(EntityUid medic, AndroidMedicComponent comp, EntityUid patient, DamageableComponent damage)
